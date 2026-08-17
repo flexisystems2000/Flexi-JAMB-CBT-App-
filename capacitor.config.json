@@ -1,0 +1,8 @@
+{
+  "appId": "com.flexiedu.consult",
+  "appName": "Flexi Educational Consult",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  }
+}
