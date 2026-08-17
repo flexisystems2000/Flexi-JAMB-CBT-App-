@@ -1,0 +1,31 @@
+:root{
+    --bg:#f0f2f5;
+    --text:#222;
+    --subtext:#555;
+    --card:#ffffff;
+    --header:#ffffff;
+    --border:#dddddd;
+    --btn-bg:#ffffff;
+    --btn-color:#222222;
+    --card-shadow:0 6px 15px rgba(0,0,0,.12);
+    
+    /* Green Accent Variables */
+    --green:#008000;
+    --sent-bg:#008000;
+}
+
+body.dark{
+    --bg:#121212;
+    --text:#ffffff;
+    --subtext:#cccccc;
+    --card:#1e1e1e;
+    --header:#1a1a1a;
+    --border:#333333;
+    --btn-bg:#222222;
+    --btn-color:#ffffff;
+    --card-shadow:0 8px 20px rgba(0,0,0,.35);
+    
+    /* Dark Mode Green Accent */
+    --green:#008000;
+    --sent-bg:#008000;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus Detail - Flexi</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); padding: 20px; transition: .3s ease; }
+        .container { max-width: 800px; margin: auto; }
+        .back-btn { display: inline-block; margin-bottom: 20px; color: var(--text); text-decoration: none; font-weight: bold; }
+        .content-card { background: var(--card); padding: 25px; border-radius: 20px; box-shadow: var(--card-shadow); }
+        h1 { color: #008000; margin-bottom: 10px; }
+        h3 { margin: 25px 0 10px; color: #008000; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        h4 { margin: 15px 0 5px; color: var(--text); font-weight: bold; }
+        p { color: var(--subtext); line-height: 1.6; margin-bottom: 10px; }
+        ul { margin-left: 20px; margin-bottom: 10px; }
+        /* Automatic green numbering */
+        ol { margin-left: 30px; margin-bottom: 10px; color: #008000; }
+        ol li { color: var(--text); margin-bottom: 8px; line-height: 1.4; }
+        ol li::marker { color: #008000; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="study.html" class="back-btn" aria-label="Go Back">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <div class="content-card">
+            <h1 id="title">Loading...</h1>
+            <div id="syllabus-content">
+                <p>Fetching syllabus data...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="idb.js"></script>
+<script src="theme.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const subjectId = urlParams.get('subject');
+        const exam = urlParams.get('exam') || 'jamb';
+
+        async function loadSyllabus() {
+            try {
+                if (!subjectId) throw new Error("No subject selected");
+                const filePath = (exam === 'jamb') ? `data/${subjectId}.json` : `data/${exam}/${subjectId}.json`;
+                const response = await fetch(filePath);
+                if (!response.ok) throw new Error("File not found");
+                
+                const fullData = await response.json();
+                const data = fullData.syllabus;
+
+                document.getElementById('title').innerText = (data.subject || "Subject") + " Syllabus";
+
+                let html = "";
+
+                // 1. General Objectives
+                if (Array.isArray(data.general_objectives)) {
+                    html += `<h3>General Objectives</h3><ul>${data.general_objectives.map(o => `<li>${o}</li>`).join('')}</ul>`;
+                }
+
+                // 2. Syllabus Structure
+                if (Array.isArray(data.structure)) {
+                    data.structure.forEach(s => {
+                        html += `
+                            <div style="margin-top:25px;">
+                                <h3>${s.section || "Section"}</h3>
+                                <p><em>${s.contents_notes || ""}</em></p>
+                                ${s.objectives ? `<h4>Learning Objectives:</h4><ul>${s.objectives.map(o => `<li>${o}</li>`).join('')}</ul>` : ""}
+                            </div>
+                        `;
+                    });
+                }
+
+                // 3. Recommended Texts: Handles both flat Array and Object structures
+                html += `<h3 style="margin-top: 40px;">Recommended Texts</h3>`;
+                html += `<ol>`;
+                
+                if (Array.isArray(data.recommended_texts)) {
+                    // This handles your new JSON structure perfectly
+                    html += data.recommended_texts.map(text => `<li>${text}</li>`).join('');
+                } else if (typeof data.recommended_texts === 'object') {
+                    // This handles your older object-based JSON structure
+                    Object.values(data.recommended_texts).forEach(val => {
+                        // If it's a nested object (categories), process values
+                        if (typeof val === 'object') {
+                            Object.values(val).forEach(v => html += `<li>${v}</li>`);
+                        } else {
+                            html += `<li>${val}</li>`;
+                        }
+                    });
+                }
+                
+                html += `</ol>`;
+
+                document.getElementById('syllabus-content').innerHTML = html;
+
+            } catch (err) {
+                console.error("Renderer Error:", err);
+                document.getElementById('syllabus-content').innerHTML = 
+                    `<p style="color:red; font-weight:bold;">Error: Could not load data for ${subjectId}.</p>`;
+            }
+        }
+
+        loadSyllabus();
+    </script>
+</body>
+</html>

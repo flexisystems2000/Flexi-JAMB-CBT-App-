@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexi Educational Consult - WAEC Syllabus Portal</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root {
+      --flexi-blue: #008000;
+      --flexi-accent: #004d00;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      transition: .3s ease;
+    }
+
+    header {
+      background-color: var(--header);
+      border-bottom: 1px solid var(--border);
+      color: var(--text);
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.5rem;
+      color: var(--flexi-blue);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .controls-card, .subject-title-card, .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--card-shadow);
+    }
+
+    .controls-card label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: var(--flexi-blue);
+    }
+
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: var(--bg);
+      color: var(--text);
+      outline: none;
+    }
+
+    .badge-exam {
+      display: inline-block;
+      background-color: rgba(0, 128, 0, 0.15);
+      color: var(--flexi-blue);
+      font-size: 0.75rem;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      margin-top: 0;
+      color: var(--flexi-blue);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .styled-list {
+      margin: 0.5rem 0 0 1.2rem;
+      padding: 0;
+      color: var(--subtext);
+    }
+
+    .styled-list li {
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.5rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.75rem;
+      text-align: left;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    th {
+      background-color: var(--header);
+      color: var(--flexi-blue);
+    }
+
+    .topic-block {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+    }
+
+    .topic-header {
+      padding: 0.75rem;
+      font-weight: bold;
+      color: var(--flexi-blue);
+      cursor: pointer;
+    }
+
+    .topic-body {
+      padding: 0 0.75rem 0.75rem 0.75rem;
+      color: var(--subtext);
+    }
+
+    .text-capitalize {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Flexi Educational Consult</h1>
+    <p style="margin:0; font-size: 0.9rem; color: var(--subtext);">WAEC / WASSCE Syllabus Portal</p>
+  </header>
+
+  <div class="container">
+    <div class="controls-card">
+      <label for="subjectSelect">Select WAEC Subject:</label>
+      <select id="subjectSelect" onchange="onSubjectChanged(this.value)"></select>
+    </div>
+
+    <div id="syllabus-app">
+      <p style="color: var(--subtext);">Loading syllabus application...</p>
+    </div>
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    let currentExam = 'waec';
+    let activeSubjectMeta = null;
+
+    // Registry for WAEC Subjects
+    const subjectRegistry = {
+      waec: [
+        { id: "agric", name: "Agricultural Science", path: "data/waec/agric.json" },
+        { id: "animal_husbandry", name: "Animal Husbandry", path: "data/waec/animal_husbandry.json" },
+        { id: "arabic", name: "Arabic", path: "data/waec/arabic.json" },
+        { id: "biology", name: "Biology", path: "data/waec/biology.json" },
+        { id: "book_keeping", name: "Book Keeping", path: "data/waec/book_keeping.json" },
+        { id: "building", name: "Building Construction", path: "data/waec/building.json" },
+        { id: "business", name: "Business Management", path: "data/waec/business.json" },
+        { id: "catering", name: "Catering Craft Practice", path: "data/waec/catering.json" },
+        { id: "chemistry", name: "Chemistry", path: "data/waec/chemistry.json" },
+        { id: "civic", name: "Civic Education", path: "data/waec/civic.json" },
+        { id: "clerical", name: "Clerical Office Duties", path: "data/waec/clerical.json" },
+        { id: "commerce", name: "Commerce", path: "data/waec/commerce.json" },
+        { id: "computer", name: "Computer Studies", path: "data/waec/computer.json" },
+        { id: "crk", name: "Christian Religious Studies (CRS)", path: "data/waec/crk.json" },
+        { id: "data_processing", name: "Data Processing", path: "data/waec/data_processing.json" },
+        { id: "economics", name: "Economics", path: "data/waec/economics.json" },
+        { id: "edo", name: "Edo", path: "data/waec/edo.json" },
+        { id: "english", name: "English Language", path: "data/waec/english.json" },
+        { id: "financial_accounting", name: "Financial Accounting", path: "data/waec/financial_accounting.json" },
+        { id: "fishery", name: "Fisheries", path: "data/waec/fishery.json" },
+        { id: "food_and_nut", name: "Foods and Nutrition", path: "data/waec/food_and_nut.json" },
+        { id: "forestry", name: "Forestry", path: "data/waec/forestry.json" },
+        { id: "french", name: "French", path: "data/waec/french.json" },
+        { id: "further_maths", name: "Further Mathematics", path: "data/waec/further_maths.json" },
+        { id: "geography", name: "Geography", path: "data/waec/geography.json" },
+        { id: "government", name: "Government", path: "data/waec/government.json" },
+        { id: "hausa", name: "Hausa", path: "data/waec/hausa.json" },
+        { id: "health_education", name: "Health Education", path: "data/waec/health_education.json" },
+        { id: "history", name: "History", path: "data/waec/history.json" },
+        { id: "home_management", name: "Home Management", path: "data/waec/home_management.json" },
+        { id: "ict", name: "ICT", path: "data/waec/ict.json" },
+        { id: "igbo", name: "Igbo", path: "data/waec/igbo.json" },
+        { id: "insurance", name: "Insurance", path: "data/waec/insurance.json" },
+        { id: "islam", name: "Islamic Studies (IRS)", path: "data/waec/islam.json" },
+        { id: "literature", name: "Literature in English", path: "data/waec/literature.json" },
+        { id: "marketing", name: "Marketing", path: "data/waec/marketing.json" },
+        { id: "maths", name: "Mathematics", path: "data/waec/maths.json" },
+        { id: "music", name: "Music", path: "data/waec/music.json" },
+        { id: "office_practice", name: "Office Practice", path: "data/waec/office_practice.json" },
+        { id: "physical_education", name: "Physical Education", path: "data/waec/physical_education.json" },
+        { id: "physics", name: "Physics", path: "data/waec/physics.json" },
+        { id: "technical_drawing", name: "Technical Drawing", path: "data/waec/technical_drawing.json" },
+        { id: "visual_art", name: "Visual Arts", path: "data/waec/visual_art.json" },
+        { id: "yoruba", name: "Yoruba", path: "data/waec/yoruba.json" }
+      ]
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlSubject = urlParams.get('subject');
+
+    function switchPortal() {
+      currentExam = 'waec';
+      const select = document.getElementById('subjectSelect');
+      select.innerHTML = '';
+
+      const fileList = subjectRegistry.waec;
+      fileList.forEach(item => {
+        const option = document.createElement('option');
+        option.value = item.path;
+        option.textContent = item.name;
+        select.appendChild(option);
+      });
+
+      if (fileList.length > 0) {
+        const match = fileList.find(f => f.id === urlSubject);
+        const targetItem = match || fileList[0];
+        select.value = targetItem.path;
+        activeSubjectMeta = targetItem;
+        loadSyllabus(targetItem.path);
+      } else {
+        document.getElementById('syllabus-app').innerHTML = `<p>No WAEC syllabus files configured.</p>`;
+      }
+    }
+
+    function onSubjectChanged(filePath) {
+      const fileList = subjectRegistry.waec;
+      activeSubjectMeta = fileList.find(f => f.path === filePath) || null;
+      loadSyllabus(filePath);
+    }
+
+    async function loadSyllabus(filePath) {
+      const app = document.getElementById('syllabus-app');
+      app.innerHTML = '<p style="color: var(--subtext);">Loading syllabus data...</p>';
+
+      try {
+        const response = await fetch(filePath);
+        if (!response.ok) throw new Error("File not found");
+        
+        const rawData = await response.json();
+        renderWAECSyllabus(rawData);
+      } catch (err) {
+        console.error("Renderer Error:", err);
+        app.innerHTML = `
+          <div class="section-card" style="border-left: 4px solid #dc2626;">
+            <p style="color:#dc2626; font-weight:bold; margin:0;">Error: Could not load syllabus file (<code>${filePath}</code>).</p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.85rem; color: var(--subtext);">If opening locally, ensure you are running through a local web server (e.g., Live Server) rather than opening the file directly from disk.</p>
+          </div>
+        `;
+      }
+    }
+
+    function renderWAECSyllabus(fullData) {
+      const data = (fullData && fullData.syllabus) ? fullData.syllabus : fullData;
+      const app = document.getElementById('syllabus-app');
+
+      let html = `
+        <div class="subject-title-card">
+          <span class="badge-exam">WAEC / WASSCE</span>
+          <h2>${data.subject || (data.document_title || (activeSubjectMeta ? activeSubjectMeta.name : 'Subject Syllabus'))}</h2>
+          ${data.preamble ? `<p style="margin-top:0.4rem; color: var(--subtext);"><strong>Preamble:</strong> ${data.preamble}</p>` : ''}
+        </div>
+      `;
+
+      const objectives = data.objectives || data.aims;
+      if (Array.isArray(objectives) && objectives.length) {
+        html += `
+          <div class="section-card">
+            <h3 class="section-title">Course Objectives & Aims</h3>
+            <ul class="styled-list">
+              ${objectives.map(obj => `<li>${obj}</li>`).join('')}
+            </ul>
+          </div>
+        `;
+      }
+
+      if (data.assessment_objectives && typeof data.assessment_objectives === 'object') {
+        html += `<div class="section-card"><h3 class="section-title">Assessment Objectives</h3>`;
+        Object.keys(data.assessment_objectives).forEach(key => {
+          const formattedTitle = key.replace(/_/g, ' ');
+          const items = data.assessment_objectives[key];
+          html += `<h4 class="text-capitalize" style="color:var(--flexi-blue); margin-bottom:0.25rem;">${formattedTitle}</h4>`;
+          if (Array.isArray(items)) {
+            html += `<ul class="styled-list">${items.map(i => `<li>${i}</li>`).join('')}</ul>`;
+          }
+        });
+        html += `</div>`;
+      }
+
+      if (data.examination_scheme || data.structure_of_the_examination) {
+        const scheme = data.examination_scheme || data.structure_of_the_examination;
+        html += `<div class="section-card"><h3 class="section-title">Examination Scheme</h3>`;
+
+        if (typeof scheme === 'string') {
+          html += `<p style="color: var(--subtext);">${scheme}</p>`;
+        } else if (typeof scheme === 'object') {
+          if (scheme.summary) html += `<p style="color: var(--subtext);">${scheme.summary}</p>`;
+          
+          if (Array.isArray(scheme.papers) && scheme.papers.length) {
+            html += `
+              <div style="overflow-x:auto;">
+                <table>
+                  <thead>
+                    <tr><th>Paper</th><th>Title</th><th>Duration</th><th>Marks</th><th>Details</th></tr>
+                  </thead>
+                  <tbody>
+                    ${scheme.papers.map(p => `
+                      <tr>
+                        <td><strong>${p.paper || ''}</strong></td>
+                        <td>${p.title || ''}</td>
+                        <td>${p.duration || ''}</td>
+                        <td>${p.marks || ''}</td>
+                        <td>${p.details || ''}</td>
+                      </tr>
+                    `).join('')}
+                  </tbody>
+                </table>
+              </div>
+            `;
+          } else {
+            Object.keys(scheme).forEach(key => {
+              if (key === 'summary') return;
+              const paper = scheme[key];
+              const paperTitle = key.replace(/_/g, ' ').toUpperCase();
+
+              if (typeof paper === 'string') {
+                html += `<div style="margin-bottom:1rem; color: var(--subtext);"><strong>${paperTitle}:</strong> ${paper}</div>`;
+              } else if (typeof paper === 'object') {
+                html += `
+                  <div class="topic-block" style="padding: 0.85rem; margin-bottom: 0.85rem;">
+                    <h4 style="margin: 0 0 0.5rem 0; color: var(--flexi-blue);">${paperTitle}</h4>
+                    ${paper.duration ? `<p style="margin: 0.2rem 0; color: var(--subtext);"><strong>Duration:</strong> ${paper.duration}</p>` : ''}
+                    ${paper.marks ? `<p style="margin: 0.2rem 0; color: var(--subtext);"><strong>Marks:</strong> ${paper.marks}</p>` : ''}
+                    ${paper.description ? `<p style="margin: 0.2rem 0; color: var(--subtext);"><strong>Description:</strong> ${paper.description}</p>` : ''}
+                    ${paper.sections && Array.isArray(paper.sections) ? `
+                      <ul class="styled-list">
+                        ${paper.sections.map(sec => `<li>${sec}</li>`).join('')}
+                      </ul>
+                    ` : ''}
+                  </div>
+                `;
+              }
+            });
+          }
+        }
+        html += `</div>`;
+      }
+
+      const detailed = data.detailed_syllabus || data.syllabus_content || data.topics;
+      if (detailed) {
+        html += `<div class="section-card"><h3 class="section-title">Detailed Syllabus Content</h3>`;
+
+        if (Array.isArray(detailed)) {
+          detailed.forEach(sec => {
+            const secTitle = sec.section_name || sec.section_title || sec.title || sec.topic || 'Section';
+            html += `<h4 style="color:var(--flexi-blue); margin-top: 1rem;">${secTitle}</h4>`;
+
+            if (Array.isArray(sec.contents)) {
+              html += `<ul class="styled-list">${sec.contents.map(c => `<li>${c}</li>`).join('')}</ul>`;
+            }
+
+            if (Array.isArray(sec.topics)) {
+              sec.topics.forEach(top => {
+                html += `
+                  <details class="topic-block" open>
+                    <summary class="topic-header">${top.title || top.topics || 'Topic'}</summary>
+                    <div class="topic-body">
+                      ${top.notes ? `<p>${top.notes}</p>` : ''}
+                      ${top.details && top.details.length ? `<ul class="styled-list">${top.details.map(d => `<li>${d}</li>`).join('')}</ul>` : ''}
+                    </div>
+                  </details>
+                `;
+              });
+            }
+          });
+        } else if (typeof detailed === 'object') {
+          Object.keys(detailed).forEach(partKey => {
+            const partTitle = partKey.replace(/_/g, ' ').toUpperCase();
+            html += `<h4 style="color:var(--flexi-blue); margin-top: 1.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25rem;">${partTitle}</h4>`;
+
+            const topicList = detailed[partKey];
+            if (Array.isArray(topicList)) {
+              topicList.forEach(item => {
+                html += `
+                  <div class="topic-block" style="padding: 0.75rem;">
+                    <div style="font-weight: bold; color: var(--flexi-blue);">${item.topics || item.content || item.title || ''}</div>
+                    ${item.notes ? `<div style="font-size: 0.9rem; color: var(--subtext); margin-top: 0.25rem;"><strong>Notes:</strong> ${item.notes}</div>` : ''}
+                  </div>
+                `;
+              });
+            }
+          });
+        }
+
+        html += `</div>`;
+      }
+
+      const reading = data.reading_list || data.recommended_texts || data.prescribed_texts;
+      if (Array.isArray(reading) && reading.length) {
+        html += `
+          <div class="section-card">
+            <h3 class="section-title">Recommended Reading List</h3>
+            <ol class="styled-list">
+              ${reading.map(book => `<li>${book}</li>`).join('')}
+            </ol>
+          </div>
+        `;
+      }
+
+      app.innerHTML = html;
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      switchPortal();
+    });
+  </script>
+</body>
+</html>

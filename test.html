@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Flexi CBT | Select Exam</title>
+
+    <style>
+        :root {
+            --flexi-navy: #003366;
+            --flexi-green: #008000;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            transition: .3s ease;
+            padding-bottom: 40px;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--header);
+            color: var(--flexi-green);
+            padding: 14px 15px;
+            border-bottom: 4px solid var(--flexi-green);
+            box-shadow: var(--card-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.05rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--flexi-green);
+            text-align: center;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* WELCOME */
+        .welcome-msg {
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+
+        .welcome-msg h2 {
+            margin: 0;
+            color: var(--flexi-navy);
+            font-size: 1.5rem;
+        }
+
+        .welcome-msg p {
+            color: var(--subtext);
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        /* EXAM CARDS */
+        .exam-card {
+            display: flex;
+            align-items: center;
+            background: var(--card);
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: var(--radius);
+            cursor: pointer;
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            position: relative;
+            overflow: hidden;
+            background-image: 
+                radial-gradient(circle at 90% 20%, rgba(100, 116, 139, 0.08) 0px, transparent 40px),
+                linear-gradient(135deg, transparent 70%, rgba(100, 116, 139, 0.06) 70%);
+        }
+
+        .exam-card:active {
+            transform: scale(0.97);
+        }
+
+        /* DISABLED / COMING SOON CARDS */
+        .exam-card.disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+            pointer-events: none;
+            filter: grayscale(0.4);
+        }
+
+        .exam-card.disabled:active {
+            transform: none;
+        }
+
+        .coming-soon-badge {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            background: #cc0000;
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 20px;
+            letter-spacing: 0.3px;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+
+        .img-placeholder {
+            width: 55px;
+            height: 55px;
+            border-radius: 10px;
+            margin-right: 15px;
+            object-fit: contain;
+            background: var(--border);
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-info {
+            flex-grow: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-info b {
+            display: block;
+            font-size: 0.95rem;
+            color: var(--flexi-navy);
+        }
+
+        .card-info span {
+            font-size: 0.75rem;
+            color: var(--subtext);
+            line-height: 1.3;
+            display: block;
+            margin-top: 2px;
+        }
+
+        .arrow {
+            color: var(--subtext);
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>FLEXI EDUCATIONAL CONSULT</h1>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- WELCOME -->
+    <div class="welcome-msg">
+        <h2>Select Examination</h2>
+        <p>Choose your target simulator to begin</p>
+    </div>
+
+    <!-- JAMB -->
+    <div class="exam-card" onclick="selectExam('JAMB')">
+        <img src="https://i.postimg.cc/651CKsfF/images-(2).jpg" alt="JAMB Logo" class="img-placeholder">
+
+        <div class="card-info">
+            <b>JAMB CBT Simulator</b>
+            <span>Unified Tertiary Matriculation Examination Mode</span>
+        </div>
+
+        <div class="arrow">›</div>
+    </div>
+
+    <!-- WAEC (DISABLED) -->
+    <div class="exam-card disabled">
+        <span class="coming-soon-badge">Coming Soon</span>
+        <img src="https://i.postimg.cc/PxZSpX2Q/images-2.png" alt="WAEC Logo" class="img-placeholder">
+
+        <div class="card-info">
+            <b>WAEC CBT Simulator</b>
+            <span>West African Senior School Certificate Mode</span>
+        </div>
+
+        <div class="arrow">›</div>
+    </div>
+
+    <!-- NECO (DISABLED) -->
+    <div class="exam-card disabled">
+        <span class="coming-soon-badge">Coming Soon</span>
+        <img src="https://i.postimg.cc/ZqjbkmrR/Neco-official-banner.jpg" alt="NECO Logo" class="img-placeholder">
+
+        <div class="card-info">
+            <b>NECO CBT Simulator</b>
+            <span>National Examination Council Practice Mode</span>
+        </div>
+
+        <div class="arrow">›</div>
+    </div>
+
+    <!-- FLEXI -->
+    <div class="exam-card" onclick="selectExam('FLEXI')">
+        <img src="https://i.postimg.cc/0Qm3PLw5/1771700279759-2.jpg" alt="Flexi Logo" class="img-placeholder">
+
+        <div class="card-info">
+            <b>Custom CBT Simulator</b>
+            <span>Customize our CBT simulator to practice for any exam</span>
+        </div>
+
+        <div class="arrow">›</div>
+    </div>
+
+    <!-- CHALLENGE -->
+    <div class="exam-card" onclick="selectExam('CHALLENGE')">
+        <img src="https://i.postimg.cc/mD8T3060/51872167-blue-champion-cup-icon-number-1-illustration.jpg" alt="Trophy Logo" class="img-placeholder">
+
+        <div class="card-info">
+            <b>Challenge CBT Simulator</b>
+            <span>Take our Nationwide bi-weekly CBT Mock to earn cash prizes</span>
+        </div>
+
+        <div class="arrow">›</div>
+    </div>
+
+</div>
+
+<!-- Global Theme Script -->
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+        authDomain: "flexieduconsult.com.ng",
+        projectId: "waec2026jamb2027",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.selectExam = async (type) => {
+    // Block WAEC & NECO
+    if (type === 'WAEC' || type === 'NECO') {
+        return;
+    }
+
+    // Challenge goes straight to the external link — no storage, no folderType
+    if (type === 'CHALLENGE') {
+        window.location.href = "https://flexisystems2000.github.io/weeklycbtmock/";
+        return;
+    }
+
+    // JAMB + Custom (FLEXI) both use the JAMB flow
+    let folderType = (type === 'FLEXI') ? 'JAMB' : type;
+
+    if (typeof IDB !== "undefined") {
+        await IDB.setItem("selectedExamType", folderType);
+        await IDB.setItem("displayExamName", type);
+    } else {
+        localStorage.setItem("selectedExamType", folderType);
+        localStorage.setItem("displayExamName", type);
+    }
+
+    // Route
+    if (type === 'JAMB' || type === 'FLEXI') {
+        window.location.href = "page2.html";
+    } else {
+        window.location.href = "page2_waec.html";
+    }
+};
+</script>
+</body>
+</html>

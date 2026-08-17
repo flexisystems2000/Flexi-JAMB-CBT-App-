@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexi Educational Consult - Video Portal</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root {
+      --flexi-navy: #008000;
+      --flexi-green: #004d00;
+      --badge-bg: rgba(0, 128, 0, 0.15);
+      --badge-text: var(--flexi-navy);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 40px;
+      transition: .3s ease;
+    }
+
+    /* Navigation Header */
+    .app-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: var(--header);
+      color: var(--text);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--card-shadow);
+      border-bottom: 5px solid var(--flexi-green);
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--flexi-navy);
+    }
+
+    .logo span {
+      color: var(--flexi-green);
+    }
+
+    .search-wrapper input {
+      padding: 0.6rem 1.2rem;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      width: 280px;
+      outline: none;
+      font-size: 0.9rem;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: all 0.2s ease;
+    }
+
+    .search-wrapper input:focus {
+      border-color: var(--flexi-green);
+      box-shadow: 0 0 0 3px rgba(0, 77, 0, 0.15);
+    }
+
+    /* Main Container */
+    .app-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Active Video Section */
+    .active-video-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 2.5rem;
+      border: 1px solid var(--border);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      background: #000000;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-details {
+      padding: 1.5rem;
+    }
+
+    .subject-badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      padding: 0.25rem 0.75rem;
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.75rem;
+    }
+
+    .video-details h1 {
+      font-size: 1.5rem;
+      color: var(--flexi-navy);
+      margin-bottom: 0.5rem;
+    }
+
+    .video-details p {
+      color: var(--subtext);
+      font-size: 0.95rem;
+      white-space: pre-line;
+    }
+
+    /* Library & Filters Section */
+    .section-title {
+      font-size: 1.25rem;
+      color: var(--flexi-navy);
+      margin-bottom: 1rem;
+    }
+
+    .filter-pills {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--text);
+      transition: all 0.2s ease;
+      box-shadow: var(--card-shadow);
+    }
+
+    .pill.active, .pill:hover {
+      background: var(--flexi-navy);
+      color: #FFFFFF;
+      border-color: var(--flexi-navy);
+    }
+
+    /* Video Card Grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .video-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-thumb {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      background-color: var(--border);
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      font-size: 1rem;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+
+    .card-content .meta {
+      font-size: 0.85rem;
+      color: var(--subtext);
+    }
+
+    .empty-state {
+      grid-column: 1 / -1;
+      padding: 3rem;
+      text-align: center;
+      color: var(--subtext);
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px dashed var(--border);
+    }
+
+    @media (max-width: 600px) {
+      .app-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+      }
+      .search-wrapper input {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="logo">Flexi <span> Educational Consult</span></div>
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Search lessons or topics...">
+    </div>
+  </header>
+
+  <!-- SPA Content Wrapper -->
+  <main class="app-container">
+    
+    <!-- Active Player Component -->
+    <section class="active-video-card">
+      <div class="video-wrapper">
+        <iframe id="mainPlayer" src="" title="Active Lesson Video" allowfullscreen></iframe>
+      </div>
+      <div class="video-details">
+        <span class="subject-badge" id="activeCategory">Loading...</span>
+        <h1 id="activeTitle">Loading video...</h1>
+        <p id="activeDescription"></p>
+      </div>
+    </section>
+
+    <!-- Video Grid Section -->
+    <section>
+      <h2 class="section-title">Video Library</h2>
+      
+      <div class="filter-pills" id="filterPills">
+        <button class="pill active" data-category="all">All Lessons</button>
+        <button class="pill" data-category="Chemistry">Chemistry</button>
+        <button class="pill" data-category="Government">Government</button>
+        <button class="pill" data-category="Mathematics">Mathematics</button>
+      </div>
+
+      <div class="video-grid" id="videoGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getFirestore, collection, onSnapshot, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+    // Firebase Configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+      authDomain: "flexieduconsult.com.ng",
+      projectId: "waec2026jamb2027"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // State Variables
+    let allVideos = [];
+    let selectedVideo = null;
+    let currentCategory = 'all';
+
+    // DOM Elements
+    const videoGrid = document.getElementById('videoGrid');
+    const filterPills = document.getElementById('filterPills');
+    const searchInput = document.getElementById('searchInput');
+    const mainPlayer = document.getElementById('mainPlayer');
+    const activeTitle = document.getElementById('activeTitle');
+    const activeCategory = document.getElementById('activeCategory');
+    const activeDescription = document.getElementById('activeDescription');
+
+    // 1. YouTube Link Extraction Logic
+    function getYouTubeId(link) {
+      if (!link) return null;
+      const match = link.match(/(?:youtu\.be\/|youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=))([^"&?\/\s]{11})/);
+      return match ? match[1] : (link.includes("v=") ? link.split("v=")[1].split("&")[0] : link.split("/").pop());
+    }
+
+    // 2. Play Selected Video
+    function playVideo(videoDoc) {
+      selectedVideo = videoDoc;
+      const v = videoDoc.data();
+      const videoId = getYouTubeId(v.link);
+
+      if (videoId) {
+        mainPlayer.src = `https://www.youtube.com/embed/${videoId}`;
+      }
+      
+      // Title & Description Logic
+      activeTitle.textContent = v.title || "Untitled Video";
+      activeDescription.textContent = v.desc || "No description provided.";
+      activeCategory.textContent = v.category || "General";
+      
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // 3. Render Card Grid
+    function renderGrid() {
+      const searchQuery = searchInput.value.toLowerCase().trim();
+
+      const filtered = allVideos.filter(doc => {
+        const v = doc.data();
+        const category = v.category || "General";
+        const title = (v.title || "").toLowerCase();
+        const desc = (v.desc || "").toLowerCase();
+
+        const matchesCategory = currentCategory === 'all' || category === currentCategory;
+        const matchesSearch = title.includes(searchQuery) || desc.includes(searchQuery);
+
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        videoGrid.innerHTML = `
+          <div class="empty-state">
+            <p>No video lessons match your query.</p>
+          </div>`;
+        return;
+      }
+
+      videoGrid.innerHTML = filtered.map(doc => {
+        const v = doc.data();
+        const videoId = getYouTubeId(v.link);
+        const thumbUrl = videoId ? `https://img.youtube.com/vi/${videoId}/mqdefault.jpg` : '';
+
+        return `
+          <div class="video-card" data-id="${doc.id}">
+            <div class="card-thumb">
+              ${thumbUrl ? `<img src="${thumbUrl}" alt="${v.title}">` : ''}
+            </div>
+            <div class="card-content">
+              <h3>${v.title || 'Untitled Video'}</h3>
+              <p class="meta">${v.category || 'General'}</p>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Attach click events to card instances
+      document.querySelectorAll('.video-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const docId = card.dataset.id;
+          const targetDoc = allVideos.find(d => d.id === docId);
+          if (targetDoc) playVideo(targetDoc);
+        });
+      });
+    }
+
+    // 4. Realtime Firestore Query Listener
+    const q = query(collection(db, "videos"), orderBy("createdAt", "desc"));
+    onSnapshot(q, (snapshot) => {
+      allVideos = snapshot.docs;
+
+      if (allVideos.length > 0) {
+        // Automatically play first video if none is active
+        if (!selectedVideo) {
+          playVideo(allVideos[0]);
+        }
+        renderGrid();
+      } else {
+        activeTitle.textContent = "No videos available";
+        activeDescription.textContent = "";
+        videoGrid.innerHTML = `<div class="empty-state"><p>No lessons uploaded yet.</p></div>`;
+      }
+    });
+
+    // Event Handlers
+    filterPills.addEventListener('click', (e) => {
+      if (e.target.classList.contains('pill')) {
+        document.querySelectorAll('.pill').forEach(btn => btn.classList.remove('active'));
+        e.target.classList.add('active');
+        currentCategory = e.target.dataset.category;
+        renderGrid();
+      }
+    });
+
+    searchInput.addEventListener('input', renderGrid);
+  </script>
+</body>
+</html>

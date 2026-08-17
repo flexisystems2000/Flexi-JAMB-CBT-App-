@@ -1,0 +1,53 @@
+{
+  "federal": [
+    "University of Lagos (UNILAG)",
+    "University of Ibadan (UI)",
+    "Ahmadu Bello University (ABU)",
+    "University of Nigeria, Nsukka (UNN)",
+    "Obafemi Awolowo University (OAU)",
+    "University of Benin (UNIBEN)",
+    "University of Ilorin (UNILORIN)",
+    "University of Abuja (UNIABUJA)",
+    "Bayero University, Kano (BUK)",
+    "Federal University of Agriculture, Abeokuta (FUNAAB)",
+    "Federal University of Technology, Akure (FUTA)",
+    "Federal University of Technology, Minna (FUTMINNA)",
+    "Federal University of Technology, Owerri (FUTO)",
+    "University of Port Harcourt (UNIPORT)",
+    "University of Uyo (UNIUYO)"
+  ],
+  "state": [
+    "Lagos State University (LASU)",
+    "Olabisi Onabanjo University (OOU)",
+    "Ekiti State University (EKSU)",
+    "Adekunle Ajasin University (AAUA)",
+    "Kaduna State University (KASU)",
+    "Delta State University (DELSU)",
+    "Chukwuemeka Odumegwu Ojukwu University (COOU)",
+    "Plateau State University (PLASU)",
+    "Abia State University (ABSU)",
+    "Ignatius Ajuru University of Education (IAUE)",
+    "Prince Abubakar Audu University (PAU)",
+    "Gombe State University (GSU)",
+    "Umaru Musa Yar'Adua University (UMYU)",
+    "Yobe State University (YSU)",
+    "Lagos State University of Science and Technology (LASUSTECH)"
+  ],
+  "private": [
+    "Covenant University",
+    "Afe Babalola University (ABUAD)",
+    "Babcock University",
+    "Bowen University",
+    "Redeemer's University",
+    "Nile University of Nigeria",
+    "Baze University",
+    "Pan-Atlantic University (PAU)",
+    "Lead City University",
+    "Caleb University",
+    "Bells University of Technology",
+    "Landmark University",
+    "Godfrey Okoye University",
+    "Ajayi Crowther University",
+    "Veritas University"
+  ]
+}
