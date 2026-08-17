@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexi Chat & Groups</title>
+<link rel="stylesheet" href="theme.css">
+<script src="boxicons.js"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    min-height:100vh;
+    transition:.3s ease;
+}
+
+.top-header{
+    padding:20px;
+    background:var(--header);
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.header-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.title-group{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.title-group h1{
+    font-size:24px;
+    font-weight:800;
+    color:var(--text);
+}
+
+.back-btn{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:1px solid var(--border);
+    background:var(--btn-bg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    transition:.2s;
+    flex-shrink:0;
+}
+
+.back-btn:hover{
+    background:#f5f5f5;
+}
+
+.start-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#008000;
+    color:white;
+    padding:10px 18px;
+    border-radius:50px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.tabs{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+}
+
+.tabs::-webkit-scrollbar{
+    display:none;
+}
+
+.tab{
+    font-weight:700;
+    color:#888;
+    cursor:pointer;
+    padding-bottom:10px;
+    white-space:nowrap;
+}
+
+.tab.active{
+    color:#008000;
+    border-bottom:3px solid #008000;
+}
+
+.chat-list{
+    padding:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow:var(--card-shadow);
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:var(--text);
+}
+
+.card p{
+    color:var(--subtext);
+}
+
+/* User & Group List Item Styling */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    box-shadow: var(--card-shadow);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.list-item:active {
+    transform: scale(0.99);
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details h4 {
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.details p {
+    color: var(--subtext);
+    font-size: 12px;
+}
+
+/* Badges & Buttons */
+.badge {
+    background: #008000;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+}
+
+.btn-action {
+    border: none;
+    cursor: pointer;
+    background: #008000;
+    color: #fff;
+    padding: 9px 18px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+.btn-action.btn-enter {
+    background: #003366;
+}
+
+/* Form inputs for Create Group & Ask Question */
+.modern-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.btn-create, .submit-btn {
+    width: 100%;
+    background: #008000;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.question-box {
+    width: 100%;
+    min-height: 140px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 12px;
+    padding: 12px;
+    resize: none;
+    outline: none;
+    margin-bottom: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-header">
+
+    <div class="header-row">
+
+        <div class="title-group">
+            <a href="index.html" class="back-btn">
+                <box-icon name="arrow-back" color="var(--text)"></box-icon>
+            </a>
+
+            <h1>Chat Hub</h1>
+        </div>
+
+        <a href="start-chat.html" class="start-btn">
+            <box-icon name="plus" color="white"></box-icon>
+            Start Chat
+        </a>
+
+    </div>
+
+    <div class="tabs">
+        <div class="tab active" data-view="chats">Chats</div>
+        <div class="tab" data-view="groups">Groups</div>
+        <div class="tab" data-view="questions">Ask Question</div>
+    </div>
+
+</div>
+
+<div class="chat-list" id="chatList">
+    <div style="padding: 20px; text-align: center; color: var(--subtext);">Loading conversations...</div>
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { 
+    getFirestore, collection, addDoc, doc, getDoc, getDocs, 
+    query, orderBy, onSnapshot, serverTimestamp, setDoc 
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+// Unified Firebase Configuration
+const firebaseConfig = { 
+    apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
+    authDomain: "flexieduconsult.com.ng", 
+    projectId: "waec2026jamb2027" 
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+const chatList = document.getElementById("chatList");
+const tabs = document.querySelectorAll(".tab");
+
+let currentActiveView = "chats";
+let unsubscribeProfiles = null;
+let unsubscribeGroups = null;
+let joinedGroupIds = new Set();
+
+// Utility for preventing XSS attacks
+function escapeHTML(str) {
+    if (typeof str !== 'string') return '';
+    return str.replace(/[&<>'"]/g, 
+        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+    );
+}
+
+// Global Chat Handler (Code 1)
+window.openChat = (otherUid, otherName) => {
+    if (!auth.currentUser) return;
+    const chatId = [auth.currentUser.uid, otherUid].sort().join('_');
+    window.location.href = `chat_enter.html?chatId=${chatId}&otherUid=${otherUid}&name=${encodeURIComponent(otherName)}`;
+};
+
+// Global Group Creation Handler (Code 2)
+window.handleCreateGroup = async () => {
+    const input = document.getElementById("new-group-name");
+    if (!input || !input.value.trim()) return;
+
+    const groupName = input.value.trim();
+    const creator = auth.currentUser.displayName || auth.currentUser.email.split("@")[0];
+
+    try {
+        const groupRef = await addDoc(collection(db, "groups"), {
+            name: groupName,
+            creatorName: creator,
+            createdAt: serverTimestamp()
+        });
+
+        // Automatically make creator a member
+        await setDoc(doc(db, "groups", groupRef.id, "members", auth.currentUser.uid), {
+            uid: auth.currentUser.uid,
+            joinedAt: serverTimestamp()
+        });
+
+        joinedGroupIds.add(groupRef.id);
+        input.value = "";
+    } catch (err) {
+        console.error("Error creating group:", err);
+    }
+};
+
+// Global Group Enter/Join Handler (Code 2)
+window.openGroup = async (id, name, isJoined) => {
+    if (!isJoined) {
+        await setDoc(doc(db, "groups", id, "members", auth.currentUser.uid), {
+            uid: auth.currentUser.uid,
+            joinedAt: serverTimestamp()
+        });
+        joinedGroupIds.add(id);
+    }
+    window.location.href = `entergroup.html?id=${id}&name=${encodeURIComponent(name)}`;
+};
+
+// Fetch Joined Groups for Current User
+async function loadJoinedGroups(uid) {
+    joinedGroupIds.clear();
+    try {
+        const snap = await getDocs(collection(db, "groups"));
+        for (const g of snap.docs) {
+            const memberDoc = await getDoc(doc(db, "groups", g.id, "members", uid));
+            if (memberDoc.exists()) {
+                joinedGroupIds.add(g.id);
+            }
+        }
+    } catch (err) {
+        console.error("Error checking group memberships:", err);
+    }
+}
+
+// Check Auth State
+onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+        window.location.href = "login.html"; 
+        return;
+    }
+    await loadJoinedGroups(user.uid);
+    loadActiveView(currentActiveView);
+});
+
+// Listener: Direct Chats (Profiles)
+function listenToChats() {
+    clearListeners();
+
+    unsubscribeProfiles = onSnapshot(collection(db, "profiles"), (snapshot) => {
+        if (currentActiveView !== "chats") return;
+
+        chatList.innerHTML = "";
+
+        if (snapshot.empty) {
+            chatList.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">No users found.</div>';
+            return;
+        }
+
+        snapshot.forEach((uDoc) => {
+            if (uDoc.id === auth.currentUser.uid) return;
+
+            const u = uDoc.data();
+            const unread = u.unreadCount || 0;
+            const photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
+            
+            const avatarHTML = photo 
+                ? `<img src="${escapeHTML(photo)}" alt="${escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
+                : '👤';
+
+            const safeName = escapeHTML(u.name || 'User');
+            const safeDocId = escapeHTML(uDoc.id);
+
+            chatList.innerHTML += `
+                <div class="list-item" onclick="openChat('${safeDocId}', '${safeName}')">
+                    <div class="item-info">
+                        <div class="avatar">${avatarHTML}</div>
+                        <div class="details">
+                            <h4>${safeName}</h4>
+                            <p>Tap to open direct chat</p>
+                        </div>
+                    </div>
+                    ${unread > 0 ? `<div class="badge">${unread}</div>` : ''}
+                </div>
+            `;
+        });
+    });
+}
+
+// Listener: Groups
+function listenToGroups() {
+    clearListeners();
+
+    const groupContainerHtml = `
+        <div class="card">
+            <h3>Start a Discussion</h3>
+            <input id="new-group-name" type="text" class="modern-input" placeholder="E.g. JAMB Mathematics 2027...">
+            <button class="btn-create" onclick="handleCreateGroup()">CREATE GROUP</button>
+        </div>
+        <div id="group-items-wrapper">
+            <div style="padding: 20px; text-align: center; color: var(--subtext);">Loading discussion groups...</div>
+        </div>
+    `;
+
+    chatList.innerHTML = groupContainerHtml;
+    const groupWrapper = document.getElementById("group-items-wrapper");
+
+    const q = query(collection(db, "groups"), orderBy("createdAt", "desc"));
+    unsubscribeGroups = onSnapshot(q, (snapshot) => {
+        if (currentActiveView !== "groups") return;
+
+        groupWrapper.innerHTML = "";
+
+        if (snapshot.empty) {
+            groupWrapper.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">No active discussion groups yet.</div>';
+            return;
+        }
+
+        snapshot.forEach((groupDoc) => {
+            const group = groupDoc.data();
+            const groupId = groupDoc.id;
+            const isJoined = joinedGroupIds.has(groupId);
+            
+            const safeGroupName = escapeHTML(group.name || 'Group');
+            const safeAdmin = escapeHTML(group.creatorName || 'Admin');
+
+            groupWrapper.innerHTML += `
+                <div class="list-item">
+                    <div class="item-info">
+                        <div class="avatar">👥</div>
+                        <div class="details">
+                            <h4>${safeGroupName}</h4>
+                            <p>Admin: ${safeAdmin}</p>
+                        </div>
+                    </div>
+                    <button class="btn-action ${isJoined ? 'btn-enter' : ''}" onclick="openGroup('${groupId}', '${safeGroupName}', ${isJoined})">
+                        ${isJoined ? 'ENTER' : 'JOIN'}
+                    </button>
+                </div>
+            `;
+        });
+    });
+}
+
+// Unsubscribe active listeners on tab switch
+function clearListeners() {
+    if (unsubscribeProfiles) { unsubscribeProfiles(); unsubscribeProfiles = null; }
+    if (unsubscribeGroups) { unsubscribeGroups(); unsubscribeGroups = null; }
+}
+
+// Dynamic Tab View Renderer
+function loadActiveView(view) {
+    currentActiveView = view;
+
+    if (view === "chats") {
+        chatList.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">Loading conversations...</div>';
+        listenToChats();
+    } else if (view === "groups") {
+        listenToGroups();
+    } else if (view === "questions") {
+        clearListeners();
+        chatList.innerHTML = `
+            <div class="card">
+                <h3>Ask a Question</h3>
+                <textarea class="question-box" placeholder="Type your question here..."></textarea>
+                <button class="submit-btn">Submit Question</button>
+            </div>
+        `;
+    }
+}
+
+// Tab Listeners
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        loadActiveView(tab.dataset.view);
+    });
+});
+</script>
+</body>
+</html>

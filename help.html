@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help &amp; Support - Flexi Educational Consult</title>
+
+  <!-- Global Theme Stylesheet -->
+  <link rel="stylesheet" href="theme.css">
+
+  <!-- Lucide Icons -->
+  <script src="lucide.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      background: var(--header);
+      padding: 10px 0;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Search Input Card */
+    .search-card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--subtext);
+      flex-shrink: 0;
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .search-input::placeholder {
+      color: var(--subtext);
+    }
+
+    /* Quick Contact Support Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .contact-card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 14px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-decoration: none;
+      color: var(--text);
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .contact-card:active {
+      transform: scale(0.97);
+      border-color: var(--green, #2E8B57);
+    }
+
+    .contact-icon-bg {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: rgba(46, 139, 87, 0.12);
+      color: var(--green, #2E8B57);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* FAQ Section */
+    .section-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--subtext);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 12px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-header {
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+      gap: 10px;
+    }
+
+    .faq-question {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+    }
+
+    .faq-chevron {
+      color: var(--subtext);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+      font-size: 0.85rem;
+      color: var(--subtext);
+      line-height: 1.5;
+      background-color: var(--bg);
+      border-top: 1px solid transparent;
+      padding: 0 16px;
+    }
+
+    .faq-item.active {
+      border-color: var(--green, #2E8B57);
+    }
+
+    .faq-item.active .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--green, #2E8B57);
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      padding: 12px 16px;
+      border-top-color: var(--border);
+    }
+
+    /* Empty state for search */
+    .no-faq {
+      display: none;
+      text-align: center;
+      padding: 24px 12px;
+      color: var(--subtext);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Bar -->
+    <header class="header">
+      <a href="javascript:history.back()" class="back-btn">
+        <i data-lucide="arrow-left"></i>
+      </a>
+      <span class="header-title">Help &amp; Support</span>
+    </header>
+
+    <!-- Search FAQs -->
+    <div class="search-card">
+      <i data-lucide="search" class="search-icon"></i>
+      <input type="text" id="faq-search" class="search-input" placeholder="Search questions, subjects, issues..." />
+    </div>
+
+    <!-- Contact Channels -->
+    <div class="contact-grid">
+      <a href="https://wa.me/2340000000000" target="_blank" class="contact-card">
+        <div class="contact-icon-bg">
+          <i data-lucide="message-circle" style="width:20px; height:20px;"></i>
+        </div>
+        <span class="contact-label">WhatsApp</span>
+      </a>
+
+      <a href="mailto:support@flexieduconsult.com.ng" class="contact-card">
+        <div class="contact-icon-bg">
+          <i data-lucide="mail" style="width:20px; height:20px;"></i>
+        </div>
+        <span class="contact-label">Email Support</span>
+      </a>
+
+      <a href="tel:+2340000000000" class="contact-card">
+        <div class="contact-icon-bg">
+          <i data-lucide="phone-call" style="width:20px; height:20px;"></i>
+        </div>
+        <span class="contact-label">Call Support</span>
+      </a>
+    </div>
+
+    <!-- FAQs Accordion List -->
+    <div class="section-title">Frequently Asked Questions</div>
+
+    <div id="faq-container" class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span class="faq-question">How do I update offline questions?</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px; height:18px;"></i>
+        </div>
+        <div class="faq-answer">
+          Go to <strong>Update Questions</strong> from the home menu while connected to the internet. Tap on <em>"Check &amp; Update All Questions"</em> to download the latest WAEC/JAMB question bank to your phone.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span class="faq-question">Can I take CBT practice tests offline?</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px; height:18px;"></i>
+        </div>
+        <div class="faq-answer">
+          Yes! Once you have synced questions at least once via the Update Questions page, all CBT exams and practice modes work completely offline without internet connection.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span class="faq-question">How does bookmarking work?</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px; height:18px;"></i>
+        </div>
+        <div class="faq-answer">
+          When reviewing questions during or after a CBT practice test, tap the bookmark icon to save tough questions. You can access and review all saved questions anytime from the <strong>Saved Bookmarks</strong> screen.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span class="faq-question">How is my average speed and accuracy calculated?</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px; height:18px;"></i>
+        </div>
+        <div class="faq-answer">
+          Your accuracy percentage is computed from the total number of correct answers over completed test attempts. Average speed measures the time spent per question in seconds across your CBT sessions.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <span class="faq-question">What if I encounter an incorrect answer or typo?</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px; height:18px;"></i>
+        </div>
+        <div class="faq-answer">
+          You can reach out directly via our WhatsApp or Email support channels listed above with the question details and subject name. Our academic team regularly updates correction patches in the question database.
+        </div>
+      </div>
+
+    </div>
+
+    <div id="no-faq" class="no-faq">
+      No matching help topics found. Reach out to our direct support channels above!
+    </div>
+
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    // Accordion toggle handler
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+
+        // Close other items
+        document.querySelectorAll('.faq-item').forEach(other => {
+          if (other !== item) other.classList.remove('active');
+        });
+
+        item.classList.toggle('active');
+      });
+    });
+
+    // FAQ Search Filter
+    const searchInput = document.getElementById('faq-search');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const noFaq = document.getElementById('no-faq');
+
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase().trim();
+      let matchCount = 0;
+
+      faqItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(term)) {
+          item.style.display = 'block';
+          matchCount++;
+        } else {
+          item.style.display = 'none';
+          item.classList.remove('active');
+        }
+      });
+
+      noFaq.style.display = (matchCount === 0 && term !== '') ? 'block' : 'none';
+    });
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>

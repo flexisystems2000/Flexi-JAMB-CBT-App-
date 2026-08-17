@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Flexi Educational Consult</title>
+
+  <!-- Global Theme Stylesheet -->
+  <link rel="stylesheet" href="theme.css">
+
+  <!-- Lucide Icons -->
+<script src="lucide.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      background: var(--header);
+      padding: 10px 0;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Hero / App Branding Card */
+    .hero-card {
+      background-color: var(--card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 24px 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      background-color: rgba(46, 139, 87, 0.12);
+      color: var(--green, #2E8B57);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .brand-subtitle {
+      font-size: 0.85rem;
+      color: var(--subtext);
+      line-height: 1.4;
+      max-width: 360px;
+    }
+
+    .version-tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--green, #2E8B57);
+      background-color: rgba(46, 139, 87, 0.12);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    /* Stat Banner Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 14px 12px;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--green, #2E8B57);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--subtext);
+      margin-top: 2px;
+      font-weight: 500;
+    }
+
+    /* General Cards */
+    .card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 18px;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-body {
+      font-size: 0.85rem;
+      color: var(--subtext);
+      line-height: 1.55;
+    }
+
+    /* Key Features List */
+    .features-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+    }
+
+    .feature-icon-wrapper {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background-color: rgba(46, 139, 87, 0.12);
+      color: var(--green, #2E8B57);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .feature-text-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .feature-text-desc {
+      font-size: 0.78rem;
+      color: var(--subtext);
+      margin-top: 2px;
+      line-height: 1.35;
+    }
+
+    /* Footer Credits */
+    .footer-credits {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 0.78rem;
+      color: var(--subtext);
+    }
+
+    .footer-credits strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Bar -->
+    <header class="header">
+      <a href="javascript:history.back()" class="back-btn">
+        <i data-lucide="arrow-left"></i>
+      </a>
+      <span class="header-title">About Us</span>
+    </header>
+
+    <!-- App Hero Header -->
+    <div class="hero-card">
+      <div class="brand-logo">
+        <i data-lucide="graduation-cap" style="width:36px; height:36px;"></i>
+      </div>
+      <div class="brand-title">Flexi Educational Consult</div>
+      <div class="brand-subtitle">Empowering students across Nigeria for WAEC, NECO &amp; JAMB excellence through intelligent digital learning tools.</div>
+      <span class="version-tag">v1.2.0 • 2026 Edition</span>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-value">6,000+</div>
+        <div class="stat-label">Past &amp; Model Questions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Offline Accessible</div>
+      </div>
+    </div>
+
+    <!-- Mission Statement -->
+    <div class="card">
+      <div class="card-title">
+        <i data-lucide="target" style="width:18px; height:18px; color: var(--green, #2E8B57);"></i>
+        Our Mission
+      </div>
+      <div class="card-body">
+        Flexi Educational Consult is dedicated to breaking barriers in secondary and tertiary entrance exam preparation. By combining offline CBT technology, AI tutoring, interactive lesson notes, and official exam guides, we provide everything candidates need to score higher.
+      </div>
+    </div>
+
+    <!-- Features & Tools -->
+    <div class="card">
+      <div class="card-title">
+        <i data-lucide="sparkles" style="width:18px; height:18px; color: var(--green, #2E8B57);"></i>
+        Complete Learning Ecosystem
+      </div>
+      
+      <div class="features-grid">
+
+        <!-- 6000+ Question Bank -->
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="database" style="width:18px; height:18px;"></i>
+          </div>
+          <div>
+            <div class="feature-text-title">6,000+ Question Bank</div>
+            <div class="feature-text-desc">Comprehensive database covering past and model questions across multiple subjects with detailed explanations.</div>
+          </div>
+        </div>
+
+        <!-- Jarvis AI Tutor -->
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="bot" style="width:18px; height:18px;"></i>
+          </div>
+          <div>
+            <div class="feature-text-title">Jarvis AI Tutor</div>
+            <div class="feature-text-desc">Get instant step-by-step explanations, topic breakdowns, and instant problem-solving assistance.</div>
+          </div>
+        </div>
+
+        <!-- Video Lesson Notes -->
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="video" style="width:18px; height:18px;"></i>
+          </div>
+          <div>
+            <div class="feature-text-title">Video Lesson Notes</div>
+            <div class="feature-text-desc">Curated video topics and structured lesson summaries designed for quick concept mastery.</div>
+          </div>
+        </div>
+
+        <!-- Official Syllabus & Brochure -->
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="book-marked" style="width:18px; height:18px;"></i>
+          </div>
+          <div>
+            <div class="feature-text-title">Syllabus &amp; JAMB Brochure</div>
+            <div class="feature-text-desc">Access up-to-date WAEC/JAMB exam syllabi alongside institution requirements and course eligibility lists.</div>
+          </div>
+        </div>
+
+        <!-- Performance Analytics -->
+        <div class="feature-item">
+          <div class="feature-icon-wrapper">
+            <i data-lucide="bar-chart-3" style="width:18px; height:18px;"></i>
+          </div>
+          <div>
+            <div class="feature-text-title">Smart CBT Performance Insights</div>
+            <div class="feature-text-desc">Track average speed per question, subject strengths, practice history, and readiness scores.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Information -->
+    <div class="footer-credits">
+      <p>&copy; 2026 <strong>Flexi Educational Consult</strong>.</p>
+      <p style="margin-top: 4px;">All rights reserved.</p>
+    </div>
+
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

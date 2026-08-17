@@ -1,0 +1,429 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Performance Analytics - Flexi Educational Consult</title>    <!-- Global Theme Stylesheet -->    <link rel="stylesheet" href="theme.css">    <!-- Lucide Icons -->    <script src="lucide.min.js"></script>   <!-- Chart.js for visual performance metrics -->    <script src="chart.js"></script>    <style>  
+    * {  
+      box-sizing: border-box;  
+      margin: 0;  
+      padding: 0;  
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;  
+    }  
+  
+    body {  
+      background-color: var(--bg);  
+      color: var(--text);  
+      padding: 16px;  
+      display: flex;  
+      justify-content: center;  
+      min-height: 100vh;  
+    }  
+  
+    .container {  
+      width: 100%;  
+      max-width: 480px;  
+      padding-bottom: 24px;  
+    }  
+  
+    /* Header */  
+    .header {  
+      display: flex;  
+      align-items: center;  
+      gap: 12px;  
+      margin-bottom: 20px;  
+      background: var(--header);  
+      padding: 10px 0;  
+    }  
+  
+    .header-title {  
+      font-size: 1.25rem;  
+      font-weight: 700;  
+      color: var(--text);  
+    }  
+  
+    .back-btn {  
+      background: none;  
+      border: none;  
+      color: var(--text);  
+      cursor: pointer;  
+      display: flex;  
+      align-items: center;  
+      text-decoration: none;  
+    }  
+  
+    /* Summary Grid */  
+    .stats-grid {  
+      display: grid;  
+      grid-template-columns: repeat(2, 1fr);  
+      gap: 12px;  
+      margin-bottom: 20px;  
+    }  
+  
+    .stat-card {  
+      background-color: var(--card);  
+      border-radius: 12px;  
+      border: 1px solid var(--border);  
+      box-shadow: var(--card-shadow);  
+      padding: 16px;  
+      display: flex;  
+      flex-direction: column;  
+      gap: 6px;  
+    }  
+  
+    .stat-header {  
+      display: flex;  
+      align-items: center;  
+      justify-content: space-between;  
+      color: var(--subtext);  
+      font-size: 0.8rem;  
+      font-weight: 600;  
+      text-transform: uppercase;  
+    }  
+  
+    .stat-icon {  
+      color: var(--green, #2E8B57);  
+    }  
+  
+    .stat-value {  
+      font-size: 1.5rem;  
+      font-weight: 700;  
+      color: var(--text);  
+    }  
+  
+    .stat-desc {  
+      font-size: 0.75rem;  
+      color: var(--subtext);  
+    }  
+  
+    /* Chart Section Card */  
+    .card {  
+      background-color: var(--card);  
+      border-radius: 12px;  
+      border: 1px solid var(--border);  
+      box-shadow: var(--card-shadow);  
+      padding: 18px;  
+      margin-bottom: 20px;  
+    }  
+  
+    .card-title {  
+      font-size: 0.95rem;  
+      font-weight: 600;  
+      color: var(--text);  
+      margin-bottom: 14px;  
+      display: flex;  
+      align-items: center;  
+      gap: 8px;  
+    }  
+  
+    .chart-container {  
+      position: relative;  
+      width: 100%;  
+      height: 220px;  
+    }  
+  
+    /* Recent Attempts List */  
+    .attempts-list {  
+      display: flex;  
+      flex-direction: column;  
+      gap: 10px;  
+    }  
+  
+    .attempt-item {  
+      display: flex;  
+      align-items: center;  
+      justify-content: space-between;  
+      padding: 12px;  
+      border-radius: 8px;  
+      background-color: var(--bg);  
+      border: 1px solid var(--border);  
+    }  
+  
+    .attempt-info {  
+      display: flex;  
+      flex-direction: column;  
+    }  
+  
+    .attempt-title {  
+      font-size: 0.9rem;  
+      font-weight: 600;  
+      color: var(--text);  
+    }  
+  
+    .attempt-meta {  
+      font-size: 0.75rem;  
+      color: var(--subtext);  
+      margin-top: 2px;  
+    }  
+  
+    .attempt-score {  
+      font-size: 1rem;  
+      font-weight: 700;  
+      color: var(--green, #2E8B57);  
+    }  
+  
+    .empty-state {  
+      text-align: center;  
+      padding: 24px 12px;  
+      color: var(--subtext);  
+      font-size: 0.88rem;  
+    }  
+  </style>  </head>  
+<body>    <div class="container">  <!-- Top Bar -->  
+<header class="header">  
+  <a href="javascript:history.back()" class="back-btn">  
+    <i data-lucide="arrow-left"></i>  
+  </a>  
+  <span class="header-title">Performance Analytics</span>  
+</header>  
+
+<!-- Top KPI Stats Grid -->  
+<div class="stats-grid">  
+  <div class="stat-card">  
+    <div class="stat-header">  
+      <span>Avg Accuracy</span>  
+      <i data-lucide="target" class="stat-icon" style="width:18px; height:18px;"></i>  
+    </div>  
+    <div class="stat-value" id="stat-accuracy">0%</div>  
+    <div class="stat-desc">Target: 80%+</div>  
+  </div>  
+
+  <div class="stat-card">  
+    <div class="stat-header">  
+      <span>Tests Taken</span>  
+      <i data-lucide="file-check-2" class="stat-icon" style="width:18px; height:18px;"></i>  
+    </div>  
+    <div class="stat-value" id="stat-tests">0</div>  
+    <div class="stat-desc">Completed CBT sessions</div>  
+  </div>  
+
+  <div class="stat-card">  
+    <div class="stat-header">  
+      <span>Avg Speed</span>  
+      <i data-lucide="zap" class="stat-icon" style="width:18px; height:18px;"></i>  
+    </div>  
+    <div class="stat-value" id="stat-speed">0s</div>  
+    <div class="stat-desc">Per question</div>  
+  </div>  
+
+  <div class="stat-card">  
+    <div class="stat-header">  
+      <span>Top Subject</span>  
+      <i data-lucide="award" class="stat-icon" style="width:18px; height:18px;"></i>  
+    </div>  
+    <div class="stat-value" id="stat-subject" style="font-size: 1.1rem; line-height: 1.8rem;">None</div>  
+    <div class="stat-desc">Highest score rate</div>  
+  </div>  
+</div>  
+
+<!-- Score Trend Chart -->  
+<div class="card">  
+  <div class="card-title">  
+    <i data-lucide="trending-up" class="stat-icon" style="width:18px; height:18px;"></i>  
+    Recent Score Trajectory  
+  </div>  
+  <div class="chart-container">  
+    <canvas id="scoreChart"></canvas>  
+  </div>  
+</div>  
+
+<!-- Recent CBT Sessions List -->  
+<div class="card">  
+  <div class="card-title">  
+    <i data-lucide="history" class="stat-icon" style="width:18px; height:18px;"></i>  
+    Recent CBT Attempts  
+  </div>  
+  <div id="attempts-list" class="attempts-list">  
+    <div class="empty-state">  
+      Loading CBT records...  
+    </div>  
+  </div>  
+</div>
+
+  </div>    <!-- Global Theme Script -->    <script src="idb.js"></script>
+<script src="theme.js"></script>    <!-- Firebase Integration Script -->    
+    <script type="module">  
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";  
+import { getFirestore, collection, getDocs} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";  
+import { getAuth, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";  
+  
+    const firebaseConfig = {  
+  apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",  
+  authDomain: "flexieduconsult.com.ng",  
+  databaseURL: "https://waec2026jamb2027-default-rtdb.firebaseio.com",  
+  projectId: "waec2026jamb2027"  
+};  
+  
+    const app = initializeApp(firebaseConfig);  
+    console.log(app);  
+    const db = getFirestore(app);  
+    console.log(db);  
+    const auth = getAuth(app);  
+  
+    let chartInstance = null;  
+  
+    onAuthStateChanged(auth, async (currentUser) => {  
+      if (!currentUser) {  
+        window.location.href = "login.html";  
+        return;  
+      }  
+  
+      try {  
+    
+  
+const snap = await getDocs(collection(db, "leaderboard"));
+
+if (!snap.empty) {
+    const attempts = [];
+
+    snap.forEach(doc => {
+        const val = doc.data();
+        if (val && val.uid === currentUser.uid) {
+            attempts.push(val);
+        }
+    });
+
+    attempts.sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+    renderAnalytics(attempts);
+} else {
+    renderAnalytics([]);
+}
+} catch (err) {    
+    console.error(err);    
+    renderAnalytics([]);    
+}    
+});    
+    function renderAnalytics(data) {  
+      const listContainer = document.getElementById('attempts-list');  
+  
+      // Zero-state handling if no records are found  
+      if (!data || data.length === 0) {  
+        document.getElementById('stat-accuracy').textContent = "0%";  
+        document.getElementById('stat-tests').textContent = "0";  
+        document.getElementById('stat-speed').textContent = "0s";  
+        document.getElementById('stat-subject').textContent = "None";  
+  
+        renderChart([]);  
+  
+        listContainer.innerHTML = `  
+          <div class="empty-state">  
+            No CBT practice records found. Complete a test to view your performance data!  
+          </div>  
+        `;  
+        return;  
+      }  
+  
+      // Compute statistics when records exist  
+      const totalTests = data.length;  
+      let totalPercentage = 0;  
+      let totalSpeed = 0;  
+      const subjectMap = {};  
+  
+      data.forEach(item => {  
+        const pct = item.score && item.total ? Math.round((item.score / item.total) * 100) : (item.score || 0);  
+        totalPercentage += pct;  
+        totalSpeed += (item.speedSec || 0);  
+  
+        const subj = item.exam || "CBT Exam"; 
+        if (!subjectMap[subj]) subjectMap[subj] = { count: 0, totalPct: 0 };  
+        subjectMap[subj].count += 1;  
+        subjectMap[subj].totalPct += pct;  
+      });  
+  
+      const avgAccuracy = Math.round(totalPercentage / totalTests);  
+      const avgSpeed = Math.round(totalSpeed / totalTests);  
+  
+      let topSubject = "None";  
+      let highestAvg = 0;  
+      Object.keys(subjectMap).forEach(subj => {  
+        const avg = subjectMap[subj].totalPct / subjectMap[subj].count;  
+        if (avg > highestAvg) {  
+          highestAvg = avg;  
+          topSubject = subj;  
+        }  
+      });  
+  
+      document.getElementById('stat-accuracy').textContent = `${avgAccuracy}%`;  
+      document.getElementById('stat-tests').textContent = totalTests;  
+      document.getElementById('stat-speed').textContent = `${avgSpeed}s`;  
+      document.getElementById('stat-subject').textContent = topSubject;  
+  
+      renderChart(data.slice().reverse());  
+  
+      listContainer.innerHTML = "";  
+      data.forEach(item => {  
+        const pct = item.percentage || 0;  
+        const subj = item.exam || "CBT Exam";  
+        const dateStr = item.timestamp  
+    ? new Date(item.timestamp).toLocaleDateString()  
+    : "Recent";  
+  
+        const div = document.createElement('div');  
+        div.className = 'attempt-item';  
+        div.innerHTML = `  
+          <div class="attempt-info">  
+            <span class="attempt-title">${escapeHTML(subj)}</span>  
+            <span class="attempt-meta">${escapeHTML(dateStr)} • ${item.speedSec || 0}s / ques</span>  
+          </div>  
+          <div class="attempt-score">${pct}%</div>  
+        `;  
+        listContainer.appendChild(div);  
+      });  
+    }  
+  
+    function renderChart(items) {  
+      const ctx = document.getElementById('scoreChart').getContext('2d');  
+      const isDark = document.body.classList.contains('dark');  
+  
+      const labels = items.length > 0 ? items.map((_, i) => `Test ${i + 1}`) : ['Start'];  
+      const scores = items.length > 0
+    ? items.map(item => item.percentage || 0)
+    : [0];
+  
+      if (chartInstance) chartInstance.destroy();  
+  
+      chartInstance = new Chart(ctx, {  
+        type: 'line',  
+        data: {  
+          labels: labels,  
+          datasets: [{  
+            label: 'Score (%)',  
+            data: scores,  
+            borderColor: '#2E8B57',  
+            backgroundColor: 'rgba(46, 139, 87, 0.12)',  
+            borderWidth: 2.5,  
+            fill: true,  
+            tension: 0.35,  
+            pointBackgroundColor: '#2E8B57',  
+            pointRadius: 4  
+          }]  
+        },  
+        options: {  
+          responsive: true,  
+          maintainAspectRatio: false,  
+          plugins: {  
+            legend: { display: false }  
+          },  
+          scales: {  
+            y: {  
+              min: 0,  
+              max: 100,  
+              grid: { color: isDark ? 'rgba(255, 255, 255, 0.08)' : 'rgba(0, 0, 0, 0.06)' },  
+              ticks: { color: isDark ? '#A1A1AA' : '#6B7280' }  
+            },  
+            x: {  
+              grid: { display: false },  
+              ticks: { color: isDark ? '#A1A1AA' : '#6B7280' }  
+            }  
+          }  
+        }  
+      });  
+    }  
+  
+    function escapeHTML(str) {  
+      return typeof str === 'string' ? str.replace(/[&<>'"]/g, tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)) : '';  
+    }  
+  
+    lucide.createIcons();  
+</script>
+</body>  
+</html>  

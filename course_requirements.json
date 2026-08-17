@@ -1,0 +1,1311 @@
+{
+  "Accounting": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Principles of Accounts"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two relevant Social Science/Commercial subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Accounting/Business Management.", "ND/HND in relevant discipline with Upper/Lower Credit."]
+  },
+  "Actuarial Science": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two other relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Economics.", "ND/HND with credit pass in Actuarial Science or Finance."]
+  },
+  "Banking and Finance": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Principles of Accounts"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two Social Science/Commercial subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and one other subject.", "ND/HND in Banking & Finance with Credit."]
+  },
+  "Business Administration": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two other Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes chosen from Economics, Accounts, and Business Management.", "ND/HND in Business Administration."]
+  },
+  "Business Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two other commercial subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Business Management.", "ND/HND in Business Management."]
+  },
+  "Cooperative and Rural Development": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Agricultural Science or Commerce.",
+    "directEntry": ["Two 'A' Level passes in Economics and Geography/Agricultural Science.", "ND/HND in Cooperative Studies."]
+  },
+  "Entrepreneurship": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Business Management/Commerce.", "ND/HND in Business Studies."]
+  },
+  "Finance": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Principles of Accounts"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two Commercial subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Accounting.", "ND/HND in Finance."]
+  },
+  "Human Resource Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "ND/HND in Business Administration or Personnel Management."]
+  },
+  "Industrial Relations and Personnel Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "ND/HND in Personnel Management or Industrial Relations."]
+  },
+  "Insurance": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two other relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Mathematics.", "ND/HND in Insurance."]
+  },
+  "International Relations": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Economics", "Government", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Government, and History/Economics.",
+    "directEntry": ["Two 'A' Level passes in Government and History/Economics.", "ND/HND in International Relations or Public Admin."]
+  },
+  "Local Government and Development Studies": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Local Government Studies."]
+  },
+  "Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and two Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Management/Accounts.", "ND/HND in Management Studies."]
+  },
+  "Marketing": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Commerce.",
+    "directEntry": ["Two 'A' Level passes in Economics and Commerce/Management.", "ND/HND in Marketing."]
+  },
+  "Office and Information Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Commerce, and two other relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Economics and Commercial subjects.", "ND/HND in Office Technology Management."]
+  },
+  "Public Administration": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Public Administration."]
+  },
+  "Purchasing and Supply": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Commerce.",
+    "directEntry": ["Two 'A' Level passes in Economics and Business Management.", "ND/HND in Purchasing and Supply."]
+  },
+  "Secretarial Administration": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Economics", "Commerce", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Commerce, and two relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Commercial subjects.", "ND/HND in Secretarial Studies or OTM."]
+  },
+  "Taxation": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Principles of Accounts"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Principles of Accounts.",
+    "directEntry": ["Two 'A' Level passes in Accounting and Economics.", "ND/HND in Taxation or Accounting."]
+  },
+  "Transport Management": {
+    "faculty": "Administration",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Economics, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Geography and Economics.", "ND/HND in Transport Technology or Management."]
+  },
+
+  "Agricultural Economics": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Agricultural Science", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Agricultural Science/Biology.", "ND/HND in Agriculture."]
+  },
+  "Agricultural Economics and Extension": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Agricultural Science", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Agricultural Extension."]
+  },
+  "Agricultural Extension": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Agricultural Science", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and one Social Science subject.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Agricultural Science/Biology.", "ND/HND in Agriculture."]
+  },
+  "Agricultural Extension and Rural Development": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Agricultural Science", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Agricultural Science, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Agricultural Science.", "ND/HND in Rural Development/Agriculture."]
+  },
+  "Agronomy": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Crop Production."]
+  },
+  "Animal Science": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Animal Health & Production."]
+  },
+  "Crop Science": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Crop Science."]
+  },
+  "Crop Science and Horticulture": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Botany.", "ND/HND in Horticulture."]
+  },
+  "Crop Protection": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Agricultural Science.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Crop Protection."]
+  },
+  "Crop Protection and Environmental Biology": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Crop Protection or Environmental Science."]
+  },
+  "Soil Science": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Soil Science."]
+  },
+  "Soil Resources Management": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Geography/Biology.", "ND/HND in Soil Management."]
+  },
+  "Food Science and Technology": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Mathematics", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology/Agricultural Science.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "ND/HND in Food Technology."]
+  },
+  "Fisheries": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Zoology.", "ND/HND in Fisheries Technology."]
+  },
+  "Fisheries and Aquaculture": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Aquaculture."]
+  },
+  "Forestry": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Forestry Technology."]
+  },
+  "Forestry and Wildlife Management": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Forestry/Wildlife Management."]
+  },
+  "Forestry and Environmental Management": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Geography/Biology.", "ND/HND in Forestry or Environmental Tech."]
+  },
+  "Home Science and Management": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Home Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Home Economics, and Agricultural Science.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Home Economics.", "ND/HND in Home Economics."]
+  },
+  "Horticulture": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Agricultural Science.", "ND/HND in Horticulture Technology."]
+  },
+  "Water Resources and Agro-Meteorology": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Geography or Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Meteorology or Water Resources."]
+  },
+  "Agricultural Engineering": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Agricultural Science or Biology.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Agricultural Engineering."]
+  },
+  "Agricultural Biochemistry": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Physics.", "ND/HND in Science Lab Tech."]
+  },
+  "Agricultural Technology": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Agricultural Science", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Agricultural Science, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Agricultural Science.", "ND/HND in Agricultural Technology."]
+  },
+  "Plant Science": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Botany.", "ND/HND in Plant Science/Crop Tech."]
+  },
+  "Plant Breeding and Seed Science": {
+    "faculty": "Agriculture",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Agricultural Science.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Seed Technology."]
+  },
+
+  "Architecture": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Art (Fine Arts)"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Physics, Fine Arts/Technical Drawing, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Architecture with Upper Credit."]
+  },
+  "Building": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Technical Drawing or Economics.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Building Technology."]
+  },
+  "Chemical Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry, Mathematics, and Physics.", "ND/HND in Chemical Engineering."]
+  },
+  "Civil Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics/Technical Drawing.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Civil Engineering."]
+  },
+  "Computer Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Computer Engineering."]
+  },
+  "Electrical Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Technical Drawing.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Electrical Engineering."]
+  },
+  "Electrical and Electronics Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Electrical/Electronics Engineering."]
+  },
+  "Electronics Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Electronics Engineering."]
+  },
+  "Environmental Management": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Biology", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Geography.", "ND/HND in Environmental Science."]
+  },
+  "Estate Management": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Geography, and one Science subject.",
+    "directEntry": ["Two 'A' Level passes in Economics and Mathematics/Geography.", "ND/HND in Estate Management."]
+  },
+  "Geomatics": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Geography.", "ND/HND in Surveying & Geomatics."]
+  },
+  "Industrial and Production Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Production/Industrial Engineering."]
+  },
+  "Industrial Design": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Art (Fine Arts)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Fine Arts/Technical Drawing, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Fine Arts and Mathematics/Physics.", "ND/HND in Industrial Design."]
+  },
+  "Information and Communication Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in ICT Engineering."]
+  },
+  "Mechanical Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Technical Drawing.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Mechanical Engineering."]
+  },
+  "Mechatronics Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Mechatronics or Robotics Engineering."]
+  },
+  "Metallurgical and Materials Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Physics, Chemistry, and Mathematics.", "ND/HND in Metallurgical Tech."]
+  },
+  "Mining Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Chemistry.", "ND/HND in Mining Engineering."]
+  },
+  "Petroleum Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry, Physics, and Mathematics.", "ND/HND in Petroleum Tech."]
+  },
+  "Polymer and Textile Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "ND/HND in Polymer/Textile Tech."]
+  },
+  "Quantity Surveying": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Economics, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Economics.", "ND/HND in Quantity Surveying."]
+  },
+  "Surveying and Geoinformatics": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Geography.", "ND/HND in Surveying & Geoinformatics."]
+  },
+  "Telecommunication Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Telecommunications Tech."]
+  },
+  "Urban and Regional Planning": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Geography", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Geography, Economics, and Physics/Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Geography and Mathematics.", "ND/HND in Urban & Regional Planning."]
+  },
+  "Water Resources Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Water Resources Engineering."]
+  },
+  "Wood Products Engineering": {
+    "faculty": "Engineering",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Technical Drawing.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Chemistry.", "ND/HND in Wood Technology."]
+  },
+
+  "Adult Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three Arts/Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in Arts or Social Science subjects.", "NCE in Adult Education."]
+  },
+  "Adult and Continuing Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "NCE in Adult Education."]
+  },
+  "Arts Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Literature in English", "History", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Literature in English, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in Arts subjects.", "NCE in Arts combinations."]
+  },
+  "Business Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Commerce"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Commerce, and Principles of Accounts.",
+    "directEntry": ["Two 'A' Level passes in Economics and Business Studies.", "NCE in Business Education."]
+  },
+  "Curriculum and Instruction": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three teaching subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant teaching subjects.", "NCE in Education."]
+  },
+  "Early Childhood Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three Arts/Science/Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "NCE in Early Childhood/Primary Education."]
+  },
+  "Educational Administration": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "NCE in Educational Admin."]
+  },
+  "Educational Foundations": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in Education related subjects.", "NCE in Education."]
+  },
+  "Educational Management": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "NCE in Educational Management."]
+  },
+  "Educational Psychology": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Biology", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, and two Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in Social Science subjects.", "NCE in Educational Psychology."]
+  },
+  "Educational Technology": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "NCE in Educational Tech."]
+  },
+  "Guidance and Counselling": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, and two Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "NCE in Guidance & Counselling."]
+  },
+  "Health Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physical and Health Education"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physical Education.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "NCE in Physical & Health Education."]
+  },
+  "Human Kinetics": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Biology", "Physical and Health Education", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, and Physical Education.",
+    "directEntry": ["Two 'A' Level passes in Biology and Physical Education.", "NCE in Human Kinetics."]
+  },
+  "Library and Information Science": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three Arts/Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "Diploma in Library & Information Science."]
+  },
+  "Primary Education Studies": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three subjects across Arts/Sciences.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "NCE in Primary Education."]
+  },
+  "Science Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Science subjects.", "NCE in Integrated Science/Sciences."]
+  },
+  "Social Science Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Economics", "Government", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Government, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "NCE in Social Studies."]
+  },
+  "Special Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three relevant subjects.",
+    "directEntry": ["Two 'A' Level passes in relevant subjects.", "NCE in Special Education."]
+  },
+  "Teacher Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, and three teaching subjects.",
+    "directEntry": ["Two 'A' Level passes in teaching subjects.", "NCE in Education."]
+  },
+  "Technical Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Technical Drawing.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "NCE/ND in Technical Education."]
+  },
+  "Vocational Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Agricultural Science", "Home Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Agricultural Science, Home Economics, and Commerce.",
+    "directEntry": ["Two 'A' Level passes in Vocational subjects.", "NCE in Vocational Education."]
+  },
+  "Agricultural Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Agricultural Science", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Agricultural Science, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Agricultural Science and Chemistry.", "NCE in Agricultural Education."]
+  },
+  "Biology Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "NCE in Biology Education."]
+  },
+  "Chemistry Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Chemistry", "Physics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "NCE in Chemistry Education."]
+  },
+  "Christian Religious Studies Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Christian Religious Studies (CRS)", "Government", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, CRS, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in CRS and Arts subjects.", "NCE in CRS Education."]
+  },
+  "Computer Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Computer Studies", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Computer Studies, Physics, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "NCE in Computer Science Education."]
+  },
+  "Economics Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Government, and Commerce.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "NCE in Economics Education."]
+  },
+  "English Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Literature in English, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Arts.", "NCE in English Education."]
+  },
+  "French Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "French", "Literature in English", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, French, Literature in English, and one Arts subject.",
+    "directEntry": ["Two 'A' Level passes in French and Arts.", "NCE in French Education."]
+  },
+  "Geography Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Geography", "Mathematics", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Geography, Economics, and one Science/Social Science subject.",
+    "directEntry": ["Two 'A' Level passes in Geography and Economics.", "NCE in Geography Education."]
+  },
+  "History Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "History", "Government", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, History, Government, and Literature in English.",
+    "directEntry": ["Two 'A' Level passes in History and Government.", "NCE in History Education."]
+  },
+  "Integrated Science Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry/Physics.", "NCE in Integrated Science."]
+  },
+  "Islamic Studies Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Islamic Studies", "Arabic", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Islamic Studies, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in Islamic Studies and Arabic/Arts.", "NCE in Islamic Studies Education."]
+  },
+  "Mathematics Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "NCE in Mathematics Education."]
+  },
+  "Music Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Music", "Literature in English", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Music, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in Music and Arts subjects.", "NCE in Music Education."]
+  },
+  "Physical and Health Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Biology", "Physical and Health Education", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, and Physical Education.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "NCE in Physical Education."]
+  },
+  "Physics Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "NCE in Physics Education."]
+  },
+  "Political Science Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "History"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and History.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "NCE in Political Science Education."]
+  },
+  "Social Studies Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Social Science subjects.", "NCE in Social Studies."]
+  },
+  "Yoruba Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Yoruba", "Literature in English", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Yoruba, Literature in English, and one Arts subject.",
+    "directEntry": ["Two 'A' Level passes in Yoruba and Arts.", "NCE in Yoruba Education."]
+  },
+  "Igbo Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Igbo", "Literature in English", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Igbo, Literature in English, and one Arts subject.",
+    "directEntry": ["Two 'A' Level passes in Igbo and Arts.", "NCE in Igbo Education."]
+  },
+  "Hausa Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Hausa", "Literature in English", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Hausa, Literature in English, and one Arts subject.",
+    "directEntry": ["Two 'A' Level passes in Hausa and Arts.", "NCE in Hausa Education."]
+  },
+  "Fine and Applied Arts Education": {
+    "faculty": "Education",
+    "utmeSubjects": ["Use of English", "Art (Fine Arts)", "Literature in English", "History"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Fine Arts, and two Arts subjects.",
+    "directEntry": ["Two 'A' Level passes in Fine Arts and Arts.", "NCE in Fine Arts Education."]
+  },
+
+  "Common Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, and two Arts/Social Science subjects.",
+    "directEntry": ["Two 'A' Level passes in Arts/Social Sciences.", "First Degree with 2:2 minimum."]
+  },
+  "Civil Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Government.", "First Degree in related fields."]
+  },
+  "Commercial and Industrial Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Economics and Literature in English.", "First Degree in Commercial fields."]
+  },
+  "International Law and Jurisprudence": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and History.",
+    "directEntry": ["Two 'A' Level passes in Government and History/Literature.", "First Degree in Arts/Social Sciences."]
+  },
+  "Private and Property Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Social Sciences.", "First Degree in Law/Arts."]
+  },
+  "Public Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and History.",
+    "directEntry": ["Two 'A' Level passes in Government and History.", "First Degree in Humanities."]
+  },
+  "Islamic Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Islamic Studies", "Arabic", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Islamic Studies, Literature in English, and Arabic/Government.",
+    "directEntry": ["Two 'A' Level passes in Islamic Studies and Arabic.", "Diploma in Sharia/Islamic Law."]
+  },
+  "Customary Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and History.",
+    "directEntry": ["Two 'A' Level passes in Arts or Social Science subjects.", "First Degree in Law/Humanities."]
+  },
+  "Jurisprudence and International Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Government.", "First Degree in Humanities."]
+  },
+  "Business Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "First Degree in Business/Social Sciences."]
+  },
+  "Constitutional Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "History"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and History.",
+    "directEntry": ["Two 'A' Level passes in Government and History.", "First Degree in Political Science/Law."]
+  },
+  "Criminal Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and CRS.",
+    "directEntry": ["Two 'A' Level passes in Government and Literature.", "First Degree in Law/Humanities."]
+  },
+  "Law": {
+    "faculty": "Law",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes including Use of English, Mathematics, Literature in English, Government, and one Arts/Social Science subject.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Government.", "First Degree with minimum 2:2."]
+  },
+
+  "Anatomy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "B.Sc in related Biological Science."]
+  },
+  "Audiology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Biology/Chemistry.", "ND/HND in Health Tech."]
+  },
+  "Dentistry": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in one sitting.",
+    "directEntry": ["Three 'A' Level passes in Biology, Chemistry, and Physics.", "B.Sc in Anatomy/Physiology."]
+  },
+  "Dental Surgery": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in one sitting.",
+    "directEntry": ["Three 'A' Level passes in Biology, Chemistry, and Physics.", "B.Sc in Medical Sciences with 2:1."]
+  },
+  "Dental Technology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Chemistry.", "ND/HND in Dental Technology."]
+  },
+  "Dental Therapy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Dental Therapy."]
+  },
+  "Environmental Health Science": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Environmental Health."]
+  },
+  "Epidemiology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Public Health Technology."]
+  },
+  "Human Anatomy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "B.Sc in Biological Sciences."]
+  },
+  "Human Nutrition and Dietetics": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Nutrition & Dietetics."]
+  },
+  "Medical Biochemistry": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Physics.", "ND/HND in Biochemistry/Lab Tech."]
+  },
+  "Medical Laboratory Science": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Medical Lab Technology."]
+  },
+  "Medical Rehabilitation": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Biology.", "ND/HND in Rehabilitation Tech."]
+  },
+  "Medicine and Surgery": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in one sitting.",
+    "directEntry": ["Three 'A' Level passes in Biology, Chemistry, and Physics.", "B.Sc in Medical Sciences with 2:1."]
+  },
+  "Microbiology and Parasitology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Microbiology."]
+  },
+  "Nursing": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in maximum 2 sittings.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "RN/RM (Registered Nurse/Midwife) Certificate."]
+  },
+  "Nursing Science": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "Registered Nurse (RN) license."]
+  },
+  "Nutrition and Dietetics": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Nutrition."]
+  },
+  "Occupational Therapy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Physics and Biology.", "ND/HND in Therapy Tech."]
+  },
+  "Optometry": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Physics/Chemistry.", "ND/HND in Ophthalmic Tech."]
+  },
+  "Pharmaceutical Chemistry": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Biology.", "ND/HND in Pharmacy Tech."]
+  },
+  "Pharmaceutical Technology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Physics", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics.", "ND/HND in Pharmaceutical Tech."]
+  },
+  "Pharmacognosy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Science Tech."]
+  },
+  "Pharmacology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "B.Sc in Physiology/Biochemistry."]
+  },
+  "Pharmacy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in one sitting.",
+    "directEntry": ["Three 'A' Level passes in Chemistry, Biology, and Physics.", "B.Sc in Biological Sciences."]
+  },
+  "Physiology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "B.Sc in Biological Sciences."]
+  },
+  "Physiotherapy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Biology.", "B.Sc in Anatomy/Physiology."]
+  },
+  "Prosthetics and Orthotics": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Biology", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Biology.", "ND/HND in Prosthetics."]
+  },
+  "Public Health": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Public Health Technology."]
+  },
+  "Radiography": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Chemistry.", "ND/HND in Radiography Tech."]
+  },
+  "Radiography and Radiation Science": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Physics", "Chemistry", "Biology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Chemistry.", "ND/HND in Medical Imaging."]
+  },
+  "Speech and Language Therapy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Therapy Tech."]
+  },
+  "Veterinary Anatomy": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Animal Health."]
+  },
+  "Veterinary Medicine": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics in maximum 2 sittings.",
+    "directEntry": ["Three 'A' Level passes in Biology, Chemistry, and Physics.", "ND/HND in Animal Health & Production with Distinction."]
+  },
+  "Veterinary Physiology": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Animal Science."]
+  },
+  "Veterinary Public Health": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Animal Health."]
+  },
+  "Veterinary Surgery": {
+    "faculty": "Medical",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Three 'A' Level passes in Biology, Chemistry, and Physics.", "B.Sc in Animal Science."]
+  },
+
+  "Applied Biology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Science Lab Tech."]
+  },
+  "Applied Biophysics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Applied Physics."]
+  },
+  "Applied Geology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Physics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology/Geography.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "ND/HND in Geology."]
+  },
+  "Applied Geophysics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology/Geography.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Geophysics."]
+  },
+  "Biochemistry": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Science Laboratory Technology."]
+  },
+  "Biological Science": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Biological Sciences."]
+  },
+  "Biology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry/Physics.", "NCE/ND in Biology."]
+  },
+  "Biotechnology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Biotechnology."]
+  },
+  "Botany": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Agricultural Science"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology/Botany and Chemistry.", "ND/HND in Plant Tech."]
+  },
+  "Cell Biology and Genetics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Science Tech."]
+  },
+  "Chemistry": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Physics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "ND/HND in Chemistry."]
+  },
+  "Computer Science": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Computer Science with Upper Credit."]
+  },
+  "Cyber Security": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Cyber Security or Computer Tech."]
+  },
+  "Data Science": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Economics, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Economics.", "ND/HND in Statistics or Computer Science."]
+  },
+  "Ecology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry/Geography.", "ND/HND in Environmental Science."]
+  },
+  "Environmental Biology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Environmental Biology."]
+  },
+  "Environmental Science": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Geography/Biology.", "ND/HND in Environmental Science."]
+  },
+  "Forensic Science": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Biology", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Biology, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology/Physics.", "ND/HND in Science Laboratory Tech."]
+  },
+  "Geography": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Geography", "Mathematics", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Geography, Physics, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Geography and Mathematics/Physics.", "ND/HND in Cartography or Urban Planning."]
+  },
+  "Geology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Geology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology/Geography.",
+    "directEntry": ["Two 'A' Level passes in Physics and Chemistry.", "ND/HND in Geology."]
+  },
+  "Geophysics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology/Geography.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Applied Geophysics."]
+  },
+  "Industrial Chemistry": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Mathematics", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Mathematics/Physics.", "ND/HND in Industrial Chemistry."]
+  },
+  "Industrial Mathematics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Economics, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Economics.", "ND/HND in Statistics or Mathematics."]
+  },
+  "Industrial Physics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Applied Physics."]
+  },
+  "Information Technology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Computer Studies.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Information Technology."]
+  },
+  "Marine Biology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Marine Technology."]
+  },
+  "Mathematics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Mathematics or Statistics."]
+  },
+  "Microbiology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Biology.", "ND/HND in Science Lab Tech/Microbiology."]
+  },
+  "Physics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Physics", "Mathematics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Physics and Mathematics.", "ND/HND in Applied Physics."]
+  },
+  "Pure and Applied Biology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Chemistry.", "ND/HND in Biological Sciences."]
+  },
+  "Pure and Applied Chemistry": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Chemistry", "Physics", "Mathematics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Chemistry, Physics, and Biology.",
+    "directEntry": ["Two 'A' Level passes in Chemistry and Physics/Mathematics.", "ND/HND in Chemistry."]
+  },
+  "Pure and Applied Mathematics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Chemistry"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Chemistry, and Further Mathematics.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics.", "ND/HND in Mathematics."]
+  },
+  "Statistics": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Physics", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Physics, Economics, and Chemistry.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Physics/Economics.", "ND/HND in Statistics."]
+  },
+  "Zoology": {
+    "faculty": "Sciences",
+    "utmeSubjects": ["Use of English", "Biology", "Chemistry", "Physics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Chemistry, and Physics.",
+    "directEntry": ["Two 'A' Level passes in Biology/Zoology and Chemistry.", "ND/HND in Biological Science."]
+  },
+
+  "Anthropology": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Geography/History.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Social Works/Admin."]
+  },
+  "Criminology and Security Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Psychology"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Literature or History.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Criminology or Security Studies."]
+  },
+  "Demography and Social Statistics": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Government, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Economics.", "ND/HND in Statistics or Demography."]
+  },
+  "Economics": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Government, and one other Social Science subject.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government/Mathematics.", "ND/HND in Financial Studies or Business Tech."]
+  },
+  "Geography and Environmental Management": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Geography", "Economics", "Government"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Geography, Economics, and Government.",
+    "directEntry": ["Two 'A' Level passes in Geography and Economics.", "ND/HND in Environmental Science or Geography."]
+  },
+  "Mass Communication": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Literature in English", "Government", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Literature in English, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Literature in English and Government.", "ND/HND in Mass Communication with Upper Credit."]
+  },
+  "Peace and Conflict Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "History"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and History.",
+    "directEntry": ["Two 'A' Level passes in Government and History/Economics.", "ND/HND in Peace Studies or Public Admin."]
+  },
+  "Political Science": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "History"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and History/CRS.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Public Admin or Local Government."]
+  },
+  "Psychology": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Biology", "Government", "Economics"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Biology, Government, and Economics.",
+    "directEntry": ["Two 'A' Level passes in Biology and Government.", "ND/HND in Social Science discipline."]
+  },
+  "Sociology": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and one Arts/Social Science subject.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Social Work/Sociology."]
+  },
+  "Sociology and Anthropology": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Geography/History.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Social Works."]
+  },
+  "Social Work": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Christian Religious Studies (CRS)"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and CRS/Biology.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Social Work."]
+  },
+  "Development Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Economics", "Government", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Government, and Geography.",
+    "directEntry": ["Two 'A' Level passes in Economics and Government.", "ND/HND in Development Studies."]
+  },
+  "Intelligence and Security Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Computer Studies"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Computer Studies/History.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Criminology or Intelligence Tech."]
+  },
+  "Population Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Mathematics", "Economics", "Geography"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Economics, Geography, and Government.",
+    "directEntry": ["Two 'A' Level passes in Mathematics and Economics/Geography.", "ND/HND in Demography or Statistics."]
+  },
+  "Gender Studies": {
+    "faculty": "SocialSciences",
+    "utmeSubjects": ["Use of English", "Government", "Economics", "Literature in English"],
+    "oLevelRequirements": "5 SSCE credit passes in Use of English, Mathematics, Government, Economics, and Literature in English.",
+    "directEntry": ["Two 'A' Level passes in Government and Economics.", "ND/HND in Social Work or Sociology."]
+  }
+}

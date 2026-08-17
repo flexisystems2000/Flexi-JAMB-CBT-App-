@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flexi CBT | Simulator</title>
+    
+    <!-- MathJax config MUST come before the script -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['\( ', ' \)']],
+                displayMath: [['\\[', '\\]'], ['\[ ', ' \]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            },
+            svg: { fontCache: 'global' },
+            startup: {
+                typeset: false   // we control when to typeset
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="./tex-mml-chtml.js"></script>
+
+    <style>
+        :root { 
+            --j-green: #008000; 
+            --j-red: #cc0000; 
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-family: sans-serif; }
+        body { margin: 0; display: none; background: var(--bg); color: var(--text); overflow-x: hidden; transition: background 0.3s ease, color 0.3s ease; }
+
+        header { background: var(--header); color: var(--text); padding: 12px 15px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 4px solid var(--flexi-green, #008000); box-shadow: var(--card-shadow); }
+        .h-left { font-weight: bold; font-size: 0.8rem; line-height: 1.2; color: var(--text); }
+        .h-left span { color: var(--flexi-green, #008000); }
+        .h-right { display: flex; align-items: center; gap: 12px; }
+        #timer { font-size: 1.2rem; font-weight: bold; min-width: 80px; text-align: right; color: var(--text); }
+        .calc-icon { width: 26px; height: 26px; cursor: pointer; filter: var(--icon-filter, none); }
+
+        .beaker-wrap { width: 80px; height: 12px; display: flex; align-items: center; justify-content: flex-start; }
+        .beaker-dot { width: 10px; height: 10px; background: #ff0000; border-radius: 50%; z-index: 2; }
+        .beaker-liquid { height: 3px; background: #ff0000; transition: width 1s linear; margin-left: -2px; border-radius: 0 5px 5px 0; }
+
+        .subject-nav { display: flex; overflow-x: auto; padding: 10px; gap: 8px; border-bottom: 1px solid var(--border); background: var(--card); position: sticky; top: 56px; z-index: 90; scrollbar-width: none; box-shadow: var(--card-shadow); }
+        .subject-tab { padding: 6px 16px; font-size: 0.85rem; border-radius: 20px; border: 1px solid var(--border); background: var(--bg); color: var(--text); white-space: nowrap; transition: 0.2s; cursor: pointer; }
+        .subject-tab.active { color: var(--j-red); border-color: var(--j-red); font-weight: bold; background: var(--card); }
+
+        .main-scroll { padding: 20px; padding-bottom: 120px; max-width: 700px; margin: 0 auto; }
+        
+        .question-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: var(--card-shadow); margin-bottom: 20px; }
+        .q-text { font-size: 1.1rem; line-height: 1.6; margin-bottom: 25px; font-weight: 500; min-height: 60px; color: var(--text); }
+        
+        .opt-row { display: flex; align-items: center; padding: 14px 0; cursor: pointer; border-bottom: 1px solid var(--border); }
+        .opt-row:last-child { border-bottom: none; }
+        .opt-row span { color: var(--text); font-size: 0.95rem; line-height: 1.5; }
+        
+        .custom-radio { width: 22px; height: 22px; border: 2px solid var(--subtext); border-radius: 50%; margin-right: 12px; position: relative; flex-shrink: 0; background: var(--bg); }
+        .custom-radio.checked { border-color: var(--flexi-green, #008000); }
+        .custom-radio.checked::after { content: ""; width: 12px; height: 12px; background: var(--flexi-green, #008000); border-radius: 50%; position: absolute; top: 3px; left: 3px; }
+
+        .action-area { margin-top: 30px; display: flex; flex-direction: column; gap: 10px; }
+        .nav-pills { display: flex; justify-content: space-between; gap: 10px; }
+        .btn-pill { flex: 1; padding: 14px; border-radius: 8px; border: none; color: #fff; font-weight: bold; font-size: 0.9rem; cursor: pointer; box-shadow: var(--card-shadow); }
+        .btn-prev { background: #666; }
+        .btn-next { background: var(--flexi-green, #2E8B57); }
+        .btn-submit { background: var(--j-red); width: 100%; margin-top: 5px; }
+
+        .grid-container { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin-top: 30px; box-shadow: var(--card-shadow); }
+        .num-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+        .num-box { aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .num-box.untouched { background: var(--border); color: var(--subtext); }
+        .num-box.answered { background: var(--flexi-green, #2E8B57); color: #fff; }
+        .num-box.current { border: 3px solid var(--text); box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+
+        #calc-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; }
+        .calc-card { background: #111; width: 90%; max-width: 340px; border-radius: 25px; overflow: hidden; padding-bottom: 10px; border: 1px solid #333; }
+        #cD { color: #fff; padding: 20px; text-align: right; font-size: 2.2rem; min-height: 70px; }
+        .calc-utility-bar { background: #1e5d2d; display: grid; grid-template-columns: repeat(5, 1fr); }
+        .calc-utility-bar button { background: none; border: none; color: #fff; font-size: 1.2rem; padding: 15px 0; font-weight: bold; cursor: pointer; }
+        .calc-grid { display: grid; grid-template-columns: repeat(5, 1fr); padding: 10px; }
+        .calc-grid button { background: none; border: none; color: #fff; font-size: 1.6rem; padding: 18px 0; cursor: pointer; }
+        .close-btn { width: 100%; background: #222; border: none; color: #999; padding: 15px; font-size: 0.8rem; letter-spacing: 1px; cursor: pointer; }
+
+        /* MathJax fine-tuning */
+        .MathJax, mjx-container { font-size: 105% !important; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="h-left">Flexi CBT<br><span id="display-name">Candidate</span></div>
+    <div class="h-right">
+        <div class="beaker-wrap">
+            <div class="beaker-dot"></div>
+            <div id="beaker-liquid" class="beaker-liquid"></div>
+        </div>
+        <div id="timer">0:00:00</div>
+        <img src="https://i.postimg.cc/3rk3rtb6/Background-Eraser-20260213-084152616.png" class="calc-icon" id="calc-btn">
+    </div>
+</header>
+
+<div id="subject-tabs-container" class="subject-nav"></div>
+
+<main class="main-scroll">
+    <div class="question-card" id="question-area">
+        <div class="q-text"><span id="q-idx">1.</span> <span id="q-text">Loading question...</span></div>
+        <div id="options-list"></div>
+    </div>
+
+    <div class="action-area">
+        <div class="nav-pills">
+            <button class="btn-pill btn-prev" id="btn-prev">PREVIOUS</button>
+            <button class="btn-pill btn-next" id="btn-next">NEXT</button>
+        </div>
+        <button class="btn-pill btn-submit" id="btn-submit">FINISH & SUBMIT</button>
+    </div>
+
+    <div class="grid-container">
+        <p style="font-weight: bold; font-size: 0.7rem; color: var(--subtext); margin-bottom: 12px; text-transform: uppercase;">Question Map</p>
+        <div id="num-grid" class="num-grid"></div>
+    </div>
+</main>
+
+<div id="calc-overlay">
+    <div class="calc-card">
+        <div id="cD">0</div>
+        <div class="calc-utility-bar">
+            <button data-val="1">1</button><button data-val="2">2</button><button data-val="3">3</button>
+            <button id="calc-del">DEL</button><button id="calc-ac">AC</button>
+        </div>
+        <div class="calc-grid">
+            <button data-val="4">4</button><button data-val="5">5</button><button data-val="6">6</button>
+            <button data-val="+">+</button><button data-val="-">-</button>
+            <button data-val="7">7</button><button data-val="8">8</button><button data-val="9">9</button>
+            <button data-val="*">×</button><button data-val="/">÷</button>
+            <button style="grid-column: span 1"></button>
+            <button data-val="0">0</button><button data-val=".">.</button>
+            <button style="grid-column: span 1"></button>
+            <button id="calc-eq" style="font-size: 2rem; color: #2E8B57;">=</button>
+        </div>
+        <button class="close-btn" id="calc-close">CLOSE CALCULATOR</button>
+    </div>
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script>
+let examData = {}, userAnswers = {}, visitedQuestions = {};
+let currentSubject = "", currentQIndex = 0;
+let timerInterval = null; 
+let totalDuration = 50 * 60;
+let timeLeft = totalDuration;
+let cV = "";
+let selectedSubjects = [];
+
+/* =========================================================
+   SUBJECT → FILENAME MAP
+   ========================================================= */
+const SUBJECT_FILE_MAP = {
+    "English Language": "use_of_english.json",
+    "Use of English": "use_of_english.json",
+    "Mathematics": "mathematics.json",
+    "Maths": "mathematics.json",
+    "Physics": "physics.json",
+    "Chemistry": "chemistry.json",
+    "Biology": "biology.json",
+    "Economics": "economics.json",
+    "Government": "government.json",
+    "Literature In English": "literature_in_english.json",
+    "Literature in English": "literature_in_english.json",
+    "Literature": "literature_in_english.json",
+    "Christian Religious Studies": "christian_religious_studies__crs_.json",
+    "CRS": "christian_religious_studies__crs_.json",
+    "Commerce": "commerce.json",
+    "Accounting": "accounting.json",
+    "Account": "accounting.json",
+    "Computer Studies": "computer_studies.json",
+    "Fine Arts": "fine_art.json",
+    "Fine Art": "fine_art.json",
+    "Arabic": "arabic.json",
+    "Yoruba": "yoruba.json"
+};
+
+/* =========================================================
+   HELPERS
+   ========================================================= */
+function shuffleArray(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
+
+function pickRandomQuestions(allQuestions, count) {
+    if (!Array.isArray(allQuestions) || allQuestions.length === 0) return [];
+    return shuffleArray(allQuestions).slice(0, Math.min(count, allQuestions.length));
+}
+
+async function fetchJson(filename) {
+    const pathsToTry = [
+        "./question_bank/" + filename,
+        "question_bank/" + filename,
+        "./" + filename,
+        filename
+    ];
+    let lastError = null;
+    for (const path of pathsToTry) {
+        try {
+            const response = await fetch(path);
+            if (!response.ok) {
+                lastError = new Error("HTTP " + response.status + " for " + path);
+                continue;
+            }
+            const data = await response.json();
+            const questions = Array.isArray(data) ? data : (data.questions || data.data || data.items || []);
+            if (!Array.isArray(questions)) {
+                lastError = new Error("Invalid structure in " + path);
+                continue;
+            }
+            console.log("✅ Loaded:", path, "(" + questions.length + ")");
+            return questions;
+        } catch (err) {
+            lastError = err;
+        }
+    }
+    throw lastError || new Error("All paths failed for " + filename);
+}
+
+function generatePlaceholders(sub, count, reason) {
+    const msg = reason || ("Could not load questions for " + sub);
+    return Array.from({ length: count }, function(_, i) {
+        return {
+            question: "Q" + (i + 1) + " – " + msg,
+            options: ["Option A", "Option B", "Option C", "Option D"],
+            answer: "A"
+        };
+    });
+}
+
+/* =========================================================
+   MATH RENDERING (plain text → MathJax)
+   ========================================================= */
+function formatMathText(text) {
+    if (!text) return "";
+
+    let s = String(text);
+
+    // Already has MathJax delimiters → leave alone
+    if (/\\\(|\\\[|\$\$/.test(s)) return s;
+
+    // Escape HTML
+    s = s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+    // ---- Square roots (MUST come before other symbol replacements) ----
+    // √ followed by number: √3, √27, √281
+    s = s.replace(/√(\d+)/g, "\\sqrt{$1}");
+    // √ followed by letter/variable: √y, √x
+    s = s.replace(/√([A-Za-z])/g, "\\sqrt{$1}");
+    // √ followed by (...): √(x+1)
+    s = s.replace(/√\(([^)]+)\)/g, "\\sqrt{$1}");
+    // Any remaining lone √
+    s = s.replace(/√/g, "\\sqrt{}");
+
+    // ---- Other symbols ----
+    s = s.replace(/π/g, "\\pi");
+    s = s.replace(/θ/g, "\\theta");
+    s = s.replace(/α/g, "\\alpha");
+    s = s.replace(/β/g, "\\beta");
+    s = s.replace(/γ/g, "\\gamma");
+    s = s.replace(/δ/g, "\\delta");
+    s = s.replace(/Δ/g, "\\Delta");
+    s = s.replace(/∞/g, "\\infty");
+    s = s.replace(/≤/g, "\\leq");
+    s = s.replace(/≥/g, "\\geq");
+    s = s.replace(/±/g, "\\pm");
+    s = s.replace(/×/g, "\\times");
+    s = s.replace(/÷/g, "\\div");
+    s = s.replace(/→/g, "\\rightarrow");
+    s = s.replace(/°/g, "^{\\circ}");
+
+    // ---- Superscripts: x^2, cm^2, (2/3)^-2, 5^(x+1) ----
+    s = s.replace(/(\b[A-Za-z0-9]+|\([^)]+\))\^(-?\d+)/g, function(_, base, exp) {
+        return base + "^{" + exp + "}";
+    });
+    s = s.replace(/(\b[A-Za-z0-9]+|\([^)]+\))\^\(([^)]+)\)/g, function(_, base, exp) {
+        return base + "^{" + exp + "}";
+    });
+
+    // ---- Subscripts: S_n, H_2, CO_2 ----
+    s = s.replace(/(\b[A-Za-z]+)_([A-Za-z0-9]+)\b/g, function(_, base, sub) {
+        return base + "_{" + sub + "}";
+    });
+
+    // ---- Wrap math-y chunks in \( ... \) ----
+    // Anything that now contains LaTeX commands or ^ { } _ gets wrapped
+    // We split by spaces carefully and wrap tokens that look like math
+    s = s.replace(
+        /(\\sqrt\{[^}]*\}|\\pi|\\theta|\\alpha|\\beta|\\gamma|\\delta|\\Delta|\\infty|\\leq|\\geq|\\pm|\\times|\\div|\\rightarrow|[A-Za-z0-9]+[\^_]\{[^}]+\}|[A-Za-z0-9]*\\sqrt\{[^}]*\}[A-Za-z0-9]*)/g,
+        function(match) {
+            // Avoid double-wrapping
+            if (match.startsWith("\\(")) return match;
+            return "\\(" + match + "\\)";
+        }
+    );
+
+    // Clean accidental double wraps
+    s = s.replace(/\\\(\\\(/g, "\\(").replace(/\\\)\\\)/g, "\\)");
+
+    return s;
+}
+
+function typesetMath() {
+    const nodes = [
+        document.getElementById("q-text"),
+        document.getElementById("options-list")
+    ].filter(Boolean);
+
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        window.MathJax.typesetClear(nodes);
+        window.MathJax.typesetPromise(nodes).catch(function(err) {
+            console.warn("MathJax typeset error:", err);
+        });
+    } else if (window.MathJax && window.MathJax.startup) {
+        // MathJax still loading – queue it
+        window.MathJax.startup.promise.then(function() {
+            window.MathJax.typesetPromise(nodes).catch(function(){});
+        });
+    }
+}
+
+/* =========================================================
+   LOAD QUESTIONS
+   ========================================================= */
+async function loadFromStorage(subjectName) {
+    const isEnglish = (subjectName === "English Language" || subjectName === "Use of English");
+    const targetCount = isEnglish ? 60 : 40;
+
+    try {
+        if (isEnglish) {
+            let useOfEnglish = [], lekki = [], errors = [];
+            try { useOfEnglish = await fetchJson("use_of_english.json"); }
+            catch (e) { errors.push("use_of_english: " + e.message); }
+            try { lekki = await fetchJson("the_lekki_headmaster.json"); }
+            catch (e) { errors.push("lekki: " + e.message); }
+
+            const englishPart = pickRandomQuestions(useOfEnglish, 35);
+            const lekkiPart = pickRandomQuestions(lekki, 25);
+            const combined = englishPart.concat(lekkiPart);
+
+            if (combined.length === 0) {
+                return generatePlaceholders(subjectName, 60, "English failed: " + errors.join(" | "));
+            }
+            console.log("✅ English: " + englishPart.length + " + " + lekkiPart.length + " = " + combined.length);
+            return combined;
+        }
+
+        let filename = SUBJECT_FILE_MAP[subjectName];
+        if (!filename) {
+            filename = subjectName.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_|_$/g, "") + ".json";
+        }
+
+        const allQuestions = await fetchJson(filename);
+        if (allQuestions.length === 0) {
+            return generatePlaceholders(subjectName, targetCount, "File is empty: " + filename);
+        }
+        const selected = pickRandomQuestions(allQuestions, targetCount);
+        console.log("✅ " + subjectName + ": " + selected.length + " questions");
+        return selected;
+
+    } catch (err) {
+        console.error("🔴 " + subjectName + ":", err);
+        return generatePlaceholders(subjectName, targetCount, err.message || String(err));
+    }
+}
+
+/* =========================================================
+   RENDER
+   ========================================================= */
+function renderSubjectTabs() {
+    const container = document.getElementById("subject-tabs-container");
+    container.innerHTML = "";
+    selectedSubjects.forEach(function(sub) {
+        const tab = document.createElement("div");
+        tab.className = "subject-tab" + (sub === currentSubject ? " active" : "");
+        tab.textContent = sub;
+        tab.addEventListener("click", function() { switchSubject(sub); });
+        container.appendChild(tab);
+    });
+}
+
+function cleanOptionText(opt) {
+    if (!opt) return "";
+    return String(opt).replace(/^[A-Da-d][\.\)]\s*/, "").trim();
+}
+
+function renderQuestion() {
+    const qList = examData[currentSubject];
+    if (!qList || qList.length === 0) {
+        document.getElementById("q-idx").textContent = "";
+        document.getElementById("q-text").textContent = "No questions available for this subject.";
+        document.getElementById("options-list").innerHTML = "";
+        return;
+    }
+
+    const q = qList[currentQIndex];
+    document.getElementById("q-idx").textContent = (currentQIndex + 1) + ".";
+    document.getElementById("q-text").innerHTML = formatMathText(q.question || "");
+
+    const letters = ["A", "B", "C", "D"];
+    const optionsArray = q.options ? q.options : [q.optA, q.optB, q.optC, q.optD].filter(Boolean);
+
+    const optionsList = document.getElementById("options-list");
+    optionsList.innerHTML = "";
+
+    optionsArray.forEach(function(opt, i) {
+        const row = document.createElement("div");
+        row.className = "opt-row";
+
+        const radio = document.createElement("div");
+        radio.className = "custom-radio" + (userAnswers[currentSubject][currentQIndex] === letters[i] ? " checked" : "");
+
+        const span = document.createElement("span");
+        span.innerHTML = letters[i] + ". " + formatMathText(cleanOptionText(opt));
+
+        row.appendChild(radio);
+        row.appendChild(span);
+        row.addEventListener("click", function() { selectOption(letters[i]); });
+        optionsList.appendChild(row);
+    });
+
+    // Render math after DOM is updated
+    typesetMath();
+}
+
+function renderGrid() {
+    const grid = document.getElementById("num-grid");
+    grid.innerHTML = "";
+    const qList = examData[currentSubject] || [];
+
+    qList.forEach(function(_, i) {
+        const box = document.createElement("div");
+        const status = userAnswers[currentSubject][i] ? "answered" : "untouched";
+        const current = (i === currentQIndex) ? " current" : "";
+        box.className = "num-box " + status + current;
+        box.textContent = (i + 1);
+        box.addEventListener("click", function() { jumpTo(i); });
+        grid.appendChild(box);
+    });
+}
+
+function updateUI() {
+    if (!visitedQuestions[currentSubject]) visitedQuestions[currentSubject] = new Set();
+    visitedQuestions[currentSubject].add(currentQIndex);
+    renderQuestion();
+    renderGrid();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+function nextQuestion() {
+    const list = examData[currentSubject];
+    if (!list) return;
+    if (currentQIndex < list.length - 1) {
+        currentQIndex++;
+        updateUI();
+    }
+}
+
+function prevQuestion() {
+    if (currentQIndex > 0) {
+        currentQIndex--;
+        updateUI();
+    }
+}
+
+function jumpTo(i) {
+    currentQIndex = i;
+    updateUI();
+}
+
+function switchSubject(sub) {
+    currentSubject = sub;
+    currentQIndex = 0;
+    renderSubjectTabs();
+    updateUI();
+}
+
+function selectOption(letter) {
+    if (!userAnswers[currentSubject]) userAnswers[currentSubject] = {};
+    userAnswers[currentSubject][currentQIndex] = letter;
+    updateUI();
+}
+
+/* =========================================================
+   TIMER
+   ========================================================= */
+function runTimer() {
+    const liquid = document.getElementById("beaker-liquid");
+    const timerDiv = document.getElementById("timer");
+    if (timerInterval) clearInterval(timerInterval);
+
+    timerInterval = setInterval(function() {
+        if (timeLeft <= 0) {
+            clearInterval(timerInterval);
+            submitExam(true);
+            return;
+        }
+        const h = Math.floor(timeLeft / 3600);
+        const m = Math.floor((timeLeft % 3600) / 60);
+        const s = timeLeft % 60;
+        timerDiv.textContent = h + ":" + String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+        if (liquid) liquid.style.width = ((timeLeft / totalDuration) * 100) + "%";
+        timeLeft--;
+    }, 1000);
+}
+
+/* =========================================================
+   SUBMIT
+   ========================================================= */
+async function submitExam(auto) {
+    if (!auto && !confirm("Are you sure you want to submit your exam?")) return;
+
+    clearInterval(timerInterval);
+
+    let totalCorrect = 0;
+    let totalQ = 0;
+    const subjectScores = {};
+
+    Object.keys(examData).forEach(function (sub) {
+        const list = examData[sub] || [];
+        let correct = 0;
+
+        list.forEach(function (q, i) {
+            if (userAnswers[sub] && userAnswers[sub][i] === q.answer) {
+                correct++;
+            }
+        });
+
+        subjectScores[sub] = { score: correct, total: list.length };
+        totalCorrect += correct;
+        totalQ += list.length;
+    });
+
+    const finalPercent = totalQ > 0 ? Math.round((totalCorrect / totalQ) * 100) : 0;
+    const candidateName = document.getElementById("display-name").textContent || "Candidate";
+
+    const examType =
+        (typeof IDB !== "undefined" ? await IDB.getItem("displayExamName") : null) ||
+        localStorage.getItem("displayExamName") ||
+        "JAMB";
+
+    // This is the exact shape results.html expects
+    const resultPayload = {
+        exam: examType,
+        name: candidateName,
+        percentage: finalPercent,
+        score: totalCorrect,
+        total: totalQ,
+        subjectScores: subjectScores,
+        speedSec: totalDuration - timeLeft,
+        timestamp: Date.now()
+    };
+
+    sessionStorage.setItem("examResult", JSON.stringify(resultPayload));
+
+    if (typeof IDB !== "undefined") {
+        await IDB.setItem("latestExamResult", JSON.stringify(resultPayload));
+        await IDB.setItem("finalAnswers", JSON.stringify(userAnswers));
+        await IDB.setItem("examQuestions", JSON.stringify(examData));
+        await IDB.setItem("latestScore", String(finalPercent));
+        await IDB.setItem("userName", candidateName);
+    } else {
+        localStorage.setItem("latestExamResult", JSON.stringify(resultPayload));
+        localStorage.setItem("finalAnswers", JSON.stringify(userAnswers));
+        localStorage.setItem("examQuestions", JSON.stringify(examData));
+        localStorage.setItem("latestScore", String(finalPercent));
+        localStorage.setItem("userName", candidateName);
+    }
+
+    window.location.href = "results.html";
+}
+
+/* =========================================================
+   CALCULATOR
+   ========================================================= */
+function toggleCalc() {
+    const c = document.getElementById("calc-overlay");
+    c.style.display = (c.style.display === "flex") ? "none" : "flex";
+}
+function pC(v) { cV += v; document.getElementById("cD").textContent = cV; }
+function cC() { cV = ""; document.getElementById("cD").textContent = "0"; }
+function dC() { cV = cV.slice(0, -1); document.getElementById("cD").textContent = cV || "0"; }
+function sC() {
+    try {
+        cV = eval(cV.replace(/×/g, "*").replace(/÷/g, "/")).toString();
+        document.getElementById("cD").textContent = cV;
+    } catch (e) { cC(); }
+}
+
+/* =========================================================
+   START
+   ========================================================= */
+async function startEngine() {
+    let subjectsRaw = (typeof IDB !== "undefined" ? await IDB.getItem("userSubjectKeys") : localStorage.getItem("userSubjectKeys"));
+    selectedSubjects = subjectsRaw ? JSON.parse(subjectsRaw) : ["English Language"];
+
+    if (!selectedSubjects.includes("English Language") && !selectedSubjects.includes("Use of English")) {
+        selectedSubjects.unshift("English Language");
+    }
+
+    currentSubject = selectedSubjects[0];
+    renderSubjectTabs();
+
+    for (const sub of selectedSubjects) {
+        try {
+            examData[sub] = await loadFromStorage(sub);
+        } catch (e) {
+            examData[sub] = generatePlaceholders(sub, sub.includes("English") ? 60 : 40, "Unexpected error");
+        }
+        userAnswers[sub] = {};
+        visitedQuestions[sub] = new Set();
+    }
+
+    document.getElementById("btn-prev").addEventListener("click", prevQuestion);
+    document.getElementById("btn-next").addEventListener("click", nextQuestion);
+    document.getElementById("btn-submit").addEventListener("click", function() { submitExam(false); });
+    document.getElementById("calc-btn").addEventListener("click", toggleCalc);
+    document.getElementById("calc-close").addEventListener("click", toggleCalc);
+    document.getElementById("calc-del").addEventListener("click", dC);
+    document.getElementById("calc-ac").addEventListener("click", cC);
+    document.getElementById("calc-eq").addEventListener("click", sC);
+    document.querySelectorAll("[data-val]").forEach(function(btn) {
+        btn.addEventListener("click", function() { pC(btn.getAttribute("data-val")); });
+    });
+
+    runTimer();
+    updateUI();
+}
+
+window.addEventListener("DOMContentLoaded", async function() {
+    document.body.style.display = "block";
+
+    if (typeof IDB !== "undefined") await IDB.migrateFromLocalStorage();
+
+    let storedUser = null;
+
+if (typeof IDB !== "undefined") {
+    storedUser = await IDB.getItem("userName");
+}
+if (!storedUser) {
+    storedUser = localStorage.getItem("userName");
+}
+if (!storedUser) {
+    const email =
+        (typeof IDB !== "undefined" ? await IDB.getItem("userEmail") : null) ||
+        localStorage.getItem("userEmail");
+    if (email && email.includes("@")) {
+        storedUser = email.split("@")[0];
+    }
+}
+
+document.getElementById("display-name").textContent = storedUser || "Candidate";
+
+    const examMode = (typeof IDB !== "undefined" ? await IDB.getItem("examMode") : localStorage.getItem("examMode"));
+    totalDuration = (examMode === "Full" ? 120 : 50) * 60;
+    timeLeft = totalDuration;
+
+    await startEngine();
+});
+</script>
+</body>
+</html>

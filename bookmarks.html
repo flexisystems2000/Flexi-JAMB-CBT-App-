@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Bookmarks - Flexi Educational Consult</title>
+
+  <!-- Global Theme Stylesheet -->
+  <link rel="stylesheet" href="theme.css">
+
+  <!-- Lucide Icons -->
+<script src="lucide.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      background: var(--header);
+      padding: 10px 0;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Filter Bar */
+    .filter-card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 10px 14px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .filter-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--subtext);
+      flex-shrink: 0;
+    }
+
+    .filter-select {
+      flex: 1;
+      min-width: 0; /* Critical: allows select to shrink inside flex container */
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      font-size: 0.88rem;
+      outline: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+
+    .filter-select:focus {
+      border-color: var(--green, #2E8B57);
+    }
+
+    /* Bookmarks Count Badge */
+    .badge {
+      background-color: var(--green, #2E8B57);
+      color: #ffffff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 12px;
+      flex-shrink: 0; /* Keeps badge fixed size */
+    }
+
+    /* Bookmark Cards List */
+    .bookmarks-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .bookmark-card {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: relative;
+    }
+
+    .bookmark-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .subject-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--green, #2E8B57);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .delete-btn {
+      background: none;
+      border: none;
+      color: var(--subtext);
+      cursor: pointer;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      transition: color 0.2s;
+    }
+
+    .delete-btn:hover {
+      color: #e53e3e;
+    }
+
+    .question-text {
+      font-size: 0.92rem;
+      line-height: 1.45;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .options-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .option-item {
+      font-size: 0.85rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--subtext);
+    }
+
+    .option-item.correct {
+      background-color: rgba(46, 139, 87, 0.12);
+      border-color: var(--green, #2E8B57);
+      color: var(--green, #2E8B57);
+      font-weight: 600;
+    }
+
+    .explanation-box {
+      font-size: 0.8rem;
+      color: var(--subtext);
+      background-color: var(--bg);
+      padding: 10px;
+      border-radius: 6px;
+      border-left: 3px solid var(--green, #2E8B57);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* Empty State */
+    .empty-state {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 32px 16px;
+      text-align: center;
+      color: var(--subtext);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .empty-icon {
+      color: var(--subtext);
+      opacity: 0.6;
+    }
+
+    /* Toast */
+    .toast {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: var(--green, #2E8B57);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Bar -->
+    <header class="header">
+      <a href="javascript:history.back()" class="back-btn">
+        <i data-lucide="arrow-left"></i>
+      </a>
+      <span class="header-title">Saved Bookmarks</span>
+    </header>
+
+    <!-- Subject Filter -->
+    <div class="filter-card">
+      <i data-lucide="filter" class="filter-icon"></i>
+
+      <select id="subject-filter" class="filter-select">
+        <option value="ALL">All Subjects</option>
+        <option value="English Language">English Language</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Biology">Biology</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Agricultural Science">Agricultural Science</option>
+        <option value="Animal Husbandry">Animal Husbandry</option>
+        <option value="Health Education">Health Education</option>
+        <option value="Financial Accounting">Financial Accounting</option>
+        <option value="Commerce">Commerce</option>
+        <option value="Economics">Economics</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Office Practice">Office Practice</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Literature in English">Literature in English</option>
+        <option value="Government">Government</option>
+        <option value="History">History</option>
+        <option value="Geography">Geography</option>
+        <option value="Christian Religious Studies (CRS)">Christian Religious Studies (CRS)</option>
+        <option value="Islamic Religious Studies (IRS)">Islamic Religious Studies (IRS)</option>
+        <option value="Civic Education">Civic Education</option>
+        <option value="French">French</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Hausa">Hausa</option>
+        <option value="Igbo">Igbo</option>
+        <option value="Yoruba">Yoruba</option>
+        <option value="Computer Studies">Computer Studies</option>
+        <option value="Data Processing">Data Processing</option>
+        <option value="Technical Drawing">Technical Drawing</option>
+        <option value="Auto Mechanics">Auto Mechanics</option>
+        <option value="Building Construction">Building Construction</option>
+        <option value="Metalwork">Metalwork</option>
+        <option value="Woodwork">Woodwork</option>
+        <option value="Electrical Installation &amp; Maintenance Work">Electrical Installation &amp; Maintenance Work</option>
+        <option value="Home Economics">Home Economics</option>
+        <option value="Food and Nutrition">Food and Nutrition</option>
+        <option value="Catering Craft Practice">Catering Craft Practice</option>
+        <option value="Clothing and Textiles">Clothing and Textiles</option>
+        <option value="Home Management">Home Management</option>
+        <option value="Visual Art">Visual Art</option>
+        <option value="Music">Music</option>
+        <option value="Fisheries">Fisheries</option>
+      </select>
+
+      <span id="bookmark-count" class="badge">0</span>
+    </div>
+
+    <!-- Bookmarks Container -->
+    <div id="bookmarks-list" class="bookmarks-list">
+      <div class="empty-state">
+        <i data-lucide="bookmark" class="empty-icon" style="width:40px; height:40px;"></i>
+        <span>Loading saved bookmarks...</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="status-toast" class="toast">Bookmark removed</div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <!-- Firebase Integration Script -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, collection, query, where, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    const firebaseConfig = { 
+      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
+      authDomain: "flexieduconsult.com.ng", 
+      projectId: "waec2026jamb2027" 
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    let allBookmarks = [];
+    let currentUid = null;
+
+    onAuthStateChanged(auth, async (currentUser) => {
+      if (!currentUser) {
+        window.location.href = "login.html";
+        return;
+      }
+
+      currentUid = currentUser.uid;
+      await fetchBookmarks();
+    });
+
+    async function fetchBookmarks() {
+      try {
+        allBookmarks = [];
+        const q = query(
+          collection(db, "bookmarks"),
+          where("userId", "==", currentUid)
+        );
+        const snap = await getDocs(q);
+
+        snap.forEach(docSnap => {
+          allBookmarks.push({
+            id: docSnap.id,
+            ...docSnap.data()
+          });
+        });
+
+        renderBookmarks();
+      } catch (err) {
+        console.error("Error fetching bookmarks:", err);
+        renderBookmarks();
+      }
+    }
+
+    function renderBookmarks() {
+      const filterValue = document.getElementById('subject-filter').value;
+      const listContainer = document.getElementById('bookmarks-list');
+      const countBadge = document.getElementById('bookmark-count');
+
+      const filtered = filterValue === "ALL" 
+        ? allBookmarks 
+        : allBookmarks.filter(b => b.subject === filterValue);
+
+      countBadge.textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        listContainer.innerHTML = `
+          <div class="empty-state">
+            <i data-lucide="bookmark-check" class="empty-icon" style="width:40px; height:40px;"></i>
+            <span>No saved questions found. Bookmark questions during CBT practice to review them here later!</span>
+          </div>
+        `;
+        lucide.createIcons();
+        return;
+      }
+
+      listContainer.innerHTML = "";
+
+      filtered.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'bookmark-card';
+        card.id = `bookmark-${item.id}`;
+
+        const options = item.options || [];
+        let optionsHtml = "";
+
+        if (Array.isArray(options) && options.length > 0) {
+          optionsHtml = `<div class="options-grid">` +
+            options.map((opt, idx) => {
+              const isCorrect = (item.correctAnswer === idx || item.answer === opt);
+              return `<div class="option-item ${isCorrect ? 'correct' : ''}">${escapeHTML(opt)} ${isCorrect ? '✓' : ''}</div>`;
+            }).join('') +
+            `</div>`;
+        }
+
+        const explanationHtml = item.explanation 
+          ? `<div class="explanation-box"><strong>Explanation:</strong> ${escapeHTML(item.explanation)}</div>` 
+          : '';
+
+        card.innerHTML = `
+          <div class="bookmark-meta">
+            <span class="subject-tag">${escapeHTML(item.subject || 'General')}</span>
+            <button class="delete-btn" data-id="${item.id}" title="Remove Bookmark">
+              <i data-lucide="trash-2" style="width:16px; height:16px;"></i>
+            </button>
+          </div>
+          <div class="question-text">${escapeHTML(item.questionText || item.question || 'No question text available.')}</div>
+          ${optionsHtml}
+          ${explanationHtml}
+        `;
+
+        listContainer.appendChild(card);
+      });
+
+      // Attach Delete Listeners
+      document.querySelectorAll('.delete-btn').forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const docId = e.currentTarget.getAttribute('data-id');
+          await deleteBookmark(docId);
+        });
+      });
+
+      lucide.createIcons();
+    }
+
+    async function deleteBookmark(docId) {
+      try {
+        await deleteDoc(doc(db, "bookmarks", docId));
+        allBookmarks = allBookmarks.filter(b => b.id !== docId);
+        renderBookmarks();
+        showToast("Bookmark removed");
+      } catch (err) {
+        console.error("Error deleting bookmark:", err);
+        showToast("Failed to remove bookmark");
+      }
+    }
+
+    document.getElementById('subject-filter').addEventListener('change', renderBookmarks);
+
+    function showToast(msg) {
+      const toast = document.getElementById('status-toast');
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+    }
+
+    function escapeHTML(str) {
+      return typeof str === 'string' ? str.replace(/[&<>'"]/g, tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)) : '';
+    }
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>
