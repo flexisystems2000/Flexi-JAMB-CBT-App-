@@ -4,5 +4,12 @@
   "webDir": "www",
   "server": {
     "androidScheme": "https"
+  },
+  "plugins": {
+    "StatusBar": {
+      "overlaysWebView": false,
+      "style": "LIGHT",
+      "backgroundColor": "#f0f2f5"
+    }
   }
 }
