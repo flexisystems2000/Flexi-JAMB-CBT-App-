@@ -1,6 +1,6 @@
 {
   "appId": "com.flexiedu.consult",
-  "appName": "Flexi Educational Consult",
+  "appName": "Flexi JAMB CBT App",
   "webDir": "www",
   "server": {
     "androidScheme": "https"
