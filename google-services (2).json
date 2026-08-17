@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "465373608641",
+    "firebase_url": "https://waec2026jamb2027-default-rtdb.firebaseio.com",
+    "project_id": "waec2026jamb2027",
+    "storage_bucket": "waec2026jamb2027.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465373608641:android:2b3049137981932b65f240",
+        "android_client_info": {
+          "package_name": "co.median.android.rdjkbdo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0BIP8y5jFt16O4UaCXfcN6-URQTLFuig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "465373608641-cad6e0g7t772msmhhnkuio51cgj29pfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "wawc2026Jamb2027"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465373608641:android:26231dbb53cf843a65f240",
+        "android_client_info": {
+          "package_name": "com.flexiedu.consult"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0BIP8y5jFt16O4UaCXfcN6-URQTLFuig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "465373608641-cad6e0g7t772msmhhnkuio51cgj29pfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "wawc2026Jamb2027"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
