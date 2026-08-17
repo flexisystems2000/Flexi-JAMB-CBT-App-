@@ -128,8 +128,8 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { 
             getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, 
-            updateProfile, GoogleAuthProvider, signInWithPopup, 
-            onAuthStateChanged 
+            updateProfile, GoogleAuthProvider, signInWithPopup, signInWithRedirect,
+            onAuthStateChanged, getRedirectResult
         } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
         const RENDER_BASE_URL = "https://flexieduconsult-email-server.onrender.com";
@@ -143,6 +143,16 @@
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
         const googleProvider = new GoogleAuthProvider();
+
+        // Handle redirect result (important for native / in-app Google login)
+        getRedirectResult(auth).then((result) => {
+            if (result) {
+                // User successfully signed in via redirect
+                window.location.replace("index.html");
+            }
+        }).catch((error) => {
+            console.warn("Redirect result error:", error);
+        });
 
         onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -265,9 +275,19 @@
             statusBox.style.display = "block";
         };
 
+        // ========== UPDATED GOOGLE LOGIN ==========
         document.getElementById('google-auth-btn').onclick = async () => {
             try {
-                await signInWithPopup(auth, googleProvider);
+                // Detect if running inside the Capacitor app
+                const isNative = window.Capacitor && window.Capacitor.isNativePlatform();
+
+                if (isNative) {
+                    // In-app → use redirect (works better inside Capacitor)
+                    await signInWithRedirect(auth, googleProvider);
+                } else {
+                    // Normal browser → keep popup
+                    await signInWithPopup(auth, googleProvider);
+                }
             } catch (e) {
                 showStatus(e.message.replace('auth/', '').replace(/-/g, ' '), "error");
             }
