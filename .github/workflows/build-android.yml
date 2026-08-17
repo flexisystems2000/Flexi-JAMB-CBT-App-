@@ -26,6 +26,20 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Prepare web assets
+        run: |
+          mkdir -p www
+          rsync -av \
+            --exclude='.git' \
+            --exclude='node_modules' \
+            --exclude='android' \
+            --exclude='.github' \
+            --exclude='www' \
+            --exclude='package.json' \
+            --exclude='package-lock.json' \
+            --exclude='capacitor.config.json' \
+            ./ www/
+
       - name: Add Android platform
         run: npx cap add android
 
