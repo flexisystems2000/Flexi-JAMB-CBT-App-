@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (typeof IDB !== 'undefined') {
         savedTheme = await IDB.getItem("theme");
     }
-    // Always also check localStorage as secondary source / mirror
     if (!savedTheme) {
         savedTheme = localStorage.getItem("theme");
     }
@@ -17,6 +16,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (savedTheme === "dark") {
         document.body.classList.add("dark");
     }
+
+    // Apply status bar on load
+    await applyStatusBar();
 
     const toggleBtn = document.getElementById("themeToggle");
     const themeIcon = document.getElementById("themeIcon");
@@ -50,14 +52,12 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateThemeIcon();
 
     toggleBtn.addEventListener("click", async () => {
-
         document.body.classList.toggle("dark");
 
         const themeVal = document.body.classList.contains("dark")
             ? "dark"
             : "light";
 
-        // Write to both stores so every page stays in sync
         if (typeof IDB !== 'undefined') {
             await IDB.setItem("theme", themeVal);
         }
@@ -66,6 +66,32 @@ document.addEventListener("DOMContentLoaded", async () => {
         } catch (e) {}
 
         updateThemeIcon();
+        await applyStatusBar();
     });
-
 });
+
+// ========== Status Bar Control ==========
+async function applyStatusBar() {
+    // Only run inside Capacitor (not in browser)
+    if (!window.Capacitor || !window.Capacitor.isNativePlatform()) {
+        return;
+    }
+
+    try {
+        const { StatusBar, Style } = await import('@capacitor/status-bar');
+
+        const isDark = document.body.classList.contains("dark");
+
+        if (isDark) {
+            // Dark theme → dark background + light icons
+            await StatusBar.setStyle({ style: Style.Dark });
+            await StatusBar.setBackgroundColor({ color: '#121212' });
+        } else {
+            // Light theme → light background + dark icons
+            await StatusBar.setStyle({ style: Style.Light });
+            await StatusBar.setBackgroundColor({ color: '#f0f2f5' });
+        }
+    } catch (err) {
+        console.warn('StatusBar plugin not available', err);
+    }
+}
