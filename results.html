@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Exam Results | Flexi CBT</title>
+
+    <!-- Global Theme Stylesheet -->
+    <link rel="stylesheet" href="theme.css">
+
+    <style>
+        :root { 
+            --flexi-green: #008000; 
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-family: sans-serif; }
+        
+        body { 
+            margin: 0; 
+            background: var(--bg); 
+            color: var(--text); 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Branding Header */
+        header { 
+            background: var(--header); 
+            color: var(--text); 
+            padding: 12px 15px; 
+            display: flex;
+            align-items: center;
+            position: sticky; top: 0; z-index: 100; 
+            border-bottom: 4px solid var(--flexi-green, #008000); 
+            box-shadow: var(--card-shadow); 
+        }
+        .header-container { display: flex; align-items: center; max-width: 700px; margin: 0 auto; width: 100%; }
+        .h-left { font-weight: bold; font-size: 0.85rem; line-height: 1.2; color: var(--text); }
+        .h-left span { color: var(--flexi-green, #008000); }
+
+        .container { 
+            width: 100%; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            flex: 1; 
+        }
+
+        /* Sync Status Banner */
+        .sync-banner {
+            padding: 10px 14px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sync-banner.offline { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        .sync-banner.synced { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+
+        /* Main Card */
+        .result-card { 
+            background: var(--card); 
+            border: 1px solid var(--border); 
+            border-radius: 12px; 
+            padding: 20px; 
+            box-shadow: var(--card-shadow); 
+            text-align: center;
+        }
+
+        .score-circle { 
+            width: 120px; height: 120px; border-radius: 50%; 
+            border: 6px solid var(--flexi-green, #008000); display: flex; flex-direction: column; 
+            align-items: center; justify-content: center; margin: 15px auto 20px; 
+            font-weight: bold; color: var(--text); 
+            background: var(--bg);
+        }
+        .score-circle span { font-size: 2rem; color: var(--text); }
+        .score-circle small { font-size: 0.75rem; text-transform: uppercase; color: var(--subtext); }
+
+        /* Score Table */
+        .score-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9rem; }
+        .score-table th { text-align: left; color: var(--subtext); font-weight: 600; padding: 10px 8px; border-bottom: 2px solid var(--border); }
+        .score-table td { padding: 12px 8px; border-bottom: 1px solid var(--border); text-align: left; color: var(--text); }
+        .score-table b { color: var(--flexi-green, #008000); }
+
+        .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px; }
+        
+        .btn-primary { 
+            background: var(--flexi-green, #008000); 
+            color: white; 
+            border: none; 
+            padding: 14px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            cursor: pointer; 
+            box-shadow: var(--card-shadow);
+        }
+        .btn-outline { 
+            background: #666; 
+            color: white; 
+            border: none; 
+            padding: 14px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 0.85rem; 
+            cursor: pointer; 
+            box-shadow: var(--card-shadow);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="h-left">Flexi CBT<br><span id="user-display">Candidate</span></div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Sync Status Banner -->
+    <div id="sync-banner" class="sync-banner offline" style="display: none;">
+        <span id="sync-status-text">Checking score sync status...</span>
+    </div>
+
+    <div class="result-card">
+        <h2 id="exam-title" style="margin:0 0 5px; font-size: 1.2rem; color: var(--text);">Performance Report</h2>
+        <p style="margin: 0 0 20px; font-size: 0.85rem; color: var(--subtext);">Candidate Performance Breakdown</p>
+
+        <div class="score-circle">
+            <span id="final-percent">0%</span>
+            <small>Score</small>
+        </div>
+
+        <table class="score-table">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th style="text-align: right;">Score</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+
+        <div class="btn-grid">
+            <button class="btn-primary" onclick="location.href='corrections.html'">VIEW CORRECTIONS</button>
+            <button class="btn-outline" onclick="location.href='cbt.html'">NEW EXAM</button>
+        </div>
+    </div>
+</div>
+
+<!-- Global Theme Engine -->
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = { 
+        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
+        authDomain: "waec2026jamb2027.firebaseapp.com", 
+        projectId: "waec2026jamb2027" 
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    onAuthStateChanged(auth, async (user) => {
+        if (user) {
+            const userName = user.displayName || ((typeof IDB !== "undefined") ? await IDB.getItem("userName") : localStorage.getItem("userName")) || "Candidate";
+            document.getElementById("user-display").innerText = userName;
+
+            const result = await loadData();
+
+            if (result) {
+                result.uid = user.uid;
+                result.name = userName;
+                await handleFirebaseWrite(result);
+            } else {
+                checkPendingSync();
+            }
+        } else {
+            window.location.href = "login.html";
+        }
+    });
+
+    window.addEventListener('online', () => {
+        checkPendingSync();
+    });
+
+    async function loadData() {
+        let rawData = sessionStorage.getItem("examResult") || ((typeof IDB !== "undefined") ? await IDB.getItem("latestExamResult") : localStorage.getItem("latestExamResult"));
+
+        if (!rawData) {
+            window.location.replace("cbt.html");
+            return null;
+        }
+
+        const result = JSON.parse(rawData);
+
+        document.getElementById("exam-title").innerText = `${result.exam || 'CBT'} Results`;
+        document.getElementById("user-display").innerText = result.name || ((typeof IDB !== "undefined") ? await IDB.getItem("userName") : localStorage.getItem("userName")) || "Candidate";
+        document.getElementById("final-percent").innerText = `${result.percentage}%`;
+
+        let rows = "";
+        if (result.subjectScores) {
+            Object.entries(result.subjectScores).forEach(([subject, data]) => {
+                rows += `
+                <tr>
+                    <td>${subject}</td>
+                    <td style="text-align:right;">
+                        <b>${data.score}</b> / ${data.total}
+                    </td>
+                </tr>`;
+            });
+        }
+
+        document.getElementById("table-body").innerHTML = rows;
+        if (typeof IDB !== "undefined") await IDB.setItem("latestExamResult", JSON.stringify(result)); else localStorage.setItem("latestExamResult", JSON.stringify(result));
+
+        return result;
+    }
+
+    async function handleFirebaseWrite(result) {
+        if (navigator.onLine) {
+            const success = await writeToFirebase(result);
+            if (success) {
+                sessionStorage.removeItem("examResult");
+                if (typeof IDB !== "undefined") await IDB.removeItem("pendingLeaderboardSync"); else localStorage.removeItem("pendingLeaderboardSync");
+                updateSyncBanner("synced", "Score successfully recorded!");
+            } else {
+                stashForLaterSync(result);
+            }
+        } else {
+            stashForLaterSync(result);
+        }
+    }
+
+    async function stashForLaterSync(result) {
+        if (typeof IDB !== "undefined") await IDB.setItem("pendingLeaderboardSync", JSON.stringify(result)); else localStorage.setItem("pendingLeaderboardSync", JSON.stringify(result));
+        updateSyncBanner("offline", "Saved offline. Score will automatically record when connected.");
+    }
+
+    async function checkPendingSync() {
+        const pending = (typeof IDB !== "undefined") ? await IDB.getItem("pendingLeaderboardSync") : localStorage.getItem("pendingLeaderboardSync");
+        if (pending && navigator.onLine) {
+            const result = JSON.parse(pending);
+            const success = await writeToFirebase(result);
+            if (success) {
+                if (typeof IDB !== "undefined") await IDB.removeItem("pendingLeaderboardSync"); else localStorage.removeItem("pendingLeaderboardSync");
+                sessionStorage.removeItem("examResult");
+                updateSyncBanner("synced", "Offline score recorded successfully!");
+            }
+        }
+    }
+
+    async function writeToFirebase(result) {
+        try {
+            await addDoc(collection(db, "leaderboard"), {
+                uid: result.uid || "anonymous",
+                name: result.name || "Candidate",
+                exam: result.exam || "JAMB/WAEC",
+                percentage: result.percentage,
+                score: result.percentage,
+                rawScore: result.score || 0,
+                totalQuestions: result.total || 0,
+                speedSec: result.speedSec || 0,
+                subjectScores: result.subjectScores || {},
+                timestamp: result.timestamp || Date.now()
+            });
+            return true;
+        } catch (err) {
+            console.error("🔴 Firestore write failed:", err);
+            return false;
+        }
+    }
+
+    function updateSyncBanner(status, message) {
+        const banner = document.getElementById("sync-banner");
+        const statusText = document.getElementById("sync-status-text");
+
+        banner.style.display = "flex";
+        banner.className = `sync-banner ${status}`;
+        statusText.innerText = message;
+    }
+</script>
+</body>
+</html>

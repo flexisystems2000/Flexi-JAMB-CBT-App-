@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study - Flexi Educational Consult</title>
+    <link rel="stylesheet" href="theme.css">
+   <script src="boxicons.js"></script>
+    <style>
+        /* Shared Styles */
+        body { background: var(--bg); color: var(--text); padding: 20px; transition: .3s ease; }
+        .header { margin-bottom: 25px; }
+        .header h1 { color: var(--text); font-size: 2rem; }
+        .header p { color: var(--subtext); }
+
+        /* Grid Layout */
+        .study-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Study</h1>
+    <p>Get all the resources you need to ace your exams</p>
+</div>
+
+<div class="study-grid">
+    <a href="past.html" class="card">
+        <box-icon name="timer" color="#008000"></box-icon>
+        <span>Study Past Questions</span>
+    </a>
+    <a href="literature.html" class="card">
+        <box-icon name="book-open" color="#800080"></box-icon>
+        <span>Novels</span>
+    </a>
+    <a href="video.html" class="card">
+        <box-icon name="video" color="#a020f0"></box-icon>
+        <span>Video Lessons</span>
+    </a>
+    <a href="lesson.html" class="card">
+        <box-icon name="book-content" color="#ff6347"></box-icon>
+        <span>Lesson Notes</span>
+    </a>
+    <a href="jamb-brochure.html" class="card">
+        <box-icon name="book" color="#ffa500"></box-icon>
+        <span>JAMB Brochure</span>
+    </a>
+    <a href="syllabus.html" class="card">
+        <box-icon name="file" color="#20b2aa"></box-icon>
+        <span>JAMB Syllabus</span>
+    </a>
+    <a href="waecsyllabus.html" class="card">
+        <box-icon name="book-bookmark" color="#ff69b4"></box-icon>
+        <span>WAEC Syllabus</span>
+    </a>
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

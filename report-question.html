@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Question - Flexi Educational Consult</title>
+
+  <!-- Global Theme Stylesheet -->
+  <link rel="stylesheet" href="theme.css">
+
+  <!-- Lucide Icons -->
+  <script src="lucide.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      background: var(--header);
+      padding: 10px 0;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Form Card */
+    .form-card {
+      background-color: var(--card);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--subtext);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--green, #2E8B57);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* Primary Submit Button */
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--green, #2E8B57);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 8px;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    /* Question Preview Box */
+    .question-preview-box {
+      background-color: var(--bg);
+      border-radius: 10px;
+      border: 1px dashed var(--border);
+      padding: 12px;
+      font-size: 0.82rem;
+      color: var(--subtext);
+      line-height: 1.4;
+    }
+
+    .preview-tag {
+      font-weight: 700;
+      color: var(--green, #2E8B57);
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    /* Toast Notification */
+    .toast {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: var(--green, #2E8B57);
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+
+    .spin {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Bar -->
+    <header class="header">
+      <a href="javascript:history.back()" class="back-btn">
+        <i data-lucide="arrow-left"></i>
+      </a>
+      <span class="header-title">Report Question</span>
+    </header>
+
+    <form id="report-form" class="form-card">
+      
+      <!-- Question Context Preview -->
+      <div id="preview-container" class="question-preview-box" style="display: none;">
+        <span class="preview-tag" id="preview-subject-tag">Subject</span>
+        <span id="preview-question-text">Question snippet...</span>
+      </div>
+
+      <!-- Subject Selection -->
+      <div class="form-group">
+  <label class="form-label" for="subject-select">Subject</label>
+  <select id="subject-select" class="form-select" required>
+    <option value="" disabled selected>Select Subject</option>
+    <option value="English Language">English Language</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="Biology">Biology</option>
+    <option value="Chemistry">Chemistry</option>
+    <option value="Physics">Physics</option>
+    <option value="Agricultural Science">Agricultural Science</option>
+    <option value="Animal Husbandry">Animal Husbandry</option>
+    <option value="Health Education">Health Education</option>
+    <option value="Financial Accounting">Financial Accounting</option>
+    <option value="Commerce">Commerce</option>
+    <option value="Economics">Economics</option>
+    <option value="Marketing">Marketing</option>
+    <option value="Office Practice">Office Practice</option>
+    <option value="Insurance">Insurance</option>
+    <option value="Literature in English">Literature in English</option>
+    <option value="Government">Government</option>
+    <option value="History">History</option>
+    <option value="Geography">Geography</option>
+    <option value="Christian Religious Studies (CRS)">Christian Religious Studies (CRS)</option>
+    <option value="Islamic Religious Studies (IRS)">Islamic Religious Studies (IRS)</option>
+    <option value="Civic Education">Civic Education</option>
+    <option value="French">French</option>
+    <option value="Arabic">Arabic</option>
+    <option value="Hausa">Hausa</option>
+    <option value="Igbo">Igbo</option>
+    <option value="Yoruba">Yoruba</option>
+    <option value="Computer Studies">Computer Studies</option>
+    <option value="Data Processing">Data Processing</option>
+    <option value="Technical Drawing">Technical Drawing</option>
+    <option value="Auto Mechanics">Auto Mechanics</option>
+    <option value="Building Construction">Building Construction</option>
+    <option value="Metalwork">Metalwork</option>
+    <option value="Woodwork">Woodwork</option>
+    <option value="Electrical Installation &amp; Maintenance Work">Electrical Installation &amp; Maintenance Work</option>
+    <option value="Home Economics">Home Economics</option>
+    <option value="Food and Nutrition">Food and Nutrition</option>
+    <option value="Catering Craft Practice">Catering Craft Practice</option>
+    <option value="Clothing and Textiles">Clothing and Textiles</option>
+    <option value="Home Management">Home Management</option>
+    <option value="Visual Art">Visual Art</option>
+    <option value="Music">Music</option>
+    <option value="Fisheries">Fisheries</option>
+    <option value="Other">Other</option>
+  </select>
+</div>
+
+      <!-- Issue Category -->
+      <div class="form-group">
+        <label class="form-label" for="issue-type">Issue Type</label>
+        <select id="issue-type" class="form-select" required>
+          <option value="Wrong Answer Key">Wrong Answer Key</option>
+          <option value="Typo / Spelling Error">Typo / Spelling Error</option>
+          <option value="Missing Diagram / Image">Missing Diagram / Image</option>
+          <option value="Unclear Explanation">Unclear Explanation</option>
+          <option value="Duplicate Question">Duplicate Question</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Question ID / Ref (Optional if loaded via URL) -->
+      <div class="form-group">
+        <label class="form-label" for="question-id">Question ID / Reference (Optional)</label>
+        <input type="text" id="question-id" class="form-input" placeholder="e.g. MATH-2024-Q14" />
+      </div>
+
+      <!-- Explanation Details -->
+      <div class="form-group">
+        <label class="form-label" for="issue-description">Description of Issue</label>
+        <textarea id="issue-description" class="form-textarea" placeholder="Describe the error or state what the correct answer should be..." required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submit-btn" class="btn-submit">
+        <i data-lucide="send" id="btn-icon" style="width:18px; height:18px;"></i>
+        <span>Submit Report</span>
+      </button>
+
+    </form>
+
+  </div>
+
+  <div id="status-toast" class="toast">Report submitted successfully!</div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <!-- Firebase Integration Script -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    const firebaseConfig = { 
+      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
+      authDomain: "flexieduconsult.com.ng", 
+      projectId: "waec2026jamb2027" 
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    // Auto-fill from URL parameters if passed from CBT player
+    const urlParams = new URLSearchParams(window.location.search);
+    const qIdParam = urlParams.get('id');
+    const subjectParam = urlParams.get('subject');
+    const textParam = urlParams.get('text');
+
+    if (qIdParam) document.getElementById('question-id').value = qIdParam;
+    if (subjectParam) {
+      const select = document.getElementById('subject-select');
+      select.value = subjectParam;
+    }
+
+    if (textParam || subjectParam) {
+      const previewBox = document.getElementById('preview-container');
+      previewBox.style.display = 'block';
+      if (subjectParam) document.getElementById('preview-subject-tag').textContent = subjectParam;
+      if (textParam) document.getElementById('preview-question-text').textContent = `"${textParam}"`;
+    }
+
+    // Submit handler
+    document.getElementById('report-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const btn = document.getElementById('submit-btn');
+      const icon = document.getElementById('btn-icon');
+      
+      const subject = document.getElementById('subject-select').value;
+      const issueType = document.getElementById('issue-type').value;
+      const questionId = document.getElementById('question-id').value.trim();
+      const description = document.getElementById('issue-description').value.trim();
+      const currentUser = auth.currentUser;
+
+      btn.disabled = true;
+      icon.setAttribute('data-lucide', 'loader-2');
+      icon.classList.add('spin');
+      lucide.createIcons();
+
+      try {
+        await addDoc(collection(db, "question_reports"), {
+          subject: subject,
+          issueType: issueType,
+          questionId: questionId || "N/A",
+          description: description,
+          userEmail: currentUser ? currentUser.email : "Anonymous",
+          userId: currentUser ? currentUser.uid : "Anonymous",
+          createdAt: serverTimestamp(),
+          status: "Pending"
+        });
+
+        showToast("Report submitted! Thank you for helping improve our questions.");
+        document.getElementById('report-form').reset();
+
+      } catch (err) {
+        console.error("Error submitting question report:", err);
+        showToast("Failed to submit. Please check network connection.");
+      } finally {
+        btn.disabled = false;
+        icon.setAttribute('data-lucide', 'send');
+        icon.classList.remove('spin');
+        lucide.createIcons();
+      }
+    });
+
+    function showToast(msg) {
+      const toast = document.getElementById('status-toast');
+      toast.textContent = msg;
+      toast.style.display = 'block';
+      setTimeout(() => { toast.style.display = 'none'; }, 3000);
+    }
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>

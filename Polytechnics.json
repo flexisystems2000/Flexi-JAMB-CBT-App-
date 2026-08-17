@@ -1,0 +1,38 @@
+{
+  "federal": [
+    "Yaba College of Technology (YABATECH)",
+    "Kaduna Polytechnic",
+    "Federal Polytechnic, Auchi",
+    "Federal Polytechnic, Ilaro",
+    "Federal Polytechnic, Nekede",
+    "Federal Polytechnic, Ede",
+    "Federal Polytechnic, Offa",
+    "Federal Polytechnic, Bida",
+    "Federal Polytechnic, Bauchi",
+    "Federal Polytechnic, Oko",
+    "Federal Polytechnic, Ado-Ekiti",
+    "Federal Polytechnic, Nasarawa"
+  ],
+  "state": [
+    "Moshood Abiola Polytechnic (MAPOLY)",
+    "Kwara State Polytechnic",
+    "The Polytechnic, Ibadan",
+    "Rufus Giwa Polytechnic",
+    "Osun State Polytechnic, Iree",
+    "Abraham Adesanya Polytechnic",
+    "Kano State Polytechnic",
+    "Delta State Polytechnic, Otefe-Oghara",
+    "Hassan Usman Katsina Polytechnic",
+    "Plateau State Polytechnic",
+    "Kenule Beeson Saro-Wiwa Polytechnic",
+    "Abubakar Tatari Ali Polytechnic"
+  ],
+  "private": [
+    "Grace Polytechnic",
+    "Ronik Polytechnic",
+    "Crown Polytechnic",
+    "Interlink Polytechnic",
+    "Heritage Polytechnic",
+    "Lagos City Polytechnic"
+  ]
+}

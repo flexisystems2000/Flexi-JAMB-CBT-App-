@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Requirements & Brochure | Flexi Educational Consult</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root {
+      --flexi-navy: #008000;
+      --flexi-green: #004d00;
+      --badge-bg: rgba(0, 128, 0, 0.15);
+      --badge-text: var(--flexi-navy);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding-bottom: 40px;
+      transition: .3s ease;
+    }
+
+    /* Full-width header */
+    .header-wrapper {
+      width: 100%;
+      background-color: var(--header);
+      border-bottom: 5px solid var(--flexi-green);
+      margin-bottom: 20px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .header-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 28px 20px;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .header-content h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+      color: var(--flexi-navy);
+    }
+
+    .header-content p {
+      font-size: 0.85rem;
+      color: var(--subtext);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .nav-bar {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--text);
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+    }
+
+    .nav-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Course Banner Card */
+    .course-banner-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      margin-bottom: 16px;
+    }
+
+    .meta-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .badge-faculty {
+      background-color: rgba(0, 77, 0, 0.15);
+      color: var(--flexi-green);
+    }
+
+    .course-title-display {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--flexi-navy);
+      line-height: 1.3;
+    }
+
+    /* Requirement Cards */
+    .req-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      margin-bottom: 14px;
+    }
+
+    .req-card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .req-icon {
+      font-size: 1.2rem;
+    }
+
+    .req-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--flexi-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .req-content {
+      font-size: 0.9rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .req-list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .req-list li {
+      position: relative;
+      padding-left: 20px;
+      color: var(--subtext);
+    }
+
+    .req-list li::before {
+      content: "•";
+      position: absolute;
+      left: 4px;
+      color: var(--flexi-green);
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    .remark-box {
+      background-color: rgba(245, 158, 11, 0.1);
+      border-left: 4px solid #f59e0b;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* Search & Institutions Filter */
+    .search-box {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 14px 10px 38px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      font-size: 0.88rem;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--flexi-green);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--subtext);
+      font-size: 0.95rem;
+    }
+
+    .institution-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 320px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .inst-item {
+      padding: 10px 12px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .inst-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .inst-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .inst-tag {
+      font-size: 0.7rem;
+      color: var(--subtext);
+      background: var(--card);
+      padding: 2px 6px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    .other-courses-btn {
+      align-self: flex-start;
+      background: none;
+      border: none;
+      color: var(--flexi-green);
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+    }
+
+    .other-courses-btn:hover {
+      color: var(--flexi-navy);
+    }
+
+    .no-inst-msg {
+      text-align: center;
+      color: var(--subtext);
+      font-size: 0.85rem;
+      padding: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flexi Navy Header -->
+  <div class="header-wrapper">
+    <div class="header-content">
+      <h1>Flexi Educational Consult</h1>
+      <p id="headerSubtext">Course Entry Requirements & Guidelines</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Back Button -->
+    <div class="nav-bar">
+      <button class="back-btn" onclick="goBack()">&#8592;</button>
+      <div class="nav-title">Back to Courses</div>
+    </div>
+
+    <!-- Course Banner -->
+    <div class="course-banner-card">
+      <div class="meta-badges">
+        <span class="badge" id="institutionBadge">Institution Type</span>
+        <span class="badge badge-faculty" id="facultyBadge">Faculty</span>
+      </div>
+      <h2 class="course-title-display" id="courseTitleDisplay">Course Name</h2>
+    </div>
+
+    <!-- 1. UTME Subject Combination -->
+    <div class="req-card">
+      <div class="req-card-header">
+        <span class="req-icon">&#128211;</span>
+        <span class="req-title">UTME Subject Combination</span>
+      </div>
+      <div class="req-content">
+        <ul class="req-list" id="utmeSubjectsContainer">
+          <li>Use of English (Compulsory)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 2. O'Level Requirements -->
+    <div class="req-card">
+      <div class="req-card-header">
+        <span class="req-icon">&#127891;</span>
+        <span class="req-title">O'Level Requirements</span>
+      </div>
+      <div class="req-content" id="olevelContainer" style="color: var(--subtext);">
+        Loading O'Level requirements...
+      </div>
+    </div>
+
+    <!-- 3. Direct Entry Requirements -->
+    <div class="req-card">
+      <div class="req-card-header">
+        <span class="req-icon">&#127941;</span>
+        <span class="req-title">Direct Entry Requirements</span>
+      </div>
+      <div class="req-content" id="directEntryContainer" style="color: var(--subtext);">
+        Loading Direct Entry requirements...
+      </div>
+    </div>
+
+    <!-- 4. Accredited Institutions Offering Course -->
+    <div class="req-card">
+      <div class="req-card-header">
+        <span class="req-icon">&#127963;</span>
+        <span class="req-title">Accredited Institutions</span>
+      </div>
+      <div class="req-content">
+        <div class="search-box">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="instSearchInput" placeholder="Search institution..." />
+        </div>
+        <div class="institution-list" id="institutionsContainer"></div>
+        <div class="no-inst-msg" id="noInstMsg">No institutions found matching search.</div>
+      </div>
+    </div>
+
+    <!-- 5. Special Considerations / Remarks -->
+    <div class="req-card">
+      <div class="req-card-header">
+        <span class="req-icon">&#128221;</span>
+        <span class="req-title">Special Considerations & Remarks</span>
+      </div>
+      <div class="req-content">
+        <div class="remark-box" id="remarksContainer">
+          No special waivers or considerations specified for this course.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    const institutionDatabase = {
+      "Universities": [
+        { name: "Ahmadu Bello University (ABU)", tag: "Federal" },
+        { name: "Bayero University Kano (BUK)", tag: "Federal" },
+        { name: "Federal University of Technology Akure (FUTA)", tag: "Federal" },
+        { name: "Federal University of Technology Minna (FUTMINNA)", tag: "Federal" },
+        { name: "Federal University of Technology Owerri (FUTO)", tag: "Federal" },
+        { name: "Obafemi Awolowo University (OAU)", tag: "Federal" },
+        { name: "University of Abuja (UNIABUJA)", tag: "Federal" },
+        { name: "University of Benin (UNIBEN)", tag: "Federal" },
+        { name: "University of Calabar (UNICAL)", tag: "Federal" },
+        { name: "University of Ibadan (UI)", tag: "Federal" },
+        { name: "University of Ilorin (UNILORIN)", tag: "Federal" },
+        { name: "University of Jos (UNIJOS)", tag: "Federal" },
+        { name: "University of Lagos (UNILAG)", tag: "Federal" },
+        { name: "University of Maiduguri (UNIMAID)", tag: "Federal" },
+        { name: "University of Nigeria Nsukka (UNN)", tag: "Federal" },
+        { name: "University of Port Harcourt (UNIPORT)", tag: "Federal" },
+        { name: "University of Uyo (UNIUYO)", tag: "Federal" },
+        { name: "Usmanu Danfodiyo University (UDUSOK)", tag: "Federal" },
+        { name: "Adekunle Ajasin University (AAUA)", tag: "State" },
+        { name: "Ambrose Alli University (AAU)", tag: "State" },
+        { name: "Chukwuemeka Odumegwu Ojukwu University (COOU)", tag: "State" },
+        { name: "Delta State University (DELSU)", tag: "State" },
+        { name: "Ekiti State University (EKSU)", tag: "State" },
+        { name: "Enugu State University of Science & Tech (ESUT)", tag: "State" },
+        { name: "Kaduna State University (KASU)", tag: "State" },
+        { name: "Kwara State University (KWASU)", tag: "State" },
+        { name: "Lagos State University (LASU)", tag: "State" },
+        { name: "Olabisi Onabanjo University (OOU)", tag: "State" },
+        { name: "Rivers State University (RSU)", tag: "State" },
+        { name: "Afe Babalola University (ABUAD)", tag: "Private" },
+        { name: "Babcock University", tag: "Private" },
+        { name: "Bells University of Technology", tag: "Private" },
+        { name: "Bowen University", tag: "Private" },
+        { name: "Covenant University", tag: "Private" },
+        { name: "Igbinedion University", tag: "Private" },
+        { name: "Lead City University", tag: "Private" },
+        { name: "Nile University of Nigeria", tag: "Private" }
+      ],
+      "Polytechnics": [
+        { name: "Auchi Polytechnic", tag: "Federal" },
+        { name: "Federal Polytechnic Ado-Ekiti", tag: "Federal" },
+        { name: "Federal Polytechnic Bauchi", tag: "Federal" },
+        { name: "Federal Polytechnic Bida", tag: "Federal" },
+        { name: "Federal Polytechnic Ede", tag: "Federal" },
+        { name: "Federal Polytechnic Ilaro", tag: "Federal" },
+        { name: "Federal Polytechnic Nekede", tag: "Federal" },
+        { name: "Federal Polytechnic Offa", tag: "Federal" },
+        { name: "Federal Polytechnic Oko", tag: "Federal" },
+        { name: "Yaba College of Technology (YABATECH)", tag: "Federal" },
+        { name: "Abraham Adesanya Polytechnic", tag: "State" },
+        { name: "Akwa Ibom State Polytechnic", tag: "State" },
+        { name: "D.S. Adegbenro ICT Polytechnic", tag: "State" },
+        { name: "Institute of Management & Technology (IMT) Enugu", tag: "State" },
+        { name: "Kaduna Polytechnic", tag: "Federal" },
+        { name: "Kwara State Polytechnic", tag: "State" },
+        { name: "Lagos State Polytechnic (LASPOTECH / LASUSTECH)", tag: "State" },
+        { name: "Moshood Abiola Polytechnic (MAPOLY)", tag: "State" },
+        { name: "Nuhu Bamalli Polytechnic", tag: "State" },
+        { name: "Ogun State Polytechnic", tag: "State" },
+        { name: "The Polytechnic, Ibadan", tag: "State" }
+      ],
+      "Colleges": [
+        { name: "Adeyemi College of Education, Ondo", tag: "Federal" },
+        { name: "Federal College of Education, Abeokuta", tag: "Federal" },
+        { name: "Federal College of Education, Kano", tag: "Federal" },
+        { name: "Federal College of Education, Katsina", tag: "Federal" },
+        { name: "Federal College of Education, Obudu", tag: "Federal" },
+        { name: "Federal College of Education (Tech), Akoka", tag: "Federal" },
+        { name: "Federal College of Education (Tech), Asaba", tag: "Federal" },
+        { name: "Federal College of Education (Tech), Gombe", tag: "Federal" },
+        { name: "Alvan Ikoku Federal College of Education", tag: "Federal" },
+        { name: "Adeniran Ogunsanya College of Education", tag: "State" },
+        { name: "College of Education, Ikere-Ekiti", tag: "State" },
+        { name: "College of Education, Warri", tag: "State" },
+        { name: "Emmanuel Alayande College of Education", tag: "State" },
+        { name: "Nwafor Orizu College of Education", tag: "State" },
+        { name: "Sa'adatu Rimi College of Education", tag: "State" }
+      ],
+      "IEIs": [
+        { name: "AFRIHUB ICT Institute", tag: "Private" },
+        { name: "Ajewole International College of Tech", tag: "Private" },
+        { name: "Calabar Informatics Institute", tag: "Private" },
+        { name: "Crown Institute of Higher Education", tag: "Private" },
+        { name: "Lagos City Computer College", tag: "Private" },
+        { name: "PEFTI Film Institute", tag: "Private" },
+        { name: "Wavecrest College of Hospitality", tag: "Private" }
+      ]
+    };
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const institutionParam = urlParams.get('institution') || 'Universities';
+    const facultyParam = urlParams.get('faculty') || 'General';
+    const courseParam = urlParams.get('course') || 'Selected Course';
+
+    const courseTitleDisplay = document.getElementById('courseTitleDisplay');
+    const institutionBadge = document.getElementById('institutionBadge');
+    const facultyBadge = document.getElementById('facultyBadge');
+    const utmeSubjectsContainer = document.getElementById('utmeSubjectsContainer');
+    const olevelContainer = document.getElementById('olevelContainer');
+    const directEntryContainer = document.getElementById('directEntryContainer');
+    const remarksContainer = document.getElementById('remarksContainer');
+    const institutionsContainer = document.getElementById('institutionsContainer');
+    const instSearchInput = document.getElementById('instSearchInput');
+    const noInstMsg = document.getElementById('noInstMsg');
+
+    courseTitleDisplay.textContent = courseParam;
+    institutionBadge.textContent = institutionParam;
+    facultyBadge.textContent = `Faculty of ${facultyParam}`;
+
+    function loadCourseRequirements(faculty, course, institutionKey) {
+      let utme = ["Use of English (Compulsory)"];
+      let olevel = "";
+      let directEntry = "";
+      let remarks = "";
+
+      const lowerCourse = course.toLowerCase();
+      const lowerFaculty = faculty.toLowerCase();
+
+      if (lowerFaculty.includes('medical') || lowerCourse.includes('medicine') || lowerCourse.includes('nursing') || lowerCourse.includes('pharmacy')) {
+        utme.push("Physics", "Chemistry", "Biology");
+        olevel = "Five (5) SSCE credit passes in English Language, Mathematics, Physics, Chemistry, and Biology at not more than one sitting.";
+        directEntry = "Two (2) 'A' Level passes in Physics, Chemistry, and Biology/Zoology. First Degree in relevant biological sciences (Minimum 2:1) accepted.";
+        remarks = "Most medical programs do not accept two sittings for O'Level results. Dentistry and Nursing require physics and chemistry without substitution.";
+      } else if (lowerFaculty.includes('engineering') || lowerCourse.includes('engineering') || lowerCourse.includes('architecture')) {
+        utme.push("Mathematics", "Physics", "Chemistry");
+        olevel = "Five (5) SSCE credit passes in English Language, Mathematics, Physics, Chemistry, and any other Science subject.";
+        directEntry = "A Level passes in Mathematics and Physics. Higher National Diploma (HND) or National Diploma (ND) with Upper Credit in relevant engineering disciplines.";
+        remarks = "Further Mathematics is highly recommended at O'Level for competitive engineering faculties.";
+      } else if (lowerFaculty.includes('science') || lowerCourse.includes('computer science') || lowerCourse.includes('biochemistry')) {
+        utme.push("Mathematics", "Physics", lowerCourse.includes('bio') || lowerCourse.includes('chem') ? "Biology / Chemistry" : "Chemistry / Computer Studies");
+        olevel = "Five (5) SSCE credit passes including English Language, Mathematics, Physics, Chemistry, and Biology/Agricultural Science.";
+        directEntry = "Two (2) 'A' Level passes in science subjects including Mathematics and Physics or Chemistry. NCE/ND with Credit passes in relevant fields.";
+        remarks = "Computer Science in some institutions accepts Economics as a fourth subject if Mathematics and Physics are cleared.";
+      } else if (lowerFaculty.includes('law') || lowerCourse.includes('law')) {
+        utme.push("Literature in English", "Any two (2) Arts or Social Science subjects (e.g., Government, CRS/IRS, Economics).");
+        olevel = "Five (5) SSCE credit passes in English Language, Literature in English, Mathematics, and any other two Arts or Social Science subjects.";
+        directEntry = "Two (2) 'A' Level passes in Arts or Social Science subjects. IJMB/JUPEB passes or First Degree with a minimum of Second Class Lower.";
+        remarks = "A credit pass in O'Level Mathematics is strictly compulsory for Law across all Nigerian universities.";
+      } else if (lowerFaculty.includes('admin') || lowerFaculty.includes('social') || lowerCourse.includes('accounting') || lowerCourse.includes('economics')) {
+        utme.push("Economics", "Mathematics", "Any other Social Science subject (e.g., Government, Commerce, Geography).");
+        olevel = "Five (5) SSCE credit passes including English Language, Mathematics, Economics, and two other relevant subjects.";
+        directEntry = "Two (2) 'A' Level passes in Economics and one other subject. ND/HND with Credit in Business Administration, Accounting, or Banking & Finance.";
+        remarks = "Commerce can replace Economics in specific private and state institutions for Accounting and Business Administration.";
+      } else if (lowerFaculty.includes('education')) {
+        utme.push("The teaching subject chosen", "Any two (2) relevant Arts, Science, or Social Science subjects.");
+        olevel = "Five (5) SSCE credit passes including English Language, Mathematics, and three subjects relevant to the intended teaching specialization.";
+        directEntry = "NCE with minimum of Merit pass in target subject combination. ND/HND in relevant field is also accepted.";
+        remarks = "A credit pass in Mathematics is compulsory for all Science and Social Science Education courses.";
+      } else {
+        utme.push("Chemistry", "Biology / Agricultural Science", "Mathematics or Physics");
+        olevel = "Five (5) SSCE credit passes in English Language, Mathematics, Chemistry, Biology/Agricultural Science, and Physics.";
+        directEntry = "Two (2) 'A' Level passes in Chemistry and Biology/Agricultural Science. NCE/ND in Agriculture with Merit/Credit.";
+        remarks = "Candidates must check specific university requirements for potential waivers on Agricultural Science vs. Biology.";
+      }
+
+      utmeSubjectsContainer.innerHTML = '';
+      utme.forEach(subject => {
+        const li = document.createElement('li');
+        li.textContent = subject;
+        utmeSubjectsContainer.appendChild(li);
+      });
+
+      olevelContainer.textContent = olevel;
+      directEntryContainer.textContent = directEntry;
+      remarksContainer.textContent = remarks;
+
+      renderInstitutions(institutionKey);
+    }
+
+    function renderInstitutions(instKey) {
+      let instList = institutionDatabase[instKey] || institutionDatabase["Universities"];
+      institutionsContainer.innerHTML = '';
+
+      instList.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'inst-item';
+
+        const nameText = typeof item === 'string' ? item : item.name;
+        const tagText = typeof item === 'string' ? 'IEI' : item.tag;
+
+        div.innerHTML = `
+          <div class="inst-header">
+            <span class="inst-name">${nameText}</span>
+            <span class="inst-tag">${tagText}</span>
+          </div>
+          <button class="other-courses-btn" onclick="goToCourses('${encodeURIComponent(nameText)}')">
+            Other courses offered &rarr;
+          </button>
+        `;
+        institutionsContainer.appendChild(div);
+      });
+
+      filterInstitutions();
+    }
+
+    function filterInstitutions() {
+      const term = instSearchInput.value.toLowerCase().trim();
+      const items = institutionsContainer.getElementsByClassName('inst-item');
+      let visibleCount = 0;
+
+      Array.from(items).forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(term)) {
+          item.style.display = 'flex';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      noInstMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    function goToCourses(selectedInst) {
+      window.location.href = `index.html?institution=${encodeURIComponent(institutionParam)}&faculty=${encodeURIComponent(facultyParam)}&selectedInst=${selectedInst}`;
+    }
+
+    instSearchInput.addEventListener('input', filterInstitutions);
+
+    function goBack() {
+      if (document.referrer && document.referrer.includes(window.location.hostname)) {
+        window.history.back();
+      } else {
+        window.location.href = `index.html?institution=${encodeURIComponent(institutionParam)}&faculty=${encodeURIComponent(facultyParam)}`;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCourseRequirements(facultyParam, courseParam, institutionParam);
+    });
+  </script>
+</body>
+</html>

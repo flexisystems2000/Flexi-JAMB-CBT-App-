@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Flexi CBT | Subject Selection</title>
+
+    <style>
+        :root {
+            --flexi-navy: #003366;
+            --flexi-green: #008000;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: none;
+            transition: .3s ease;
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--header);
+            color: var(--text);
+            padding: 12px 10px;
+            border-bottom: 8px solid var(--flexi-green);
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            color: var(--flexi-green);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .welcome-msg h2 {
+            color: var(--flexi-navy);
+            margin: 0;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .welcome-msg p {
+            color: var(--subtext);
+            font-size: 0.85rem;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .mode-section {
+            background: var(--card);
+            padding: 15px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+            margin-bottom: 20px;
+        }
+
+        .mode-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--flexi-navy);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .subject-list,
+        .mode-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .subject-list {
+            background: var(--card);
+            padding: 15px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+        }
+
+        .sub-row {
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 8px;
+            transition: background 0.15s ease;
+        }
+
+        .sub-row:hover {
+            background: rgba(46, 139, 87, 0.05);
+        }
+
+        .sub-row input {
+            margin-right: 12px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--flexi-green);
+        }
+
+        .sub-row span {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .sub-row.locked {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background: transparent !important;
+        }
+
+        /* BUTTONS */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .btn-change,
+        .btn-proceed {
+            border: none;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: var(--card-shadow);
+        }
+
+        .btn-change {
+            flex: 1;
+            background: var(--border);
+            color: var(--text);
+        }
+
+        .btn-change:hover {
+            opacity: 0.8;
+        }
+
+        .btn-proceed {
+            flex: 2;
+            background: var(--flexi-green);
+            color: white;
+        }
+
+        .btn-proceed:hover {
+            opacity: 0.9;
+        }
+
+        .btn-proceed:disabled {
+            background: var(--border);
+            color: var(--subtext);
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>FLEXI EDUCATIONAL CONSULT</h1>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- WELCOME -->
+    <div class="welcome-msg">
+        <h2 id="exam-title">Subject Selection</h2>
+        <p id="exam-subtitle">Pick your mode and up to 9 subjects</p>
+    </div>
+
+    <!-- EXAM MODE -->
+    <div class="mode-section">
+        <span class="mode-title">Select Exam Mode:</span>
+
+        <div class="mode-list">
+            <label class="sub-row">
+                <input type="radio" name="examMode" value="Practice" checked>
+                <span>Practice Mode (50 mins)</span>
+            </label>
+
+            <label class="sub-row">
+                <input type="radio" name="examMode" value="Full">
+                <span>Full Exam Mode (2 hrs)</span>
+            </label>
+        </div>
+    </div>
+
+    <!-- SUBJECTS -->
+    <form class="subject-list" id="subjectForm">
+        <label class="sub-row"><input type="checkbox" name="subject" value="English Language" onchange="validateSelection()"><span>English Language</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Mathematics" onchange="validateSelection()"><span>Mathematics</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Biology" onchange="validateSelection()"><span>Biology</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Chemistry" onchange="validateSelection()"><span>Chemistry</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Physics" onchange="validateSelection()"><span>Physics</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Agricultural Science" onchange="validateSelection()"><span>Agricultural Science</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Animal Husbandry" onchange="validateSelection()"><span>Animal Husbandry</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Health Education" onchange="validateSelection()"><span>Health Education</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Financial Accounting" onchange="validateSelection()"><span>Financial Accounting</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Commerce" onchange="validateSelection()"><span>Commerce</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Economics" onchange="validateSelection()"><span>Economics</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Marketing" onchange="validateSelection()"><span>Marketing</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Office Practice" onchange="validateSelection()"><span>Office Practice</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Insurance" onchange="validateSelection()"><span>Insurance</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Literature in English" onchange="validateSelection()"><span>Literature in English</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Government" onchange="validateSelection()"><span>Government</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="History" onchange="validateSelection()"><span>History</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Geography" onchange="validateSelection()"><span>Geography</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Christian Religious Studies (CRS)" onchange="validateSelection()"><span>Christian Religious Studies (CRS)</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Islamic Religious Studies (IRS)" onchange="validateSelection()"><span>Islamic Religious Studies (IRS)</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Civic Education" onchange="validateSelection()"><span>Civic Education</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="French" onchange="validateSelection()"><span>French</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Arabic" onchange="validateSelection()"><span>Arabic</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Hausa" onchange="validateSelection()"><span>Hausa</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Igbo" onchange="validateSelection()"><span>Igbo</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Yoruba" onchange="validateSelection()"><span>Yoruba</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Computer Studies" onchange="validateSelection()"><span>Computer Studies</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Data Processing" onchange="validateSelection()"><span>Data Processing</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Technical Drawing" onchange="validateSelection()"><span>Technical Drawing</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Auto Mechanics" onchange="validateSelection()"><span>Auto Mechanics</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Building Construction" onchange="validateSelection()"><span>Building Construction</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Metalwork" onchange="validateSelection()"><span>Metalwork</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Woodwork" onchange="validateSelection()"><span>Woodwork</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Electrical Installation & Maintenance Work" onchange="validateSelection()"><span>Electrical Installation & Maintenance Work</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Home Economics" onchange="validateSelection()"><span>Home Economics</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Food and Nutrition" onchange="validateSelection()"><span>Food and Nutrition</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Catering Craft Practice" onchange="validateSelection()"><span>Catering Craft Practice</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Clothing and Textiles" onchange="validateSelection()"><span>Clothing and Textiles</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Home Management" onchange="validateSelection()"><span>Home Management</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Visual Art" onchange="validateSelection()"><span>Visual Art</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Music" onchange="validateSelection()"><span>Music</span></label>
+        <label class="sub-row"><input type="checkbox" name="subject" value="Fisheries" onchange="validateSelection()"><span>Fisheries</span></label>
+    </form>
+
+    <!-- BUTTONS -->
+    <div class="btn-group">
+        <button type="button" class="btn-change" onclick="window.location.href='test.html'">
+            Change Simulator
+        </button>
+
+        <button type="button" id="proceed-btn" class="btn-proceed" disabled onclick="saveAndMove()">
+            Proceed to Instructions
+        </button>
+    </div>
+
+</div>
+
+<!-- Global Theme Script -->
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+
+import {
+    getAuth,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+    authDomain: "flexieduconsult.com.ng",
+    projectId: "waec2026jamb2027"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+const currentExamType =
+    (typeof IDB !== "undefined" ? (await IDB.getItem("selectedExamType") || await IDB.getItem("displayExamName")) : (localStorage.getItem("selectedExamType") || localStorage.getItem("displayExamName"))) || "WAEC";
+
+onAuthStateChanged(auth, (user) => {
+
+    if (user) {
+
+        document.body.style.display = "block";
+
+        document.getElementById("exam-title").innerText =
+            currentExamType + " Selection";
+
+        document.getElementById("exam-subtitle").innerText =
+            "Pick your mode and up to 9 subjects";
+
+    } else {
+
+        window.location.href = "login.html";
+
+    }
+
+});
+
+window.validateSelection = () => {
+
+    const checkboxes =
+        document.querySelectorAll('input[name="subject"]');
+
+    const checkedBoxes = Array.from(checkboxes).filter(c => c.checked);
+    const checkedCount = checkedBoxes.length;
+
+    // WAEC/NECO Selection Rules: Max 9 subjects, at least 1 required
+    checkboxes.forEach(c => {
+        if (checkedCount >= 9 && !c.checked) {
+            c.disabled = true;
+            c.parentElement.classList.add("locked");
+        } else {
+            c.disabled = false;
+            c.parentElement.classList.remove("locked");
+        }
+    });
+
+    document.getElementById("proceed-btn").disabled =
+        checkedCount === 0;
+
+};
+
+window.saveAndMove = async () => {
+
+    const checked =
+        document.querySelectorAll('input[name="subject"]:checked');
+
+    const subjectKeys =
+        Array.from(checked).map(c => c.value);
+
+    const mode =
+        document.querySelector('input[name="examMode"]:checked').value;
+
+    if (typeof IDB !== "undefined") {
+        await IDB.setItem("userSubjectKeys", JSON.stringify(subjectKeys));
+        await IDB.setItem("examMode", mode);
+    } else {
+        localStorage.setItem("userSubjectKeys", JSON.stringify(subjectKeys));
+        localStorage.setItem("examMode", mode);
+    }
+
+    window.location.href = "page3.html";
+
+};
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flexi CBT | Practice Questions</title>
+    
+    <!-- MathJax Configuration -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'], ['\( ', ' \)']],
+                displayMath: [['\\[', '\\]'], ['\[ ', ' \]']],
+                processEscapes: true,
+                processEnvironments: true
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+            },
+            svg: { fontCache: 'global' },
+            startup: {
+                typeset: false   // Controlled manually via typesetMath()
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="./tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <style>
+        :root { 
+            --j-green: #008000; 
+            --j-red: #cc0000; 
+        }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+        body { background: var(--bg, #f4f6f8); color: var(--text, #333); padding: 20px; transition: background 0.3s ease, color 0.3s ease; min-height: 100vh; }
+
+        .container { max-width: 600px; margin: auto; transition: filter 0.4s ease, opacity 0.4s ease; }
+        .container.blurred { filter: blur(10px); pointer-events: none; user-select: none; }
+
+        .top-bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+        .back-btn { width: 44px; height: 44px; border-radius: 50%; background-color: var(--card-bg, #ffffff); display: flex; align-items: center; justify-content: center; color: var(--text, #333333); text-decoration: none; box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.08)); border: 1px solid var(--border-color, transparent); transition: background-color 0.3s ease, color 0.3s ease; }
+        body.dark .back-btn { background-color: #1e1e1e; color: #e0e0e0; border-color: #333333; }
+        
+        .calc-icon { width: 32px; height: 32px; cursor: pointer; filter: var(--icon-filter, none); }
+
+        .question-card { background: var(--card-bg, #ffffff); border-radius: 16px; padding: 20px; box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.08)); margin-bottom: 20px; border: 1px solid var(--border-color, #eee); }
+        body.dark .question-card { background: #1e1e1e; color: #ffffff; border-color: #333; }
+
+        .question-number { font-size: 0.9rem; font-weight: 700; color: #008000; margin-bottom: 10px; }
+        .question-text { font-size: 1.05rem; font-weight: 600; color: var(--text, #222222); line-height: 1.5; margin-bottom: 20px; min-height: 50px; }
+        body.dark .question-text { color: #e0e0e0; }
+
+        .options-list { display: flex; flex-direction: column; gap: 12px; }
+        .option-btn { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 14px 16px; border-radius: 12px; border: 1.5px solid var(--border-color, #dddddd); background: var(--card-bg, #ffffff); color: var(--text, #333333); font-size: 0.95rem; font-weight: 600; text-align: left; cursor: pointer; transition: all 0.2s ease; }
+        body.dark .option-btn { background: #252525; border-color: #333333; color: #e0e0e0; }
+
+        /* Direct Feedback Styling */
+        .option-btn.correct { background: #d4edda !important; border-color: #28a745 !important; color: #155724 !important; }
+        .option-btn.wrong { background: #f8d7da !important; border-color: #dc3545 !important; color: #721c24 !important; }
+
+        .badge { font-size: 0.75rem; font-weight: 700; padding: 4px 8px; border-radius: 6px; text-transform: uppercase; flex-shrink: 0; margin-left: 10px; }
+        .badge-correct { background: #28a745; color: #ffffff; }
+        .badge-wrong { background: #dc3545; color: #ffffff; }
+
+        .nav-controls { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; }
+        .action-btn { flex: 1; padding: 12px; border-radius: 20px; border: none; background: #008000; color: #ffffff; font-size: 0.95rem; font-weight: 700; cursor: pointer; box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.1)); }
+        .action-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Calculator Overlay Styles */
+        #calc-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; align-items: center; justify-content: center; }
+        .calc-card { background: #111; width: 90%; max-width: 340px; border-radius: 25px; overflow: hidden; padding-bottom: 10px; border: 1px solid #333; }
+        #cD { color: #fff; padding: 20px; text-align: right; font-size: 2.2rem; min-height: 70px; word-wrap: break-word; }
+        .calc-utility-bar { background: #1e5d2d; display: grid; grid-template-columns: repeat(5, 1fr); }
+        .calc-utility-bar button { background: none; border: none; color: #fff; font-size: 1.2rem; padding: 15px 0; font-weight: bold; cursor: pointer; }
+        .calc-grid { display: grid; grid-template-columns: repeat(5, 1fr); padding: 10px; }
+        .calc-grid button { background: none; border: none; color: #fff; font-size: 1.6rem; padding: 18px 0; cursor: pointer; }
+        .close-btn { width: 100%; background: #222; border: none; color: #999; padding: 15px; font-size: 0.8rem; letter-spacing: 1px; cursor: pointer; }
+
+        /* MathJax Fine-Tuning */
+        .MathJax, mjx-container { font-size: 105% !important; }
+
+        /* Login Modal Frame */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; z-index: 99999; backdrop-filter: blur(6px); }
+        .modal-card { width: 95%; max-width: 440px; height: 90vh; max-height: 700px; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+        .modal-card iframe { width: 100%; height: 100%; border: none; }
+        .hidden { display: none !important; }
+    </style>
+</head>
+<body>
+
+<div class="container" id="pageContainer">
+    <div class="top-bar">
+        <a href="past.html" class="back-btn" aria-label="Go Back">
+            <box-icon name="left-arrow-alt" size="sm"></box-icon>
+        </a>
+        <img src="https://i.postimg.cc/3rk3rtb6/Background-Eraser-20260213-084152616.png" class="calc-icon" id="calc-btn" alt="Calculator">
+    </div>
+
+    <div class="question-card" id="questionCard">
+        <div class="question-number" id="questionNum">Question 1</div>
+        <div class="question-text" id="questionText">Loading questions...</div>
+        <div class="options-list" id="optionsContainer"></div>
+    </div>
+
+    <div class="nav-controls">
+        <button class="action-btn" id="prevBtn" disabled>Previous</button>
+        <button class="action-btn" id="nextBtn">Next</button>
+    </div>
+</div>
+
+<!-- CALCULATOR OVERLAY -->
+<div id="calc-overlay">
+    <div class="calc-card">
+        <div id="cD">0</div>
+        <div class="calc-utility-bar">
+            <button data-val="1">1</button><button data-val="2">2</button><button data-val="3">3</button>
+            <button id="calc-del">DEL</button><button id="calc-ac">AC</button>
+        </div>
+        <div class="calc-grid">
+            <button data-val="4">4</button><button data-val="5">5</button><button data-val="6">6</button>
+            <button data-val="+">+</button><button data-val="-">-</button>
+            <button data-val="7">7</button><button data-val="8">8</button><button data-val="9">9</button>
+            <button data-val="*">×</button><button data-val="/">÷</button>
+            <button style="grid-column: span 1"></button>
+            <button data-val="0">0</button><button data-val=".">.</button>
+            <button style="grid-column: span 1"></button>
+            <button id="calc-eq" style="font-size: 2rem; color: #2E8B57;">=</button>
+        </div>
+        <button class="close-btn" id="calc-close">CLOSE CALCULATOR</button>
+    </div>
+</div>
+
+<!-- LOGIN MODAL IFRAME OVERLAY -->
+<div id="loginModal" class="modal-overlay hidden">
+    <div class="modal-card">
+        <iframe id="loginIframe" src="" title="Login Portal"></iframe>
+    </div>
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<script>
+    let questionsData = [];
+    let currentIndex = 0;
+    let userAnswers = {}; 
+    let cV = ""; // Calculator value state
+
+    /* =========================================================
+       MATH & SHUFFLE HELPERS
+       ========================================================= */
+    function shuffleArray(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    function pickRandomQuestions(allQuestions, count) {
+        if (!Array.isArray(allQuestions) || allQuestions.length === 0) return [];
+        return shuffleArray(allQuestions).slice(0, Math.min(count, allQuestions.length));
+    }
+
+    async function fetchJson(filename) {
+        const pathsToTry = [
+            "./question_bank/" + filename,
+            "question_bank/" + filename,
+            "./" + filename,
+            filename
+        ];
+        let lastError = null;
+        for (const path of pathsToTry) {
+            try {
+                const response = await fetch(path);
+                if (!response.ok) {
+                    lastError = new Error("HTTP " + response.status + " for " + path);
+                    continue;
+                }
+                const data = await response.json();
+                const questions = Array.isArray(data) ? data : (data.questions || data.data || data.items || []);
+                if (Array.isArray(questions)) return questions;
+            } catch (err) {
+                lastError = err;
+            }
+        }
+        throw lastError || new Error("Failed to load " + filename);
+    }
+
+    function formatMathText(text) {
+        if (!text) return "";
+        let s = String(text);
+
+        if (/\\\(|\\\[|\$\$/.test(s)) return s;
+
+        s = s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+        s = s.replace(/√(\d+)/g, "\\sqrt{$1}");
+        s = s.replace(/√([A-Za-z])/g, "\\sqrt{$1}");
+        s = s.replace(/√\(([^)]+)\)/g, "\\sqrt{$1}");
+        s = s.replace(/√/g, "\\sqrt{}");
+
+        s = s.replace(/π/g, "\\pi").replace(/θ/g, "\\theta").replace(/α/g, "\\alpha")
+             .replace(/β/g, "\\beta").replace(/γ/g, "\\gamma").replace(/δ/g, "\\delta")
+             .replace(/Δ/g, "\\Delta").replace(/∞/g, "\\infty").replace(/≤/g, "\\leq")
+             .replace(/≥/g, "\\geq").replace(/±/g, "\\pm").replace(/×/g, "\\times")
+             .replace(/÷/g, "\\div").replace(/→/g, "\\rightarrow").replace(/°/g, "^{\\circ}");
+
+        s = s.replace(/(\b[A-Za-z0-9]+|\([^)]+\))\^(-?\d+)/g, "$1^{$2}");
+        s = s.replace(/(\b[A-Za-z0-9]+|\([^)]+\))\^\(([^)]+)\)/g, "$1^{$2}");
+        s = s.replace(/(\b[A-Za-z]+)_([A-Za-z0-9]+)\b/g, "$1_{$2}");
+
+        s = s.replace(
+            /(\\sqrt\{[^}]*\}|\\pi|\\theta|\\alpha|\\beta|\\gamma|\\delta|\\Delta|\\infty|\\leq|\\geq|\\pm|\\times|\\div|\\rightarrow|[A-Za-z0-9]+[\^_]\{[^}]+\}|[A-Za-z0-9]*\\sqrt\{[^}]*\}[A-Za-z0-9]*)/g,
+            function(match) {
+                if (match.startsWith("\\(")) return match;
+                return "\\(" + match + "\\)";
+            }
+        );
+
+        return s.replace(/\\\(\\\(/g, "\\(").replace(/\\\)\\\)/g, "\\)");
+    }
+
+    function typesetMath() {
+        const nodes = [
+            document.getElementById("questionText"),
+            document.getElementById("optionsContainer")
+        ].filter(Boolean);
+
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetClear(nodes);
+            window.MathJax.typesetPromise(nodes).catch(err => console.warn("MathJax error:", err));
+        } else if (window.MathJax && window.MathJax.startup) {
+            window.MathJax.startup.promise.then(() => {
+                window.MathJax.typesetPromise(nodes).catch(() => {});
+            });
+        }
+    }
+
+    /* =========================================================
+       CALCULATOR LOGIC
+       ========================================================= */
+    function toggleCalc() {
+        const c = document.getElementById("calc-overlay");
+        c.style.display = (c.style.display === "flex") ? "none" : "flex";
+    }
+    function pC(v) { cV += v; document.getElementById("cD").textContent = cV; }
+    function cC() { cV = ""; document.getElementById("cD").textContent = "0"; }
+    function dC() { cV = cV.slice(0, -1); document.getElementById("cD").textContent = cV || "0"; }
+    function sC() {
+        try {
+            cV = eval(cV.replace(/×/g, "*").replace(/÷/g, "/")).toString();
+            document.getElementById("cD").textContent = cV;
+        } catch (e) { cC(); }
+    }
+
+    /* =========================================================
+       DATA LOADING & CONTROLS
+       ========================================================= */
+    document.addEventListener("DOMContentLoaded", async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const jsonFile = urlParams.get('file');
+        const selectedYear = urlParams.get('year');
+
+        const isEnglish = jsonFile && (jsonFile.includes("use_of_english") || jsonFile.includes("english"));
+
+        try {
+            if (isEnglish) {
+                let useOfEnglish = [], lekki = [];
+                try { useOfEnglish = await fetchJson("use_of_english.json"); } catch (e) {}
+                try { lekki = await fetchJson("the_lekki_headmaster.json"); } catch (e) {}
+
+                // Combine 35 English + 25 Lekki Headmaster questions
+                const englishPart = pickRandomQuestions(useOfEnglish, 35);
+                const lekkiPart = pickRandomQuestions(lekki, 25);
+                questionsData = englishPart.concat(lekkiPart);
+            } else if (jsonFile) {
+                const rawQuestions = await fetchJson(jsonFile);
+                let filtered = rawQuestions;
+
+                if (selectedYear && selectedYear !== "All") {
+                    filtered = rawQuestions.filter(q => String(q.year) === String(selectedYear));
+                }
+                
+                // Cap all other subject questions to max 40
+                questionsData = pickRandomQuestions(filtered, 40);
+            }
+
+            if (questionsData.length > 0) {
+                loadQuestion(currentIndex);
+            } else {
+                document.getElementById("questionText").textContent = "No questions available for this selection.";
+            }
+        } catch (err) {
+            document.getElementById("questionText").textContent = "Error loading question bank.";
+        }
+
+        // Navigation Bindings
+        document.getElementById("prevBtn").addEventListener("click", () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                loadQuestion(currentIndex);
+            }
+        });
+
+        document.getElementById("nextBtn").addEventListener("click", () => {
+            if (currentIndex < questionsData.length - 1) {
+                currentIndex++;
+                loadQuestion(currentIndex);
+            }
+        });
+
+        // Calculator Event Listeners
+        document.getElementById("calc-btn").addEventListener("click", toggleCalc);
+        document.getElementById("calc-close").addEventListener("click", toggleCalc);
+        document.getElementById("calc-del").addEventListener("click", dC);
+        document.getElementById("calc-ac").addEventListener("click", cC);
+        document.getElementById("calc-eq").addEventListener("click", sC);
+        document.querySelectorAll("[data-val]").forEach(btn => {
+            btn.addEventListener("click", () => pC(btn.getAttribute("data-val")));
+        });
+    });
+
+    function loadQuestion(index) {
+        const q = questionsData[index];
+        document.getElementById("questionNum").textContent = `Question ${index + 1} of ${questionsData.length} ${q.year ? '(' + q.year + ')' : ''}`;
+        document.getElementById("questionText").innerHTML = formatMathText(q.question || "");
+
+        const container = document.getElementById("optionsContainer");
+        container.innerHTML = "";
+
+        const optionsArray = q.options || [q.optA, q.optB, q.optC, q.optD].filter(Boolean);
+
+        optionsArray.forEach(optionText => {
+            const btn = document.createElement("button");
+            btn.className = "option-btn";
+            
+            const textSpan = document.createElement("span");
+            
+            // Clean prefix A. B. C. D. if present in string
+            let cleanedText = String(optionText).replace(/^[A-Da-d][\.\)]\s*/, "").trim();
+            const optionLetter = optionText.trim().charAt(0).toUpperCase();
+
+            textSpan.innerHTML = formatMathText(cleanedText);
+            btn.appendChild(textSpan);
+
+            btn.addEventListener("click", () => handleAnswerSelect(optionLetter, q, btn));
+            container.appendChild(btn);
+        });
+
+        // Re-apply selection state if already answered
+        if (userAnswers[index]) {
+            applyAnswerState(q, userAnswers[index]);
+        }
+
+        document.getElementById("prevBtn").disabled = index === 0;
+        document.getElementById("nextBtn").disabled = index === questionsData.length - 1;
+
+        typesetMath();
+    }
+
+    function handleAnswerSelect(selectedLetter, questionData, clickedBtn) {
+        userAnswers[currentIndex] = selectedLetter;
+        applyAnswerState(questionData, selectedLetter);
+    }
+
+    function applyAnswerState(questionData, selectedLetter) {
+        const buttons = document.querySelectorAll(".option-btn");
+        buttons.forEach(b => b.disabled = true);
+
+        const correctAnswerLetter = (questionData.answer || "").trim().toUpperCase();
+
+        buttons.forEach(btn => {
+            const btnText = btn.querySelector("span").textContent.trim();
+            const btnLetter = btnText.charAt(0).toUpperCase();
+
+            // Determine option letter from original string or text content
+            if (selectedLetter === correctAnswerLetter) {
+                if (btn === event?.target || btn.classList.contains('clicked')) {
+                    btn.classList.add("correct");
+                    addBadge(btn, "Correct", "badge-correct");
+                }
+            }
+        });
+
+        // Loop options to set direct feedback UI
+        const optionsArray = questionData.options || [];
+        buttons.forEach((btn, idx) => {
+            const originalOption = optionsArray[idx] || "";
+            const currentOptionLetter = originalOption.trim().charAt(0).toUpperCase();
+
+            if (currentOptionLetter === selectedLetter) {
+                if (selectedLetter === correctAnswerLetter) {
+                    btn.classList.add("correct");
+                    addBadge(btn, "Correct", "badge-correct");
+                } else {
+                    btn.classList.add("wrong");
+                    addBadge(btn, "Wrong", "badge-wrong");
+                }
+            }
+
+            if (currentOptionLetter === correctAnswerLetter && selectedLetter !== correctAnswerLetter) {
+                btn.classList.add("correct");
+                addBadge(btn, "Correct Answer", "badge-correct");
+            }
+        });
+    }
+
+    function addBadge(element, text, className) {
+        if (!element.querySelector(".badge")) {
+            const badge = document.createElement("span");
+            badge.className = `badge ${className}`;
+            badge.textContent = text;
+            element.appendChild(badge);
+        }
+    }
+</script>
+
+<!-- FIREBASE AUTH CHECK & IFRAME POP-UP LOGIC -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+        authDomain: "auth.flexieduconsult.com.ng",
+        projectId: "waec2026jamb2027",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const LOGIN_FILE_PATH = "login.html";
+
+    const modal = document.getElementById('loginModal');
+    const iframe = document.getElementById('loginIframe');
+    const pageContainer = document.getElementById('pageContainer');
+
+    onAuthStateChanged(auth, (user) => {
+        if (!user) {
+            showLoginModal();
+        } else {
+            hideLoginModal();
+        }
+    });
+
+    function showLoginModal() {
+        if (!iframe.src || !iframe.src.includes(LOGIN_FILE_PATH)) {
+            iframe.src = LOGIN_FILE_PATH;
+        }
+        modal.classList.remove('hidden');
+        pageContainer.classList.add('blurred');
+    }
+
+    function hideLoginModal() {
+        modal.classList.add('hidden');
+        pageContainer.classList.remove('blurred');
+        iframe.src = "";
+    }
+
+    window.addEventListener('message', (event) => {
+        if (event.data?.type === 'AUTH_SUCCESS') {
+            hideLoginModal();
+        }
+    });
+</script>
+</body>
+</html>

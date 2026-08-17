@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More - Flexi Educational Consult</title>
+
+  <!-- Global Theme Stylesheet -->
+  <link rel="stylesheet" href="theme.css">
+
+  <!-- Lucide Icons -->
+  <script src="lucide.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding-bottom: 24px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      background: var(--header);
+      padding: 10px 0;
+    }
+
+    .header-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--subtext);
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    .list-group {
+      background-color: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      box-shadow: var(--card-shadow);
+      overflow: hidden;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: transparent;
+      border: none;
+      width: 100%;
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .list-item:not(:last-child) {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .list-item:active,
+    .list-item:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+
+    body.dark .list-item:active,
+    body.dark .list-item:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .icon-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--green, #2E8B57);
+    }
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .item-subtitle {
+      font-size: 0.75rem;
+      color: var(--subtext);
+      margin-top: 2px;
+    }
+
+    .item-right {
+      display: flex;
+      align-items: center;
+      color: var(--subtext);
+    }
+
+    /* Toggle Switch */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .3s;
+      border-radius: 24px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider {
+      background-color: var(--green, #2E8B57);
+    }
+
+    input:checked + .slider:before {
+      transform: translateX(20px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Top Bar -->
+    <header class="header">
+      <a href="index.html" class="back-btn">
+        <i data-lucide="arrow-left"></i>
+      </a>
+
+      <span class="header-title">
+        More &amp; Settings
+      </span>
+    </header>
+
+
+    <!-- Section 1: Account & Progress -->
+    <div class="section">
+
+      <h3 class="section-title">
+        Account &amp; Progress
+      </h3>
+
+      <div class="list-group">
+
+        <a href="profile.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="user"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Profile Settings
+              </span>
+
+              <span class="item-subtitle">
+                Manage personal info &amp; exam targets
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+
+        <a href="analytics.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Performance Analytics
+              </span>
+
+              <span class="item-subtitle">
+                Test history, speed &amp; accuracy stats
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+
+        <a href="bookmarks.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="bookmark"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Saved Questions
+              </span>
+
+              <span class="item-subtitle">
+                Review questions flagged during tests
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+
+
+    <!-- Section 2: App Preferences -->
+    <div class="section">
+
+      <h3 class="section-title">
+        Preferences
+      </h3>
+
+      <div class="list-group">
+
+
+        <!-- Notification Toggle -->
+        <div
+          class="list-item"
+          onclick="toggleNotificationRow()"
+        >
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="bell"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Notifications &amp; Reminders
+              </span>
+
+              <span
+                class="item-subtitle"
+                id="reminder-subtitle"
+              >
+                Daily study reminders &amp; exam alerts
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-right">
+
+            <label
+              class="switch"
+              onclick="event.stopPropagation()"
+            >
+
+              <input
+                type="checkbox"
+                id="notification-toggle"
+                onchange="toggleNotifications(this.checked)"
+              >
+
+              <span class="slider"></span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+
+        <!-- Theme Toggle -->
+        <div
+          class="list-item"
+          onclick="toggleThemeRow()"
+        >
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="sun-moon"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Dark Mode
+              </span>
+
+              <span class="item-subtitle">
+                Toggle light and dark themes
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="item-right">
+
+            <label
+              class="switch"
+              onclick="event.stopPropagation()"
+            >
+
+              <input
+                type="checkbox"
+                id="theme-toggle"
+                onchange="toggleThemeMode(this.checked)"
+              >
+
+              <span class="slider"></span>
+
+            </label>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Section 3: Support & Information -->
+    <div class="section">
+
+      <h3 class="section-title">
+        Support &amp; Information
+      </h3>
+
+      <div class="list-group">
+
+
+        <a href="report-question.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="flag"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Report a Question
+              </span>
+
+              <span class="item-subtitle">
+                Flag errors or wrong answers
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+
+        <a href="help.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="help-circle"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                Help &amp; FAQs
+              </span>
+
+              <span class="item-subtitle">
+                Guides on using offline features
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+
+        <a href="about.html" class="list-item">
+
+          <div class="item-left">
+
+            <div class="icon-wrapper">
+              <i data-lucide="info"></i>
+            </div>
+
+            <div class="item-text">
+
+              <span class="item-title">
+                About Flexi Educational Consult
+              </span>
+
+              <span class="item-subtitle">
+                App version v1.2.0 &amp; legal terms
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="item-right">
+            <i data-lucide="chevron-right"></i>
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Existing Theme / Storage Script -->
+  <script src="idb.js"></script>
+  <script src="theme.js"></script>
+
+
+  <!--
+    Capacitor Local Notifications
+
+    This package is used when the project is built
+    as a native Android/iOS application.
+  -->
+  <script type="module">
+
+    import {
+      LocalNotifications
+    } from '@capacitor/local-notifications';
+
+
+    window.FlexiNotifications = {
+
+      async enable() {
+
+        try {
+
+          const permission =
+            await LocalNotifications.requestPermissions();
+
+          if (permission.display !== 'granted') {
+
+            await window.saveNotifState(false);
+
+            return false;
+          }
+
+
+          /*
+           * Android notification channel.
+           *
+           * iOS ignores this channel configuration.
+           */
+          try {
+
+            await LocalNotifications.createChannel({
+
+              id: 'flexi-study',
+
+              name: 'Flexi Study Reminders',
+
+              description:
+                'Flexi Educational Consult study reminders and exam alerts',
+
+              importance: 4,
+
+              visibility: 1,
+
+              sound: 'default',
+
+              vibration: true
+
+            });
+
+          } catch (channelError) {
+
+            console.log(
+              'Notification channel setup:',
+              channelError
+            );
+
+          }
+
+
+          await window.saveNotifState(true);
+
+          await window.scheduleFlexiReminders();
+
+
+          return true;
+
+        } catch (error) {
+
+          console.error(
+            'Notification setup failed:',
+            error
+          );
+
+          await window.saveNotifState(false);
+
+          return false;
+        }
+      },
+
+
+      async disable() {
+
+        try {
+
+          await LocalNotifications.cancel({
+
+            notifications: [
+
+              { id: 1001 },
+              { id: 1002 },
+              { id: 1003 }
+
+            ]
+
+          });
+
+        } catch (error) {
+
+          console.error(
+            'Could not cancel notifications:',
+            error
+          );
+
+        }
+
+        await window.saveNotifState(false);
+      },
+
+
+      async test() {
+
+        try {
+
+          await LocalNotifications.schedule({
+
+            notifications: [
+
+              {
+
+                id: 9999,
+
+                title:
+                  'Flexi Educational Consult',
+
+                body:
+                  'Notifications are working! 🎓',
+
+                schedule: {
+                  at: new Date(Date.now() + 5000)
+                },
+
+                channelId:
+                  'flexi-study',
+
+                sound:
+                  'default'
+
+              }
+
+            ]
+
+          });
+
+        } catch (error) {
+
+          console.error(
+            'Test notification failed:',
+            error
+          );
+
+        }
+
+      }
+
+    };
+
+
+    /*
+     * Make the notification functions available
+     * to the rest of this HTML file.
+     */
+
+    window.toggleNotifications =
+      async function(isEnabled) {
+
+        const toggle =
+          document.getElementById(
+            'notification-toggle'
+          );
+
+
+        if (isEnabled) {
+
+          const enabled =
+            await window.FlexiNotifications.enable();
+
+
+          if (!enabled) {
+
+            if (toggle) {
+              toggle.checked = false;
+            }
+
+            alert(
+              'Notification permission was not granted.'
+            );
+
+          }
+
+        } else {
+
+          await window.FlexiNotifications.disable();
+
+        }
+
+      };
+
+
+    /*
+     * Schedule offline/local study reminders.
+     *
+     * These are stored/scheduled by the device.
+     * They do not require your server to be online.
+     */
+
+    window.scheduleFlexiReminders =
+      async function() {
+
+        try {
+
+          /*
+           * Remove old reminder schedules first.
+           */
+
+          try {
+
+            await LocalNotifications.cancel({
+
+              notifications: [
+
+                { id: 1001 },
+                { id: 1002 },
+                { id: 1003 }
+
+              ]
+
+            });
+
+          } catch (e) {
+
+            console.log(
+              'Old notification cleanup:',
+              e
+            );
+
+          }
+
+
+          /*
+           * Morning reminder
+           */
+
+          await LocalNotifications.schedule({
+
+            notifications: [
+
+              {
+
+                id: 1001,
+
+                title:
+                  'Flexi Educational Consult',
+
+                body:
+                  "Good morning! Ready to practice today's CBT questions? 🎓",
+
+                schedule: {
+
+                  on: {
+
+                    hour: 8,
+
+                    minute: 0
+
+                  },
+
+                  repeats: true
+
+                },
+
+                channelId:
+                  'flexi-study',
+
+                sound:
+                  'default'
+
+              },
+
+
+              /*
+               * Afternoon reminder
+               */
+
+              {
+
+                id: 1002,
+
+                title:
+                  'Flexi Educational Consult',
+
+                body:
+                  'Keep your study streak going! Try a quick practice test.',
+
+                schedule: {
+
+                  on: {
+
+                    hour: 14,
+
+                    minute: 0
+
+                  },
+
+                  repeats: true
+
+                },
+
+                channelId:
+                  'flexi-study',
+
+                sound:
+                  'default'
+
+              },
+
+
+              /*
+               * Evening reminder
+               */
+
+              {
+
+                id: 1003,
+
+                title:
+                  'Flexi Educational Consult',
+
+                body:
+                  'Time to review your saved questions.',
+
+                schedule: {
+
+                  on: {
+
+                    hour: 19,
+
+                    minute: 0
+
+                  },
+
+                  repeats: true
+
+                },
+
+                channelId:
+                  'flexi-study',
+
+                sound:
+                  'default'
+
+              }
+
+            ]
+
+          });
+
+
+        } catch (error) {
+
+          console.error(
+            'Could not schedule Flexi reminders:',
+            error
+          );
+
+        }
+
+      };
+
+
+    /*
+     * Save notification state.
+     */
+
+    window.saveNotifState =
+      async function(state) {
+
+        try {
+
+          if (typeof IDB !== 'undefined') {
+
+            await IDB.setItem(
+              'flexi_reminders',
+              state ? 'true' : 'false'
+            );
+
+          } else {
+
+            localStorage.setItem(
+              'flexi_reminders',
+              state ? 'true' : 'false'
+            );
+
+          }
+
+        } catch (error) {
+
+          console.error(
+            'Could not save notification state:',
+            error
+          );
+
+        }
+
+
+        updateReminderSubtitle(state);
+
+      };
+
+
+    /*
+     * Update notification subtitle.
+     */
+
+    window.updateReminderSubtitle =
+      function(active) {
+
+        const subtitle =
+          document.getElementById(
+            'reminder-subtitle'
+          );
+
+        if (!subtitle) return;
+
+
+        subtitle.textContent = active
+
+          ? 'Daily study reminders active'
+
+          : 'Daily study reminders & exam alerts';
+
+      };
+
+
+    /*
+     * Load saved notification state.
+     */
+
+    document.addEventListener(
+      'DOMContentLoaded',
+      async function() {
+
+        try {
+
+          if (
+            typeof IDB !== 'undefined'
+          ) {
+
+            await IDB.migrateFromLocalStorage();
+
+          }
+
+        } catch (error) {
+
+          console.log(
+            'IDB migration:',
+            error
+          );
+
+        }
+
+
+        /*
+         * Theme state
+         */
+
+        const themeToggle =
+          document.getElementById(
+            'theme-toggle'
+          );
+
+
+        if (themeToggle) {
+
+          let themeVal = null;
+
+
+          try {
+
+            themeVal =
+              typeof IDB !== 'undefined'
+
+                ? await IDB.getItem('theme')
+
+                : localStorage.getItem('theme');
+
+          } catch (e) {}
+
+
+          themeToggle.checked =
+            document.body.classList.contains(
+              'dark'
+            ) ||
+            themeVal === 'dark';
+
+        }
+
+
+        /*
+         * Notification state
+         */
+
+        const notifToggle =
+          document.getElementById(
+            'notification-toggle'
+          );
+
+
+        let savedNotifState = 'false';
+
+
+        try {
+
+          savedNotifState =
+            typeof IDB !== 'undefined'
+
+              ? await IDB.getItem(
+                  'flexi_reminders'
+                )
+
+              : localStorage.getItem(
+                  'flexi_reminders'
+                );
+
+        } catch (e) {}
+
+
+        const isNotifOn =
+          savedNotifState === 'true';
+
+
+        if (notifToggle) {
+
+          notifToggle.checked =
+            isNotifOn;
+
+          updateReminderSubtitle(
+            isNotifOn
+          );
+
+        }
+
+      }
+
+    );
+
+  </script>
+
+
+  <!--
+    Theme controls
+  -->
+
+  <script>
+
+    lucide.createIcons();
+
+
+    async function toggleThemeMode(
+      isDark
+    ) {
+
+      if (isDark) {
+
+        document.body.classList.add(
+          'dark'
+        );
+
+
+        if (
+          typeof IDB !== 'undefined'
+        ) {
+
+          await IDB.setItem(
+            'theme',
+            'dark'
+          );
+
+        }
+
+
+        try {
+
+          localStorage.setItem(
+            'theme',
+            'dark'
+          );
+
+        } catch (e) {}
+
+      } else {
+
+        document.body.classList.remove(
+          'dark'
+        );
+
+
+        if (
+          typeof IDB !== 'undefined'
+        ) {
+
+          await IDB.setItem(
+            'theme',
+            'light'
+          );
+
+        }
+
+
+        try {
+
+          localStorage.setItem(
+            'theme',
+            'light'
+          );
+
+        } catch (e) {}
+
+      }
+
+    }
+
+
+    function toggleThemeRow() {
+
+      const toggle =
+        document.getElementById(
+          'theme-toggle'
+        );
+
+
+      toggle.checked =
+        !toggle.checked;
+
+
+      toggleThemeMode(
+        toggle.checked
+      );
+
+    }
+
+
+    function toggleNotificationRow() {
+
+      const toggle =
+        document.getElementById(
+          'notification-toggle'
+        );
+
+
+      toggle.checked =
+        !toggle.checked;
+
+
+      toggleNotifications(
+        toggle.checked
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>

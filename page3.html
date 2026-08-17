@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="theme.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flexi CBT | Formal Instructions</title>
+
+    <style>
+        :root {
+            --flexi-navy: #003366;
+            --flexi-green: #008000;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            display: none;
+            transition: .3s ease;
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--header);
+            color: var(--text);
+            padding: 15px 10px;
+            border-bottom: 8px solid var(--flexi-green);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--card-shadow);
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--flexi-green);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 20px 15px 40px;
+        }
+
+        .main-title {
+            color: var(--flexi-navy);
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 25px 0 20px;
+            text-transform: uppercase;
+        }
+
+        .info-summary {
+            background: var(--card);
+            border-left: 5px solid var(--flexi-green);
+            padding: 18px;
+            border-radius: var(--radius);
+            margin-bottom: 25px;
+            box-shadow: var(--card-shadow);
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .info-summary div {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--flexi-navy);
+        }
+
+        .subject-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background: var(--bg);
+            color: var(--flexi-navy);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: 1px solid var(--border);
+        }
+
+        .rules-list {
+            list-style: none;
+            margin-bottom: 30px;
+            background: var(--card);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+            border: 1px solid var(--border);
+        }
+
+        .rules-list li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 15px;
+            text-align: justify;
+            font-size: 0.92rem;
+            color: var(--text);
+        }
+
+        .rules-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .rules-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--flexi-green);
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .btn-start {
+            width: 100%;
+            border: none;
+            background: var(--flexi-green);
+            color: white;
+            padding: 18px;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.2s ease;
+            box-shadow: var(--card-shadow);
+        }
+
+        .btn-start:hover {
+            opacity: 0.95;
+        }
+
+        .btn-start:active {
+            transform: translateY(4px);
+            box-shadow: none;
+        }
+
+        .loading-screen {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: var(--flexi-navy);
+            font-weight: bold;
+            background-color: var(--bg);
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 0.9rem;
+            }
+
+            .main-title {
+                font-size: 1.15rem;
+            }
+
+            .btn-start {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loading" class="loading-screen">
+        Verifying Candidate Access...
+    </div>
+
+    <div id="main-content" style="display:none;">
+
+        <header>
+            <div class="header-container">
+                <h1>FLEXI EDUCATIONAL CONSULT</h1>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="main-title">
+                Full Examination Instructions
+            </div>
+
+            <div class="info-summary">
+                <div>
+                    Exam Type:
+                    <span id="display-exam" class="highlight">Loading...</span>
+                </div>
+
+                <div>
+                    Selected Mode:
+                    <span id="display-mode" class="highlight">Loading...</span>
+                </div>
+
+                <div>
+                    Time Allotted:
+                    <span id="display-time" class="highlight">Loading...</span>
+                </div>
+
+                <div style="margin-top: 15px;">
+                    Registered Subjects:
+                </div>
+
+                <div id="display-subjects" class="subject-tags"></div>
+            </div>
+
+            <ul class="rules-list">
+                <li>
+                    <b>Read Carefully:</b>
+                    Ensure you understand all questions before selecting an answer. You can skip questions and return to them later using the navigation panel.
+                </li>
+
+                <li>
+                    <b>Timing:</b>
+                    The countdown timer starts immediately after clicking the <b>Start Examination</b> button. The system will auto-submit once the allocated time expires.
+                </li>
+
+                <li>
+                    <b>Selection:</b>
+                    Only one answer is correct for each multiple-choice question. You may change your answer before final submission.
+                </li>
+
+                <li>
+                    <b>Technical Requirements:</b>
+                    Do not refresh the browser or press the back button during the examination to avoid losing progress.
+                </li>
+
+                <li>
+                    <b>Auto-Save:</b>
+                    Your answers are automatically saved locally on your device during the examination.
+                </li>
+
+                <li>
+                    <b>Submission:</b>
+                    Click the <b>Submit</b> button only when you are fully done. Submitted exams cannot be reopened.
+                </li>
+            </ul>
+
+            <button class="btn-start" onclick="startExam()">
+                Start Examination
+            </button>
+
+        </div>
+    </div>
+
+    <!-- Global Theme Script -->
+    <script src="idb.js"></script>
+    <script src="theme.js"></script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import {
+            getAuth,
+            onAuthStateChanged
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+            authDomain: "flexieduconsult.com.ng",
+            projectId: "waec2026jamb2027",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const loadingScreen = document.getElementById("loading");
+        const mainContent = document.getElementById("main-content");
+
+        onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        // Save the candidate name so exam.html can use it
+        const candidateName =
+            user.displayName ||
+            (user.email ? user.email.split("@")[0] : null) ||
+            "Candidate";
+
+        if (typeof IDB !== "undefined") {
+            await IDB.setItem("userName", candidateName);
+            await IDB.setItem("userEmail", user.email || "");
+            await IDB.setItem("userUid", user.uid || "");
+        } else {
+            localStorage.setItem("userName", candidateName);
+            localStorage.setItem("userEmail", user.email || "");
+            localStorage.setItem("userUid", user.uid || "");
+        }
+
+        loadingScreen.style.display = "none";
+        mainContent.style.display = "block";
+        document.body.style.display = "block";
+        loadSelectionData();
+    } else {
+        window.location.href = "login.html";
+    }
+});
+
+        async function loadSelectionData() {
+
+            // Exam Name
+            const displayName = ((typeof IDB !== "undefined") ? await IDB.getItem("displayExamName") : localStorage.getItem("displayExamName")) || "JAMB";
+            document.getElementById("display-exam").innerText = displayName;
+
+            // Subjects
+            const subjectsRaw = (typeof IDB !== "undefined") ? await IDB.getItem("userSubjectKeys") : localStorage.getItem("userSubjectKeys");
+            const subjects = subjectsRaw ? JSON.parse(subjectsRaw) : ["English Language"];
+            const subjectContainer = document.getElementById("display-subjects");
+
+            subjectContainer.innerHTML = "";
+
+            subjects.forEach(subject => {
+                const tag = document.createElement("div");
+                tag.className = "tag";
+                tag.innerText = subject;
+                subjectContainer.appendChild(tag);
+            });
+
+            // Exam Mode
+            const mode = ((typeof IDB !== "undefined") ? await IDB.getItem("examMode") : localStorage.getItem("examMode")) || "Practice";
+            document.getElementById("display-mode").innerText = `${mode} Mode`;
+
+            // Time Logic
+            let timeDisplay = "50 Minutes";
+
+            if (mode.toLowerCase() === "full") {
+                timeDisplay = "2 Hours (120 Minutes)";
+            }
+
+            document.getElementById("display-time").innerText = timeDisplay;
+        }
+
+        window.startExam = function () {
+
+            // Optional Sound or Animation can be added here
+
+            window.location.href = "exam.html";
+        };
+    </script>
+
+</body>
+</html>

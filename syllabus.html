@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMB Syllabus - Flexi</title>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        /* Base page resets */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Roboto, sans-serif; 
+            background: var(--bg); 
+            color: var(--text); 
+            padding: 20px; 
+            transition: .3s ease; 
+        }
+        
+        h1 { text-align: center; color: #008000; margin-bottom: 25px; }
+        
+        .syllabus-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: auto; 
+        }
+        
+        .subject-card { 
+            background: var(--card); 
+            padding: 20px; 
+            border-radius: 20px; 
+            box-shadow: var(--card-shadow);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: .2s;
+        }
+        
+        .subject-card h3 { margin: 0 0 10px 0; color: #008000; }
+        .subject-card p { color: var(--subtext); font-size: 0.9em; margin-bottom: 15px; }
+        
+        .btn-view { 
+            text-align: center;
+            padding: 12px; 
+            background: #008000; 
+            color: #ffffff; 
+            text-decoration: none; 
+            border-radius: 12px; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>JAMB Syllabus</h1>
+    <div class="syllabus-grid" id="syllabusContainer"></div>
+
+    <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+    <script>
+        const subjects = [
+            { id: "accounts", name: "Principles of Accounts", desc: "Bookkeeping, financial statements, and auditing basics." },
+            { id: "arabic", name: "Arabic", desc: "Language studies and literary texts." },
+            { id: "biology", name: "Biology", desc: "Diversity of organisms, Ecology, Genetics, and Physiology." },
+            { id: "chemistry", name: "Chemistry", desc: "Physical, Inorganic, and Organic Chemistry." },
+            { id: "commerce", name: "Commerce", desc: "Trade, business organizations, and financial systems." },
+            {  "id": "computer", 
+  "name": "Computer Studies",  "desc": "Computing systems, software development, and information networks." },
+            { id: "crk", name: "CRK", desc: "Christian Religious Knowledge: Study of the Bible and Christian ethics." },
+            { id: "economics", name: "Economics", desc: "Basic principles, consumer behavior, and national income." },
+            { id: "english", name: "Use of English", desc: "Compulsory for all candidates. Covers comprehension and structure." },
+            { id: "art", name: "Art", desc: "History and theory of art, and design principles." },
+            { id: "french", name: "French", desc: "Language structure, comprehension, and expression." },
+            { id: "geography", name: "Geography", desc: "Physical geography, map reading, and economic geography." },
+            { id: "government", name: "Government", desc: "Political concepts, systems, and Nigerian government history." },
+            { id: "hausa", name: "Hausa", desc: "Language study, literature, and culture." },
+            { id: "history", name: "History", desc: "World history and key events in Nigerian history." },
+            { id: "igbo", name: "Igbo", desc: "Language study, literature, and culture." },
+            {  "id": "home-economics", "name": "Home Economics", "desc": "Family ecology, nutrition, food science, and consumer resource management." },
+            { id: "irk", name: "IRS", desc: "Islamic Religious Studies: Study of the Quran, Hadith, and jurisprudence." },
+            { id: "lit", name: "Literature in English", desc: "Analysis of African and non-African prose, drama, and poetry." },
+            { id: "math", name: "Mathematics", desc: "Algebra, Calculus, Geometry, Trigonometry, and Statistics." },
+            { id: "music", name: "Music", desc: "Theory, history, and practice of music." },
+            {  "id": "phe",  "name": "Physical and Health Education",  "desc": "Kinesiology, sports science, human anatomy, wellness, and community health systems." },
+            { id: "physics", name: "Physics", desc: "Mechanics, Heat, Optics, Waves, and Electromagnetism." },
+            { id: "yoruba", name: "Yoruba", desc: "Language study, literature, and culture." }
+        ];
+
+        function renderSyllabus() {
+            const container = document.getElementById('syllabusContainer');
+            const sortedSubjects = [...subjects].sort((a, b) => a.name.localeCompare(b.name));
+
+            container.innerHTML = sortedSubjects.map(s => `
+                <div class="subject-card">
+                    <div>
+                        <h3>${s.name}</h3>
+                        <p>${s.desc}</p>
+                    </div>
+                    <a href="view.html?subject=${s.id}" class="btn-view">View Syllabus</a>
+                </div>
+            `).join('');
+        }
+
+        renderSyllabus();
+    </script>
+</body>
+</html>
