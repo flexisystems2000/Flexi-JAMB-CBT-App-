@@ -1,0 +1,7042 @@
+[
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀rẹ́' ní èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀tá",
+      "B. Ẹbí",
+      "C. Alábàákẹ́gbẹ́",
+      "D. Olùkọ́"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni àpèjúwe ìwà rere?",
+    "options": [
+      "A. Ìkórìíra",
+      "B. Ọ̀lẹ",
+      "C. Ìtẹ́ríba",
+      "D. Ìgbéraga"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń jẹun lórí àpáta, a kì í fi òkúta pa ẹran'?",
+    "options": [
+      "A. A kì í fi nǹkan rere ṣe ìpalára",
+      "B. A kì í jẹun lórí àpáta",
+      "C. Ẹran kì í jẹun pẹ̀lú òkúta",
+      "D. A kì í fi òkúta ṣe oúnjẹ"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Mo rí igi mẹ́wàá. Kí ni nọ́ńbà 'mẹ́wàá' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Eight",
+      "B. Nine",
+      "C. Ten",
+      "D. Eleven"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ àgbẹ̀?",
+    "options": [
+      "A. Àdá",
+      "B. Àṣọ",
+      "C. Ìlú",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìbẹ̀rù'?",
+    "options": [
+      "A. Ìdùnnú",
+      "B. Ìfọwọ́sowọ́pọ̀",
+      "C. Ẹ̀rù",
+      "D. Ìkórìíra"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Odò ń ṣàn. Kí ni ìtumọ̀ 'ṣàn' níbí?",
+    "options": [
+      "A. Ń sùn",
+      "B. Ń rìn",
+      "C. Ń lọ síwájú",
+      "D. Ń bọ̀"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ní ìyẹ́?",
+    "options": [
+      "A. Ẹja",
+      "B. Ìkookò",
+      "C. Adìyẹ",
+      "D. Màlúù"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'àìṣèdéédé'?",
+    "options": [
+      "A. Ìṣòtítọ́",
+      "B. Ìwà àìtọ́",
+      "C. Ìtara",
+      "D. Ìdùnnú"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Ó ń sọ àsọyé. Kí ni ìtumọ̀ 'àsọyé' níbí?",
+    "options": [
+      "A. Ń sọ ọ̀rọ̀ tí kò ní ìtumọ̀",
+      "B. Ń kọrin",
+      "C. Ń sọ ìtàn",
+      "D. Ń sọ òtítọ́"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso?",
+    "options": [
+      "A. Ọ̀gẹ̀dẹ̀",
+      "B. Oògùn",
+      "C. Òkúta",
+      "D. Igi"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'àlàáfíà'?",
+    "options": [
+      "A. Ìrora",
+      "B. Ìlera",
+      "C. Ìbànújẹ́",
+      "D. Ìdààmú"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Ojú ọjọ́ rọ. Kí ni ìtumọ̀ 'rọ' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Gbígbóná",
+      "C. Ń ṣòjò",
+      "D. Ń dídùn"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò orin?",
+    "options": [
+      "A. Sẹ̀kẹ̀sẹ̀kẹ̀",
+      "B. Àga",
+      "C. Ìbùsùn",
+      "D. Àwòrán"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìrọ́jú'?",
+    "options": [
+      "A. Ìbínú",
+      "B. Ìfẹ́",
+      "C. Sùúrù",
+      "D. Ìkórìíra"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Wọ́n ń kọrin. Kí ni ìtumọ̀ 'kọrin'?",
+    "options": [
+      "A. Ń sọ̀rọ̀",
+      "B. Ń sùn",
+      "C. Ń ṣe orin",
+      "D. Ń rírà"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń gbé inú omi?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Ẹja",
+      "C. Ìgalà",
+      "D. Ológbò"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìfọkànbalẹ̀'?",
+    "options": [
+      "A. Ìbẹ̀rù",
+      "B. Ìdùnnú",
+      "C. Ìgbẹ́kẹ̀lé",
+      "D. Ìbànújẹ́"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Oúnjẹ náà dùn. Kí ni ìtumọ̀ 'dùn' níbí?",
+    "options": [
+      "A. Kíkan",
+      "B. Gbígbóná",
+      "C. Adùn",
+      "D. Líle"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà igi?",
+    "options": [
+      "A. Ewé",
+      "B. Omi",
+      "C. Erùpẹ̀",
+      "D. Epo"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìṣèlú'?",
+    "options": [
+      "A. Ìjọba",
+      "B. Ìṣòwò",
+      "C. Ìjọsìn",
+      "D. Ìmọ̀"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Ó ń rìn lọ́nà. Kí ni ìtumọ̀ 'rìn' níbí?",
+    "options": [
+      "A. Sọ̀rọ̀",
+      "B. Gbọ́",
+      "C. Lọ pẹ̀lú ẹsẹ̀",
+      "D. Wo"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ibi?",
+    "options": [
+      "A. Ọmọ",
+      "B. Ilé-ìgbìmọ̀",
+      "C. Ẹyẹ",
+      "D. Ìgbà"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìdùnnú'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ayọ̀",
+      "C. Ìbẹ̀rù",
+      "D. Ìtura"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Ìwé náà rọrùn láti kà. Kí ni ìtumọ̀ 'rọrùn' níbí?",
+    "options": [
+      "A. Líle",
+      "B. Dídùn",
+      "C. Ní ìrọ̀rùn",
+      "D. Gbígbóná"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò ìkọ́lé?",
+    "options": [
+      "A. Àwòrán",
+      "B. Símẹ́ǹtì",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀mọ̀ràn'?",
+    "options": [
+      "A. Ọ̀lẹ",
+      "B. Ọlọ́gbọ́n",
+      "C. Ọ̀tọ̀ṣì",
+      "D. Òpònú"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Ó ń sọ àlọ́. Kí ni ìtumọ̀ 'àlọ́' níbí?",
+    "options": [
+      "A. Ń sọ ìtàn àwọn ẹranko",
+      "B. Ń kọrin",
+      "C. Ń sọ àsọyé",
+      "D. Ń sọ òtítọ́"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn?",
+    "options": [
+      "A. Omi",
+      "B. Ọtí",
+      "C. Arùn jìjẹ",
+      "D. Oorun"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀tọ̀ṣì'?",
+    "options": [
+      "A. Ọrọ̀",
+      "B. Ìfẹ́",
+      "C. Àìní",
+      "D. Ìtura"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Wọ́n ń ṣeré. Kí ni ìtumọ̀ 'ṣeré' níbí?",
+    "options": [
+      "A. Ń jó",
+      "B. Ń sùn",
+      "C. Ń ṣe eré",
+      "D. Ń wòran"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń gbé inú ilé?",
+    "options": [
+      "A. Ekùn",
+      "B. Ewúrẹ́",
+      "C. Ìkookò",
+      "D. Ẹyẹ"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'títóbi'?",
+    "options": [
+      "A. Kékeré",
+      "B. Fífẹ̀",
+      "C. Gígùn",
+      "D. Ga"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Ọmọ náà ní ìwà dídára. Kí ni ìtumọ̀ 'dídára' níbí?",
+    "options": [
+      "A. Burúkú",
+      "B. Dára",
+      "C. Rírùn",
+      "D. Kíkan"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò ẹ̀ṣọ́?",
+    "options": [
+      "A. Àga",
+      "B. Ẹ̀wù",
+      "C. Omi",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'aláyọ̀'?",
+    "options": [
+      "A. Ọ̀rẹ́",
+      "B. Aládùnnú",
+      "C. Ọ̀tọ̀ṣì",
+      "D. Ẹbí"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Nígbà wo ni a máa ń pe ìtàn kan ní àlọ́?",
+    "options": [
+      "A. Nígbà tí ó jẹ́ ìtàn òtítọ́",
+      "B. Nígbà tí ó ní àwọn ẹranko tí ń sọ̀rọ̀",
+      "C. Nígbà tí ó jẹ́ ìtàn àwọn ọba",
+      "D. Nígbà tí ó jẹ́ ìtàn àwọn ọlọ́run"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni orúkọ ìtàn Yorùbá tí ó sọ nípa òrìṣà ọdẹ?",
+    "options": [
+      "A. Ìtàn Ògún",
+      "B. Ìtàn Ṣàngó",
+      "C. Ìtàn Ọya",
+      "D. Ìtàn Ọ̀rọ̀"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni orúkọ àwọn èèyàn tí ó máa ń sọ àwọn òwe àti àlọ́?",
+    "options": [
+      "A. Olùkọ́",
+      "B. Alágbẹ̀",
+      "C. Akọ̀we",
+      "D. Oníṣọ̀rọ̀"
+    ],
+    "answer": "D",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń fún àparò ní ọbẹ̀, kí a máa fi ara rẹ̀ ṣe oúnjẹ'?",
+    "options": [
+      "A. A kì í fi ẹni tí ó dára ṣe ìpalára",
+      "B. A kì í jẹ àparò pẹ̀lú ọbẹ̀",
+      "C. A kì í fi ọbẹ̀ fún àparò",
+      "D. A kì í ṣe oúnjẹ pẹ̀lú àparò"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Kí ni orúkọ mìíràn tí a lè fi pe 'ilé-ìwé'?",
+    "options": [
+      "A. Ilé-ẹjọ́",
+      "B. Ilé-ìṣẹ́",
+      "C. Ilé-ẹ̀kọ́",
+      "D. Ilé-ìgbẹ́"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn ọ̀rọ̀ wọ̀nyí ni orúkọ àwọ̀?",
+    "options": [
+      "A. Ńlá",
+      "B. Pípé",
+      "C. Pupa",
+      "D. Títóbi"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ológbò'?",
+    "options": [
+      "A. Ẹranko afàyàfà",
+      "B. Ẹranko abiyẹ́",
+      "C. Ẹranko afẹ́fẹ́",
+      "D. Ẹranko olójú mẹ́rin"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Ọmọdé kan ń sunkún. Kí ni ìtumọ̀ ọ̀rọ̀ 'sunkún'?",
+    "options": [
+      "A. Ŋ rẹ́rìn-ín",
+      "B. Ŋ jó",
+      "C. Ŋ gbàdúrà",
+      "D. Ŋ ṣẹkún"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ oúnjẹ?",
+    "options": [
+      "A. Òkúta",
+      "B. Omi",
+      "C. Ẹ̀bà",
+      "D. Igún"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ẹja'?",
+    "options": [
+      "A. Ohun ọ̀gbìn",
+      "B. Ẹranko inú omi",
+      "C. Ẹranko inú igbó",
+      "D. Ẹranko afẹ́fẹ́"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Ọjà ti gbóná. Kí ni ìtumọ̀ 'gbóná' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Ŋ lọ́wọ́",
+      "C. Dídùn",
+      "D. Rírùn"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹ̀yà ara?",
+    "options": [
+      "A. Àjà",
+      "B. Orí",
+      "C. Ògiri",
+      "D. Ilẹ̀"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀rẹ́'?",
+    "options": [
+      "A. Ọ̀tá",
+      "B. Alábàáṣiṣẹ́",
+      "C. Olùgbàlà",
+      "D. Ẹni tí a fẹ́ràn"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Mo fẹ́ràn láti ka ìwé. Kí ni ìtumọ̀ 'ka'?",
+    "options": [
+      "A. Kọ",
+      "B. Gbọ́",
+      "C. Kà",
+      "D. Wo"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn nǹkan inú ilé?",
+    "options": [
+      "A. Òkè",
+      "B. Ojú ọjọ́",
+      "C. Àga",
+      "D. Odò"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ẹwà'?",
+    "options": [
+      "A. Ìbínú",
+      "B. Ẹ̀gàn",
+      "C. Òkunkun",
+      "D. Ẹwà"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Ó ń sáré lọ. Kí ni ìtumọ̀ 'sáré'?",
+    "options": [
+      "A. Ŋ jó",
+      "B. Ŋ wòran",
+      "C. Ŋ yára",
+      "D. Ŋ dúró"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ iṣẹ́?",
+    "options": [
+      "A. Òjò",
+      "B. Ìyẹ̀fun",
+      "C. Olùkọ́",
+      "D. Irin"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ayọ̀'?",
+    "options": [
+      "A. Ìbànújẹ́",
+      "B. Ìfẹ́",
+      "C. Ìtura",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Wọ́n ń kọrin. Kí ni ìtumọ̀ 'kọrin'?",
+    "options": [
+      "A. Ŋ sọ̀rọ̀",
+      "B. Ŋ jẹun",
+      "C. Ŋ fi ohùn dídùn sọ̀rọ̀",
+      "D. Ŋ ṣiṣẹ́"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ igi?",
+    "options": [
+      "A. Erùpẹ̀",
+      "B. Òṣùpá",
+      "C. Ọ̀pẹ",
+      "D. Àwọ̀"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀lẹ'?",
+    "options": [
+      "A. Ọlọ́gbọ́n",
+      "B. Ọ̀lọ́rọ̀",
+      "C. Ọ̀ṣiṣẹ́",
+      "D. Ọ̀lọ́kàn"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Omi náà tutù. Kí ni ìtumọ̀ 'tutù'?",
+    "options": [
+      "A. Gbígbóná",
+      "B. Dídùn",
+      "C. Yinyin",
+      "D. Kíkan"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko inú ilé?",
+    "options": [
+      "A. Ekùn",
+      "B. Erin",
+      "C. Àgùntàn",
+      "D. Ọ̀bọ"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìbẹ̀rù'?",
+    "options": [
+      "A. Ìgboyà",
+      "B. Ìfẹ́",
+      "C. Ìrètí",
+      "D. Ẹ̀rù"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Ó ń wo tẹlifíṣọ̀n. Kí ni ìtumọ̀ 'wo'?",
+    "options": [
+      "A. Gbọ́",
+      "B. Ka",
+      "C. Rí",
+      "D. Sọ"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ènìyàn?",
+    "options": [
+      "A. Òkèèrè",
+      "B. Ọjà",
+      "C. Ọmọ",
+      "D. Ọ̀sán"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìtẹ́lọ́rùn'?",
+    "options": [
+      "A. Ìbínú",
+      "B. Àìní",
+      "C. Ìyọnu",
+      "D. Ìdààmú"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Oúnjẹ náà dùn. Kí ni ìtumọ̀ 'dùn'?",
+    "options": [
+      "A. Kíkan",
+      "B. Gbígbóná",
+      "C. Dídùn létè",
+      "D. Líle"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun èlò ilé-ìdáná?",
+    "options": [
+      "A. Àwòrán",
+      "B. Ògùntẹ̀",
+      "C. Ìbùsùn",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀lọ́gbọ́n'?",
+    "options": [
+      "A. Òpònú",
+      "B. Ọ̀lọ́rọ̀",
+      "C. Ọ̀lẹ",
+      "D. Ọ̀jọ̀wà"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Ó ń rẹ́rìn-ín. Kí ni ìtumọ̀ 'rẹ́rìn-ín'?",
+    "options": [
+      "A. Ŋ sunkún",
+      "B. Ŋ bínú",
+      "C. Ŋ yọ̀",
+      "D. Ŋ sáré"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn nǹkan eré?",
+    "options": [
+      "A. Àṣọ",
+      "B. Bọ́ọ̀lù",
+      "C. Omi",
+      "D. Ilẹ̀"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìfẹ́'?",
+    "options": [
+      "A. Ìríra",
+      "B. Ìbẹ̀rù",
+      "C. Ìbànújẹ́",
+      "D. Ìtura"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Wọ́n ń ṣiṣẹ́. Kí ni ìtumọ̀ 'ṣiṣẹ́'?",
+    "options": [
+      "A. Ŋ jó",
+      "B. Ŋ sùn",
+      "C. Ŋ gbìyànjú",
+      "D. Ŋ wòran"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹranko inú igbó?",
+    "options": [
+      "A. Adìyẹ",
+      "B. Ewúrẹ́",
+      "C. Ekùn",
+      "D. Ológbò"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'títóbi'?",
+    "options": [
+      "A. Kékeré",
+      "B. Gígùn",
+      "C. Fífẹ̀",
+      "D. Ga"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Ọmọ náà ní ìwà pẹ̀lẹ́. Kí ni ìtumọ̀ 'pẹ̀lẹ́'?",
+    "options": [
+      "A. Burúkú",
+      "B. Dídùn",
+      "C. Rírùn",
+      "D. Ŋlá"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun ọ̀gbìn?",
+    "options": [
+      "A. Òkúta",
+      "B. Irin",
+      "C. Ewé",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìgbéraga'?",
+    "options": [
+      "A. Ìrẹ̀lẹ̀",
+      "B. Ìfẹ́",
+      "C. Ìyọnu",
+      "D. Ayọ̀"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Ó ń gbọ́ orin. Kí ni ìtumọ̀ 'gbọ́'?",
+    "options": [
+      "A. Wò",
+      "B. Ka",
+      "C. Fetísílẹ̀",
+      "D. Sọ"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn nǹkan tí a ń wọ̀?",
+    "options": [
+      "A. Àga",
+      "B. Bọ́ọ̀lù",
+      "C. Ṣokoto",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀tà'?",
+    "options": [
+      "A. Ọ̀rẹ́",
+      "B. Alábàáṣiṣẹ́",
+      "C. Olùgbàlà",
+      "D. Ẹbí"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Ojú ọjọ́ dára. Kí ni ìtumọ̀ 'dára'?",
+    "options": [
+      "A. Burúkú",
+      "B. Tútù",
+      "C. Gbígbóná",
+      "D. Lẹ́wà"
+    ],
+    "answer": "D",
+    "year": "2024"
+  },
+  {
+    "question": "Kí ni àpapọ̀ ọ̀rọ̀ 'ọmọ'?",
+    "options": [
+      "A. Àwọn ọmọ",
+      "B. Ẹ̀yin ọmọ",
+      "C. Òun ọmọ",
+      "D. Ibi ọmọ"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn ọ̀rọ̀ wọ̀nyí ni àpèjúwe àwòrán?",
+    "options": [
+      "A. Ń lọ",
+      "B. Dídùn",
+      "C. Rírẹwà",
+      "D. Lọ́jẹ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ gbólóhùn 'Ọbẹ̀ kì í gbé inú àgbà'?",
+    "options": [
+      "A. Àwọn àgbà kì í jẹ ọbẹ̀",
+      "B. Ọbẹ̀ kì í pọ̀ fún àgbà",
+      "C. Ọ̀rọ̀ àgbà kì í tán",
+      "D. Àgbà kì í ní àìsàn ikùn"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Mo nílò àlùbọ́sà méjì. Kí ni 'méjì' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. One",
+      "B. Two",
+      "C. Three",
+      "D. Four"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ ilẹ̀?",
+    "options": [
+      "A. Àṣọ",
+      "B. Ọ̀bẹ",
+      "C. Ohun ọ̀gbìn",
+      "D. Agbọ̀n"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìṣọ̀kan'?",
+    "options": [
+      "A. Ìyapa",
+      "B. Ìfẹ́",
+      "C. Ìdọ̀kan",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Afẹ́fẹ́ fẹ́. Kí ni ìtumọ̀ 'fẹ́' níbí?",
+    "options": [
+      "A. Ń rọ̀",
+      "B. Ń gbóná",
+      "C. Ń wú",
+      "D. Ń fun"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ẹranko tí ń rákò?",
+    "options": [
+      "A. Ẹja",
+      "B. Ẹyẹ",
+      "C. Ejò",
+      "D. Erin"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìtara'?",
+    "options": [
+      "A. Ìmẹ́lẹ́",
+      "B. Ìgbóná",
+      "C. Ìwọra",
+      "D. Ìbẹ̀rù"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Ó ń kọ lẹ́tà. Kí ni ìtumọ̀ 'kọ' níbí?",
+    "options": [
+      "A. Ka",
+      "B. Sọ",
+      "C. Yàwòrán",
+      "D. Ṣe àkọsílẹ̀"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso?",
+    "options": [
+      "A. Ewé",
+      "B. Ọ̀pọ̀tọ́",
+      "C. Òkúta",
+      "D. Ilẹ̀"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìgbẹ́kẹ̀lé'?",
+    "options": [
+      "A. Iyèméjì",
+      "B. Ìfẹ́",
+      "C. Ìdánilójú",
+      "D. Ayọ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Oòrùn ń là. Kí ni ìtumọ̀ 'là' níbí?",
+    "options": [
+      "A. Ń rọ̀",
+      "B. Ń yọ",
+      "C. Ń wọ̀",
+      "D. Ń bò"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ohun èlò orin?",
+    "options": [
+      "A. Àwòrán",
+      "B. Agogo",
+      "C. Àga",
+      "D. Ògiri"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìwà rere'?",
+    "options": [
+      "A. Ìwà ibi",
+      "B. Ìhùwàsí dára",
+      "C. Ìbínú",
+      "D. Ìmọ̀"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Wọ́n ń ṣeré. Kí ni ìtumọ̀ 'ṣeré'?",
+    "options": [
+      "A. Ń ṣiṣẹ́",
+      "B. Ń jẹun",
+      "C. Ń gbádùn",
+      "D. Ń sùn"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ẹranko abiyẹ́?",
+    "options": [
+      "A. Ológbò",
+      "B. Ẹyẹ",
+      "C. Adìyẹ",
+      "D. Ejò"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìbànújẹ́'?",
+    "options": [
+      "A. Ìdààmú",
+      "B. Ìfẹ́",
+      "C. Ìtura",
+      "D. Ìgboyà"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Ọ̀san gbóná. Kí ni ìtumọ̀ 'gbóná' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Dídùn",
+      "C. Pípé",
+      "D. Olóoru"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ẹ̀yà igi?",
+    "options": [
+      "A. Erùpẹ̀",
+      "B. Òṣùpá",
+      "C. Gbòǹgbò",
+      "D. Àwọ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìṣèlú'?",
+    "options": [
+      "A. Ìṣòwò",
+      "B. Ìmọ̀ sáyẹ́ǹsì",
+      "C. Ìjọsìn",
+      "D. Ìṣèjọba"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Ó ń ronú. Kí ni ìtumọ̀ 'ronú'?",
+    "options": [
+      "A. Sọ̀rọ̀",
+      "B. Gbọ́",
+      "C. Ṣe àgbéyẹ̀wò ọpọlọ",
+      "D. Wo"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ibi?",
+    "options": [
+      "A. Ọmọ",
+      "B. Ọ̀sán",
+      "C. Ọjà",
+      "D. Òkèèrè"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìbínú'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìtura",
+      "C. Ìkórìíra",
+      "D. Ayọ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Oyin dùn. Kí ni ìtumọ̀ 'dùn' níbí?",
+    "options": [
+      "A. Kíkan",
+      "B. Gbígbóná",
+      "C. Dídùn létè",
+      "D. Líle"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ohun èlò ìkọ́lé?",
+    "options": [
+      "A. Àwòrán",
+      "B. Ògùntẹ̀",
+      "C. Símẹ́ǹtì",
+      "D. Àga"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀jọ̀wà'?",
+    "options": [
+      "A. Ọlọ́gbọ́n",
+      "B. Ọ̀lọ́rọ̀",
+      "C. Ọ̀lẹ",
+      "D. Ọ̀mọ̀ràn"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Ó ń gbàdúrà. Kí ni ìtumọ̀ 'gbàdúrà'?",
+    "options": [
+      "A. Ń sunkún",
+      "B. Ń bínú",
+      "C. Ń bé Ọlọ́run",
+      "D. Ń sáré"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn?",
+    "options": [
+      "A. Àṣọ",
+      "B. Ibà",
+      "C. Omi",
+      "D. Ilẹ̀"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìrètí'?",
+    "options": [
+      "A. Ìríra",
+      "B. Ìbẹ̀rù",
+      "C. Àìnírètí",
+      "D. Ìgbàgbọ́"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Wọ́n ń jẹun. Kí ni ìtumọ̀ 'jẹun'?",
+    "options": [
+      "A. Ń jó",
+      "B. Ń sùn",
+      "C. Ń fi oúnjẹ bọ ara",
+      "D. Ń wòran"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ẹranko inú oko?",
+    "options": [
+      "A. Ológbò",
+      "B. Ẹja",
+      "C. Màlúù",
+      "D. Ekùn"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'kékeré'?",
+    "options": [
+      "A. Títóbi",
+      "B. Gígùn",
+      "C. Fífẹ̀",
+      "D. Ga"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Ọmọ náà ní ìwà ànímọ́. Kí ni ìtumọ̀ 'ànímọ́'?",
+    "options": [
+      "A. Burúkú",
+      "B. Dídùn",
+      "C. Rírùn",
+      "D. Ti ara"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ẹ̀yà ara igi?",
+    "options": [
+      "A. Òkúta",
+      "B. Irin",
+      "C. Ewé",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìfẹ́ni'?",
+    "options": [
+      "A. Ìrẹ̀lẹ̀",
+      "B. Ìríra",
+      "C. Ìyọnu",
+      "D. Ayọ̀"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Ó ń sọ̀rọ̀. Kí ni ìtumọ̀ 'sọ̀rọ̀'?",
+    "options": [
+      "A. Wò",
+      "B. Ka",
+      "C. Fi ẹnu bá ara ẹni",
+      "D. Gbọ́"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni ohun èlò ẹ̀ṣọ́?",
+    "options": [
+      "A. Àga",
+      "B. Bọ́ọ̀lù",
+      "C. Yẹ̀rì",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'aláìlágbára'?",
+    "options": [
+      "A. Ọ̀rẹ́",
+      "B. Alábàáṣiṣẹ́",
+      "C. Aláìlera",
+      "D. Ẹbí"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Ìwé náà wú. Kí ni ìtumọ̀ 'wú' níbí?",
+    "options": [
+      "A. Kún fún ọ̀rọ̀",
+      "B. Dára",
+      "C. Gbẹ",
+      "D. Títóbi"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Kí ni àpapọ̀ ọ̀rọ̀ 'ilé'?",
+    "options": [
+      "A. Àwọn ilé",
+      "B. Ẹ̀yin ilé",
+      "C. Òun ilé",
+      "D. Ibi ilé"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn ọ̀rọ̀ wọ̀nyí ni àpèjúwe bí nǹkan ṣe rí?",
+    "options": [
+      "A. Ń bọ̀",
+      "B. Líle",
+      "C. Rírọ̀",
+      "D. Lọ́jẹ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ gbólóhùn yìí: 'Ọwọ́ kan kì í gbẹ́rú'?",
+    "options": [
+      "A. Ẹnì kan lè ṣe ohun gbogbo.",
+      "B. Ìfọwọ́sowọ́pọ̀ ṣe pàtàkì.",
+      "C. Ẹrú kì í wúwo.",
+      "D. Ọwọ́ kan kì í lè di ẹrú mú."
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Mo nílò ìwé mẹ́ta. Kí ni orúkọ nọ́ńbà 'mẹ́ta' ní èdè Faransé?",
+    "options": [
+      "A. Un",
+      "B. Deux",
+      "C. Trois",
+      "D. Quatre"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun èlò ìkọ̀wé?",
+    "options": [
+      "A. Àṣọ",
+      "B. Ọ̀bẹ",
+      "C. Pẹ́nù",
+      "D. Agbọ̀n"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìlọsíwájú'?",
+    "options": [
+      "A. Ìdápadà",
+      "B. Ìfẹ́",
+      "C. Ìdàgbàsókè",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Òjò ń rọ̀. Kí ni ìtumọ̀ 'rọ̀' níbí?",
+    "options": [
+      "A. Ń fẹ́",
+      "B. Ń gbóná",
+      "C. Ń ṣẹ̀ṣẹ̀ bẹ̀rẹ̀",
+      "D. Ń jábọ́ láti ojú ọ̀run"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹranko tí ń fò?",
+    "options": [
+      "A. Ẹja",
+      "B. Ẹyẹ",
+      "C. Ejò",
+      "D. Erin"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìfẹ́ inú'?",
+    "options": [
+      "A. Ìmẹ́lẹ́",
+      "B. Ìgbóná",
+      "C. Ìfẹ́ tó jinlẹ̀",
+      "D. Ìkórìíra"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Ó ń ṣiṣẹ́ ní ọjà. Kí ni ìtumọ̀ 'ọjà' níbí?",
+    "options": [
+      "A. Ilé-ìwé",
+      "B. Ilé-ìjọsìn",
+      "C. Ibi tí a ti ń ta nǹkan",
+      "D. Pápá ìṣeré"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹ̀fọ́?",
+    "options": [
+      "A. Ewé ṣọọ́gùn",
+      "B. Ọ̀pọ̀tọ́",
+      "C. Òkúta",
+      "D. Iṣu"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìfarada'?",
+    "options": [
+      "A. Iyèméjì",
+      "B. Ìtẹ́lọ́rùn",
+      "C. Àìfaradà",
+      "D. Ayọ̀"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Oṣùpá ń tàn. Kí ni ìtumọ̀ 'tàn' níbí?",
+    "options": [
+      "A. Ń rọ̀",
+      "B. Ń ṣẹ̀ṣẹ̀ yọ",
+      "C. Ń wọ̀",
+      "D. Ń fi ìmọ́lẹ̀ hàn"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun èlò ìgbẹ́?",
+    "options": [
+      "A. Àwòrán",
+      "B. Agogo",
+      "C. Pọn",
+      "D. Ògiri"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìwà àìtọ́'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìfẹ́",
+      "C. Ìbínú",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Wọ́n ń sùn. Kí ni ìtumọ̀ 'sùn'?",
+    "options": [
+      "A. Ń ṣiṣẹ́",
+      "B. Ń jẹun",
+      "C. Ń gbádùn",
+      "D. Ń sinmi"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹranko inú odò?",
+    "options": [
+      "A. Ológbò",
+      "B. Ẹja",
+      "C. Adìyẹ",
+      "D. Ejò"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìrẹ̀wẹ̀sì'?",
+    "options": [
+      "A. Ìdààmú",
+      "B. Ìfẹ́",
+      "C. Ìtura",
+      "D. Ìgboyà"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Omi náà yẹ̀. Kí ni ìtumọ̀ 'yẹ̀' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Dídùn",
+      "C. Pípé",
+      "D. Kúrò ní ipò rẹ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹ̀yà ara ẹranko?",
+    "options": [
+      "A. Erùpẹ̀",
+      "B. Òṣùpá",
+      "C. Ìrù",
+      "D. Àwọ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìdàgbàsókè'?",
+    "options": [
+      "A. Ìṣòwò",
+      "B. Ìmọ̀ sáyẹ́ǹsì",
+      "C. Ìlọsíwájú",
+      "D. Ìdínkù"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Ó ń gbìyànjú. Kí ni ìtumọ̀ 'gbìyànjú'?",
+    "options": [
+      "A. Sọ̀rọ̀",
+      "B. Gbọ́",
+      "C. Ṣe akitiyan",
+      "D. Wo"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn àkókò ọdún?",
+    "options": [
+      "A. Ọmọ",
+      "B. Ọ̀sán",
+      "C. Ìgbà òjò",
+      "D. Òkèèrè"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìwà jẹ̀lẹ́ńkẹ́'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìhùwàsí pẹ̀lẹ́",
+      "C. Ìwà òkúkú",
+      "D. Ayọ̀"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Àkàrà dùn jẹ. Kí ni ìtumọ̀ 'jẹ' níbí?",
+    "options": [
+      "A. Kíkan",
+      "B. Gbígbóná",
+      "C. Fi ẹnu gba oúnjẹ",
+      "D. Líle"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun èlò ìṣeré?",
+    "options": [
+      "A. Àwòrán",
+      "B. Ògùntẹ̀",
+      "C. Káràtà",
+      "D. Àga"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọ̀mọ̀ràn'?",
+    "options": [
+      "A. Ọlọ́gbọ́n",
+      "B. Ọ̀lọ́rọ̀",
+      "C. Ọ̀lẹ",
+      "D. Òpònú"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Ó ń bú. Kí ni ìtumọ̀ 'bú' níbí?",
+    "options": [
+      "A. Ń sunkún",
+      "B. Ń bínú",
+      "C. Ń sọ̀rọ̀ àbùkù",
+      "D. Ń sáré"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn àwọ̀ àlàyé?",
+    "options": [
+      "A. Àṣọ",
+      "B. Aláràmbárà",
+      "C. Omi",
+      "D. Ilẹ̀"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìṣọ̀tẹ̀'?",
+    "options": [
+      "A. Ìríra",
+      "B. Ìbẹ̀rù",
+      "C. Ìgbọràn",
+      "D. Ìtura"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Wọ́n ń wẹ. Kí ni ìtumọ̀ 'wẹ' níbí?",
+    "options": [
+      "A. Ń jó",
+      "B. Ń sùn",
+      "C. Ń fi omi fọ ara",
+      "D. Ń wòran"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹranko tí a lè fi ṣe ọ̀ṣọ́?",
+    "options": [
+      "A. Ológbò",
+      "B. Ẹja",
+      "C. Kúlúùlù",
+      "D. Ekùn"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'gígùn'?",
+    "options": [
+      "A. Kékeré",
+      "B. Kúkúrú",
+      "C. Fífẹ̀",
+      "D. Gùn"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Ọmọ náà ní ìwà àìgbọràn. Kí ni ìtumọ̀ 'àìgbọràn'?",
+    "options": [
+      "A. Burúkú",
+      "B. Dídùn",
+      "C. Rírùn",
+      "D. Kò ní ìtẹ́ríba"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ẹ̀yà àtọ́jọ́?",
+    "options": [
+      "A. Òkúta",
+      "B. Irin",
+      "C. Epo",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìbàjẹ́'?",
+    "options": [
+      "A. Ìrẹ̀lẹ̀",
+      "B. Ìríra",
+      "C. Ìdíwọ̀n",
+      "D. Ayọ̀"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Ó ń fẹ́ràn orin. Kí ni ìtumọ̀ 'fẹ́ràn' níbí?",
+    "options": [
+      "A. Wò",
+      "B. Ka",
+      "C. Nífẹ̀ẹ́ sí",
+      "D. Gbọ́"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àwọn ohun èlò ìkọ́ṣẹ́?",
+    "options": [
+      "A. Àga",
+      "B. Bọ́ọ̀lù",
+      "C. Ọ̀wọ́",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'aláìní'?",
+    "options": [
+      "A. Ọ̀rẹ́",
+      "B. Alábàáṣiṣẹ́",
+      "C. Ọlọ́rọ̀",
+      "D. Ọ̀tọ̀ṣì"
+    ],
+    "answer": "D",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń wí fún omodé'?",
+    "options": [
+      "A. Omodé máa ń kọ́ nǹkan",
+      "B. Ìkọ́ni ṣe pàtàkì fún omodé",
+      "C. Omodé kò gbọ́dọ̀ sọ̀rọ̀",
+      "D. Omodé kò ní ìmọ̀"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Kí ni àpapọ̀ ọ̀rọ̀ 'ọkùnrin'?",
+    "options": [
+      "A. Àwọn ọkùnrin",
+      "B. Ẹ̀yin ọkùnrin",
+      "C. Òun ọkùnrin",
+      "D. Ibi ọkùnrin"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni àpèjúwe ẹwà?",
+    "options": [
+      "A. Ń lọ",
+      "B. Líle",
+      "C. Rẹwà",
+      "D. Kíkan"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Àkùkọ̀ kì í kọ nígbà ọjọ́'?",
+    "options": [
+      "A. Àkùkọ̀ kì í kọ lọ́sàn-án",
+      "B. Ohun tí ó wà lọ́kè ni àkùkọ̀ ń kọ",
+      "C. Èèyàn ṣe nǹkan ní ìgbà rẹ̀",
+      "D. Àkùkọ̀ kì í kọ lọ́jọ́ òjò"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Mo rí àga mẹ́rin. Kí ni nọ́ńbà 'mẹ́rin' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Three",
+      "B. Four",
+      "C. Five",
+      "D. Six"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ ìdáná?",
+    "options": [
+      "A. Àṣọ",
+      "B. Ikọkọ",
+      "C. Bọ́ọ̀lù",
+      "D. Ìbùsùn"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìdúpẹ́'?",
+    "options": [
+      "A. Ìbínú",
+      "B. Ìfẹ́",
+      "C. Ọpẹ́",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Ìràwọ̀ ń tàn. Kí ni ìtumọ̀ 'tàn' níbí?",
+    "options": [
+      "A. Ń rọ̀",
+      "B. Ń wọ̀",
+      "C. Ń fi ìmọ́lẹ̀ hàn",
+      "D. Ń ṣẹ̀ṣẹ̀ yọ"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko abiyẹ́?",
+    "options": [
+      "A. Erin",
+      "B. Ẹyẹ",
+      "C. Ejò",
+      "D. Màlúù"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìháragàgà'?",
+    "options": [
+      "A. Ìmẹ́lẹ́",
+      "B. Ìtara",
+      "C. Ìbẹ̀rù",
+      "D. Ìkórìíra"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Ó ń ka ìwé. Kí ni ìtumọ̀ 'ka' níbí?",
+    "options": [
+      "A. Kọ",
+      "B. Sọ",
+      "C. Wò",
+      "D. Mọ̀"
+    ],
+    "answer": "D",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso?",
+    "options": [
+      "A. Iṣu",
+      "B. Ewé",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìtẹ́lọ́rùn'?",
+    "options": [
+      "A. Ìbànújẹ́",
+      "B. Ìfẹ́",
+      "C. Ayọ̀",
+      "D. Ìdààmú"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Ojú ọjọ́ pọ́n. Kí ni ìtumọ̀ 'pọ́n' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Gbígbóná",
+      "C. Dídùn",
+      "D. Rírùn"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò orin?",
+    "options": [
+      "A. Àga",
+      "B. Gángan",
+      "C. Àwòrán",
+      "D. Ìbùsùn"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìwà pẹ̀lẹ́'?",
+    "options": [
+      "A. Ìwà ibi",
+      "B. Ìfẹ́",
+      "C. Ìhùwàsí rere",
+      "D. Ìmọ̀"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Wọ́n ń jó. Kí ni ìtumọ̀ 'jó'?",
+    "options": [
+      "A. Ń sùn",
+      "B. Ń sáré",
+      "C. Ń rírà",
+      "D. Ń yọ ara wọn"
+    ],
+    "answer": "D",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko inú igbó?",
+    "options": [
+      "A. Adìyẹ",
+      "B. Ewúrẹ́",
+      "C. Ìgalà",
+      "D. Ológbò"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìrẹ̀lẹ̀'?",
+    "options": [
+      "A. Ìgbéraga",
+      "B. Ìfẹ́",
+      "C. Ìtẹ́ríba",
+      "D. Ìbínú"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Oúnjẹ náà kíkan. Kí ni ìtumọ̀ 'kíkan' níbí?",
+    "options": [
+      "A. Dùn",
+      "B. Gbígbóná",
+      "C. Pọ́n",
+      "D. Kò dùn"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà igi?",
+    "options": [
+      "A. Erùpẹ̀",
+      "B. Epo",
+      "C. Ẹka",
+      "D. Omi"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìjọba'?",
+    "options": [
+      "A. Ìṣòwò",
+      "B. Ìṣèlú",
+      "C. Ìjọsìn",
+      "D. Ìmọ̀"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Ó ń lọ ilé-ìwé. Kí ni ìtumọ̀ 'lọ' níbí?",
+    "options": [
+      "A. Sọ̀rọ̀",
+      "B. Gbọ́",
+      "C. Rìn",
+      "D. Wo"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ibi?",
+    "options": [
+      "A. Ọmọ",
+      "B. Ìgbà",
+      "C. Ilé-ẹjọ́",
+      "D. Ẹyẹ"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ìgbàgbọ́'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìtura",
+      "C. Ìdánilójú",
+      "D. Ayọ̀"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Ìwé náà dùn láti kà. Kí ni ìtumọ̀ 'dùn' níbí?",
+    "options": [
+      "A. Kíkan",
+      "B. Gbígbóná",
+      "C. Dídùn létí",
+      "D. Líle"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò ìkọ́lé?",
+    "options": [
+      "A. Àwòrán",
+      "B. Ìyẹ̀fun",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'ọlọ́gbọ́n'?",
+    "options": [
+      "A. Ọ̀lẹ",
+      "B. Ọ̀tọ̀ṣì",
+      "C. Ọ̀mọ̀ràn",
+      "D. Òpònú"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Ó ń sọ àsàlà. Kí ni ìtumọ̀ 'àsàlà' níbí?",
+    "options": [
+      "A. Ń sunkún",
+      "B. Ń sọ àsọyé",
+      "C. Ń bínú",
+      "D. Ń sáré"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn?",
+    "options": [
+      "A. Omi",
+      "B. Ọtí",
+      "C. Oorun",
+      "D. Ìbà"
+    ],
+    "answer": "D",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'àìní'?",
+    "options": [
+      "A. Ọrọ̀",
+      "B. Ìfẹ́",
+      "C. Ọ̀tọ̀ṣì",
+      "D. Ìtura"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Wọ́n ń dáràn. Kí ni ìtumọ̀ 'dáràn' níbí?",
+    "options": [
+      "A. Ń jó",
+      "B. Ń sùn",
+      "C. Ń ṣe ìwà àìtọ́",
+      "D. Ń wòran"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúk스",
+    "options": [
+      "A. Ekùn",
+      "B. Àgùntàn",
+      "C. Ìkookò",
+      "D. Ẹyẹ"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'fífẹ̀'?",
+    "options": [
+      "A. Kékeré",
+      "B. Títóbi",
+      "C. Gígùn",
+      "D. Ga"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Ọmọ náà ní ìwà rere. Kí ni ìtumọ̀ 'rere' níbí?",
+    "options": [
+      "A. Burúkú",
+      "B. Dídùn",
+      "C. Dára",
+      "D. Rírùn"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò ẹ̀ṣọ́?",
+    "options": [
+      "A. Àga",
+      "B. Ìlẹ̀kẹ̀",
+      "C. Omi",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni àkámọ̀ ọ̀rọ̀ 'aláìlẹ́gbẹ́'?",
+    "options": [
+      "A. Ọ̀rẹ́",
+      "B. Alágbára",
+      "C. Ọ̀tọ̀",
+      "D. Ẹbí"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Nígbà wo ni a máa ń pe ìtàn kan ní àlọ́?",
+    "options": [
+      "A. Nígbà tí ó jẹ́ ìtàn òtítọ́",
+      "B. Nígbà tí ó ní àwọn ẹranko tí ń sọ̀rọ̀",
+      "C. Nígbà tí ó jẹ́ ìtàn àwọn ọba",
+      "D. Nígbà tí ó jẹ́ ìtàn àwọn ọlọ́run"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni orúkọ ìtàn Yorùbá tí ó sọ nípa Ọlọ́run àti àwọn ọmọ rẹ̀?",
+    "options": [
+      "A. Ìtàn Ògún",
+      "B. Ìtàn Ọya",
+      "C. Ìtàn Òrìṣà",
+      "D. Ìtàn Ẹlẹ́dùmarè"
+    ],
+    "answer": "D",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń sunkún, a máa ń ríran'?",
+    "options": [
+      "A. Èèyàn máa ń sunkún nígbà tí ó ń ríran",
+      "B. Èèyàn lè ṣe nǹkan méjì ní àkókò kan",
+      "C. Sunkún kò yẹ fún èèyàn",
+      "D. Ríran jẹ́ ìdí fún sunkún"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni orúkọ ààtò ìbílẹ̀ tí a máa ń lò láti pín ogún láàárín àwọn ọmọ ọkùnrin?",
+    "options": [
+      "A. Ìdílé",
+      "B. Ìjọba",
+      "C. Ìdíje",
+      "D. Ìpínlẹ̀"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ àyídáyí' ní èdè Yorùbá?",
+    "options": [
+      "A. Nítorí pé ó ń fi ìtumọ̀ ṣàpèjúwe nǹkan",
+      "B. Nítorí pé ó jẹ́ ọ̀rọ̀ tí ó ń sọ nípa ìgbà",
+      "C. Nítorí pé ó jẹ́ ọ̀rọ̀ tí a ń lò fún ìdáná",
+      "D. Nítorí pé ó ń sọ nípa àwọn ohun tí a kò rí"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń kọrin dáadáa,' kí ni orúkọ ọ̀rọ̀ àpèjúwe níbí?",
+    "options": [
+      "A. Ọmọ",
+      "B. Kọrin",
+      "C. Dáadáa",
+      "D. Náà"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń ṣọ́ aṣọ ẹni, a máa ń fi ojú tì'?",
+    "options": [
+      "A. A máa ń fi ojú ṣe aṣọ",
+      "B. Èèyàn ṣe nǹkan pẹ̀lú ìtọ́jú",
+      "C. A máa ń fi ojú tì aṣọ",
+      "D. Èèyàn kì í ṣọ́ aṣọ ẹni"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Mo rí igi mẹ́wàá. Kí ni nọ́ńbà 'mẹ́wàá' ní èdè Faransé?",
+    "options": [
+      "A. Huit",
+      "B. Neuf",
+      "C. Dix",
+      "D. Onze"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú àwọn ohun èlò wọ̀nyí, èwo ni a máa ń lò fún ìdáná lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Àga",
+      "B. Ìkòkò adágún",
+      "C. Ìbùsùn",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìdábọ̀' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí kò mọ ìbí tí ó ti wá",
+      "B. Ènìyàn tí ó ní agbára àjèjì",
+      "C. Ènìyàn tí ó máa ń bọ̀ lọ́wọ́ àwọn òrìṣà",
+      "D. Ènìyàn tí ó ń ṣe ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Òjò ń rọ̀ lọ́wọ́lọ́wọ́,' kí ni ìtumọ̀ 'lọ́wọ́lọ́wọ́'?",
+    "options": [
+      "A. Láìpẹ́",
+      "B. Ní àkókò yìí",
+      "C. Ní ọjọ́ kan",
+      "D. Lẹ́ẹ̀kọ̀ọ̀kan"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń ṣe ààtò lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ ìrọ̀kẹ́",
+      "B. Erin",
+      "C. Ejò",
+      "D. Màlúù"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àpọ́nlé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí ó jẹ́ ọmọ ìlú",
+      "C. Ènìyàn tí ó ní ìmọ̀ àti ọgbọ́n",
+      "D. Ènìyàn tí ó máa ń ṣe ìdánwò"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú àwọn àlọ́ Yorùbá, kí ni ìtàn Ìjàpá máa ń fi hàn?",
+    "options": [
+      "A. Agbára àti ìgboyà",
+      "B. Ọgbọ́n àti ẹ̀tàn",
+      "C. Ìfẹ́ àti ìrẹ̀lẹ̀",
+      "D. Ìwà rere àti ìtara"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso tí a máa ń pè ní 'agbalumo'?",
+    "options": [
+      "A. Ọ̀gẹ̀dẹ̀",
+      "B. Ọsàn",
+      "C. Ùdàrà",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìlọ́gbọ́n' nínú gbólóhùn 'Ọmọ náà jẹ́ aláìlọ́gbọ́n'?",
+    "options": [
+      "A. Ọmọ tí kò ní ìwà rere",
+      "B. Ọmọ tí kò ní ìmọ̀",
+      "C. Ọmọ tí ó ní agbára",
+      "D. Ọmọ tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olórí àwọn òrìṣà?",
+    "options": [
+      "A. Ṣàngó",
+      "B. Ọbàtálá",
+      "C. Ògún",
+      "D. Ọya"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìbọ̀rìṣà?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àga",
+      "C. Bọ́ọ̀lù",
+      "D. Ìkọkọ"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdálẹ̀' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìdúró ní ìbíkí",
+      "B. Ìbọ̀wọ̀ fún àwọn òrìṣà",
+      "C. Ìsùnkún fún ènìyàn",
+      "D. Ìtọ́jú ilé"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń fi ìgbà kan ṣe àṣàrò,' kí ni ìtumọ̀ 'àṣàrò'?",
+    "options": [
+      "A. Ìgbà tí wọ́n ń sọ̀rọ̀",
+      "B. Ìṣe tí wọ́n ń ṣe",
+      "C. Ìrò tí wọ́n ń rò",
+      "D. Ìdáná tí wọ́n ń ṣe"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe ẹbọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Àdùbà",
+      "C. Ẹyẹ",
+      "D. Ekùn"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbíkú' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó máa ń kú lẹ́ẹ̀kọ̀ọ̀kan",
+      "B. Ọmọ tí ó ní agbára àjèjì",
+      "C. Ọmọ tí ó jẹ́ ọba",
+      "D. Ọmọ tí ó máa ń ṣe ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé' tí D.O. Fagunwa kọ, kí ni ìdí tí Aláwìíyé fi lọ sí igbó?",
+    "options": [
+      "A. Láti lọ ṣe ìdáná",
+      "B. Láti lọ wá ìmọ̀ àti agbára",
+      "C. Láti lọ ṣe ìṣòwò",
+      "D. Láti lọ ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ àpèjúwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "B. Ọ̀rọ̀ tí ó ń ṣàpèjúwe nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àkókò ọdún tí ó máa ń wà ní ìgbà ẹrùn?",
+    "options": [
+      "A. Ìgbà òjò",
+      "B. Ìgbà oyè",
+      "C. Ìgbà kọ́rọ̀",
+      "D. Ìgbà òrùn"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Ojú kan kì í ṣe ọjà'?",
+    "options": [
+      "A. Ọjà kì í ṣe fún ojú kan",
+      "B. Èèyàn kan kì í lè ṣe ohun gbogbo",
+      "C. Ojú kan kì í rí ọjà",
+      "D. Èèyàn ṣe nǹkan pẹ̀lú ìfọwọ́sowọ́pọ̀"
+    ],
+    "answer": "D",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà omi?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Yemọja",
+      "C. Ṣàngó",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìdánwò ìṣèlú?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àpótí ìdìbò",
+      "C. Ìkọkọ",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àlọ́' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní àwọn ẹranko tí ń sọ̀rọ̀",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀,' kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Àkàrà-ògùn",
+      "B. Ọlọ́wọ́-ayé",
+      "C. Ọ̀kánlénú",
+      "D. Àjàní"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdílé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìṣọ̀kan láàárín àwọn ọmọ ìlú",
+      "B. Ìgbéyàwó láàárín àwọn ènìyàn",
+      "C. Àwọn ènìyàn tí ó jẹ́ ọmọ ìlú kan",
+      "D. Àwọn ènìyàn tí ó ní ìbátan ẹ̀jẹ̀"
+    ],
+    "answer": "D",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn tí ó máa ń fa ìwọ̀nba ara?",
+    "options": [
+      "A. Ọtí",
+      "B. Ìbà",
+      "C. Omi",
+      "D. Èpè"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àkùkọ̀wé' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń kọ ìwé",
+      "B. Ènìyàn tí ó máa ń sọ àlọ́ àti òwe",
+      "C. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "D. Ènìyàn tí ó máa ń ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń ṣe ìwà àìtọ́,' kí ni ìtumọ̀ 'àìtọ́'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìwà òkùnkùn",
+      "C. Ìwà tí kò tọ́",
+      "D. Ìwà pẹ̀lẹ́"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà?",
+    "options": [
+      "A. Ìsìn Ìbílẹ̀",
+      "B. Ìsìn Ìgbàgbọ́",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀kọ̀ọ̀kan' nínú gbólóhùn 'Wọ́n ń lọ ọ̀kọ̀ọ̀kan'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà ara tí a máa ń fi ṣe ìdáná?",
+    "options": [
+      "A. Ewé",
+      "B. Ìrù",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ààtò' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìsìnkú",
+      "C. Ìdáná",
+      "D. Ìtọ́kasí"
+    ],
+    "answer": "D",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò Nínú Igbó Ẹlẹ́gbẹ̀yẹ,' kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Ọlọ́wọ́-ayé",
+      "B. Àkàrà-ògùn",
+      "C. Ọlọ́run-ògún",
+      "D. Ọlọ́run-ọba"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilójú' nínú gbólóhùn 'Ó ní ìdánilójú nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìbínú",
+      "D. Ìtara"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìfẹ́?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'òwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó ń kọ́ni lẹ́kọ̀",
+      "B. Ọ̀rọ̀ tí ó ń fi nǹkan wé nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ó ń ṣiṣẹ́ kára,' kí ni ìtumọ̀ 'kára'?",
+    "options": [
+      "A. Pẹ̀lú ìtara",
+      "B. Pẹ̀lú ìbínú",
+      "C. Pẹ̀lú ìrẹ̀lẹ̀",
+      "D. Pẹ̀lú ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ìdílé tí ó jẹ́ olókìkí nínú ìtàn ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ọ̀yọ́",
+      "B. Ìjẹ̀bú",
+      "C. Èkìtì",
+      "D. Ìbàdàn"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìfọ̀rọ̀wérọ̀' nínú gbólóhùn: 'Wọ́n ṣe ìfọ̀rọ̀wérọ̀ lórí ìṣèlú'?",
+    "options": [
+      "A. Ìjìnlẹ̀ ìmọ̀",
+      "B. Ìbáraẹnisọ̀rọ̀",
+      "C. Ìkìlọ̀",
+      "D. Ìdánilójú"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Aládé Ìlú', kí ni orúkọ ọba tí ó ṣe ìdàsílẹ̀ ìlú náà?",
+    "options": [
+      "A. Ọ̀gẹ̀lẹ́",
+      "B. Adéọlá",
+      "C. Ọlúṣọlá",
+      "D. Fádúpẹ̀"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìwà ìkà yóò rí ìyọnu?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìwà ìkà yóò rí ìyọnu",
+      "B. Ìwà ìkà kò ní ìdí",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. A kò lè ṣe ìwà ìkà tán"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe iṣẹ́ adarí ní àṣà Yorùbá?",
+    "options": [
+      "A. Adéọlá",
+      "B. Ọmọọba",
+      "C. Ọládèjì",
+      "D. Àbíọ́lá"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Ará'?",
+    "options": [
+      "A. Ṣàngó",
+      "B. Ọbàtálá",
+      "C. Ọ̀rúnmìlà",
+      "D. Èṣù"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àlọ́' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó ní ẹ̀kọ́",
+      "B. Ọ̀rọ̀ ìtúpalẹ̀",
+      "C. Ọ̀rọ̀ ìṣàpèjúwe",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe búburú?",
+    "options": [
+      "A. Ó lẹ́wà bí òdòdó",
+      "B. Ó rẹwà bí ẹ̀gbin",
+      "C. Ó ga bí òkè",
+      "D. Ó dára bí ìràwọ̀"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Aláṣọ', kí ni orúkọ olùkọ̀ tí ó kọ́ àwọn ọmọ nípa iṣẹ́ aṣọ?",
+    "options": [
+      "A. Ìyá Aláṣọ",
+      "B. Bàbá Adéọlá",
+      "C. Ọ̀jọ̀gbọ́n Ọlúṣọlá",
+      "D. Ìyá Fádúpẹ̀"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìyọnu' nínú gbólóhùn: 'Ó ní ìyọnu pẹ̀lú ìṣẹ̀lẹ̀ náà'?",
+    "options": [
+      "A. Ìbànújẹ́",
+      "B. Ìdùnnú",
+      "C. Ìgbàgbọ́",
+      "D. Ìrètí"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ìbarà?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Àkànbí",
+      "C. Ọmọ Olúbàdàn",
+      "D. Ọmọ Ògúnmọ́lá"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìdẹkùn yóò rí ìtìjú?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìdẹkùn yóò rí ìtìjú",
+      "B. Ìdẹkùn kò ní ìdí",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. A kò lè ṣe ìdẹkùn tán"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe iṣẹ́ oníṣòwo ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọọba",
+      "B. Àlàbí",
+      "C. Ọládèjì",
+      "D. Ọmọláńrewájú"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Ìdílé'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀ṣun",
+      "C. Yemọja",
+      "D. Ọ̀rúnmìlà"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìtẹ́lọ́rùn' nínú gbólóhùn: 'Ó ní ìtẹ́lọ́rùn pẹ̀lú ohun tí ó rí'?",
+    "options": [
+      "A. Ìyọnu",
+      "B. Ìdùnnú",
+      "C. Ìgbàgbọ́",
+      "D. Ìrètí"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò', kí ni orúkọ ọmọkùnrin tí ó ṣe ìdíje pẹ̀lú Àkàrà Ogun?",
+    "options": [
+      "A. Ọlúṣọlá",
+      "B. Adéọlá",
+      "C. Fádúpẹ̀",
+      "D. Àjíbólá"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe rere?",
+    "options": [
+      "A. Ó lẹ́wà bí ìràwọ̀",
+      "B. Ó rẹwà bí ẹlẹ́dẹ̀",
+      "C. Ó ga bí àpáta",
+      "D. Ó dára bí àgùntàn"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'oríkì' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìyìn",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Omi'?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Ọbàtálá",
+      "C. Yemọja",
+      "D. Ṣàngó"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìgbẹ́kẹ̀lé' nínú gbólóhùn: 'Mo ní ìgbẹ́kẹ̀lé pé ó máa wá'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìdánilójú",
+      "C. Ìtẹ́lọ́rùn",
+      "D. Ìyọnu"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Aládé Ìlú', kí ni orúkọ olórí àwọn oníṣòwo?",
+    "options": [
+      "A. Fádúpẹ̀",
+      "B. Ọlúṣọlá",
+      "C. Àjíbólá",
+      "D. Adéọlá"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìyọnu yóò rí ìtìjú?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìyọnu yóò rí ìtìjú",
+      "B. Ìyọnu kò ní ìdí",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. A kò lè ṣe ìyọnu tán"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú ọmọkùnrin rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọláńrewájú",
+      "B. Ọmọníyì",
+      "C. Àlàbí",
+      "D. Adéọlá"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Ọgbà'?",
+    "options": [
+      "A. Ọ̀rúnmìlà",
+      "B. Òrìṣà Oko",
+      "C. Ọbàtálá",
+      "D. Èṣù"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àṣírí' nínú gbólóhùn: 'Ó pa àṣírí mi mọ́'?",
+    "options": [
+      "A. Ìkọ̀kọ̀",
+      "B. Ìyìn",
+      "C. Orúkọ rere",
+      "D. Ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Aláṣọ', kí ni orúkọ ọmọbìnrin tí ó fẹ́ràn aṣọ tí Adéọlá ṣe?",
+    "options": [
+      "A. Fádúpẹ̀",
+      "B. Ọmọwùnmí",
+      "C. Àlàkẹ́",
+      "D. Ọlúṣọlá"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn oríkì wọ̀nyí ni ó wọ́pọ̀ fún àwọn ọmọ Ìwó?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Olúbàdàn",
+      "C. Ọmọ Àkànbí",
+      "D. Ọmọ Ọba Ìwó"
+    ],
+    "answer": "D",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìfẹ́' nínú gbólóhùn: 'Mo ní ìfẹ́ sí i'?",
+    "options": [
+      "A. Ìgbẹ́kẹ̀lé",
+      "B. Ìdánilójú",
+      "C. Àfẹ́rí",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Àwọ̀n'?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Ọbàtálá",
+      "C. Yemọja",
+      "D. Ṣàngó"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀",
+      "B. Ìwà búburú kò ní ìdí",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. A kò lè ṣe ìwà búburú tán"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe iṣẹ́ alágbàṣe ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọláńrewájú",
+      "B. Àlàbí",
+      "C. Ọládèjì",
+      "D. Àgbàjé"
+    ],
+    "answer": "D",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Aládé Ìlú', kí ni orúkọ bàbá Adéọlá?",
+    "options": [
+      "A. Ọ̀gẹ̀lẹ́",
+      "B. Ọlúṣọlá",
+      "C. Àjíbólá",
+      "D. Fádúpẹ̀"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdùnnú' nínú gbólóhùn: 'Ó ní ìdùnnú pẹ̀lú àṣeyọrí rẹ̀'?",
+    "options": [
+      "A. Ìbànújẹ́",
+      "B. Ìtẹ́lọ́rùn",
+      "C. Ìgbàgbọ́",
+      "D. Ìyọnu"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Aláṣẹ Èkejì Òdùmarè'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ọ̀rúnmìlà",
+      "D. Ṣàngó"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe búburú?",
+    "options": [
+      "A. Ó lẹ́wà bí òṣùpá",
+      "B. Ó rẹwà bí àdàpẹ̀",
+      "C. Ó dára bí ìràwọ̀",
+      "D. Ó ga bí ìrókò"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe iṣẹ́ aládùúgbò ní àṣà Yorùbá?",
+    "options": [
+      "A. Àbíọ́lá",
+      "B. Àlàbí",
+      "C. Àgbàjé",
+      "D. Àjàní"
+    ],
+    "answer": "D",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò', kí ni orúkọ ìyá Àkàrà Ogun?",
+    "options": [
+      "A. Ọmọwùnmí",
+      "B. Fádúpẹ̀",
+      "C. Àlàkẹ́",
+      "D. Ọlúṣọlá"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Ẹwo nínú àwọn oríkì wọ̀nyí ni ó wọ́pọ̀ fún àwọn ọmọ Ìbàdàn?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Olúbàdàn",
+      "C. Ọmọ Àkànbí",
+      "D. Ọmọ Ọba Ìwó"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'òwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìṣàpèjúwe",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìkọ́ni"
+    ],
+    "answer": "D",
+    "year": "2019"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Ìmọ̀'?",
+    "options": [
+      "A. Ọ̀rúnmìlà",
+      "B. Ọbàtálá",
+      "C. Èṣù",
+      "D. Ṣàngó"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìrètí' nínú gbólóhùn: 'Mo ní ìrètí pé yóò ṣe é'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìdùnnú",
+      "C. Ìgbẹ́kẹ̀lé",
+      "D. Ìyọnu"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ àpèjúwe' ní èdè Yorùbá?",
+    "options": [
+      "A. Nítorí ó ń sọ nípa ìṣe",
+      "B. Nítorí ó ń sọ nípa àkókò",
+      "C. Nítorí ó ń ṣàpèjúwe nǹkan",
+      "D. Nítorí ó ń sọ nípa ibi"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń sọ̀rọ̀ pẹ̀lú ìrẹ̀lẹ̀,' kí ni orúkọ ọ̀rọ̀ àpèjúwe níbí?",
+    "options": [
+      "A. Ọmọ",
+      "B. Sọ̀rọ̀",
+      "C. Ìrẹ̀lẹ̀",
+      "D. Náà"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá ń gbin ẹ̀gbin, a kì í ká ogún ọmọ'?",
+    "options": [
+      "A. A kì í gbin ẹ̀gbin lọ́sàn-án.",
+      "B. Ohun tí a bá gbin ni a máa ń ká.",
+      "C. Ẹ̀gbin kì í ṣe ohun tí a fi ń gbin.",
+      "D. Ogún ọmọ kì í ṣe ohun tí a ká."
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Mo rí igi mẹ́jọ. Kí ni nọ́ńbà 'mẹ́jọ' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Six",
+      "B. Seven",
+      "C. Eight",
+      "D. Nine"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ tí a máa ń lò fún ìkọ́lé ìbílẹ̀?",
+    "options": [
+      "A. Àga",
+      "B. Kèké",
+      "C. Òòlù",
+      "D. Ìbùsùn"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbùjá' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí ó máa ń bọ̀ wá",
+      "C. Ènìyàn tí ó ní àìpé nínú ara",
+      "D. Ènìyàn tí ó máa ń ṣe ìdánwò"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ìwé náà dùn láti kà,' kí ni ìtumọ̀ 'dùn' níbí?",
+    "options": [
+      "A. Líle",
+      "B. Dídùn létí",
+      "C. Gbígbóná",
+      "D. Kíkan"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń ṣe àmì ìgboyà lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Kìnìún",
+      "C. Ejò",
+      "D. Ewúrẹ́"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àlùfáà' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "B. Ènìyàn tí ó jẹ́ olùkọ́",
+      "C. Ènìyàn tí ó máa ń ṣe ààtò òrìṣà",
+      "D. Ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun' tí Adebayo Faleti kọ, kí ni orúkọ obìnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Ọmọládùn",
+      "B. Ọmọwùnmí",
+      "C. Àbèní",
+      "D. Ìyá Àjàní"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso tí a máa ń pè ní 'agbalumo'?",
+    "options": [
+      "A. Ọ̀gẹ̀dẹ̀",
+      "B. Ọsàn",
+      "C. Ùdàrà",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìnílárí' nínú gbólóhùn 'Ó jẹ́ aláìnílárí'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní ohun ìní",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà ìṣòwò?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Aje",
+      "C. Ṣàngó",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìsìnkú lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Àpótí",
+      "B. Ìlẹ̀kẹ̀",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àkùkọ̀' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní ìtọ́kasí",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń ṣe àṣàrò nípa ìṣe rẹ̀,' kí ni ìtumọ̀ 'àṣàrò'?",
+    "options": [
+      "A. Ìdáná",
+      "B. Ìrò",
+      "C. Ìṣòwò",
+      "D. Ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe ẹbọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Àgbò",
+      "C. Ẹyẹ",
+      "D. Ekùn"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'èmíàbíkú' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó máa ń bọ̀ wá",
+      "B. Ọmọ tí ó ní agbára",
+      "C. Ọmọ tí ó jẹ́ ọba",
+      "D. Ọmọ tí ó máa ń ṣe ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun,' kí ni ìdí tí Àbèní fi ṣe ìgboyà láti dojú kọ àwọn ọ̀tá?",
+    "options": [
+      "A. Láti wá ìmọ̀",
+      "B. Láti dáàbò bo ìlú rẹ̀",
+      "C. Láti ṣe ìṣòwò",
+      "D. Láti ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdílé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Àwọn ènìyàn tí ó jẹ́ ọmọ ìlú",
+      "B. Àwọn ènìyàn tí ó ní ìbátan ẹ̀jẹ̀",
+      "C. Àwọn ènìyàn tí ó máa ń ṣe ìjọsìn",
+      "D. Àwọn ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àkókò ọdún tí ó máa ń wà ní ìgbà òjò?",
+    "options": [
+      "A. Ìgbà kọ́rọ̀",
+      "B. Ìgbà oyè",
+      "C. Ìgbà òjò",
+      "D. Ìgbà òrùn"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Bí òkùnkùn bá ṣú, a máa ń fi ìmọ́lẹ̀ hàn'?",
+    "options": [
+      "A. Òkùnkùn kì í ṣú lọ́sàn-án.",
+      "B. Èèyàn máa ń lo ìmọ̀ rẹ̀ láti yanjú ìṣòro.",
+      "C. Ìmọ́lẹ̀ kì í hàn lọ́sàn-án.",
+      "D. Òkùnkùn máa ń ṣú lọ́jọ́ òjò."
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà iná àti mànàmáná?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ṣàngó",
+      "C. Ògún",
+      "D. Ọya"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìdánwò ìmọ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Ìwé",
+      "C. Ìkọkọ",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìtàn' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní ìtọ́kasí",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò Nínú Igbó Ẹlẹ́gbẹ̀yẹ' tí D.O. Fagunwa kọ, kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Ọlọ́wọ́-ayé",
+      "B. Àkàrà-ògùn",
+      "C. Ọlọ́run-ògún",
+      "D. Ọlọ́run-ọba"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ààtò' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìsìnkú",
+      "C. Ìtọ́kasí",
+      "D. Ìdáná"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn tí ó máa ń fa ìrora inú?",
+    "options": [
+      "A. Ọtí",
+      "B. Ìbà",
+      "C. Inú ríru",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ ìṣe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "B. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìrísí"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìrẹ̀lẹ̀?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilójú' nínú gbólóhùn 'Ó ní ìdánilójú nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìbínú",
+      "D. Ìtara"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà ara tí a máa ń fi ṣe ìdáná?",
+    "options": [
+      "A. Ewé",
+      "B. Ìrù",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àkùkọ̀wé' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń kọ ìwé",
+      "B. Ènìyàn tí ó máa ń sọ àlọ́ àti òwe",
+      "C. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "D. Ènìyàn tí ó máa ń ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń ṣe ìwà àìtọ́,' kí ni ìtumọ̀ 'àìtọ́'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìwà òkùnkùn",
+      "C. Ìwà tí kò tọ́",
+      "D. Ìwà pẹ̀lẹ́"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà?",
+    "options": [
+      "A. Ìsìn Ìbílẹ̀",
+      "B. Ìsìn Ìgbàgbọ́",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀kọ̀ọ̀kan' nínú gbólóhùn 'Wọ́n ń lọ ọ̀kọ̀ọ̀kan'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìgbéyàwó lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àpótí",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworoide' tí Akinwunmi Isola kọ, kí ni orúkọ ọba tí ó jẹ́ akọni?",
+    "options": [
+      "A. Lapite",
+      "B. Àkàrà-ògùn",
+      "C. Ọlọ́wọ́-ayé",
+      "D. Àjàní"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àlọ́' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní àwọn ẹranko tí ń sọ̀rọ̀",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun,' kí ni ìtọ́kasí pàtàkì tí Àbèní fi hàn?",
+    "options": [
+      "A. Ìfẹ́ sí ìṣòwò",
+      "B. Ìgboyà àti ìdàgbàsókè",
+      "C. Ìrẹ̀lẹ̀ àti ìfẹ́",
+      "D. Ìmọ̀ àti ìtara"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ àpọ́n' ní èdè Yorùbá?",
+    "options": [
+      "A. Ó ń sọ nípa ìrísí nǹkan",
+      "B. Ó ń sọ nípa ẹni tí kò lọ́mọ",
+      "C. Ó ń sọ nípa àkókò",
+      "D. Ó ń sọ nípa ibi"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọba náà ń sọ̀rọ̀ pẹ̀lẹ́,' kí ni orúkọ ọ̀rọ̀ àpèjúwe?",
+    "options": [
+      "A. Ọba",
+      "B. Sọ̀rọ̀",
+      "C. Pẹ̀lẹ́",
+      "D. Náà"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'A kì í fi ẹ̀tẹ̀ sílẹ̀ kí a máa lé adìyẹ'?",
+    "options": [
+      "A. A kì í lé adìyẹ lọ́sàn-án",
+      "B. Èèyàn kì í fi nǹkan pàtàkì sílẹ̀ kí ó lé nǹkan tí kò wúlò",
+      "C. Adìyẹ kì í ṣe ohun tí a fi ń lé",
+      "D. Ẹ̀tẹ̀ kì í ṣe ohun tí a fi ń lé adìyẹ"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Mo rí àga mẹ́fà. Kí ni nọ́ńbà 'mẹ́fà' ní èdè Faransé?",
+    "options": [
+      "A. Quatre",
+      "B. Cinq",
+      "C. Six",
+      "D. Sept"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ irinṣẹ́ tí a máa ń lò fún ìdáná ìbílẹ̀?",
+    "options": [
+      "A. Àga",
+      "B. Ìṣu",
+      "C. Ìkòkò adágún",
+      "D. Ìbùsùn"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbáyọ' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí ó máa ń bọ̀ wá",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó máa ń ṣe ìdánwò"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ojú ọjọ́ ń ru lọ́wọ́lọ́wọ́,' kí ni ìtumọ̀ 'ru'?",
+    "options": [
+      "A. Tútù",
+      "B. Gbígbóná",
+      "C. Dídùn",
+      "D. Rírùn"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹranko tí ó ń ṣe àmì ìdàgbàsókè lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Erin",
+      "C. Ejò",
+      "D. Màlúù"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àwíyé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "B. Ènìyàn tí ó máa ń sọ àsọyé",
+      "C. Ènìyàn tí ó máa ń sọ òtítọ́",
+      "D. Ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú àwọn àlọ́ Yorùbá, kí ni ìtàn Ìjápa máa ń fi hàn?",
+    "options": [
+      "A. Ìfẹ́ àti ìrẹ̀lẹ̀",
+      "B. Ọgbọ́n àti ẹ̀tàn",
+      "C. Agbára àti ìgboyà",
+      "D. Ìwà rere àti ìtara"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ èso tí a máa ń pè ní 'ògìrì' ní èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀gẹ̀dẹ̀",
+      "B. Ọsàn",
+      "C. Èso ìrú",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìlọ́gbọ́n' nínú gbólóhùn 'Ó jẹ́ aláìlọ́gbọ́n'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní ìmọ̀",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà ìṣòwò?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Aje",
+      "C. Ṣàngó",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ohun èlò tí a máa ń lò fún ìbọ̀rìṣà?",
+    "options": [
+      "A. Àga",
+      "B. Ìlẹ̀kẹ̀",
+      "C. Bọ́ọ̀lù",
+      "D. Ìkọkọ"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdálẹ̀' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìdúró ní ìbíkí",
+      "B. Ìbọ̀wọ̀ fún àwọn òrìṣà",
+      "C. Ìsùnkún fún ènìyàn",
+      "D. Ìtọ́jú ilé"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń fi ìgbà kan ṣe àṣàrò,' kí ni ìtumọ̀ 'àṣàrò'?",
+    "options": [
+      "A. Ìgbà tí wọ́n ń sọ̀rọ̀",
+      "B. Ìṣe tí wọ́n ń ṣe",
+      "C. Ìrò tí wọ́n ń rò",
+      "D. Ìdáná tí wọ́n ń ṣe"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹranko tí a máa ń fi ṣe ẹbọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Àdùbà",
+      "C. Ẹyẹ",
+      "D. Ekùn"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbíkú' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó máa ń kú lẹ́ẹ̀kọ̀ọ̀kan",
+      "B. Ọmọ tí ó ní agbára àjèjì",
+      "C. Ọmọ tí ó jẹ́ ọba",
+      "D. Ọmọ tí ó máa ń ṣe ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé' tí D.O. Fagunwa kọ, kí ni ìdí tí Aláwìíyé fi lọ sí igbó?",
+    "options": [
+      "A. Láti lọ ṣe ìdáná",
+      "B. Láti lọ wá ìmọ̀ àti agbára",
+      "C. Láti lọ ṣe ìṣòwò",
+      "D. Láti lọ ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ àpèjúwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "B. Ọ̀rọ̀ tí ó ń ṣàpèjúwe nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ àkókò ọdún tí ó máa ń wà ní ìgbà ẹrùn?",
+    "options": [
+      "A. Ìgbà òjò",
+      "B. Ìgbà oyè",
+      "C. Ìgbà kọ́rọ̀",
+      "D. Ìgbà òrùn"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Ojú kan kì í ṣe ọjà'?",
+    "options": [
+      "A. Ọjà kì í ṣe fún ojú kan",
+      "B. Èèyàn kan kì í lè ṣe ohun gbogbo",
+      "C. Ojú kan kì í rí ọjà",
+      "D. Èèyàn ṣe nǹkan pẹ̀lú ìfọwọ́sowọ́pọ̀"
+    ],
+    "answer": "D",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà omi?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Yemọja",
+      "C. Ṣàngó",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ohun èlò tí a máa ń lò fún ìdánwò ìṣèlú?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àpótí ìdìbò",
+      "C. Ìkọkọ",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àlọ́' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní àwọn ẹranko tí ń sọ̀rọ̀",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀,' kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Àkàrà-ògùn",
+      "B. Ọlọ́wọ́-ayé",
+      "C. Ọlọ́run-ògún",
+      "D. Àjàní"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdílé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Àwọn ènìyàn tí ó jẹ́ ọmọ ìlú",
+      "B. Àwọn ènìyàn tí ó ní ìbátan ẹ̀jẹ̀",
+      "C. Àwọn ènìyàn tí ó máa ń ṣe ìjọsìn",
+      "D. Àwọn ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ àrùn tí ó máa ń fa ìwọ̀nba ara?",
+    "options": [
+      "A. Ọtí",
+      "B. Ìbà",
+      "C. Omi",
+      "D. Èpè"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àkùkọ̀wé' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń kọ ìwé",
+      "B. Ènìyàn tí ó máa ń sọ àlọ́ àti òwe",
+      "C. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "D. Ènìyàn tí ó máa ń ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń ṣe ìwà àìtọ́,' kí ni ìtumọ̀ 'àìtọ́'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìwà òkùnkùn",
+      "C. Ìwà tí kò tọ́",
+      "D. Ìwà pẹ̀lẹ́"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà?",
+    "options": [
+      "A. Ìsìn Ìbílẹ̀",
+      "B. Ìsìn Ìgbàgbọ́",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀kọ̀ọ̀kan' nínú gbólóhùn 'Wọ́n ń lọ ọ̀kọ̀ọ̀kan'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹ̀yà ara tí a máa ń fi ṣe ìdáná?",
+    "options": [
+      "A. Ewé",
+      "B. Ìrù",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ààtò' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìsìnkú",
+      "C. Ìtọ́kasí",
+      "D. Ìdáná"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò Nínú Igbó Ẹlẹ́gbẹ̀yẹ,' kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Ọlọ́wọ́-ayé",
+      "B. Àkàrà-ògùn",
+      "C. Ọlọ́run-ògún",
+      "D. Ọlọ́run-ọba"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilójú' nínú gbólóhùn 'Ó ní ìdánilójú nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìbínú",
+      "D. Ìtara"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìfẹ́?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Bí ọmọdé bá ṣubú, a wo iwájú; bí àgbà bá ṣubú, a wo ẹ̀yìn'?",
+    "options": [
+      "A. Ọmọdé máa ń ṣubú lọ́nà ìbílẹ̀",
+      "B. Àgbà máa ń rò nípa ohun tí ó ṣẹlẹ̀",
+      "C. Ọmọdé àti àgbà máa ń ṣubú",
+      "D. Ọmọdé máa ń kọ́ láti ṣubú"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà ìdè àti ọgbọ́n?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ògún",
+      "C. Ọ̀rúnmìlà",
+      "D. Ṣàngó"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ orúkọ' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe",
+      "B. Ọ̀rọ̀ tí ó ń sọ orúkọ ènìyàn tàbí nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ibi"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ ìṣe' ní èdè Yorùbá?",
+    "options": [
+      "A. Ó ń sọ nípa ìrísí nǹkan",
+      "B. Ó ń sọ nípa ìṣe tàbí iṣẹ́",
+      "C. Ó ń sọ nípa àkókò",
+      "D. Ó ń sọ nípa ibi"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń kọrin lọ́wọ́lọ́wọ́,' kí ni ọ̀rọ̀ àpèjúwe?",
+    "options": [
+      "A. Ọmọ",
+      "B. Kọrin",
+      "C. Lọ́wọ́lọ́wọ́",
+      "D. Náà"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'A kì í fi ọwọ́ ọ̀tún sọ ọmọ fún ìyá rẹ̀'?",
+    "options": [
+      "A. A kì í fi ọmọ sọ fún ìyá rẹ̀",
+      "B. Èèyàn kì í ṣe ohun tí kò tọ́ sí ìyá ọmọ",
+      "C. Ọmọ kì í ṣe ohun tí a fi ń sọ",
+      "D. Ìyá ọmọ kì í gba ọmọ lọ́wọ́ ọ̀tún"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Mo rí ẹran méjì. Kí ni nọ́ńbà 'méjì' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. One",
+      "B. Two",
+      "C. Three",
+      "D. Four"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ irinṣẹ́ fún ìkọ́lé ìbílẹ̀?",
+    "options": [
+      "A. Àga",
+      "B. Òòlù",
+      "C. Bọ́ọ̀lù",
+      "D. Ìbùsùn"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àbùkù' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí ó jẹ́ ọ̀tọ̀ṣì",
+      "C. Ènìyàn tí ó ní àìpé",
+      "D. Ènìyàn tí ó ń ṣe ìdánwò"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ìwé náà dùn láti kà,' kí ni ìtumọ̀ 'dùn'?",
+    "options": [
+      "A. Líle",
+      "B. Dídùn létí",
+      "C. Gbígbóná",
+      "D. Kíkan"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni ẹranko tí ń ṣe àmì ìgboyà lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Kìnìún",
+      "C. Ejò",
+      "D. Ewúrẹ́"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àlùfáà' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ń ṣe ìdáná",
+      "B. Ènìyàn tí ó jẹ́ olùkọ́",
+      "C. Ènìyàn tí ó ń ṣe ààtò òrìṣà",
+      "D. Ènìyàn tí ó ń ṣe ìṣòwò"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú àlọ́ Yorùbá, ìtàn Àjàpá ń kọ́ni nípa kí ni?",
+    "options": [
+      "A. Ìfẹ́ àti ìrẹ̀lẹ̀",
+      "B. Ọgbọ́n àti ẹ̀tàn",
+      "C. Agbára àti ìdàgbàsókè",
+      "D. Ìwà rere àti ìtara"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ èso tí a ń pè ní 'ẹ̀fọ́n'?",
+    "options": [
+      "A. Ọ̀gẹ̀dẹ̀",
+      "B. Ọsàn",
+      "C. Èso àgbálùmọ̀",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àìnílárí' ní gbólóhùn 'Ó jẹ́ aláìnílárí'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní ìmọ̀",
+      "C. Ènìyàn tí kò ní ohun ìní",
+      "D. Ènìyàn tí ó ní agbára"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà olùwà àwọn ọmọdé?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Yemọja",
+      "C. Èṣù",
+      "D. Ọya"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ohun èlò fún ìsìnkú lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Àpótí",
+      "B. Ìlẹ̀kẹ̀",
+      "C Instantly share code, notes, and snippets.. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àkùkọ̀' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní ìtọ́kasí",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń ṣe àṣàrò nípa ìṣe rẹ̀,' kí ni ìtumọ̀ 'àṣàrò'?",
+    "options": [
+      "A. Ìdáná",
+      "B. Ìrò",
+      "C. Ìṣòwò",
+      "D. Ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni ẹranko tí a ń fi ṣe ẹbọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Àgbò",
+      "C. Ẹyẹ",
+      "D. Ekùn"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'èmíàbíkú' ní ìtàn Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó ń bọ̀ wá",
+      "B. Ọmọ tí ó ní agbára",
+      "C. Ọmọ tí ó jẹ́ ọba",
+      "D. Ọmọ tí ó ń ṣe ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀,' kí ni orúkọ akọni?",
+    "options": [
+      "A. Àkàrà-ògùn",
+      "B. Ọlọ́wọ́-ayé",
+      "C. Ọlọ́run-ògún",
+      "D. Àjàní"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'ìdílé' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Àwọn ọmọ ìlú",
+      "B. Àwọn tí ó ní ìbátan ẹ̀jẹ̀",
+      "C. Àwọn tí ó ń ṣe ìjọsìn",
+      "D. Àwọn tí ó ń ṣe ìṣòwò"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ àkókò ọdún tí òjò ń rọ̀?",
+    "options": [
+      "A. Ìgbà kọ́rọ̀",
+      "B. Ìgbà oyè",
+      "C. Ìgbà òjò",
+      "D. Ìgbà òrùn"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Bí òkùnkùn bá ṣú, a máa ń fi ìmọ́lẹ̀ hàn'?",
+    "options": [
+      "A. Òkùnkùn kì í ṣú lọ́sàn-án",
+      "B. Èèyàn lo ìmọ̀ láti yanjú ìṣòro",
+      "C. Ìmọ́lẹ̀ kì í hàn lọ́sàn-án",
+      "D. Òkùnkùn ṣú lọ́jọ́ òjò"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà olùwà iná àti mànàmáná?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ṣàngó",
+      "C. Ògún",
+      "D. Ọya"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ohun èlò fún ìdánwò ìmọ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Ìwé",
+      "C. Ìkọkọ",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò Nínú Igbó Ẹlẹ́gbẹ̀yẹ,' kí ni orúkọ akọni?",
+    "options": [
+      "A. Ọlọ́wọ́-ayé",
+      "B. Àkàrà-ògùn",
+      "C. Ọlọ́run-ògún",
+      "D. Ọlọ́run-ọba"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'ààtò' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìsìnkú",
+      "C. Ìtọ́kasí",
+      "D. Ìdáná"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ àrùn tí ó ń fa ìrora inú?",
+    "options": [
+      "A. Ọtí",
+      "B. Ìbà",
+      "C. Inú ríru",
+      "D. Èpè"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'ọ̀rọ̀ àpèjúwe' ní èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "B. Ọ̀rọ̀ tí ó ń ṣàpèjúwe nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹranko tí a ń fi ṣe àmì ìrẹ̀lẹ̀?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ohun èlò tí a ń lò fún ìgbéyàwó lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àpótí",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àlọ́' ní àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní ẹranko tí ń sọ̀rọ̀",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé' tí D.O. Fagunwa kọ, kí ni ìdí tí Aláwìíyé fi lọ sí igbó?",
+    "options": [
+      "A. Láti ṣe ìdáná",
+      "B. Láti wá ìmọ̀ àti agbára",
+      "C. Láti ṣe ìṣòwò",
+      "D. Láti ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà?",
+    "options": [
+      "A. Ìsìn Ìbílẹ̀",
+      "B. Ìsìn Ìgbàgbọ́",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'ọ̀kọ̀ọ̀kan' ní gbólóhùn 'Wọ́n ń lọ ọ̀kọ̀ọ̀kan'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'òwe' ní èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó ní lẹ́kọ̀",
+      "B. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa àkókò"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ òrìṣà tí ó ń ṣe ìdàsílẹ̀ àti ìdàgbàsókè?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Òrúnmìlà",
+      "C. Èṣù",
+      "D. Ṣàngó"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'ìgbàlódè' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ń ṣe ìdáná",
+      "B. Ènìyàn tí ó ń ṣe ìṣòwò",
+      "C. Ènìyàn tí ó ń ṣọ́ ọdẹ",
+      "D. Ènìyàn tí ó ń ṣe ìjọsìn"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ èso tí a ń pè ní 'agbalumo' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Orange",
+      "B. Mango",
+      "C. African star apple",
+      "D. Banana"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ 'àṣà' ní ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìtàn",
+      "B. Ìṣe ìbílẹ̀",
+      "C. Ìwà",
+      "D. Ìdáná"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Èwo ni orúkọ ẹranko tí a ń fi ṣe àmì agbára?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Ekùn",
+      "C. Ewúrẹ́",
+      "D. Ológbò"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ ìpè' ní èdè Yorùbá?",
+    "options": [
+      "A. Nítorí ó ń sọ nípa ìṣe",
+      "B. Nítorí ó ń pe ènìyàn tàbí nǹkan",
+      "C. Nítorí ó ń sọ nípa àkókò",
+      "D. Nítorí ó ń sọ nípa ìrísí"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń kọrin pẹ̀lú ayọ̀,' kí ni orúkọ ọ̀rọ̀ àpèjúwe níbí?",
+    "options": [
+      "A. Ọmọ",
+      "B. Kọrin",
+      "C. Ayọ̀",
+      "D. Pẹ̀lú"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Ọ̀kọ́ kan kì í gba ọlọ́ lọ́wọ́ ọlọ́'?",
+    "options": [
+      "A. Ọlọ́ kì í lọ pẹ̀lú ọ̀kọ́.",
+      "B. Èèyàn kì í fi agbára gba ohun tí kò tọ́.",
+      "C. Ọ̀kọ́ kì í ṣe ohun tí a fi ń gba.",
+      "D. Ọlọ́ máa ń gba ọ̀kọ́."
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Mo rí ọmọ mẹ́rindínlógún. Kí ni nọ́ńbà 'mẹ́rindínlógún' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Sixteen",
+      "B. Seventeen",
+      "C. Eighteen",
+      "D. Nineteen"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ tí a máa ń lò fún ìgbàlẹ̀ ilé lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìbọn",
+      "B. Ọ̀sà",
+      "C. Ìgbálẹ̀",
+      "D. Àga"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ààlẹ' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ohun tí a máa ń fi ṣe àmì lórí ilẹ̀",
+      "B. Ohun tí a máa ń fi ṣe ìdáná",
+      "C. Ohun tí a máa ń fi ṣe ìṣòwò",
+      "D. Ohun tí a máa ń fi ṣe ìjọsìn"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ilé náà ń gbóná lọ́wọ́lọ́wọ́,' kí ni ìtumọ̀ 'gbóná' níbí?",
+    "options": [
+      "A. Tútù",
+      "B. Rírùn",
+      "C. Dídùn",
+      "D. Ooru"
+    ],
+    "answer": "D",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń ṣe àmì ìtẹ́lọ́rùn lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ìkookò",
+      "C. Ejò",
+      "D. Màlúù"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọlọ́sà' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "B. Ènìyàn tí ó máa ń ṣe ìṣòwò omi",
+      "C. Ènìyàn tí ó máa ń bọ òrìṣà omi",
+      "D. Ènìyàn tí ó máa ń ṣe ìkọ́lé"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun' tí Adebayo Faleti kọ, kí ni orúkọ ìlú tí Àbèní ń dáàbò bò?",
+    "options": [
+      "A. Ọ̀yọ́",
+      "B. Ìbàdàn",
+      "C. Ìlú Àbèní",
+      "D. Èkó"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso tí a máa ń pè ní 'ẹ̀gúsí'?",
+    "options": [
+      "A. Èso ìrú",
+      "B. Èso ẹ̀gúsí",
+      "C. Ọsàn",
+      "D. Ọ̀gẹ̀dẹ̀"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìdára' nínú gbólóhùn 'Ọmọ náà jẹ́ aláìdára'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí ó ní ìwà búburú",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà ìdájọ́ àti ìṣọ̀kan?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ṣàngó",
+      "D. Ògún"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìgbéyàwó lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ọ̀pá",
+      "B. Aṣọ ìdí",
+      "C. Àga",
+      "D. Ìkọk0"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'òkìkí' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó jẹ́ òtítọ́",
+      "B. Ìtàn tí ó ní ìyìn tàbí ògo",
+      "C. Ìtàn tí ó jẹ́ àwọn ọba",
+      "D. Ìtàn tí ó jẹ́ àwọn òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń rò nípa ìlọsíwájú ilé-ẹ̀kọ́,' kí ni ìtumọ̀ 'rò'?",
+    "options": [
+      "A. Ìdáná",
+      "B. Ìronú",
+      "C. Ìṣòwò",
+      "D. Ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Ọgbọ́n ọ̀dọ́, àṣà àgbà'?",
+    "options": [
+      "A. Ọgbọ́n ọ̀dọ́ kì í ṣe àṣà.",
+      "B. Ọgbọ́n àti àṣà máa ń ṣiṣẹ́ pọ̀.",
+      "C. Àgbà ní ọgbọ́n, ọ̀dọ́ ní àṣà.",
+      "D. Ọgbọ́n ọ̀dọ́ yàtọ̀ sí àṣà àgbà."
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'òmùgọ̀' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní ìmọ̀ tàbí ọgbọ́n",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó máa ń ṣe ìdánwò"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun,' kí ni ìdí tí Àbèní fi lo ọgbọ́n rẹ̀ láti ṣẹ́gun Lápìtàn?",
+    "options": [
+      "A. Láti di ọba",
+      "B. Láti dáàbò bo ìlú rẹ̀",
+      "C. Láti wá owó",
+      "D. Láti ṣe ìdánwò"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọmọlúàbí' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó jẹ́ ọba",
+      "B. Ọmọ tí ó ní ìwà rere àti ìtọ́jú",
+      "C. Ọmọ tí ó máa ń ṣe ìṣòwò",
+      "D. Ọmọ tí ó máa ń bọ òrìṣà"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àkókò ọdún tí ó máa ń wà ní ìgbà ẹ̀ẹ̀rùn?",
+    "options": [
+      "A. Ìgbà òjò",
+      "B. Ìgbà ẹ̀ẹ̀rùn",
+      "C. Ìgbà òrùn",
+      "D. Ìgbà oyè"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Bí ọmọdé bá ṣubú, a wo iwájú; bí àgbà bá ṣubú, a wo ẹ̀yìn'?",
+    "options": [
+      "A. Ọmọdé kì í ṣubú lọ́sàn-án.",
+      "B. Èèyàn ṣe ń kọ́ láti àṣìṣe rẹ̀.",
+      "C. Àgbà máa ń wo ẹ̀yìn nítorí ìrírí.",
+      "D. Ọmọdé máa ń wo iwájú nítorí ìfẹ́."
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà ìmọ̀ àti ọgbọ́n?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ifá",
+      "D. Ọya"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìdílé lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìdà",
+      "B. Ọmọlángídí",
+      "C. Àga",
+      "D. Ìkọk0"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìyàtọ̀' nínú gbólóhùn 'Ìṣe rẹ̀ ní ìyàtọ̀ púpọ̀'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìṣe tí ó yàtọ̀ sí àwọn mìíràn",
+      "C. Ìṣe tí ó ní agbára",
+      "D. Ìṣe tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworoide' tí Akinwunmi Isola kọ, kí ni orúkọ ohun èlò tí ó jẹ́ àmì ìjọba?",
+    "options": [
+      "A. Ìlù",
+      "B. Ọ̀pá",
+      "C. Àṣẹ",
+      "D. Ìlẹ̀kẹ̀"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìwàásù' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìsọ̀rọ̀ tí ó ní ìtọ́kasí ẹ̀sìn",
+      "B. Ìsọ̀rọ̀ tí ó ní ìtọ́kasí ìṣòwò",
+      "C. Ìsọ̀rọ̀ tí ó ní ìtọ́kasí ìdáná",
+      "D. Ìsọ̀rọ̀ tí ó ní ìtọ́kasí ìkọ́lé"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn tí ó máa ń fa ìrora ẹsẹ̀?",
+    "options": [
+      "A. Arùn ẹsẹ̀",
+      "B. Ìbà",
+      "C. Omi",
+      "D. Èpè"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ orúkọ' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe",
+      "B. Ọ̀rọ̀ tí ó ń sọ nípa orúkọ ènìyàn tàbí nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìrísí"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìwà rere?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ìkookò",
+      "C. Ejò",
+      "D. Àgbọ̀nrín"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ìsèlú tí a máa ń ṣe fún ìsọmọlórúkọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìwúyè",
+      "B. Ìsọmọlórúkọ",
+      "C. Ìgbéyàwó",
+      "D. Ìsìnkú"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìfọ̀kànbalẹ̀' nínú gbólóhùn 'Ó ní ìfọ̀kànbalẹ̀ nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìbínú",
+      "D. Ìtara"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà ara igi tí a máa ń fi ṣe ìtọ́jú?",
+    "options": [
+      "A. Epo",
+      "B. Ìrù",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'aláàárù' nínú àwọn ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń sọ àlọ́",
+      "B. Ènìyàn tí ó máa ń ru ẹrù",
+      "C. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "D. Ènìyàn tí ó máa ń ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń ṣe ìwà òdì,' kí ni ìtumọ̀ 'òdì'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìwà búburú",
+      "C. Ìwà tí ó ní agbára",
+      "D. Ìwà tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà àti ìbọ̀wọ̀ fún àwọn baba ńlá?",
+    "options": [
+      "A. Ìsìn Ìgbàgbọ́",
+      "B. Ìsìn Ìbílẹ̀",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ẹyọ' nínú gbólóhùn 'Wọ́n ń lọ ẹyọ'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìsìnkú lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Ìgbá",
+      "C. Aṣọ òkú",
+      "D. Àga"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀' tí D.O. Fagunwa kọ, kí ni ìdí tí Àkàrà-ògùn fi rin ìrìnàjò?",
+    "options": [
+      "A. Láti lọ ṣe ìdáná",
+      "B. Láti lọ wá ìmọ̀ àti agbára",
+      "C. Láti lọ ṣe ìṣòwò",
+      "D. Láti lọ ṣe ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìtọ́jú' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìbọ̀wọ̀ àti àbójútó",
+      "C. Ìsìnkú",
+      "D. Ìdáná"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ orúkọ' ní èdè Yorùbá?",
+    "options": [
+      "A. Ó ń sọ nípa ìṣe",
+      "B. Ó ń sọ nípa orúkọ ènìyàn tàbí nǹkan",
+      "C. Ó ń sọ nípa àkókò",
+      "D. Ó ń sọ nípa ibi"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọkùnrin náà ń sùn lórí àga,' kí ni ọ̀rọ̀ àpèjúwe?",
+    "options": [
+      "A. Ọkùnrin",
+      "B. Sùn",
+      "C. Àga",
+      "D. Náà"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe yìí: 'Bí a bá fi ọwọ́ ọ̀tún fọ ọwọ́ òsì, ọwọ́ méjèèjì á mọ́'?",
+    "options": [
+      "A. Ọwọ́ méjèèjì ni láti fi mọ́",
+      "B. Èèyàn gbọdọ̀ ran ara wọn lọ́wọ́",
+      "C. Ọwọ́ òsì kì í mọ́",
+      "D. A kì í fi ọwọ́ fọ ara"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Mo rí igi mẹ́wàá. Kí ni nọ́ńbà 'mẹ́wàá' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Eight",
+      "B. Nine",
+      "C. Ten",
+      "D. Seven"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ irinṣẹ́ tí a máa ń lò fún ìkọ́ sínú omi?",
+    "options": [
+      "A. Ìṣu",
+      "B. Ọkọ́",
+      "C. Àga",
+      "D. Ìkòkò"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'aládùn' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń ṣe ìdáná",
+      "B. Ènìyàn tí ó ní ìmọ̀",
+      "C. Ènìyàn tí ó ní adùn nínú ìṣe",
+      "D. Ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ojú ọjọ́ ń dán lọ́wọ́lọ́wọ́,' kí ni ìtumọ̀ 'dán'?",
+    "options": [
+      "A. Tútù",
+      "B. Gbígbóná",
+      "C. Rírùn",
+      "D. Dídán"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí ó ń ṣe àmì agbára lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ẹyẹ",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Àdùbà"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbọ̀rọ̀' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó máa ń sọ àsọyé",
+      "B. Ènìyàn tí ó máa ń bọ̀ wá",
+      "C. Ènìyàn tí ó ní ìwà rere",
+      "D. Ènìyàn tí ó máa ń ṣe ìdánwò"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìwé 'Oju Odun Meerindilogun' tí Adebayo Faleti kọ, kí ni orúkọ obìnrin tí ó jẹ́ olùdarí?",
+    "options": [
+      "A. Àbèní",
+      "B. Ọ̀rúnmìlà",
+      "C. Yemọja",
+      "D. Ọya"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso tí a máa ń pè ní 'ẹ̀gúsí'?",
+    "options": [
+      "A. Ọsàn",
+      "B. Èso ègúsí",
+      "C. Ọ̀gẹ̀dẹ̀",
+      "D. Èpè"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìdára' nínú gbólóhùn 'Ó jẹ́ aláìdára'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní ìwà rere",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà iná?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ṣàngó",
+      "C. Yemọja",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìdásí ìsìn?",
+    "options": [
+      "A. Àga",
+      "B. Ọ̀pá ìbọ̀rìṣà",
+      "C. Bọ́ọ̀lù",
+      "D. Ìkòkò"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdáṣẹ́' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìsùnkún fún ènìyàn",
+      "B. Ìtọ́jú ilé",
+      "C. Ìbọ̀wọ̀ fún àwọn òrìṣà",
+      "D. Ìdúró ní ìbíkí"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń fi ìgbà kan ṣe ìgbàgbọ́,' kí ni ìtumọ̀ 'ìgbàgbọ́'?",
+    "options": [
+      "A. Ìṣe tí wọ́n ń ṣe",
+      "B. Ìrò tí wọ́n ń gbé kalẹ̀",
+      "C. Ìgbà tí wọ́n ń sọ̀rọ̀",
+      "D. Ìdáná tí wọ́n ń ṣe"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe ẹbọ lọ́nà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Àgùntàn",
+      "C. Ẹyẹ",
+      "D. Ekùn"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọmọdé' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó dàgbà",
+      "B. Ènìyàn tí kò tíì dàgbà",
+      "C. Ènìyàn tí ó ní agbára",
+      "D. Ènìyàn tí ó máa ń ṣe ìwà rere"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworoide' tí Akinwunmi Isola kọ, kí ni orúkọ obìnrin tí ó jẹ́ ayaba?",
+    "options": [
+      "A. Àbèní",
+      "B. Ọya",
+      "C. Tinu",
+      "D. Yemọja"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ ìṣe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "B. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe tàbí iṣẹ́",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa ibi",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa orúkọ"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àkókò ọdún tí ó máa ń wà ní ìgbà òjò?",
+    "options": [
+      "A. Ìgbà kọ́rọ̀",
+      "B. Ìgbà oyè",
+      "C. Ìgbà òjò",
+      "D. Ìgbà òrùn"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Ẹni tí ó bá ń wí fún adití, adití náà ń gbọ́'?",
+    "options": [
+      "A. Adití kì í gbọ́",
+      "B. Èèyàn gbọdọ̀ mọ àṣírí",
+      "C. Èèyàn gbọdọ̀ ṣọ́ra fún àwọn tí ó ń sọ̀rọ̀",
+      "D. Èèyàn gbọdọ̀ gbọ́ ìmọ̀ràn"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà àgbẹ̀?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀rúnmìlà",
+      "C. Ọya",
+      "D. Òrìṣà Oko"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìgbéyàwó?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Àga",
+      "C. Ìkòkò",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilẹ́kọ̀ọ́' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìtọ́jú ilé",
+      "B. Ìbọ̀wọ̀ fún àwọn òrìṣà",
+      "C. Ìkọ́ni àti ìdásílẹ̀",
+      "D. Ìsùnkún fún ènìyàn"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń fi ọ̀rọ̀ kan ṣe ìyàsímọ́,' kí ni ìtumọ̀ 'ìyàsímọ́'?",
+    "options": [
+      "A. Ìgbà tí wọ́n ń sọ̀rọ̀",
+      "B. Ìṣe tí wọ́n ń ṣe",
+      "C. Ìdásílẹ̀ tàbí ìyàsọ́tọ̀",
+      "D. Ìdáná tí wọ́n ń ṣe"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìrẹ̀lẹ̀?",
+    "options": [
+      "A. Àdùbà",
+      "B. Ekùn",
+      "C. Ẹyẹ",
+      "D. Àgùntàn"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àkùkọ̀' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọmọ tí ó máa ń sọ àsọyé",
+      "B. Ọmọ tí ó máa ń kú lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Ọmọ tí ó jẹ́ ọba",
+      "D. Ọmọ tí ó máa ń sọ àlọ́"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀' tí D.O. Fagunwa kọ, kí ni orúkọ obìnrin tí ó jẹ́ ìyàwó Àkàrà-ògùn?",
+    "options": [
+      "A. Ọlọ́run-ògún",
+      "B. Ìrèké-ọníbùdó",
+      "C. Àbèní",
+      "D. Tinu"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdílé' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Àwọn ènìyàn tí ó jẹ́ ọmọ ìlú",
+      "B. Àwọn ènìyàn tí ó ní ìbátan ẹ̀jẹ̀",
+      "C. Àwọn ènìyàn tí ó máa ń ṣe ìjọsìn",
+      "D. Àwọn ènìyàn tí ó máa ń ṣe ìṣòwò"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn tí ó máa ń fa ìrora inú?",
+    "options": [
+      "A. Ìbà",
+      "B. Omi",
+      "C. Ọtí",
+      "D. Inú rírorò"
+    ],
+    "answer": "D",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'aláìlágbára' nínú gbólóhùn 'Ó jẹ́ aláìlágbára'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní agbára",
+      "C. Ènìyàn tí ó ní ìmọ̀",
+      "D. Ènìyàn tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀sìn tí ó ní í ṣe pẹ̀lú àwọn òrìṣà?",
+    "options": [
+      "A. Ìsìn Ìgbàgbọ́",
+      "B. Ìsìn Ìbílẹ̀",
+      "C. Ìsìn Aláwọ̀",
+      "D. Ìsìn Ìmàle"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀kọ̀ọ̀kan' nínú gbólóhùn 'Wọ́n ń lọ ọ̀kọ̀ọ̀kan'?",
+    "options": [
+      "A. Lọ́pọ̀lọpọ̀",
+      "B. Lẹ́ẹ̀kọ̀ọ̀kan",
+      "C. Pọ̀",
+      "D. Láìpẹ́"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà ara igi tí a máa ń fi ṣe ìdáná?",
+    "options": [
+      "A. Ewé",
+      "B. Ìrù",
+      "C. Òkúta",
+      "D. Irin"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdásílẹ̀' nínú ìṣe ìbílẹ̀ Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìsìnkú",
+      "C. Ìdáṣe tàbí ìmúṣẹ",
+      "D. Ìdáná"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé' tí D.O. Fagunwa kọ, kí ni orúkọ ọkùnrin tí ó jẹ́ akọni?",
+    "options": [
+      "A. Àkàrà-ògùn",
+      "B. Aláwìíyé",
+      "C. Ọlọ́wọ́-ayé",
+      "D. Àjàní"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilójú' nínú gbólóhùn 'Ó ní ìdánilójú nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìbínú",
+      "D. Ìtara"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìrẹwà?",
+    "options": [
+      "A. Ẹyẹ ọ̀kín",
+      "B. Ekùn",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworoide,' kí ni ìtọ́kasí pàtàkì tí Tinu fi hàn?",
+    "options": [
+      "A. Ìfẹ́ sí ìṣòwò",
+      "B. Ìrẹ̀lẹ̀ àti ìdàgbàsókè",
+      "C. Ìgboyà àti ìfẹ́",
+      "D. Ìmọ̀ àti ìtara"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Kí ni ìdí tí a fi ń pe ọ̀rọ̀ kan ní 'ọ̀rọ̀ àkànlò' ní èdè Yorùbá?",
+    "options": [
+      "A. Nítorí ó ń sọ nípa ìṣe",
+      "B. Nítorí ó ń sọ nípa nǹkan tí ó ṣe pàtàkì",
+      "C. Nítorí ó ń fi ìyàtọ̀ hàn láàárín àwọn nǹkan",
+      "D. Nítorí ó ń sọ nípa àkókò"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń kọ orin pẹ̀lú ìdùnnú,' kí ni ọ̀rọ̀ àpèjúwe?",
+    "options": [
+      "A. Ọmọ",
+      "B. Kọ",
+      "C. Ìdùnnú",
+      "D. Orin"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'A kì í fi ọwọ́ ọ̀tún wọ aṣọ ká fi tòsì bọ̀'?",
+    "options": [
+      "A. A kì í ṣe nǹkan pẹ̀lú ọwọ́ méjèèjì",
+      "B. A kì í ṣe nǹkan láìsí ìmọ̀",
+      "C. A kì í ṣe ohun tí kò tọ́ lẹ́yìn ohun rere",
+      "D. A kì í wọ aṣọ pẹ̀lú ọwọ́ ọ̀tún"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Mo rí igi mẹ́rinlélọ́gbọ̀n. Kí ni nọ́ńbà 'mẹ́rinlélọ́gbọ̀n' ní èdè Gẹ̀ẹ́sì?",
+    "options": [
+      "A. Twenty-two",
+      "B. Twenty-four",
+      "C. Twenty-six",
+      "D. Twenty-eight"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni irinṣẹ́ tí a máa ń lò fún ìdáná ìbílẹ̀?",
+    "options": [
+      "A. Ìbùsùn",
+      "B. Ikòkò",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'aládùúgbò' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ń ṣòwò",
+      "B. Ènìyàn tí ó jẹ́ ọ̀rẹ́",
+      "C. Ènìyàn tí ó ń gbé nítòsí",
+      "D. Ènìyàn tí ó ń kọrin"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọba náà wọ aṣọ gẹ̀lẹ̀,' kí ni ìtumọ̀ 'gẹ̀lẹ̀'?",
+    "options": [
+      "A. Aṣọ ìdí",
+      "B. Aṣọ orí",
+      "C. Aṣọ ẹsẹ̀",
+      "D. Aṣọ ọwọ́"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn ẹranko wọ̀nyí ni a máa ń fi ṣe àmì agbára nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Kìnìún",
+      "C. Ìjàpá",
+      "D. Ewúrẹ́"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni iṣẹ́ 'oníṣòwò' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ń ta nǹkan",
+      "B. Ènìyàn tí ó ń kọ́ ìmọ̀",
+      "C. Ènìyàn tí ó ń ṣe ìjọsìn",
+      "D. Ènìyàn tí ó ń kọrin"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ Nínú Igbó Irúnmalẹ̀' tí D.O. Fagunwa kọ, kí ni orúkọ ọ̀dọ́ tí Àkàrà-ògùn pàdé?",
+    "options": [
+      "A. Ọdọ́ Ọlọ́wọ́",
+      "B. Ọdọ́ Ìrèké",
+      "C. Ọdọ́ Ògún",
+      "D. Ọdọ́ Àjèjì"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ èso tí a máa ń lò fún ìdáná ọbẹ̀?",
+    "options": [
+      "A. Ọsàn",
+      "B. Atarodo",
+      "C. Ọ̀gẹ̀dẹ̀",
+      "D. Èpè"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àìní' nínú gbólóhùn 'Ó jẹ́ aláìní'?",
+    "options": [
+      "A. Ènìyàn tí ó ní ìwà rere",
+      "B. Ènìyàn tí kò ní nǹkan",
+      "C. Ènìyàn tí ó ní ìfẹ́",
+      "D. Ènìyàn tí ó ní ìmọ̀"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú àṣà ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà iná àti mànàmáná?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ṣàngó",
+      "C. Èṣù",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìsọmọlórúkọ?",
+    "options": [
+      "A. Ọ̀pá",
+      "B. Orógbó",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìbàjẹ́' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìwà òdì tàbí ìbàjẹ́",
+      "C. Ìsọ̀rọ̀ rere",
+      "D. Ìtọ́jú ọmọ"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Wọ́n ń ṣe ìdásílẹ̀ fún ìlú,' kí ni ìtumọ̀ 'ìdásílẹ̀'?",
+    "options": [
+      "A. Ìdáná",
+      "B. Ìdàgbàsókè tàbí ìtúbọ̀sún",
+      "C. Ìṣòwò",
+      "D. Ìjọsìn"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe ẹbọ nínú àṣà ìbílẹ̀?",
+    "options": [
+      "A. Ológbò",
+      "B. Ewúrẹ́",
+      "C. Kìnìún",
+      "D. Ìkookò"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'abiyamọ' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Obìnrin tí ó ń bímọ",
+      "B. Obìnrin tí ó jẹ́ ọba",
+      "C. Obìnrin tí ó ń kọrin",
+      "D. Obìnrin tí ó ń ṣòwò"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworoide' tí Akinwunmi Isola kọ, kí ni ìdí tí ìlù jẹ́ àmì ìjọba?",
+    "options": [
+      "A. Láti ṣe ìdáná",
+      "B. Láti fi ìdánimọ̀ àti agbára ìjọba hàn",
+      "C. Láti ṣe ìṣòwò",
+      "D. Láti ṣe ayẹyẹ"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìsọmọlórúkọ' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìtọ́jú ilé",
+      "B. Ìfún orúkọ sí ọmọ",
+      "C. Ìsìnkú",
+      "D. Ìdáná"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àkókò tí a máa ń pè ní 'ọ̀sán'?",
+    "options": [
+      "A. Àárọ̀",
+      "B. Ọ̀sán",
+      "C. Alẹ́",
+      "D. Ìrọ̀lẹ́"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ òwe 'Ọkùnrin tó bá ń sọ òtítọ́, ẹnu rẹ̀ kì í rùn'?",
+    "options": [
+      "A. Ọkùnrin kì í sọ òtítọ́",
+      "B. Ọkùnrin tí ó sọ òtítọ́ máa ń ní ìdùnnú",
+      "C. Ọkùnrin tí ó sọ òtítọ́ kì í bàjẹ́",
+      "D. Ọkùnrin tí ó sọ òtítọ́ máa ń rùn"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà omi àti ìbímọ?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Yemọja",
+      "C. Èṣù",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìdánwò ìmọ̀?",
+    "options": [
+      "A. Ìlẹ̀kẹ̀",
+      "B. Ìwé",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò Nínú Igbó Ẹlẹ́gbẹ̀yẹ' tí D.O. Fagunwa kọ, kí ni orúkọ ọmọ Ọlọ́wọ́-ayé?",
+    "options": [
+      "A. Àkàrà-ògùn",
+      "B. Ọmọ-ọba",
+      "C. Ìrèké-ọníbùdó",
+      "D. Àjàní"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'òrùn' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìràwọ̀",
+      "B. Òṣùpá",
+      "C. Òrùn",
+      "D. Ojú ọjọ́"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ àrùn tí ó máa ń fa ìwúkárí?",
+    "options": [
+      "A. Ìbà",
+      "B. Ikọ́",
+      "C. Orí fífọ́",
+      "D. Èpè"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀ orúkọ' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ tí ó ń sọ nípa ìṣe",
+      "B. Ọ̀rọ̀ tí ó ń sọ nípa orúkọ ènìyàn tàbí nǹkan",
+      "C. Ọ̀rọ̀ tí ó ń sọ nípa àkókò",
+      "D. Ọ̀rọ̀ tí ó ń sọ nípa ìrísí"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ìrẹ̀lẹ̀?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Kìnìún",
+      "C. Ejò",
+      "D. Ìkookò"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìfọkànbalẹ̀' nínú gbólóhùn 'Ó ní ìfọkànbalẹ̀ nínú ìṣe rẹ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìdùnnú àti ìbàlẹ̀",
+      "C. Ìbínú",
+      "D. Ìgbẹ́kẹ̀lé"
+    ],
+    "answer": "D",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹ̀yà ara igi tí a máa ń fi ṣe ìdáná?",
+    "options": [
+      "A. Epo igi",
+      "B. Èèpo igi",
+      "C. Igi",
+      "D. Ewé"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'olórí' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ènìyàn tí ó ń sọ àlọ́",
+      "B. Ènìyàn tí ó ń ṣàkóso",
+      "C. Ènìyàn tí ó ń ṣe ìdáná",
+      "D. Ènìyàn tí ó ń kọrin"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú gbólóhùn 'Ọmọ náà ń ṣe ìwà àìtọ́,' kí ni ìtumọ̀ 'àìtọ́'?",
+    "options": [
+      "A. Ìwà rere",
+      "B. Ìwà tí kò tọ́",
+      "C. Ìwà tí ó ní agbára",
+      "D. Ìwà tí ó ní ìfẹ́"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ odún ìbílẹ̀ tí a máa ń ṣe fún òrìṣà Ọbàtálá?",
+    "options": [
+      "A. Odún Egúngún",
+      "B. Odún Ọlọ́jọ́",
+      "C. Odún Ògún",
+      "D. Odún Ìṣẹ́ṣe"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìgbàlẹ̀' nínú gbólóhùn 'Wọ́n ń ṣe ìgbàlẹ̀ ilé'?",
+    "options": [
+      "A. Ìtọ́jú ilé",
+      "B. Ìwẹ̀ ilé mọ́",
+      "C. Ìkọ́lé ilé",
+      "D. Ìsìnkú"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ohun èlò tí a máa ń lò fún ìgbéyàwó nínú àṣà ìbílẹ̀?",
+    "options": [
+      "A. Ìdà",
+      "B. Aṣọ ìgbéyàwó",
+      "C. Àga",
+      "D. Bọ́ọ̀lù"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé' tí D.O. Fagunwa kọ, kí ni orúkọ ìlú tí Aláwìíyé lọ sí?",
+    "options": [
+      "A. Ìlú Ọlọ́wọ́",
+      "B. Ìlú Àjèjì",
+      "C. Ìlú Ògún",
+      "D. Ìlú Ẹlẹ́gbẹ̀yẹ"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ààbò' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìgbéyàwó",
+      "B. Ìdáàbòbò tàbí ààbò",
+      "C. Ìsọ̀rọ̀ rere",
+      "D. Ìdáná"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Èwo nínú àwọn wọ̀nyí ni orúkọ ẹranko tí a máa ń fi ṣe àmì ọgbọ́n?",
+    "options": [
+      "A. Ẹyẹ àdàbà",
+      "B. Ìjàpá",
+      "C. Ejò",
+      "D. Àgbọ̀nrín"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Nínú ìtàn ìbílẹ̀, kí ni orúkọ òrìṣà tí a mọ̀ sí olùwà irin àti ogun?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ògún",
+      "C. Èṣù",
+      "D. Ọya"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'òkìkí' nínú gbólóhùn: 'Ó jẹ́ ọmọlúàbí tí ó ní òkìkí'?",
+    "options": [
+      "A. Ọlá",
+      "B. Ọ̀rọ̀",
+      "C. Orúkọ rere",
+      "D. Ìwà rere"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ṣaworo Idẹ', kí ni orúkọ ọba tí ó jọba ní ìlú Jògbó?",
+    "options": [
+      "A. Lápité",
+      "B. Àyànwálé",
+      "C. Adéyẹmí",
+      "D. Àjàní"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó ṣe rere yóò jẹ èrè rẹ̀?",
+    "options": [
+      "A. Ẹni tí ó ṣe rere yóò jẹ èrè rẹ̀",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ìwà rere kò ní ìdí",
+      "D. A kò lè ṣe rere tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń lọ sí òkèé kan ní àṣà Yorùbá?",
+    "options": [
+      "A. Táyé",
+      "B. Kéhìndé",
+      "C. Ìdòwú",
+      "D. Àlàbá"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Ọ̀sà'?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Ọbàtálá",
+      "C. Ṣàngó",
+      "D. Yemọja"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àròsọ' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn àtọwọ́dọ́wọ́",
+      "B. Ọ̀rọ̀ ìtúpalẹ̀",
+      "C. Ọ̀rọ̀ ìṣàpèjúwe",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe búburú?",
+    "options": [
+      "A. Ó lẹ́wà bí òdòdó",
+      "B. Ó rẹwà bí ẹlẹ́dẹ̀",
+      "C. Ó ga bí òkè",
+      "D. Ó dára bí òṣùpá"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ìyàwó Alárè', kí ni orúkọ ọkùnrin tí ó fẹ́ Ìyàwó?",
+    "options": [
+      "A. Adéyẹmí",
+      "B. Ọlátúndé",
+      "C. Alárè",
+      "D. Fádípẹ̀"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àbùkù' nínú gbólóhùn: 'Ó ṣe àbùkù sí mi lọ́dọ̀ àwọn ará ìlú'?",
+    "options": [
+      "A. Ìyìn",
+      "B. Ègùn",
+      "C. Ẹ̀gàn",
+      "D. Ìdùnnú"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Olóòbí', ta ni olórí àwọn oníṣòwo?",
+    "options": [
+      "A. Àkànní",
+      "B. Adéwọlé",
+      "C. Ọlátúndé",
+      "D. Fádípẹ̀"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ọ̀rọ̀ ẹnu ló ń pa ẹni?",
+    "options": [
+      "A. Ọ̀rọ̀ ẹnu ló ń pa ẹni",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ẹnu kò ní ìdí",
+      "D. A kò lè sọ ọ̀rọ̀ tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ìbẹ̀jì ní àṣà Yorùbá?",
+    "options": [
+      "A. Ìdòwú",
+      "B. Táyé",
+      "C. Kéhìndé",
+      "D. Àlàbá"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Alágbára Ilẹ̀'?",
+    "options": [
+      "A. Ògún",
+      "B. Ọbàtálá",
+      "C. Èṣù",
+      "D. Ọ̀rúnmìlà"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'ẹ̀kọ́ ìtàn' nínú èdè Yorùbá?",
+    "options": [
+      "A. Àkọsílẹ̀ ìṣẹ̀lẹ̀ àtijọ",
+      "B. Ọ̀rọ̀ ìtúpalẹ̀",
+      "C. Ọ̀rọ̀ ìṣàpèjúwe",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe rere?",
+    "options": [
+      "A. Ó rẹwà bí àgùntàn",
+      "B. Ó lẹ́wà bí ìdọtí",
+      "C. Ó ga bí àpáta",
+      "D. Ó dára bí òṣùpá"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Adùn Ní Ìdẹ', kí ni orúkọ ọmọbìnrin tí ó fẹ́ràn Adùn?",
+    "options": [
+      "A. Àbẹ̀ní",
+      "B. Ọmọwùnmí",
+      "C. Àlàkẹ́",
+      "D. Fúnmiláyọ̀"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọ̀rọ̀' nínú gbólóhùn: 'Ọ̀rọ̀ rẹ̀ ti bà mí lọ́kàn'?",
+    "options": [
+      "A. Ìfọ̀rọ̀wérọ̀",
+      "B. Ìkìlọ̀",
+      "C. Ọ̀rọ̀ ìdánilójú",
+      "D. Ọ̀rọ̀ ìyànjú"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ìjẹ̀bú?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Olúbàdàn",
+      "C. Ọmọ Ọba Ògúnṣọ̀",
+      "D. Ọmọ Ògúnmọ́lá"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìdààmú yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìdààmú yóò rí èsì rẹ̀",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ìdààmú kò ní ìdí",
+      "D. A kò lè ṣe ìdààmú tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú baba rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Bàbátúndé",
+      "B. Yétúndé",
+      "C. Ọmọníyì",
+      "D. Àbíọ́lá"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìn Àjò', kí ni orúkọ ọmọkùnrin tí ó ṣe ìrìn àjò pẹ̀lú Àjò?",
+    "options": [
+      "A. Adéwọlé",
+      "B. Ọlátúndé",
+      "C. Fádípẹ̀",
+      "D. Àkànní"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àlàáfíà' nínú gbólóhùn: 'Mo fẹ́ kí ìlú wa máa ní àlàáfíà'?",
+    "options": [
+      "A. Ìrọ̀rùn",
+      "B. Ìdẹ̀ra",
+      "C. Ìbàlẹ̀",
+      "D. Ìfọ̀kànbalẹ̀"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Àkùkọ'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀rúnmìlà",
+      "C. Èṣù",
+      "D. Òrìṣà Oko"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ní ìwà rere yóò rí ìdùnnú?",
+    "options": [
+      "A. Ẹni tí ó bá ní ìwà rere yóò rí ìdùnnú",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ìwà rere kò ní ìdí",
+      "D. A kò lè ṣe ìwà rere tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'òkìkí' nínú èdè Yorùbá?",
+    "options": [
+      "A. Orúkọ rere",
+      "B. Ọ̀rọ̀ ìtúpalẹ̀",
+      "C. Ọ̀rọ̀ ìṣàpèjúwe",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ìkúnlẹ̀ Abíyẹ', kí ni orúkọ ìyá Abíyẹ?",
+    "options": [
+      "A. Ìyá Abíyẹ",
+      "B. Ìyá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Ìyá Àjàní"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdùnnú' nínú gbólóhùn: 'Ó ní ìdùnnú pẹ̀lú ohun tí ó rí'?",
+    "options": [
+      "A. Ìtẹ́lọ́rùn",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìrètí",
+      "D. Ìfẹ́"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Èkìtì?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Ọlọ́fà",
+      "C. Ọmọ Ọba Adéyẹmí",
+      "D. Ọmọ Èkìtì Àparò"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìtìjú yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìtìjú yóò rí èsì rẹ̀",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ìtìjú kò ní ìdí",
+      "D. A kò lè ṣe ìtìjú tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú ìyá rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Ìyàwó",
+      "B. Yétúndé",
+      "C. Ọmọníyì",
+      "D. Àbíọ́lá"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Ọba', kí ni orúkọ olùkọ̀ tí ó kọ́ Ọmọ Ọba nípa ìwà rere?",
+    "options": [
+      "A. Ọ̀jọ̀gbọ́n Àkànní",
+      "B. Bàbá Ọmọ Ọba",
+      "C. Ọ̀jọ̀gbọ́n Fádípẹ̀",
+      "D. Ìyá Ọmọ Ọba"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìgbàgbọ́' nínú gbólóhùn: 'Mo ní ìgbàgbọ́ pé ó máa wá'?",
+    "options": [
+      "A. Ìdánilójú",
+      "B. Ìrètí",
+      "C. Ìfẹ́",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Aládùúgbò'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ọ̀rúnmìlà",
+      "D . Ògún"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ní sùúrù yóò rí àǹfààní?",
+    "options": [
+      "A. Sùúrù ni bàbá ìwà",
+      "B. Ẹni tí ó bá ní sùúrù yóò rí àǹfààní",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. Sùúrù kò ní ìdí"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àpèjúwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìṣàpèjúwe",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú ìwé 'Ẹgbẹ́ Alárá', kí ni orúkọ ọmọbìnrin tí ó ṣe ìdíje pẹ̀lú Alárá?",
+    "options": [
+      "A. Àbẹ̀ní",
+      "B. Ọmọwùnmí",
+      "C. Àlàkẹ́",
+      "D. Fúnmiláyọ̀"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìtìjú' nínú gbólóhùn: 'Ó ní ìtìjú nípa ìṣe rẹ̀'?",
+    "options": [
+      "A. Ẹ̀gàn",
+      "B. Ìdùnnú",
+      "C. Ìgbẹ́kẹ̀lé",
+      "D. Ìrètí"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ọ̀ndọ́?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Ọlọ́fà",
+      "C. Ọmọ Ọba Ògúnṣọ̀",
+      "D. Ọmọ Ọdẹdẹ"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ìwà búburú kò ní ìdí",
+      "D. A kò lè ṣe ìwà búburú tán"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe ìgbéyàwó ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọwùnmí",
+      "B. Àbíọ́lá",
+      "C. Ìyàwó",
+      "D. Ọmọníyì"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdùnnú' nínú gbólóhùn: 'Ó ní ìdùnnú pẹ̀lú àṣeyọrí rẹ̀'?",
+    "options": [
+      "A. Ìtẹ́lọ́rùn",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìrètí",
+      "D. Ìyìn"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àṣírí' nínú gbólóhùn: 'Ó pa àṣírí mi mọ́'?",
+    "options": [
+      "A. Ìkọ̀kọ̀",
+      "B. Ìyìn",
+      "C. Orúkọ rere",
+      "D. Ìwà rere"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Ẹgbẹ́ Alárá', kí ni orúkọ olórí àwọn alárá?",
+    "options": [
+      "A. Adéyẹmí",
+      "B. Ọlátúndé",
+      "C. Fádípẹ̀",
+      "D. Àkànní"
+    ],
+    "answer": "D",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ní sùúrù yóò rí àǹfààní?",
+    "options": [
+      "A. Sùúrù ni bàbá ìwà",
+      "B. Ẹni tí ó bá ní sùúrù yóò rí àǹfààní",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. Sùúrù kò ní ìdí"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ìbẹ̀rẹ̀ ìgbéyàwó ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọwùnmí",
+      "B. Àbíọ́lá",
+      "C. Ìyàwó",
+      "D. Ọmọníyì"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Aládùúgbò'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ọ̀rúnmìlà",
+      "D. Ògún"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àpèjúwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìṣàpèjúwe",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe rere?",
+    "options": [
+      "A. Ó lẹ́wà bí òdòdó",
+      "B. Ó rẹwà bí ẹlẹ́dẹ̀",
+      "C. Ó ga bí àpáta",
+      "D. Ó dára bí àgùntàn"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Ọba', kí ni orúkọ olùkọ̀ tí ó kọ́ Ọmọ Ọba?",
+    "options": [
+      "A. Bàbá Ọmọ Ọba",
+      "B. Ọ̀jọ̀gbọ́n Àkànní",
+      "C. Ìyá Ọmọ Ọba",
+      "D. Ọ̀jọ̀gbọ́n Fádípẹ̀"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìtẹ́lọ́rùn' nínú gbólóhùn: 'Ó ní ìtẹ́lọ́rùn pẹ̀lú ohun tí ó rí'?",
+    "options": [
+      "A. Ìdùnnú",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ìrètí",
+      "D. Ìfẹ́"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ọ̀yọ́?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Ọlọ́fà",
+      "C. Ọmọ Ògún",
+      "D. Ọmọ Ògúnmọ́lá"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'òwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìṣàpèjúwe",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Odò'?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Ọbàtálá",
+      "C. Ṣàngó",
+      "D. Ọ̀rúnmìlà"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe búburú?",
+    "options": [
+      "A. Ó lẹ́wà bí òṣùpá",
+      "B. Ó rẹwà bí egbin",
+      "C. Ó ga bí òkè",
+      "D. Ó dára bí òdòdó"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìnkèrindò', kí ni orúkọ olórí igbó?",
+    "options": [
+      "A. Ọlọ́wọ́",
+      "B. Àkàrà Ogun",
+      "C. Ọmọọba",
+      "D. Elégbèje"
+    ],
+    "answer": "D",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìgbẹ́kẹ̀lé' nínú gbólóhùn: 'Mo ní ìgbẹ́kẹ̀lé pé ó máa wá'?",
+    "options": [
+      "A. Ìdánilójú",
+      "B. Ìrètí",
+      "C. Ìfẹ́",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Ta ni òrìṣà tí a mọ̀ sí 'Ọba Igboro'?",
+    "options": [
+      "A. Ṣàngó",
+      "B. Ọbàtálá",
+      "C. Òrìṣà Oko",
+      "D. Ọ̀rúnmìlà"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú ìyá rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Ìyàwó",
+      "B. Yétúndé",
+      "C. Ọmọníyì",
+      "D. Àbíọ́lá"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé', kí ni orúkọ ìyá Àlàkẹ́?",
+    "options": [
+      "A. Ìyá Àlàkẹ́",
+      "B. Ìyá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Ìyá Àjàní"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìwà' nínú gbólóhùn: 'Ìwà rẹ̀ kò dára'?",
+    "options": [
+      "A. Àṣà",
+      "B. Ìṣe",
+      "C. Ọ̀nà ìbílẹ̀",
+      "D. Àkópọ̀ ìhùwàsí"
+    ],
+    "answer": "D",
+    "year": "2011"
+  },
+  {
+    "question": "Ta ni olùkọ̀ tí ó kọ́ àwọn ọmọ rẹ̀ pé kí wọ́n má ṣe purọ́?",
+    "options": [
+      "A. Ìyá Àlàkẹ́",
+      "B. Bàbá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Bàbá Àjàní"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ìlú tí a mọ̀ sí 'Ìlú ọba' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọ̀yọ́",
+      "B. Ìbàdàn",
+      "C. Ilé-Ifẹ̀",
+      "D. Abẹ́òkúta"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá purọ́ yóò rí èsì rẹ̀?",
+    "options": [
+      "A. A kò lè purọ́ tán",
+      "B. Bí a ṣe ń purọ́ ni a ń rí",
+      "C. Ẹni tí ó bá purọ́ yóò rí èsì rẹ̀",
+      "D. Purọ́ kò ní ìdí"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àṣà' nínú gbólóhùn: 'Àṣà wa yàtọ̀ sí tiwọn'?",
+    "options": [
+      "A. Ìwà",
+      "B. Ìṣe",
+      "C. Ọ̀nà ìbílẹ̀",
+      "D. Ìgbàgbọ́"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Ta ni olùkọ̀ tí ó kọ́ àwọn ọmọ rẹ̀ pé kí wọ́n má ṣe fọwọ́ kan ohun tí kò jẹ́ tiwọn?",
+    "options": [
+      "A. Ìyá Àlàkẹ́",
+      "B. Bàbá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Bàbá Àjàní"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ọba tí ó jẹ́ ọba ìlú Ìbàdàn ní ìgbà ìtàn?",
+    "options": [
+      "A. Ọba Àtìbà",
+      "B. Ọba Láwọ́nì",
+      "C. Ọba Ṣómù",
+      "D. Ọba Ògúndípẹ̀"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Ọgbójú Ọdẹ', kí ni orúkọ ọmọ tí Àkàrà Ogun bí?",
+    "options": [
+      "A. Ọlọ́wọ́",
+      "B. Ọmọọba",
+      "C. Àkànní",
+      "D. Adéyẹmí"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdánilójú' nínú gbólóhùn: 'Mo ní ìdánilójú pé ó máa wá'?",
+    "options": [
+      "A. Ìgbẹ́kẹ̀lé",
+      "B. Ìrètí",
+      "C. Ìfẹ́",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Ta ni olùkọ̀ tí ó kọ́ àwọn ọmọ rẹ̀ pé kí wọ́n má ṣe jẹun lọ́wọ́ àlejò?",
+    "options": [
+      "A. Ìyá Àlàkẹ́",
+      "B. Bàbá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Bàbá Àjàní"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń ṣe ìgbéyàwó ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọwùnmí",
+      "B. Àbíọ́lá",
+      "C. Ìyàwó",
+      "D. Ọmọníyì"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe rere yóò rí rere?",
+    "options": [
+      "A. A kò lè ṣe rere tán",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ẹni tí ó bá ṣe rere yóò rí rere",
+      "D. Rere kò ní ìdí"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe rere?",
+    "options": [
+      "A. Ó lẹ́wà bí òṣùpá",
+      "B. Ó rẹwà bí egbin",
+      "C. Ó ga bí òkè",
+      "D. Ó dára bí òdòdó"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ìlú tí a mọ̀ sí 'Ilé Òrìṣà' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọ̀yọ́",
+      "B. Ìbàdàn",
+      "C. Ilé-Ifẹ̀",
+      "D. Abẹ́òkúta"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Alámọ̀'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀ṣun",
+      "C. Ògún",
+      "D. Èṣù"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìrètí' nínú gbólóhùn: 'Mo ní ìrètí pé yóò ṣeé ṣe'?",
+    "options": [
+      "A. Ìgbẹ́kẹ̀lé",
+      "B. Àǹfààní",
+      "C. Ìdùnnú",
+      "D. Ìfẹ́"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìwé 'Ẹgbẹ́ Alárá', kí ni orúkọ ìyá Àkànní?",
+    "options": [
+      "A. Ìyá Àkànní",
+      "B. Ìyá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Ìyá Fádípẹ̀"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ìwà rere ni ó ń mú ọlá wá?",
+    "options": [
+      "A. Ìwà rere ni ó ń mú ọlá wá",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ọlá kò ní ìdí",
+      "D. A kò lè ṣe rere tán"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú bàbá rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Yétúndé",
+      "B. Bàbátúndé",
+      "C. Ìyàwó",
+      "D. Ọmọníyì"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Iná'?",
+    "options": [
+      "A. Ṣàngó",
+      "B. Ọ̀ṣun",
+      "C. Ọbàtálá",
+      "D. Ògún"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọlá' nínú gbólóhùn: 'Ó ní ọlá púpọ̀ nínú ìlú'?",
+    "options": [
+      "A. Ọrọ̀",
+      "B. Ìyìn",
+      "C. Ìwà",
+      "D. Ìgbẹ́kẹ̀lé"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ògo' nínú gbólóhùn: 'Ó ní ògo púpọ̀ ní ìlú náà'?",
+    "options": [
+      "A. Ọlá",
+      "B. Ìyìn",
+      "C. Orúkọ rere",
+      "D. Ìwà rere"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Ìkúnlẹ̀ Abíyẹ', kí ni orúkọ ọmọkùnrin tí ó fẹ́ràn Abíyẹ?",
+    "options": [
+      "A. Adéyẹmí",
+      "B. Ọlátúndé",
+      "C. Fádípẹ̀",
+      "D. Àkànní"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ìwà rere ni yóò múni láyọ̀",
+      "B. Ẹni tí ó bá ṣe ìwà búburú yóò rí èsì rẹ̀",
+      "C. Ìwà kò ní ìdí",
+      "D. Bí a ṣe ń ṣe ni a ń rí"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí nígbà tí ìyá rẹ̀ ń lọ sí òkèé méjì ní àṣà Yorùbá?",
+    "options": [
+      "A. Kéhìndé",
+      "B. Táyé",
+      "C. Ìdòwú",
+      "D. Àlàbá"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Alámọ̀'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀rúnmìlà",
+      "C. Èṣù",
+      "D. Ògún"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àpèrè' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ọ̀rọ̀ ìtúpalẹ̀",
+      "B. Ọ̀rọ̀ ìwé",
+      "C. Ọ̀rọ̀ ìtàn",
+      "D. Ọ̀rọ̀ ìfiwéra"
+    ],
+    "answer": "D",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo nínú àwọn àpèjúwe wọ̀nyí jẹ́ àpèjúwe búburú?",
+    "options": [
+      "A. Ó lẹ́wà bí òṣùpá",
+      "B. Ó rẹwà bí ẹlẹ́dẹ̀",
+      "C. Ó ga bí òkè",
+      "D. Ó dára bí òdòdó"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Adùn Ní Ìdẹ', kí ni orúkọ olùkọ̀ tí ó kọ́ Adùn?",
+    "options": [
+      "A. Bàbá Adùn",
+      "B. Ọ̀jọ̀gbọ́n Àkànní",
+      "C. Ìyá Adùn",
+      "D. Ọ̀jọ̀gbọ́n Fádípẹ̀"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìgbàgbọ́' nínú gbólóhùn: 'Mo ní ìgbàgbọ́ pé ó máa wá'?",
+    "options": [
+      "A. Ìdánilójú",
+      "B. Ìrètí",
+      "C. Ìfẹ́",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ilé-Ifẹ̀?",
+    "options": [
+      "A. Ọmọ Ọba Àtìbà",
+      "B. Ọmọ Ọlọ́fà",
+      "C. Ọmọ Ọ̀rànmíyàn",
+      "D. Ọmọ Ògúnmọ́lá"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'àlọ́' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn tí ó ní ẹ̀kọ́",
+      "B. Ọ̀rọ̀ ìtúpalẹ̀",
+      "C. Ọ̀rọ̀ ìṣàpèjúwe",
+      "D. Ọ̀rọ̀ ìdánilójú"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Orí'?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Ọ̀rúnmìlà",
+      "C. Èṣù",
+      "D. Ògún"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo nínú àwọn òwe wọ̀nyí sọ pé ẹni tí ó bá ṣe ìkà yóò rí èsì rẹ̀?",
+    "options": [
+      "A. Ìkà kò ní ìdí",
+      "B. Ẹni tí ó bá ṣe ìkà yóò rí èsì rẹ̀",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. A kò lè ṣe ìkà tán"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ikú ẹgbọ́n rẹ̀ ní àṣà Yorùbá?",
+    "options": [
+      "A. Ọmọníyì",
+      "B. Bàbátúndé",
+      "C. Ìyàwó",
+      "D. Àbíọ́lá"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Ọmọ Olóòbí', kí ni orúkọ olórí àwọn ọdẹ?",
+    "options": [
+      "A. Àkànní",
+      "B. Ọlọ́wọ́",
+      "C. Adéyẹmí",
+      "D. Fádípẹ̀"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìfẹ́' nínú gbólóhùn: 'Mo ní ìfẹ́ sí i'?",
+    "options": [
+      "A. Ìgbẹ́kẹ̀lé",
+      "B. Ìdánilójú",
+      "C. Àfẹ́rí",
+      "D. Ìtẹ́lọ́rùn"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Ta ni olùkọ̀ tí ó kọ́ àwọn ọmọ rẹ̀ pé kí wọ́n má ṣe jà?",
+    "options": [
+      "A. Ìyá Àlàkẹ́",
+      "B. Bàbá Adé",
+      "C. Ìyá Ọlátúndé",
+      "D. Bàbá Àjàní"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni orúkọ ìlú tí a mọ̀ sí 'Ìlú ọlọ́gbọ̀n' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọ̀yọ́",
+      "B. Ìbàdàn",
+      "C. Ilé-Ifẹ̀",
+      "D. Abẹ́òkúta"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìtàn àròsọ Yorùbá, ta ni òrìṣà tí a mọ̀ sí 'Ọba Àwọ̀n'?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Ọbàtálá",
+      "C. Yemọja",
+      "D. Ṣàngó"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo ni àpèjúwe rere nínú àwọn wọ̀nyí?",
+    "options": [
+      "A. Ó lẹ́wà bí egbin",
+      "B. Ó lẹ́wà bí òṣùpá",
+      "C. Ó ga bí igi",
+      "D. Ó rẹwà bí àgùntàn"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìrètí' nínú gbólóhùn: 'Mo ní ìrètí pé ó máa wá'?",
+    "options": [
+      "A. Ìgbẹ́kẹ̀lé",
+      "B. Ìdánilójú",
+      "C. Ìfẹ́",
+      "D. Àṣìṣe"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Ta ni òrìṣà tí a mọ̀ sí 'Ọba Iná'?",
+    "options": [
+      "A. Ṣàngó",
+      "B. Ọbàtálá",
+      "C. Òrìṣà Oko",
+      "D. Ọ̀rúnmìlà"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Aláwìíyé', kí ni orúkọ bàbá Àlàkẹ́?",
+    "options": [
+      "A. Bàbá Àlàkẹ́",
+      "B. Bàbá Adé",
+      "C. Bàbá Ọlátúndé",
+      "D. Bàbá Àjàní"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'oríkì' nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìtàn ìdílé",
+      "B. Ọ̀rọ̀ ìyìn fún ènìyàn tàbí ìlú",
+      "C. Àlọ́ ìtàn",
+      "D. Òwe ìtúpalẹ̀"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo ni òwe tí ó sọ pé ọmọ tí ó bá máa ṣe rere yóò gba ìbùkún?",
+    "options": [
+      "A. Ọmọ tí ó bá ṣe rere yóò gba ìbùkún",
+      "B. Ọmọ kò ní ìdí",
+      "C. Bí a ṣe ń ṣe ni a ń rí",
+      "D. Ọmọ rere kò ní ìwà"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú àṣà Yorùbá, kí ni orúkọ ọmọ tí a bí lẹ́yìn ìbẹ́jì?",
+    "options": [
+      "A. Ìdòwú",
+      "B. Àlàbá",
+      "C. Táyé",
+      "D. Kéhìndé"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Ta ni òrìṣà tí a mọ̀ sí 'Ọba Omi' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọ̀ṣun",
+      "B. Yemọja",
+      "C. Ọbàtálá",
+      "D. Ṣàngó"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'àṣà' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn",
+      "B. Ìṣe ìṣẹ̀dálẹ̀",
+      "C. Ìwà àti ìgbàgbọ́ ìlú",
+      "D. Oríkì"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Ogún Ọmọdé', kí ni orúkọ olórí àwọn ọmọdé?",
+    "options": [
+      "A. Adéyẹmí",
+      "B. Ọlátúndé",
+      "C. Àkànní",
+      "D. Fádípẹ̀"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo ni àpèjúwe búburú nínú àwọn wọ̀nyí?",
+    "options": [
+      "A. Ó lẹ́wà bí òdòdó",
+      "B. Ó ga bí àpáta",
+      "C. Ó rẹwà bí àgùntàn",
+      "D. Ó dára bí egbin"
+    ],
+    "answer": "D",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ìdùnnú' nínú gbólóhùn: 'Mo ní ìdùnnú púpọ̀'?",
+    "options": [
+      "A. Ìfẹ́",
+      "B. Ìgbẹ́kẹ̀lé",
+      "C. Ayọ̀",
+      "D. Ìrètí"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ọ̀yọ́?",
+    "options": [
+      "A. Ọmọ Olúmọ",
+      "B. Ọmọ Àtìbà",
+      "C. Ọmọ Ọ̀rànmíyàn",
+      "D. Ọmọ Olúbàdàn"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni a ń pè ní 'òwe' nínú èdè Yorùbá?",
+    "options": [
+      "A. Ìtàn",
+      "B. Àpèrè",
+      "C. Ọ̀rọ̀ ìtumọ̀ tí ó ní ẹ̀kọ́",
+      "D. Oríkì"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Ta ni òrìṣà tí a mọ̀ sí 'Baba Ẹ̀gún' nínú ìtàn Yorùbá?",
+    "options": [
+      "A. Ọbàtálá",
+      "B. Èṣù",
+      "C. Ọ̀rúnmìlà",
+      "D. Ògún"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú ìwé 'Ìrìn Àjò', kí ni orúkọ ọmọ tí ó jẹ́ olùkọ́?",
+    "options": [
+      "A. Adéyẹmí",
+      "B. Ọlátúndé",
+      "C. Àkànní",
+      "D. Fádípẹ̀"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo ni òwe tí ó sọ pé ẹni tí ó bá ní sùúrù yóò rí àǹfààní?",
+    "options": [
+      "A. Sùúrù ni ìbùkún",
+      "B. Bí a ṣe ń ṣe ni a ń rí",
+      "C. Ẹni tí ó bá ní sùúrù yóò rí àǹfààní",
+      "D. Sùúrù kò ní ìdí"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni ìtumọ̀ ọ̀rọ̀ 'ọgbọ́n' nínú gbólóhùn: 'Ó ní ọgbọ́n láti ṣe é'?",
+    "options": [
+      "A. Ìmọ̀",
+      "B. Ìfẹ́",
+      "C. Ìdùnnú",
+      "D. Ìgbẹ́kẹ̀lé"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Nínú àwọn oríkì wọ̀nyí, èwo ni ó wọ́pọ̀ fún àwọn ọmọ Ìbàdàn?",
+    "options": [
+      "A. Ọmọ Olúmọ",
+      "B. Ọmọ Àtìbà",
+      "C. Ọmọ Olúbàdàn",
+      "D. Ọmọ Ọ̀rànmíyàn"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "Kí ni orúkọ ọmọ tí a bí lẹ́yìn ìdọ́gbọ́n ọmọ nínú àṣà Yorùbá?",
+    "options": [
+      "A. Ìgè",
+      "B. Ọmọníyì",
+      "C. Àlàbá",
+      "D. Ìdòwú"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Ẹwo ni àpèjúwe rere nínú àwọn wọ̀nyí?",
+    "options": [
+      "A. Ó lẹ́wà bí ìrùkẹ̀rẹ̀",
+      "B. Ó rẹwà bí ẹlẹ́dẹ̀",
+      "C. Ó ga bí àpáta",
+      "D. Ó dára bí àgùntàn"
+    ],
+    "answer": "A",
+    "year": "2010"
+  }
+]

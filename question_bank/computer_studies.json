@@ -1,0 +1,7042 @@
+[
+  {
+    "question": "Which component of a computer system manages the flow of data between memory and the CPU?",
+    "options": [
+      "A. Control Unit",
+      "B. Arithmetic Logic Unit",
+      "C. Cache Memory",
+      "D. Input/Output Unit"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 11101?",
+    "options": [
+      "A. 28",
+      "B. 29",
+      "C. 30",
+      "D. 31"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which generation of computers introduced the use of magnetic core memory?",
+    "options": [
+      "A. First",
+      "B. Second",
+      "C. Third",
+      "D. Fourth"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "In programming, what is the purpose of a parameter in a function?",
+    "options": [
+      "A. To store permanent data",
+      "B. To pass data to the function",
+      "C. To debug the function",
+      "D. To compile the function"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is an example of accounting software?",
+    "options": [
+      "A. Adobe Illustrator",
+      "B. Sage",
+      "C. Microsoft PowerPoint",
+      "D. VLC Media Player"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What does BIOS stand for in a computer system?",
+    "options": [
+      "A. Basic Input/Output System",
+      "B. Binary Input/Output Software",
+      "C. Basic Internal Operating System",
+      "D. Binary Integrated Operating System"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which HTML tag is used to insert an image into a webpage?",
+    "options": [
+      "A. <img>",
+      "B. <image>",
+      "C. <pic>",
+      "D. <src>"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "The hexadecimal equivalent of the decimal number 40 is:",
+    "options": [
+      "A. 27",
+      "B. 28",
+      "C. 29",
+      "D. 2A"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a characteristic of a procedural programming language?",
+    "options": [
+      "A. Use of objects",
+      "B. Sequence of instructions",
+      "C. Event-driven execution",
+      "D. Data encapsulation"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What is the purpose of an index in a database?",
+    "options": [
+      "A. To encrypt data",
+      "B. To speed up data retrieval",
+      "C. To store data permanently",
+      "D. To link tables"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a magnetic storage device?",
+    "options": [
+      "A. Flash Drive",
+      "B. Hard Disk Drive",
+      "C. RAM",
+      "D. Cache Memory"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "In networking, what does NAT stand for?",
+    "options": [
+      "A. Network Address Translation",
+      "B. Network Access Technology",
+      "C. Node Address Transmission",
+      "D. Network Authentication Token"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a valid conditional statement in Python?",
+    "options": [
+      "A. if-else",
+      "B. while",
+      "C. for",
+      "D. switch"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "What is the role of a firewall in a network?",
+    "options": [
+      "A. To store data",
+      "B. To block unauthorized access",
+      "C. To amplify signals",
+      "D. To route data"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a touch-based input device?",
+    "options": [
+      "A. Printer",
+      "B. Touchscreen",
+      "C. Speaker",
+      "D. Projector"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What does SDK stand for in software development?",
+    "options": [
+      "A. Software Development Kit",
+      "B. System Data Kernel",
+      "C. Software Debugging Kit",
+      "D. System Development Kernel"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "The binary equivalent of the hexadecimal number 2C is:",
+    "options": [
+      "A. 101100",
+      "B. 101101",
+      "C. 101110",
+      "D. 101111"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following prevents data anomalies in a database?",
+    "options": [
+      "A. Data duplication",
+      "B. Data normalization",
+      "C. Data redundancy",
+      "D. Data encryption"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "In a flowchart, the trapezoid shape is used to represent:",
+    "options": [
+      "A. Manual operation",
+      "B. Decision",
+      "C. Process",
+      "D. Input/Output"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which protocol is used for transferring files securely?",
+    "options": [
+      "A. FTP",
+      "B. SFTP",
+      "C. HTTP",
+      "D. SMTP"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a feature of a spreadsheet chart?",
+    "options": [
+      "A. Text editing",
+      "B. Data visualization",
+      "C. Code execution",
+      "D. Network management"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What is the octal equivalent of the decimal number 45?",
+    "options": [
+      "A. 54",
+      "B. 55",
+      "C. 56",
+      "D. 57"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is an interpreted programming language?",
+    "options": [
+      "A. C++",
+      "B. Java",
+      "C. Python",
+      "D. C#"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "What is the purpose of a stack in programming?",
+    "options": [
+      "A. To store data in a random order",
+      "B. To store data in a last-in, first-out order",
+      "C. To encrypt data",
+      "D. To sort data"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a type of ransomware?",
+    "options": [
+      "A. Worm",
+      "B. Trojan",
+      "C. Locker",
+      "D. Spyware"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "What does RAID stand for in storage systems?",
+    "options": [
+      "A. Redundant Array of Independent Disks",
+      "B. Random Access Integrated Disks",
+      "C. Reliable Array of Internal Drives",
+      "D. Redundant Access to Internal Data"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is used to animate elements on a webpage?",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. SQL",
+      "D. PHP"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "In binary arithmetic, 11011 + 101 equals:",
+    "options": [
+      "A. 11111",
+      "B. 100000",
+      "C. 100001",
+      "D. 100010"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a feature of a distributed operating system?",
+    "options": [
+      "A. Single processor control",
+      "B. Resource sharing across multiple computers",
+      "C. Manual process allocation",
+      "D. Centralized memory management"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What is the purpose of a checksum in data transmission?",
+    "options": [
+      "A. To compress data",
+      "B. To verify data integrity",
+      "C. To encrypt data",
+      "D. To store data"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is an example of a virtual assistant software?",
+    "options": [
+      "A. Microsoft Excel",
+      "B. Siri",
+      "C. Notepad",
+      "D. Paint"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What is the function of a bus in a computer system?",
+    "options": [
+      "A. To execute instructions",
+      "B. To transfer data between components",
+      "C. To store data permanently",
+      "D. To display output"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a client-side technology for dynamic content?",
+    "options": [
+      "A. PHP",
+      "B. ASP.NET",
+      "C. JavaScript",
+      "D. Ruby"
+    ],
+    "answer": "C",
+    "year": "2025"
+  },
+  {
+    "question": "What is the largest unit of digital information listed below?",
+    "options": [
+      "A. Megabyte",
+      "B. Kilobyte",
+      "C. Byte",
+      "D. Bit"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a characteristic of a tablet computer?",
+    "options": [
+      "A. High processing power",
+      "B. Touchscreen interface",
+      "C. Multi-user support",
+      "D. Large physical size"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What does ARP stand for in networking?",
+    "options": [
+      "A. Address Resolution Protocol",
+      "B. Access Routing Protocol",
+      "C. Automated Response Protocol",
+      "D. Address Retrieval Protocol"
+    ],
+    "answer": "A",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is an example of a batch operating system?",
+    "options": [
+      "A. Windows 11",
+      "B. MS-DOS",
+      "C. Linux",
+      "D. macOS"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "In a flowchart, the diamond shape is used to represent:",
+    "options": [
+      "A. Process",
+      "B. Decision",
+      "C. Input/Output",
+      "D. Connector"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is used to update data in a database?",
+    "options": [
+      "A. HTML",
+      "B. SQL",
+      "C. CSS",
+      "D. JavaScript"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "What is the purpose of a VLAN in networking?",
+    "options": [
+      "A. To encrypt data",
+      "B. To segment a network",
+      "C. To store data",
+      "D. To compile code"
+    ],
+    "answer": "B",
+    "year": "2025"
+  },
+  {
+    "question": "Which of the following is a benefit of cloud storage?",
+    "options": [
+      "A. Limited accessibility",
+      "B. Data stored locally",
+      "C. Remote data access",
+      "D. Manual backups"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "What is the binary equivalent of the octal number 14?",
+    "options": [
+      "A. 1100",
+      "B. 1101",
+      "C. 1110",
+      "D. 1111"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a function of a spreadsheet application?",
+    "options": [
+      "A. Text editing",
+      "B. Data analysis",
+      "C. Code debugging",
+      "D. Network configuration"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "In programming, what is a constant?",
+    "options": [
+      "A. A value that changes during execution",
+      "B. A value that remains fixed",
+      "C. A loop structure",
+      "D. A conditional statement"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a hybrid computer?",
+    "options": [
+      "A. A computer combining analog and digital features",
+      "B. A portable laptop",
+      "C. A single-user PC",
+      "D. A server computer"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What does HTTP stand for in web browsing?",
+    "options": [
+      "A. HyperText Transfer Protocol",
+      "B. HighText Transmission Protocol",
+      "C. HyperTool Transfer Protocol",
+      "D. Hybrid Text Protocol"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a characteristic of fifth-generation computers?",
+    "options": [
+      "A. Vacuum tubes",
+      "B. Artificial intelligence",
+      "C. Transistors",
+      "D. Integrated circuits"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "In programming, what is a runtime error?",
+    "options": [
+      "A. An error detected during compilation",
+      "B. An error occurring during program execution",
+      "C. A syntax mistake",
+      "D. A hardware failure"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of network cable?",
+    "options": [
+      "A. Ethernet",
+      "B. USB",
+      "C. HDMI",
+      "D. VGA"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the binary number 10000?",
+    "options": [
+      "A. 10",
+      "B. 11",
+      "C. 12",
+      "D. 13"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is an example of a multi-user operating system?",
+    "options": [
+      "A. MS-DOS",
+      "B. Unix",
+      "C. Windows XP",
+      "D. Android"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a software update?",
+    "options": [
+      "A. To reduce system performance",
+      "B. To fix bugs and add features",
+      "C. To compile code",
+      "D. To connect networks"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of computer connector?",
+    "options": [
+      "A. VGA",
+      "B. RAM",
+      "C. CPU",
+      "D. SSD"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the function of a gateway in a network?",
+    "options": [
+      "A. To connect devices within a LAN",
+      "B. To connect different network protocols",
+      "C. To store data",
+      "D. To convert signals"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a characteristic of cache memory?",
+    "options": [
+      "A. Non-volatile",
+      "B. High-speed",
+      "C. Large capacity",
+      "D. Permanent storage"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What does UDP stand for in networking?",
+    "options": [
+      "A. User Datagram Protocol",
+      "B. Universal Data Protocol",
+      "C. User Data Processing",
+      "D. Unified Datagram Protocol"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a data validation technique?",
+    "options": [
+      "A. Range check",
+      "B. Network routing",
+      "C. Code compilation",
+      "D. Image compression"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "In binary, what is the result of 1100 - 101?",
+    "options": [
+      "A. 0111",
+      "B. 1000",
+      "C. 1001",
+      "D. 1010"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of programming loop?",
+    "options": [
+      "A. While loop",
+      "B. If statement",
+      "C. Function call",
+      "D. Variable declaration"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a password in computing?",
+    "options": [
+      "A. To increase processing speed",
+      "B. To secure access",
+      "C. To compile code",
+      "D. To design webpages"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of software testing?",
+    "options": [
+      "A. Unit testing",
+      "B. Network routing",
+      "C. Data encryption",
+      "D. File compression"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the decimal equivalent of the hexadecimal number 2F?",
+    "options": [
+      "A. 46",
+      "B. 47",
+      "C. 48",
+      "D. 49"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a characteristic of a workstation computer?",
+    "options": [
+      "A. Low processing power",
+      "B. High-performance hardware",
+      "C. Limited memory",
+      "D. Single-task system"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of an array in programming?",
+    "options": [
+      "A. To store a single value",
+      "B. To store multiple values",
+      "C. To execute loops",
+      "D. To debug code"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a wired networking standard?",
+    "options": [
+      "A. Bluetooth",
+      "B. Wi-Fi",
+      "C. Ethernet",
+      "D. NFC"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "What is the role of a candidate key in a database?",
+    "options": [
+      "A. To sort records",
+      "B. To uniquely identify records",
+      "C. To encrypt data",
+      "D. To filter queries"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of software piracy?",
+    "options": [
+      "A. Debugging",
+      "B. Unauthorized copying",
+      "C. Compiling",
+      "D. Networking"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the octal equivalent of the binary number 10100?",
+    "options": [
+      "A. 22",
+      "B. 23",
+      "C. 24",
+      "D. 25"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is an example of a non-relational database?",
+    "options": [
+      "A. MySQL",
+      "B. MongoDB",
+      "C. Oracle",
+      "D. PostgreSQL"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a default gateway in networking?",
+    "options": [
+      "A. To store data",
+      "B. To route traffic to external networks",
+      "C. To encrypt data",
+      "D. To connect devices in a LAN"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a feature of a graphic design software?",
+    "options": [
+      "A. Data calculation",
+      "B. Image manipulation",
+      "C. Code compilation",
+      "D. Network management"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the binary equivalent of the decimal number 13?",
+    "options": [
+      "A. 1100",
+      "B. 1101",
+      "C. 1110",
+      "D. 1111"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of incremental backup?",
+    "options": [
+      "A. Differential backup",
+      "B. Network backup",
+      "C. Cloud routing",
+      "D. Data compilation"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a library in programming?",
+    "options": [
+      "A. To store user data",
+      "B. To provide reusable code",
+      "C. To debug errors",
+      "D. To design webpages"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of computer network?",
+    "options": [
+      "A. MAN",
+      "B. SQL",
+      "C. HTML",
+      "D. CSS"
+    ],
+    "answer": "A",
+    "year": "2024"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the decimal number 30?",
+    "options": [
+      "A. 1D",
+      "B. 1E",
+      "C. 1F",
+      "D. 20"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a feature of an embedded computer?",
+    "options": [
+      "A. High portability",
+      "B. Dedicated function",
+      "C. Multi-user support",
+      "D. Large storage"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a cookie in web browsing?",
+    "options": [
+      "A. To compile code",
+      "B. To store user preferences",
+      "C. To route traffic",
+      "D. To encrypt data"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which of the following is a type of volatile memory?",
+    "options": [
+      "A. ROM",
+      "B. Flash Memory",
+      "C. DRAM",
+      "D. SSD"
+    ],
+    "answer": "C",
+    "year": "2024"
+  },
+  {
+    "question": "What is the purpose of a pivot table in a spreadsheet?",
+    "options": [
+      "A. To format text",
+      "B. To summarize data",
+      "C. To debug code",
+      "D. To connect networks"
+    ],
+    "answer": "B",
+    "year": "2024"
+  },
+  {
+    "question": "Which part of a computer system is responsible for coordinating all activities?",
+    "options": [
+      "A. Monitor",
+      "B. Operating System",
+      "C. Keyboard",
+      "D. Hard Drive"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 10111?",
+    "options": [
+      "A. 22",
+      "B. 23",
+      "C. 24",
+      "D. 25"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which generation of computers introduced the use of microprocessors?",
+    "options": [
+      "A. Second",
+      "B. Third",
+      "C. Fourth",
+      "D. Fifth"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "In programming, what does a syntax error indicate?",
+    "options": [
+      "A. Incorrect logic in the program",
+      "B. Violation of language rules",
+      "C. Hardware failure",
+      "D. Missing data"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is an example of presentation software?",
+    "options": [
+      "A. Microsoft PowerPoint",
+      "B. Notepad",
+      "C. MySQL",
+      "D. Python"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "What does the acronym ALU stand for in a CPU?",
+    "options": [
+      "A. Arithmetic Logic Unit",
+      "B. Advanced Learning Unit",
+      "C. Automatic Logic Unit",
+      "D. Arithmetic Learning Unit"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is used to define the layout of a webpage?",
+    "options": [
+      "A. JavaScript",
+      "B. CSS",
+      "C. Python",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "The hexadecimal equivalent of the decimal number 28 is:",
+    "options": [
+      "A. 1A",
+      "B. 1B",
+      "C. 1C",
+      "D. 1D"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a characteristic of a machine language?",
+    "options": [
+      "A. Human-readable",
+      "B. Uses binary code",
+      "C. Platform-independent",
+      "D. High-level abstraction"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the purpose of a database schema?",
+    "options": [
+      "A. To execute queries",
+      "B. To define the structure of a database",
+      "C. To encrypt data",
+      "D. To connect networks"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a secondary storage device?",
+    "options": [
+      "A. Cache Memory",
+      "B. RAM",
+      "C. Solid State Drive",
+      "D. Registers"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "In networking, what does VPN stand for?",
+    "options": [
+      "A. Virtual Private Network",
+      "B. Variable Public Network",
+      "C. Virtual Public Node",
+      "D. Variable Private Node"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a valid operator in Python?",
+    "options": [
+      "A. **",
+      "B. &&",
+      "C. ||",
+      "D. ##"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "What is the function of a network hub?",
+    "options": [
+      "A. To route data between networks",
+      "B. To broadcast data to all connected devices",
+      "C. To store network data",
+      "D. To convert signals"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a pointing device?",
+    "options": [
+      "A. Printer",
+      "B. Mouse",
+      "C. Speaker",
+      "D. Monitor"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What does DBMS stand for?",
+    "options": [
+      "A. Database Management System",
+      "B. Data Backup Management System",
+      "C. Database Monitoring System",
+      "D. Data Manipulation System"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "The binary equivalent of the hexadecimal number D is:",
+    "options": [
+      "A. 1100",
+      "B. 1101",
+      "C. 1110",
+      "D. 1111"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a feature of a normalized database?",
+    "options": [
+      "A. Data redundancy",
+      "B. Data duplication",
+      "C. Data consistency",
+      "D. Data encryption"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "In a flowchart, the oval shape represents:",
+    "options": [
+      "A. Process",
+      "B. Decision",
+      "C. Input/Output",
+      "D. Start/End"
+    ],
+    "answer": "D",
+    "year": "2023"
+  },
+  {
+    "question": "Which protocol is used to receive emails?",
+    "options": [
+      "A. POP3",
+      "B. HTTP",
+      "C. FTP",
+      "D. TCP"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a feature of a database?",
+    "options": [
+      "A. Code execution",
+      "B. Data organization",
+      "C. Image editing",
+      "D. Network routing"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the octal equivalent of the decimal number 17?",
+    "options": [
+      "A. 20",
+      "B. 21",
+      "C. 22",
+      "D. 23"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a middle-level programming language?",
+    "options": [
+      "A. Python",
+      "B. C",
+      "C. Assembly",
+      "D. Java"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the purpose of a loader in a computer system?",
+    "options": [
+      "A. To compile code",
+      "B. To load programs into memory",
+      "C. To debug errors",
+      "D. To style webpages"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a type of cybercrime?",
+    "options": [
+      "A. Phishing",
+      "B. Debugging",
+      "C. Compiling",
+      "D. Networking"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "What does SSD stand for in storage devices?",
+    "options": [
+      "A. Solid State Drive",
+      "B. System Storage Device",
+      "C. Static Storage Disk",
+      "D. Secure Storage Drive"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is used to validate user input in a webpage?",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. JavaScript",
+      "D. SQL"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "In binary arithmetic, 1010 + 101 equals:",
+    "options": [
+      "A. 1110",
+      "B. 1111",
+      "C. 10011",
+      "D. 10111"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a feature of a command-line interface?",
+    "options": [
+      "A. Graphical elements",
+      "B. Text-based commands",
+      "C. Touch-based input",
+      "D. Voice recognition"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the purpose of data compression?",
+    "options": [
+      "A. To increase file size",
+      "B. To reduce file size",
+      "C. To encrypt data",
+      "D. To execute code"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is an example of a search engine?",
+    "options": [
+      "A. Microsoft Edge",
+      "B. Google",
+      "C. Firefox",
+      "D. Safari"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the function of a memory management unit?",
+    "options": [
+      "A. To execute instructions",
+      "B. To manage virtual memory",
+      "C. To connect networks",
+      "D. To store data permanently"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a client-side scripting language?",
+    "options": [
+      "A. PHP",
+      "B. Python",
+      "C. JavaScript",
+      "D. Ruby"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "What is the largest unit of digital information listed below?",
+    "options": [
+      "A. Byte",
+      "B. Bit",
+      "C. Kilobyte",
+      "D. Nibble"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a characteristic of a minicomputer?",
+    "options": [
+      "A. Single-user system",
+      "B. High processing power",
+      "C. Supports multiple users",
+      "D. Portable design"
+    ],
+    "answer": "C",
+    "year": "2023"
+  },
+  {
+    "question": "What does DNS stand for in networking?",
+    "options": [
+      "A. Domain Name System",
+      "B. Data Network Service",
+      "C. Dynamic Name Server",
+      "D. Distributed Network System"
+    ],
+    "answer": "A",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is an example of a real-time operating system?",
+    "options": [
+      "A. Windows 11",
+      "B. RTOS",
+      "C. Microsoft Excel",
+      "D. Ubuntu"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "In a flowchart, the rectangle shape represents:",
+    "options": [
+      "A. Decision",
+      "B. Process",
+      "C. Start/End",
+      "D. Input/Output"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is used to manage database transactions?",
+    "options": [
+      "A. HTML",
+      "B. SQL",
+      "C. CSS",
+      "D. JavaScript"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "What is the purpose of a subnet mask in networking?",
+    "options": [
+      "A. To identify a device",
+      "B. To divide a network into smaller networks",
+      "C. To encrypt data",
+      "D. To store files"
+    ],
+    "answer": "B",
+    "year": "2023"
+  },
+  {
+    "question": "Which of the following is a characteristic of cloud computing?",
+    "options": [
+      "A. Local data storage",
+      "B. Scalable resources",
+      "C. Manual hardware upgrades",
+      "D. Fixed processing power"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the binary equivalent of the octal number 7?",
+    "options": [
+      "A. 110",
+      "B. 111",
+      "C. 101",
+      "D. 100"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is a primary function of a database management system?",
+    "options": [
+      "A. Code compilation",
+      "B. Data manipulation",
+      "C. Network routing",
+      "D. Image editing"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a conditional statement in programming?",
+    "options": [
+      "A. To repeat code",
+      "B. To make decisions",
+      "C. To store data",
+      "D. To call functions"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which of the following is a peripheral device?",
+    "options": [
+      "A. CPU",
+      "B. RAM",
+      "C. Printer",
+      "D. Motherboard"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "What does URL stand for in web browsing?",
+    "options": [
+      "A. Uniform Resource Locator",
+      "B. Universal Resource Link",
+      "C. Uniform Retrieval Link",
+      "D. Universal Retrieval Locator"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Which feature characterizes first-generation computers?",
+    "options": [
+      "A. Microprocessors",
+      "B. Vacuum tubes",
+      "C. Integrated circuits",
+      "D. Transistors"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "In programming, what is a variable?",
+    "options": [
+      "A. A fixed value",
+      "B. A storage location for data",
+      "C. A loop structure",
+      "D. A conditional statement"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which of the following is a network topology?",
+    "options": [
+      "A. Star",
+      "B. Cloud",
+      "C. Server",
+      "D. Protocol"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the binary number 1010?",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. C",
+      "D. D"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Which is an example of a mobile operating system?",
+    "options": [
+      "A. Windows 10",
+      "B. Android",
+      "C. Microsoft Excel",
+      "D. Linux"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a debugger in programming?",
+    "options": [
+      "A. To compile code",
+      "B. To find and fix errors",
+      "C. To execute programs",
+      "D. To style webpages"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which of the following is a computer port?",
+    "options": [
+      "A. USB",
+      "B. RAM",
+      "C. CPU",
+      "D. BIOS"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the function of a router in a network?",
+    "options": [
+      "A. To connect devices within a LAN",
+      "B. To direct data between networks",
+      "C. To store data",
+      "D. To convert signals"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which characteristic defines ROM?",
+    "options": [
+      "A. Volatile",
+      "B. Read-only",
+      "C. Temporary storage",
+      "D. High-speed access"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What does TCP stand for in networking?",
+    "options": [
+      "A. Transmission Control Protocol",
+      "B. Transfer Control Protocol",
+      "C. Terminal Control Protocol",
+      "D. Transport Communication Protocol"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a data processing method?",
+    "options": [
+      "A. Batch processing",
+      "B. Network routing",
+      "C. Code debugging",
+      "D. Web styling"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the result of the binary addition 1011 + 10?",
+    "options": [
+      "A. 1100",
+      "B. 1101",
+      "C. 1110",
+      "D. 1111"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a programming paradigm?",
+    "options": [
+      "A. Object-oriented",
+      "B. HTML",
+      "C. SQL",
+      "D. CSS"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of an antivirus program?",
+    "options": [
+      "A. To increase internet speed",
+      "B. To protect against malware",
+      "C. To compile code",
+      "D. To design webpages"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a type of software license?",
+    "options": [
+      "A. Open-source",
+      "B. Router",
+      "C. Firewall",
+      "D. Protocol"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the decimal equivalent of the hexadecimal number 1A?",
+    "options": [
+      "A. 25",
+      "B. 26",
+      "C. 27",
+      "D. 28"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What characterizes a mainframe computer?",
+    "options": [
+      "A. Low processing power",
+      "B. High reliability",
+      "C. Single-user system",
+      "D. Portable design"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a function in programming?",
+    "options": [
+      "A. To store data",
+      "B. To repeat code",
+      "C. To perform a specific task",
+      "D. To debug errors"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a wireless networking standard?",
+    "options": [
+      "A. Ethernet",
+      "B. Wi-Fi",
+      "C. USB",
+      "D. HDMI"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the role of a primary key in a database?",
+    "options": [
+      "A. To sort records",
+      "B. To uniquely identify records",
+      "C. To encrypt data",
+      "D. To filter data"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a type of computer crime?",
+    "options": [
+      "A. Debugging",
+      "B. Hacking",
+      "C. Compiling",
+      "D. Networking"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the octal equivalent of the binary number 1100?",
+    "options": [
+      "A. 14",
+      "B. 13",
+      "C. 12",
+      "D. 15"
+    ],
+    "answer": "C",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a relational database management system?",
+    "options": [
+      "A. Oracle",
+      "B. Photoshop",
+      "C. Excel",
+      "D. Word"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a MAC address?",
+    "options": [
+      "A. To identify a network device",
+      "B. To encrypt data",
+      "C. To store files",
+      "D. To route traffic"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is a feature of a word processor?",
+    "options": [
+      "A. Data calculation",
+      "B. Text formatting",
+      "C. Image editing",
+      "D. Code compilation"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the binary equivalent of the decimal number 9?",
+    "options": [
+      "A. 1000",
+      "B. 1001",
+      "C. 1010",
+      "D. 1011"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a type of backup?",
+    "options": [
+      "A. Full backup",
+      "B. Network backup",
+      "C. Cloud routing",
+      "D. Data compilation"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a compiler?",
+    "options": [
+      "A. To execute code line by line",
+      "B. To translate code to machine language",
+      "C. To debug errors",
+      "D. To design webpages"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a type of computer network?",
+    "options": [
+      "A. PAN",
+      "B. SQL",
+      "C. HTML",
+      "D. CSS"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the decimal number 20?",
+    "options": [
+      "A. 12",
+      "B. 14",
+      "C. 16",
+      "D. 18"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is a feature of a microcomputer?",
+    "options": [
+      "A. High processing power",
+      "B. Single-user system",
+      "C. Large physical size",
+      "D. Low memory capacity"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a hyperlink on a webpage?",
+    "options": [
+      "A. To style text",
+      "B. To link to other resources",
+      "C. To compile code",
+      "D. To store data"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which is a type of memory?",
+    "options": [
+      "A. Cache",
+      "B. Router",
+      "C. Firewall",
+      "D. Protocol"
+    ],
+    "answer": "A",
+    "year": "2022"
+  },
+  {
+    "question": "What is the purpose of a spreadsheet formula?",
+    "options": [
+      "A. To format text",
+      "B. To perform calculations",
+      "C. To debug code",
+      "D. To connect networks"
+    ],
+    "answer": "B",
+    "year": "2022"
+  },
+  {
+    "question": "Which of the following devices is used to convert analog signals to digital signals?",
+    "options": [
+      "A. Router",
+      "B. Modem",
+      "C. Switch",
+      "D. Hub"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 1101?",
+    "options": [
+      "A. 11",
+      "B. 12",
+      "C. 13",
+      "D. 14"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a feature of third-generation computers?",
+    "options": [
+      "A. Vacuum tubes",
+      "B. Integrated circuits",
+      "C. Transistors",
+      "D. Microprocessors"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "In programming, what is the purpose of a loop?",
+    "options": [
+      "A. To make decisions",
+      "B. To repeat a block of code",
+      "C. To store data",
+      "D. To call functions"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is an example of application software?",
+    "options": [
+      "A. Linux",
+      "B. Microsoft Excel",
+      "C. Windows XP",
+      "D. Device drivers"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What does the acronym BIOS stand for?",
+    "options": [
+      "A. Basic Input/Output System",
+      "B. Binary Input/Output System",
+      "C. Basic Internal Operating System",
+      "D. Binary Internal Operating System"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is used to create a webpage’s structure?",
+    "options": [
+      "A. CSS",
+      "B. HTML",
+      "C. JavaScript",
+      "D. PHP"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "The hexadecimal equivalent of the decimal number 10 is:",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. C",
+      "D. D"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a function of an assembler?",
+    "options": [
+      "A. Converts high-level code to machine code",
+      "B. Converts assembly code to machine code",
+      "C. Executes programs directly",
+      "D. Debugs program errors"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the purpose of a foreign key in a database?",
+    "options": [
+      "A. To uniquely identify records",
+      "B. To link tables",
+      "C. To sort data",
+      "D. To encrypt data"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a non-volatile storage device?",
+    "options": [
+      "A. RAM",
+      "B. Cache",
+      "C. Flash Drive",
+      "D. Registers"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "In networking, what does WAN stand for?",
+    "options": [
+      "A. Wireless Access Network",
+      "B. Wide Area Network",
+      "C. Wired Access Network",
+      "D. Web Application Network"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a valid data type in Python?",
+    "options": [
+      "A. Integer",
+      "B. Character",
+      "C. Real",
+      "D. Double"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "What is the role of a switch in a network?",
+    "options": [
+      "A. To connect different networks",
+      "B. To forward data to specific devices",
+      "C. To convert signals",
+      "D. To store network data"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is an output device?",
+    "options": [
+      "A. Scanner",
+      "B. Keyboard",
+      "C. Monitor",
+      "D. Mouse"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "What does SQL stand for in database management?",
+    "options": [
+      "A. Structured Query Language",
+      "B. Standard Query Language",
+      "C. Simple Query Language",
+      "D. Systematic Query Language"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "The binary equivalent of the hexadecimal number B is:",
+    "options": [
+      "A. 1010",
+      "B. 1011",
+      "C. 1100",
+      "D. 1101"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a characteristic of a relational database?",
+    "options": [
+      "A. Data stored in hierarchical structure",
+      "B. Data organized in tables",
+      "C. Data stored as objects",
+      "D. Data stored in a single file"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the purpose of a flowchart in programming?",
+    "options": [
+      "A. To write code",
+      "B. To debug programs",
+      "C. To represent algorithms visually",
+      "D. To compile code"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a protocol for sending emails?",
+    "options": [
+      "A. HTTP",
+      "B. FTP",
+      "C. SMTP",
+      "D. TCP"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a feature of a spreadsheet?",
+    "options": [
+      "A. Word processing",
+      "B. Data calculation",
+      "C. Image editing",
+      "D. Code compilation"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the octal equivalent of the decimal number 25?",
+    "options": [
+      "A. 30",
+      "B. 31",
+      "C. 32",
+      "D. 33"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a low-level programming language?",
+    "options": [
+      "A. Python",
+      "B. Java",
+      "C. Assembly",
+      "D. C++"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "What is the role of an interpreter in programming?",
+    "options": [
+      "A. Converts code to machine language at once",
+      "B. Executes code line by line",
+      "C. Debugs syntax errors",
+      "D. Compiles code into an executable file"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a type of computer virus?",
+    "options": [
+      "A. Trojan",
+      "B. Firewall",
+      "C. Router",
+      "D. Browser"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "What does RAM stand for in computer hardware?",
+    "options": [
+      "A. Random Access Memory",
+      "B. Read-Only Memory",
+      "C. Rapid Access Module",
+      "D. Remote Access Memory"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is used to style a webpage?",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. JavaScript",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "In binary arithmetic, 110 - 11 equals:",
+    "options": [
+      "A. 011",
+      "B. 100",
+      "C. 101",
+      "D. 111"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a feature of a GUI?",
+    "options": [
+      "A. Text-based commands",
+      "B. Graphical icons and windows",
+      "C. Manual hardware configuration",
+      "D. Command-line interface"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the purpose of a backup in computing?",
+    "options": [
+      "A. To increase processing speed",
+      "B. To recover data after loss",
+      "C. To compile programs",
+      "D. To connect networks"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is an example of a web browser?",
+    "options": [
+      "A. Microsoft Word",
+      "B. Google Chrome",
+      "C. Notepad",
+      "D. Excel"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the function of a cache memory?",
+    "options": [
+      "A. To store permanent data",
+      "B. To speed up data access",
+      "C. To connect networks",
+      "D. To execute programs"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a server-side programming language?",
+    "options": [
+      "A. JavaScript",
+      "B. CSS",
+      "C. PHP",
+      "D. HTML"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "What is the smallest unit of digital information?",
+    "options": [
+      "A. Byte",
+      "B. Bit",
+      "C. Nibble",
+      "D. Kilobyte"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a characteristic of a supercomputer?",
+    "options": [
+      "A. Low processing power",
+      "B. High-speed computation",
+      "C. Limited memory",
+      "D. Single-user system"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What does FTP stand for in networking?",
+    "options": [
+      "A. File Transfer Protocol",
+      "B. Fast Transmission Protocol",
+      "C. File Tracking Protocol",
+      "D. Functional Transfer Protocol"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a type of operating system?",
+    "options": [
+      "A. Microsoft Word",
+      "B. Ubuntu",
+      "C. Google Chrome",
+      "D. Adobe Photoshop"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "In a flowchart, the parallelogram shape represents:",
+    "options": [
+      "A. Process",
+      "B. Decision",
+      "C. Input/Output",
+      "D. Start/Stop"
+    ],
+    "answer": "C",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is used to query a database?",
+    "options": [
+      "A. HTML",
+      "B. SQL",
+      "C. CSS",
+      "D. JavaScript"
+    ],
+    "answer": "B",
+    "year": "2021"
+  },
+  {
+    "question": "What is the purpose of an IP address?",
+    "options": [
+      "A. To identify a device on a network",
+      "B. To encrypt data",
+      "C. To store files",
+      "D. To compile code"
+    ],
+    "answer": "A",
+    "year": "2021"
+  },
+  {
+    "question": "Which of the following is a characteristic of a digital computer?",
+    "options": [
+      "A. Processes data in analog form",
+      "B. Uses discrete values for computation",
+      "C. Operates only on manual input",
+      "D. Requires continuous power supply"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "The binary equivalent of the decimal number 19 is:",
+    "options": [
+      "A. 10011",
+      "B. 10101",
+      "C. 11001",
+      "D. 11100"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is NOT a type of computer memory?",
+    "options": [
+      "A. RAM",
+      "B. ROM",
+      "C. Cache",
+      "D. BIOS"
+    ],
+    "answer": "D",
+    "year": "2020"
+  },
+  {
+    "question": "In a flowchart, the diamond shape represents:",
+    "options": [
+      "A. Process",
+      "B. Decision",
+      "C. Input/Output",
+      "D. Start/Stop"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which programming language is primarily used for web development?",
+    "options": [
+      "A. Python",
+      "B. JavaScript",
+      "C. C++",
+      "D. Java"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "The process of converting high-level code to machine code is called:",
+    "options": [
+      "A. Debugging",
+      "B. Compilation",
+      "C. Interpretation",
+      "D. Execution"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a secondary storage device?",
+    "options": [
+      "A. RAM",
+      "B. Hard Disk Drive",
+      "C. Cache Memory",
+      "D. Registers"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "What does the acronym CPU stand for?",
+    "options": [
+      "A. Central Processing Unit",
+      "B. Control Processing Unit",
+      "C. Computer Processing Unit",
+      "D. Core Processing Unit"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is an example of system software?",
+    "options": [
+      "A. Microsoft Word",
+      "B. Windows 10",
+      "C. Google Chrome",
+      "D. Adobe Photoshop"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "In networking, what does LAN stand for?",
+    "options": [
+      "A. Local Access Network",
+      "B. Logical Area Network",
+      "C. Local Area Network",
+      "D. Linked Access Network"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Which protocol is used for transferring web pages over the internet?",
+    "options": [
+      "A. FTP",
+      "B. HTTP",
+      "C. SMTP",
+      "D. TCP"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "The octal equivalent of the binary number 1010 is:",
+    "options": [
+      "A. 10",
+      "B. 12",
+      "C. 14",
+      "D. 16"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a valid variable name in Python?",
+    "options": [
+      "A. 2variable",
+      "B. my_variable",
+      "C. my-variable",
+      "D. variable#"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "What is the function of an operating system?",
+    "options": [
+      "A. To design web pages",
+      "B. To manage computer resources",
+      "C. To create databases",
+      "D. To compile programs"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is an input device?",
+    "options": [
+      "A. Monitor",
+      "B. Printer",
+      "C. Keyboard",
+      "D. Speaker"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "In a database, what is a primary key used for?",
+    "options": [
+      "A. To sort records",
+      "B. To uniquely identify records",
+      "C. To link tables",
+      "D. To filter data"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a looping structure in programming?",
+    "options": [
+      "A. If-else",
+      "B. Switch-case",
+      "C. For loop",
+      "D. Function"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "A. HyperText Markup Language",
+      "B. HighText Machine Language",
+      "C. HyperTool Multi Language",
+      "D. HyperText Multi Language"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Which device is used to connect two different networks?",
+    "options": [
+      "A. Router",
+      "B. Switch",
+      "C. Hub",
+      "D. Modem"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "The process of finding and fixing errors in a program is called:",
+    "options": [
+      "A. Compiling",
+      "B. Debugging",
+      "C. Executing",
+      "D. Interpreting"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a volatile memory?",
+    "options": [
+      "A. ROM",
+      "B. Flash Memory",
+      "C. RAM",
+      "D. Hard Disk"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "What is the purpose of a firewall in a network?",
+    "options": [
+      "A. To increase internet speed",
+      "B. To protect against unauthorized access",
+      "C. To store network data",
+      "D. To connect multiple networks"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is an example of a high-level programming language?",
+    "options": [
+      "A. Assembly",
+      "B. Machine Language",
+      "C. Python",
+      "D. Binary Code"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "The hexadecimal equivalent of the binary number 1111 is:",
+    "options": [
+      "A. D",
+      "B. E",
+      "C. F",
+      "D. A"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is NOT a function of a database management system?",
+    "options": [
+      "A. Data storage",
+      "B. Data retrieval",
+      "C. Data encryption",
+      "D. Program compilation"
+    ],
+    "answer": "D",
+    "year": "2020"
+  },
+  {
+    "question": "What is the full form of URL?",
+    "options": [
+      "A. Uniform Resource Locator",
+      "B. Universal Resource Link",
+      "C. Uniform Retrieval Link",
+      "D. Universal Retrieval Locator"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a feature of fourth-generation computers?",
+    "options": [
+      "A. Vacuum tubes",
+      "B. Transistors",
+      "C. Microprocessors",
+      "D. Integrated circuits"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "In programming, what is an algorithm?",
+    "options": [
+      "A. A programming language",
+      "B. A set of instructions to solve a problem",
+      "C. A type of hardware",
+      "D. A debugging tool"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is used to create dynamic web pages?",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. PHP",
+      "D. XML"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "What is the purpose of a modem in a network?",
+    "options": [
+      "A. To connect devices within a LAN",
+      "B. To convert digital signals to analog and vice versa",
+      "C. To store network data",
+      "D. To route network traffic"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is an example of a spreadsheet software?",
+    "options": [
+      "A. Microsoft Word",
+      "B. Microsoft Excel",
+      "C. Adobe Photoshop",
+      "D. CorelDRAW"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "The process of arranging data in a specific order is called:",
+    "options": [
+      "A. Filtering",
+      "B. Sorting",
+      "C. Indexing",
+      "D. Querying"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a type of malware?",
+    "options": [
+      "A. Firewall",
+      "B. Virus",
+      "C. Router",
+      "D. Browser"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "What does GUI stand for in computing?",
+    "options": [
+      "A. General User Interface",
+      "B. Graphical User Interface",
+      "C. Global User Integration",
+      "D. Guided User Interaction"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a characteristic of cloud computing?",
+    "options": [
+      "A. Local storage only",
+      "B. On-demand resource access",
+      "C. Manual hardware maintenance",
+      "D. Limited scalability"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "In binary arithmetic, 101 + 11 equals:",
+    "options": [
+      "A. 1000",
+      "B. 1001",
+      "C. 1010",
+      "D. 1100"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is an open-source operating system?",
+    "options": [
+      "A. Windows",
+      "B. macOS",
+      "C. Linux",
+      "D. iOS"
+    ],
+    "answer": "C",
+    "year": "2020"
+  },
+  {
+    "question": "What is the role of a compiler in programming?",
+    "options": [
+      "A. To execute the program",
+      "B. To translate code to machine language",
+      "C. To debug the program",
+      "D. To design the user interface"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "Which of the following is a relational database management system?",
+    "options": [
+      "A. MySQL",
+      "B. Microsoft Word",
+      "C. Notepad",
+      "D. Paint"
+    ],
+    "answer": "A",
+    "year": "2020"
+  },
+  {
+    "question": "The smallest unit of digital information is called a:",
+    "options": [
+      "A. Byte",
+      "B. Bit",
+      "C. Nibble",
+      "D. Kilobyte"
+    ],
+    "answer": "B",
+    "year": "2020"
+  },
+  {
+    "question": "What is the primary function of the address bus in a computer system?",
+    "options": [
+      "A. To transfer data between CPU and memory",
+      "B. To carry memory addresses from CPU to memory",
+      "C. To execute program instructions",
+      "D. To manage peripheral devices"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a task scheduler?",
+    "options": [
+      "A. Stack",
+      "B. Priority Queue",
+      "C. Linked List",
+      "D. Array"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What does NVRAM stand for in computer hardware?",
+    "options": [
+      "A. Non-Volatile Random Access Memory",
+      "B. Network Variable Runtime Access Memory",
+      "C. Native Virtual Read-Only Memory",
+      "D. Normalized Variable Access Module"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which programming language is commonly used for machine learning model development?",
+    "options": [
+      "A. Python",
+      "B. COBOL",
+      "C. Perl",
+      "D. Pascal"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the binary number 101011?",
+    "options": [
+      "A. 2A",
+      "B. 2B",
+      "C. 2C",
+      "D. 2D"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a distributed NoSQL database?",
+    "options": [
+      "A. SQLite",
+      "B. Couchbase",
+      "C. PostgreSQL",
+      "D. Oracle"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What does CSS stand for in web development?",
+    "options": [
+      "A. Cascading Style Sheets",
+      "B. Centralized System Service",
+      "C. Coded Structural Syntax",
+      "D. Creative Style System"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which algorithm is used for finding the shortest path in a weighted graph with negative edges?",
+    "options": [
+      "A. Bellman-Ford Algorithm",
+      "B. Kruskal’s Algorithm",
+      "C. Breadth-First Search",
+      "D. Selection Sort"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the time complexity of searching in a balanced binary search tree?",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(n^2)"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is an example of a wearable input device?",
+    "options": [
+      "A. Printer",
+      "B. Smartwatch",
+      "C. Monitor",
+      "D. Speaker"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a shell in an operating system?",
+    "options": [
+      "A. To compile programs",
+      "B. To provide a user interface for system interaction",
+      "C. To manage hardware",
+      "D. To store data"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which protocol is used for managing network devices remotely?",
+    "options": [
+      "A. SNMP",
+      "B. FTP",
+      "C. HTTP",
+      "D. IMAP"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the primary role of a motherboard in a computer?",
+    "options": [
+      "A. To execute programs",
+      "B. To connect and support computer components",
+      "C. To store permanent data",
+      "D. To manage network traffic"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a logic programming language?",
+    "options": [
+      "A. Python",
+      "B. Prolog",
+      "C. Java",
+      "D. C#"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What does OCR stand for in computing?",
+    "options": [
+      "A. Optical Character Recognition",
+      "B. Operational Control Register",
+      "C. Optimized Computing Resource",
+      "D. Object Code Runtime"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which sorting algorithm is most efficient for small datasets?",
+    "options": [
+      "A. Quick Sort",
+      "B. Insertion Sort",
+      "C. Merge Sort",
+      "D. Heap Sort"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a DHCP server in networking?",
+    "options": [
+      "A. To resolve domain names",
+      "B. To assign IP addresses dynamically",
+      "C. To encrypt data",
+      "D. To manage email delivery"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a non-volatile storage device?",
+    "options": [
+      "A. RAM",
+      "B. SSD",
+      "C. Cache",
+      "D. Register"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What does XML stand for?",
+    "options": [
+      "A. eXtensible Markup Language",
+      "B. eXecutable Machine Language",
+      "C. eXternal Module Link",
+      "D. eXtended Memory Logic"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is an example of a platform-as-a-service (PaaS) provider?",
+    "options": [
+      "A. Heroku",
+      "B. Google Docs",
+      "C. Amazon S3",
+      "D. Zoom"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a variable in programming?",
+    "options": [
+      "A. To execute code",
+      "B. To store and manipulate data",
+      "C. To define loops",
+      "D. To handle exceptions"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is NOT a function of a database management system?",
+    "options": [
+      "A. Data Storage",
+      "B. Data Retrieval",
+      "C. Code Compilation",
+      "D. Data Security"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "What is the role of an API gateway in a microservices architecture?",
+    "options": [
+      "A. To compile code",
+      "B. To manage and route API requests",
+      "C. To store data",
+      "D. To design interfaces"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a continuous deployment tool?",
+    "options": [
+      "A. GitLab CI/CD",
+      "B. Docker",
+      "C. Kubernetes",
+      "D. Nagios"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the decimal equivalent of the hexadecimal number 5F?",
+    "options": [
+      "A. 93",
+      "B. 94",
+      "C. 95",
+      "D. 96"
+    ],
+    "answer": "C",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a type of man-in-the-middle (MITM) attack?",
+    "options": [
+      "A. ARP Spoofing",
+      "B. SQL Injection",
+      "C. Phishing",
+      "D. DDoS"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What does NAS stand for in networking?",
+    "options": [
+      "A. Network-Attached Storage",
+      "B. Node Access System",
+      "C. Network Application Service",
+      "D. Native Address System"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which data structure is used for implementing a breadth-first search?",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Heap",
+      "D. Array"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a 'static' keyword in programming?",
+    "options": [
+      "A. To define a loop",
+      "B. To associate a member with a class, not an instance",
+      "C. To handle exceptions",
+      "D. To sort data"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a high-level programming language?",
+    "options": [
+      "A. Assembly",
+      "B. Python",
+      "C. Machine Code",
+      "D. Bytecode"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a switch in a network?",
+    "options": [
+      "A. To broadcast data to all devices",
+      "B. To forward data to specific devices based on MAC addresses",
+      "C. To compress data",
+      "D. To store packets"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a vector-based image format?",
+    "options": [
+      "A. JPEG",
+      "B. SVG",
+      "C. PNG",
+      "D. BMP"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the role of a linker in a compiler?",
+    "options": [
+      "A. To parse syntax",
+      "B. To combine object files into an executable",
+      "C. To optimize code",
+      "D. To execute instructions"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a property of a B-tree?",
+    "options": [
+      "A. Single child per node",
+      "B. Balanced multi-way search tree",
+      "C. Random node arrangement",
+      "D. Linear structure"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What does HTTPS stand for?",
+    "options": [
+      "A. HyperText Transfer Protocol Secure",
+      "B. High-Level Text Processing System",
+      "C. Hosted Terminal Protocol Service",
+      "D. Hyperlink Transmission Protocol Standard"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a supervised learning algorithm?",
+    "options": [
+      "A. K-Means Clustering",
+      "B. Decision Tree",
+      "C. DBSCAN",
+      "D. Principal Component Analysis"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of a control unit in a CPU?",
+    "options": [
+      "A. To store data",
+      "B. To direct the operation of the processor",
+      "C. To compress files",
+      "D. To manage memory"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a real-time database?",
+    "options": [
+      "A. Firebase",
+      "B. MySQL",
+      "C. PostgreSQL",
+      "D. Oracle"
+    ],
+    "answer": "A",
+    "year": "2019"
+  },
+  {
+    "question": "What is the purpose of the ICMP protocol in networking?",
+    "options": [
+      "A. To transfer files",
+      "B. To diagnose network connectivity issues",
+      "C. To encrypt data",
+      "D. To stream media"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "Which of the following is a benefit of using object-oriented programming?",
+    "options": [
+      "A. Reduced hardware costs",
+      "B. Improved code reusability and scalability",
+      "C. Increased compilation speed",
+      "D. Simplified network configuration"
+    ],
+    "answer": "B",
+    "year": "2019"
+  },
+  {
+    "question": "What is the primary role of the accumulator in a CPU?",
+    "options": [
+      "A. To store the address of the next instruction",
+      "B. To hold intermediate arithmetic and logic results",
+      "C. To manage memory allocation",
+      "D. To control input/output operations"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a priority queue?",
+    "options": [
+      "A. Linked List",
+      "B. Binary Heap",
+      "C. Stack",
+      "D. Array"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What does PROM stand for in memory technology?",
+    "options": [
+      "A. Programmable Read-Only Memory",
+      "B. Primary Runtime Operating Memory",
+      "C. Protected Random Output Module",
+      "D. Persistent Read-Only Memory"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which programming language is commonly used for blockchain development?",
+    "options": [
+      "A. Solidity",
+      "B. Python",
+      "C. PHP",
+      "D. Ruby"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 11011?",
+    "options": [
+      "A. 25",
+      "B. 26",
+      "C. 27",
+      "D. 28"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a time-series NoSQL database?",
+    "options": [
+      "A. InfluxDB",
+      "B. MongoDB",
+      "C. Cassandra",
+      "D. MySQL"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "A. HyperText Markup Language",
+      "B. High-Level Text Management Language",
+      "C. Hosted Terminal Markup Logic",
+      "D. Hyperlink Text Module Language"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which algorithm is used for finding strongly connected components in a graph?",
+    "options": [
+      "A. Tarjan’s Algorithm",
+      "B. Dijkstra’s Algorithm",
+      "C. Quick Sort",
+      "D. Linear Search"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the average-case time complexity of a binary search algorithm?",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(n^2)"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is an example of a storage device?",
+    "options": [
+      "A. Monitor",
+      "B. External Hard Drive",
+      "C. Mouse",
+      "D. Keyboard"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a file system in an operating system?",
+    "options": [
+      "A. To execute programs",
+      "B. To organize and store data on storage devices",
+      "C. To manage network protocols",
+      "D. To compile code"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which protocol is used for streaming media over the internet?",
+    "options": [
+      "A. RTSP",
+      "B. FTP",
+      "C. SMTP",
+      "D. DNS"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the primary function of a voltage regulator in a computer?",
+    "options": [
+      "A. To store data",
+      "B. To stabilize power supply to components",
+      "C. To increase processing speed",
+      "D. To manage network traffic"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a scripting language used for automation?",
+    "options": [
+      "A. C++",
+      "B. Bash",
+      "C. Java",
+      "D. C#"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What does UPS stand for in computer hardware?",
+    "options": [
+      "A. Uninterruptible Power Supply",
+      "B. Universal Processing System",
+      "C. Unified Peripheral Service",
+      "D. Ultra Performance Storage"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which sorting algorithm divides the input into equal parts and recursively sorts them?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Merge Sort",
+      "C. Selection Sort",
+      "D. Insertion Sort"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a subnet in networking?",
+    "options": [
+      "A. To encrypt data",
+      "B. To divide a network into smaller segments",
+      "C. To increase bandwidth",
+      "D. To resolve domain names"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a volatile memory type?",
+    "options": [
+      "A. SSD",
+      "B. ROM",
+      "C. DRAM",
+      "D. Flash Memory"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "What does JSON stand for?",
+    "options": [
+      "A. JavaScript Object Notation",
+      "B. Joint System Operations Network",
+      "C. Java Source Organizer",
+      "D. Justified Output Notation"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is an example of an infrastructure-as-a-service (IaaS) provider?",
+    "options": [
+      "A. Google Docs",
+      "B. Microsoft Azure",
+      "C. Salesforce",
+      "D. Slack"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a function in programming?",
+    "options": [
+      "A. To store data",
+      "B. To perform a specific task and promote reusability",
+      "C. To execute loops",
+      "D. To manage memory"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is NOT a component of a computer system?",
+    "options": [
+      "A. CPU",
+      "B. RAM",
+      "C. Firewall",
+      "D. Motherboard"
+    ],
+    "answer": "C",
+    "year": "2018"
+  },
+  {
+    "question": "What is the role of a web crawler in search engines?",
+    "options": [
+      "A. To design web pages",
+      "B. To index web content",
+      "C. To store user data",
+      "D. To compile code"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a version control system?",
+    "options": [
+      "A. Git",
+      "B. Docker",
+      "C. Kubernetes",
+      "D. Ansible"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the binary number 100100?",
+    "options": [
+      "A. 22",
+      "B. 24",
+      "C. 26",
+      "D. 28"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a type of keylogging attack?",
+    "options": [
+      "A. Hardware Keylogging",
+      "B. SQL Injection",
+      "C. Cross-Site Scripting",
+      "D. Packet Sniffing"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What does SAN stand for in networking?",
+    "options": [
+      "A. Storage Area Network",
+      "B. System Access Node",
+      "C. Secure Application Network",
+      "D. Standardized Access Network"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which data structure is used for implementing a disjoint-set (union-find)?",
+    "options": [
+      "A. Tree",
+      "B. Queue",
+      "C. Stack",
+      "D. Hash Table"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a 'switch' statement in programming?",
+    "options": [
+      "A. To declare variables",
+      "B. To select one of many code blocks to execute",
+      "C. To handle files",
+      "D. To sort arrays"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a low-level programming language?",
+    "options": [
+      "A. Python",
+      "B. Assembly",
+      "C. Java",
+      "D. JavaScript"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a gateway in a network?",
+    "options": [
+      "A. To store data packets",
+      "B. To connect networks with different protocols",
+      "C. To compress files",
+      "D. To manage email servers"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a lossless audio format?",
+    "options": [
+      "A. MP3",
+      "B. FLAC",
+      "C. AAC",
+      "D. WMA"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the role of a semantic analyzer in a compiler?",
+    "options": [
+      "A. To check code for logical consistency",
+      "B. To generate machine code",
+      "C. To execute instructions",
+      "D. To optimize runtime"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a feature of a red-black tree?",
+    "options": [
+      "A. Fixed height",
+      "B. Self-balancing with color properties",
+      "C. Random node arrangement",
+      "D. Linear structure"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What does FTP stand for?",
+    "options": [
+      "A. File Transfer Protocol",
+      "B. Fast Transmission Process",
+      "C. Flexible Transport Protocol",
+      "D. File Tracking Program"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a generative AI model framework?",
+    "options": [
+      "A. PyTorch",
+      "B. Pandas",
+      "C. NumPy",
+      "D. SciPy"
+    ],
+    "answer": "A",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of a memory bus in computer architecture?",
+    "options": [
+      "A. To execute instructions",
+      "B. To transfer data between CPU and memory",
+      "C. To manage interrupts",
+      "D. To cool the system"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a proprietary database management system?",
+    "options": [
+      "A. PostgreSQL",
+      "B. Oracle",
+      "C. MariaDB",
+      "D. MongoDB"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the purpose of the ARP protocol in networking?",
+    "options": [
+      "A. To transfer files",
+      "B. To map IP addresses to MAC addresses",
+      "C. To encrypt data",
+      "D. To stream media"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "Which of the following is a benefit of using modular programming?",
+    "options": [
+      "A. Increased hardware compatibility",
+      "B. Improved code maintainability",
+      "C. Reduced compilation time",
+      "D. Enhanced graphical output"
+    ],
+    "answer": "B",
+    "year": "2018"
+  },
+  {
+    "question": "What is the main purpose of a memory management unit (MMU) in a computer system?",
+    "options": [
+      "A. To perform arithmetic calculations",
+      "B. To translate virtual addresses to physical addresses",
+      "C. To manage input/output devices",
+      "D. To execute program instructions"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a dictionary with fast lookups?",
+    "options": [
+      "A. Linked List",
+      "B. Hash Table",
+      "C. Stack",
+      "D. Queue"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What does DRAM stand for in computer memory?",
+    "options": [
+      "A. Dynamic Random Access Memory",
+      "B. Digital Read-Only Memory",
+      "C. Direct Runtime Access Module",
+      "D. Distributed Rapid Access Memory"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which programming language is primarily used for statistical analysis and data visualization?",
+    "options": [
+      "A. R",
+      "B. PHP",
+      "C. C++",
+      "D. Swift"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What is the binary equivalent of the decimal number 19?",
+    "options": [
+      "A. 10010",
+      "B. 10011",
+      "C. 10100",
+      "D. 10101"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a key-value NoSQL database?",
+    "options": [
+      "A. MySQL",
+      "B. DynamoDB",
+      "C. Oracle",
+      "D. SQL Server"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What does DOM stand for in web development?",
+    "options": [
+      "A. Document Object Model",
+      "B. Digital Output Module",
+      "C. Dynamic Operations Matrix",
+      "D. Distributed Object Management"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which algorithm is used for finding the minimum cut in a flow network?",
+    "options": [
+      "A. Prim’s Algorithm",
+      "B. Ford-Fulkerson Algorithm",
+      "C. Binary Search",
+      "D. Bubble Sort"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the time complexity of deleting an element from a binary heap?",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(n^2)"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is an example of a hybrid device?",
+    "options": [
+      "A. Monitor",
+      "B. Touchscreen",
+      "C. Keyboard",
+      "D. Printer"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a scheduler in an operating system?",
+    "options": [
+      "A. To compile code",
+      "B. To manage process execution order",
+      "C. To design user interfaces",
+      "D. To store data"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which protocol is used for secure remote access to servers?",
+    "options": [
+      "A. FTP",
+      "B. SSH",
+      "C. HTTP",
+      "D. SNMP"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the main function of a heat sink in a computer?",
+    "options": [
+      "A. To store data",
+      "B. To dissipate heat from components",
+      "C. To increase processing speed",
+      "D. To manage network connections"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a concurrent programming language?",
+    "options": [
+      "A. Go",
+      "B. C",
+      "C. SQL",
+      "D. HTML"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What does GPU stand for in computing?",
+    "options": [
+      "A. General Processing Unit",
+      "B. Graphics Processing Unit",
+      "C. Global Program Utility",
+      "D. Guided Processor Unit"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which sorting algorithm compares and swaps adjacent elements?",
+    "options": [
+      "A. Merge Sort",
+      "B. Bubble Sort",
+      "C. Heap Sort",
+      "D. Quick Sort"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a VLAN in networking?",
+    "options": [
+      "A. To compress data",
+      "B. To segment a network logically",
+      "C. To assign IP addresses",
+      "D. To encrypt traffic"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a type of optical storage device?",
+    "options": [
+      "A. SSD",
+      "B. DVD",
+      "C. RAM",
+      "D. Cache"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What does YAML stand for?",
+    "options": [
+      "A. Yet Another Markup Language",
+      "B. Yielded Application Management Logic",
+      "C. Young Algorithmic Markup Language",
+      "D. Yearly Automated Machine Learning"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is an example of a data warehouse platform?",
+    "options": [
+      "A. Snowflake",
+      "B. Docker",
+      "C. Jenkins",
+      "D. Kubernetes"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a pointer in programming?",
+    "options": [
+      "A. To store multiple values",
+      "B. To reference a memory address",
+      "C. To execute loops",
+      "D. To define classes"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is NOT a type of operating system?",
+    "options": [
+      "A. Real-Time",
+      "B. Distributed",
+      "C. Graphical",
+      "D. Multi-user"
+    ],
+    "answer": "C",
+    "year": "2017"
+  },
+  {
+    "question": "What is the role of a load balancer in a network?",
+    "options": [
+      "A. To store data",
+      "B. To distribute traffic across servers",
+      "C. To compile code",
+      "D. To design interfaces"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a cloud orchestration tool?",
+    "options": [
+      "A. Terraform",
+      "B. Git",
+      "C. Jenkins",
+      "D. Nagios"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the decimal number 29?",
+    "options": [
+      "A. 1C",
+      "B. 1D",
+      "C. 1E",
+      "D. 1F"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a type of distributed denial-of-service (DDoS) attack?",
+    "options": [
+      "A. SQL Injection",
+      "B. SYN Flood",
+      "C. Phishing",
+      "D. Cross-Site Scripting"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What does VPN stand for?",
+    "options": [
+      "A. Virtual Private Network",
+      "B. Variable Processing Node",
+      "C. Virtual Program Node",
+      "D. Visual Private Network"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which data structure is used for a graph’s adjacency matrix?",
+    "options": [
+      "A. Linked List",
+      "B. Two-Dimensional Array",
+      "C. Stack",
+      "D. Queue"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a 'throw' statement in programming?",
+    "options": [
+      "A. To define a loop",
+      "B. To raise an exception",
+      "C. To declare a variable",
+      "D. To sort data"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a statically typed programming language?",
+    "options": [
+      "A. Python",
+      "B. Rust",
+      "C. JavaScript",
+      "D. Ruby"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a router in a network?",
+    "options": [
+      "A. To store data packets",
+      "B. To direct data between networks",
+      "C. To compress files",
+      "D. To manage email servers"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a text-based file format?",
+    "options": [
+      "A. CSV",
+      "B. JPEG",
+      "C. MP4",
+      "D. GIF"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What is the role of an optimizer in a compiler?",
+    "options": [
+      "A. To generate tokens",
+      "B. To improve code efficiency",
+      "C. To execute instructions",
+      "D. To parse syntax"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a feature of a circular queue?",
+    "options": [
+      "A. Fixed size with wrap-around",
+      "B. Dynamic size",
+      "C. Random access",
+      "D. Sorted elements"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What does SMTP stand for?",
+    "options": [
+      "A. Simple Mail Transfer Protocol",
+      "B. System Management Transfer Process",
+      "C. Secure Message Transmission Protocol",
+      "D. Standard Mail Transport Program"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a computer vision library?",
+    "options": [
+      "A. OpenCV",
+      "B. Pandas",
+      "C. NumPy",
+      "D. Matplotlib"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of a cache coherence protocol in a multi-core system?",
+    "options": [
+      "A. To store data",
+      "B. To ensure consistent data across caches",
+      "C. To encrypt memory",
+      "D. To manage interrupts"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a distributed operating system?",
+    "options": [
+      "A. Windows",
+      "B. Amoeba",
+      "C. macOS",
+      "D. Ubuntu"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "What is the purpose of the IGMP protocol in networking?",
+    "options": [
+      "A. To manage multicast group memberships",
+      "B. To transfer files",
+      "C. To encrypt data",
+      "D. To resolve domain names"
+    ],
+    "answer": "A",
+    "year": "2017"
+  },
+  {
+    "question": "Which of the following is a benefit of agile software development?",
+    "options": [
+      "A. Reduced hardware requirements",
+      "B. Improved adaptability to changes",
+      "C. Increased compilation speed",
+      "D. Simplified debugging"
+    ],
+    "answer": "B",
+    "year": "2017"
+  },
+  {
+    "question": "The program counter in a CPU holds",
+    "options": [
+      "A. Arithmetic results",
+      "B. Next instruction address",
+      "C. Input/output data",
+      "D. Memory allocation"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "The ideal data structure for a browser’s history is",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Tree",
+      "D. Graph"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "SRAM stands for",
+    "options": [
+      "A. Static Random Access Memory",
+      "B. System Runtime Memory",
+      "C. Sequential Read Module",
+      "D. Synchronized Rapid Memory"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The preferred language for embedded systems is",
+    "options": [
+      "A. Python",
+      "B. C",
+      "C. JavaScript",
+      "D. PHP"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "The hexadecimal equivalent of binary 11110 is",
+    "options": [
+      "A. 1D",
+      "B. 1E",
+      "C. 1F",
+      "D. 20"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A wide-column NoSQL database is",
+    "options": [
+      "A. MongoDB",
+      "B. Cassandra",
+      "C. Redis",
+      "D. SQLite"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "CGI in web development stands for",
+    "options": [
+      "A. Common Gateway Interface",
+      "B. Computer Graphics Integration",
+      "C. Centralized Gateway Instruction",
+      "D. Coded Graphical Interface"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The algorithm for maximum flow in a network is",
+    "options": [
+      "A. Ford-Fulkerson",
+      "B. Kruskal’s",
+      "C. Binary Search",
+      "D. Insertion Sort"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The space complexity of depth-first search is",
+    "options": [
+      "A. O(1)",
+      "B. O(n)",
+      "C. O(n^2)",
+      "D. O(log n)"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A biometric input device is",
+    "options": [
+      "A. Printer",
+      "B. Fingerprint scanner",
+      "C. Monitor",
+      "D. Speaker"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Virtual memory in an OS is used to",
+    "options": [
+      "A. Increase processor speed",
+      "B. Simulate RAM using storage",
+      "C. Compile programs",
+      "D. Design interfaces"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "The protocol for network time synchronization is",
+    "options": [
+      "A. NTP",
+      "B. FTP",
+      "C. HTTP",
+      "D. SMTP"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The power supply unit in a computer",
+    "options": [
+      "A. Cools the system",
+      "B. Converts AC to DC",
+      "C. Stores data",
+      "D. Manages networks"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A declarative programming language is",
+    "options": [
+      "A. C++",
+      "B. SQL",
+      "C. Java",
+      "D. Python"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "SSD stands for",
+    "options": [
+      "A. Solid State Drive",
+      "B. System Storage Device",
+      "C. Sequential Storage Disk",
+      "D. Static System Drive"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The sorting algorithm that selects the smallest element is",
+    "options": [
+      "A. Bubble Sort",
+      "B. Selection Sort",
+      "C. Merge Sort",
+      "D. Quick Sort"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A firewall’s purpose in networking is to",
+    "options": [
+      "A. Increase bandwidth",
+      "B. Filter traffic",
+      "C. Store packets",
+      "D. Assign IP addresses"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A tertiary storage device is",
+    "options": [
+      "A. RAM",
+      "B. SSD",
+      "C. Tape drive",
+      "D. Cache"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "REST in web services stands for",
+    "options": [
+      "A. Representational State Transfer",
+      "B. Remote System Terminal",
+      "C. Reusable Service Technology",
+      "D. Real-time System Transport"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "A big data processing framework is",
+    "options": [
+      "A. Apache Hadoop",
+      "B. Docker",
+      "C. Jenkins",
+      "D. Kubernetes"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "An array in programming is used to",
+    "options": [
+      "A. Execute loops",
+      "B. Store multiple values",
+      "C. Define functions",
+      "D. Handle exceptions"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Which is NOT a cloud computing characteristic?",
+    "options": [
+      "A. On-demand self-service",
+      "B. Resource pooling",
+      "C. Fixed hardware dependency",
+      "D. Scalability"
+    ],
+    "answer": "C",
+    "year": "2016"
+  },
+  {
+    "question": "A reverse proxy in networking",
+    "options": [
+      "A. Stores databases",
+      "B. Distributes traffic",
+      "C. Compiles code",
+      "D. Designs websites"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A log analysis tool is",
+    "options": [
+      "A. ELK Stack",
+      "B. Git",
+      "C. Ansible",
+      "D. Terraform"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The decimal equivalent of hexadecimal 4A is",
+    "options": [
+      "A. 72",
+      "B. 74",
+      "C. 76",
+      "D. 78"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "Malware disguised as legitimate software is a",
+    "options": [
+      "A. Trojan",
+      "B. Worm",
+      "C. Spyware",
+      "D. Adware"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "PAN in networking stands for",
+    "options": [
+      "A. Personal Area Network",
+      "B. Public Access Node",
+      "C. Private Application Network",
+      "D. Portable Access Network"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "A balanced binary search tree is implemented using",
+    "options": [
+      "A. Array",
+      "B. AVL Tree",
+      "C. Stack",
+      "D. Queue"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "The 'goto' statement in programming is used to",
+    "options": [
+      "A. Declare variables",
+      "B. Jump to labeled code",
+      "C. Handle files",
+      "D. Sort data"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A functional programming language is",
+    "options": [
+      "A. C",
+      "B. Scala",
+      "C. Java",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A hub in a network",
+    "options": [
+      "A. Filters traffic",
+      "B. Broadcasts data",
+      "C. Encrypts packets",
+      "D. Routes traffic"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A compressed file format is",
+    "options": [
+      "A. ZIP",
+      "B. PNG",
+      "C. JPEG",
+      "D. MP4"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "The code generator in a compiler",
+    "options": [
+      "A. Parses syntax",
+      "B. Produces machine code",
+      "C. Debugs errors",
+      "D. Optimizes algorithms"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A property of a binary tree is",
+    "options": [
+      "A. At most two children per node",
+      "B. Contiguous memory storage",
+      "C. Linear sorted elements",
+      "D. Random node access"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "LDAP stands for",
+    "options": [
+      "A. Lightweight Directory Access Protocol",
+      "B. Local Data Application Process",
+      "C. Linked Directory Allocation Protocol",
+      "D. Logical Data Access Program"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "A natural language processing library is",
+    "options": [
+      "A. NLTK",
+      "B. Pandas",
+      "C. Matplotlib",
+      "D. SciPy"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "An interrupt in a computer system",
+    "options": [
+      "A. Stores data",
+      "B. Signals CPU for urgent tasks",
+      "C. Compresses files",
+      "D. Manages memory"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A mobile operating system is",
+    "options": [
+      "A. Windows",
+      "B. iOS",
+      "C. Linux",
+      "D. Solaris"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "The time complexity of a binary search algorithm is",
+    "options": [
+      "A. O(n)",
+      "B. O(log n)",
+      "C. O(n^2)",
+      "D. O(1)"
+    ],
+    "answer": "B",
+    "year": "2016"
+  },
+  {
+    "question": "A relational database management system is",
+    "options": [
+      "A. MySQL",
+      "B. Apache Spark",
+      "C. TensorFlow",
+      "D. Nginx"
+    ],
+    "answer": "A",
+    "year": "2016"
+  },
+  {
+    "question": "What is the role of the instruction register in a CPU?",
+    "options": [
+      "A. To store data for arithmetic operations",
+      "B. To hold the current instruction being executed",
+      "C. To manage memory allocation",
+      "D. To control peripheral devices"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which data structure is best for implementing an autocomplete feature?",
+    "options": [
+      "A. Queue",
+      "B. Trie",
+      "C. Stack",
+      "D. Linked List"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What does EEPROM stand for in memory technology?",
+    "options": [
+      "A. Electrically Erasable Programmable Read-Only Memory",
+      "B. Embedded Electronic Processing Memory",
+      "C. Extended Erasable Program Module",
+      "D. Efficient External Programmable Memory"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which programming language is commonly used for game development with Unity?",
+    "options": [
+      "A. Python",
+      "B. C#",
+      "C. Ruby",
+      "D. Perl"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the binary equivalent of the hexadecimal number 3C?",
+    "options": [
+      "A. 00111100",
+      "B. 00110011",
+      "C. 01001100",
+      "D. 00110100"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a columnar NoSQL database?",
+    "options": [
+      "A. MongoDB",
+      "B. HBase",
+      "C. Couchbase",
+      "D. PostgreSQL"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What does XHTML stand for?",
+    "options": [
+      "A. eXtensible HyperText Markup Language",
+      "B. eXternal Hyperlink Text Module",
+      "C. eXtended High-Level Text Language",
+      "D. eXecutable HyperText Markup Logic"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which algorithm is used for finding the topological order of a directed acyclic graph?",
+    "options": [
+      "A. Kahn’s Algorithm",
+      "B. Dijkstra’s Algorithm",
+      "C. Bubble Sort",
+      "D. Binary Search"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What is the time complexity of accessing an element in a hash table?",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(n^2)"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a pointing device?",
+    "options": [
+      "A. Monitor",
+      "B. Mouse",
+      "C. Printer",
+      "D. Speaker"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of a bootloader in a computer system?",
+    "options": [
+      "A. To compile programs",
+      "B. To load the operating system",
+      "C. To manage network traffic",
+      "D. To design user interfaces"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which protocol is used for real-time communication in VoIP?",
+    "options": [
+      "A. RTP",
+      "B. FTP",
+      "C. HTTP",
+      "D. SMTP"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What is the main function of a cooling fan in a computer?",
+    "options": [
+      "A. To increase processing speed",
+      "B. To prevent overheating",
+      "C. To store data",
+      "D. To manage input devices"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is an event-driven programming language?",
+    "options": [
+      "A. JavaScript",
+      "B. Fortran",
+      "C. C",
+      "D. Assembly"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What does BIOS stand for?",
+    "options": [
+      "A. Basic Input/Output System",
+      "B. Binary Integrated Operating System",
+      "C. Buffered Internal Output Service",
+      "D. Base Instruction Operating Software"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which sorting algorithm is stable and suitable for linked lists?",
+    "options": [
+      "A. Quick Sort",
+      "B. Merge Sort",
+      "C. Heap Sort",
+      "D. Selection Sort"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of NAT in networking?",
+    "options": [
+      "A. To assign MAC addresses",
+      "B. To translate private IP addresses to public ones",
+      "C. To encrypt data packets",
+      "D. To compress network traffic"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a type of flash memory?",
+    "options": [
+      "A. RAM",
+      "B. NAND",
+      "C. Cache",
+      "D. ROM"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What does SOAP stand for in web services?",
+    "options": [
+      "A. Simple Object Access Protocol",
+      "B. Structured Operations and Procedures",
+      "C. System-Oriented Application Process",
+      "D. Secure Object Authentication Protocol"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is an example of a serverless computing platform?",
+    "options": [
+      "A. AWS Lambda",
+      "B. Apache Hadoop",
+      "C. MySQL",
+      "D. Docker Swarm"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of a nested loop in programming?",
+    "options": [
+      "A. To define functions",
+      "B. To execute a loop within another loop",
+      "C. To handle exceptions",
+      "D. To store arrays"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is NOT a type of computer port?",
+    "options": [
+      "A. USB",
+      "B. HDMI",
+      "C. VGA",
+      "D. SQL"
+    ],
+    "answer": "D",
+    "year": "2015"
+  },
+  {
+    "question": "What is the role of a DNS resolver in networking?",
+    "options": [
+      "A. To store web pages",
+      "B. To translate domain names to IP addresses",
+      "C. To compress data",
+      "D. To manage firewalls"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a monitoring tool for system performance?",
+    "options": [
+      "A. Nagios",
+      "B. Git",
+      "C. Docker",
+      "D. Jenkins"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 10101?",
+    "options": [
+      "A. 20",
+      "B. 21",
+      "C. 22",
+      "D. 23"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a type of social engineering attack?",
+    "options": [
+      "A. Buffer Overflow",
+      "B. Pretexting",
+      "C. SQL Injection",
+      "D. Cross-Site Request Forgery"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What does MAN stand for in networking?",
+    "options": [
+      "A. Metropolitan Area Network",
+      "B. Main Access Node",
+      "C. Mobile Application Network",
+      "D. Modular Access Network"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which data structure is used for implementing a min-heap?",
+    "options": [
+      "A. Linked List",
+      "B. Binary Tree",
+      "C. Array",
+      "D. Graph"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of a 'return' statement in programming?",
+    "options": [
+      "A. To loop through data",
+      "B. To exit a function and provide a value",
+      "C. To declare variables",
+      "D. To sort arrays"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a dynamically typed programming language?",
+    "options": [
+      "A. C++",
+      "B. Java",
+      "C. Python",
+      "D. Go"
+    ],
+    "answer": "C",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of a bridge in a network?",
+    "options": [
+      "A. To connect different network segments",
+      "B. To store data packets",
+      "C. To encrypt traffic",
+      "D. To manage email servers"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a video file format?",
+    "options": [
+      "A. MP3",
+      "B. MKV",
+      "C. FLAC",
+      "D. WAV"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the role of a syntax analyzer in a compiler?",
+    "options": [
+      "A. To generate machine code",
+      "B. To check the grammatical structure of code",
+      "C. To optimize execution",
+      "D. To execute instructions"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a characteristic of a queue data structure?",
+    "options": [
+      "A. Last In, First Out",
+      "B. First In, First Out",
+      "C. Random access",
+      "D. Sorted elements"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What does TLS stand for?",
+    "options": [
+      "A. Transport Layer Security",
+      "B. Terminal Link System",
+      "C. Transfer Logic Service",
+      "D. Trusted LAN Standard"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a clustering algorithm?",
+    "options": [
+      "A. DBSCAN",
+      "B. Decision Tree",
+      "C. SVM",
+      "D. Linear Regression"
+    ],
+    "answer": "A",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of a pipeline in computer architecture?",
+    "options": [
+      "A. To store data",
+      "B. To execute instructions concurrently",
+      "C. To manage memory",
+      "D. To cool the CPU"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a Unix-based operating system?",
+    "options": [
+      "A. Windows",
+      "B. macOS",
+      "C. MS-DOS",
+      "D. Android"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the purpose of the OSPF protocol in networking?",
+    "options": [
+      "A. To transfer files",
+      "B. To route packets using link-state",
+      "C. To encrypt data",
+      "D. To resolve domain names"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "Which of the following is a benefit of using abstraction in programming?",
+    "options": [
+      "A. Increased execution speed",
+      "B. Simplified code complexity",
+      "C. Reduced hardware costs",
+      "D. Enhanced graphical interfaces"
+    ],
+    "answer": "B",
+    "year": "2015"
+  },
+  {
+    "question": "What is the primary function of a computer's fetch-decode-execute cycle?",
+    "options": [
+      "A. To store data in memory",
+      "B. To process instructions from a program",
+      "C. To manage peripheral devices",
+      "D. To compress files"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which data structure is most suitable for implementing a spell checker?",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Trie",
+      "D. Array"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "What does CMOS stand for in computer hardware?",
+    "options": [
+      "A. Complementary Metal-Oxide Semiconductor",
+      "B. Central Memory Operating System",
+      "C. Combined Microchip Output System",
+      "D. Computerized Modular Storage"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which programming language is known for its use in scientific computing?",
+    "options": [
+      "A. PHP",
+      "B. MATLAB",
+      "C. JavaScript",
+      "D. COBOL"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the decimal equivalent of the hexadecimal number 2F?",
+    "options": [
+      "A. 45",
+      "B. 47",
+      "C. 49",
+      "D. 51"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a document-oriented NoSQL database?",
+    "options": [
+      "A. Cassandra",
+      "B. CouchDB",
+      "C. HBase",
+      "D. MySQL"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What does HTTP stand for?",
+    "options": [
+      "A. HyperText Transfer Protocol",
+      "B. High-Level Text Processor",
+      "C. Hyperlink Terminal Protocol",
+      "D. Hosted Transmission Process"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which algorithm is used for finding the shortest path in an unweighted graph?",
+    "options": [
+      "A. Bellman-Ford",
+      "B. Breadth-First Search",
+      "C. A* Algorithm",
+      "D. Merge Sort"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the worst-case time complexity of quick sort?",
+    "options": [
+      "A. O(n)",
+      "B. O(n log n)",
+      "C. O(n^2)",
+      "D. O(log n)"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is an output device?",
+    "options": [
+      "A. Scanner",
+      "B. Mouse",
+      "C. Monitor",
+      "D. Keyboard"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of an operating system’s kernel?",
+    "options": [
+      "A. To design user interfaces",
+      "B. To manage hardware and system resources",
+      "C. To compile programs",
+      "D. To store user data"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which protocol is used for resolving domain names to IP addresses?",
+    "options": [
+      "A. DHCP",
+      "B. DNS",
+      "C. FTP",
+      "D. POP3"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the primary role of a surge protector in a computer system?",
+    "options": [
+      "A. To increase processing speed",
+      "B. To protect against power surges",
+      "C. To store backup data",
+      "D. To manage network traffic"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a procedural programming language?",
+    "options": [
+      "A. Haskell",
+      "B. C",
+      "C. Java",
+      "D. Prolog"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What does RAID stand for in data storage?",
+    "options": [
+      "A. Redundant Array of Independent Disks",
+      "B. Random Access Integrated Device",
+      "C. Reliable Archive of Internal Data",
+      "D. Rapid Access Information Disk"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which sorting algorithm uses a pivot to partition the array?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Quick Sort",
+      "C. Insertion Sort",
+      "D. Selection Sort"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of a default gateway in networking?",
+    "options": [
+      "A. To assign MAC addresses",
+      "B. To route traffic between networks",
+      "C. To compress data",
+      "D. To authenticate users"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a primary storage device?",
+    "options": [
+      "A. Hard Disk Drive",
+      "B. USB Flash Drive",
+      "C. RAM",
+      "D. Optical Disk"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "What does RDBMS stand for?",
+    "options": [
+      "A. Relational Database Management System",
+      "B. Remote Data Backup Management System",
+      "C. Rapid Data Base Memory System",
+      "D. Reusable Data Block Management System"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is an example of a containerization platform?",
+    "options": [
+      "A. Docker",
+      "B. Ansible",
+      "C. Terraform",
+      "D. Puppet"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of a 'do-while' loop in programming?",
+    "options": [
+      "A. To execute code at least once before checking a condition",
+      "B. To define a class",
+      "C. To handle file operations",
+      "D. To sort data"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is NOT a function of an operating system?",
+    "options": [
+      "A. Process Management",
+      "B. Memory Management",
+      "C. Code Compilation",
+      "D. File Management"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "What is the role of a content delivery network (CDN)?",
+    "options": [
+      "A. To compile code",
+      "B. To distribute web content efficiently",
+      "C. To store databases",
+      "D. To manage email servers"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a configuration management tool?",
+    "options": [
+      "A. Ansible",
+      "B. Git",
+      "C. Jenkins",
+      "D. Kubernetes"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the decimal number 42?",
+    "options": [
+      "A. 2A",
+      "B. 2B",
+      "C. 2C",
+      "D. 2D"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a ransomware attack?",
+    "options": [
+      "A. WannaCry",
+      "B. SQL Injection",
+      "C. Phishing",
+      "D. Session Hijacking"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "What does VLAN stand for?",
+    "options": [
+      "A. Virtual Local Area Network",
+      "B. Variable Link Access Node",
+      "C. Visual LAN Adapter",
+      "D. Virtualized Logical Access Network"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which data structure is used for implementing a graph’s adjacency list?",
+    "options": [
+      "A. Stack",
+      "B. Linked List",
+      "C. Queue",
+      "D. Heap"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of a 'continue' statement in programming?",
+    "options": [
+      "A. To exit a program",
+      "B. To skip the current loop iteration",
+      "C. To define a function",
+      "D. To handle exceptions"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a compiled programming language?",
+    "options": [
+      "A. Python",
+      "B. C++",
+      "C. JavaScript",
+      "D. Ruby"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of a repeater in a network?",
+    "options": [
+      "A. To route traffic",
+      "B. To amplify and extend signals",
+      "C. To encrypt data",
+      "D. To store packets"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a lossless image format?",
+    "options": [
+      "A. JPEG",
+      "B. PNG",
+      "C. BMP",
+      "D. GIF"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the role of a lexical analyzer in a compiler?",
+    "options": [
+      "A. To optimize code",
+      "B. To convert code to machine language",
+      "C. To break code into tokens",
+      "D. To execute instructions"
+    ],
+    "answer": "C",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a feature of a doubly linked list?",
+    "options": [
+      "A. Fixed size",
+      "B. Nodes have forward and backward pointers",
+      "C. Contiguous memory allocation",
+      "D. Random access"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What does POP3 stand for?",
+    "options": [
+      "A. Post Office Protocol version 3",
+      "B. Programmable Output Processor",
+      "C. Packet-Oriented Protocol",
+      "D. Public Operations Platform"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a deep learning framework?",
+    "options": [
+      "A. TensorFlow",
+      "B. Pandas",
+      "C. NumPy",
+      "D. SciPy"
+    ],
+    "answer": "A",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of a clock in a CPU?",
+    "options": [
+      "A. To store instructions",
+      "B. To synchronize operations",
+      "C. To manage memory",
+      "D. To cool the system"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a real-time operating system?",
+    "options": [
+      "A. Windows 10",
+      "B. RTOS",
+      "C. Ubuntu",
+      "D. macOS"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the purpose of the RIP protocol in networking?",
+    "options": [
+      "A. To manage email delivery",
+      "B. To route packets using distance-vector",
+      "C. To compress data",
+      "D. To secure connections"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "Which of the following is a benefit of using polymorphism in programming?",
+    "options": [
+      "A. Reduced compilation time",
+      "B. Flexible code through multiple forms",
+      "C. Lower hardware requirements",
+      "D. Simplified file management"
+    ],
+    "answer": "B",
+    "year": "2014"
+  },
+  {
+    "question": "What is the primary role of the control unit in a CPU?",
+    "options": [
+      "A. Perform arithmetic calculations",
+      "B. Store program data",
+      "C. Direct processor operations",
+      "D. Manage network traffic"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Which data structure best supports recursive algorithms?",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Array",
+      "D. Linked List"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does ROM represent in computer memory?",
+    "options": [
+      "A. Random Operating Memory",
+      "B. Read-Only Memory",
+      "C. Reusable Output Module",
+      "D. Real-Time Memory"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which language is commonly used for modern web development?",
+    "options": [
+      "A. Pascal",
+      "B. JavaScript",
+      "C. Fortran",
+      "D. COBOL"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What is the hexadecimal value of binary 11010?",
+    "options": [
+      "A. 1A",
+      "B. 1B",
+      "C. 1C",
+      "D. 1D"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which of the following is a relational database management system?",
+    "options": [
+      "A. MySQL",
+      "B. MongoDB",
+      "C. Cassandra",
+      "D. Redis"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What does HTML stand for in web development?",
+    "options": [
+      "A. Hyperlink Text Management Language",
+      "B. HyperText Markup Language",
+      "C. High-Level Text Module",
+      "D. Hosted Text Manipulation Language"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which algorithm finds the shortest path in a weighted graph?",
+    "options": [
+      "A. Breadth-First Search",
+      "B. Dijkstra’s Algorithm",
+      "C. Depth-First Search",
+      "D. Kruskal’s Algorithm"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What is the average-case time complexity of quicksort?",
+    "options": [
+      "A. O(n)",
+      "B. O(n log n)",
+      "C. O(n^2)",
+      "D. O(log n)"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which device is considered an input device?",
+    "options": [
+      "A. Monitor",
+      "B. Mouse",
+      "C. Printer",
+      "D. Speaker"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does a compiler do in software development?",
+    "options": [
+      "A. Executes code",
+      "B. Translates source code to machine code",
+      "C. Manages memory",
+      "D. Debugs errors"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which protocol is used for email transmission?",
+    "options": [
+      "A. FTP",
+      "B. HTTP",
+      "C. SMTP",
+      "D. TELNET"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "What is the main function of a router in a network?",
+    "options": [
+      "A. Connect devices in a LAN",
+      "B. Forward data between networks",
+      "C. Store network packets",
+      "D. Encrypt data"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which language is primarily used for structured programming?",
+    "options": [
+      "A. C",
+      "B. HTML",
+      "C. SQL",
+      "D. CSS"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What does CPU stand for?",
+    "options": [
+      "A. Central Processing Unit",
+      "B. Computer Program Utility",
+      "C. Core Peripheral Unit",
+      "D. Control Processor Unit"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which sorting algorithm is best for small datasets?",
+    "options": [
+      "A. Merge Sort",
+      "B. Quick Sort",
+      "C. Insertion Sort",
+      "D. Heap Sort"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "What does DNS do in networking?",
+    "options": [
+      "A. Encrypts data",
+      "B. Resolves domain names to IP addresses",
+      "C. Compresses packets",
+      "D. Manages email servers"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a primary storage device?",
+    "options": [
+      "A. Hard Disk",
+      "B. RAM",
+      "C. USB Drive",
+      "D. CD-ROM"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does GUI stand for?",
+    "options": [
+      "A. Graphical User Interface",
+      "B. General Utility Integration",
+      "C. Global Unit Interface",
+      "D. Graphic Update Instruction"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which software manages computer hardware?",
+    "options": [
+      "A. Operating System",
+      "B. Web Browser",
+      "C. Text Editor",
+      "D. Database Manager"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What is the purpose of a loop in programming?",
+    "options": [
+      "A. Execute code once",
+      "B. Repeat code multiple times",
+      "C. Define variables",
+      "D. Handle errors"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a type of virus?",
+    "options": [
+      "A. Firewall",
+      "B. Worm",
+      "C. Antivirus",
+      "D. Router"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does a gateway do in a network?",
+    "options": [
+      "A. Connects different network protocols",
+      "B. Stores data packets",
+      "C. Compresses files",
+      "D. Manages LAN devices"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which tool is used for version control?",
+    "options": [
+      "A. Docker",
+      "B. Git",
+      "C. Jenkins",
+      "D. Kubernetes"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What is the binary equivalent of decimal 19?",
+    "options": [
+      "A. 10011",
+      "B. 10101",
+      "C. 11001",
+      "D. 10001"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a common web security threat?",
+    "options": [
+      "A. SQL Injection",
+      "B. Data Compression",
+      "C. File Sharing",
+      "D. Network Routing"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What does LAN stand for?",
+    "options": [
+      "A. Local Access Network",
+      "B. Logical Area Node",
+      "C. Local Area Network",
+      "D. Linked Application Network"
+    ],
+    "answer": "C",
+    "year": "2013"
+  },
+  {
+    "question": "Which data structure is used for a binary search tree?",
+    "options": [
+      "A. Array",
+      "B. Tree",
+      "C. Queue",
+      "D. Stack"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does the ‘continue’ statement do in a loop?",
+    "options": [
+      "A. Exits the loop",
+      "B. Skips to the next iteration",
+      "C. Restarts the loop",
+      "D. Pauses execution"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a high-level programming language?",
+    "options": [
+      "A. Assembly",
+      "B. Python",
+      "C. Machine Code",
+      "D. Bytecode"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What is the role of a hub in a network?",
+    "options": [
+      "A. Directs data intelligently",
+      "B. Broadcasts data to all ports",
+      "C. Encrypts network traffic",
+      "D. Stores data packets"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a common image file format?",
+    "options": [
+      "A. JPEG",
+      "B. MP3",
+      "C. TXT",
+      "D. EXE"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What is the purpose of an interpreter?",
+    "options": [
+      "A. Compiles code to machine language",
+      "B. Executes code line-by-line",
+      "C. Optimizes memory",
+      "D. Links object files"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which property defines a queue data structure?",
+    "options": [
+      "A. Last In, First Out",
+      "B. First In, First Out",
+      "C. Sorted order",
+      "D. Random access"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does TCP stand for?",
+    "options": [
+      "A. Transmission Control Protocol",
+      "B. Terminal Connection Process",
+      "C. Transfer Command Protocol",
+      "D. Transport Core Program"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "Which algorithm is used for data compression?",
+    "options": [
+      "A. Huffman Coding",
+      "B. Bellman-Ford",
+      "C. A* Search",
+      "D. Prim’s Algorithm"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What is the function of cache memory?",
+    "options": [
+      "A. Long-term storage",
+      "B. Fast data access for CPU",
+      "C. Network data routing",
+      "D. Program execution"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "Which is a common operating system?",
+    "options": [
+      "A. Microsoft Excel",
+      "B. Linux",
+      "C. Adobe Photoshop",
+      "D. Mozilla Firefox"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "What does FTP stand for?",
+    "options": [
+      "A. File Transfer Protocol",
+      "B. Fast Transmission Process",
+      "C. File Tracking Program",
+      "D. Flexible Transport Protocol"
+    ],
+    "answer": "A",
+    "year": "2013"
+  },
+  {
+    "question": "What is a benefit of modular programming?",
+    "options": [
+      "A. Increased runtime speed",
+      "B. Easier code maintenance",
+      "C. Reduced memory usage",
+      "D. Simplified compilation"
+    ],
+    "answer": "B",
+    "year": "2013"
+  },
+  {
+    "question": "The primary function         ",
+    "options": [
+      "A. Store data",
+      "B. Perform arithmetic and logical operations",
+      "C. Manage input/output devices",
+      "D. Control network traffic"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The data structure used for backtracking in algorithms is a",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Tree",
+      "D. Graph"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "GPU stands for",
+    "options": [
+      "A. General Processing Unit",
+      "B. Graphics Processing Unit",
+      "C. Global Program Utility",
+      "D. Guided Processing Unit"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The programming language commonly used for Android apps is",
+    "options": [
+      "A. Swift",
+      "B. Kotlin",
+      "C. R",
+      "D. Perl"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The binary equivalent of hexadecimal 1A is",
+    "options": [
+      "A. 00011010",
+      "B. 00101000",
+      "C. 00010010",
+      "D. 00110000"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "Which database uses a key-value store?",
+    "options": [
+      "A. MySQL",
+      "B. Redis",
+      "C. SQLite",
+      "D. MariaDB"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "AJAX stands for",
+    "options": [
+      "A. Asynchronous JavaScript and XML",
+      "B. Advanced JavaScript and XHTML",
+      "C. Automated Java and XML",
+      "D. Active JavaScript and XSLT"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "The algorithm for a minimum spanning tree is",
+    "options": [
+      "A. Kruskal’s Algorithm",
+      "B. Breadth-First Search",
+      "C. Binary Search",
+      "D. Selection Sort"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "The time complexity of inserting into a balanced binary search tree is",
+    "options": [
+      "A. O(1)",
+      "B. O(log n)",
+      "C. O(n)",
+      "D. O(n^2)"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "An example of firmware is",
+    "options": [
+      "A. Microsoft Word",
+      "B. BIOS",
+      "C. Windows 10",
+      "D. Google Chrome"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A virtual machine is used to",
+    "options": [
+      "A. Compile code",
+      "B. Emulate a computer system",
+      "C. Design databases",
+      "D. Encrypt files"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The protocol for retrieving emails is",
+    "options": [
+      "A. IMAP",
+      "B. HTTP",
+      "C. DNS",
+      "D. SNMP"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "The main purpose of a UPS is to",
+    "options": [
+      "A. Boost processing speed",
+      "B. Provide backup power",
+      "C. Manage network connections",
+      "D. Store data"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The language for styling web pages is",
+    "options": [
+      "A. HTML",
+      "B. CSS",
+      "C. Python",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "HDD stands for",
+    "options": [
+      "A. High Density Drive",
+      "B. Hard Disk Drive",
+      "C. Hybrid Data Disk",
+      "D. Hyperlink Data Drive"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The sorting algorithm that divides input into sorted and unsorted regions is",
+    "options": [
+      "A. Quick Sort",
+      "B. Insertion Sort",
+      "C. Bubble Sort",
+      "D. Merge Sort"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The purpose of a MAC address is to",
+    "options": [
+      "A. Identify a device on a network",
+      "B. Encrypt data packets",
+      "C. Assign IP addresses",
+      "D. Manage bandwidth"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "A type of cache memory is",
+    "options": [
+      "A. L1 Cache",
+      "B. ROM",
+      "C. SSD",
+      "D. HDD"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "JSON stands for",
+    "options": [
+      "A. JavaScript Object Notation",
+      "B. Java Source Organizer",
+      "C. Joint System Operations",
+      "D. JavaScript Online Network"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "An example of Software-as-a-Service (SaaS) is",
+    "options": [
+      "A. Amazon S3",
+      "B. Google Docs",
+      "C. Microsoft Azure",
+      "D. Heroku"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The purpose of a 'for' loop is to",
+    "options": [
+      "A. Handle exceptions",
+      "B. Iterate over a sequence",
+      "C. Define variables",
+      "D. Create classes"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "Which is NOT a CPU component?",
+    "options": [
+      "A. Control Unit",
+      "B. Arithmetic Logic Unit",
+      "C. Cache Memory",
+      "D. Hard Disk"
+    ],
+    "answer": "D",
+    "year": "2012"
+  },
+  {
+    "question": "A load balancer in a network",
+    "options": [
+      "A. Compresses data",
+      "B. Distributes traffic across servers",
+      "C. Stores backups",
+      "D. Designs websites"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A continuous integration tool is",
+    "options": [
+      "A. Docker",
+      "B. Jenkins",
+      "C. Kubernetes",
+      "D. Git"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The decimal equivalent of binary 1111 is",
+    "options": [
+      "A. 13",
+      "B. 14",
+      "C. 15",
+      "D. 16"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "A denial-of-service (DoS) attack example is",
+    "options": [
+      "A. Phishing",
+      "B. SQL Injection",
+      "C. Ping Flood",
+      "D. Man-in-the-Middle"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "LAN stands for",
+    "options": [
+      "A. Local Area Network",
+      "B. Large Access Network",
+      "C. Linked Application Node",
+      "D. Logical Address Network"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "The data structure for breadth-first search is",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Heap",
+      "D. Array"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The 'try-catch' block is used to",
+    "options": [
+      "A. Loop through data",
+      "B. Handle exceptions",
+      "C. Define functions",
+      "D. Sort arrays"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A scripting language is",
+    "options": [
+      "A. C++",
+      "B. Java",
+      "C. Python",
+      "D. C#"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "A gateway in a network is used to",
+    "options": [
+      "A. Store data",
+      "B. Connect different protocols",
+      "C. Increase bandwidth",
+      "D. Run applications"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A vector graphics format is",
+    "options": [
+      "A. JPEG",
+      "B. SVG",
+      "C. PNG",
+      "D. GIF"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "An assembler’s role is to",
+    "options": [
+      "A. Execute code",
+      "B. Convert assembly to machine code",
+      "C. Debug errors",
+      "D. Optimize algorithms"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A property of a stack is",
+    "options": [
+      "A. Sorted elements",
+      "B. Random access",
+      "C. Add/remove from one end",
+      "D. Paired storage"
+    ],
+    "answer": "C",
+    "year": "2012"
+  },
+  {
+    "question": "SSH stands for",
+    "options": [
+      "A. Secure Shell",
+      "B. System Service Hub",
+      "C. Simple Storage Host",
+      "D. Shared System Handler"
+    ],
+    "answer": "A",
+    "year": "2012"
+  },
+  {
+    "question": "An unsupervised learning algorithm is",
+    "options": [
+      "A. Support Vector Machine",
+      "B. K-Means Clustering",
+      "C. Random Forest",
+      "D. Logistic Regression"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A register in a CPU is used to",
+    "options": [
+      "A. Store large datasets",
+      "B. Hold temporary data",
+      "C. Manage networks",
+      "D. Compress files"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "An open-source database management system is",
+    "options": [
+      "A. Oracle",
+      "B. PostgreSQL",
+      "C. SQL Server",
+      "D. DB2"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "The DHCP protocol is used to",
+    "options": [
+      "A. Resolve domain names",
+      "B. Assign IP addresses dynamically",
+      "C. Encrypt data",
+      "D. Compress files"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "A benefit of version control systems is",
+    "options": [
+      "A. Increased processing speed",
+      "B. Improved collaboration and tracking",
+      "C. Reduced hardware costs",
+      "D. Simplified user interfaces"
+    ],
+    "answer": "B",
+    "year": "2012"
+  },
+  {
+    "question": "What is the primary role of a motherboard in a computer system?",
+    "options": [
+      "A. To store data permanently",
+      "B. To connect all hardware components",
+      "C. To execute software",
+      "D. To cool the system"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a characteristic of a queue data structure?",
+    "options": [
+      "A. Last In, First Out",
+      "B. First In, First Out",
+      "C. Random access",
+      "D. Sorted order"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What does BIOS stand for?",
+    "options": [
+      "A. Basic Input/Output System",
+      "B. Binary Input/Output Software",
+      "C. Basic Instruction Operating System",
+      "D. Built-In Operating System"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which programming language is primarily used for data analysis and machine learning?",
+    "options": [
+      "A. C++",
+      "B. Python",
+      "C. PHP",
+      "D. Ruby"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the decimal equivalent of the binary number 1101?",
+    "options": [
+      "A. 12",
+      "B. 13",
+      "C. 14",
+      "D. 15"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a NoSQL database?",
+    "options": [
+      "A. PostgreSQL",
+      "B. Oracle",
+      "C. MongoDB",
+      "D. SQL Server"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What does CSS stand for in web development?",
+    "options": [
+      "A. Cascading Style Sheets",
+      "B. Computer Style System",
+      "C. Creative Style Software",
+      "D. Coded Style Structure"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which algorithm is used to detect cycles in a graph?",
+    "options": [
+      "A. Merge Sort",
+      "B. Depth-First Search",
+      "C. Linear Search",
+      "D. Quick Sort"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the space complexity of a recursive factorial algorithm?",
+    "options": [
+      "A. O(1)",
+      "B. O(n)",
+      "C. O(n^2)",
+      "D. O(log n)"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a peripheral device?",
+    "options": [
+      "A. CPU",
+      "B. RAM",
+      "C. Printer",
+      "D. Motherboard"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What is the function of an interpreter?",
+    "options": [
+      "A. To translate code to machine language",
+      "B. To execute code line by line",
+      "C. To optimize compiled code",
+      "D. To manage hardware"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which protocol is used for sending emails?",
+    "options": [
+      "A. HTTP",
+      "B. SMTP",
+      "C. FTP",
+      "D. TCP"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the main function of antivirus software?",
+    "options": [
+      "A. To increase system speed",
+      "B. To protect against malware",
+      "C. To manage databases",
+      "D. To design websites"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a functional programming language?",
+    "options": [
+      "A. C",
+      "B. Haskell",
+      "C. Java",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What does SSD stand for in storage technology?",
+    "options": [
+      "A. Solid State Drive",
+      "B. System Storage Device",
+      "C. Secure Storage Disk",
+      "D. Static System Drive"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which sorting algorithm is known for its simplicity but poor performance on large datasets?",
+    "options": [
+      "A. Quick Sort",
+      "B. Merge Sort",
+      "C. Bubble Sort",
+      "D. Heap Sort"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of a subnet mask in networking?",
+    "options": [
+      "A. To encrypt data",
+      "B. To divide an IP network into subnetworks",
+      "C. To increase bandwidth",
+      "D. To authenticate users"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a volatile memory type?",
+    "options": [
+      "A. ROM",
+      "B. Flash Memory",
+      "C. RAM",
+      "D. Hard Disk"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What does XML stand for?",
+    "options": [
+      "A. eXtensible Markup Language",
+      "B. eXecutable Machine Language",
+      "C. eXternal Markup Logic",
+      "D. eXtended Memory Language"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a platform-as-a-service (PaaS) provider?",
+    "options": [
+      "A. Amazon EC2",
+      "B. Google App Engine",
+      "C. Dropbox",
+      "D. Microsoft Office 365"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of a 'while' loop in programming?",
+    "options": [
+      "A. To define a function",
+      "B. To execute code as long as a condition is true",
+      "C. To handle errors",
+      "D. To store arrays"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is NOT a type of computer network?",
+    "options": [
+      "A. LAN",
+      "B. WAN",
+      "C. MAN",
+      "D. DAN"
+    ],
+    "answer": "D",
+    "year": "2011"
+  },
+  {
+    "question": "What is the role of a web server?",
+    "options": [
+      "A. To store user data",
+      "B. To deliver web content to clients",
+      "C. To compile code",
+      "D. To design graphics"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following tools is used for containerization?",
+    "options": [
+      "A. Git",
+      "B. Docker",
+      "C. Jenkins",
+      "D. Ansible"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the decimal number 15?",
+    "options": [
+      "A. E",
+      "B. F",
+      "C. D",
+      "D. B"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a type of phishing attack?",
+    "options": [
+      "A. SQL Injection",
+      "B. Spear Phishing",
+      "C. Buffer Overflow",
+      "D. Cross-Site Scripting"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What does URL stand for?",
+    "options": [
+      "A. Uniform Resource Locator",
+      "B. Universal Reference Link",
+      "C. Unique Resource Language",
+      "D. Unified Retrieval Location"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which data structure is best suited for implementing a dictionary?",
+    "options": [
+      "A. Stack",
+      "B. Queue",
+      "C. Hash Table",
+      "D. Linked List"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of a 'switch' statement in programming?",
+    "options": [
+      "A. To loop through arrays",
+      "B. To select one of many code blocks to execute",
+      "C. To define classes",
+      "D. To handle files"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a low-level programming language?",
+    "options": [
+      "A. Python",
+      "B. Java",
+      "C. Assembly",
+      "D. JavaScript"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of a switch in a network?",
+    "options": [
+      "A. To connect devices within a network",
+      "B. To store data",
+      "C. To encrypt traffic",
+      "D. To manage software"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a lossy compression format?",
+    "options": [
+      "A. PNG",
+      "B. JPEG",
+      "C. ZIP",
+      "D. FLAC"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the role of a debugger in software development?",
+    "options": [
+      "A. To optimize code",
+      "B. To identify and fix errors in code",
+      "C. To compile code",
+      "D. To design interfaces"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a feature of a binary search tree?",
+    "options": [
+      "A. Random node arrangement",
+      "B. Left child is smaller, right child is larger",
+      "C. Fixed depth",
+      "D. Circular structure"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What does FTP stand for?",
+    "options": [
+      "A. File Transfer Protocol",
+      "B. Fast Transmission Protocol",
+      "C. File Tracking Program",
+      "D. Flexible Transfer Process"
+    ],
+    "answer": "A",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a supervised learning algorithm?",
+    "options": [
+      "A. K-Means Clustering",
+      "B. Decision Tree",
+      "C. Principal Component Analysis",
+      "D. DBSCAN"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of a cache memory?",
+    "options": [
+      "A. To store permanent data",
+      "B. To speed up data access",
+      "C. To encrypt data",
+      "D. To manage network traffic"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a proprietary operating system?",
+    "options": [
+      "A. Linux",
+      "B. Ubuntu",
+      "C. Windows",
+      "D. Fedora"
+    ],
+    "answer": "C",
+    "year": "2011"
+  },
+  {
+    "question": "What is the purpose of the OSI model in networking?",
+    "options": [
+      "A. To compress data",
+      "B. To standardize network communication layers",
+      "C. To store databases",
+      "D. To develop software"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "Which of the following is a benefit of using object-oriented programming?",
+    "options": [
+      "A. Increased compilation speed",
+      "B. Improved code encapsulation",
+      "C. Reduced software size",
+      "D. Simplified hardware interaction"
+    ],
+    "answer": "B",
+    "year": "2011"
+  },
+  {
+    "question": "What is the primary function of an operating system?",
+    "options": [
+      "A. To compile code",
+      "B. To manage computer resources",
+      "C. To design graphics",
+      "D. To browse the internet"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which data structure uses the Last In, First Out (LIFO) principle?",
+    "options": [
+      "A. Queue",
+      "B. Stack",
+      "C. Array",
+      "D. Linked List"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What does CPU stand for in computing?",
+    "options": [
+      "A. Central Processing Unit",
+      "B. Computer Processing Unit",
+      "C. Central Program Unit",
+      "D. Control Processing Unit"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which programming language is known for its use in web development and is executed client-side?",
+    "options": [
+      "A. Python",
+      "B. Java",
+      "C. JavaScript",
+      "D. C++"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What is the binary equivalent of the decimal number 10?",
+    "options": [
+      "A. 1010",
+      "B. 1100",
+      "C. 1000",
+      "D. 1110"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a relational database management system?",
+    "options": [
+      "A. MongoDB",
+      "B. MySQL",
+      "C. Redis",
+      "D. Cassandra"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "A. HyperText Markup Language",
+      "B. HighText Machine Language",
+      "C. HyperTool Markup Language",
+      "D. Hyperlink Text Markup Language"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which algorithm is used for finding the shortest path in a weighted graph?",
+    "options": [
+      "A. Binary Search",
+      "B. Dijkstra’s Algorithm",
+      "C. Bubble Sort",
+      "D. Depth-First Search"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the time complexity of a binary search algorithm?",
+    "options": [
+      "A. O(n)",
+      "B. O(log n)",
+      "C. O(n^2)",
+      "D. O(1)"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is NOT a type of software?",
+    "options": [
+      "A. System Software",
+      "B. Application Software",
+      "C. Hardware Software",
+      "D. Utility Software"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of a compiler?",
+    "options": [
+      "A. To execute code line by line",
+      "B. To convert source code to machine code",
+      "C. To debug code errors",
+      "D. To design user interfaces"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which protocol is used for secure communication over the internet?",
+    "options": [
+      "A. HTTP",
+      "B. FTP",
+      "C. HTTPS",
+      "D. SMTP"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What is the main purpose of a firewall?",
+    "options": [
+      "A. To increase internet speed",
+      "B. To protect a network from unauthorized access",
+      "C. To store data securely",
+      "D. To manage email services"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is an object-oriented programming language?",
+    "options": [
+      "A. C",
+      "B. Java",
+      "C. Assembly",
+      "D. SQL"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What does RAM stand for?",
+    "options": [
+      "A. Random Access Memory",
+      "B. Read-Only Memory",
+      "C. Rapid Access Module",
+      "D. Runtime Application Memory"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which sorting algorithm has the best average-case time complexity?",
+    "options": [
+      "A. Bubble Sort",
+      "B. Quick Sort",
+      "C. Selection Sort",
+      "D. Insertion Sort"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of DNS in networking?",
+    "options": [
+      "A. To encrypt data",
+      "B. To translate domain names to IP addresses",
+      "C. To compress files",
+      "D. To manage email servers"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a non-volatile memory type?",
+    "options": [
+      "A. RAM",
+      "B. Cache",
+      "C. ROM",
+      "D. Register"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What does SQL stand for?",
+    "options": [
+      "A. Structured Query Language",
+      "B. Simple Query Language",
+      "C. System Query Logic",
+      "D. Standard Query Layer"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a cloud computing service model?",
+    "options": [
+      "A. IaaS",
+      "B. HTTP",
+      "C. FTP",
+      "D. TCP"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of a loop in programming?",
+    "options": [
+      "A. To store data",
+      "B. To execute code repeatedly",
+      "C. To define functions",
+      "D. To handle errors"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is NOT a programming paradigm?",
+    "options": [
+      "A. Object-Oriented",
+      "B. Functional",
+      "C. Procedural",
+      "D. Graphical"
+    ],
+    "answer": "D",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of an API?",
+    "options": [
+      "A. To design websites",
+      "B. To allow communication between software systems",
+      "C. To compile code",
+      "D. To store data"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a version control system?",
+    "options": [
+      "A. Git",
+      "B. Docker",
+      "C. Kubernetes",
+      "D. Jenkins"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "What is the hexadecimal equivalent of the binary number 1011?",
+    "options": [
+      "A. A",
+      "B. B",
+      "C. C",
+      "D. D"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a type of cyberattack?",
+    "options": [
+      "A. SQL Injection",
+      "B. Data Sorting",
+      "C. Code Compilation",
+      "D. File Compression"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "What does GUI stand for?",
+    "options": [
+      "A. Graphical User Interface",
+      "B. General Utility Interface",
+      "C. Global User Integration",
+      "D. Graphical Utility Input"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which data structure is used to implement a priority queue?",
+    "options": [
+      "A. Array",
+      "B. Heap",
+      "C. Stack",
+      "D. Queue"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of the 'if' statement in programming?",
+    "options": [
+      "A. To loop through code",
+      "B. To make decisions based on conditions",
+      "C. To define a function",
+      "D. To handle exceptions"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is an example of a high-level programming language?",
+    "options": [
+      "A. Assembly",
+      "B. Python",
+      "C. Machine Code",
+      "D. Binary"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of a router in a network?",
+    "options": [
+      "A. To store data",
+      "B. To connect networks and direct data traffic",
+      "C. To encrypt data",
+      "D. To run applications"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a lossless compression algorithm?",
+    "options": [
+      "A. JPEG",
+      "B. MP3",
+      "C. ZIP",
+      "D. MPEG"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What is the role of a linker in the compilation process?",
+    "options": [
+      "A. To translate code to machine language",
+      "B. To combine object code into an executable",
+      "C. To debug code",
+      "D. To optimize code"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a characteristic of a linked list?",
+    "options": [
+      "A. Fixed size",
+      "B. Random access",
+      "C. Dynamic size",
+      "D. Contiguous memory"
+    ],
+    "answer": "C",
+    "year": "2010"
+  },
+  {
+    "question": "What does VPN stand for?",
+    "options": [
+      "A. Virtual Private Network",
+      "B. Variable Processing Node",
+      "C. Virtual Program Network",
+      "D. Visual Private Node"
+    ],
+    "answer": "A",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a machine learning algorithm?",
+    "options": [
+      "A. Quick Sort",
+      "B. Linear Regression",
+      "C. Binary Search",
+      "D. Bubble Sort"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of a hash table?",
+    "options": [
+      "A. To sort data",
+      "B. To store data with fast retrieval",
+      "C. To compress data",
+      "D. To encrypt data"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is an open-source operating system?",
+    "options": [
+      "A. Windows",
+      "B. Linux",
+      "C. macOS",
+      "D. iOS"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "What is the purpose of the TCP/IP model?",
+    "options": [
+      "A. To design databases",
+      "B. To standardize network communication",
+      "C. To compress files",
+      "D. To develop applications"
+    ],
+    "answer": "B",
+    "year": "2010"
+  },
+  {
+    "question": "Which of the following is a benefit of modular programming?",
+    "options": [
+      "A. Increased execution speed",
+      "B. Improved code reusability",
+      "C. Reduced memory usage",
+      "D. Simplified hardware design"
+    ],
+    "answer": "B",
+    "year": "2010"
+  }
+]
