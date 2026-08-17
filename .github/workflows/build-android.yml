@@ -38,13 +38,44 @@ jobs:
             --exclude='package.json' \
             --exclude='package-lock.json' \
             --exclude='capacitor.config.json' \
+            --exclude='google-services.json' \
             ./ www/
 
       - name: Add Android platform
         run: npx cap add android
 
+      - name: Copy google-services.json
+        run: |
+          if [ -f google-services.json ]; then
+            cp google-services.json android/app/google-services.json
+            echo "google-services.json copied successfully"
+          else
+            echo "WARNING: google-services.json not found in root"
+          fi
+
       - name: Generate icons & splash
-        run: npx @capacitor/assets generate --android --iconBackgroundColor '#000000' --splashBackgroundColor '#0A1F6E'
+        run: |
+          echo "=== Source assets ==="
+          ls -la assets/ || true
+          npx @capacitor/assets generate --android \
+            --iconBackgroundColor '#000000' \
+            --splashBackgroundColor '#0A1F6E' \
+            --logoSplashScale 0.3
+          echo "=== Generated resources ==="
+          find android/app/src/main/res -name "*ic_launcher*" -o -name "*splash*" | head -20 || true
+
+      - name: Apply Google Services plugin
+        run: |
+          # Add Google Services classpath to project-level build.gradle
+          sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
+
+          # Apply the plugin at the bottom of app-level build.gradle
+          echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
+
+          echo "=== android/build.gradle (head) ==="
+          head -30 android/build.gradle
+          echo "=== android/app/build.gradle (tail) ==="
+          tail -10 android/app/build.gradle
 
       - name: Sync
         run: npx cap sync
