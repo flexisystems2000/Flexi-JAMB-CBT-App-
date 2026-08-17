@@ -1,0 +1,111 @@
+{
+  "subject": "Yoruba Language",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Yoruba Phonetics and Phonology (Fọnẹ́tíìkì àti Fọnọ́lọ́jì)",
+      "subtopics": [
+        "Vowels (Iro Vaweli): Oral (Àìránpè) and Nasal (Àránpè)",
+        "Consonants (Iró Kọ́nsónántì)",
+        "Tones (Àmì Ohùn) and Syllable Structure (Àmọ́dunjú Isọ̀rọ̀)"
+      ],
+      "keypoints": [
+        "Vowel System (Iró Vawẹ́lì): Yoruba has 12 basic vowels divided into 7 Oral Vowels (a, e, ẹ, i, o, ọ, u) and 5 Nasal Vowels (an, ẹn, in, ọn, un).",
+        "Consonants (Iró Kọ́nsónántì): Consists of 18 consonants (b, d, f, g, gb, h, j, k, l, m, n, p [kp], r, s, ṣ, t, w, y). Notably lacks 'v', 'z', or 'ch' in standard orthography.",
+        "Syllable Structure: Syllables strictly follow V (Vowel), N (Syllabic Nasal), or CV (Consonant-Vowel) patterns. Words never end with a consonant.",
+        "Syllabic Nasals (Àránpè Asefero): The letters 'm' and 'n' functioning as independent tone-bearing units before a consonant (e.g., *m̀bọ̀*, *n̄lọ́*).",
+        "Tone Marks (Àmì Ohùn): Yoruba is a three-tone language: High Tone / Ohùn Èkè ( Do / ̀ ), Mid Tone / Ohùn Àrin ( Re / unmarked ), and Low Tone / Ohùn Ìsàlẹ̀ ( Mi / ̀ ). Tones change word meanings completely (e.g., *ogún* = twenty, *ogún* = legacy, *ògùn* = medicine, *ògún* = god of iron)."
+      ]
+    },
+    {
+      "topic": "Grammar and Syntax (Girama àti Ìfọ̀rọ̀shọ̀kan)",
+      "subtopics": [
+        "Nouns (Ọ̀rọ̀-Orúkọ) and Pronouns (Ọ̀rọ̀-Afinirọ́)",
+        "Verbs (Ọ̀rọ̀-Ìṣe), Adjectives (Ọ̀rọ̀-Àpèjúwe), and Prepositions",
+        "Grammatical Processes: Assimilation (Àpàpọ̀ Iro) and Elision (Ìfagbálẹ̀ Iró)"
+      ],
+      "keypoints": [
+        "Nouns (Ọ̀rọ̀-Orúkọ): Classified into concrete, abstract, compound, and derived nouns. Nouns do not carry grammatical gender markers.",
+        "Pronouns (Ọ̀rọ̀-Orúkọ Ọ̀rọ̀-Afinirọ́): Categorized into Subject Pronouns (*Mo*, *O*, *Ó*, *A*, *Ẹ*, *Wọ́n*) and Object Pronouns (*mí*, *ẹ́*, *i*, *wa*, *yín*, *wọn*). Expressing respect (*Ọ̀rọ̀ Ọ̀wọ̀*) uses plural pronouns (*Ẹ*, *Wọ́n*) for a single elder.",
+        "Elision (Ìfagbálẹ̀ Iró): Deletion of a vowel or consonant when two words combine to maintain flow (e.g., *Rà* + *ẹja* → *Rẹja*).",
+        "Assimilation (Àranmọ́ Iró): A sound taking on characteristics of a neighboring sound in continuous speech (e.g., *Ní* + *ilé* → *Nílé*).",
+        "Noun Derivation (Ìṣẹ̀dá Ọ̀rọ̀-Orúkọ): Forming nouns from verbs through prefixation (e.g., *Lọ* [go] + *I-* → *Ìlọ* [departure]) or reduplication (e.g., *Pẹja* → *Apeja*)."
+      ]
+    },
+    {
+      "topic": "Yoruba Orthography and Dialects (Àkọtọ́ àti Àwọn Èdè-Igbèko)",
+      "subtopics": [
+        "Evolution of Yoruba Orthography (Àkọtọ́ Yórùbá)",
+        "Standard Yoruba (Yórùbá Àgbájọ / Àwọ̀ṣe) vs. Regional Dialects",
+        "Rules of Diacritics and Tone Placement"
+      ],
+      "keypoints": [
+        "Orthography Standardization: Pioneered by Bishop Samuel Ajayi Crowther in the 19th century, culminating in the official orthography conventions established by the Yoruba Studies Association.",
+        "Standard Yoruba (Yórùbá Àgbájọ): The unified written dialect based largely on the Oyo/Ibadan dialect, used across education, literature, broadcasting, and national exams.",
+        "Dialectal Groups (Àwọn Ẹ̀ka-Èdè): Divided into Central Yoruba (Ife, Ijesha, Ekiti), Northwest Yoruba (Oyo, Ibadan, Egba, Lagos), and Southeast Yoruba (Owo, Ondo, Ijebu, Ikale).",
+        "Diacritic Rules (Àwọn Àmì Ìsàlẹ̀): Essential sub-dots used to differentiate under-dotted vowels/consonants: *ẹ* [ɛ], *ọ* [ɔ], and *ṣ* [ʃ].",
+        "Tone Placement Rules: Tone marks must be placed on vowels or syllabic nasals, never on standard consonants."
+      ]
+    },
+    {
+      "topic": "Yoruba Oral Literature (Litíréṣọ̀ Àtenudẹ́nu)",
+      "subtopics": [
+        "Folktales (Àlọ́ Àpajọ̀ / Àlọ́ Àpagbè) and Fables",
+        "Proverbs (Òwe Yórùbá) and Idioms (Àkànlò Èdè)",
+        "Oral Poetry: Ewi, Ijala, Oriki, and Alo Apamo (Riddles)"
+      ],
+      "keypoints": [
+        "Àlọ́ Àpagbè (Folktales with Songs): Narrative moral stories transmitted orally, featuring the Tortoise (*Ìjàpá*) as the primary trickster figure alongside his wife (*Yánnibo*).",
+        "Òwe Yórùbá (Proverbs): The core of Yoruba rhetoric, described as 'the horse of conversation' (*Òwe lẹṣin ọ̀rọ̀*). Used to resolve conflicts, teach wisdom, and preserve history.",
+        "Oríkì (Praise Poetry): Chanted epithets detailing the ancestral heritage, noble deeds, character, and spiritual lineage of individuals, towns, or families.",
+        "Ìjálá (Hunters' Chants): Ritualized oral poetry chanted by devotees of Ogun (god of iron) during hunting expeditions, festivals, and rites.",
+        "Àlọ́ Àpamọ̀ (Riddles): Interactive intellectual word puzzles that test children's observation skills, mental agility, and knowledge of nature."
+      ]
+    },
+    {
+      "topic": "Yoruba Written Literature (Litíréṣọ̀ Àkọsílẹ̀)",
+      "subtopics": [
+        "Pioneering Yoruba prose and novels",
+        "Themes in modern Yoruba poetry, drama, and prose",
+        "Prominent Yoruba authors (D.O. Fagunwa, Adebayo Faleti, etc.)"
+      ],
+      "keypoints": [
+        "Pioneering Prose Works: *Ògbójú Ọdẹ nínú Igbó Irúnmalẹ̀* by Daniel Orowole Fagunwa (1938), recognized as the first full-length novel written in Yoruba, blending allegory, folklore, and Christian ethics.",
+        "Fagunwa's Literary Legacy: Celebrated for rich magical-realism novels including *Igbó Olódùmarè*, *Ìrìnkèrindò nínú Igbó Elégbèje*, and *Àdìtú Olódùmarè*.",
+        "Key Yoruba Masters: Adebayo Faleti (renowned poet and playwright, author of *Nǹkan Lọ̀rọ̀ Sọ* and *Won Ro Pe Were Ni*), Oladejo Okediji (detective prose master, author of *Àjà Ló Lẹrù* and *Ọ̀ga Ni Bùkọ́lá*), and Akinwunmi Isola (*Ẹfúnṣetán Aníwúrà*).",
+        "Written Drama (Eré Oníṣèfè / Eré-Oktè): Plays depicting historical events, royal succession battles, traditional clashes with colonialism, and social reform.",
+        "Written Poetry (Ewì Àkọsílẹ̀): Modern structured verse exploring political criticism, loss of cultural identity, and moral decay."
+      ]
+    },
+    {
+      "topic": "Yoruba Culture, Customs, and Social Institutions (Àṣà àti Ìṣe Yórùbá)",
+      "subtopics": [
+        "Rites of Passage: Birth/Naming (Ìsọmọlórúkọ), Marriage (Ìgbéyàwó), and Funeral (Ìsìnkú)",
+        "Social Leadership: Monarchical System (Ọba, Ìwàrẹ̀fà, Ogboni)",
+        "Traditional Calendar, Festivals, and Cosmology (Ìṣẹ̀dálẹ̀ àti Ẹ̀sìn)"
+      ],
+      "keypoints": [
+        "Ìsọmọlórúkọ (Naming Ceremony): Conducted on the 8th day after birth using symbolic items like honey (*Onyin* - sweetness), salt (*Iyo* - preservation), palm oil (*Epo* - comfort), water (*Omi* - peace), and bitter kola (*Orógbó* - longevity).",
+        "Ìgbéyàwó (Marriage Rites): Multi-stage process including introduction (*Ìsihùn*), proposal/engagement (*Ìfọ̀rọ̀-sọ́ra / Ìtọ́rọ̀*), dowry payment (*Ẹ̀rù Ìgbéyàwó*), and veil-uncovering rites.",
+        "Monarchical Governance: Traditional rule headed by the *Ọba* (King), supported by high chiefs (*Àwọn Ògbóni* / *Kingmakers* like the Oyo Mesi), and age-grade societies (*Ẹgbẹ́*).",
+        "Traditional Festivals (Ọdún Ìbílẹ̀): Annual cultural celebrations including *Ọdún Ògún* (Iron god festival), *Ọdún Ọ̀ṣun* (Oshogbo river goddess festival), *Ọdún Eégún* (Masquerade festival honoring ancestors), and *Ọdún Ọ̀rúnmìlà / Ifá*.",
+        "Yoruba Cosmology: Supreme Deity (*Olódùmarè / Ọlọ́run*), messenger/crossroads deity (*Èṣù*), divination deity (*Ọ̀rúnmìlà*), personal destiny (*Orí*), and ancestor reverence."
+      ]
+    },
+    {
+      "topic": "Comprehension, Translation, and Composition (Àmọ̀dunjú, Ìgbédègarọ̀, àti Àròkọ)",
+      "subtopics": [
+        "Reading Comprehension (Kíkà àti Àmọ̀dunjú)",
+        "Translation Mechanics (Ìgbédègarọ̀: English to Yoruba & vice versa)",
+        "Essay Writing Techniques (Àròkọ)"
+      ],
+      "keypoints": [
+        "Comprehension Skills (Kíkà àti Àmọ̀dunjú): Extracting central themes, deducing implied meanings, explaining proverbs in context, and defining contextual vocabulary.",
+        "Translation Principles (Ìgbédègarọ̀): Translating functional meaning and cultural nuance rather than word-for-word substitution, adhering to standard Yoruba syntax (Subject-Verb-Object).",
+        "Types of Composition (Àwọn Ìrúpọ̀ Àròkọ): Narrative (*Àròkọ Onílabarí*), Descriptive (*Àròkọ Àpèjúwe*), Argumentative (*Àròkọ Àlyànjiyà*), Expository (*Àròkọ Àlàyé*), and Letter Writing (*Àkọsílẹ̀ Ẹ̀tọ́/Ìwé-Lẹ́tà*).",
+        "Orthographic Precision: Proper placement of sub-dots (*ẹ*, *ọ*, *ṣ*), accurate tone marking across all words, and correct word boundary mechanics (combining vs. separating prefixes and verbs)."
+      ]
+    }
+  ]
+}

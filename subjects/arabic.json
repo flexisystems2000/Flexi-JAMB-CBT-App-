@@ -1,0 +1,157 @@
+{
+  "subject": "Arabic Language",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Nawasikh and Grammatical Governance (النواسخ وقواعد النحو)",
+      "subtopics": [
+        "Inna and its sisters (إنّ وأخواتها)",
+        "Kana and its sisters (كان وأخواتها)",
+        "Inna and Kana's influence on Nominal Sentences (المبتدأ والخبر)"
+      ],
+      "keypoints": [
+        "Nominal Sentence Structure: A basic nominal sentence consists of a Subject (المبتدأ - Mubtada') and a Predicate (الخبر - Khabar), both inherently in the nominative case (مرفوع - Marfu').",
+        "Kana and its Sisters (كان وأخواتها): Incomplete verbs (أفعال ناقصة) including كان، أصبح، أضحى، ظلّ، بات، صار، ليس. They enter the nominal sentence, keeping the subject in the nominative case (المبتدأ مرفوع) while changing the predicate to the accusative case (الخبر منصوب).",
+        "Inna and its Sisters (إنّ وأخواتها): Incomplete particles (حروف مشبهة بالفعل) including إنّ، أنّ، كأنّ، لكنّ، ليت، لعلّ. They enter the nominal sentence, changing the subject to the accusative case (الاسم منصوب) while keeping the predicate in the nominative case (الخبر مرفوع).",
+        "Meanings of Particles: إنّ/أنّ (Emphasis), كأنّ (Likening/Comparison), لكنّ (Correction/Emendation), ليت (Wishful thinking/Unattainable desire), لعلّ (Hope/Expectation).",
+        "Types of Khabar (Types of Predicates): Singular word (مفرد), Verbal or Nominal Sentence (جملة فعلية/اسمية), or Semi-sentence (شبه جملة: prepositional phrase or adverb)."
+      ]
+    },
+    {
+      "topic": "Verb Conjugation, Tenses, and Morphology (الأسماء والأفعال والتصريف)",
+      "subtopics": [
+        "Classification of Verbs: Past (الماضي), Present (المضارع), Imperative (الأمر)",
+        "Transitive vs. Intransitive Verbs (الفعل اللازم والمتعدي)",
+        "Active and Passive Voice (الفعل المبني للمعلوم والمبني للمجهول)"
+      ],
+      "keypoints": [
+        "Verb Tenses: Past tense (الماضي - built on Fatha by default), Present tense (المضارع - prefixing an-ay-tu letters أ-ن-ي-ت), Imperative (الأمر - built on Sukun or deletion of weak vowel/nun).",
+        "Intransitive vs. Transitive: Intransitive verbs (الفعل اللازم) require only a subject to complete the sense (e.g., نام الطفل). Transitive verbs (الفعل المتعدي) require one or more direct objects (المفعول به).",
+        "Active and Passive Voice: In the passive form (المبني للمجهول), the subject is omitted and replaced by the Na'ib al-Fa'il (نائب الفاعل - Vice-Subject), which takes the nominative case.",
+        "Forming Passive Verbs: Past tense is formed by damma on the first letter and kasra on the penultimate letter (كُتِبَ); Present tense takes damma on the first letter and fatha on the penultimate letter (يُكْتَبُ).",
+        "Triliteral vs. Increased Root Verbs (الأفعال المجردة والمزيدة): Basic root forms (Form I - فَعَلَ) compared to derived forms (Forms II to X) that alter meaning (e.g., causation, reciprocity, request)."
+      ]
+    },
+    {
+      "topic": "Noun Inflections, Cases, and Derivations (إعراب الأسماء وتصريفها)",
+      "subtopics": [
+        "The Dual and Plural forms (المثنى والجموع)",
+        "The Five Nouns (الأسماء الخمسة)",
+        "Diptotes / Inflexible Nouns (الممنوع من الصرف)"
+      ],
+      "keypoints": [
+        "The Dual Form (المثنى): Refers to two entities. Raised with Alif (مرفوع بالألف e.g., طالبان), accusative/genitive with Ya' (من منصوب/مجرور بالياء e.g., طالبَينِ).",
+        "Sound Masculine Plural (جمع المذكر السالم): Raised with Waw (مرفوع بالواو e.g., مسلمون), accusative/genitive with Ya' (منصوب/مجرور بالياء e.g., مسلمين).",
+        "Sound Feminine Plural (جمع المؤنث السالم): Raised with Damma (مرفوع بالضمة), accusative and genitive both take Kasra (منصوب ومجرور بالكسرة e.g., مسلماتٍ).",
+        "The Five Nouns (الأسماء الخمسة): أَب، أَخ، حَم، فُو، ذُو. Raised with Waw (أبوك), accusative with Alif (أباك), genitive with Ya' (أبيك) when attached to a possessive noun/pronoun other than first-person Ya'.",
+        "Diptotes (الممنوع من الصرف): Nouns that do not take Tanween (nunation) and take Fatha in place of Kasra when in the genitive case, unless prefixed by 'Al' (ال) or used as a first part of Possessive Construction (الإضافة)."
+      ]
+    },
+    {
+      "topic": "Syntactic Accessories and Objects (المفاعيل والأشبه بها)",
+      "subtopics": [
+        "Direct Object (المفعول به) and Absolute Object (المفعول المطلق)",
+        "Object of Purpose (المفعول لأجله) and Adverbs of Time/Place (المفعول فيه)",
+        "State/Condition (الحال) and Specification (التمييز)"
+      ],
+      "keypoints": [
+        "Direct Object (المفعول به): Accusative noun indicating what or who received the verb's action.",
+        "Absolute Object (المفعول المطلق): A Verbal Noun (مصدر) derived from the same verb used for emphasis, specifying type, or counting instances (e.g., صَبَرَ صَبْراً جَمِيلاً).",
+        "Object of Cause/Purpose (المفعول لأجله): An accusative verbal noun explaining the reason or psychological motivation behind an action (e.g., قُمْتُ إِجْلاَلاً لِلْمُعَلِّمِ).",
+        "Adverb of Time and Place (المفعول فيه): Accusative noun specifying 'when' (ظرف زمان) or 'where' (ظرف مكان) an action occurred.",
+        "State/Condition (الحال) vs. Specification (التمييز): Haal is an indefinite accusative descriptor describing the agent/patient's state during the action (e.g., جَاءَ الطَّالِبُ ضَاحِكاً). Tamyeez clarifies an ambiguous noun, quantity, or relationship (e.g., اشْتَرَيْتُ عِشْرِينَ كِتَاباً)."
+      ]
+    },
+    {
+      "topic": "Prepositions, Possessives, and Appositives (الحروف والإضافة التوابع)",
+      "subtopics": [
+        "Genitive Particles (حروف الجر)",
+        "Possessive Construction (الإضافة: المضاف والمضاف إليه)",
+        "Appositives (التوابع: النعت، العطف، التوكيد، البدل)"
+      ],
+      "keypoints": [
+        "Prepositions (حروف الجر): Include مِنْ، إِلَى، عَنْ، عَلَى، فِي، الرُّبَّ، الْبَاء، الْكَاف، اللَّام. They render the following noun into the genitive case (مجرور).",
+        "Possessive Construction (الإضافة): Formed by Mudhaf (Possessed) + Mudhaf Ilayh (Possessor). The Mudhaf drops its tanween and 'Al-', taking case according to sentence position; the Mudhaf Ilayh is always genitive (مجرور).",
+        "Adjective/Qualificative (النعت / الصفة): Matches its preceding noun (المنعوت) in four aspects: case, gender, number, and definiteness/indefiniteness.",
+        "Conjunctions (العطف): Linking words (وَ، فَـ، ثُمَّ، أَوْ، أَمْ، بَلْ، لَكِنْ، لاَ) that make the subsequent word follow the case of the preceding word.",
+        "Emphasis (التوكيد) and Substitution (البدل): Tawkeed reinforces meaning (verbal or moral e.g., نَفْسُهُ، كُلُّهُ). Badal acts as a substitute follower that takes the exact grammatical position of the principal noun."
+      ]
+    },
+    {
+      "topic": "Arabic Rhetoric and Stylistics (البلاغة: البيان والبديع والمعاني)",
+      "subtopics": [
+        "Science of Clarity (علم البيان): Simile (التشبيه) and Metaphor (الاستعارة)",
+        "Metonymy / Allusion (المجاز والكناية)",
+        "Embellishments (علم البديع): Antithesis (الطباق), Paronomasia (الجناس), and Rhyme (السجع)"
+      ],
+      "keypoints": [
+        "Branches of Rhetoric: Rhetoric (البلاغة) is divided into 1) Ilm al-Bayan (Clarity of expression), 2) Ilm al-Ma'ani (Semantics and word order), and 3) Ilm al-Badi' (Textual ornaments).",
+        "Simile (التشبيه): Expressing shared traits between two entities using tools (أدوات التشبيه). Pillars: Mushabbah (Topic), Mushabbah bihi (Vehicle), Tool, and Point of Similarity.",
+        "Metaphor (الاستعارة): A simile with one of its core components (topic or vehicle) omitted. Subdivided into Metonymic/Implicit (استعارة مكنية) and Explicit (استعارة تصريحية).",
+        "Puns and Rhymes (علم البديع): Jinās (الجناس - similarity in word sound with different meanings, either complete or incomplete); Saj' (السجع - prose rhyme at phrase endings); Tibāq (الطباق - pairing antonyms in a sentence).",
+        "Kinaayah (الكناية): A phrase used where the literal meaning is possible, but an indirect associated meaning is intended."
+      ]
+    },
+    {
+      "topic": "Pre-Islamic and Early Islamic Literature (الأدب الجاهلي والإسلامي)",
+      "subtopics": [
+        "Characteristics and themes of Jahiliyyah Poetry",
+        "The Suspended Odes (المعلقات) and their prominent poets",
+        "Impact of Islam and the Qur'an on Arabic literature"
+      ],
+      "keypoints": [
+        "Pre-Islamic Literature (الأدب الجاهلي): Characterized by oral transmission, tribal pride (الفخر), eulogy (المديح), satire (الهجاء), elegy (الرثاء), and desert landscape descriptions (الوصف).",
+        "The Mu'allaqat (المعلقات): Seven (or ten) masterwork odes suspended on the Ka'bah walls. Famous poets: Imru' al-Qays (King of Poets), Antarah ibn Shaddad, Zuhayr ibn Abi Sulma, Labid ibn Rabiah.",
+        "Structure of Classical Qasidah: Begins with 'Nasib' (weeping over abandoned campsites and lost love), transitioning through travel hardships to the core theme (praise, boast, satire).",
+        "Early Islamic Literature (عصر صدر الإسلام): Transformed literature by curbing excessive tribal boastfulness and indecent romantic themes, replacing them with Islamic ethics, monotheism, and jihad.",
+        "Qur'anic Impact: The Qur'an served as the absolute pinnacle of Arabic eloquence (إعجاز القرآن), standardizing the dialect of Quraysh and unifying Arabic prose."
+      ]
+    },
+    {
+      "topic": "Umayyad and Abbasid Literary Eras (الأدب الأموي والعباسي)",
+      "subtopics": [
+        "Umayyad Poetry: Political satire (النقائض) and court poetry",
+        "Abbasid Golden Age: Innovations in prose, poetry, and Badi'",
+        "Prominent literary icons: Al-Mutanabbi, Abu Tammam, Al-Jahiz, Ibn al-Muqaffa"
+      ],
+      "keypoints": [
+        "Umayyad Era Literature: Revival of tribal rivalry, emergence of political parties (Khawarij, Shi'a, Umayyads), and development of Naqa'id (flyting/poetic duels between Jarir and Farazdaq).",
+        "Ghazal Movements: Platonic/Chaste Love poetry (الغزل العذري e.g., Jamil Buthaynah) vs. Urban/Overt Love poetry (الغزل الصريح e.g., Umar ibn Abi Rabi'ah).",
+        "Abbasid Golden Age: Flourishing of translated philosophical works, integration of logic into verse, and birth of new genres like urban lifestyle description and philosophical skepticism.",
+        "Prose Masters: Al-Jahiz (master of essay and satirical prose, author of *Kitab al-Hayawan* and *Al-Bukhala*); Ibn al-Muqaffa (translator of *Kalilah wa Dimnah* into literary Arabic).",
+        "Poetic Titans: Al-Mutanabbi (renowned for unmatched pride, wisdom, and eulogies for Sayf al-Dawla); Abu Tammam and Al-Buhturi (pioneers of the rhetorical Badi' style)."
+      ]
+    },
+    {
+      "topic": "Modern Arabic Literature and Movements (الأدب العربي الحديث والمعاصر)",
+      "subtopics": [
+        "The Arabic Renaissance (النهضة الأدبية)",
+        "Literary Schools: Neo-Classicism (المحافظون/البعث والإحياء) and Romanticism",
+        "Pioneers of Modern Arabic prose, drama, and free verse"
+      ],
+      "keypoints": [
+        "Nahda (Arabic Renaissance): 19th-20th century revival driven by printing presses (e.g., Bulaq), translation initiatives, educational missions to Europe, and modern journalism.",
+        "Al-Ba'th wa al-Ihya' (Neo-Classical School): Led by Mahmoud Sami al-Barudi, Ahmad Shawqi (Prince of Poets), and Hafiz Ibrahim. Aimed to resurrect classical Abbasid purity and meter while addressing contemporary sociopolitical themes.",
+        "Mahjar School (شعراء المهجر): Arab emigrant poets in the Americas (e.g., Kahlil Gibran, Mikhail Naimy, Iliya Abu Madi) forming *Al-Rabitah al-Qalamiyyah*, promoting free imagination, spiritual humanism, and broken classical structures.",
+        "Development of Prose & Drama: Tawfiq al-Hakim (pioneer of modern Arabic theater); Naguib Mahfouz (Nobel Laureate who elevated the Arabic novel through his Cairo Trilogy).",
+        "Free Verse Movement (الشعر الحر / التفعيلة): Started in the 1940s by Iraqi poets Badr Shakir al-Sayyab and Nazik al-Mala'ika, breaking traditional two-hemistich (شطرين) monorhyme poetry in favor of flexible metrical feet (تفعيلة)."
+      ]
+    },
+    {
+      "topic": "Comprehension, Translation, and Composition (الاستيعاب والترجمة والإنشاء)",
+      "subtopics": [
+        "Contextual comprehension and vocabulary deduction",
+        "Translation mechanics between Arabic and English",
+        "Essay writing rules, punctuation, and dictation (الإملاء)"
+      ],
+      "keypoints": [
+        "Comprehension Skills: Extracting main ideas, understanding rhetorical implications, identifying return of pronouns (عائد الضمير), and deducing contextual meanings of unfamiliar root words.",
+        "Translation Principles: Shifting from word-for-word literal translation to dynamic equivalence. Preserving verb-subject-object (VSO) order typical in formal Arabic compared to SVO in English.",
+        "Dictation Rules (قواعد الإملاء): Hamzah rules—Hamzat al-Wasl (connecting) vs. Hamzat al-Qat' (disjunctive); writing initial, medial (الهمزة المتوسطة - influenced by strongest vowel sequence: Kasra > Damma > Fatha > Sukun), and terminal Hamzah (الهمزة المتطرفة).",
+        "Alif Maqsurah vs. Mamdudah: Distinguishing terminal Alif forms (ى vs. ا) based on root origin in three-letter verbs/nouns (derived from Ya' vs. Waw).",
+        "Composition (الإنشاء): Structuring formal essays with introductions (مقدمة), body paragraphs (عَرض), transitional logical connectives (علاوة على ذلك، بناءً عليه، من ناحية أخرى), and concise conclusions (خاتمة)."
+      ]
+    }
+  ]
+}

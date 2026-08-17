@@ -1,0 +1,187 @@
+{
+  "subject": "Literature in English",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Introduction to Literature and Literary Genres",
+      "subtopics": [
+        "Definition, functions, and nature of literature",
+        "Major genres: Drama, Prose, and Poetry",
+        "Oral vs. Written literature"
+      ],
+      "keypoints": [
+        "Definition and Essence: Literature is a body of written or oral works that uses artistic and creative language to reflect human experiences, culture, values, societal issues, and emotions.",
+        "Functions of Literature: Educates, entertains, preserves culture, exposes societal ills (satire), promotes moral awareness, and enhances linguistic proficiency.",
+        "Major Genres: 1) Drama (action depicted through dialogue and performance); 2) Prose (narrative written in continuous prose/paragraphs); 3) Poetry (rhythmic, condensed language structured in stanzas).",
+        "Oral Literature (Orature): Spoken art forms passed down through generations before writing. Includes myths, legends, folktales, fables, riddles, proverbs, and oral poetry (e.g., panegyrics, dirges).",
+        "Written Literature: Formally documented works created by individual authors, characterized by fixed textual structure and individual stylistic authorship."
+      ]
+    },
+    {
+      "topic": "Elements and Types of Drama",
+      "subtopics": [
+        "Types of Drama (Tragedy, Comedy, Tragicomedy, Melodrama, Farce)",
+        "Structural elements: Plot, Setting, Characterization, and Theme",
+        "Dramatic conventions and stagecraft"
+      ],
+      "keypoints": [
+        "Types of Drama: Tragedy (serious play depicting the downfall of a noble protagonist due to a fatal flaw or hamartia); Comedy (humorous play with a happy ending); Tragicomedy (blends tragic elements with comedic resolution); Melodrama (sensational play with exaggerated emotions and stereotypic good vs. evil); Farce (broad comedy relying on absurd situations and physical humor).",
+        "Structural Elements: Plot (sequencing of events: Exposition, Rising Action, Climax, Falling Action, Resolution/Denouement); Setting (time, place, and social atmosphere); Characterization (development of characters through actions, dialogue, and stage directions).",
+        "Character Types: Protagonist (main character); Antagonist (opposing force/character); Dynamic character (undergoes change); Static character (remains unchanged); Foil (contrasts another character to highlight traits); Stock character (predictable stereotype).",
+        "Dramatic Conventions: Soliloquy (character speaks thoughts aloud alone on stage); Aside (brief speech directed to the audience unheard by other characters); Dramatic Irony (audience knows critical facts hidden from characters); Chorus (group commenting on the action and providing background context).",
+        "Stagecraft Concepts: Stage Directions (italicized instructions for movement and lighting); Costumes and Props; Proscenium Arch vs. Arena Stage (Theater-in-the-round)."
+      ]
+    },
+    {
+      "topic": "Elements and Forms of Poetry",
+      "subtopics": [
+        "Poetic forms: Sonnet, Ode, Elegy, Ballad, Epic, Lyric, Pastoral",
+        "Structural elements: Stanza, Meter, Rhyme, and Rhythm",
+        "Tone, Mood, Persona, and Diction"
+      ],
+      "keypoints": [
+        "Major Poetic Forms: Sonnet (14-line poem with fixed rhyme scheme); Ode (formal lyric poem addressed to a person, object, or concept); Elegy (mournful poem reflecting on death or loss); Ballad (narrative poem originally meant to be sung, structured in quatrains); Epic (long narrative poem recounting heroic deeds); Lyric (emotionally expressive short poem); Pastoral (celebrates rural life and shepherd ideals).",
+        "Types of Sonnets: Italian/Petrarchan Sonnet (Octave [ABBAABBA] + Sestet [CDECDE or CDCDCD]); Shakespearean/English Sonnet (Three Quatrains + Couplet [ABAB CDCD EFEF GG]); Spenserian Sonnet (Interlocking scheme [ABAB BCBC CDCD EE]).",
+        "Stanza Forms: Couplet (2 lines), Tercet (3 lines), Quatrain (4 lines), Quintet (5 lines), Sestet (6 lines), Octave (8 lines). Blank Verse (unrhymed iambic pentameter) vs. Free Verse (no fixed meter or rhyme).",
+        "Rhythm and Meter: Metric feet include Iamb (unstressed/stressed: da-DUM), Trochee (stressed/unstressed: DUM-da), Anapest (unstressed/unstressed/stressed), Dactyl (stressed/unstressed/unstressed). Common line lengths: Tetrameter (4 feet), Pentameter (5 feet), Hexameter (6 feet).",
+        "Tone, Persona, and Diction: Persona (the speaker assumed by the poet); Diction (choice and arrangement of words); Tone (poet's emotional stance); Mood (atmospheric feeling evoked in the reader)."
+      ]
+    },
+    {
+      "topic": "Elements and Forms of Prose",
+      "subtopics": [
+        "Types of Prose Fiction and Non-Fiction",
+        "Narrative perspective and point of view",
+        "Plot construction, conflict, and thematic development"
+      ],
+      "keypoints": [
+        "Types of Fiction: Novel (extended fictional narrative); Novella (intermediate length story); Short Story (concise fictional narrative centered on a single incident); Allegory (narrative where characters and events symbolize broader moral or political ideas); Fable (short story featuring animals conveying a moral lesson).",
+        "Types of Non-Fiction: Biography (account of a person's life written by another); Autobiography (account of a person's life written by themselves); Memoir (focused recollection of specific life events); Essay (short analytical or reflective prose composition).",
+        "Points of View (POV): First-Person POV ('I/We' - narrator is a character); Third-Person Omniscient ('He/She/They' - all-knowing narrator seeing into all characters' thoughts); Third-Person Limited (narrator sees into only one character's mind); Objective POV (narrator reports observable actions/speech without internal thoughts).",
+        "Types of Conflict: Internal Conflict (Man vs. Self - psychological struggle); External Conflict (Man vs. Man, Man vs. Nature, Man vs. Society, Man vs. Fate).",
+        "Narrative Techniques: Flashback (inserting past events into present chronology); Foreshadowing (subtle hints of future events); Stream of Consciousness (continuous flow of internal thought processes); Epistolary Format (narrative conveyed through letters or documents)."
+      ]
+    },
+    {
+      "topic": "Literary Devices and Figures of Speech",
+      "subtopics": [
+        "Figures of comparison and association",
+        "Figures of sound and rhythm",
+        "Figures of contrast, understatement, and exaggeration"
+      ],
+      "keypoints": [
+        "Comparison Devices: Simile (comparison using 'like' or 'as'); Metaphor (direct substitution comparison); Allegory (sustained extended metaphor); Conceit (elaborate, far-fetched comparison).",
+        "Association and Substitution: Metonymy (replacing an object/concept with a closely related term, e.g., 'The Crown' for monarchy); Synecdoche (using a part to represent the whole or vice versa, e.g., 'all hands on deck').",
+        "Sound Devices: Alliteration (repetition of initial consonant sounds); Assonance (repetition of internal vowel sounds); Consonance (repetition of final/internal consonant sounds); Onomatopoeia (words mimicking natural sounds, e.g., 'buzz', 'hiss'); Euphony (pleasing sounds) vs. Cacophony (harsh, discordant sounds).",
+        "Contrast and Paradox: Oxymoron (pairing contradictory words, e.g., 'deafening silence'); Paradox (a seemingly self-contradictory statement containing an underlying truth); Antithesis (juxtaposition of opposing ideas in balanced grammatical structure).",
+        "Exaggeration and Irony: Hyperbole (deliberate exaggeration for emphasis); Litotes (understatement using double negatives, e.g., 'not bad'); Irony (verbal, situational, or dramatic discrepancy between expectation and reality); Satire (use of humor, irony, or ridicule to criticize human vice or societal flaws)."
+      ]
+    },
+    {
+      "topic": "Unseen Prose and Poetry Analysis",
+      "subtopics": [
+        "Techniques for analyzing unseen literary extracts",
+        "Identifying themes, tone, and literary devices in context",
+        "Answering critical evaluation questions"
+      ],
+      "keypoints": [
+        "Approaching Unseen Passages: Read the text at least twice—first for general meaning/gist, second for structural, stylistic, and deeper thematic analysis.",
+        "Identifying Speaker and Context: Determine who is speaking, to whom, where the scene is set, and what emotional state or situation prompts the narrative or poem.",
+        "Decoding Literary Devices in Context: Locate figures of speech and explain how they actively enhance meaning, imagery, tone, or characterization rather than merely naming them.",
+        "Analyzing Tone and Mood: Examine word choices (diction) and punctuation to identify whether the passage is satirical, elegiac, joyful, critical, anxious, or reflective.",
+        "Theme Extraction: Distinguish between the subject matter (what the passage is about) and the central theme (the underlying message or insight about life/society)."
+      ]
+    },
+    {
+      "topic": "African Drama (Selected Prescribed Texts)",
+      "subtopics": [
+        "Thematic concerns in African drama (colonialism, tradition vs. modernity, leadership)",
+        "Plot structure, setting, and cultural symbolism",
+        "Characterization and dramatic techniques"
+      ],
+      "keypoints": [
+        "Core Themes: Conflict between traditional African customs and Western influence; political corruption and governance failure; role of destiny vs. free will; women's empowerment and patriarchal oppression.",
+        "Dramatic Structure: Incorporation of indigenous African performance aesthetics—masquerades, traditional drumming, folk songs, proverbs, ritual incantations, and communal chorus.",
+        "Character Dynamics: Portrayal of traditional rulers, corrupt politicians, visionary youth, and custodians of ancestral heritage.",
+        "Cultural Symbolism: Use of shrines, royal regalia, sacred groves, and ritual objects to convey cultural identity and spiritual oversight.",
+        "Language and Style: Adaptation of English language to reflect local idioms, proverbs, and vernacular speech patterns (code-switching and transliteration)."
+      ]
+    },
+    {
+      "topic": "Non-African Drama (Selected Prescribed Texts)",
+      "subtopics": [
+        "Classical, Elizabethan, and Modern non-African drama",
+        "Thematic exploration (ambition, revenge, social class, morality)",
+        "Dramatic irony, tragic flaws, and stylistic features"
+      ],
+      "keypoints": [
+        "Historical Contexts: Classical Greek tragedy (fate vs. free will, hubris); Elizabethan drama (Shakespearean tragic structure, blank verse, royal power struggles); Modern Western drama (realism, absurdism, critique of middle-class materialism).",
+        "Thematic Explorations: Unchecked ambition and its destructive consequences; morality vs. expediency; rigid social class structures; madness and moral corruption.",
+        "Character Analysis: Tragic heroes possessing fatal flaws (hamartia); manipulators and villains; tragic realization/recognition (anagnorisis) and reversal of fortune (peripeteia).",
+        "Dramatic Devices: Soliloquies revealing internal psychological conflict; comic relief alleviating high tension; subplots mirroring the main plot action.",
+        "Stage and Dialogue Mechanics: Use of rhyming couplets, poetic cadence, realistic prose dialogue, and detailed stage directions shaping performance interpretation."
+      ]
+    },
+    {
+      "topic": "African Prose (Selected Prescribed Novels)",
+      "subtopics": [
+        "Post-colonial literature, social realism, and identity",
+        "Plot development, narrative voice, and setting",
+        "Character relationships and symbolic motifs"
+      ],
+      "keypoints": [
+        "Thematic Focus: Colonial impact and cultural erosion; post-independence disillusionment and political dictatorship; gender roles and female agency; rural-urban migration challenges.",
+        "Narrative Styles: Use of Third-Person Omniscient voice blended with oral storytelling traditions; inclusion of folktales, proverbs, and local mythologies.",
+        "Character Development: Tragic custodians of tradition unable to adapt; corrupt civil servants; resilient female protagonists breaking oppressive social norms.",
+        "Symbolism and Motifs: Natural elements (seasons, rivers, droughts), ancestral land, and colonial monuments symbolizing historical transitions.",
+        "Socio-Political Realism: Mirroring real historical events, military coups, civil conflicts, and economic struggles across post-colonial African nations."
+      ]
+    },
+    {
+      "topic": "Non-African Prose (Selected Prescribed Novels)",
+      "subtopics": [
+        "Historical, gothic, allegorical, and modern prose",
+        "Thematic concerns (racial injustice, class warfare, dystopian control)",
+        "Narrative craft, symbolism, and characterization"
+      ],
+      "keypoints": [
+        "Genre Variations: Victorian realism (industrialization and poverty); American classics (race, the American Dream, moral integrity); Dystopian/Allegorical fiction (totalitarian control, human nature).",
+        "Major Themes: Class distinction and social mobility; racial prejudice and systemic injustice; loss of innocence; totalitarianism and suppression of freedom.",
+        "Narrative Craft: Use of unreliable narrators, complex multi-layered plots, symbolism (e.g., green light, mockingbird, scarlet letter), and stream-of-consciousness techniques.",
+        "Character Dynamics: Individual vs. society struggles; moral degradation vs. spiritual redemption; societal outsiders challenging established norms.",
+        "Setting and Atmosphere: Setting as a character (gothic mansions, oppressive plantations, industrial cities, dystopian states) driving plot action and mood."
+      ]
+    },
+    {
+      "topic": "African Poetry (Selected Prescribed Poems)",
+      "subtopics": [
+        "Themes of negritude, anti-colonial struggle, and cultural pride",
+        "Post-independence disillusionment, social critique, and nature",
+        "Poetic devices, imagery, and structural analysis"
+      ],
+      "keypoints": [
+        "Historical Phases: 1) Pioneer/Negritude Poetry (celebrating African identity, roots, and resisting colonial assimilation); 2) Anti-Colonial/Liberation Poetry (militant resistance and freedom struggle); 3) Post-Independence Poetry (critique of corruption, tyranny, civil wars, and poverty).",
+        "Imagery and Metaphor: Frequent drawing upon African flora, fauna, geography, ancestral spirits, drums, and traditional rituals.",
+        "Structural Features: Use of oral poetic styles—call-and-response patterns, incantatory repetition, praise-song rhythms, and elegy forms.",
+        "Tone and Stance: Ranges from fiery defiance, sorrowful mourning (dirges), and satirical outrage to nostalgic reverence for ancestral tradition.",
+        "Key Stylistic Elements: Transliteration of indigenous idioms into English, use of refrain, vivid sensory imagery, and symbolism."
+      ]
+    },
+    {
+      "topic": "Non-African Poetry (Selected Prescribed Poems)",
+      "subtopics": [
+        "Romantic, Victorian, Modernist, and Post-Modern poetry",
+        "Universal themes (mortality, love, nature, war, transience)",
+        "Diction, rhyme schemes, metric structure, and symbolism"
+      ],
+      "keypoints": [
+        "Literary Movements: Romanticism (awe of nature, emotion, individualism); Victorian Poetry (faith vs. doubt, industrialization, morality); Modernism (fragmentation, disillusionment after World Wars, free verse innovation).",
+        "Core Themes: Transience of human life and art's immortality; destructive futility of war; spiritual conflict and love; industrial encroachment on nature.",
+        "Form and Structure: Mastery of strict metric forms (iambic pentameter, sonnets, villanelles) alongside modern free verse experimentation.",
+        "Poetic Devices: Complex extended metaphors, classical/biblical illusions, vivid visual and auditory imagery, paradoxical statements, and deliberate enjambment.",
+        "Tone and Mood: Ranges from serene nature worship and romantic devotion to grim anti-war irony, existential melancholy, and philosophical reflection."
+      ]
+    }
+  ]
+}

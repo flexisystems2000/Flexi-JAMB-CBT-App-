@@ -1,0 +1,161 @@
+{
+  "subject": "Use of English",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Comprehension and Summary Writing",
+      "subtopics": [
+        "Critical reading, literal meaning, and inference",
+        "Identifying main ideas, topic sentences, and supporting details",
+        "Summary writing techniques and conciseness"
+      ],
+      "keypoints": [
+        "Reading Strategies: Skimming involves reading quickly to grasp the general idea or gist of a passage; Scanning involves searching for specific keywords, facts, dates, or terms without reading every word.",
+        "Literal vs. Inferential Comprehension: Literal questions test information directly stated in the text; Inferential questions require logical deductions based on context, tone, mood, and implied meaning.",
+        "Tone, Mood, and Writer's Purpose: Tone reflects the author's attitude towards the subject (e.g., sarcastic, objective, pessimistic, optimistic); Mood refers to the atmosphere created for the reader; Purpose indicates why the passage was written (e.g., to inform, persuade, entertain, or criticize).",
+        "Structure of Passages: Main ideas are typically encapsulated in topic sentences (usually at the beginning or end of paragraphs), while supporting details provide evidence, illustrations, or elaboration.",
+        "Summary Writing Rules: 1) Express main points strictly in full, clear, and grammatical sentences. 2) Avoid inclusion of personal opinions, background knowledge, or unstated facts. 3) Omit illustrations, examples, repetitions, and figures of speech to ensure maximum conciseness."
+      ]
+    },
+    {
+      "topic": "Grammatical Structure and Parts of Speech",
+      "subtopics": [
+        "Nouns, pronouns, verbs, and verb forms",
+        "Adjectives, adverbs, prepositions, and conjunctions",
+        "Tense, aspect, and voice"
+      ],
+      "keypoints": [
+        "Nouns and Pronouns: Nouns are naming words categorized into Proper, Common, Abstract, Collective, and Concrete. Pronouns replace nouns and must agree in person, number, and gender (e.g., Subjective: I/they, Objective: me/them, Possessive: mine/theirs, Reflexive: myself/themselves).",
+        "Verbs and Auxiliaries: Main verbs express action or state of being; Auxiliary verbs (be, do, have, modal verbs like can, must, should) assist main verbs to express tense, aspect, mood, or permission.",
+        "Adjectives and Adverbs: Adjectives modify nouns or pronouns and follow standard order (Opinion, Size, Age, Shape, Color, Origin, Material, Purpose). Adverbs modify verbs, adjectives, or other adverbs, indicating time, manner, place, frequency, or degree.",
+        "Prepositions and Conjunctions: Prepositions show spatial, temporal, or logical relationships between nouns and other words (e.g., in, at, on, despite, with). Conjunctions join words, phrases, or clauses (Coordinating: FANBOYS; Subordinating: because, although, since; Correlative: either...or, neither...nor).",
+        "Tense and Aspect: Present, Past, and Future tenses interact with Simple, Continuous (Progressive), Perfect, and Perfect Continuous aspects to indicate time and completion of actions.",
+        "Active and Passive Voice: Active voice emphasizes the doer of the action (e.g., 'The teacher marked the test'); Passive voice emphasizes the recipient of the action (e.g., 'The test was marked by the teacher')."
+      ]
+    },
+    {
+      "topic": "Grammatical Rules: Concord and Modals",
+      "subtopics": [
+        "Rules of Subject-Verb Agreement (Concord)",
+        "Modal auxiliary verbs and mood",
+        "Common concord pitfalls and exceptions"
+      ],
+      "keypoints": [
+        "Basic Concord Rule: A singular subject requires a singular verb; a plural subject requires a plural verb (e.g., 'The boy plays', 'The boys play').",
+        "Compound and Intervening Concord: Subjects joined by 'and' take plural verbs except when referring to a single entity (e.g., 'Rice and beans is my favorite meal'). Words like 'along with', 'as well as', 'together with' do not make a subject plural; the verb agrees with the primary subject.",
+        "Correlative Concord: When subjects are joined by 'either...or', 'neither...nor', or 'not only...but also', the verb agrees in number with the nearest subject (Rule of Proximity).",
+        "Indefinite and Collective Pronouns: Words like 'everyone', 'somebody', 'each', 'either', and 'neither' take singular verbs. Collective nouns take singular verbs when acting as a unified unit, but plural verbs when individual members act separately.",
+        "Mandatory Subjunctive Concord: Structures expressing wish, demand, recommendation, or hypothetical conditions use the base form of the verb regardless of subject (e.g., 'I insist that he be present', 'If I were you').",
+        "Modal Auxiliaries: Modals (can, could, may, might, shall, should, will, would, must) express ability, obligation, necessity, or probability, and are always followed by the bare infinitive form of a verb."
+      ]
+    },
+    {
+      "topic": "Sentence Patterns, Clauses, and Syntactic Structures",
+      "subtopics": [
+        "Sentence types by structure and purpose",
+        "Grammatical phrases and structural clauses",
+        "Direct and indirect (reported) speech"
+      ],
+      "keypoints": [
+        "Sentence Classification by Structure: Simple Sentence (one independent clause); Compound Sentence (two or more independent clauses joined by coordinating conjunctions); Complex Sentence (one independent clause + at least one dependent clause); Compound-Complex Sentence.",
+        "Sentence Types by Function: Declarative (statements), Interrogative (questions), Imperative (commands/requests), and Exclamatory (strong emotion).",
+        "Grammatical Phrases: Groups of words without a finite verb functioning as a single part of speech (Noun phrase, Verb phrase, Adjectival phrase, Adverbial phrase, Prepositional phrase).",
+        "Grammatical Clauses: Groups of words containing a subject and a finite verb. Dependent clauses include: Noun Clause (acts as subject/object), Adjectival Clause (qualifies a noun, introduced by relative pronouns), and Adverbial Clause (modifies verbs/adjectives, indicating time, place, condition, reason, concession, manner).",
+        "Reported Speech Transformations: Direct speech changes to indirect speech by shifting tenses back (Present Simple to Past Simple), altering pronouns, and updating time/place references (e.g., 'now' becomes 'then', 'today' becomes 'that day', 'here' becomes 'there')."
+      ]
+    },
+    {
+      "topic": "Lexis and Vocabulary Development",
+      "subtopics": [
+        "Synonyms, antonyms, and words nearest in meaning",
+        "Homonyms, homophones, and homographs",
+        "Idioms, phrasal verbs, and figures of speech"
+      ],
+      "keypoints": [
+        "Synonyms and Antonyms: Synonyms are words with similar meanings depending on context; Antonyms are words opposite in meaning. Contextual awareness is crucial as meaning shifts across different registers.",
+        "Word Relationships: Homonyms (words spelled and pronounced alike but with different meanings); Homophones (words pronounced alike but spelled differently, e.g., 'principal' vs. 'principle'); Homographs (words spelled alike but pronounced differently).",
+        "Idioms and Figurative Expressions: Fixed expressions whose meaning cannot be deduced from the literal definitions of individual words (e.g., 'barking up the wrong tree', 'burn the midnight oil').",
+        "Phrasal Verbs: Combinations of a verb and a particle (preposition or adverb) that create a meaning distinct from the original verb (e.g., 'carry out' = execute, 'give up' = surrender, 'look down on' = despise).",
+        "Figures of Speech: Literary tools enhancing language—Simile (explicit comparison using 'as' or 'like'), Metaphor (direct comparison), Personification (giving human traits to non-human entities), Hyperbole (exaggeration), Irony (saying the opposite of what is meant), Oxymoron (contradictory terms paired together)."
+      ]
+    },
+    {
+      "topic": "Registers and Domain-Specific Vocabulary",
+      "subtopics": [
+        "Commercial and financial registers",
+        "Legal, political, and administrative registers",
+        "Medical, scientific, and technical registers"
+      ],
+      "keypoints": [
+        "Concept of Register: Register refers to the specific choice of words, jargon, and tone appropriate to a particular field, discipline, profession, or social setting.",
+        "Law and Administration: Terms such as 'plaintiff', 'defendant', 'affidavit', 'subpoena', 'prosecution', 'verdict', 'jurisdiction', and 'statute'.",
+        "Commerce, Finance, and Business: Vocabulary including 'dividend', 'assets', 'liabilities', 'inflation', 'collateral', 'monopoly', 'audit', 'portfolio', and 'liquidation'.",
+        "Medicine and Health Sciences: Terminology such as 'diagnosis', 'prognosis', 'symptom', 'quarantine', 'therapy', 'chronic', 'outpatient', and 'sterilization'.",
+        "Science, Technology, and ICT: Terms including 'algorithm', 'hardware', 'software', 'encryption', 'bandwidth', 'hypothesis', 'photosynthesis', and 'catalyst'.",
+        "Mass Media and Communications: Words like 'editorial', 'censorship', 'broadcasting', 'journalism', 'columnist', 'circulation', and 'correspondent'."
+      ]
+    },
+    {
+      "topic": "Punctuation, Capitalization, and Mechanics",
+      "subtopics": [
+        "Standard rules of punctuation marks",
+        "Capitalization rules",
+        "Spelling conventions and structural mechanics"
+      ],
+      "keypoints": [
+        "Punctuation Marks - Full Stop, Comma, and Semicolon: Full Stop marks complete sentences and abbreviations; Comma separates items in a list, sets off non-essential clauses, and prevents ambiguity; Semicolon links independent clauses without conjunctions or separates complex list items.",
+        "Colon, Dash, and Hyphen: Colon introduces lists, explanations, or quotes; Dash indicates a sudden shift in thought; Hyphen joins compound words (e.g., 'well-known', 'father-in-law') and numbers.",
+        "Apostrophe Usage: Indicates possession (e.g., 'the girl's book' [singular], 'the girls' books' [plural]) and contraction (e.g., 'don't', 'it's' = it is). Avoid using apostrophes for simple plurals or possessive pronouns (its, theirs, yours).",
+        "Quotation Marks: Enclose direct speech, titles of short works, or words used in a special sense. Punctuation placement follows standardized conventions.",
+        "Capitalization Conventions: First letter of sentences, proper nouns (names, places, languages), days/months, titles of honor preceding names, and major words in book/article titles.",
+        "Spelling Rules and Exceptions: Prefixes and suffixes altering base words (e.g., 'i before e except after c'), doubling final consonants before suffixes starting with vowels (e.g., 'begin' -> 'beginning'), and distinguishing British vs. American spellings (e.g., 'colour' vs. 'color', 'centre' vs. 'center')."
+      ]
+    },
+    {
+      "topic": "Oral English: Vowel Sounds",
+      "subtopics": [
+        "Monophthongs (pure vowels: short and long)",
+        "Diphthongs (gliding vowels)",
+        "Phonetic symbols and vowel identification"
+      ],
+      "keypoints": [
+        "Pure Vowel Classification: 12 monophthongs categorized into short vowels (/ɪ/, /e/, /æ/, /ɒ/, /ʊ/, /ʌ/, /ə/) and long vowels marked with length marks (/i:/, /ɑ:/, /ɔ:/, /u:/, /ɜ:/).",
+        "Front Vowels: /i:/ (as in 'seat', 'key'), /ɪ/ (as in 'sit', 'village'), /e/ (as in 'bed', 'many'), /æ/ (as in 'cat', 'plait').",
+        "Central Vowels: /ʌ/ (as in 'cup', 'blood'), /ɜ:/ (as in 'bird', 'nurse', 'work'), /ə/ (Schwa - weak unstressed vowel as in 'about', 'teacher').",
+        "Back Vowels: /ɑ:/ (as in 'father', 'calm'), /ɒ/ (as in 'pot', 'what'), /ɔ:/ (as in 'port', 'saw', 'bought'), /ʊ/ (as in 'put', 'foot'), /u:/ (as in 'boot', 'through').",
+        "Diphthongs (8 Gliding Vowels): Combinations of two vowel sounds within one syllable. Centering Diphthongs ending in /ə/: /ɪə/ ('fear'), /eə/ ('fair'), /ʊə/ ('poor'). Closing Diphthongs ending in /ɪ/: /eɪ/ ('bay'), /aɪ/ ('buy'), /ɔɪ/ ('boy'). Closing Diphthongs ending in /ʊ/: /əʊ/ ('go'), /aʊ/ ('cow')."
+      ]
+    },
+    {
+      "topic": "Oral English: Consonant Sounds and Silent Letters",
+      "subtopics": [
+        "Voiced and voiceless consonants",
+        "Place and manner of articulation",
+        "Silent letters and consonant clusters"
+      ],
+      "keypoints": [
+        "Voiced vs. Voiceless Consonants: Voiced consonants cause vocal cord vibration (e.g., /b/, /d/, /g/, /v/, /z/, /ð/, /ʒ/, /dʒ/); Voiceless consonants produce no vocal cord vibration (e.g., /p/, /t/, /k/, /f/, /s/, /θ/, /ʃ/, /tʃ/).",
+        "Consonant Pairs to Distinguish: /θ/ ('thin', 'path') vs. /ð/ ('this', 'clothe'); /ʃ/ ('shoe', 'nation') vs. /ʒ/ ('measure', 'vision'); /tʃ/ ('church', 'catch') vs. /dʒ/ ('judge', 'badge').",
+        "Plosives, Fricatives, and Affricates: Plosives (/p, b, t, d, k, g/) involve complete closure and sudden release of air; Fricatives (/f, v, θ, ð, s, z, ʃ, ʒ, h/) involve partial obstruction producing friction; Affricates (/tʃ, dʒ/) combine a plosive and a fricative.",
+        "Nasals and Approximants: Nasals (/m, n, ŋ/ where /ŋ/ occurs in 'sing', 'bank'); Lateral (/l/); Frictionless Continuant (/r/); Semi-vowels (/w/, /j/ as in 'yes', 'queue').",
+        "Silent Letters: Letters present in spelling but omitted in pronunciation. Examples: Silent 'b' ('doubt', 'comb'), Silent 'k' ('know', 'knee'), Silent 'p' ('psalm', 'receipt'), Silent 't' ('castle', 'listen'), Silent 'w' ('write', 'sword'), Silent 'g'/'gh' ('sign', 'high')."
+      ]
+    },
+    {
+      "topic": "Oral English: Stress, Intonation, and Rhymes",
+      "subtopics": [
+        "Syllable division and primary stress placement",
+        "Emphatic stress and sentence meaning",
+        "Intonation patterns (falling and rising tunes) and rhyming words"
+      ],
+      "keypoints": [
+        "Syllable Structure and Primary Stress: Words consist of one or more syllables. Primary stress is marked by higher pitch, greater loudness, and longer duration on the stressed syllable.",
+        "Word Stress Rules: 1) Two-syllable nouns/adjectives usually stress the first syllable ('PREsent', 'CLEver'); 2) Two-syllable verbs usually stress the second syllable ('preSENT', 'deCIDE'); 3) Words ending in '-tion', '-sion', '-ic' stress the penult (second to last syllable); 4) Words ending in '-ate', '-fy', '-ity' stress the antepenult (third to last syllable).",
+        "Emphatic Stress: Special stress placed on a specific word in a sentence to highlight intent, contrast, or correct information. The capitalized or stressed word answers the target question directly while reversing implied statements.",
+        "Intonation Patterns: Falling Tune (\\) used in definitive statements, commands, wh-questions, and finality; Rising Tune (/) used in polar yes/no questions, listing items (before the final item), expressing doubt, or polite requests.",
+        "Rhyming Words: Words with identical ending vowel and consonant sounds regardless of spelling variations (e.g., 'rough' rhymes with 'stuff'; 'height' rhymes with 'white'; 'quay' rhymes with 'key')."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "subject": "Physics",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Measurements and Units",
+      "subtopics": [
+        "Fundamental and derived quantities/units",
+        "Dimensions of physical quantities",
+        "Measuring instruments and error analysis"
+      ],
+      "keypoints": [
+        "Fundamental Quantities and SI Units: Basic physical quantities independent of others are Mass (kilogram, kg), Length (metre, m), Time (second, s), Electric Current (ampere, A), Temperature (kelvin, K), Amount of Substance (mole, mol), and Luminous Intensity (candela, cd).",
+        "Derived Quantities and Units: Formulated by combining fundamental quantities via multiplication or division. Examples include Velocity (m/s), Acceleration (m/s^2), Force (Newton = kg·m/s^2), Work/Energy (Joule = kg·m^2/s^2), Power (Watt = kg·m^2/s^3), and Pressure (Pascal = kg/(m·s^2)).",
+        "Dimensional Analysis Expressions: Dimensional representations express quantities in terms of mass [M], length [L], and time [T]. Examples: Velocity = [L T^-1]; Acceleration = [L T^-2]; Force = [M L T^-2]; Work/Energy = [M L^2 T^-2]; Power = [M L^2 T^-3]; Pressure/Stress = [M L^-1 T^-2]; Density = [M L^-3].",
+        "Applications of Dimensional Analysis: 1) Checking the dimensional consistency/homogeneity of physical equations (every additive term must share identical dimensions). 2) Deriving relationships between physical variables. Note: Dimensionless constants (e.g., 2π, pure ratios like strain and refractive index) cannot be determined using dimensional analysis.",
+        "Precision Instruments and Vernier Calipers: Vernier calipers measure internal/external diameters and depths with a precision of 0.01 cm (0.1 mm). Main scale reading + (Vernier scale coincidence line * 0.01 cm).",
+        "Micrometer Screw Gauge Precision: Used for measuring small thicknesses and wire diameters with a precision of 0.001 cm (0.01 mm). Total reading = Main sleeve scale + (Thimble scale coincidence line * 0.01 mm). Pitch = distance advanced per full revolution.",
+        "Errors in Measurement: Systematic errors (due to faulty instruments or zero error) consistently shift readings in one direction and are corrected by calibration or adjusting for zero error. Random errors arise from unpredictable environmental fluctuations and human observation limits, minimized by taking multiple trial readings and averaging."
+      ]
+    },
+    {
+      "topic": "Scalars and Vectors",
+      "subtopics": [
+        "Scalar vs Vector quantities",
+        "Vector addition, subtraction, and resolution",
+        "Relative velocity and equilibrium of forces"
+      ],
+      "keypoints": [
+        "Definitions and Classification: Scalars possess magnitude only (e.g., Mass, Distance, Speed, Temperature, Energy, Work, Power, Electric Potential, Pressure). Vectors possess both magnitude and direction and obey vector algebra rules (e.g., Displacement, Velocity, Acceleration, Force, Momentum, Impulse, Electric Field Intensity, Magnetic Field Strength).",
+        "Vector Addition and Resultants: Parallel vectors pointing in the same direction add directly (R = A + B). Antiparallel vectors subtract (R = A - B). Perpendicular vectors form a right triangle: Resultant magnitude R = sqrt(A^2 + B^2) and direction θ = tan^-1(B / A) relative to vector A.",
+        "Parallelogram and Triangle Laws of Vectors: Parallelogram Law: If two vectors are represented in magnitude and direction by adjacent sides of a parallelogram drawn from a point, their resultant is represented by the diagonal passing through that point. Magnitude R = sqrt(A^2 + B^2 + 2*A*B*cos θ), direction α = sin^-1[(B * sin θ) / R].",
+        "Resolution of Vectors into Components: Any vector V acting at angle θ to the horizontal can be resolved into two mutually perpendicular components: Horizontal component V_x = V * cos θ; Vertical component V_y = V * sin θ.",
+        "Coplanar Vectors System Resultant: To find the resultant of multiple coplanar vectors: 1) Resolve each vector into X and Y components. 2) Sum all horizontal components ΣF_x and vertical components ΣF_y. 3) Compute total resultant R = sqrt((ΣF_x)^2 + (ΣF_y)^2). 4) Find angle θ = tan^-1(|ΣF_y| / |ΣF_x|).",
+        "Equilibrium of Coplanar Forces: A body is in static equilibrium under coplanar forces if: 1) Translational equilibrium: Vector sum of all forces is zero (ΣF_x = 0 and ΣF_y = 0). 2) Rotational equilibrium: Vector sum of all moments about any arbitrary axis is zero (ΣM = 0).",
+        "Lami's Theorem for Three Concurrent Forces: If three coplanar concurrent forces F1, F2, and F3 acting on a point keep it in equilibrium, then each force is proportional to the sine of the angle between the other two forces: F1 / sin α = F2 / sin β = F3 / sin γ.",
+        "Relative Velocity Concept: The relative velocity of object A with respect to object B is the vector difference between their individual velocities relative to a stationary observer: V_AB = V_A - V_B. For objects moving in opposite directions, relative speed = V_A + V_B; for same direction, relative speed = |V_A - V_B|."
+      ]
+    },
+    {
+      "topic": "Motion",
+      "subtopics": [
+        "Types of motion and linear kinematics",
+        "Equations of uniformly accelerated motion and graphs",
+        "Projectile motion and circular/rotational kinematics"
+      ],
+      "keypoints": [
+        "Classification of Motion Types: 1) Translational: Body moves as a whole along a path without rotation. 2) Rotational: Body spins around a fixed axis passing through it. 3) Oscillatory/Vibratory: Periodic to-and-fro movement about a central equilibrium position. 4) Random: Disordered movement without a predictable pattern (e.g., Brownian motion of gas molecules).",
+        "Kinematic Parameters: Distance (scalar, path length) vs Displacement (vector, straight-line distance from start to end). Speed (scalar rate of change of distance) vs Velocity (vector rate of change of displacement, v = ds/dt). Acceleration (vector rate of change of velocity, a = dv/dt).",
+        "Equations of Uniformly Accelerated Linear Motion: 1) v = u + a*t. 2) s = u*t + (1/2)*a*t^2. 3) v^2 = u^2 + 2*a*s. 4) s = [(u + v) / 2] * t. Where u = initial velocity, v = final velocity, a = constant acceleration, t = time, s = displacement.",
+        "Motion Under Gravity (Free Fall): Vertical acceleration a = g = 9.81 m/s^2 (or ~10 m/s^2). For upward motion, acceleration is -g (retardation); at maximum height, final vertical velocity v = 0. Time to reach maximum height t_up = u / g; Total time of flight = 2u / g. Maximum height H_max = u^2 / (2g).",
+        "Interpretation of Motion Graphs: 1) Displacement-Time Graph: Slope = Velocity. Horizontal line = Stationary; Straight inclined line = Uniform velocity; Curved line = Non-uniform velocity (acceleration). 2) Velocity-Time Graph: Slope = Acceleration; Area under curve = Total displacement.",
+        "Projectile Motion Components: Motion of a body launched into the air under gravity alone. Horizontal and vertical motions are independent. Horizontal velocity component remains constant (v_x = u * cos θ, a_x = 0). Vertical motion undergoes uniform gravitational acceleration (u_y = u * sin θ, a_y = -g).",
+        "Projectile Parameters Formulas: 1) Time of Flight T = (2 * u * sin θ) / g. 2) Maximum Height H_max = (u^2 * sin^2 θ) / (2g). 3) Horizontal Range R = (u^2 * sin 2θ) / g. Maximum range occurs when launch angle θ = 45° (where sin 2θ = 1).",
+        "Uniform Circular Motion Principles: Motion in a circular path of radius r at constant speed v. Linear velocity magnitude is constant, but direction continually changes, producing an acceleration directed toward the center. Angular velocity ω = θ / t = v / r = 2π / T = 2π*f.",
+        "Centripetal Acceleration and Force Formulas: Centripetal acceleration a_c = v^2 / r = ω^2 * r. Centripetal force required to sustain circular path F_c = m*a_c = (m * v^2) / r = m * ω^2 * r. Supplied by friction (cars on curves), tension (whirled strings), or gravity (orbiting satellites)."
+      ]
+    },
+    {
+      "topic": "Work, Energy, and Power",
+      "subtopics": [
+        "Work done by constant and variable forces",
+        "Forms of energy, work-energy theorem, and energy conservation",
+        "Power and efficiency of mechanical systems"
+      ],
+      "keypoints": [
+        "Scientific Definition of Work: Work W done by a constant force F causing displacement s is scalar product W = F · s = F * s * cos θ, where θ is the angle between force direction and displacement vector. Work is zero if force is perpendicular to displacement (θ = 90°), e.g., work done by centripetal force.",
+        "Work Done from Graphical Analysis: For a variable force, work done equals the total area under the Force-Displacement (F-s) graph.",
+        "Kinetic Energy (KE): Energy possessed by a body due to its velocity. KE = (1/2) * m * v^2 = p^2 / (2m), where p = m*v is linear momentum.",
+        "Potential Energy (PE): Energy stored in a body due to its state, position, or configuration. Gravitational Potential Energy PE = m * g * h (relative to reference datum). Elastic Potential Energy in stretched/compressed spring = (1/2) * k * x^2, where k is spring constant and x is extension.",
+        "Work-Energy Theorem: The net work done by all forces acting on a particle equals the change in its kinetic energy: W_net = ΔKE = (1/2)*m*v^2 - (1/2)*m*u^2.",
+        "Law of Conservation of Mechanical Energy: In an isolated system with conservative forces only (e.g., gravity, spring force, excluding friction and air drag), total mechanical energy remains constant: E_total = KE + PE = Constant. At maximum height, KE = 0 and PE is max; at ground level, PE = 0 and KE is max.",
+        "Definition and Formulas for Power: Power P is the rate of doing work or transferring energy. P = Work / Time = ΔE / Δt. Instantaneous power P = Force * Velocity = F * v * cos θ. SI unit is Watt (W = J/s). Mechanical unit: 1 Horsepower (hp) ≈ 746 Watts.",
+        "Efficiency of Mechanical Energy Transformation: Efficiency η = (Useful Energy Output / Total Energy Input) * 100% = (Useful Power Output / Total Power Input) * 100%. Due to dissipative forces (friction, heat sound), efficiency is strictly less than 100% in practical machines."
+      ]
+    },
+    {
+      "topic": "Newton's Laws of Motion and Impulse",
+      "subtopics": [
+        "Newton's three laws of motion",
+        "Linear momentum and impulse-momentum theorem",
+        "Conservation of linear momentum and elastic/inelastic collisions"
+      ],
+      "keypoints": [
+        "Newton's First Law (Law of Inertia): A body continues in its state of rest or uniform motion along a straight line unless acted upon by an external net force. Inertia is the natural resistance of a body to changes in its state of motion, directly measured by its mass.",
+        "Newton's Second Law: The rate of change of linear momentum of a body is directly proportional to the applied net force and takes place in the direction of the force. F = dp/dt = d(m*v)/dt. For constant mass m, F = m * a.",
+        "Newton's Third Law (Action and Reaction): To every action force, there is an equal and opposite reaction force. If body A exerts force F_AB on body B, body B exerts force F_BA = -F_AB on body A. Action-reaction pairs act on two different bodies and do not cancel each other out.",
+        "Linear Momentum Definition and Vector Nature: Momentum p = m * v. Vector quantity pointing in the direction of velocity. SI unit: kg·m/s or N·s.",
+        "Impulse and Impulse-Momentum Theorem: Impulse J is the product of a large force and the short time interval dt over which it acts: J = F * Δt. Impulse equals the net change in linear momentum: J = Δp = m*v - m*u. Equal to the area under a Force-Time graph.",
+        "Law of Conservation of Linear Momentum: In an isolated system free from external forces, the total linear momentum before interaction equals total linear momentum after interaction: m1*u1 + m2*u2 = m1*v1 + m2*v2.",
+        "Elastic Collisions Mechanics: Both total linear momentum AND total kinetic energy are conserved during collision. Relative speed of approach equals relative speed of separation: (u1 - u2) = -(v1 - v2). Example: Collisions between subatomic particles or ideal hard spheres.",
+        "Inelastic and Completely Inelastic Collisions: Total momentum is conserved, but total kinetic energy is NOT conserved (some KE transforms into heat, sound, or deformation energy). In a completely inelastic collision, bodies stick together after impact and move with a shared final velocity v_f = (m1*u1 + m2*u2) / (m1 + m2)."
+      ]
+    },
+    {
+      "topic": "Friction",
+      "subtopics": [
+        "Static and kinetic friction laws",
+        "Coefficient of friction and angle of friction/repose",
+        "Applications, advantages, and reduction of friction"
+      ],
+      "keypoints": [
+        "Origin and Nature of Friction: Contact force that opposes relative sliding motion between two touching surfaces. Acts parallel to the interface.",
+        "Static vs Kinetic (Dynamic) Friction: Static friction (f_s) opposes the tendency of motion for stationary objects; self-adjusting up to a maximum value called Limiting Friction (f_L). Kinetic friction (f_k) opposes actual relative motion and remains constant, with f_k < f_L.",
+        "Laws of Solid Friction: 1) Friction force acts parallel to contact surfaces in the direction opposing motion. 2) Magnitude of limiting friction is independent of apparent area of contact. 3) Friction force is independent of sliding speed over wide limits. 4) Limiting friction f_L is directly proportional to the normal reaction force N (f_L ∝ N).",
+        "Coefficient of Friction Formulas: Coefficient of static friction μ_s = Limiting Friction / Normal Reaction = f_L / N. Coefficient of kinetic friction μ_k = f_k / N. Since f_k < f_L, μ_k < μ_s. Dimensions: pure dimensionless ratio.",
+        "Friction on a Horizontal Surface: When pulling/pushing a mass m on a flat plane: Normal reaction N = m*g. Limiting friction f_L = μ * m * g. Acceleration when applied force P > f_L is a = (P - f_k) / m.",
+        "Friction on an Inclined Plane: For a body of mass m resting on a plane inclined at angle θ: Normal reaction N = m*g*cos θ. Component of weight pulling body down the incline = m*g*sin θ. Friction force required for equilibrium f = m*g*sin θ.",
+        "Angle of Repose / Angle of Friction (θ_r): The maximum angle of inclination of a rough plane at which a body placed on it just begins to slide down under its own weight. At this angle: f_L = m*g*sin θ_r and N = m*g*cos θ_r. Therefore, μ = f_L / N = tan θ_r.",
+        "Methods of Reducing Friction: 1) Applying lubricants (oils, grease, graphite) to separate contact surfaces. 2) Using ball/roller bearings to convert sliding friction to smaller rolling friction. 3) Streamlining body shapes to reduce fluid drag (air/water resistance). 4) Polishing contact surfaces to reduce microscopic roughness."
+      ]
+    },
+    {
+      "topic": "Simple Machines",
+      "subtopics": [
+        "Mechanical Advantage, Velocity Ratio, and Efficiency",
+        "Types of machines (Levers, Pulleys, Inclined Plane, Screw, Wheel and Axle, Gears)",
+        "Energy losses in machinery"
+      ],
+      "keypoints": [
+        "Fundamental Definitions of Machine Terms: Machine: Device enabling work to be done more conveniently by applying effort at one point to overcome a load at another point. Load (L): Force overcome by machine. Effort (E): Force applied to machine.",
+        "Mechanical Advantage (MA) Formula: MA = Load / Effort = L / E. MA depends on friction and varies with load. dimensionless ratio. MA > 1 means machine amplifies force.",
+        "Velocity Ratio (VR) Formula: VR = Distance moved by Effort (d_E) / Distance moved by Load (d_L) = d_E / d_L. Purely geometric ratio; independent of friction and constant for a specific machine configuration.",
+        "Efficiency (η) Relationship: Efficiency η = (Work Output / Work Input) * 100% = [(L * d_L) / (E * d_E)] * 100% = (MA / VR) * 100%. In ideal (frictionless) machines, Efficiency = 100% and MA = VR. In real machines, Efficiency < 100% and MA < VR.",
+        "Pulley Systems VR Principles: For a single fixed pulley, VR = 1 (changes force direction only). Single movable pulley, VR = 2. Block and Tackle pulley system: VR equals the total number of pulley wheels or individual rope segments supporting the movable block.",
+        "Inclined Plane Machine Parameters: Load raised vertically through height h while effort moves along length of plane l. VR = Length of Plane / Height of Plane = l / h = 1 / sin θ, where θ is inclination angle.",
+        "Wheel and Axle Mechanics: Effort applied to outer wheel radius R; load raised by axle radius r. VR = Radius of Wheel / Radius of Axle = R / r = Diameter_wheel / Diameter_axle.",
+        "Screw Jack and Hydraulic Press VR: Screw Jack: VR = Circumference of effort handle arm / Pitch of screw thread = (2 * π * R) / p. Hydraulic Press: VR = Area of large piston (A) / Area of small piston (a) = (R / r)^2 = (D / d)^2.",
+        "Gear Drives Mechanics: VR = Number of teeth on driven gear (N_driven) / Number of teeth on driver gear (N_driver) = N_out / N_in."
+      ]
+    },
+    {
+      "topic": "Gravitational Field",
+      "subtopics": [
+        "Newton's Law of Universal Gravitation",
+        "Gravitational field strength and acceleration due to gravity",
+        "Gravitational potential, satellite orbits, escape velocity, and Kepler's laws"
+      ],
+      "keypoints": [
+        "Newton's Universal Law of Gravitation: Every point mass attracts every other point mass in the universe with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers: F = G * (m1 * m2) / r^2.",
+        "Universal Gravitational Constant (G): G ≈ 6.674 x 10^-11 N·m^2/kg^2. Universal scalar constant; independent of medium, temperature, or chemical nature.",
+        "Gravitational Field Strength (g): Gravitational force per unit mass exerted on a small test mass: g = F / m = (G * M) / r^2. Vector quantity directed toward center of mass M. At Earth's surface (r = R_E), g_0 = (G * M_E) / R_E^2 ≈ 9.81 m/s^2.",
+        "Variation of Acceleration due to Gravity (g): 1) Altitude h above surface: g_h = (G * M) / (R + h)^2 = g_0 * [R / (R + h)]^2. Acceleration g decreases with height. 2) Depth d below surface: g_d = g_0 * (1 - d / R). Acceleration g decreases linearly to zero at Earth's center.",
+        "Gravitational Potential (V) and Potential Energy (U): Gravitational potential V at distance r is work done per unit mass in bringing a test mass from infinity to point r: V = - (G * M) / r (J/kg). Gravitational Potential Energy U = m * V = - (G * M * m) / r. Negative sign indicates an attractive field.",
+        "Orbital Velocity of Satellites: Satellite of mass m orbiting mass M at radius r = R + h: Gravitational force provides centripetal force -> (G*M*m)/r^2 = (m*v_orbit^2)/r. Orbital velocity v_orbit = sqrt((G * M) / r). Close to surface (r ≈ R), v_orbit = sqrt(g * R) ≈ 7.9 km/s.",
+        "Escape Velocity (v_esc): Minimum projection speed required for an object to escape a planet's gravitational field to infinity without further propulsion: Equating initial KE to gravitational binding energy -> (1/2)*m*v_esc^2 = (G*M*m)/R. Escape velocity v_esc = sqrt((2 * G * M) / R) = sqrt(2 * g * R) = sqrt(2) * v_orbit ≈ 11.2 km/s for Earth.",
+        "Kepler's Laws of Planetary Motion: 1) Law of Ellipses: Planets move in elliptical orbits with the Sun at one focus. 2) Law of Equal Areas: Line joining planet to Sun sweeps out equal areas in equal times (conservation of angular momentum). 3) Law of Periods: Square of orbital period T is directly proportional to cube of semi-major axis r: T^2 ∝ r^3, or T^2 / r^3 = (4 * π^2) / (G * M)."
+      ]
+    },
+    {
+      "topic": "Equilibrium of Bodies and Center of Gravity",
+      "subtopics": [
+        "Moment of a force and principle of moments",
+        "Center of gravity and center of mass",
+        "States of equilibrium and stability"
+      ],
+      "keypoints": [
+        "Moment of a Force (Torque): Turning effect produced by a force about a pivot point. Vector quantity equal to product of force magnitude and perpendicular distance from pivot to line of action: τ = Force * Perpendicular distance = F * d * sin θ. SI unit: N·m.",
+        "Couples and Torque of a Couple: Two equal, opposite, and parallel forces whose lines of action do not coincide. Produces pure rotational motion without translation. Torque of a couple = Magnitude of one force * Perpendicular distance between two forces = F * d.",
+        "Principle of Moments: For a body in rotational equilibrium, the sum of all clockwise moments about any arbitrary turning point equals the sum of all anticlockwise moments about the same point: Σ Torque_clockwise = Σ Torque_anticlockwise.",
+        "Center of Gravity (CG) vs Center of Mass (CM): Center of Mass: Single point where entire mass of body is concentrated. Center of Gravity: Single point through which the resultant gravitational force (weight) of the body acts. CG and CM coincide in uniform gravitational fields.",
+        "States of Equilibrium: 1) Stable Equilibrium: When slightly tilted, CG rises, increasing potential energy. Weight creates a restoring torque that returns body to original position. 2) Unstable Equilibrium: When slightly tilted, CG lowers, decreasing potential energy. Weight creates an overturning torque that moves body further away. 3) Neutral Equilibrium: When displaced, CG height and potential energy remain constant.",
+        "Factors Influencing Stability of a Body: 1) Height of Center of Gravity: Lower CG increases stability. 2) Base Area: Broader base area increases stability. A body topples over when vertical line of action from its CG falls outside its base area."
+      ]
+    },
+    {
+      "topic": "Fluids at Rest and in Motion",
+      "subtopics": [
+        "Density, relative density, and pressure in liquids",
+        "Archimedes' principle and law of floatation",
+        "Surface tension, capillarity, and fluid dynamics (Bernoulli/Viscosity)"
+      ],
+      "keypoints": [
+        "Density and Relative Density (Specific Gravity): Density ρ = Mass / Volume = m / V (kg/m^3). Relative Density RD = Density of substance / Density of pure water at 4°C = Mass of substance / Mass of equal volume of water. RD is dimensionless.",
+        "Fluid Pressure Laws and Formula: Pressure P = Normal Force / Area = F / A (Pascal, N/m^2). Liquid pressure at depth h: P = h * ρ * g. Independent of vessel shape or cross-sectional area. Total absolute pressure at depth h = P_atm + h*ρ*g.",
+        "Pascal's Principle: Pressure applied anywhere to an enclosed incompressible fluid is transmitted undiminished in all directions to every part of the fluid and container walls. Basis of hydraulic machinery: F1 / A1 = F2 / A2.",
+        "Archimedes' Principle: When a body is completely or partially immersed in a fluid, it experiences an upward buoyant force (upthrust) equal to the weight of the fluid displaced by the body: Upthrust U = Weight_fluid_displaced = V_submerged * ρ_fluid * g.",
+        "Law of Floatation: A floating body displaces its own weight of the fluid in which it floats. Weight of floating body = Weight of displaced fluid. Fraction of volume submerged V_submerged / V_total = ρ_body / ρ_fluid.",
+        "Surface Tension Principles: Force per unit length acting normally along an imaginary line drawn on a liquid surface: γ = Force / Length = F / L (N/m) or Energy per unit area = ΔE / ΔA (J/m^2). Caused by unbalanced cohesive intermolecular forces pulling surface molecules inward.",
+        "Capillarity and Cohesion/Adhesion: Cohesion: Attraction between like molecules. Adhesion: Attraction between unlike molecules. If Adhesion > Cohesion (e.g., water on glass), liquid wets glass, forms concave meniscus, and rises in capillary tube. If Cohesion > Adhesion (e.g., mercury on glass), liquid forms convex meniscus and depresses in capillary tube. Capillary rise h = (2 * γ * cos θ) / (r * ρ * g).",
+        "Viscosity and Stokes' Law: Viscosity η is internal friction in fluids opposing relative layer motion. Terminal velocity v_t of sphere in viscous fluid: v_t = [2 * r^2 * (ρ_sphere - ρ_fluid) * g] / (9 * η).",
+        "Bernoulli's Principle: For an incompressible, non-viscous fluid in streamlined flow, total energy per unit volume remains constant along a streamline: P + (1/2)*ρ*v^2 + ρ*g*h = Constant. High fluid velocity corresponds to low static pressure (e.g., aerodynamic lift on airplane wings, carburetor venturi)."
+      ]
+    },
+    {
+      "topic": "Temperature and Thermal Expansion",
+      "subtopics": [
+        "Thermometric properties and scale conversions",
+        "Thermal expansion of solids, liquids, and gases",
+        "Anomalous expansion of water"
+      ],
+      "keypoints": [
+        "Thermometric Properties: Physical characteristics that change continuously and measurably with temperature. Examples: Liquid column length (mercury/alcohol thermometer), Gas volume/pressure at constant parameters, Resistance of platinum wire (R_θ = R_0*(1 + α*θ)), EMF across thermocouple, Color/radiation spectrum.",
+        "Temperature Scale Conversions: Centigrade, Fahrenheit, and Kelvin fixed points: Ice point = 0°C = 32°F = 273.15 K; Steam point = 100°C = 212°F = 373.15 K. General conversion formula: (C - 0)/100 = (F - 32)/180 = (K - 273.15)/100.",
+        "Linear Expansivity of Solids (α): Fractional change in length per degree temperature change: α = ΔL / (L_0 * Δθ) = (L_2 - L_1) / [L_1 * (θ_2 - θ_1)]. Unit: K^-1 or °C^-1. Final length L_2 = L_1 * [1 + α * Δθ].",
+        "Area (Superficial) and Volume (Cubical) Expansivity: Area Expansivity β = ΔA / (A_0 * Δθ) ≈ 2*α. Volume Expansivity γ = ΔV / (V_0 * Δθ) ≈ 3*α. Relationship: α : β : γ = 1 : 2 : 3.",
+        "Real vs Apparent Expansivity of Liquids: Liquids expand along with their containers. Real Expansivity γ_real = Apparent Expansivity γ_apparent + Volume Expansivity of Container γ_vessel.",
+        "Anomalous Expansion of Water: Water contracts when heated from 0°C to 4°C, reaching its maximum density (1000 kg/m^3) and minimum volume at 4°C. Above 4°C, it expands normally. Preserves aquatic life during cold conditions as ice forms on top while water remains at 4°C beneath."
+      ]
+    },
+    {
+      "topic": "Gas Laws and Heat Energy",
+      "subtopics": [
+        "Boyle's, Charles', Pressure, and Ideal Gas Laws",
+        "Heat capacity and specific heat capacity (Calorimetry)",
+        "Latent heat and changes of state"
+      ],
+      "keypoints": [
+        "Boyle's Law: The volume V of a fixed mass of gas is inversely proportional to its pressure P, provided temperature remains constant: P ∝ 1/V => P1 * V1 = P2 * V2 (Isothermal process).",
+        "Charles' Law: The volume V of a fixed mass of gas is directly proportional to its absolute temperature T (in Kelvin), provided pressure remains constant: V ∝ T => V1 / T1 = V2 / T2 (Isobaric process).",
+        "Pressure (Gay-Lussac's) Law: The pressure P of a fixed mass of gas is directly proportional to its absolute temperature T, provided volume remains constant: P ∝ T => P1 / T1 = P2 / T2 (Isochoric process).",
+        "General Ideal Gas Equation: Combining gas laws yields (P1 * V1) / T1 = (P2 * V2) / T2. Equation of state for n moles: P * V = n * R * T, where R = 8.314 J/(mol·K) is universal gas constant. Absolute zero = 0 K = -273.15°C (molecular kinetic energy drops to zero).",
+        "Heat Capacity vs Specific Heat Capacity: Heat Capacity C: Heat energy required to raise the temperature of an entire body by 1 K (°C): C = Q / Δθ (J/K). Specific Heat Capacity c: Heat energy required to raise the temperature of unit mass (1 kg) of a substance by 1 K: c = Q / (m * Δθ) (J/(kg·K)). Heat gained/lost Q = m * c * Δθ.",
+        "Method of Mixtures (Calorimetry Principle): In an insulated container, Heat lost by hot bodies = Heat gained by cold bodies + Heat gained by calorimeter. (m_hot * c_hot * Δθ_loss) = (m_cold * c_cold * Δθ_gain) + (m_cal * c_cal * Δθ_gain).",
+        "Specific Latent Heat Definitions: Heat absorbed or released during a phase change at constant temperature. Specific Latent Heat of Fusion (L_f): Energy required to convert 1 kg of solid to liquid at melting point. Specific Latent Heat of Vaporization (L_v): Energy required to convert 1 kg of liquid to gas at boiling point. Q = m * L.",
+        "Evaporation vs Boiling Comparison: Evaporation: Occurs at any temperature, surface phenomenon, causes cooling, affected by draft/humidity/surface area. Boiling: Occurs at a fixed temperature (boiling point), bulk phenomenon, bubbles form throughout liquid, depends on ambient atmospheric pressure."
+      ]
+    },
+    {
+      "topic": "Heat Transfer and Thermodynamics",
+      "subtopics": [
+        "Conduction, Convection, and Radiation",
+        "Newton's law of cooling and Stefan-Boltzmann law",
+        "First and Second laws of thermodynamics"
+      ],
+      "keypoints": [
+        "Conduction Mechanism: Heat transfer through solids without bulk movement of matter. Primary mechanisms: lattice vibrational waves (phonons) and free electron diffusion (dominant in metals). Rate of heat flow Q/t = (k * A * ΔT) / L, where k is thermal conductivity.",
+        "Convection Mechanism: Heat transfer through fluids (liquids/gases) by actual bulk movement of heated fluid regions driven by density variations under gravity. Examples: Sea breeze (day: land heats up, air rises, sea breeze blows in) and Land breeze (night).",
+        "Thermal Radiation Principles: Transfer of thermal energy via electromagnetic waves (infrared) requiring no physical medium. Black body: Ideal surface absorbing all incident electromagnetic radiation and emitting maximum possible radiation at a given temperature.",
+        "Stefan-Boltzmann Law: Total radiant power emitted per unit surface area of a black body is directly proportional to the fourth power of its absolute temperature T: P/A = σ * T^4, where σ ≈ 5.67 x 10^-8 W/(m^2·K^4). For real body with emissivity e (0 ≤ e ≤ 1), Power P = e * σ * A * T^4.",
+        "Newton's Law of Cooling: Rate of heat loss by a body by natural convection/radiation is directly proportional to the temperature excess over its surroundings: dQ/dt = -k * (T_body - T_surroundings), valid for small temperature differences.",
+        "First Law of Thermodynamics (Energy Conservation): Change in internal energy ΔU of a closed system equals net heat added to system Q minus net work done BY system W: ΔU = Q - W. Isothermal process (ΔT = 0 -> ΔU = 0 -> Q = W); Adiabatic process (Q = 0 -> ΔU = -W).",
+        "Second Law of Thermodynamics: Heat flows spontaneously from higher-temperature bodies to lower-temperature bodies, not vice versa. No heat engine operating in a cycle can convert absorbed heat entirely into useful work without discharging waste heat to a cold reservoir (Kelvin-Planck statement). Entropy of an isolated system always increases over time."
+      ]
+    },
+    {
+      "topic": "Waves and Sound Optics",
+      "subtopics": [
+        "Wave classification, parameters, and wave equation",
+        "Superposition, interference, diffraction, and standing waves",
+        "Sound wave properties, resonance, Doppler effect, and acoustic pipes/strings"
+      ],
+      "keypoints": [
+        "Classifications of Waves: Mechanical waves require a physical medium (e.g., sound, water, seismic). Electromagnetic waves propagate through vacuum at speed c = 3 x 10^8 m/s. Transverse waves: Particle oscillation perpendicular to wave propagation (e.g., light, string waves). Longitudinal waves: Particle oscillation parallel to wave propagation (e.g., sound waves, compression waves).",
+        "Fundamental Wave Equation and Parameters: Frequency f (Hz) = 1 / Period T. Wavelength λ (m) = distance between successive crests or in-phase points. Wave speed v = f * λ. Progressive wave equation traveling rightward along x-axis: y(x,t) = A * sin[(2π/λ)*(v*t - x)] = A * sin(ω*t - k*x), where wave number k = 2π/λ and angular frequency ω = 2π*f.",
+        "Fundamental Wave Phenomena: Reflection: Bouncing off boundaries. Refraction: Bending when entering different media due to velocity change (frequency remains constant). Diffraction: Spreading into shadow regions around obstacles/apertures comparable to wavelength. Interference: Superposition of coherent waves resulting in constructive (in-phase, Δx = n*λ) or destructive (out-of-phase, Δx = (n + 0.5)*λ) reinforcement.",
+        "Stationary (Standing) Waves vs Progressive Waves: Formed by superposition of two identical progressive waves moving in opposite directions. Energy is confined rather than transported. Nodes: Points of zero displacement (destructive). Antinodes: Points of maximum displacement amplitude. Distance between consecutive nodes = λ / 2; distance between adjacent node and antinode = λ / 4.",
+        "Sound Wave Properties and Speed Factors: Longitudinal mechanical wave requiring a medium. Speed in medium v = sqrt(E / ρ), where E is elastic modulus and ρ is density. Speed sequence: v_solid > v_liquid > v_gas. In air, speed increases with temperature: v ≈ 331 + 0.6*T (°C) m/s. Independent of atmospheric pressure variations.",
+        "Vibrating Strings Transverse Speed: Wave speed along stretched string v = sqrt(T / μ), where T is string tension and μ is linear mass density (m/L). Fundamental frequency f_1 = v / (2*L) = (1 / 2L) * sqrt(T / μ). Harmonics are integral multiples (f_n = n * f_1).",
+        "Acoustic Resonance in Air Columns (Pipes): 1) Pipe Open at Both Ends: Antinodes at both ends. Fundamental wavelength λ_1 = 2L -> f_1 = v / (2L). Supports all harmonics (f1, 2f1, 3f1...). 2) Pipe Closed at One End: Node at closed end, antinode at open end. Fundamental wavelength λ_1 = 4L -> f_1 = v / (4L). Supports odd harmonics only (f1, 3f1, 5f1...). End correction c adjusts length: L_effective = L + 0.6*r.",
+        "Beats and Doppler Effect Phenomena: Beats: Periodic amplitude fluctuations caused by interference of two sound waves of slightly different frequencies f1 and f2. Beat frequency f_beat = |f1 - f2|. Doppler Effect: Apparent shift in observed frequency due to relative motion between source and observer: f_observed = f_source * [(v ± v_observer) / (v ∓ v_source)]."
+      ]
+    },
+    {
+      "topic": "Reflection of Light (Geometric Optics)",
+      "subtopics": [
+        "Laws of reflection and plane mirrors",
+        "Curved spherical mirrors (Concave and Convex)",
+        "Mirror formula, magnification, and ray tracing"
+      ],
+      "keypoints": [
+        "Laws of Reflection: 1) Incident ray, reflected ray, and normal at point of incidence all lie in the same plane. 2) Angle of incidence equals angle of reflection (i = r).",
+        "Properties of Images in Plane Mirrors: Image is virtual, erect, lateral inverted (left-right reversed), same size as object (magnification m = 1), and located at equal distance behind mirror as object is in front (v = u). Number of images formed by two mirrors inclined at angle θ: N = (360° / θ) - 1 (if 360/θ is even).",
+        "Spherical Curved Mirror Terminology: Pole (P): Center of mirror surface. Center of Curvature (C): Center of sphere from which mirror was cut. Radius of Curvature (R): Distance PC. Principal Focus (F): Point on principal axis where parallel incident rays converge (concave) or appear to diverge from (convex). Focal length f = R / 2.",
+        "Concave (Converging) Mirror Ray Behavior: Real focus (f positive). 1) Object beyond C: Real, inverted, diminished image between C and F. 2) Object at C: Real, inverted, same size image at C. 3) Object between C and F: Real, inverted, magnified image beyond C. 4) Object at F: Reflected rays parallel, image at infinity. 5) Object inside F (u < f): Virtual, erect, magnified image behind mirror.",
+        "Convex (Diverging) Mirror Characteristics: Virtual focus (f negative). Forms virtual, erect, diminished images located behind mirror for all real object positions in front. Used for wide-angle rear-view vehicle mirrors.",
+        "Real-Is-Positive Cartesian Mirror Sign Convention: Focal length: f is positive for concave, negative for convex. Object distance u: positive for real objects. Image distance v: positive for real images (formed in front of mirror), negative for virtual images (behind mirror).",
+        "Mirror Formula and Linear Magnification: Mirror Equation: 1/f = 1/u + 1/v. Linear Magnification m = Image Height / Object Height = h_i / h_o = - v / u. If |m| > 1, image magnified; if |m| < 1, image diminished."
+      ]
+    },
+    {
+      "topic": "Refraction of Light and Lenses",
+      "subtopics": [
+        "Laws of refraction, Snell's law, and refractive index",
+        "Total internal reflection and critical angle",
+        "Thin lenses (Convex/Concave), lens formula, and optical instruments"
+      ],
+      "keypoints": [
+        "Laws of Refraction and Snell's Law: Incident ray, refracted ray, and normal at point of incidence lie in same plane. Snell's Law: Ratio of sine of angle of incidence to sine of angle of refraction is constant for two media: n1 * sin θ1 = n2 * sin θ2 => Refractive index n = sin i / sin r.",
+        "Refractive Index Formulas: n = Speed of light in vacuum (c) / Speed of light in medium (v) = Wavelength in vacuum (λ_0) / Wavelength in medium (λ). Apparent depth effect: n = Real Depth / Apparent Depth.",
+        "Total Internal Reflection (TIR) Conditions: Occurs when light travels from an optically denser medium to a rarer medium (n1 > n2) at an angle of incidence exceeding Critical Angle θ_c. Critical angle formula (into air n2=1): sin θ_c = 1 / n. Applications: Fiber optics, prisms in periscopes, mirage formation.",
+        "Prism Refraction and Angle of Deviation: Deviation D produced by triangular glass prism: D = (i1 + e) - A, where A is apex angle, i1 is incident angle, e is emergence angle. At Minimum Deviation D_m: rays pass symmetrically through prism (i1 = e, r1 = r2 = A/2). Refractive index n = sin[(A + D_m)/2] / sin(A/2).",
+        "Thin Convex (Converging) Lens Image Formation: Real focus (f positive). Object u > 2f -> real, inverted, diminished (between f and 2f). Object u = 2f -> real, inverted, same size (at 2f). Object f < u < 2f -> real, inverted, magnified (beyond 2f). Object u < f -> virtual, erect, magnified (same side as object, magnifying glass mode).",
+        "Thin Concave (Diverging) Lens Behavior: Virtual focus (f negative). Forms virtual, erect, diminished images on same side of lens as object for all real object distances.",
+        "Lens Formula and Power of a Lens: Thin Lens Equation: 1/f = 1/v - 1/u (Cartesian convention) or 1/f = 1/u + 1/v (Real-is-positive convention). Power of lens P = 1 / f (in meters). Unit: Dioptres (D). Converging lens power is positive; diverging lens power is negative. Combination of thin lenses in contact: P_total = P1 + P2 => 1/f_total = 1/f1 + 1/f2.",
+        "Human Eye Defects and Corrections: Myopia (Short-sightedness): Eye lens focal length too short or eyeball too long; images of distant objects focus in front of retina. Corrected using Diverging Concave lenses. Hypermetropia (Long-sightedness): Eyeball too short; close images focus behind retina. Corrected using Converging Convex lenses. Astigmatism: Irregular cornea curvature, corrected using Cylindrical lenses.",
+        "Optical Instruments Magnification: Astronomical Telescope (Normal Adjustment): Final image at infinity. Objective lens focal length f_o long, eyepiece f_e short. Distance between lenses L = f_o + f_e. Angular Magnification M = f_o / f_e. Compound Microscope: Objective forms real magnified image; eyepiece acts as magnifying glass. M_total = M_objective * M_eyepiece."
+      ]
+    },
+    {
+      "topic": "Electrostatics",
+      "subtopics": [
+        "Electric charges, charging methods, and Coulomb's law",
+        "Electric field strength, lines of force, and electric potential",
+        "Capacitors, capacitance, energy storage, and dielectrics"
+      ],
+      "keypoints": [
+        "Conservation and Quantization of Charge: Like charges repel; unlike charges attract. Total electric charge in an isolated system is conserved. Charge is quantized: Q = ± n * e, where elemental unit charge e ≈ 1.602 x 10^-19 Coulombs.",
+        "Coulomb's Law of Electrostatic Force: Magnitude of electrostatic force between two point charges in vacuum is directly proportional to product of charges and inversely proportional to square of separation distance: F = (1 / (4*π*ε_0)) * (|q1 * q2| / r^2) = k * (|q1 * q2| / r^2), where k ≈ 8.99 x 10^9 N·m^2/C^2 and ε_0 ≈ 8.854 x 10^-12 F/m is permittivity of free space.",
+        "Electric Field Intensity (E): Vector quantity representing force exerted per unit positive test charge placed at a point: E = F / q_0 = (1 / (4*π*ε_0)) * (Q / r^2) (Units: N/C or V/m). Points radially away from positive charges and toward negative charges.",
+        "Electric Potential (V) and Potential Difference: Work done per unit positive charge in bringing a test charge from infinity to a point in an electric field: V = (1 / (4*π*ε_0)) * (Q / r) (Volts, J/C). Scalar quantity. Potential difference ΔV = W / q. Electric field connection for uniform field: E = - dV/dr = V / d.",
+        "Capacitance Definition and Parallel Plate Formula: Charge stored per unit potential difference: C = Q / V (Farads, F = C/V). Parallel plate capacitor with plate area A, separation distance d, and dielectric permittivity ε: C = (ε * A) / d = (ε_r * ε_0 * A) / d, where ε_r is relative permittivity (dielectric constant).",
+        "Capacitor Combinations Rules: Parallel Combination: Voltage across each capacitor is identical. Total capacitance C_total = C1 + C2 + C3. Series Combination: Charge Q on each capacitor is identical. 1 / C_total = 1/C1 + 1/C2 + 1/C3. For two capacitors in series: C_total = (C1 * C2) / (C1 + C2).",
+        "Energy Stored in a Capacitor: Work done in charging capacitor stored as electrostatic potential energy in electric field between plates: E_cap = (1/2) * Q * V = (1/2) * C * V^2 = Q^2 / (2 * C)."
+      ]
+    },
+    {
+      "topic": "Current Electricity",
+      "subtopics": [
+        "Electric current, potential difference, electromotive force (EMF), and Ohm's law",
+        "Resistivity, conductivity, and temperature dependence",
+        "Resistor networks, internal resistance, and Kirchhoff's laws"
+      ],
+      "keypoints": [
+        "Electric Current and Drift Velocity: Rate of flow of electric charge through conductor cross-section: I = dQ/dt (Amperes, A = C/s). Microscopic relation: I = n * A * v_d * e, where n is charge carrier density, A is cross-sectional area, v_d is drift velocity, e is electron charge.",
+        "Electromotive Force (EMF) vs Terminal Voltage: EMF (E): Total energy converted from non-electrical forms to electrical energy per unit charge by a power source when no current flows (open circuit). Terminal PD (V): Voltage across power source terminals during closed circuit supplying current I: V = E - I*r, where r is internal resistance of source.",
+        "Ohm's Law: Electric current flowing through a metallic conductor is directly proportional to potential difference across its ends, provided physical conditions (temperature) remain constant: V = I * R. Ohmic conductors show linear V-I graphs passing through origin; Non-ohmic conductors (diode, filament lamp, thermistor) show non-linear graphs.",
+        "Resistance, Resistivity (ρ), and Conductivity (σ): Resistance R = (ρ * L) / A (Ohms, Ω). Resistivity ρ is material property independent of dimensions (Ω·m). Electrical conductivity σ = 1 / ρ (Ω^-1·m^-1 or S/m). Metallic conductors: resistance increases with temperature (R_T = R_0*(1 + α*ΔT)). Semiconductor thermistors: resistance decreases with temperature.",
+        "Resistor Combinations Rules: Series Resistors: Same current flows through all. Equivalent resistance R_series = R1 + R2 + R3. Voltage divides proportionally. Parallel Resistors: Same potential difference across all. 1 / R_parallel = 1/R1 + 1/R2 + 1/R3. Current divides inversely proportional to resistance. Two parallel resistors: R_parallel = (R1 * R2) / (R1 + R2).",
+        "Kirchhoff's Circuit Laws: 1) Junction Law (Current Law - KCL): Algebraic sum of currents entering any circuit node equals sum of currents leaving node (Σ I_in = Σ I_out). Based on conservation of electric charge. 2) Loop Law (Voltage Law - KVL): Algebraic sum of potential differences around any closed circuit loop equals zero (Σ E = Σ I*R). Based on conservation of energy.",
+        "Electrical Power and Heating (Joule's Law): Power dissipated in resistor P = I * V = I^2 * R = V^2 / R (Watts). Electrical Energy W = P * t = I^2 * R * t (Joules). Commercial energy unit: kilowatt-hour (1 kWh = 1000 W * 3600 s = 3.6 x 10^6 Joules)."
+      ]
+    },
+    {
+      "topic": "Magnetism and Electromagnetism",
+      "subtopics": [
+        "Magnetic fields, field lines, and terrestrial magnetism",
+        "Magnetic force on moving charges and current-carrying conductors",
+        "Electromagnetic induction, Faraday's/Lenz's laws, transformers, and AC circuits"
+      ],
+      "keypoints": [
+        "Properties of Magnets and Earth's Magnetic Field: Dipoles possess North and South poles; isolated magnetic monopoles do not exist. Terrestrial magnetism elements: 1) Magnetic Declination (Variation): Angle between Geographic North and Magnetic North. 2) Magnetic Dip (Inclination): Angle made by Earth's total magnetic field vector with horizontal plane. Dip at equator = 0°; dip at magnetic poles = 90°.",
+        "Magnetic Force on Moving Charge (Lorentz Force): Force exerted by magnetic field B on charge q moving at velocity v at angle θ to field: F_B = q * v * B * sin θ. Direction determined by Right-Hand Rule. Force is zero if motion is parallel to field (θ = 0°). Charge undergoes uniform circular motion in perpendicular magnetic field with radius r = (m * v) / (q * B).",
+        "Magnetic Force on Current-Carrying Conductor: Conductor of length L carrying current I in magnetic field B: F = I * L * B * sin θ. Fleming's Left-Hand Rule for Motors: Thumb = Motion/Force, Forefinger = Magnetic Field B, Middle finger = Current I.",
+        "Magnetic Field Produced by Currents (Biot-Savart Applications): 1) Long straight wire at distance r: B = (μ_0 * I) / (2 * π * r). Direction via Right-Hand Grip Rule. 2) Center of circular coil of N turns and radius r: B = (μ_0 * N * I) / (2 * r). 3) Inside long solenoid of n turns per unit length: B = μ_0 * n * I.",
+        "Faraday's and Lenz's Laws of Induction: Faraday's Law: Induced electromotive force (EMF) in a circuit is directly proportional to rate of change of magnetic flux linkage: ε = - N * (dΦ / dt), where Magnetic Flux Φ = B * A * cos θ (Webers, Wb). Lenz's Law: Direction of induced current always opposes the magnetic flux change causing it (negative sign in Faraday equation, based on energy conservation).",
+        "AC/DC Generators and Electric Motors: Electric Motor: Converts electrical energy to mechanical torque via magnetic force on current loops. AC Generator (Alternator): Rotates armature coil in magnetic field to generate sinusoidal AC voltage (ε = N*B*A*ω*sin(ωt)) using slip rings. DC Generator uses split-ring commutator to produce unidirectional pulsing DC.",
+        "Transformer Principles and Efficiency: Device transforming alternating voltage levels via mutual induction. Voltage-Turn Ratio: V_p / V_s = N_p / N_s = I_s / I_p (for 100% ideal transformer). Step-up (N_s > N_p, V_s > V_p, I_s < I_p); Step-down (N_s < N_p). Transformer energy loss causes: Eddy currents (minimized by laminated iron core), Hysteresis losses (minimized using soft iron core), Joule heating resistance losses (thick copper wires).",
+        "Alternating Current (AC) Parameters and RLC Components: Sinusoidal AC current I(t) = I_peak * sin(ωt). Root-Mean-Square (RMS) values: I_rms = I_peak / sqrt(2) ≈ 0.707 * I_peak; V_rms = V_peak / sqrt(2). AC meters read RMS values. Reactance: Inductive Reactance X_L = ω*L = 2*π*f*L (increases with frequency); Capacitive Reactance X_C = 1 / (ω*C) = 1 / (2*π*f*C) (decreases with frequency). Total Impedance Z = sqrt(R^2 + (X_L - X_C)^2). Electrical Resonance occurs when X_L = X_C -> Resonant Frequency f_0 = 1 / (2 * π * sqrt(L * C)), where impedance Z = R (minimum) and current is maximum."
+      ]
+    },
+    {
+      "topic": "Simple Harmonic Motion (SHM)",
+      "subtopics": [
+        "Definition, conditions, and kinematic equations of SHM",
+        "Simple pendulum and mass-spring systems",
+        "Energy transformations and resonance in SHM"
+      ],
+      "keypoints": [
+        "Fundamental Definition and Differential Condition for SHM: Oscillatory motion where restoring force and resulting acceleration are directly proportional to displacement from central equilibrium position and directed toward that equilibrium position: Acceleration a = - ω^2 * x, where ω is angular frequency.",
+        "Kinematic Equations of SHM: Displacement x(t) = A * cos(ω*t + φ) or A * sin(ω*t). Velocity v(t) = dx/dt = - A * ω * sin(ω*t) = ± ω * sqrt(A^2 - x^2). Maximum velocity occurs at equilibrium position (x = 0): v_max = A * ω. Acceleration a(t) = - A * ω^2 * cos(ω*t) = - ω^2 * x. Maximum acceleration occurs at extreme amplitudes (x = ±A): a_max = A * ω^2.",
+        "Simple Pendulum Oscillation Mechanics: Mass m suspended by light string of length L. For small angular displacements (θ < 10°): Restoring force F = - m*g*sin θ ≈ - m*g*(x / L). Period formula: T = 2 * π * sqrt(L / g). Period is independent of bob mass m and swing amplitude.",
+        "Mass-Spring Oscillator Mechanics: Mass m connected to spring with force constant k (Hooke's Law F = - k*x). Restoring acceleration a = - (k / m) * x. Angular frequency ω = sqrt(k / m). Period formula: T = 2 * π * sqrt(m / k).",
+        "Energy Conservation in SHM: Total mechanical energy is conserved in ideal undamped SHM. Potential Energy PE = (1/2) * m * ω^2 * x^2. Kinetic Energy KE = (1/2) * m * v^2 = (1/2) * m * ω^2 * (A^2 - x^2). Total Energy E_total = PE + KE = (1/2) * m * ω^2 * A^2 = (1/2) * k * A^2 (constant, proportional to square of amplitude A^2). At x = 0, energy is purely kinetic; at x = ±A, energy is purely potential.",
+        "Damping and Forced Resonance: Free Oscillations: System oscillates at natural frequency f_0 with constant amplitude. Damped Oscillations: Dissipative forces (friction/viscosity) continuously reduce amplitude over time (Light, Critical, Overdamping). Forced Oscillations and Resonance: System driven by external periodic force. Resonance occurs when driving frequency equals natural frequency (f_drive = f_0), causing maximum energy transfer and peak amplitude response."
+      ]
+    },
+    {
+      "topic": "Atomic and Nuclear Physics",
+      "subtopics": [
+        "Atomic models and Bohr's theory",
+        "Photoelectric effect and wave-particle duality",
+        "Radioactivity, nuclear reactions, mass defect, and binding energy"
+      ],
+      "keypoints": [
+        "Evolution of Atomic Models: Thomson Model: Plum pudding sphere of positive charge with embedded electrons. Rutherford Alpha Scattering Experiment: Most alpha particles pass un-deviated; few rebound at large angles -> Proved atom is mostly empty space with dense positive nucleus containing mass. Bohr Model: Electrons revolve in discrete quantized circular orbits without radiating energy. Orbit angular momentum L = m*v*r = n*h / (2π). Energy of emitted photon during electronic transition: E_photon = h*f = E_higher - E_lower.",
+        "Photoelectric Effect Phenomenon: Emission of electrons from metal surface when illuminated by electromagnetic radiation of sufficiently high frequency. Key Experimental Observations: 1) Emission is instantaneous. 2) Rate of emission of photoelectrons is directly proportional to light intensity. 3) Kinetic energy of photoelectrons depends strictly on radiation frequency, independent of light intensity.",
+        "Einstein's Photoelectric Equation: Photon energy E = h * f = Work Function (W_0) + Maximum Kinetic Energy (KE_max) = h * f_0 + (1/2) * m * v_max^2 = h * f_0 + e * V_s, where h ≈ 6.626 x 10^-34 J·s is Planck's constant, f_0 is threshold frequency (minimum frequency required to eject electrons), W_0 = h * f_0 is Work Function, and V_s is stopping potential required to reduce photocurrent to zero.",
+        "Wave-Particle Duality and De Broglie Wavelength: Light exhibits both wave properties (interference, diffraction) and particle properties (photoelectric effect, Compton scattering). De Broglie Hypothesis: Matter particles in motion exhibit wave properties with De Broglie wavelength λ = h / p = h / (m * v) = h / sqrt(2 * m * e * V).",
+        "Radioactivity and Decay Laws: Spontaneous disintegration of unstable atomic nuclei emitting ionizing radiation: Alpha particles (α: Helium nucleus 4_2He, high ionizing power, low penetration, stopped by paper), Beta particles (β: High-speed electron 0_-1e, moderate ionization/penetration), Gamma rays (γ: High-energy EM photons, low ionization, extreme penetration power, stopped by lead).",
+        "Radioactive Decay Law and Half-Life Equations: Rate of decay dN/dt = - λ * N, where λ is decay constant. Remaining nuclei count N(t) = N_0 * e^(- λ * t) = N_0 * (1/2)^(t / T_half). Half-life T_half: Time required for half the radioactive nuclei in a sample to decay: T_half = ln(2) / λ ≈ 0.693 / λ.",
+        "Nuclear Mass Defect and Binding Energy: Mass Defect Δm: Difference between sum of masses of individual constituent nucleons (protons + neutrons) and actual bound nucleus mass: Δm = [Z*m_p + (A - Z)*m_n] - M_nucleus. Nuclear Binding Energy E_b: Energy released when nucleus forms from constituent nucleons: E_b = Δm * c^2 (using Einstein's mass-energy equivalence E = m*c^2, where 1 atomic mass unit 1 u ≈ 931.5 MeV). High binding energy per nucleon indicates greater nuclear stability (peak around Iron-56).",
+        "Nuclear Fission vs Nuclear Fusion: Nuclear Fission: Heavy unstable nucleus (e.g., Uranium-235) absorbs a slow neutron and splits into two medium lighter fragments plus extra neutrons and vast energy (chain reaction). Nuclear Fusion: Light nuclei (e.g., Deuterium + Tritium) combine under extreme thermal conditions (10^7 K) to form a heavier nucleus (Helium), releasing significantly higher energy per unit mass than fission. Source of stellar/solar energy."
+      ]
+    },
+    {
+      "topic": "Electronics and Modern Physics",
+      "subtopics": [
+        "Energy bands in solids (Conductors, Semiconductors, Insulators)",
+        "Intrinsic/Extrinsic semiconductors and p-n junction diodes",
+        "Transistors, logic gates, and cathode ray oscilloscope (CRO)"
+      ],
+      "keypoints": [
+        "Energy Band Structure in Solids: Valence Band: Highest occupied energy band containing bound valence electrons. Conduction Band: Higher empty/partially filled band containing mobile charge carriers. Forbidden Energy Gap (E_g): Band gap between valence and conduction bands. 1) Conductors: Valence and conduction bands overlap (E_g ≈ 0). 2) Insulators: Large energy gap (E_g > 5 eV); electrons cannot jump. 3) Semiconductors: Narrow energy gap (E_g ≈ 1 eV); electrons jump at room temperature.",
+        "Intrinsic and Extrinsic Semiconductors: Intrinsic: Pure semiconductor (Silicon, Germanium). Conduction by thermally generated electron-hole pairs (n_e = n_h). Extrinsic: Doped semiconductor to boost conductivity. 1) n-type: Doped with Pentavalent impurities (Phosphorus, Arsenic, Donor atoms); majority carriers are Free Electrons, minority carriers are Holes. 2) p-type: Doped with Trivalent impurities (Boron, Indium, Acceptor atoms); majority carriers are Holes, minority carriers are Electrons.",
+        "p-n Junction Diode and Rectification: Junction of p-type and n-type material creates a Depletion Region with built-in potential barrier. Forward Bias: Positive terminal connected to p-side, negative to n-side; narrows depletion layer, allowing current flow. Reverse Bias: Positive to n-side, negative to p-side; widens depletion layer, blocking current flow (microscopic reverse leakage current only). Rectification: Converting AC to DC. Half-Wave Rectification uses 1 diode (utilizes 1 half cycle). Full-Wave Rectification uses 2 diodes with center-tapped transformer or 4 diodes in a Bridge Rectifier.",
+        "Transistors Principles (BJT): Bipolar Junction Transistor consists of three doped regions: Emitter (E, heavily doped), Base (B, thin & lightly doped), Collector (C, moderately doped). Types: NPN and PNP. Currents relation: I_E = I_B + I_C. Current amplification gain β (Common Emitter) = ΔI_C / ΔI_B.",
+        "Logic Gates and Digital Electronics: Fundamental digital building blocks operating on binary states (1 = HIGH, 0 = LOW). 1) AND Gate: Output Y = A · B (HIGH only if all inputs HIGH). 2) OR Gate: Output Y = A + B (HIGH if any input HIGH). 3) NOT Gate (Inverter): Output Y = A' (Inverts input). Universal Gates: NAND (Y = (A · B)') and NOR (Y = (A + B)'), capable of constructing any fundamental logic circuit.",
+        "Cathode Ray Oscilloscope (CRO) Components: Visual display instrument utilizing electron beams. Components: 1) Electron Gun: Heated filament emits electrons via Thermionic Emission; control grid regulates beam intensity/brightness; anodes accelerate and focus beam. 2) Deflection System: Y-plates (vertical deflection, input signal connected here); X-plates (horizontal deflection, internal Time-Base generator sweeps beam left-to-right). 3) Fluorescent Screen: Coated with zinc sulfide; glows when struck by electron beam."
+      ]
+    }
+  ]
+}

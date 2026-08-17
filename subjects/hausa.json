@@ -1,0 +1,112 @@
+{
+  "subject": "Hausa Language",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Hausa Language Structure and Phonology (Tsarin Sauti)",
+      "subtopics": [
+        "Vowels (Wasali) and Consonants (Haruffa)",
+        "Tones (Sauti/Sautuka: Sauda, Maza, da Sunkuyu)",
+        "Syllable Structure (Rabuwar Gwatsami/Syllable)"
+      ],
+      "keypoints": [
+        "Consonant Classification: Hausa uses 29 consonant sounds, including unique glottalized consonants (K' / Ƙ, B' / Ɓ, D' / Ɗ) and hooked letters, along with digraphs like 'TS', 'SH', and 'CH'.",
+        "Vowel System: Contains 5 basic vowels (A, E, I, O, U) which operate in short and long forms, making a total of 10 primary vowel sounds, plus diphthongs (e.g., 'AI' as in *kai*, 'AU' as in *rogo*).",
+        "Tonal Language System: Hausa is a tonal language where meaning changes based on tone. Tones are categorized into High Tone (Sauti Mai Taho/Sama), Low Tone (Sauti Mai Kasa), and Falling Tone (Sauti Mai Sauka).",
+        "Syllable Types: Words are structured into three main syllable forms: Light Open (CV), Heavy Open (CVV), and Heavy Closed (CVC). Words never begin with a vowel in native Hausa phonology.",
+        "Morphophonemic Changes: Sound shifts like palatalization (e.g., 'K' or 'T' changing sound before front vowels 'E' or 'I') and assimilation in continuous speech."
+      ]
+    },
+    {
+      "topic": "Grammar and Morphology (Tsarin Harshe da A'a / Girama)",
+      "subtopics": [
+        "Nouns (Suna) and Gender (Jinsi)",
+        "Pronouns (Wakilin Suna) and Tense Markers",
+        "Verbs (Aiki), Adjectives (Siffa), and Pluralization (Yawa)"
+      ],
+      "keypoints": [
+        "Gender Distinction (Jinsi): Hausa strictly distinguishes Grammatical Gender into Masculine (Namiji) and Feminine (Tace/Mace). Plural forms neutralize gender distinction.",
+        "Gender Identification Rules: Nouns ending in '-a' are predominantly feminine (e.g., *saniya*, *mota*), while nouns ending in other vowels (-i, -o, -u, -e) are generally masculine, with notable semantic exceptions (e.g., *nama* is masculine).",
+        "Pluralization Mechanisms (Tatsuniya/Yawa): Hausa employs complex pluralization patterns using suffixation, vowel changes, and reduplication (e.g., *gida* → *gidaje*; *littafi* → *littattafai*).",
+        "Verbal Grades (Rukunin Aikatau): Hausa verbs are classified into 7 distinct grades based on final vowel endings, tonal patterns, and whether they are transitively linked to objects.",
+        "Aspect and Tense System: Tense is not indicated on the verb itself, but through pre-verbal Person-Aspect Markers (PAMs) indicating Past (Cikakken Aiki), Continuous (Sada Aiki), Future (Aiki Mai Zuwa), and Habitual."
+      ]
+    },
+    {
+      "topic": "Hausa Orthography and Writing Systems (Rubutu da Harshe)",
+      "subtopics": [
+        "Boko Script (Roman Orthography)",
+        "Ajami Script (Arabic-based Hausa Script)",
+        "Standard Hausa (Kadaitaccen Harshen Hausa) vs. Dialects"
+      ],
+      "keypoints": [
+        "Ajami System: The historical Arabic-based writing system used in Hausa lands since the 14th–15th century, modified with special diacritics to represent native Hausa sounds absent in classical Arabic.",
+        "Boko System: The modern Romanized script introduced in the early 20th century, which became the standard medium for official administration, literature, and formal education.",
+        "Hooked Letters (Haruffan 'Boko' Mai Kugu): Distinct orthographic characters representing implosives and ejectives: Ɓ/ɓ, Ɗ/ɗ, Ƙ/ƙ, and Ƴ/ƴ (or 'Y).",
+        "Standard Hausa (Hausar Kano): The central reference dialect used in mass media, textbook publishing, and official examinations, primarily based on the Kano dialect.",
+        "Dialectal Variations (Karin Harshe): Major regional dialects divided into Eastern Hausa (Kano, Daura, Zaria) and Western Hausa (Sokoto, Katsina, Gobir, Kebbi)."
+      ]
+    },
+    {
+      "topic": "Hausa Oral Literature (Adabin Baka)",
+      "subtopics": [
+        "Folktales (Tatsuniyoyi) and Fables",
+        "Proverbs (Karowe/Karin Magana) and Idioms (Karin Harshe)",
+        "Praise Singing (Ta'atsani/Wakar Baka) and Riddles (Kaiki-Kaiki)"
+      ],
+      "keypoints": [
+        "Tatsuniya (Folktales): Fictional prose narratives recited primarily at night for moral instruction, entertainment, and mental exercise. Common characters include *Gizo* (the trickster spider) and *Koki* (his wife).",
+        "Karin Magana (Proverbs): Concise, culturally rich expressions conveying wisdom, social values, and warnings (e.g., *Sannu bata hana zuwa, sai dai a jima ba*).",
+        "Wakar Baka (Oral Poetry): Unwritten songs performed with musical instruments (e.g., *kalangu*, *algaita*, *molo*, *garaya*). Divided into court poetry (wakar sarauta), occupational praise, and social commentary.",
+        "Lullabies and Children's Lore (Wakokin Yara): Oral songs used for soothing infants, play-group games, and character building among youth.",
+        "Riddles (Tatsuniyar Kaiki-Kaiki/Lallami): Interactive word-puzzles designed to sharpen critical thinking, quick wit, and environmental awareness among children."
+      ]
+    },
+    {
+      "topic": "Hausa Written Literature (Adabin Rubuce)",
+      "subtopics": [
+        "Early Ajami poetry and religious writings",
+        "Development of Boko prose and famous novels",
+        "Modern Hausa drama and contemporary poetry"
+      ],
+      "keypoints": [
+        "Jihadist Literature Era: 19th-century boom of written Ajami poetry spearheaded by Shehu Usman Dan Fodio, Nana Asma'u, and Abdullahi Dan Fodio focusing on Islamic jurisprudence, ethics, and theology.",
+        "1933 Translation Bureau Competition: Milestone event that birthed modern Hausa written prose, producing classical prose masterpieces like *Ruwan Bagaja* (Abubakar Imam) and *Gandoki* (Bello Kagara).",
+        "Prominent Written Novels: Landmark texts including *Shehu Umar* (Abubakar Tafawa Balewa), *Shaihu Umar*, and *Idon Matambayi*.",
+        "Written Poetry (Rubutacciyar Waka): Structured poetry governed by strict rhythmic meters (Aruzi), pioneered by poets like Sa'adu Zungur, Mu'azu Hadejia, and Mudi Sipikin.",
+        "Hausa Drama (Wasan Kwaikwayo): Evolution from traditional street performances (*Kankanci*, *Dirama*) to written plays addressing modern social issues, forced marriage, corruption, and political reform."
+      ]
+    },
+    {
+      "topic": "Hausa Culture, Customs, and Social Institutions (Al'adu da Biki)",
+      "subtopics": [
+        "Rites of Passage: Birth (Suna), Marriage (Aure), and Funeral (Mutuwa)",
+        "Leadership and Chieftaincy Systems (Tsarin Sarauta)",
+        "Occupational Guilds and Traditional Trades (Sana'o'i)"
+      ],
+      "keypoints": [
+        "Naming Ceremony (Ranar Suna): Conducted seven days after birth; involves animal sacrifice (Sadaka), Islamic naming by an Imam, and shaving the child's head (Aski).",
+        "Marriage Rites (Gudanar da Aure): Multistage traditional and Islamic process including selection (Nema), engagement (Gaisuwa/Sa Rana), dowry payment (Sadaki), and contract unification (Auren Suna/Fatiha).",
+        "Traditional Leadership Structure: Hierarchical emirate organization comprising the Emir (Sarki), District Heads (Hakimai), Village Heads (Dagatai), and Ward Heads (Masu Unguwa).",
+        "Traditional Crafts (Sana'o'in Gargajiya): Heritage occupations including blacksmithing (*Kira*), tanning and leatherwork (*Jima*), dyeing (*Kora/Rina*), farming (*Noma*), and long-distance trade (*Fatauci*).",
+        "Cultural Festivals: Celebration of religious and traditional events like *Sallar Eid* (incorporating the *Durbar/Hawan Sani* parade) and seasonal fishing/harvesting festivals (e.g., *Argungu*)."
+      ]
+    },
+    {
+      "topic": "Comprehension, Translation, and Essay Writing (Insha da Fassarawa)",
+      "subtopics": [
+        "Reading Comprehension (Fahimtar Rubutu)",
+        "Translation mechanics between Hausa and English",
+        "Composition types and orthographic rules"
+      ],
+      "keypoints": [
+        "Comprehension Techniques: Extracting contextual meaning, understanding idiomatic usage, identifying main themes, and recognizing tonal or stylistic nuance in written passages.",
+        "Translation Principles (Fassarawa): Shifting from word-for-word literal translation to dynamic conceptual equivalence, preserving correct Hausa word order and idiomatic naturalness.",
+        "Essay Writing Types (Insha): Mastery of Narrative (*Labari*), Descriptive (*Siffantawa*), Argumentative (*Muhawara*), and Expository writing.",
+        "Punctuation and Capitalization (Alamomin Rubutu): Proper application of capital letters for hooked letters at the start of sentences (e.g., *Ɗan'uwa*, *Ɓangare*).",
+        "Word Separation (Rabuwar Kalmomi): Following standard rules on joining or separating prepositions, pronoun markers, and demonstratives in written Boko."
+      ]
+    }
+  ]
+}

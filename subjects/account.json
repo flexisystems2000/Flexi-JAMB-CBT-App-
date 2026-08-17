@@ -1,0 +1,200 @@
+{
+  "subject": "Financial Accounting",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Introduction to Accounting and Double-Entry Bookkeeping",
+      "subtopics": [
+        "Definition, purpose, and users of accounting information",
+        "Accounting equation and classification of accounts",
+        "The double-entry bookkeeping system and ledgers"
+      ],
+      "keypoints": [
+        "Definition and Functions: Accounting is the systematic process of recording, classifying, summarizing, analyzing, and interpreting financial transactions of an economic entity to enable informed decision-making.",
+        "Users of Accounting Information: Internal users include management and owners (assessing performance and operational efficiency); External users include creditors, banks, tax authorities (e.g., FIRS), investors, and employees.",
+        "The Accounting Equation: Assets = Capital + Liabilities. Rearrangements: Capital = Assets - Liabilities (Net Assets) and Liabilities = Assets - Capital. Every transaction maintains this equality.",
+        "Classification of Accounts: Personal Accounts (transactions with individuals or firms, e.g., Debtors, Creditors); Impersonal Accounts divided into Real Accounts (tangible/intangible assets, e.g., Machinery, Premises) and Nominal Accounts (expenses, losses, incomes, and gains).",
+        "Golden Rules of Double Entry: 1) Personal: Debit the receiver, Credit the giver. 2) Real: Debit what comes in, Credit what goes out. 3) Nominal: Debit all expenses/losses, Credit all incomes/gains.",
+        "Types of Ledgers: General Ledger (contains nominal and real accounts); Sales/Debtors Ledger (contains individual customer accounts); Purchases/Creditors Ledger (contains individual supplier accounts); Private Ledger (contains capital and drawing accounts)."
+      ]
+    },
+    {
+      "topic": "Books of Original Entry and Cash Book",
+      "subtopics": [
+        "Specialized journals and source documents",
+        "Single-column, double-column, and three-column cash books",
+        "Petty Cash Book and Imprest System"
+      ],
+      "keypoints": [
+        "Source Documents: Original records providing evidence of financial transactions. Examples: Sales Invoice (credit sales), Purchases Invoice (credit purchases), Receipt (cash paid/received), Payment Voucher (cash dispersion), Credit Note (returns inward), Debit Note (returns outward).",
+        "Books of Prime Entry (Journals): Daybooks used to record transactions chronologically before posting to ledgers. Includes Sales Journal, Purchases Journal, Sales Returns Journal, Purchases Returns Journal, Cash Book, and General Journal (Journal Proper).",
+        "Three-Column Cash Book: Combines cash account, bank account, and discount columns. Left side (Debit) records cash/bank receipts and discounts allowed; Right side (Credit) records cash/bank payments and discounts received.",
+        "Contra Entries: Transactions involving the movement of cash into the bank or withdrawal of bank funds for office cash use. Entered on both sides of the same cash book and denoted by the letter 'C' in the folio column.",
+        "Petty Cash Book and Imprest System: Used for recording minor, low-value cash expenditures (e.g., postage, stationery). Operating on the Imprest System, a fixed cash float is provided at the start of a period; at the end, the petty cashier is reimbursed the exact total spent to restore the float."
+      ]
+    },
+    {
+      "topic": "Trial Balance and Errors",
+      "subtopics": [
+        "Purpose and preparation of the Trial Balance",
+        "Errors that do not affect Trial Balance agreement",
+        "Errors affecting Trial Balance and Suspense Account"
+      ],
+      "keypoints": [
+        "Trial Balance Definition: A list of debit and credit balances extracted from ledger accounts at a specific date to test arithmetical accuracy. Debit column totals must equal credit column totals.",
+        "Errors NOT Affecting Trial Balance Agreement: 1) Error of Omission (transaction totally omitted); 2) Error of Commission (wrong account, same class); 3) Error of Principle (violating accounting rules, e.g., capital expense treated as revenue expense); 4) Compensating Errors (unrelated errors cancel each other out); 5) Complete Reversal of Entries; 6) Original Entry Error.",
+        "Errors Affecting Trial Balance Agreement: Partial omission, single-sided entries, casting errors (addition mistakes), or transposing figures on one side. These cause unequal totals.",
+        "Suspense Account: A temporary account created to absorb the difference in a Trial Balance until specific location errors are identified and corrected.",
+        "Correction via General Journal: Errors are corrected by making compensating debit and credit entries in the Journal Proper accompanied by a narrative explanation before posting to the Suspense Account or ledger."
+      ]
+    },
+    {
+      "topic": "Bank Reconciliation Statement",
+      "subtopics": [
+        "Causes of differences between Cash Book and Bank Statement",
+        "Adjusted Cash Book preparation",
+        "Bank Reconciliation Statement drafting"
+      ],
+      "keypoints": [
+        "Purpose of Reconciliation: To explain and reconcile discrepancies between the bank balance shown in the firm's Cash Book (bank column) and the balance reported on the Bank Statement issued by the bank.",
+        "Discrepancy Causes - Items in Cash Book but NOT Bank Statement: 1) Unpresented Cheques (cheques issued to suppliers but not yet cashed); 2) Uncredited / Uncollected Deposits (cheques received and paid into bank but not yet cleared).",
+        "Discrepancy Causes - Items in Bank Statement but NOT Cash Book: Bank charges, interest charged, Standing Orders, Direct Debits, Credit Transfers, and Dishonored Cheques.",
+        "Adjusted Cash Book Method: Update the Cash Book first by crediting bank charges, standing orders, and dishonored cheques, and debiting direct credit transfers. The corrected Cash Book balance becomes the starting point for final reconciliation.",
+        "Reconciliation Procedure: Starting with Adjusted Cash Book Balance: Add Unpresented Cheques, Deduct Uncredited Deposits = Balance per Bank Statement."
+      ]
+    },
+    {
+      "topic": "Final Accounts of Sole Proprietors",
+      "subtopics": [
+        "Trading Account and Gross Profit determination",
+        "Profit and Loss Account and Net Profit determination",
+        "Balance Sheet (Statement of Financial Position) and end-of-period adjustments"
+      ],
+      "keypoints": [
+        "Trading Account Structure: Calculates Gross Profit/Loss. Formula: Gross Profit = Net Sales - Cost of Goods Sold (COGS). COGS = Opening Stock + Purchases + Carriage Inward - Returns Outward - Closing Stock.",
+        "Profit and Loss Account Structure: Calculates Net Profit/Loss. Formula: Net Profit = Gross Profit + Other Incomes - Operating Expenses (e.g., rent, salaries, depreciation, electricity).",
+        "Balance Sheet Structure: A snapshot statement of financial position at a given date showing Assets, Liabilities, and Capital. Format: Non-Current Assets + Current Assets - Current Liabilities = Capital + Non-Current Liabilities.",
+        "Accruals and Prepayments: Accrued Expense (expense incurred but unpaid; add to expense in P&L, treat as Current Liability); Prepaid Expense (expense paid in advance; deduct from expense in P&L, treat as Current Asset). Accrued Income is a Current Asset; Prepaid Income is a Current Liability.",
+        "Depreciation Methods: 1) Straight Line Method: Annual Depreciation = (Cost - Scrap Value) / Useful Life. Constant charge annually. 2) Reducing/Diminishing Balance Method: Applies a fixed percentage to the reducing Net Book Value (NBV) each period.",
+        "Bad Debts and Provision for Doubtful Debts: Bad debts written off are treated as P&L expenses. Provision for doubtful debts is calculated as a percentage of net debtors; increases in provision are debited to P&L, while decreases are credited to P&L. Total provision is deducted from Debtors on the Balance Sheet."
+      ]
+    },
+    {
+      "topic": "Control Accounts and Self-Balancing Ledgers",
+      "subtopics": [
+        "Purpose and utility of Control Accounts",
+        "Sales Ledger Control Account",
+        "Purchases Ledger Control Account"
+      ],
+      "keypoints": [
+        "Definition and Purpose: Summary accounts in the general ledger designed to check the arithmetical accuracy of individual personal ledgers, assist in locating errors, and allow fast determination of total trade debtors and creditors.",
+        "Sales Ledger Control Account (Total Debtors Account): Summarizes total transactions affecting customers. Debited with opening debtors, credit sales, dishonored cheques, interest charged; Credited with cash/cheques received from debtors, sales returns, discount allowed, bad debts written off, and set-offs.",
+        "Purchases Ledger Control Account (Total Creditors Account): Summarizes total transactions affecting suppliers. Credited with opening creditors, credit purchases; Debited with cash/cheques paid to creditors, purchases returns, discount received, and set-offs.",
+        "Contra Entries / Set-offs: Transactions where a business customer is simultaneously a supplier. Settled by transferring the smaller balance across ledgers: Credit Sales Ledger Control and Debit Purchases Ledger Control."
+      ]
+    },
+    {
+      "topic": "Single Entry and Incomplete Records",
+      "subtopics": [
+        "Meaning and limitations of incomplete records",
+        "Statement of Affairs method for profit determination",
+        "Conversion method to double entry"
+      ],
+      "keypoints": [
+        "Incomplete Records Concept: Accounting systems that do not strictly follow full double-entry rules, often seen in small sole proprietorships lacking formal books.",
+        "Statement of Affairs Method: Prepares opening and closing Statements of Affairs (similar to balance sheets) to determine Opening Capital (C₁) and Closing Capital (C₂).",
+        "Profit Calculation Formula: Profit = Closing Capital (C₂) + Drawings - Additional Capital Introduced - Opening Capital (C₁).",
+        "Conversion to Double Entry: Constructing Total Debtors Account to derive credit sales, Total Creditors Account to derive credit purchases, and Cash Summary to reconstruct comprehensive Trading and Profit and Loss accounts."
+      ]
+    },
+    {
+      "topic": "Partnership Accounting",
+      "subtopics": [
+        "Partnership Deed and provisions of Partnership Act 1890",
+        "Capital and Current Accounts (Fixed vs. Fluctuating)",
+        "Appropriation Account, Goodwill, and Admission/Retirement of Partners"
+      ],
+      "keypoints": [
+        "Partnership Definition: Relationship existing between 2 to 20 persons carrying on a business in common with a view to profit.",
+        "Partnership Act 1890 (In Absence of Deed): Profits/losses shared equally; No salary paid to partners; No interest charged on drawings; No interest allowed on capital; 5% per annum interest allowed on partner loans to the firm.",
+        "Capital and Current Accounts: Under Fixed Capital System, Capital Account remains static with initial investments, while drawings, interest, and profit shares pass through separate Current Accounts. Under Fluctuating Capital System, all items pass directly through Capital Accounts.",
+        "Profit and Loss Appropriation Account: Extension of P&L account allocating net profit among partners. Net Profit + Interest on Drawings - Partner Salaries - Interest on Capital = Residual Profit (divided in profit-sharing ratio).",
+        "Goodwill Treatment: Value of firm's reputation yielding excess earning capacity. Raised when admitting or retiring partners: Debit Goodwill Account, Credit Old Partners' Capital Accounts in old profit-sharing ratio."
+      ]
+    },
+    {
+      "topic": "Company Accounts",
+      "subtopics": [
+        "Types of companies and capital structure",
+        "Issue of shares and debentures",
+        "Final Accounts of Limited Liability Companies"
+      ],
+      "keypoints": [
+        "Types of Capital: Authorized/Registered Capital (maximum statutory share limit); Issued Capital (portion offered to public); Called-up Capital (amount requested from shareholders); Paid-up Capital (actual amount paid by shareholders); Uncalled Capital.",
+        "Share Classes: Preference Shares (fixed dividend rate, priority repayment on liquidation, non-voting); Ordinary Shares (equity holders, variable dividends based on profit, voting rights, bear ultimate risk).",
+        "Debentures: Long-term loan certificates issued by a company acknowledging debt, bearing a fixed interest rate payable regardless of company profitability.",
+        "Share Issue Accounting Entries: Application/Allotment stage: Debit Cash/Bank, Credit Share Application/Allotment Account. On allotment confirmation: Debit Share Application/Allotment Account, Credit Share Capital Account.",
+        "Company Final Financial Statements: Includes Statement of Profit or Loss and Other Comprehensive Income, Statement of Financial Position, and Statement of Changes in Equity (including Retained Earnings reserve)."
+      ]
+    },
+    {
+      "topic": "Non-Profit Making Organizations",
+      "subtopics": [
+        "Receipts and Payments Account vs. Income and Expenditure Account",
+        "Accumulated Fund determination",
+        "Specialized income treatments (Subscriptions, Life Membership, Donations)"
+      ],
+      "keypoints": [
+        "Receipts and Payments Account: A summarized Cash Book recording actual cash/bank receipts and payments during a period, regardless of period applicability or capital/revenue nature. Includes opening/closing cash balances.",
+        "Income and Expenditure Account: Equivalent to a Profit and Loss Account prepared on an accrual basis. Records revenue incomes and expenses attributable solely to the current period. Surplus (Income > Expenditure) or Deficit (Expenditure > Income) replaces profit/loss.",
+        "Accumulated Fund: The equivalent of capital in a non-profit organization. Formula: Accumulated Fund = Total Assets - Total Liabilities at the beginning of the period.",
+        "Subscription Adjustments: Subscription Income to I&E = Subscriptions Received + Accrued at End + Prepaid at Start - Accrued at Start - Prepaid at End.",
+        "Trading Activities in Non-Profits: Separate bar or refreshment trading accounts are prepared to calculate net bar profit, which is then transferred as income to the main Income and Expenditure Account."
+      ]
+    },
+    {
+      "topic": "Manufacturing Accounts",
+      "subtopics": [
+        "Direct vs. Indirect Costs (Prime Cost vs. Overheads)",
+        "Work-in-Progress adjustments",
+        "Cost of Production and transfer to Trading Account"
+      ],
+      "keypoints": [
+        "Cost Classification: Direct Costs (costs directly traceable to production: Direct Raw Materials, Direct Labor/Factory Wages, Direct Expenses). Indirect Costs / Factory Overheads (costs incurred in factory operation but not directly traceable: Factory Rent, Depreciation of Factory Plant, Factory Power).",
+        "Prime Cost Formula: Prime Cost = Direct Materials Consumed + Direct Labor + Direct Expenses. Direct Materials Consumed = Opening Raw Materials + Purchases of Raw Materials + Carriage Inward on Raw Materials - Closing Raw Materials.",
+        "Production Cost Formula: Production Cost = Prime Cost + Factory Overheads + Opening Work-in-Progress (WIP) - Closing Work-in-Progress (WIP).",
+        "Transfer to Final Accounts: The calculated total Cost of Production is transferred to the debit side of the Trading Account, replacing Purchases for manufactured goods."
+      ]
+    },
+    {
+      "topic": "Departmental and Branch Accounts",
+      "subtopics": [
+        "Departmental cost allocations and gross profit determination",
+        "Autonomous vs. Dependent Branch Accounting",
+        "Branch Stock and Debtors System"
+      ],
+      "keypoints": [
+        "Departmental Cost Allocation: Direct expenses charged directly to specific departments. Indirect expenses allocated using reasonable bases: Rent/Rates (floor area covered), Electricity/Power (kilowatt hours or floor area), Depreciation/Insurance (asset values), Advertising (departmental sales volume).",
+        "Dependent Branches: Branches operating under direct Head Office control without maintaining separate double-entry ledgers. Head Office maintains Branch Accounts.",
+        "Goods Issued to Branch: Goods supplied to branches can be invoiced at Cost Price or Cost plus Mark-up (Selling Price). When invoiced above cost, a Branch Stock Adjustment Account is created to eliminate unrealized profit in unsold branch stock.",
+        "Autonomous Branches: Large branches keeping complete double-entry books. Maintains a 'Head Office Account' (treated as capital/liability), while Head Office maintains a corresponding 'Branch Account' (treated as asset)."
+      ]
+    },
+    {
+      "topic": "Financial Ratio Analysis",
+      "subtopics": [
+        "Liquidity, Profitability, and Efficiency ratios",
+        "Solvency and Investment ratios",
+        "Interpretation and limitations of accounting ratios"
+      ],
+      "keypoints": [
+        "Profitability Ratios:  1) Gross Profit Margin = (Gross Profit / Net Sales) × 100.  2) Net Profit Margin = (Net Profit / Net Sales) × 100.  3) Return on Capital Employed (ROCE) = (Net Profit before Interest and Tax / Capital Employed) × 100.",
+        "Liquidity Ratios: 1) Current Ratio = Current Assets / Current Liabilities (Standard ideal: 2:1). 2) Acid Test / Quick Ratio = (Current Assets - Closing Stock) / Current Liabilities (Standard ideal: 1:1).",
+        "Efficiency / Activity Ratios: 1) Rate of Stock Turnover = Cost of Goods Sold / Average Stock, where Average Stock = (Opening Stock + Closing Stock) / 2. 2) Debtors Collection Period = (Debtors / Credit Sales) × 365 days.",
+        "Solvency / Leverage Ratios: Debt-to-Equity Ratio = Long-term Debt / Total Equity. Measures long-term financial stability and gearing level.",
+        "Limitations of Ratios: Based on historical cost data, subject to window dressing, ignores qualitative factors, inflation distorts comparisons, and varying accounting policies across firms impair comparative analysis."
+      ]
+    }
+  ]
+}

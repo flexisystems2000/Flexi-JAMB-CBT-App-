@@ -1,0 +1,279 @@
+{
+  "subject": "Mathematics",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Number Bases",
+      "subtopics": [
+        "Conversion between bases",
+        "Operations in non-decimal bases",
+        "Base equations and fractional base conversions"
+      ],
+      "keypoints": [
+        "Base n positional system uses digits strictly from 0 up to n - 1. Numbers in base 2 (binary) use 0, 1; base 8 (octal) uses 0–7; base 16 (hexadecimal) uses 0–9 and letters A–F representing values 10–15.",
+        "Converting non-decimal (Base n) to decimal (Base 10): Assign positional exponents starting from 0 at the rightmost integer digit and increasing leftward (n⁰, n¹, n²…). Multiply each digit by its corresponding positional weight and sum the products.",
+        "Converting fractional non-decimal to Base 10: Use negative positional powers for digits right of the radix point (n⁻¹, n⁻², n⁻³…). For example, 0.11 in base 2 translates to 1 × 2⁻¹ + 1 × 2⁻² = 0.5 + 0.25 = 0.75 in base 10.",
+        "Converting decimal (Base 10) to Base n: Repeatedly divide the integer part by target base n, recording the remainder at each step. Continue until the quotient is 0, then read remainders in reverse order (bottom to top/last to first).",
+        "Converting decimal fractions to Base n: Repeatedly multiply the fractional part by target base n. Extract the integer portion resulting from each multiplication as the base digit, and continue multiplying the remaining fraction until it reaches zero or achieves the required decimal places.",
+        "Direct Base Conversions (Base x to Base y): Convert from Base x to intermediate Base 10 first using expansion, then convert from Base 10 to Base y using repeated division, unless there is a power-of-two shortcut (e.g., grouping binary digits in sets of 3 for octal or sets of 4 for hexadecimal).",
+        "Arithmetic Operations in Base n: Perform standard addition, subtraction, and multiplication, but convert digit values relative to base n. In addition, every time a column sum reaches or exceeds n, divide by n—the remainder stays in the column and the quotient is carried over. In subtraction, a borrow from the next higher position adds a full unit of base n to the current column.",
+        "Solving Base Equations: When given an equation like 102ₓ = 27₁₀, expand the left side into algebraic form (1 × x² + 0 × x¹ + 2 × x⁰ = 27), simplify to form a polynomial equation (x² + 2 = 27 ➔ x² = 25), and solve for base x, rejecting non-integer or negative solutions."
+      ]
+    },
+    {
+      "topic": "Modular Arithmetic",
+      "subtopics": [
+        "Addition, subtraction, and multiplication in modular arithmetic",
+        "Modular congruences and linear congruence equations",
+        "Applications to real-world cyclic problems"
+      ],
+      "keypoints": [
+        "Fundamental Definition: A congruence relation a ≡ b (mod m) states that integers a and b yield the exact same remainder when divided by the positive integer modulus m, which means that (a − b) is an exact multiple of m.",
+        "Equivalence Class Representation: Every integer corresponds to a unique least non-negative residue modulo m within the set {0, 1, 2, …, m − 1}. Any number greater than or equal to m or negative can be reduced by adding or subtracting multiples of m.",
+        "Modular Addition and Subtraction: To compute (a + b) mod m, add the integers normally and find the remainder after dividing by m. For subtraction (a − b) mod m, if the result is negative, add sufficient multiples of m until the value becomes a non-negative integer within 0 to m − 1.",
+        "Modular Multiplication: Compute (a × b) mod m by multiplying first and reducing, or by reducing a and b modulo m individually prior to multiplication, i.e., (a × b) mod m = [(a mod m) × (b mod m)] mod m.",
+        "Negative Residues Conversion: If a result evaluates to −k (mod m), it is equivalent to (m − k) mod m. For example, −3 mod 7 is equivalent to 7 − 3 = 4 (mod 7).",
+        "Linear Congruence Equations: An equation of the form ax ≡ b (mod m) has a valid solution if and only if the greatest common divisor (gcd) of a and m divides b. If gcd(a, m) = 1, there is a unique solution modulo m.",
+        "Modular Multiplicative Inverse: The inverse of a modulo m is an integer x such that ax ≡ 1 (mod m). Unlike real numbers, division is not defined in modular arithmetic; instead, multiply by the modular multiplicative inverse.",
+        "Cyclic Applications: Useful for clock arithmetic, calendar/day calculations (mod 7), wheel rotation cycles, and cryptography. For instance, to find the day of the week 100 days from today, evaluate 100 mod 7 = 2, indicating 2 days past the current day."
+      ]
+    },
+    {
+      "topic": "Indices, Logarithms, and Surds",
+      "subtopics": [
+        "Fundamental laws of indices and exponential equations",
+        "Properties, laws, and change of base formula for logarithms",
+        "Simplification, operations, and rationalization of surds"
+      ],
+      "keypoints": [
+        "Core Laws of Indices: Product Law: aᵐ × aⁿ = aᵐ⁺ⁿ; Quotient Law: aᵐ / aⁿ = aᵐ⁻ⁿ; Power Law: (aᵐ)ⁿ = aᵐⁿ; Zero Exponent: a⁰ = 1 (where a ≠ 0); Negative Index: a⁻ⁿ = 1 / aⁿ; Fractional Index: aᵐ/ⁿ = (ⁿ√a)ᵐ = ⁿ√(aᵐ).",
+        "Solving Exponential Equations: Express both sides of the equation with a common base so that a^{f(x)} = a^{g(x)} implies f(x) = g(x). If bases cannot be made equal, take the logarithm of both sides and apply log laws to isolate x.",
+        "Definition and Fundamental Identity of Logarithms: If y = bˣ, then x = log_b(y) where base b > 0 and b ≠ 1. The fundamental identities are b^(log_b(x)) = x and log_b(bˣ) = x.",
+        "Core Laws of Logarithms: Product Rule: log_b(M × N) = log_b(M) + log_b(N); Quotient Rule: log_b(M / N) = log_b(M) − log_b(N); Power Rule: log_b(Mᵏ) = k × log_b(M); Special values: log_b(b) = 1 and log_b(1) = 0.",
+        "Change of Base Formula: log_b(a) = log_c(a) / log_c(b). A critical deduction is log_b(a) = 1 / log_a(b), which allows swapping base and argument.",
+        "Definition and Rules of Surds: A surd is an irrational root of a rational number. Rules include: √(a × b) = √a × √b; √(a / b) = √a / √b. Note that √(a + b) ≠ √a + √b.",
+        "Simplifying Surds: Express the radicand as a product of two factors, one of which is the largest possible perfect square (e.g., √72 = √(36 × 2) = 6√2).",
+        "Surd Conjugate and Rationalization: The conjugate of a single-term surd √a is √a. The conjugate of a binomial surd (a + b√c) is (a − b√c). Rationalization involves multiplying both numerator and denominator by the conjugate of the denominator to eliminate irrational terms using the difference of squares identity: (x + y)(x − y) = x² − y²."
+      ]
+    },
+    {
+      "topic": "Sets",
+      "subtopics": [
+        "Set notation, types of sets, and set operations",
+        "Venn diagrams and region identification",
+        "Inclusion-Exclusion principles and word problems"
+      ],
+      "keypoints": [
+        "Types of Sets: Null/Empty set (Ø or {}) contains no elements; Universal set (U) contains all objects under consideration; Finite set has countable elements; Infinite set has uncountable elements; Subset (A ⊆ B) means every element in A is in B; Proper subset (A ⊂ B) means A ⊆ B and A ≠ B.",
+        "Power Set and Subsets Formula: If a set S has n elements, the total number of subsets is 2ⁿ, and the total number of proper subsets is 2ⁿ − 1.",
+        "Fundamental Set Operations: Union (A ∪ B) combines all unique elements in A, B, or both; Intersection (A ∩ B) contains only elements shared by both A and B; Difference (A ∖ B or A − B) contains elements in A that are not in B; Complement (A′ or Aᶜ) contains all elements in U that are not in A.",
+        "Algebraic Laws of Sets: Commutative Laws: A ∪ B = B ∪ A, A ∩ B = B ∩ A; Associative Laws: (A ∪ B) ∪ C = A ∪ (B ∪ C); Distributive Laws: A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C) and A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C).",
+        "De Morgan's Laws: (A ∪ B)′ = A′ ∩ B′ (the complement of a union is the intersection of complements) and (A ∩ B)′ = A′ ∪ B′ (the complement of an intersection is the union of complements).",
+        "Disjoint Sets: Two sets A and B are disjoint if they share no common elements, meaning A ∩ B = Ø, which implies n(A ∩ B) = 0.",
+        "Two-Set Inclusion-Exclusion Formula: n(A ∪ B) = n(A) + n(B) − n(A ∩ B). The total universal set size is given by n(U) = n(A ∪ B) + n(A ∪ B)′. The number of elements belonging ONLY to set A is n(A) − n(A ∩ B).",
+        "Three-Set Inclusion-Exclusion Formula: n(A ∪ B ∪ C) = n(A) + n(B) + n(C) − n(A ∩ B) − n(A ∩ C) − n(B ∩ C) + n(A ∩ B ∩ C). When solving word problems, set up a three-circle Venn diagram starting from the innermost triple intersection n(A ∩ B ∩ C) and work outward."
+      ]
+    },
+    {
+      "topic": "Polynomials",
+      "subtopics": [
+        "Polynomial algebra and long division",
+        "Remainder Theorem and Factor Theorem",
+        "Quadratic expressions, equations, and roots relationship"
+      ],
+      "keypoints": [
+        "Definition and Degree: A polynomial P(x) = aₙxⁿ + aₙ₋₁xⁿ⁻¹ + … + a₁x + a₀ is an algebraic expression with non-negative integer exponents. The degree is the highest exponent n with a non-zero coefficient.",
+        "Division Algorithm for Polynomials: P(x) = D(x) × Q(x) + R(x), where P(x) is the dividend, D(x) is the divisor, Q(x) is the quotient, and R(x) is the remainder (whose degree is strictly less than the degree of D(x)).",
+        "Remainder Theorem: When a polynomial P(x) is divided by a linear factor (ax − b), the remainder obtained is equal to P(b / a). If divided by (x − a), the remainder is simply P(a).",
+        "Factor Theorem: A linear binomial (ax − b) is an exact factor of polynomial P(x) if and only if P(b / a) = 0. Conversely, if P(k) = 0, then (x − k) is a factor of P(x).",
+        "Solving Higher-Degree Polynomial Equations: To solve P(x) = 0 of degree 3 or higher, use trial substitution (rational root theorem) to find one root x = a such that P(a) = 0. Divide P(x) by (x − a) to obtain a reduced quadratic quotient, then factor or apply the quadratic formula to find remaining roots.",
+        "Quadratic Formula and Solutions: For ax² + bx + c = 0, roots are given by x = [−b ± √(b² − 4ac)] / (2a).",
+        "Discriminant (Δ = b² − 4ac) Properties: If Δ > 0 and a perfect square, roots are real, rational, and distinct; if Δ > 0 and not a perfect square, roots are real, irrational, and distinct; if Δ = 0, roots are real, rational, and equal (repeated root x = −b / 2a); if Δ < 0, roots are complex/imaginary.",
+        "Symmetric Functions of Quadratic Roots: If α and β are roots of ax² + bx + c = 0, Sum of roots (α + β) = −b / a, Product of roots (α × β) = c / a. Quadratic equation given roots: x² − (α + β)x + (α × β) = 0. Key expansions: α² + β² = (α + β)² − 2αβ; 1/α + 1/β = (α + β) / (α × β)."
+      ]
+    },
+    {
+      "topic": "Variation",
+      "subtopics": [
+        "Direct and Inverse Variation",
+        "Joint and Combined Variation",
+        "Partial Variation equations"
+      ],
+      "keypoints": [
+        "Direct Variation: y varies directly as x (y ∝ x) means y increases proportionally as x increases, defined by equation y = kx, where k is a non-zero constant of variation (k = y / x).",
+        "Inverse Variation: y varies inversely as x (y ∝ 1 / x) means y increases proportionally as x decreases, defined by equation y = k / x, or k = x × y.",
+        "Joint Variation: Occurs when a variable varies directly or inversely with two or more other variables simultaneously. Example: y varies jointly as x and z (y ∝ x × z) leads to y = kxz.",
+        "Combined Variation: Combines direct and inverse variations. Example: y varies directly as x and inversely as the square of z (y ∝ x / z²) yields y = kx / z².",
+        "Partial Variation: Expresses a relationship where the total variable is the sum of two or more distinct parts—typically one constant part and one varying part, or two parts varying with different variables. General form: y = k₁ + k₂x or y = k₁x + k₂z.",
+        "Solving Variation Problems Step-by-Step: 1) Translate the statement into a proportional relationship. 2) Insert constant k to form an equation. 3) Substitute given initial values of variables to calculate numeric value of k. 4) Rewrite full formula substituting k. 5) Compute unknown variable using new parameters.",
+        "Percentage Changes in Variation: To calculate how y changes when x increases by p%, substitute x_new = x × (1 + p / 100) into the variation equation y_new = f(x_new), evaluate y_new in terms of y_old, and extract the resulting percentage change: [(y_new − y_old) / y_old] × 100%."
+      ]
+    },
+    {
+      "topic": "Inequalities",
+      "subtopics": [
+        "Linear inequalities in one and two variables",
+        "Quadratic inequalities and critical regions",
+        "Absolute value inequalities"
+      ],
+      "keypoints": [
+        "Fundamental Order Properties: If a > b, then a + c > b + c and a − c > b − c. If a > b and c > 0, then a × c > b × c. CRITICAL RULE: If a > b and c < 0, then a × c < b × c (multiplying or dividing an inequality by a negative number reverses the direction of the inequality sign).",
+        "Solving Linear Inequalities: Isolate the variable using standard algebraic operations, remembering to reverse the inequality sign whenever multiplying or dividing both sides by a negative coefficient.",
+        "Solving Quadratic Inequalities (Method of Critical Values): For ax² + bx + c < 0 or > 0, factorize the quadratic to find critical points where the expression equals zero (x = p and x = q, assuming p < q).",
+        "Sign Test / Regional Rules for Quadratic Inequalities: For factored expression (x − p)(x − q) where p < q: 1) If (x − p)(x − q) < 0, solution lies between roots: p < x < q. 2) If (x − p)(x − q) > 0, solution lies outside roots: x < p OR x > q.",
+        "Graphical Solution of Quadratic Inequalities: Sketch parabola y = ax² + bx + c. If a > 0 (U-shaped), the graph is below x-axis (< 0) between the roots, and above x-axis (> 0) outside the roots.",
+        "Absolute Value Inequalities (Less Than): |x − a| < k is logically equivalent to the compound inequality −k < x − a < k, which yields a − k < x < a + k.",
+        "Absolute Value Inequalities (Greater Than): |x − a| > k is logically equivalent to two separate disjoint inequalities: x − a < −k OR x − a > k, yielding x < a − k OR x > a + k.",
+        "Two-Variable Linear Inequalities Graphing: Plot boundary line ax + by = c (solid for ≤ / ≥, dashed for < / >). Test origin (0,0) to determine which half-plane region to shade."
+      ]
+    },
+    {
+      "topic": "Progression (AP and GP)",
+      "subtopics": [
+        "Arithmetic Progression (AP) formulas and mean",
+        "Geometric Progression (GP) formulas and mean",
+        "Infinite geometric series and convergence"
+      ],
+      "keypoints": [
+        "Arithmetic Progression (AP) Definition: A sequence where each term after the first is obtained by adding a constant common difference d. Common difference: d = Tₙ − Tₙ₋₁ = T₂ − T₁.",
+        "AP nth Term Formula: Tₙ = a + (n − 1)d, where a is the first term, n is the term position, and d is the common difference.",
+        "AP Sum of First n Terms (Sₙ): Sₙ = (n / 2) × [2a + (n − 1)d] OR Sₙ = (n / 2) × (a + l), where l is the last term (l = Tₙ).",
+        "Arithmetic Mean: The single arithmetic mean between two numbers x and y is A = (x + y) / 2. If a, b, c are in AP, then 2b = a + c.",
+        "Geometric Progression (GP) Definition: A sequence where each term after the first is obtained by multiplying the preceding term by a non-zero common ratio r. Common ratio: r = Tₙ / Tₙ₋₁ = T₂ / T₁.",
+        "GP nth Term Formula: Uₙ = a × rⁿ⁻¹, where a is the first term and r is the common ratio.",
+        "GP Sum of First n Terms (Sₙ): Sₙ = [a × (1 − rⁿ)] / (1 − r) for |r| < 1 (or r < 1); Sₙ = [a × (rⁿ − 1)] / (r − 1) for |r| > 1 (or r > 1).",
+        "Geometric Mean: The geometric mean between two positive numbers x and y is G = √(x × y). If a, b, c are in GP, then b² = a × c.",
+        "Sum to Infinity of GP (S_∞): S_∞ = a / (1 − r). A geometric series converges to a finite sum to infinity IF AND ONLY IF the common ratio satisfies |r| < 1 (i.e., −1 < r < 1). If |r| ≥ 1, the series diverges."
+      ]
+    },
+    {
+      "topic": "Matrices and Determinants",
+      "subtopics": [
+        "Matrix dimensions, types, and basic operations",
+        "Determinants of 2x2 and 3x3 matrices",
+        "Matrix inversion, singularity, and solving linear systems"
+      ],
+      "keypoints": [
+        "Matrix Order and Types: A matrix with m rows and n columns has order m × n. Square matrix: m = n; Identity matrix (I): diagonal elements are 1, others 0; Zero matrix: all entries 0; Transpose (Aᵀ): swapped rows and columns.",
+        "Matrix Addition and Subtraction: Matrices can only be added or subtracted if they share the exact same dimensions (m × n). Add/subtract corresponding entries.",
+        "Scalar Multiplication: Multiplying matrix A by scalar k multiplies every individual entry in A by k.",
+        "Matrix Multiplication Rule: Product A × B is defined if and only if number of columns in A equals number of rows in B. If A is (m × n) and B is (n × p), product C = A × B has order (m × p). Entry c_ij is computed as dot product of row i of A and column j of B. Note: Matrix multiplication is generally non-commutative (A × B ≠ B × A).",
+        "2x2 Determinant: For matrix A = [[a, b], [c, d]], determinant det(A) or |A| = (a × d − b × c).",
+        "3x3 Determinant Expansion: Expand across first row using cofactors/signs (+ − +): |A| = a₁₁ × (a₂₂ × a₃₃ − a₂₃ × a₃₂) − a₁₂ × (a₂₁ × a₃₃ − a₂₃ × a₃₁) + a₁₃ × (a₂₁ × a₃₂ − a₂₂ × a₃₁).",
+        "Singular and Non-Singular Matrices: Matrix A is Singular if |A| = 0 (inverse does not exist). Matrix A is Non-Singular if |A| ≠ 0 (inverse exists).",
+        "2x2 Matrix Inversion Formula: A⁻¹ = (1 / |A|) × Adj(A) = (1 / (ad − bc)) × [[d, −b], [−c, a]]. Properties: A × A⁻¹ = A⁻¹ × A = I.",
+        "Cramer's Rule for System of Equations (ax + by = e, cx + dy = f): Matrix form [[a, b], [c, d]] × [[x], [y]] = [[e], [f]]. Solution: x = |Dₓ| / |D| and y = |D_y| / |D|, where |D| = ad − bc, |Dₓ| = ed − bf, |D_y| = af − ec."
+      ]
+    },
+    {
+      "topic": "Coordinate Geometry",
+      "subtopics": [
+        "Distance, midpoint, and gradient of line segments",
+        "Forms of linear equations and angle between lines",
+        "Parallel, perpendicular lines, and locus/circle equations"
+      ],
+      "keypoints": [
+        "Distance Between Two Points Formula: d = √((x₂ − x₁)² + (y₂ − y₁)²), derived directly from the Pythagorean theorem.",
+        "Midpoint Coordinates Formula: M(x, y) = ((x₁ + x₂) / 2, (y₁ + y₂) / 2). Dividing line in ratio m : n ➔ P(x, y) = ((mx₂ + nx₁) / (m + n), (my₂ + ny₁) / (m + n)).",
+        "Gradient / Slope (m): m = (y₂ − y₁) / (x₂ − x₁) = tan(θ), where θ is the angle of inclination made with the positive x-axis.",
+        "Forms of Straight Line Equations: 1) Slope-Intercept Form: y = mx + c. 2) Point-Slope Form: y − y₁ = m(x − x₁). 3) Two-Point Form: (y − y₁) / (y₂ − y₁) = (x − x₁) / (x₂ − x₁). 4) General Form: Ax + By + C = 0 (where slope m = −A / B). 5) Intercept Form: x / a + y / b = 1.",
+        "Parallel and Perpendicular Lines Conditions: Parallel lines have equal slopes: m₁ = m₂. Perpendicular lines have slopes that are negative reciprocals: m₁ × m₂ = −1 (or m₂ = −1 / m₁).",
+        "Perpendicular Distance from Point (x₁, y₁) to Line Ax + By + C = 0: d = |Ax₁ + By₁ + C| / √(A² + B²).",
+        "Equation of a Circle (Standard Form): (x − a)² + (y − b)² = r², where (a, b) are center coordinates and r is radius. Center at origin: x² + y² = r².",
+        "Equation of a Circle (General Form): x² + y² + 2gx + 2fy + c = 0. Center coordinates = (−g, −f). Radius formula: r = √(g² + f² − c), provided g² + f² − c > 0."
+      ]
+    },
+    {
+      "topic": "Trigonometry",
+      "subtopics": [
+        "Trigonometric ratios, ASTC quadrant rules, and special angles",
+        "Sine Rule, Cosine Rule, and Area of Triangles",
+        "Trigonometric identities, graphs, and bearings/elevations"
+      ],
+      "keypoints": [
+        "Basic Ratios and Reciprocals: sin(θ) = Opp / Hyp, cos(θ) = Adj / Hyp, tan(θ) = Opp / Adj. Reciprocals: cosec(θ) = 1 / sin(θ), sec(θ) = 1 / cos(θ), cot(θ) = 1 / tan(θ) = cos(θ) / sin(θ).",
+        "Signs in Quadrants (ASTC Rule): Q1 (0°–90°): All positive. Q2 (90°–180°): Sin positive. Q3 (180°–270°): Tan positive. Q4 (270°–360°): Cos positive. Reference reduction: Q2 = 180° − θ, Q3 = 180° + θ, Q4 = 360° − θ.",
+        "Exact Special Angles Values: 30°: sin = 1/2, cos = √3/2, tan = 1/√3; 45°: sin = 1/√2, cos = 1/√2, tan = 1; 60°: sin = √3/2, cos = 1/2, tan = √3; 0°: sin = 0, cos = 1, tan = 0; 90°: sin = 1, cos = 0, tan = undefined.",
+        "Pythagorean Trigonometric Identities: sin²(θ) + cos²(θ) = 1; 1 + tan²(θ) = sec²(θ); 1 + cot²(θ) = cosec²(θ).",
+        "Sine Rule: In any triangle ABC, a / sin(A) = b / sin(B) = c / sin(C) = 2R (where R is circumradius). Use when given 2 angles and 1 side, or 2 sides and a non-included angle.",
+        "Cosine Rule: a² = b² + c² − 2bc × cos(A), or cos(A) = (b² + c² − a²) / (2bc). Use when given 3 sides (SSS) or 2 sides and the included angle (SAS).",
+        "Area of Non-Right-Angled Triangle: Area = ½ × a × b × sin(C) = ½ × b × c × sin(A) = ½ × a × c × sin(B). Heron's Formula for SSS: Area = √(s(s − a)(s − b)(s − c)), where semi-perimeter s = (a + b + c) / 2.",
+        "Angles of Elevation, Depression, and Bearings: Angle of elevation (looking up) equals angle of depression (looking down) by alternate angles. Three-figure bearings are measured clockwise from True North (000° to 360°). Reverse bearing of θ is (θ + 180°) if θ < 180°, or (θ − 180°) if θ ≥ 180°."
+      ]
+    },
+    {
+      "topic": "Differentiation",
+      "subtopics": [
+        "First principles, standard derivatives, and differentiation rules",
+        "Chain rule, product rule, and quotient rule",
+        "Applications: Tangents, normals, velocity, and stationary points"
+      ],
+      "keypoints": [
+        "First Principles Definition: f′(x) = lim_{h → 0} [(f(x + h) − f(x)) / h]. Represents the instantaneous rate of change or gradient of curve y = f(x).",
+        "Standard Derivatives: d/dx(k) = 0; d/dx(xⁿ) = n × xⁿ⁻¹; d/dx(sin x) = cos x; d/dx(cos x) = −sin x; d/dx(tan x) = sec²(x); d/dx(eᵃˣ) = a × eᵃˣ; d/dx(ln x) = 1 / x.",
+        "Product Rule: If y = u × v, dy/dx = u × (dv/dx) + v × (du/dx). Used when functions are multiplied.",
+        "Quotient Rule: If y = u / v, dy/dx = [v × (du/dx) − u × (dv/dx)] / v². Used when functions are divided.",
+        "Chain Rule (Function of a Function): If y = f(u) and u = g(x), then dy/dx = (dy/du) × (du/dx). Shortcut for y = [f(x)]ⁿ: dy/dx = n × [f(x)]ⁿ⁻¹ × f′(x).",
+        "Equations of Tangent and Normal to Curve at (x₁, y₁): First find derivative gradient m = dy/dx evaluated at x₁. 1) Tangent line equation: y − y₁ = m(x − x₁). 2) Normal line equation (perpendicular gradient −1/m): y − y₁ = (−1/m)(x − x₁).",
+        "Stationary Points (Turning Points) Classification: Set dy/dx = 0 and solve for x. Calculate second derivative d²y/dx²: 1) If d²y/dx² < 0, the point is a Local Maximum. 2) If d²y/dx² > 0, the point is a Local Minimum. 3) If d²y/dx² = 0, test sign of dy/dx on either side to check for a Point of Inflexion.",
+        "Kinematics Applications: Displacement = s(t); Velocity v = ds/dt; Acceleration a = dv/dt = d²s/dt². Maximum or minimum displacement occurs when v = 0; maximum or minimum velocity occurs when a = 0."
+      ]
+    },
+    {
+      "topic": "Integration",
+      "subtopics": [
+        "Indefinite integrals and standard anti-derivatives",
+        "Definite integrals and fundamental theorem of calculus",
+        "Integration techniques and area under curves/volumes of revolution"
+      ],
+      "keypoints": [
+        "Definition of Integration: Integration is the reverse process of differentiation (anti-derivation). Indefinite integral ∫ f(x) dx = F(x) + C, where C is the arbitrary constant of integration.",
+        "Standard Integrals Rules: ∫ xⁿ dx = (xⁿ⁺¹ / (n + 1)) + C (for n ≠ −1); ∫ k dx = kx + C; ∫ (1 / x) dx = ln|x| + C; ∫ eᵃˣ dx = (1 / a) × eᵃˣ + C.",
+        "Standard Trigonometric Integrals: ∫ cos(ax) dx = (1 / a) × sin(ax) + C; ∫ sin(ax) dx = −(1 / a) × cos(ax) + C; ∫ sec²(ax) dx = (1 / a) × tan(ax) + C.",
+        "Integration of Linear Binomial Functions: ∫ (ax + b)ⁿ dx = [(ax + b)ⁿ⁺¹ / (a × (n + 1))] + C (for n ≠ −1).",
+        "Definite Integrals: ∫ₐᵇ f(x) dx = [F(x)]ₐᵇ = F(b) − F(a). Definite integrals yield a single numerical value and do not require the constant C.",
+        "Properties of Definite Integrals: ∫ₐᵇ f(x) dx = −∫_bᵃ f(x) dx; ∫ₐᵃ f(x) dx = 0; ∫ₐᵇ f(x) dx = ∫ₐᶜ f(x) dx + ∫_cᵇ f(x) dx.",
+        "Integration by Substitution Method: To integrate ∫ f(g(x)) × g′(x) dx, let u = g(x), replace du = g′(x)dx, integrate with respect to u, and substitute back u = g(x).",
+        "Area Under Curve Application: Area bounded by curve y = f(x), the x-axis, and vertical lines x = a and x = b is Area = ∫ₐᵇ y dx. Area bounded between curve and y-axis from y = c to y = d is Area = ∫_cᵈ x dy.",
+        "Volume of Solid of Revolution: Volume formed by rotating region bounded by y = f(x) around x-axis through 360° (2π radians) between x = a and x = b is V = π × ∫ₐᵇ y² dx."
+      ]
+    },
+    {
+      "topic": "Statistics",
+      "subtopics": [
+        "Data collection, grouping, and frequency distributions",
+        "Measures of central tendency (Mean, Median, Mode)",
+        "Measures of dispersion (Range, Variance, Standard Deviation, Quartiles)"
+      ],
+      "keypoints": [
+        "Measures of Central Tendency (Ungrouped Data): Arithmetic Mean x̄ = (∑x) / n; Median = middle value when arranged in order (or average of two central values if n is even); Mode = value with highest frequency.",
+        "Grouped Data Mean Formula: x̄ = (∑f × x) / (∑f), where f is class frequency and x is the midpoint of each class interval [Midpoint x = (Lower Limit + Upper Limit) / 2]. Assumed Mean Method: x̄ = A + (∑f × d / ∑f), where d = x − A.",
+        "Grouped Data Mode Formula: Mode = L_m + [(f_m − f₁) / (2f_m − f₁ − f₂)] × c, where L_m is lower boundary of modal class, f_m is modal class frequency, f₁ is frequency of preceding class, f₂ is frequency of succeeding class, and c is class width.",
+        "Grouped Data Median Formula: Median = L_k + [((N / 2) − F_c) / f_k] × c, where L_k is lower boundary of median class, N = ∑f, F_c is cumulative frequency before median class, f_k is frequency of median class, and c is class width.",
+        "Measures of Dispersion (Spread): Range = Highest value − Lowest value; Interquartile Range (IQR) = Q₃ − Q₁; Semi-Interquartile Range (Quartile Deviation) = (Q₃ − Q₁) / 2.",
+        "Quartiles, Deciles, and Percentiles from Ogive: Read Cumulative Frequency Curve (Ogive) by plotting cumulative frequency on y-axis against upper class boundaries on x-axis. Q₁ (Lower Quartile) at N / 4 position; Q₂ (Median) at N / 2 position; Q₃ (Upper Quartile) at 3N / 4 position on y-axis.",
+        "Variance Formula (Ungrouped & Grouped): Ungrouped: σ² = [∑(x − x̄)²] / n = (∑x² / n) − (x̄)². Grouped: σ² = [∑f × (x − x̄)²] / ∑f = (∑f × x² / ∑f) − (x̄)².",
+        "Standard Deviation Formula: Standard Deviation (σ) = √(Variance) = √([(∑f × x²) / ∑f] − (x̄)²). SD measures average deviation of values from the mean. Mean Deviation MD = [∑f × |x − x̄|] / ∑f."
+      ]
+    },
+    {
+      "topic": "Probability",
+      "subtopics": [
+        "Theoretical, empirical probability, and sample space",
+        "Mutually exclusive, independent, and conditional events",
+        "Permutations, combinations, and probability applications"
+      ],
+      "keypoints": [
+        "Fundamental Definition: Probability P(E) of event E = (Number of favorable outcomes n(E)) / (Total number of sample space outcomes n(S)). Axioms: 0 ≤ P(E) ≤ 1. Impossible event: P(E) = 0; Certain event: P(E) = 1.",
+        "Complementary Events Law: P(E′) = 1 − P(E), where E′ is the event 'E does not occur'. Sum of probabilities of all mutually exclusive sample space events equals 1.",
+        "Mutually Exclusive Events (Addition Rule): Events A and B cannot occur at the same time (A ∩ B = Ø). P(A or B) = P(A ∪ B) = P(A) + P(B).",
+        "Non-Mutually Exclusive Events (General Addition Rule): Events A and B can occur simultaneously. P(A or B) = P(A ∪ B) = P(A) + P(B) − P(A ∩ B).",
+        "Independent Events (Multiplication Rule): Occurrence of A does not affect probability of B. P(A and B) = P(A ∩ B) = P(A) × P(B).",
+        "Dependent and Conditional Probability: Probability of A occurring given that B has already occurred is P(A|B) = P(A ∩ B) / P(B), provided P(B) > 0. General Multiplication Rule: P(A ∩ B) = P(B) × P(A|B).",
+        "Permutation Formula (Arrangement where Order Matters): ₙPᵣ = n! / (n − r)!. Permutations of n items with repeated types (p of type 1, q of type 2): Total = n! / (p! × q!). Circular permutation of n items: Total = (n − 1)!.",
+        "Combination Formula (Selection where Order Does NOT Matter): ₙCᵣ = n! / [r! × (n − r)!]. Relationship: ₙPᵣ = ₙCᵣ × r!. Identity: ₙCᵣ = ₙCₙ₋ᵣ. Probability using combinations: P(Selecting specific group) = (Favorable Combinations) / (Total Combinations)."
+      ]
+    }
+  ]
+}

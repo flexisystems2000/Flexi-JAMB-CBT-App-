@@ -1,0 +1,258 @@
+{
+  "subject": "Economics",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Basic Concepts in Economics",
+      "subtopics": [
+        "Scarcity, Choice, and Scale of Preference",
+        "Opportunity Cost and Resource Allocation",
+        "Production Possibility Curve (PPC)"
+      ],
+      "keypoints": [
+        "Fundamental Definition: Economics is a social science that studies human behavior as a relationship between ends (unlimited wants) and scarce means (limited resources) which have alternative uses.",
+        "Scarcity and Choice: Scarcity is the fundamental economic problem where resources are insufficient to satisfy all human wants. Because resources are scarce, economic agents must make choices among competing alternatives.",
+        "Scale of Preference: A list of unsatisfied wants arranged in order of relative importance or priority. It enables individuals and firms to make rational choices, satisfying the most pressing needs first.",
+        "Opportunity Cost (Real Cost): The next best alternative forgone or sacrificed when a choice is made. Distinct from money cost (financial outlay), opportunity cost reflects the true sacrifice involved in economic decisions.",
+        "Production Possibility Curve (PPC / PPF): A graphical representation showing the maximum combination of two goods an economy can produce using all available resources and technology efficiently.",
+        "PPC Points Interpretation: Points ON the curve represent full employment and optimal efficiency; points INSIDE represent underutilization/unemployment of resources; points OUTSIDE are unattainable with current resources.",
+        "PPC Shifts vs. Movements: A movement along the PPC indicates a reallocation of resources and opportunity cost. An outward shift of the PPC represents economic growth, caused by technological progress, increased labor force, or capital accumulation."
+      ]
+    },
+    {
+      "topic": "Economic Systems",
+      "subtopics": [
+        "Capitalism (Free Market)",
+        "Socialism (Centrally Planned)",
+        "Mixed Economy and Traditional Economy"
+      ],
+      "keypoints": [
+        "Capitalism (Free Market System): An economic system where resources and means of production are privately owned. Economic decisions are driven by the price mechanism (invisible hand) and the profit motive, with minimal government intervention.",
+        "Features and Limitations of Capitalism: Characterized by consumer sovereignty, private property, competition, and freedom of enterprise. Disadvantages include widening income inequality, market failures, and potential exploitation of labor.",
+        "Socialism (Command / Centrally Planned System): An economic system where factors of production are owned and controlled by the state. Economic decisions—what, how, and for whom to produce—are determined by a central planning authority.",
+        "Features and Limitations of Socialism: Aims for equitable distribution of wealth, provision of public goods, and elimination of private monopolies. Disadvantages include bureaucratic inefficiency, lack of consumer choice, and suppression of individual initiative.",
+        "Mixed Economy: An economic system combining elements of both market and command economies. Public and private sectors co-exist to allocate resources, balancing market efficiency with government welfare interventions.",
+        "Traditional Economy: An economic system based on customs, history, and time-honored beliefs. Resource allocation relies heavily on subsistence agriculture, bartering, and inherited occupations."
+      ]
+    },
+    {
+      "topic": "Theory of Demand",
+      "subtopics": [
+        "Law of Demand and Demand Schedule/Curve",
+        "Determinants of Demand and Change in Demand vs. Quantity Demanded",
+        "Types of Demand (Composite, Derived, Joint, Competitive)"
+      ],
+      "keypoints": [
+        "Law of Demand: States that, all other factors remaining constant (ceteris paribus), the quantity demanded of a commodity varies inversely with its price—higher prices yield lower quantity demanded and vice versa.",
+        "Demand Schedule and Curve: A demand schedule is a table showing prices and corresponding quantities demanded. The demand curve is a graphical representation that slopes downward from left to right due to diminishing marginal utility, income effect, and substitution effect.",
+        "Change in Quantity Demanded vs. Change in Demand: Change in quantity demanded is a movement ALONG the same demand curve caused solely by a change in the commodity's own price. Change in demand is a SHIFT of the entire curve (left or right) caused by non-price factors.",
+        "Determinants of Demand: Factors that shift the demand curve include consumer income, prices of related goods (substitutes and complements), tastes and preferences, population size, advertising, and future price expectations.",
+        "Derived Demand: Demand for a good or factor of production that arises because of the demand for another final product (e.g., demand for labor is derived from the demand for the goods labor produces).",
+        "Joint / Complementary Demand: Occurs when two or more commodities are demanded together to satisfy a single want (e.g., car and petrol, pen and ink). An increase in demand for one increases demand for the other.",
+        "Competitive / Substitute Demand: Occurs when commodities serve as alternative choices to fulfill the same requirement (e.g., tea and coffee, butter and margarine). An increase in the price of one increases demand for its substitute.",
+        "Composite Demand: Demand for a commodity that has multiple distinct uses (e.g., cassava used for garri, starch, and animal feed; electricity used for lighting, heating, and powering appliances)."
+      ]
+    },
+    {
+      "topic": "Theory of Supply",
+      "subtopics": [
+        "Law of Supply and Supply Schedule/Curve",
+        "Determinants of Supply and Shifts in the Supply Curve",
+        "Types of Supply (Joint, Competitive, Composite)"
+      ],
+      "keypoints": [
+        "Law of Supply: States that, ceteris paribus, the quantity of a commodity offered for sale varies directly with its price—higher prices yield greater quantity supplied and lower prices yield lesser quantity supplied.",
+        "Supply Schedule and Curve: A supply schedule tabulates prices against quantities supplied. The supply curve slopes upward from left to right, reflecting the increasing marginal cost of production for higher output levels.",
+        "Change in Quantity Supplied vs. Change in Supply: Movement ALONG the supply curve results strictly from changes in the good's own price. A SHIFT of the entire supply curve (left or right) is driven by non-price determinants.",
+        "Determinants of Supply: Factors shifting supply include cost of production inputs, state of technology, government taxes and subsidies, number of producers, weather conditions (for agriculture), and prices of alternative goods.",
+        "Joint / Complementary Supply: Production process where producing one product automatically yields another as a byproduct (e.g., beef and hide, crude oil and petrol). An increase in the supply of one increases the supply of the other.",
+        "Competitive Supply: Occurs when a factor of production can be used to produce alternative goods (e.g., land used for growing wheat or corn). Increasing the supply of one good reduces the availability/supply of the other.",
+        "Composite Supply: Total supply of a commodity obtained from multiple distinct sources or producers to satisfy a aggregate market demand (e.g., light supply from solar, hydro, and thermal sources)."
+      ]
+    },
+    {
+      "topic": "Elasticity of Demand and Supply",
+      "subtopics": [
+        "Price Elasticity of Demand (PED)",
+        "Income Elasticity (YED) and Cross-Price Elasticity (XED)",
+        "Price Elasticity of Supply (PES) and Applications"
+      ],
+      "keypoints": [
+        "Price Elasticity of Demand (PED): Measures the degree of responsiveness of quantity demanded to a change in the price of the commodity. Formula: PED = (% Change in Quantity Demanded) / (% Change in Price).",
+        "PED Classifications: Elastic (PED > 1), Inelastic (PED < 1), Unitary Elastic (PED = 1), Perfectly Elastic (PED = ∞, horizontal curve), Perfectly Inelastic (PED = 0, vertical curve).",
+        "Income Elasticity of Demand (YED): Measures response of demand to changes in consumer income. YED = (% Change in Quantity Demanded) / (% Change in Income). Positive YED indicates a Normal Good; Negative YED indicates an Inferior Good; YED > 1 indicates a Luxury Good.",
+        "Cross-Price Elasticity of Demand (XED): Measures response of demand for Good A to price changes in Good B. XED = (% Change in Q_A) / (% Change in P_B). Positive XED implies Substitutes; Negative XED implies Complements; Zero XED implies Unrelated Goods.",
+        "Determinants of PED: Availability of close substitutes, proportion of income spent on the good, necessity vs. luxury status, time period under consideration, and number of alternative uses.",
+        "Price Elasticity of Supply (PES): Measures responsiveness of quantity supplied to price changes. PES = (% Change in Quantity Supplied) / (% Change in Price). Influenced by factor mobility, production time lag, spare capacity, and storability of goods.",
+        "Revenue and Elasticity Applications: Total Revenue (TR = Price * Quantity). If demand is elastic, reducing price increases total revenue. If demand is inelastic, increasing price increases total revenue. Crucial for government tax policy design."
+      ]
+    },
+    {
+      "topic": "Price Determination and Market Equilibrium",
+      "subtopics": [
+        "Equilibrium Price and Quantity",
+        "Effects of Shifts in Demand and Supply",
+        "Price Controls (Maximum and Minimum Price Legislation)"
+      ],
+      "keypoints": [
+        "Market Equilibrium: A state where quantity demanded equals quantity supplied (Q_d = Q_s) at a specific price (Equilibrium Price, P_e). The market clears with no excess demand or excess supply.",
+        "Excess Demand and Excess Supply: Prices below P_e create a shortage (Excess Demand, Q_d > Q_s), forcing prices upward. Prices above P_e create a surplus (Excess Supply, Q_s > Q_d), forcing prices downward.",
+        "Algebraic Equilibrium Calculation: Set the demand equation equal to the supply equation (e.g., 20 - 2P = 5 + 3P), solve for equilibrium price P, and substitute P back into either equation to obtain equilibrium quantity Q.",
+        "Shifts in Demand/Supply on Equilibrium: An increase in demand (shift right) raises both P_e and Q_e. An increase in supply (shift right) lowers P_e and raises Q_e. Concurrent shifts depend on the relative magnitude of each shift.",
+        "Maximum Price Control (Price Ceiling): Legally imposed price set BELOW equilibrium price to protect consumers (e.g., rent controls, essential food items). Results in persistent market shortages, queuing, rationing, and black markets.",
+        "Minimum Price Control (Price Floor): Legally imposed price set ABOVE equilibrium price to protect producers or workers (e.g., minimum wage laws, agricultural price supports). Results in persistent surpluses and unemployment."
+      ]
+    },
+    {
+      "topic": "Theory of Production",
+      "subtopics": [
+        "Factors of Production and Returns to Scale",
+        "Law of Diminishing Returns (Short-run Production)",
+        "Division of Labor and Specialization"
+      ],
+      "keypoints": [
+        "Factors of Production: Primary input resources required for creation of goods/services: Land (reward: Rent), Labor (reward: Wages/Salaries), Capital (reward: Interest), and Entrepreneurship (reward: Profit).",
+        "Short Run vs. Long Run Production: Short run is a period where at least one factor input is fixed while others are variable. Long run is a time horizon long enough for all factor inputs to become variable.",
+        "Law of Diminishing Returns (Variable Proportions): In the short run, as successive units of a variable input (e.g., labor) are added to a fixed input (e.g., land), the Total Product increases, reaches a peak, and eventually Marginal Product decreases.",
+        "Total, Average, and Marginal Product Relations: Total Product (TP) is total output; Average Product (AP = TP/L) is output per worker; Marginal Product (MP = ΔTP/ΔL) is additional output from one extra unit of variable input. When MP > AP, AP rises; when MP < AP, AP falls; when MP = 0, TP is at its maximum.",
+        "Division of Labor and Specialization: Breaking down a production process into discrete tasks performed by individual workers specialized in those tasks. Increases output, skills, saving of time, and efficiency.",
+        "Disadvantages of Division of Labor: Risk of boredom/monotony from repetitive tasks, risk of structural unemployment from over-specialization, reduced craftsmanship, and loss of individual responsibility.",
+        "Economies and Diseconomies of Scale: Long-run phenomena. Internal Economies of scale are cost savings realized by an individual firm expanding production scale (technical, financial, managerial, risk-bearing). Internal Diseconomies are inefficiencies from over-expansion."
+      ]
+    },
+    {
+      "topic": "Theory of Costs and Revenues",
+      "subtopics": [
+        "Short-run Cost Concepts (FC, VC, TC, AC, MC)",
+        "Long-run Cost Curves and Scale Efficiencies",
+        "Revenue Concepts (TR, AR, MR) across Market Structures"
+      ],
+      "keypoints": [
+        "Cost Definitions: Total Cost (TC) = Total Fixed Cost (TFC) + Total Variable Cost (TVC). TFC remains constant regardless of output level (e.g., rent, insurance). TVC varies directly with production output (e.g., raw materials, direct wages).",
+        "Per-Unit Cost Formulas: Average Fixed Cost (AFC = TFC/Q); Average Variable Cost (AVC = TVC/Q); Average Total Cost (ATC or AC = TC/Q = AFC + AVC). Marginal Cost (MC = ΔTC/ΔQ) is the additional cost of producing one more unit.",
+        "Cost Curve Shapes: AFC curve slopes continuously downward. AC, AVC, and MC curves are U-shaped due to the Law of Diminishing Returns in the short run. The MC curve cuts the AVC and AC curves at their minimum points from below.",
+        "Revenue Concepts: Total Revenue (TR = P * Q); Average Revenue (AR = TR/Q = Price); Marginal Revenue (MR = ΔTR/ΔQ) is additional revenue gained from selling one additional unit.",
+        "Perfect Competition Revenue Relations: Under Perfect Competition, firm is a price taker; Price (P) is constant. Therefore: P = AR = MR = Demand curve (horizontal straight line).",
+        "Imperfect Competition Revenue Relations: Under Monopoly/Oligopoly, firm is a price maker; to sell more, it must lower price. Demand curve (AR) slopes downward, and MR lies below AR (MR < AR)."
+      ]
+    },
+    {
+      "topic": "Market Structures",
+      "subtopics": [
+        "Perfect Competition (Features, Price & Output)",
+        "Monopoly and Monopolistic Competition",
+        "Oligopoly, Duopoly, and Price Discrimination"
+      ],
+      "keypoints": [
+        "Perfect Competition Features: Large number of buyers and sellers, homogeneous products, free entry and exit, perfect market information, no transport costs, firms are price takers.",
+        "Profit Maximization Rule: Any firm across all market structures maximizes profit at the output level where Marginal Cost equals Marginal Revenue (MC = MR), provided MC is rising.",
+        "Perfect Competition Short-run vs Long-run Equilibrium: Short-run: Firm can make supernormal profit, normal profit, or loss. Long-run: Free entry attracts new firms, eroding profits until all firms earn strictly normal profit (P = AR = MR = MC = AC).",
+        "Monopoly Features: Single producer/seller controlling total market supply, unique product without close substitutes, substantial barriers to entry (legal patents, economies of scale, raw material control), price maker status.",
+        "Monopolistic Competition: Market structure combining elements of competition and monopoly. Features many buyers and sellers, differentiated products (branding, packaging), and low barriers to entry. Long-run yields normal profits.",
+        "Oligopoly Features: Market dominated by a few large firms. Characterized by mutual interdependence among firms, non-price competition (advertising), price rigidity, and potential collusion (cartels).",
+        "Price Discrimination: Practice where a monopolist charges different prices to different buyers for the same commodity, not justified by cost differences. Conditions required: market power, distinct market segments with differing PEDs, and prevention of resale."
+      ]
+    },
+    {
+      "topic": "National Income Accounting",
+      "subtopics": [
+        "National Income Aggregates (GDP, GNP, NNP, NI)",
+        "Methods of Measuring National Income",
+        "Circular Flow of Income and Double Counting Problems"
+      ],
+      "keypoints": [
+        "Gross Domestic Product (GDP): The total monetary value of all final goods and services produced within the geographic boundaries of a country during a specified time period (usually one year), regardless of ownership.",
+        "Gross National Product (GNP): GDP plus Net Factor Income from Abroad (NFIA). GNP = GDP + (Income earned by citizens abroad - Income earned by foreigners domestically). Reflects ownership-based production.",
+        "Net National Product (NNP) and National Income (NI): NNP = GNP - Capital Consumption Allowance (Depreciation). National Income at Factor Cost = NNP - Indirect Taxes + Subsidies.",
+        "Output / Product Method: Sums the total market value of final goods and services produced by all sector industries. To avoid double counting, value added at each stage of production is calculated (Value Added = Output Value - Intermediate Input Cost).",
+        "Income Method: Sums all factor incomes earned by owners of factors of production in producing the national output: Wages + Rent + Interest + Profits + Self-employed earnings. Excludes transfer payments (pensions, student allowances).",
+        "Expenditure Method: Sums total expenditure on final goods and services by all sectors: National Income (Y) = C + I + G + (X - M), where C = Private Consumption, I = Investment, G = Government Spending, X = Exports, M = Imports.",
+        "Real GDP vs. Nominal GDP: Nominal GDP measures output using current market prices. Real GDP measures output using base-year constant prices to eliminate inflation effects. Real GDP = (Nominal GDP / GDP Deflator) * 100."
+      ]
+    },
+    {
+      "topic": "Money and Banking",
+      "subtopics": [
+        "Functions, Characteristics, and Quantity Theory of Money",
+        "Commercial Banking and Credit Creation",
+        "Central Banking and Monetary Policy Tools"
+      ],
+      "keypoints": [
+        "Functions of Money: Primary: Medium of exchange, Unit of account / Measure of value. Secondary: Standard of deferred payment, Store of value.",
+        "Characteristics of Money: Acceptability, Portability, Durability, Divisibility, Scarcity, Cognizability, and Relative Stability of Value.",
+        "Quantity Theory of Money (Fisher's Identity): MV = PT, where M = Money supply, V = Velocity of circulation, P = Price level, T = Transaction volume. Assuming V and T are constant, money supply changes cause proportional changes in price level.",
+        "Commercial Banks: Profit-seeking financial institutions that accept deposits, advance loans, provide payment transfer mechanisms, and create credit.",
+        "Credit Creation Process: Commercial banks multiply deposits by keeping a fraction as Cash Reserve Ratio (CRR) and lending the remainder. Credit Multiplier = 1 / CRR. Total Deposit Created = Initial Cash Deposit * (1 / CRR).",
+        "Central Bank: Government-owned apex institution regulating the financial system, issuing legal tender currency, acting as banker to government and commercial banks, and controlling money supply.",
+        "Monetary Policy Tools: Quantitative controls: Bank rate, Open Market Operations (OMO - buying/selling government securities), Cash Reserve Ratio (CRR), Liquidity Ratio. Qualitative controls: Selective credit controls, Moral suasion, Directives."
+      ]
+    },
+    {
+      "topic": "Inflation and Deflation",
+      "subtopics": [
+        "Types and Causes of Inflation (Demand-Pull vs. Cost-Push)",
+        "Effects of Inflation on Economic Groups",
+        "Control Measures for Inflation and Deflation"
+      ],
+      "keypoints": [
+        "Inflation Definition: A persistent and appreciable general increase in the price level of goods and services over time, leading to a decline in the purchasing power of money.",
+        "Demand-Pull Inflation: Occurs when aggregate demand for goods and services exceeds aggregate supply at full employment level ('too much money chasing too few goods'). Caused by excess money supply, increased government spending, or tax cuts.",
+        "Cost-Push Inflation: Occurs when production costs rise, forcing firms to increase prices to maintain profit margins. Driven by wage increases, increased import costs (imported inflation), tax hikes, or rising raw material prices.",
+        "Effects of Inflation: Winners: Debtors (repay in cheaper money), business owners/equity holders, speculators. Losers: Creditors, fixed-income earners (pensioners, salaried workers), savers, domestic exporters.",
+        "Deflation: A persistent decrease in the general price level of goods and services, often accompanied by falling output, declining demand, and rising unemployment.",
+        "Control Measures for Inflation: Monetary Policy (raising interest rates, selling securities via OMO, increasing reserve ratios); Fiscal Policy (increasing direct taxes, reducing government expenditure); Supply-Side Measures (price ceilings, boosting domestic production)."
+      ]
+    },
+    {
+      "topic": "Public Finance and Fiscal Policy",
+      "subtopics": [
+        "Government Revenue, Expenditure, and Taxation",
+        "Tax Principles and Classification (Direct vs. Indirect)",
+        "National Budgets and Fiscal Policy Instruments"
+      ],
+      "keypoints": [
+        "Public Finance: The field of economics concerned with government revenue generation, public expenditure, borrowing, and financial administration.",
+        "Canons / Principles of Taxation (Adam Smith): Equity (fairness based on ability to pay), Certainty (time and amount clear), Convenience (easy time/method to pay), Economy (cost of collection must be low relative to yield).",
+        "Direct Taxes: Levied directly on the income, wealth, or profits of individuals and corporate entities; burden cannot be shifted (e.g., Personal Income Tax, Companies Income Tax, Petroleum Profit Tax).",
+        "Indirect Taxes: Levied on goods and services at production or sale stage; burden can be shifted from sellers to final consumers (e.g., Value Added Tax [VAT], Excise Duties, Import/Customs Duties).",
+        "Tax Systems / Rates: Progressive Tax (tax rate increases as income increases; e.g., income tax); Proportional Tax (tax rate remains constant regardless of income); Regressive Tax (tax rate decreases as income increases; burden falls disproportionately on low-income earners).",
+        "Types of National Budgets: Balanced Budget (Revenue = Expenditure); Surplus Budget (Revenue > Expenditure; used to curb inflation); Deficit Budget (Expenditure > Revenue; used during economic recessions to stimulate economic activity).",
+        "Fiscal Policy: Government policy utilizing public spending and taxation mechanisms to influence macroeconomic variables (economic activity, employment, inflation)."
+      ]
+    },
+    {
+      "topic": "International Trade and Finance",
+      "subtopics": [
+        "Absolute and Comparative Advantage Theories",
+        "Terms of Trade and Balance of Payments (BOP)",
+        "Trade Protectionism and Commercial Policy"
+      ],
+      "keypoints": [
+        "Absolute Advantage (Adam Smith): Country A has an absolute advantage over Country B if it can produce more of a commodity using the same or fewer resources.",
+        "Comparative Advantage (David Ricardo): A country should specialize in producing and exporting goods for which it has a lower opportunity cost, even if another nation has an absolute advantage in all goods. Trade benefits both nations.",
+        "Terms of Trade (TOT): The index ratio of export prices relative to import prices. TOT = (Index of Export Prices / Index of Import Prices) * 100. Favorable TOT occurs when export prices rise relative to import prices.",
+        "Balance of Payments (BOP): A comprehensive record of all financial and economic transactions between residents of a country and the rest of the world over a specified period.",
+        "BOP Components: Current Account (visible trade in goods, invisible trade in services, net transfers); Capital Account (cross-border capital movements, foreign investments); Financial Account and Reserve Assets.",
+        "BOP Deficit and Corrective Measures: BOP deficit occurs when outgoing payments exceed incoming receipts. Corrected via currency devaluation/depreciation, import restrictions (tariffs, quotas), export promotion, and foreign exchange reserves.",
+        "Commercial Policy Tools (Protectionism): Tariffs (import taxes), Quotas (physical quantity limits), Embargoes (total bans), Subsidies to domestic producers, and Foreign Exchange controls."
+      ]
+    },
+    {
+      "topic": "Economic Growth and Development",
+      "subtopics": [
+        "Distinction between Economic Growth and Development",
+        "Characteristics and Problems of Developing Countries",
+        "Development Planning and International Economic Organizations"
+      ],
+      "keypoints": [
+        "Economic Growth vs. Development: Growth is a quantitative increase in a nation's real national output/GDP over time. Development is a broader qualitative process involving real GDP growth alongside improvements in living standards, healthcare, education, income distribution, and structural institutional changes.",
+        "Characteristics of Developing Countries (LDCs): Low per capita income, heavy reliance on primary sector/subsistence agriculture, high population growth rates, high unemployment/underemployment, low capital formation, and technological backwardness.",
+        "Obstacles to Economic Development: Vicious cycle of poverty (low income -> low savings -> low investment -> low productivity -> low income), inadequate infrastructure, political instability, debt burdens, and brain drain.",
+        "Economic Planning: Conscious government steering and resource allocation strategy over fixed term horizons (e.g., 5-year plans) to achieve specific socioeconomic targets.",
+        "ECOWAS (Economic Community of West African States): Regional economic bloc established in 1975 to promote economic integration, free movement of people and goods, and regional stability across West Africa.",
+        "International Financial Institutions: IMF (provides short-term BOP balance assistance); World Bank / IBRD (provides long-term capital loans for structural development projects); AfDB (African Development Bank targeting continental infrastructure)."
+      ]
+    }
+  ]
+}

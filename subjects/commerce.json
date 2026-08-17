@@ -1,0 +1,189 @@
+{
+  "subject": "Commerce",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Introduction to Commerce and Historical Background",
+      "subtopics": [
+        "Definition, scope, and functions of Commerce",
+        "Commercial activities: Production, Trade, and Auxiliaries to Trade",
+        "Historical evolution of trade and barter system"
+      ],
+      "keypoints": [
+        "Definition and Scope: Commerce is the study of all activities involved in the distribution and exchange of goods and services from the producer to the final consumer.",
+        "Divisions of Commerce: Divided into Trade (buying and selling) and Auxiliaries/Aids to Trade (supporting services like banking, transport, warehousing, insurance, and advertising).",
+        "Branches of Production: Primary Production (extraction of raw materials from nature e.g., farming, mining); Secondary Production (manufacturing and construction); Tertiary Production (provision of commercial and personal services).",
+        "Evolution of Trade: Trade originated from crude self-sufficiency to the Barter System (direct exchange of goods for goods). Major drawbacks of barter included lack of double coincidence of wants, indivisibility of items, and absence of a common measure/store of value.",
+        "Transition to Money: Commodity money (cowries, salt, beads) resolved barter limitations, eventually evolving into metallic coinage, paper currency, and modern digital banking."
+      ]
+    },
+    {
+      "topic": "Occupation and Production",
+      "subtopics": [
+        "Classification of occupations",
+        "Factors of production and their rewards",
+        "Division of labor and specialization"
+      ],
+      "keypoints": [
+        "Classification of Occupations: Grouped into Industrial (extractive, manufacturing, constructive), Commercial (trading and aids to trade), and Service occupations (direct personal services and indirect public services).",
+        "Factors of Production: 1) Land (natural resources; reward is Rent); 2) Labor (human physical and mental effort; reward is Wages/Salaries); 3) Capital (man-made assets used for production; reward is Interest); 4) Enterprise/Entrepreneurship (risk-taking and organization; reward is Profit).",
+        "Division of Labor: The breakdown of a complex production process into simpler, distinct tasks assigned to specialized workers.",
+        "Advantages of Division of Labor: Increases output, saves time, develops worker skills, promotes automation, and reduces production costs.",
+        "Disadvantages and Limitations: Monotony and boredom, risk of unemployment due to specialization, loss of craftsmanship, and limitation by the size of the market."
+      ]
+    },
+    {
+      "topic": "Home/Internal Trade",
+      "subtopics": [
+        "Wholesale Trade: Functions, types, and channels of distribution",
+        "Retail Trade: Characteristics, types, and modern trends",
+        "Middlemen and trade documents"
+      ],
+      "keypoints": [
+        "Home Trade Structure: Trade conducted within the international borders of a country, categorized into Wholesale Trade and Retail Trade.",
+        "Wholesale Trade: Buying in large quantities from producers and selling in smaller lots to retailers. Functions: warehousing/storage, bulk breaking, financing, risk bearing, and market research.",
+        "Retail Trade: Buying in small quantities from wholesalers/producers and selling in unit quantities to final consumers.",
+        "Types of Retailers: Small-scale retailers (hawkers, kiosk owners, mobile shops) vs. Large-scale retailers (Departmental stores, Supermarkets, Multiple/Chain stores, Hypermarkets, Mail-order businesses).",
+        "Elimination of Middlemen: Reasons for bypassing wholesalers include perishable goods, heavy/bulky machinery, direct producer sales outlets, and large-scale supermarket purchases.",
+        "Trade Documents: Essential paperwork including Advice Note, Delivery Note, Invoice, Statement of Account, Credit Note (correcting overcharges), Debit Note (correcting undercharges), and Official Receipt."
+      ]
+    },
+    {
+      "topic": "Foreign/International Trade",
+      "subtopics": [
+        "Types: Import, Export, and Entrepot trade",
+        "Balance of Trade vs. Balance of Payments",
+        "Trade barriers and international trade documentation"
+      ],
+      "keypoints": [
+        "Concept and Division: International trade involves commercial exchanges across national boundaries. Subdivided into Import Trade (buying foreign goods), Export Trade (selling goods abroad), and Entrepot Trade (re-exporting imported goods).",
+        "Absolute and Comparative Advantage: Absolute Advantage (Adam Smith: producing a good more efficiently than others); Comparative Advantage (David Ricardo: producing at a lower opportunity cost).",
+        "Balance of Trade vs. Balance of Payments: Balance of Trade calculates the visible exports minus visible imports of physical goods. Balance of Payments is a comprehensive record of all financial transactions (visible trade, invisible trade like services, and capital movements) between a country and the rest of the world over a period.",
+        "Trade Protectionism Measures: Tariffs/customs duties, import quotas, embargoes, foreign exchange controls, and export subsidies.",
+        "Foreign Trade Documents: Bill of Lading (document of title to goods on sea vessels), Indent (foreign order placed through agents), Consular Invoice, Certificate of Origin, Bill of Exchange, and Letter of Credit."
+      ]
+    },
+    {
+      "topic": "Business Units and Organizations",
+      "subtopics": [
+        "Sole Proprietorships and Partnerships",
+        "Private and Public Limited Liability Companies",
+        "Public Corporations and Cooperative Societies"
+      ],
+      "keypoints": [
+        "Sole Proprietorship: Business owned and managed by one person. Features: unlimited liability, easy setup, small capital, and lack of corporate personality.",
+        "Partnership: Association of 2 to 20 persons (up to 50 in some jurisdictions) carrying on business jointly for profit. Regulated by a Partnership Deed; partners have unlimited joint liability unless structured as a Limited Partnership.",
+        "Limited Liability Companies: Incorporated businesses separate from owners. Features: limited liability, perpetual succession, legal entity status. Private Limited Companies (2-50 members, restricted share transfers) vs. Public Limited Companies (minimum 7 members, no maximum, shares publicly traded on stock exchange).",
+        "Key Company Documents: Memorandum of Association (defines external relations and powers) and Articles of Association (defines internal management rules). Prospectus invites the public to subscribe for shares.",
+        "Public Corporations: State-owned statutory enterprises created by Acts of Parliament to provide essential social amenities without prioritizing profit maximization.",
+        "Cooperative Societies: Voluntary associations formed by individuals with common economic interests (e.g., Consumer, Producer, Credit & Thrift Cooperatives). Operating principles include democratic control ('one man, one vote') and dividend distribution based on patronage."
+      ]
+    },
+    {
+      "topic": "Capital and Financial Structure of Business",
+      "subtopics": [
+        "Types and classifications of capital",
+        "Profit concepts: Gross, Net, and Operating profit",
+        "Turnover and financial ratios in business"
+      ],
+      "keypoints": [
+        "Accounting vs. Commercial Capital: Accounting Capital = Assets - Liabilities. Commercial Capital represents total assets utilized in running a business.",
+        "Capital Classifications: Fixed Capital (durable assets like buildings, land, machinery); Working Capital (Current Assets - Current Liabilities; funds used for day-to-day operations); Circulating/Liquid Capital (cash and assets convertible to cash quickly); Capital Employed (Total Assets - Current Liabilities).",
+        "Share Capital Structure: Authorized/Nominal Capital (statutory maximum share limit); Issued Capital (shares offered to subscribers); Called-up Capital (amount requested from shareholders); Paid-up Capital (actual cash received).",
+        "Profit Calculation: Gross Profit = Net Sales - Cost of Goods Sold (COGS). Net Profit = Gross Profit + Other Incomes - Operating Expenses.",
+        "Turnover: Total value of sales executed within a given period. Rate of Turnover = Cost of Goods Sold / Average Stock."
+      ]
+    },
+    {
+      "topic": "Banking and Financial Institutions",
+      "subtopics": [
+        "Commercial Banks: Functions, credit creation, and services",
+        "Central Bank: Functions and monetary policy tools",
+        "Specialized banks and the Money/Capital Markets"
+      ],
+      "keypoints": [
+        "Commercial Banks: Profit-making financial institutions accepting deposits, advancing loans (overdrafts), providing foreign exchange, and facilitating clearing transactions.",
+        "Credit Creation Process: Commercial banks generate money by lending out a portion of customer cash deposits while maintaining a required cash reserve ratio.",
+        "Central Bank: Regulatory financial authority of a nation. Functions: banker to the government, banker to commercial banks, sole issuer of legal tender currency, lender of last resort, manager of foreign exchange reserves, and controller of credit.",
+        "Monetary Policy Tools: Quantitative controls (Bank Rate/Discount Rate, Open Market Operations [OMO], Reserve Requirements/Cash Reserve Ratio, Liquidity Ratio) and Qualitative controls (Moral Suasion, Selective Credit Control).",
+        "Financial Markets: Money Market (short-term funds and instruments e.g., Treasury Bills, Commercial Papers); Capital Market (long-term investment funds and instruments e.g., Stocks, Shares, Debentures, Development Bonds traded on Stock Exchanges)."
+      ]
+    },
+    {
+      "topic": "Insurance",
+      "subtopics": [
+        "Principles of Insurance",
+        "Types of Insurance policies (Life and Non-Life)",
+        "Reinsurance, Underwriting, and Indemnity"
+      ],
+      "keypoints": [
+        "Concept of Insurance: Risk-pooling mechanism where many individuals exposed to similar hazards contribute premiums to compensate the few who suffer actual losses.",
+        "Fundamental Principles: 1) Utmost Good Faith (Uberrimae Fidei: full disclosure of material facts); 2) Insurable Interest (financial stake in the insured item); 3) Indemnity (restoring the insured to their exact pre-loss financial position without profit); 4) Proximate Cause (direct cause of loss); 5) Subrogation (insurer steps into the insured's rights after compensation); 6) Contribution (sharing loss proportionately among multiple insurers).",
+        "Life Assurance vs. Non-Life Insurance: Life Assurance covers certain events (death, reaching a specific age); Non-Life Insurance (Fire, Marine, Motor, Burglary) covers uncertain risks.",
+        "Key Insurance Terms: Premium (regular payment made by insured); Policy (written insurance contract); Underwriter (assessor who evaluates risk and sets premiums); Reinsurance (insurer insuring part of their liability with another insurance firm)."
+      ]
+    },
+    {
+      "topic": "Transportation, Warehousing, and Communication",
+      "subtopics": [
+        "Modes of Transport: Land, Air, Water, and Pipeline",
+        "Warehousing: Importance, functions, and types of warehouses",
+        "Communication and Postal/Courier Services"
+      ],
+      "keypoints": [
+        "Modes of Transportation: Road (flexible, door-to-door delivery), Rail (heavy, bulky goods over long distances), Sea/Water (cheapest for international bulk trade), Air (fastest, most expensive for light/high-value/perishable cargo), Pipeline (fluids, oil, and gas).",
+        "Warehousing Functions: Storing goods ahead of demand, stabilizing prices, protection against weather/theft, bulk breaking, and preparing goods for sale (packing, grading).",
+        "Types of Warehouses: Private Warehouses (owned by manufacturers/wholesalers), Public Warehouses (rented out to general business owners), Bonded Warehouses (government-controlled facilities storing dutiable goods before customs duties are paid).",
+        "Communication in Commerce: System of transmitting information, orders, and market intelligence between commercial entities.",
+        "Types of Communication Services: Traditional Postal Services (registered mail, express letters, parcel post), Courier Services (private, rapid delivery), Telecommunications, and Electronic Media (email, internet, e-commerce networks)."
+      ]
+    },
+    {
+      "topic": "Advertising, Sales Promotion, and Customer Service",
+      "subtopics": [
+        "Types and media of advertising",
+        "Sales Promotion: Methods and objectives",
+        "Public Relations and Consumer Protection"
+      ],
+      "keypoints": [
+        "Advertising Definition: Non-personal, paid form of presenting and promoting ideas, goods, or services by an identified sponsor.",
+        "Types of Advertising: Informative (educating consumers), Persuasive (convincing buyers to switch brands), Competitive (highlighting brand superiority over rivals), Generic (promoting an entire industry product class).",
+        "Advertising Media: Print (newspapers, magazines), Broadcast (radio, television), Outdoor (billboards, neon signs), Digital/Online Media.",
+        "Sales Promotion: Short-term incentives designed to stimulate immediate purchasing (e.g., discounts, buy-one-get-one-free, free samples, coupons, trade fairs).",
+        "Consumer Protection: Safeguarding consumers against unfair trade practices, unsafe products, hoarding, and false advertising. Regulatory bodies include NAFDAC, FCCPC, and SON."
+      ]
+    },
+    {
+      "topic": "Business Law and Commercial Contracts",
+      "subtopics": [
+        "Law of Contract: Essentials of a valid contract",
+        "Agency Law: Creation and termination of agency",
+        "Sale of Goods Act and Hire Purchase"
+      ],
+      "keypoints": [
+        "Law of Contract: A legally binding agreement between two or more competent parties.",
+        "Essentials of a Valid Contract: Offer, Acceptance, Consideration (value exchanged), Intention to create legal relations, Capacity of parties (sane adults), Legality of object, and Genuine consent.",
+        "Vitiating Factors: Elements that invalidate contracts—Mistake, Misrepresentation, Duress (coercion), Undue Influence, and Illegality.",
+        "Law of Agency: Legal relationship where one person (Agent) is authorized to act on behalf of another (Principal) to establish legal relationships with third parties.",
+        "Sale of Goods Act: Regulates contracts transferring ownership of goods for money. Key provisions cover conditions, warranties, title transfer, and buyer remedies.",
+        "Hire Purchase Agreement: System of buying goods on installment where ownership passes only upon payment of the final installment. Renting with an option to purchase, contrasting outright Credit Sales/Deferred Payment."
+      ]
+    },
+    {
+      "topic": "Information and Communication Technology (ICT) in Commerce",
+      "subtopics": [
+        "E-Commerce, Electronic Banking, and Digital Payments",
+        "Global trade networks and automation in distribution",
+        "Challenges and security in digital commercial transactions"
+      ],
+      "keypoints": [
+        "E-Commerce: Buying and selling goods and services over the Internet. Business Models: B2B (Business-to-Business), B2C (Business-to-Consumer), C2C (Consumer-to-Consumer).",
+        "E-Banking and Digital Payments: Automated Teller Machines (ATMs), Point of Sale (POS) terminals, Mobile Banking apps, Electronic Funds Transfer (EFT), and online payment gateways.",
+        "Benefits of E-Commerce: Global market reach, 24/7 business availability, reduced operational overheads, direct customer engagement, and instant transaction processing.",
+        "Business Automation: Use of barcode scanners, inventory management software, automated warehouses, and electronic data interchange (EDI) to streamline logistics.",
+        "Digital Security Challenges: Cybercrime, identity theft, phishing attacks, data breaches, and non-compliance with data privacy regulations requiring robust encryption and authentication protocols."
+      ]
+    }
+  ]
+}

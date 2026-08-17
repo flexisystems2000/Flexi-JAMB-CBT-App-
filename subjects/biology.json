@@ -1,0 +1,193 @@
+{
+  "subject": "Biology",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Living Organisms and Organization of Life",
+      "subtopics": [
+        "Characteristics of living things and classification systems",
+        "Taxonomic hierarchy and binomial nomenclature",
+        "Levels of organization in living organisms"
+      ],
+      "keypoints": [
+        "Characteristics of Life: Living organisms exhibit eight fundamental life processes summarized by MR NIGER D: Movement, Respiration, Nutrition, Irritability (Sensitivity), Growth, Excretion, Reproduction, and Death.",
+        "Taxonomic Hierarchy: Living organisms are classified systematically into eight hierarchical ranks: Domain, Kingdom, Phylum (or Division in plants), Class, Order, Family, Genus, and Species. Species is the basic unit of classification, defined as a group of organisms capable of interbreeding to produce fertile offspring.",
+        "Binomial Nomenclature: A formal system named by Carl Linnaeus where every species receives a two-part scientific name. The first part is the Genus name (capitalized), and the second is the species epithet (lowercase). Both are italicized in print or individually underlined when handwritten (e.g., Homo sapiens or Panthera leo).",
+        "Five-Kingdom System: 1) Monera (prokaryotic, unicellular, e.g., bacteria); 2) Protista (eukaryotic, mostly unicellular, e.g., Amoeba, Paramecium); 3) Fungi (eukaryotic, non-photosynthetic with chitin cell walls, e.g., Rhizopus, yeast); 4) Plantae (multicellular, photosynthetic with cellulose cell walls); 5) Animalia (multicellular, heterotrophic organisms lacking cell walls).",
+        "Levels of Biological Organization: 1) Cell (basic structural and functional unit of life, e.g., Amoeba, red blood cell); 2) Tissue (group of similar cells performing a specific function, e.g., bone, blood, xylem, mesophyll); 3) Organ (group of distinct tissues performing specialized functions, e.g., heart, leaf, kidney); 4) System (group of organs working together, e.g., digestive system, vascular system); 5) Organism (an individual living entity)."
+      ]
+    },
+    {
+      "topic": "Cell Structure and Physiology",
+      "subtopics": [
+        "Plant and animal cell structures and organelle functions",
+        "Physical cellular processes (Diffusion, Osmosis, Plasmolysis)",
+        "Enzyme properties and cell metabolism"
+      ],
+      "keypoints": [
+        "Plant vs. Animal Cell Differences: Plant cells possess a rigid outer cellulose cell wall, chloroplasts/plastids for photosynthesis, and a large central vacuole filled with cell sap. Animal cells lack cell walls and chloroplasts, possess centrioles (active in cell division), and contain small, temporary vacuoles.",
+        "Organelle Functions: Mitochondrion (site of cellular respiration and ATP synthesis; power house); Ribosome (site of protein synthesis); Endoplasmic Reticulum (transport network; Rough ER has ribosomes for protein synthesis, Smooth ER synthesizes lipids); Golgi Apparatus (packaging and secretion of materials); Lysosome (contains hydrolytic enzymes for intracellular digestion).",
+        "Diffusion: Net passive movement of solute particles from a region of higher concentration to a region of lower concentration down a concentration gradient until equilibrium is reached. Independent of metabolic energy.",
+        "Osmosis: Net movement of solvent (water) molecules from a region of lower solute concentration (higher water potential) to a region of higher solute concentration (lower water potential) across a selectively permeable membrane.",
+        "Plasmolysis, Turgidity, and Haemolysis: Plasmolysis occurs when a plant cell loses water in a hypertonic solution, causing the cytoplasm to shrink away from the cell wall. In hypotonic solutions, plant cells absorb water to become turgid (supported by cell wall pressure). Red blood cells in hypotonic solutions absorb water and burst (Haemolysis) due to the absence of a cell wall.",
+        "Enzymes and Properties: Enzymes are biological catalysts composed of proteins that speed up metabolic reactions without being consumed. Key properties: substrate-specific (lock-and-key model), inactivated at low temperatures, denatured at high temperatures (above 40°C–50°C), and sensitive to pH changes."
+      ]
+    },
+    {
+      "topic": "Plant and Animal Nutrition",
+      "subtopics": [
+        "Autotrophic nutrition and photosynthesis mechanisms",
+        "Heterotrophic nutrition modes and mammalian digestive system",
+        "Essential plant nutrients and human food classes"
+      ],
+      "keypoints": [
+        "Photosynthesis Process: Process by which green plants manufacture organic food (glucose) from inorganic carbon dioxide and water using light energy trapped by chlorophyll, releasing oxygen as a byproduct: 6CO2 + 6H2O -> C6H12O6 + 6O2.",
+        "Light and Dark Reactions of Photosynthesis: Light-dependent phase occurs in the thylakoid membrane/grana, where light photolyzes water into hydrogen ions and oxygen, generating ATP and NADPH. Light-independent (Dark/Calvin) phase occurs in the stroma, where ATP and NADPH fix carbon dioxide into glucose.",
+        "Heterotrophic Nutrition Modes: Holozoic (ingestion and internal digestion of solid organic material, e.g., humans, Amoeba); Saprophytic (external digestion on dead organic matter, e.g., fungi, Rhizopus); Parasitic (obtaining nutrients from a living host causing harm, e.g., tapeworm, Cuscuta); Symbiotic/Mutualistic (both organisms benefit, e.g., lichens, root nodules containing nitrogen-fixing Rhizobium).",
+        "Human Digestive Mechanics and Enzymes: Food moves via peristalsis. Digestion starts in the Mouth (salivary amylase digests starch to maltose); Stomach (gastric juice contains HCl to kill bacteria and Pepsin to break down proteins to peptones); Small Intestine (Bile emulsifies fats; pancreatic juice supplies Trypsin, Lipase, and Amylase; intestinal enzymes break down disaccharides to monosaccharides, peptones to amino acids).",
+        "Absorption and Assimilation: Absorption of digested nutrients occurs primarily in the ileum via villi (finger-like projections with microvilli providing large surface area). Amino acids and glucose are absorbed into blood capillaries; fatty acids and glycerol enter lacteals (lymphatic system).",
+        "Essential Plant Mineral Nutrients: Macronutrients required in large quantities: Nitrogen (leaf growth, amino acids), Phosphorus (root development, ATP transfer), Potassium (protein synthesis, stomatal opening). Deficiency symptoms: Nitrogen deficiency causes chlorosis (yellowing leaves); Phosphorus deficiency causes stunted growth and purple leaves."
+      ]
+    },
+    {
+      "topic": "Transport Systems in Plants and Animals",
+      "subtopics": [
+        "Transport media and composition of human blood",
+        "Mammalian circulatory system and heart structure",
+        "Vascular transport in plants (Xylem and Phloem)"
+      ],
+      "keypoints": [
+        "Transport Media: Plasma and blood cells in mammals; hemolymph in insects; cell sap/cytoplasmic streaming in simple organisms. Human blood consists of 55% liquid Plasma and 45% formed elements (Erythrocytes, Leukocytes, Thrombocytes).",
+        "Blood Cell Functions: Erythrocytes (Red Blood Cells): Biconcave, lack nuclei at maturity, contain hemoglobin for transporting oxygen as oxyhemoglobin. Leukocytes (White Blood Cells): Phagocytes (engulf pathogens) and Lymphocytes (produce antibodies). Thrombocytes (Platelets): Anucleate cell fragments responsible for initiating blood clotting.",
+        "Blood Clotting Cascade: Platelets release thromboplastin at injury sites, which converts inactive prothrombin into active thrombin in the presence of Calcium ions (Ca2+) and Vitamin K. Thrombin then converts soluble plasma protein fibrinogen into insoluble fibrin threads that form a mesh trapping blood cells to form a clot.",
+        "Mammalian Heart and Double Circulation: The heart has 4 chambers (2 atria, 2 ventricles). Double Circulation consists of: 1) Pulmonary Circuit (Deoxygenated blood: Right Ventricle -> Pulmonary Artery -> Lungs -> Pulmonary Vein -> Left Atrium); 2) Systemic Circuit (Oxygenated blood: Left Ventricle -> Aorta -> Body tissues -> Vena Cava -> Right Atrium).",
+        "Plant Transport Tissues: Xylem transports water and dissolved mineral salts unidirectionally upward from roots to leaves driven by transpiration pull, root pressure, and capillary action. Phloem translocates synthesized organic nutrients (sucrose and amino acids) bidirectionally from leaves to storage organs or growing regions.",
+        "Transpiration: Loss of water vapor from aerial parts of plants, primarily through stomata in leaves. Factors increasing transpiration rate: high light intensity, high temperature, low humidity, and high wind velocity."
+      ]
+    },
+    {
+      "topic": "Respiration and Respiratory Systems",
+      "subtopics": [
+        "Cellular respiration pathways (Aerobic vs. Anaerobic)",
+        "Respiratory surfaces and structures across organisms",
+        "Mechanics of breathing in humans"
+      ],
+      "keypoints": [
+        "Aerobic vs. Anaerobic Respiration: Aerobic respiration requires oxygen to completely break down glucose into CO2, H2O, and 36–38 ATP molecules. Anaerobic respiration occurs without oxygen, incompletely breaking down glucose to produce lactic acid in animal muscles (or ethanol and CO2 in yeast) yielding only 2 ATP molecules per glucose molecule.",
+        "Cellular Respiration Stages: 1) Glycolysis (occurs in cytoplasm, splits glucose into 2 pyruvate molecules, yielding net 2 ATP); 2) Kreb's Cycle / Citric Acid Cycle (occurs in mitochondrial matrix, processes acetyl-CoA, releasing CO2 and high-energy electron carriers); 3) Oxidative Phosphorylation / Electron Transport Chain (occurs on inner mitochondrial cristae, generating the majority of ATP).",
+        "Respiratory Structures Across Taxa: Amoeba/Paramecium (General body surface/cell membrane); Insects (Tracheal system opening through spiracles); Fish (Gills with filamentous structures and counter-current exchange); Amphibians (Moist skin, mouth buccal cavity, and lungs); Mammals (Lungs with alveoli).",
+        "Characteristics of Respiratory Surfaces: Must have a large surface area, thin membrane (one cell thick) for rapid diffusion, rich vascular supply (capillaries) to maintain concentration gradients, and a moist surface to dissolve gases.",
+        "Mammalian Inhalation Mechanics: Diaphragm contracts and flattens; external intercostal muscles contract, pulling the rib cage upward and outward; thoracic volume increases; thoracic pressure decreases below atmospheric pressure, forcing air into the lungs."
+      ]
+    },
+    {
+      "topic": "Excretion and Excretory Systems",
+      "subtopics": [
+        "Excretory products and structures in different organisms",
+        "Structure and function of the mammalian kidney",
+        "Osmoregulation and homeostatic control"
+      ],
+      "keypoints": [
+        "Excretion Concept: The elimination of metabolic waste products, toxic substances, and substances in excess of body requirements from an organism. Differs from egestion, which is the removal of undigested, unabsorbed food material via the anus.",
+        "Excretory Organs and Nitrogenous Wastes: Amoeba (Contractile vacuole); Flatworms (Flame cells); Earthworms (Nephridia); Insects (Malpighian tubules); Vertebrates (Kidneys). Aquatic animals excrete Ammonia (highly toxic, requires abundant water); Birds, reptiles, and insects excrete Uric acid (insoluble paste, conserves water); Mammals and adult amphibians excrete Urea.",
+        "Structure of the Nephron: Functional filtering unit of the kidney comprising the Glomerulus, Bowman's Capsule, Proximal Convoluted Tubule (PCT), Loop of Henle, Distal Convoluted Tubule (DCT), and Collecting Duct.",
+        "Urine Formation Processes: 1) Ultrafiltration: High hydrostatic pressure in glomerular capillaries forces fluid, glucose, salts, and urea into Bowman's capsule as glomerular filtrate (blood cells and large proteins are retained); 2) Selective Reabsorption: All glucose, amino acids, and essential salts/water are reabsorbed back into peritubular capillaries primarily in the PCT; 3) Secretion: Active secretion of excess ions (K+, H+) into the tubules.",
+        "Osmoregulation via ADH: Maintenance of water and solute balance in body fluids. When body water content is low, the posterior pituitary gland releases Antidiuretic Hormone (ADH), which increases the water permeability of the collecting ducts, allowing more water reabsorption into blood and producing concentrated urine."
+      ]
+    },
+    {
+      "topic": "Support and Movement",
+      "subtopics": [
+        "Types of skeletons and supporting tissues in plants and animals",
+        "Mammalian skeletal divisions and vertebral column",
+        "Joint types, muscular action, and locomotion mechanics"
+      ],
+      "keypoints": [
+        "Skeletal Types: Hydrostatic Skeleton (fluid-filled body cavity under pressure, e.g., earthworms); Exoskeleton (rigid outer chitinous cuticle that must be shed via ecdysis/molting for growth, e.g., insects, crabs); Endoskeleton (internal bony or cartilaginous framework that grows with the organism, e.g., vertebrates).",
+        "Plant Supporting Tissues: Parenchyma (provides turgor support in herbaceous plants); Collenchyma (thickened cellulose/pectin corners providing flexibility in growing stems); Sclerenchyma (heavily lignified dead cells providing mechanical rigidity); Xylem vessels (lignified walls providing structural support and water transport).",
+        "Human Skeleton Divisions: Axial Skeleton (Skull, Vertebral Column, Ribs, Sternum) and Appendicular Skeleton (Pectoral Girdle with forelimbs, Pelvic Girdle with hindlimbs).",
+        "Vertebral Column Regions: Cervical (7 vertebrae in neck; Atlas allows nodding, Axis allows rotation); Thoracic (12 vertebrae in chest, attached to ribs); Lumbar (5 vertebrae in lower back, large and stout for weight bearing); Sacral (5 fused vertebrae attached to pelvic girdle); Caudal/Coccyx (4 fused rudimentary vertebrae forming tailbone).",
+        "Joints and Antagonistic Muscles: Joints are points where two or more bones meet. Ball-and-socket joints (shoulder, hip) allow 360-degree rotational movement in all planes; Hinge joints (elbow, knee) allow movement in one plane. Movement is effected by antagonistic skeletal muscle pairs: Biceps contract (flexor) while Triceps relax (extensor) to bend the arm."
+      ]
+    },
+    {
+      "topic": "Coordination and Control",
+      "subtopics": [
+        "Nervous system structure, neurons, and reflex actions",
+        "Structure and function of human sense organs (Eye and Ear)",
+        "Endocrine system and plant tropisms/hormones"
+      ],
+      "keypoints": [
+        "Nervous System Components: Central Nervous System (CNS - Brain and Spinal Cord) and Peripheral Nervous System (PNS - Cranial and Spinal nerves). Neurons are structural units: Sensory neurons (transmit impulses from receptors to CNS), Motor neurons (transmit impulses from CNS to effectors), Relay/Intermediate neurons (connect sensory and motor neurons within CNS).",
+        "Reflex Action and Reflex Arc: An involuntary, immediate, automatic response to a stimulus. Reflex Arc Path: Receptor -> Sensory Neuron -> Synapse -> Relay Neuron (in spinal cord gray matter) -> Synapse -> Motor Neuron -> Effector (muscle or gland).",
+        "Eye Mechanics and Eye Defects: Retina contains photoreceptor cells (Rods for vision in dim light; Cones for color vision in bright light). Myopia (Short-sightedness): Light focuses in front of retina; corrected using Concave (diverging) lenses. Hypermetropia (Long-sightedness): Light focuses behind retina; corrected using Convex (converging) lenses.",
+        "Ear Functions: Cochlea in inner ear contains organ of Corti with sensory hair cells for hearing. Semi-circular canals and otolith organs maintain dynamic and static balance and body posture.",
+        "Mammalian Endocrine Glands: Pituitary Gland ('Master gland', secretes TSH, FSH, LH, GH, ADH); Thyroid Gland (secretes Thyroxine regulating metabolic rate); Adrenal Gland (secretes Adrenaline for fight-or-flight emergency responses); Pancreas (Islets of Langerhans secrete Insulin to lower blood glucose and Glucagon to elevate blood glucose).",
+        "Plant Hormones and Tropisms: Tropism is a directional growth response of a plant to a directional environmental stimulus. Phototropism (growth towards light) is mediated by Auxins, which migrate to the shaded side of stem tips, causing cell elongation on the shaded side and bending the shoot toward light."
+      ]
+    },
+    {
+      "topic": "Reproduction in Organisms",
+      "subtopics": [
+        "Asexual vs. Sexual reproduction modes",
+        "Reproduction in flowering plants (Pollination and Fertilization)",
+        "Human reproductive systems, gametogenesis, and pregnancy"
+      ],
+      "keypoints": [
+        "Asexual vs. Sexual Reproduction: Asexual reproduction involves a single parent without gamete fusion, producing genetically identical offspring (clones; e.g., binary fission in Amoeba, budding in yeast, vegetative propagation in cassava). Sexual reproduction involves the fusion of haploid male and female gametes to produce a genetically unique diploid zygote.",
+        "Floral Structure: Male reproductive whorl (Androecium: Stamens consisting of Anther containing pollen grains and Filament). Female reproductive whorl (Gynoecium/Pistil: Carpels consisting of Stigma, Style, and Ovary containing Ovules).",
+        "Pollination and Double Fertilization: Pollination is the transfer of pollen grains from anther to stigma. In angiosperm Double Fertilization: 1) One haploid male nucleus fuses with the haploid egg cell to form a diploid Zygote (2n); 2) The second haploid male nucleus fuses with two polar nuclei to form a triploid Endosperm nucleus (3n) for seed nutrient storage.",
+        "Male and Female Human Reproductive Systems: Male: Testes (produce spermatozoa and testosterone), Epididymis (stores sperm), Vas Deferens, Prostate/Seminal Vesicles (secrete seminal fluid), Penis. Female: Ovaries (produce ova, estrogen, progesterone), Fallopian tubes/Oviducts (site of fertilization), Uterus (site of blastocyst implantation and fetal growth), Vagina.",
+        "Menstrual Cycle Control: Pituitary hormone FSH stimulates ovarian follicle development; LH triggers Ovulation around day 14. Ovarian hormone Estrogen repairs the uterine lining; Progesterone maintains the thickened endometrium for implantation. Falling progesterone levels cause menstruation."
+      ]
+    },
+    {
+      "topic": "Genetics and Heredity",
+      "subtopics": [
+        "Mendelian laws of inheritance and genetic crosses",
+        "Chromosomes, DNA structure, and sex-linked traits",
+        "Genetic variations, mutations, and practical applications"
+      ],
+      "keypoints": [
+        "Mendel's Laws: 1) Law of Segregation: Alleles governing a trait separate during gamete formation so each gamete carries only one allele. 2) Law of Independent Assortment: Members of different gene pairs assort independently of one another during gamete formation.",
+        "Monohybrid and Dihybrid Ratios: Monohybrid cross between two heterozygous parents (Tt x Tt) produces a 3:1 Phenotypic ratio and a 1:2:1 Genotypic ratio (1 TT : 2 Tt : 1 tt). Dihybrid cross between two double-heterozygous parents (RrYy x RrYy) yields a 9:3:3:1 phenotypic ratio.",
+        "DNA Structure: Double-helical molecule composed of nucleotide units. Each nucleotide contains a Deoxyribose sugar, a phosphate group, and a nitrogenous base. Base pairing rules: Adenine pairs strictly with Thymine (A-T) via two hydrogen bonds; Cytosine pairs with Guanine (C-G) via three hydrogen bonds.",
+        "Sex-Linked Traits: Traits controlled by recessive genes located on the X-chromosome that have no corresponding allele on the Y-chromosome. Examples: Red-Green Color Blindness and Haemophilia. Sex-linked recessive conditions manifest far more frequently in males.",
+        "Co-dominance and ABO Blood Groups: Controlled by multiple alleles (I^A, I^B, i). Alleles I^A and I^B are co-dominant to each other and both are dominant over recessive allele i. Phenotypes: Blood group A (I^A I^A or I^A i), B (I^B I^B or I^B i), AB (I^A I^B), and O (i i).",
+        "Variation Types and Mutations: Continuous variation shows a smooth spectrum of intermediate forms influenced by environment (e.g., height, weight, skin color). Discontinuous variation shows distinct categories without intermediates, purely inherited (e.g., ABO blood groups, tongue rolling). Mutation is a sudden permanent change in DNA sequence or chromosome number (e.g., Down Syndrome caused by Trisomy 21)."
+      ]
+    },
+    {
+      "topic": "Evolution and Adaptation",
+      "subtopics": [
+        "Theories of biological evolution (Lamarckism vs. Darwinism)",
+        "Evidences of evolution",
+        "Adaptive features of plants and animals in various habitats"
+      ],
+      "keypoints": [
+        "Lamarckism: Jean-Baptiste Lamarck proposed the Law of Use and Disuse (organs used extensively develop, unused organs degenerate) and the Inheritance of Acquired Characteristics. Disproved because acquired somatic modifications are not encoded in DNA and cannot be transmitted to offspring.",
+        "Darwinian Natural Selection: Charles Darwin proposed evolution by Natural Selection based on Overproduction of offspring, Struggle for existence, Inherited variations, Survival of the fittest, and Differential reproduction. Organisms with advantageous traits survive environmental pressures and pass those traits to offspring.",
+        "Modern Evolutionary Synthesis (Neo-Darwinism): Integrates Darwinian natural selection with population genetics, explaining evolutionary change as altered gene frequencies resulting from mutation, gene flow, genetic drift, and natural selection.",
+        "Evidences of Evolution: Fossil records (Paleontology showing chronological transitions); Comparative Anatomy (Homologous structures have common embryonic origin but different functions, e.g., human arm and bat wing, proving divergent evolution; Analogous structures have different origin but similar function, e.g., insect wing and bird wing, proving convergent evolution); Comparative Embryology.",
+        "Adaptations in Plants: Xerophytes (desert plants, e.g., cactus): Thick waxy cuticle, sunken stomata, reduced needle-like leaves, water-storing parenchyma tissue to minimize water loss. Hydrophytes (water plants, e.g., water lily): Aerenchyma tissue with air spaces for buoyancy, broad floating leaves, poorly developed roots, stomata on upper leaf epidermis."
+      ]
+    },
+    {
+      "topic": "Ecology and Ecosystems",
+      "subtopics": [
+        "Ecosystem components, ecological factors, and measurement tools",
+        "Trophic levels, energy flow, food chains, and nutrient cycles",
+        "Environmental pollution, conservation, and ecological balance"
+      ],
+      "keypoints": [
+        "Ecological Terminology: Ecosystem (Self-sustaining unit of biotic communities interacting with abiotic environment); Habitat (Specific physical location where an organism lives); Niche (Functional role and position of an organism within its habitat); Population (Group of individuals of the same species in a defined area at a given time).",
+        "Abiotic Factors and Measuring Instruments: Light intensity (Photometer); Temperature (Thermometer); Relative humidity (Hygrometer); Wind speed (Anemometer); Atmospheric pressure (Barometer); Water turbidity (Secchi disc); Soil pH (pH meter).",
+        "Energy Flow and Trophic Levels: Solar radiation is the primary energy source. Energy flows unidirectionally through trophic levels: Producers (Autotrophs) -> Primary Consumers (Herbivores) -> Secondary Consumers (Carnivores) -> Decomposers. Approximately 90% of energy is lost as heat/metabolism at each transfer step (10% Ecological Efficiency Law).",
+        "Nitrogen Cycle Steps: 1) Nitrogen Fixation: Atmospheric N2 converted to nitrates by Rhizobium (in legume root nodules), Azotobacter, or lightning; 2) Nitrification: Ammonia converted to Nitrites by Nitrosomonas, then Nitrites to Nitrates by Nitrobacter; 3) Denitrification: Denitrifying bacteria (Pseudomonas) convert soil nitrates back into atmospheric N2 gas under anaerobic conditions.",
+        "Eutrophication: Excessive enrichment of water bodies by agricultural fertilizer runoff (nitrates/phosphates) or sewage. Causes explosive algal blooms, blocking sunlight, leading to algae death and bacterial decomposition that depletes dissolved oxygen, causing mass mortality of aquatic organisms.",
+        "Environmental Conservation Methods: Afforestation (planting trees) and reforestation, creation of game reserves/national parks, recycling non-biodegradable wastes, strict enforcement of environmental laws against industrial pollution, and sustainable pest management."
+      ]
+    }
+  ]
+}

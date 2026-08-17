@@ -1,0 +1,154 @@
+{
+  "subject": "Chemistry",
+  "examination": "JAMB UTME",
+  "total_topics": 18,
+  "topics": [
+    {
+      "topic_id": 1,
+      "topic_name": "Separation of Mixtures and Purification of Chemical Substances",
+      "keypoints": [
+        "Pure substances have sharp melting and boiling points; impurities lower the melting point and elevate the boiling point.",
+        "Fractional distillation separates miscible liquids with close boiling points (e.g., crude oil, ethanol and water) based on boiling point differences.",
+        "Crystallization and fractional crystallization separate dissolved solids based on differences in solubility at varying temperatures.",
+        "Chromatography separates components of a mixture based on their differential migration rates through a stationary and mobile phase.",
+        "Sublimation directly converts a solid to gas without passing through liquid (e.g., Iodine, Ammonium Chloride, Camphor, Dry Ice)."
+      ],
+      "formulas_and_constants": [],
+      "jamb_exam_tips": "Expect questions asking which separation technique is best for specific real-world mixtures (e.g., separating dyes in ink -> paper chromatography)."
+    },
+    {
+      "topic_id": 2,
+      "topic_name": "Chemical Combination and Stoichiometry",
+      "keypoints": [
+        "Law of Conservation of Matter: Matter can neither be created nor destroyed in a chemical reaction.",
+        "Law of Definite Proportions: A chemical compound always contains its component elements in fixed ratio by mass.",
+        "Gay-Lussac's Law of Combining Volumes: Volumes of reacting gases and their gaseous products bear simple whole-number ratios at constant temperature and pressure.",
+        "Avogadro's Law: Equal volumes of all gases under the same conditions of temperature and pressure contain equal numbers of molecules.",
+        "The Mole Concept: 1 mole of any substance contains Avogadro's number (6.02 × 10²³) of particles and occupies 22.4 dm³ (or litres) at STP for gases."
+      ],
+      "formulas_and_constants": [
+        "Number of moles (n) = Mass / Molar Mass",
+        "Number of moles (gases at STP) = Volume in dm³ / 22.4 dm³",
+        "Concentration (molarity) = Moles / Volume in dm³",
+        "Avogadro's Constant (N_A) = 6.02 × 10²³ mol⁻¹"
+      ],
+      "jamb_exam_tips": "Always ensure chemical equations are balanced before solving stoichiometry or molar ratio calculations."
+    },
+    {
+      "topic_id": 3,
+      "topic_name": "Kinetic Theory of Matter and Gas Laws",
+      "keypoints": [
+        "Boyle's Law states that gas volume is inversely proportional to pressure at constant temperature.",
+        "Charles's Law states that gas volume is directly proportional to absolute temperature (in Kelvin) at constant pressure.",
+        "Dalton's Law of Partial Pressures: Total pressure exerted by a mixture of non-reacting gases is equal to the sum of partial pressures of individual gases.",
+        "Graham's Law of Diffusion: Rate of diffusion of a gas is inversely proportional to the square root of its density or molar mass."
+      ],
+      "formulas_and_constants": [
+        "Boyle's Law: P1 * V1 = P2 * V2",
+        "Charles's Law: V1 / T1 = V2 / T2",
+        "General Gas Law: (P1 * V1) / T1 = (P2 * V2) / T2",
+        "Ideal Gas Equation: P * V = n * R * T",
+        "Graham's Law: R1 / R2 = √(M2 / M1) = √(D2 / D1)",
+        "Temperature conversion: T(K) = T(°C) + 273"
+      ],
+      "jamb_exam_tips": "Convert all temperature values to Kelvin before plugging them into gas law calculations."
+    },
+    {
+      "topic_id": 4,
+      "topic_name": "Atomic Structure and Bonding",
+      "keypoints": [
+        "Atomic number (Z) is the number of protons; Mass number (A) is the total number of protons and neutrons.",
+        "Isotopes are atoms of the same element with the same atomic number but different mass numbers.",
+        "Electrovalent (ionic) bonding involves complete transfer of electrons from a metal to a non-metal, forming ions with high melting/boiling points.",
+        "Covalent bonding involves electron sharing between non-metals; Coordinate (dative) bonding occurs when both shared electrons originate from a single atom.",
+        "Hydrogen bonding occurs when hydrogen is covalently bonded to highly electronegative elements (F, O, N), causing unusually high boiling points in water and alkanols."
+      ],
+      "formulas_and_constants": [
+        "Mass Number (A) = Protons (Z) + Neutrons (N)",
+        "Relative Atomic Mass (R.A.M) = Σ(% Abundance × Mass) / 100"
+      ],
+      "jamb_exam_tips": "Memorize the electron configurations using Aufbau principle, Hund's rule, and Pauli's exclusion principle (e.g., Chromium as [Ar] 3d⁵ 4s¹ and Copper as [Ar] 3d¹⁰ 4s¹)."
+    },
+    {
+      "topic_id": 5,
+      "topic_name": "Acids, Bases, and Salts",
+      "keypoints": [
+        "Arrhenius acid produces H⁺ ions in water; Bronsted-Lowry acid is a proton donor; Lewis acid is an electron-pair acceptor.",
+        "pH measures hydrogen ion concentration: pH less than 7 is acidic, pH equal to 7 is neutral, and pH greater than 7 is alkaline.",
+        "Strong acids and bases dissociate completely in aqueous solutions (e.g., HCl, H2SO4, NaOH), whereas weak ones dissociate partially (e.g., CH3COOH, NH4OH).",
+        "Normal salts are formed by complete replacement of replaceable hydrogen ions (e.g., NaCl); Acid salts retain replaceable hydrogen (e.g., NaHCO3)."
+      ],
+      "formulas_and_constants": [
+        "pH = -log10[H+]",
+        "pOH = -log10[OH-]",
+        "pH + pOH = 14",
+        "Acid-Base Titration: (Ca * Va) / (Cb * Vb) = na / nb"
+      ],
+      "jamb_exam_tips": "Know salt solubility rules (e.g., all nitrates and group 1 salts are soluble; all chlorides except AgCl and PbCl2 are soluble)."
+    },
+    {
+      "topic_id": 6,
+      "topic_name": "Oxidation and Reduction (Redox) and Electrochemistry",
+      "keypoints": [
+        "Oxidation is loss of electrons, increase in oxidation number, or addition of oxygen/removal of hydrogen.",
+        "Reduction is gain of electrons, decrease in oxidation number, or removal of oxygen/addition of hydrogen.",
+        "An oxidizing agent gets reduced (accepts electrons); a reducing agent gets oxidized (donates electrons).",
+        "Faraday's First Law: Mass (m) of substance liberated during electrolysis is directly proportional to quantity of electricity (Q) passed.",
+        "Faraday's Second Law: When the same quantity of electricity passes through different electrolytes, masses of ions liberated are proportional to their chemical equivalents."
+      ],
+      "formulas_and_constants": [
+        "Quantity of Electricity: Q = I * t (in Coulombs)",
+        "Faraday's Equation: Mass = (Molar Mass * I * t) / (n * F)",
+        "Faraday Constant (F) = 96,500 Coulombs/mol"
+      ],
+      "jamb_exam_tips": "Remember anode is where oxidation occurs (AnOx) and cathode is where reduction occurs (RedCat)."
+    },
+    {
+      "topic_id": 7,
+      "topic_name": "Energy Changes in Chemical Reactions",
+      "keypoints": [
+        "Exothermic reactions release heat to surroundings (ΔH is negative); Endothermic reactions absorb heat (ΔH is positive).",
+        "Standard Enthalpy of Combustion (ΔH_c) is always negative because combustion produces heat.",
+        "Entropy (S) measures disorderliness or randomness of a system (gases have higher entropy than liquids or solids).",
+        "A chemical process is spontaneous if Change in Free Energy (ΔG) is negative."
+      ],
+      "formulas_and_constants": [
+        "Heat Energy (Q) = m * c * ΔT",
+        "Gibbs Free Energy Equation: ΔG = ΔH - T * ΔS"
+      ],
+      "jamb_exam_tips": "Know conditions for spontaneity: ΔG < 0 is spontaneous, ΔG > 0 is non-spontaneous, and ΔG = 0 is at equilibrium."
+    },
+    {
+      "topic_id": 8,
+      "topic_name": "Rates of Chemical Reactions and Chemical Equilibria",
+      "keypoints": [
+        "Factors affecting reaction rate: concentration, temperature, pressure (for gases), surface area, and catalysts.",
+        "A catalyst increases reaction rate by lowering the activation energy without being consumed in the reaction.",
+        "Le Chatelier's Principle: If an external stress is applied to a system at equilibrium, the system shifts in a direction that minimizes or restores equilibrium.",
+        "Increasing pressure shifts equilibrium toward the side with fewer gas moles; increasing temperature favors the endothermic direction."
+      ],
+      "formulas_and_constants": [
+        "Equilibrium Constant (Kc) for aA + bB ⇌ cC + dD: Kc = ([C]^c * [D]^d) / ([A]^a * [B]^b)"
+      ],
+      "jamb_exam_tips": "Catalysts change reaction rate and activation energy, but they **never** alter the equilibrium position or Kc."
+    },
+    {
+      "topic_id": 9,
+      "topic_name": "Organic Chemistry - Hydrocarbons and Functional Groups",
+      "keypoints": [
+        "Alkanes (C_n H_2n+2) are saturated hydrocarbons undergoing substitution reactions.",
+        "Alkenes (C_n H_2n) and Alkynes (C_n H_2n-2) are unsaturated hydrocarbons undergoing addition reactions.",
+        "Aromatic hydrocarbons contain benzene rings and undergo electrophilic substitution reactions.",
+        "Alkanols (alcohols) classify into primary, secondary, and tertiary based on carbon attached to the -OH group; primary alkanols oxidize to alkanals then alkanoic acids.",
+        "Esterification: Reaction between alkanoic acid and alkanol in the presence of concentrated H2SO4 forms an ester (alkanoid) with a fruity smell."
+      ],
+      "formulas_and_constants": [
+        "Alkanes General Formula: C_n H_(2n+2)",
+        "Alkenes General Formula: C_n H_2n",
+        "Alkynes General Formula: C_n H_(2n-2)",
+        "Alkanols General Formula: C_n H_(2n+1) OH"
+      ],
+      "jamb_exam_tips": "Be comfortable converting between IUPAC names and condensed structural formulas for isomers."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "subject": "Computer Studies",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Fundamentals of Computing & Hardware Concepts",
+      "subtopics": [
+        "Classification of Computers (Generation, Type, Size)",
+        "Components of a Computer System (CPU, Memory, I/O)",
+        "Internal Memory (RAM, ROM, Cache) & Storage Devices"
+      ],
+      "keypoints": [
+        "Generations of Computers: 1st Gen (Vacuum Tubes), 2nd Gen (Transistors), 3rd Gen (Integrated Circuits - ICs), 4th Gen (Microprocessors/VLSI), 5th Gen (Artificial Intelligence/ULSI).",
+        "Computer Classification: By Signal/Type (Analog, Digital, Hybrid); By Size/Power (Microcomputers, Minicomputers, Mainframes, Supercomputers); By Purpose (General Purpose, Special Purpose).",
+        "Central Processing Unit (CPU): Comprises the Control Unit (CU) to manage operations, Arithmetic Logic Unit (ALU) for calculations/logic, and Registers for high-speed temporary storage.",
+        "Primary Memory: Random Access Memory (RAM) is volatile (temporary, read/write); Read Only Memory (ROM) is non-volatile (permanent, contains BIOS/firmware, e.g., PROM, EPROM, EEPROM).",
+        "Secondary Storage: Magnetic media (Hard Disks), Optical media (CD, DVD, Blu-Ray), and Solid-State Drives (SSD, Flash drives) measured in Bytes, KB, MB, GB, TB, and PB."
+      ]
+    },
+    {
+      "topic": "Computer Software & Operating Systems",
+      "subtopics": [
+        "System Software vs. Application Software",
+        "Operating System Functions and Types",
+        "Translators and Utility Software"
+      ],
+      "keypoints": [
+        "Software Categories: System Software (Operating Systems, Translators, Utilities) vs. Application Software (User-specific programs like Word Processors, Spreadsheets, DBMS).",
+        "Operating System (OS) Functions: Process management, Memory allocation, File management, Device/Peripheral management, Security, and User Interface provision.",
+        "User Interface Types: Command Line Interface (CLI - text-based like MS-DOS/Linux Terminal) vs. Graphical User Interface (GUI - visual icons, menus, pointing devices like Windows, macOS).",
+        "Language Translators: Assemblers (convert Assembly language to Machine code), Compilers (translate entire high-level code at once into object code), Interpreters (translate high-level code line-by-line).",
+        "Utility Programs: Maintenance software designed to optimize system performance (e.g., Antivirus, Disk Defragmenter, File Compression software, Backup utilities)."
+      ]
+    },
+    {
+      "topic": "Data Representation & Logic Circuits",
+      "subtopics": [
+        "Number Systems (Binary, Octal, Decimal, Hexadecimal)",
+        "Data Units and Character Encodings (ASCII, Unicode)",
+        "Logic Gates and Truth Tables"
+      ],
+      "keypoints": [
+        "Number System Conversions: Binary (Base 2: 0,1), Octal (Base 8: 0-7), Decimal (Base 10: 0-9), and Hexadecimal (Base 16: 0-9, A-F).",
+        "Data Units: Bit (0 or 1), Nibble (4 bits), Byte (8 bits/1 character), Word (group of bytes processed together by CPU architecture).",
+        "Character Encoding Schemes: ASCII (7 or 8-bit code representing up to 256 characters) and Unicode (16/32-bit universal encoding supporting global languages and symbols).",
+        "Basic Logic Gates: AND (High output only when all inputs are High), OR (High output when any input is High), NOT (Inverter - flips input state).",
+        "Derived Logic Gates: NAND (Opposite of AND), NOR (Opposite of OR), XOR (Exclusive OR - High output when inputs differ), XNOR (High output when inputs are identical)."
+      ]
+    },
+    {
+      "topic": "Computer Networks, Internet & Data Communications",
+      "subtopics": [
+        "Network Topologies and Network Types (LAN, MAN, WAN)",
+        "Transmission Media (Guided vs. Unguided)",
+        "Internet Protocols, Web Browsers, and E-services"
+      ],
+      "keypoints": [
+        "Network Coverage Types: Personal Area Network (PAN), Local Area Network (LAN), Metropolitan Area Network (MAN), Wide Area Network (WAN - e.g., the Internet).",
+        "Network Topologies: Bus (single backbone cable), Star (central hub/switch - most resilient), Ring (circular token pass), Mesh (every node interconnected), and Hybrid.",
+        "Transmission Media: Guided/Wired media (Twisted Pair, Coaxial cable, Fiber Optic - highest bandwidth) vs. Unguided/Wireless media (Radio waves, Microwaves, Infrared, Satellite).",
+        "Core Internet Protocols: TCP/IP (transmission control), HTTP/HTTPS (web page rendering/secure), FTP (file transfer), SMTP/POP3/IMAP (email routing), IP Addressing (IPv4/IPv6).",
+        "Web Terminology: URL (Uniform Resource Locator), DNS (Domain Name System - resolves domain names to IP addresses), ISP (Internet Service Provider), HTML/CSS (Web structure/styling)."
+      ]
+    },
+    {
+      "topic": "Algorithms, Programming, and System Development",
+      "subtopics": [
+        "Algorithms and Flowchart Symbols",
+        "System Development Life Cycle (SDLC)",
+        "Programming Paradigms and Concepts"
+      ],
+      "keypoints": [
+        "Algorithm Properties: Finiteness, Definiteness, Input, Output, and Effectiveness. Can be expressed as Pseudocode or Flowcharts.",
+        "Standard Flowchart Symbols: Oval (Start/End - Terminal), Parallelogram (Input/Output), Rectangle (Process/Calculation), Diamond (Decision/Condition), Arrows (Flow line).",
+        "System Development Life Cycle (SDLC): Sequential stages - Feasibility Study/Analysis, System Design, Coding/Development, Testing/Debugging, Implementation/Deployment, and Maintenance.",
+        "System Conversion Strategies: Direct (Immediate cutover), Parallel (Old and new run concurrently), Phased (Step-by-step rollout), Pilot (Tested in one department first).",
+        "High-Level Languages (HLL): Problem-oriented languages (e.g., Python, Java, C++, BASIC) utilizing variables, data types (Integer, String, Boolean, Float), loops, and conditionals."
+      ]
+    },
+    {
+      "topic": "Database Management Systems (DBMS)",
+      "subtopics": [
+        "Database Architecture and Models",
+        "Relational Database Concepts (Tables, Keys)",
+        "Basic SQL Commands and Operations"
+      ],
+      "keypoints": [
+        "Database Models: Hierarchical (Tree structure), Network (Graph structure), Relational (Table structure - RDBMS), Object-Oriented.",
+        "Relational Structure: Data organized in Tables (Relations), containing Rows (Records/Tuples) and Columns (Fields/Attributes).",
+        "Key Types: Primary Key (Unique identifier for each record in a table), Foreign Key (Primary key from another table used to establish relationships), Composite Key (Combination of fields).",
+        "Database Operations: Data Definition Language (DDL - CREATE, ALTER, DROP) vs. Data Manipulation Language (DML - SELECT, INSERT, UPDATE, DELETE).",
+        "Data Integrity & Normalization: Process of organizing database tables to reduce data redundancy and eliminate anomalies (Insertion, Update, Deletion anomalies)."
+      ]
+    },
+    {
+      "topic": "Computer Security, Ethics, & Everyday Applications",
+      "subtopics": [
+        "Computer Malware and Cyber Security Measures",
+        "Intellectual Property, Ethics, and Cybercrime",
+        "Information and Communications Technology (ICT) Applications"
+      ],
+      "keypoints": [
+        "Computer Threats: Viruses (attach to files), Worms (self-replicating over networks), Trojans (disguised as legitimate software), Ransomware (encrypts files for ransom), Phishing (fraudulent identity theft).",
+        "Security Safeguards: Firewalls (network traffic filtering), Antivirus software, Data Encryption, Multi-Factor Authentication (MFA), Regular offsite backups.",
+        "Cybercrime & Computer Ethics: Hacking, Identity Theft, Software Piracy, Cyberbullying, Plagiarism, Cyberstalking; governed by Cybercrime Acts and Data Protection Regulations.",
+        "Applications of ICT: E-Commerce (B2B, B2C, C2C online buying/selling), E-Learning, E-Banking, Telemedicine, Smart Homes/IoT (Internet of Things), Cloud Computing.",
+        "Health and Safety (Ergonomics): Proper posture, adjustable seating, anti-glare screens, and regular breaks to prevent Repetitive Strain Injury (RSI) and Eye Strain."
+      ]
+    }
+  ]
+}

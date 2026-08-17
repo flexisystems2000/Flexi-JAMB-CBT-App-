@@ -1,0 +1,110 @@
+{
+  "subject": "Igbo Language",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Igbo Phonetics and Phonology (Udaume na Mgbochiume)",
+      "subtopics": [
+        "Vowels (Udaume) and Vowel Harmony (Sazina Udaume)",
+        "Consonants (Mgbochiume) and Blends",
+        "Tones (Akwukwo Uda/Nsupe) and Syllable Structure"
+      ],
+      "keypoints": [
+        "Vowel Classification (Udaume): Igbo has 8 vowels divided into two harmonizing groups based on Advanced Tongue Root (ATR): Group A / Udaume Mfe (a, o, u, e) and Group E / Udaume Aruru (i, ọ, ụ, ẹ / i̇, ȯ, u̇, ė depending on orthography).",
+        "Vowel Harmony (Sazina Udaume): A strict phonological rule where vowels from Group A and Group E generally do not mix within the same simple root word or prefix-root combination.",
+        "Consonants (Mgbochiume): Consists of simple consonants and co-articulated/labialized consonants (e.g., 'gb', 'kp', 'gw', 'kw', 'nw', 'ny').",
+        "Syllable Structure: Igbo is a tonal, monosyllabic/disyllabic root language. Syllables follow V (Vowel), N (Syllabic Nasal), or CV (Consonant-Vowel) patterns. Words never end in a consonant.",
+        "Tones (Udakwu / Akwukwo Uda): Meaning is governed by three primary tonal levels: High Tone (Uda Elu), Low Tone (Uda Ala), and Downstep/Falling Tone (Uda Nsuda)."
+      ]
+    },
+    {
+      "topic": "Grammar and Morphology (Ogwumokwu na Asusu)",
+      "subtopics": [
+        "Nouns (Aha) and Pronouns (Ahaochi)",
+        "Verbs (Mmeme), Suffixes (Mgbakwunye), and Tense/Aspect",
+        "Adjectives (Nkowaaha) and Conjunctions (Njikota)"
+      ],
+      "keypoints": [
+        "Nouns (Aha): Categorized into proper, common, concrete, abstract, and compound nouns. Igbo nouns do not inherently carry grammatical gender markers.",
+        "Pronouns (Ahaochi): Subdivided into Singular/Plural personal pronouns (*M/Mu*, *Gi*, *O/Ọ*, *Anyi*, *Unu*, *Ha*) and Impersonal pronouns (*A/E*).",
+        "Verb Structure and Roots (Mborogwu Mmeme): Verbs are built on core monosyllabic roots. Tense, aspect, and mood are indicated by attaching extensional suffixes (Mgbakwunye) and prefixes.",
+        "Verbal Extensional Suffixes: Extensional suffixes modify the meaning of the root verb by adding notions of motion, completeness, repetition, or causation (e.g., *-ja*, *-wa*, *-tu*, *-ro*).",
+        "Syllabic Nasal (Msuanwe/Nasal N): The letter 'M' or 'N' acting as a independent tone-bearing unit before a consonant (e.g., *N-du*, *M-mma*)."
+      ]
+    },
+    {
+      "topic": "Igbo Orthography and Standard Dialect (Nsupe na Asusu Izugbe)",
+      "subtopics": [
+        "Evolution of Igbo Orthographies (Isiokwu Nsupe)",
+        "Onwu Orthography (Nsupe Onwu - 1961)",
+        "Central/Standard Igbo (Igbo Izugbe) vs. Regional Dialects"
+      ],
+      "keypoints": [
+        "Historical Orthographies: Evolution from early missionary orthographies (Lepsius, Ida Ward) to the standardized modern system.",
+        "Onwu Orthography (Nsupe Onwu): The official 36-letter Igbo alphabet adopted in 1961, comprising 8 vowels, 28 consonants, and dot-under/diacritic markings for sub-dot vowels (ọ, ụ, ị).",
+        "Standard Igbo (Igbo Izugbe): The unified written dialect synthesized largely from central Igbo dialects (such as Owerri and Umuahia) for use in publishing, media, and academic assessments.",
+        "Dialectal Variations (Asusu Obodo): Regional variations across Igbo sub-regions (e.g., Anambra/Waawa, Owerri, Umuahia, Afikpo/Abakaliki, Anioma)."
+      ]
+    },
+    {
+      "topic": "Igbo Oral Literature (Agumagu Onu)",
+      "subtopics": [
+        "Folktales (Akuko Iro) and Fables",
+        "Proverbs (Ilu) and Idioms (Akpaala Okwu)",
+        "Riddles (Gwam Gwam Gwam) and Traditional Chants/Songs"
+      ],
+      "keypoints": [
+        "Akuko Iro (Folktales): Traditional moral stories transmitted orally, featuring human and animal characters. The tortoise (*Mbe*) serves as the central trickster figure.",
+        "Ilu Igbo (Proverbs): The bedrock of Igbo rhetoric, described as 'the palm oil with which words are eaten' (*Ilu bu mmanụ e ji eri okwu*). Used to summarize complex moral truths concisely.",
+        "Akpaala Okwu (Idioms): Culturally specific figurative expressions whose meanings cannot be deduced from literal word definitions.",
+        "Gwam Gwam Gwam (Riddles): Interactive intellectual word games designed to test children's wit, environmental observation, and quick critical thinking.",
+        "Oral Poetry and Songs (Abu Onu na Egwu): Includes praise songs, war chants, funeral dirges, birth songs, and occupational minstrelsy."
+      ]
+    },
+    {
+      "topic": "Igbo Written Literature (Agumagu Arukoro/Rubutaccen)",
+      "subtopics": [
+        "Pioneering Igbo written novels and plays",
+        "Themes in modern Igbo prose, poetry, and drama",
+        "Prominent Igbo authors (F.C. Ogbalu, T.U. Ubesie, etc.)"
+      ],
+      "keypoints": [
+        "Pioneering Prose Works: *Omenuko* by Pita Nwana (1933), recognized as the first full-length novel written in the Igbo language, exploring themes of trade, debt, and redemption.",
+        "Role of F.C. Ogbalu: Founder of the Society for Promoting Igbo Language and Culture (SPILC/EMIM), pivotal in standardizing written Igbo and preserving heritage.",
+        "Key Igbo Literary Masters: Tony Uchenna Ubesie (renowned for comedic yet deep social commentary novels like *Juochi*, *Ukwa Ruo Oge Ya O Daa*), Chinedum Ofomata, and E.N. Emenanjo.",
+        "Written Poetry (Abu Arukoro): Modern structured poetry addressing post-colonial impacts, loss of cultural values, religious syncretism, and social justice.",
+        "Written Drama (Ejije): Plays written for performance or study, dramatizing traditional governance, royal succession, forced marriages, and social clashes."
+      ]
+    },
+    {
+      "topic": "Igbo Culture, Customs, and Social Institutions (Odinala na Omenala)",
+      "subtopics": [
+        "Rites of Passage: Birth/Naming (Igu Aha), Marriage (Igba Nkwu), and Title-Taking (Ichi Ozo)",
+        "Social Structure: Age Grades (Ogbo/Uke), Kinship (Umunna), and Umuada",
+        "Festivals (Emume) and Traditional Calendar (Awa na Eke, Orie, Afo, Nkwo)"
+      ],
+      "keypoints": [
+        "Rites of Passage: *Igu Aha* (naming ceremony after birth), *Igba Nkwu* (traditional wine-carrying marriage ceremony), and *Ichi Ozo* (prestige leadership title-taking for accomplished men).",
+        "Igbo Social Institutions: *Umunna* (patrilineal kinship group/council), *Umuada* (organization of native-born married women who hold significant moral authority), and *Ogbo/Uke* (Age Grade systems for community development and security).",
+        "Traditional Calendar (Ogu Uro/Ogu Eke): Four-day market week cycle comprising *Eke*, *Orie*, *Afo*, and *Nkwo*, which form the seven-week Igbo traditional month (*Izu*).",
+        "New Yam Festival (Iri Ji Ohuru): Annual thanksgiving festival held between August and October marking harvest time, honoring the earth deity (*Ala*) and yam spirit (*Ifejioku*).",
+        "Cosmology and Beliefs: Supreme God (*Chukwu/Chineke*), personal spiritual guide (*Chi*), earth goddess (*Ala*), veneration of ancestors (*Ndiichie*), and masquerade institutions (*Mmanwu*)."
+      ]
+    },
+    {
+      "topic": "Comprehension, Translation, and Composition (Nghota, Nsughari na Edemede)",
+      "subtopics": [
+        "Reading Comprehension (Nghota Text)",
+        "Translation Mechanics (Nsughari English to Igbo & vice versa)",
+        "Essay Writing Techniques (Edemede)"
+      ],
+      "keypoints": [
+        "Comprehension Skills: Extracting explicit facts, inferring underlying cultural metaphors, identifying proverbs used in context, and defining contextual vocabulary.",
+        "Translation Principles (Nsughari): Moving beyond literal word-for-word translation to convey functional and cultural meaning accurately while maintaining standard Igbo grammar.",
+        "Composition Genres (Types of Edemede): Narrative (*Edemede Akuko*), Descriptive (*Edemede Nkowa*), Argumentative (*Edemede Arumaro*), and Expository writing.",
+        "Orthographic Accuracy in Writing: Proper placement of diacritics/sub-dots (dots under 'o', 'u', 'i'), correct tone marking where needed, and adhering to standard word boundary rules (e.g., joining or separating prefixes)."
+      ]
+    }
+  ]
+}

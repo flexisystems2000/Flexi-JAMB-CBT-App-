@@ -1,0 +1,156 @@
+{
+  "subject": "Islamic Religious Studies",
+  "curriculum": "JAMB / WAEC",
+  "format": "Comprehensive Keypoints",
+  "topics": [
+    {
+      "topic": "Tarikh al-Qur'an (Revelation, Preservation, and Compilation)",
+      "subtopics": [
+        "Modes and stages of divine revelation (Wahyy)",
+        "Preservation of the Qur'an during the Prophet's lifetime",
+        "Compilation during the Caliphates of Abu Bakr and Uthman ibn Affan"
+      ],
+      "keypoints": [
+        "Modes of Revelation (Wahyy): Divine communication occurred through true dreams, direct speech behind a veil, and via Angel Jibril (Gabriel) either in human form or with bell-like ringing sounds.",
+        "Initial Revelation: The first set of verses revealed to Prophet Muhammad (SAW) was Surah al-Alaq (96:1-5) at Mount Hira (Cave Hira) through Angel Jibril.",
+        "Preservation during Prophetic Era: Qur'anic verses were memorized by the Huffadh (memorizers) and recorded on available materials like parchment, bones, palm fronds, and flat stones.",
+        "First Standardization (Abu Bakr): Triggered by the heavy loss of Huffadh at the Battle of Yamama. Under the direction of Abu Bakr and Omar, Zayd ibn Thabit compiled the fragments into a single master manuscript (Suhuf).",
+        "Official Codex (Uthman): Due to dialectal variations in recitation across expanding Islamic territories, Caliph Uthman standardized the text into the Qurayshi dialect, producing official copies (Mushaf Uthmani) and burning variant personal scripts to maintain unity."
+      ]
+    },
+    {
+      "topic": "Study of Selected Surahs (Tafsir and Lessons)",
+      "subtopics": [
+        "Makkan vs. Madinan Surahs: Characteristics and contexts",
+        "Detailed study of foundational Surahs (Al-Fatihah, Al-Ikhlas, Al-Falaq, An-Nas)",
+        "Socio-moral Surahs (Al-Hujurat, Al-Ma'un, Al-Asr)"
+      ],
+      "keypoints": [
+        "Makkan vs. Madinan Verses: Makkan Surahs focus primarily on Aqeedah (monotheism), resurrection, moral refining, and brief poetic verses. Madinan Surahs deal with Shariah (legislation), civil laws, social governance, jihad, and hypocrites (Munafiqoon).",
+        "Surah al-Fatihah (The Opening): The mother of the Book (Umm al-Kitab); contains 7 verses summarizing the core themes of Islam: Allah's mercy, sovereignty on Judgment Day, divine worship, and guidance.",
+        "Surahs of Protection (Al-Mu'awwidhatayn): Surah al-Falaq seeks refuge from external evils (darkness, witchcraft, envy); Surah an-Nas seeks refuge from internal whisperings of Satan and evil humans.",
+        "Surah al-Ikhlas: Emphasizes pure Tawhid (Islamic Monotheism), rejecting anthropomorphism, polytheism, and any divine lineage ('He neither begets nor is born').",
+        "Surah al-Hujurat: Outlines Islamic etiquette, social ethics, forbidding backbiting (Gheebah), suspicion, defamation, and establishing racial/tribal equality based on Taqwa (God-consciousness)."
+      ]
+    },
+    {
+      "topic": "Ulum al-Hadith (Science and Preservation of Hadith)",
+      "subtopics": [
+        "Definition, distinction between Hadith, Sunnah, and Hadith Qudsi",
+        "Components of Hadith: Isnad (chain of narrators) and Matn (text)",
+        "Classification of Hadith and compilation of the Al-Kutub al-Sittah"
+      ],
+      "keypoints": [
+        "Definitions: Hadith refers to the recorded sayings, actions, approvals, and characteristics of Prophet Muhammad (SAW). Hadith Qudsi contains divine meanings expressed in the Prophet's words.",
+        "Structure of Hadith: Consists of two vital parts: Isnad (the authenticated chain of transmitters leading back to the Prophet) and Matn (the actual text or content of the tradition).",
+        "Classifications by Authenticity: 1) Sahih (Rigorous/Authentic—unbroken chain of upright, accurate narrators free from hidden flaws); 2) Hasan (Good/Acceptable—slightly lesser memory precision than Sahih); 3) Da'if (Weak—broken chain or flawed narrator memory); 4) Mawdu' (Fabricated/Forged).",
+        "The Six Canonical Books (Al-Kutub al-Sittah): Sahih al-Bukhari, Sahih Muslim, Sunan Abu Dawud, Sunan al-Tirmidhi, Sunan al-Nasa'i, and Sunan Ibn Majah.",
+        "Pioneering Collectors: Imam al-Bukhari and Imam Muslim developed the most stringent criteria for checking narrator credibility (Ilm al-Rijal) and text validity."
+      ]
+    },
+    {
+      "topic": "Tawhid (Islamic Monotheism) and Articles of Faith",
+      "subtopics": [
+        "The three aspects of Tawhid (Rububiyyah, Uluhiyyah, Asma wa al-Sifat)",
+        "Shirk: Definition, types (Major and Minor), and consequences",
+        "Belief in Angels, Books, Prophets, Day of Judgment, and Qadar"
+      ],
+      "keypoints": [
+        "Three Dimensions of Tawhid: 1) Tawhid ar-Rububiyyah (Unity of Divine Lordship—acknowledging Allah alone as Creator, Provider, Sustainer); 2) Tawhid al-Uluhiyyah (Unity of Worship—directing all acts of worship exclusively to Allah); 3) Tawhid al-Asma' wa al-Sifat (Unity of Divine Names and Attributes without likeness or distortion).",
+        "Concept and Danger of Shirk: Shirk (associating partners with Allah) is the unforgivable sin if unrepented before death. Major Shirk (Shirk al-Akbar) exits Islam; Minor Shirk (Shirk al-Asghar, e.g., Riya/showing off in worship) degrades spiritual rewards.",
+        "Articles of Faith (Iman): Belief in 1) Allah, 2) His Angels (unseen light beings e.g., Jibril, Mika'il, Israfil), 3) His Scriptures (Tawrat, Zabur, Injeel, Qur'an), 4) His Messengers (from Adam to Muhammad), 5) The Last Day (Yawm al-Qiyamah), and 6) Divine Decree/Predestination (Qadar).",
+        "Prophethood (Nubuwwah): All prophets preached Tawhid. Prophet Muhammad (SAW) is the seal of the prophets (Khatam an-Nabiyyin)."
+      ]
+    },
+    {
+      "topic": "Fiqh: Taharah, Salah, and Sawm",
+      "subtopics": [
+        "Taharah (Purification): Types, methods (Wudu, Ghusl, Tayammum)",
+        "Salah (Prayer): Pillars, conditions, types, and congregation",
+        "Sawm (Fasting): Rules, exemptions, and spiritual benefits of Ramadan"
+      ],
+      "keypoints": [
+        "Taharah (Purification): Essential prerequisite for worship. Divided into purification from Najasah (physical impurities) and Hadath (spiritual impurity states).",
+        "Purification Methods: Wudu (ablution for minor impurity); Ghusl (full ritual bath for major impurity e.g., janabah, menstruation); Tayammum (dry ablution using clean dust/sand when water is unavailable or dangerous to use).",
+        "Salah (Ritual Prayer): Second pillar of Islam, performed 5 times daily. Requires Taharah, Qiblah direction, covering Awrah, and correct timing. Comprises compulsory steps (Arkan) such as Takbir, Ruku, Sujud, and Tashahhud.",
+        "Types of Salah: Fard (obligatory), Sunnah (recommended), Jumu'ah (Friday congregation replacing Dhuhr), and Eid prayers.",
+        "Sawm (Fasting): Fasting from dawn (Fajr) to sunset (Maghrib) during Ramadan. Involves abstaining from food, drink, and sexual relations while guarding speech and actions. Exemptions apply to the sick, travelers, pregnant/nursing mothers, and elderly."
+      ]
+    },
+    {
+      "topic": "Fiqh: Zakat, Hajj, and Socio-Economic Transactions",
+      "subtopics": [
+        "Zakat: Types, calculation, Nisab, and eligible beneficiaries",
+        "Hajj and Umrah: Pillars, rites, and spiritual significance",
+        "Mu'amalat: Halal and Haram in Islamic commercial transactions"
+      ],
+      "keypoints": [
+        "Zakat (Obligatory Charity): Third pillar designed for wealth redistribution and soul purification. Requires reaching Nisab (minimum taxable wealth threshold) and a Haul (one full lunar year possession).",
+        "Eight Beneficiaries of Zakat: Explicitly outlined in Surah at-Tawbah (9:60): the poor (Fuqara), the needy (Masakin), Zakat administrators, those whose hearts are to be reconciled, freeing slaves, debtors, in the cause of Allah, and stranded travelers.",
+        "Zakat al-Fitr: Mandatory charity given before Eid al-Fitr prayer in the form of staple food to ensure the needy celebrate.",
+        "Hajj (Pilgrimage): Obligatory once in a lifetime for physically and financially capable Muslims. Essential rites: Ihram (state of consecration), Tawaf (circumambulating the Ka'bah), Sa'i (walking between Safa and Marwah), standing at Arafat (core pillar), and Ramy al-Jamarat (stoning the pillars).",
+        "Mu'amalat (Transactions): Islam promotes fair trade while strictly prohibiting Riba (usury/interest), Gharar (excessive uncertainty/gambling), hoarding, and exploitation."
+      ]
+    },
+    {
+      "topic": "Islamic Family Law (Nikah, Talaq, and Inheritance)",
+      "subtopics": [
+        "Marriage (Nikah): Requirements, rights, and duties of spouses",
+        "Dissolution of Marriage: Talaq, Khul', and Iddah periods",
+        "Mirath (Inheritance): Principles of wealth distribution"
+      ],
+      "keypoints": [
+        "Essentials of Nikah: 1) Mutual consent (Offer and Acceptance - Ijab wa Qabul); 2) Guardian's approval (Wali); 3) Dower (Mahr paid to the bride); 4) Minimum of two trustworthy Muslim witnesses.",
+        "Rights and Duties: Husband must provide food, shelter, clothing, and kind treatment. Wife owes respect, cooperation, and protection of household honor/property.",
+        "Divorce Provisions: Intended as a last resort. Types: Talaq (divorce initiated by husband following prescribed intervals); Khul' (divorce initiated by wife returning her Mahr); Faskh (judicial dissolution by a Shariah court).",
+        "Iddah (Waiting Period): Mandatory period during which a divorced or widowed woman cannot remarry to establish pregnancy status and allow reconciliation. Duration: 3 menstrual cycles for divorced women; 4 months and 10 days for widows.",
+        "Mirath (Inheritance): Wealth distributed after paying funeral expenses and debts. Fixed primary heirs include parents, spouse, and children. Males generally inherit twice the share of females due to financial maintenance obligations (Nafaqah)."
+      ]
+    },
+    {
+      "topic": "The Life of Prophet Muhammad (SAW) - Sirah",
+      "subtopics": [
+        "Pre-Islamic Arabia (Jahiliyyah) and early life in Makkah",
+        "The Hijrah to Madinah and establishment of the first Islamic state",
+        "Major battles (Badr, Uhud, Khandaq) and Treaty of Hudaybiyyah"
+      ],
+      "keypoints": [
+        "Jahiliyyah Era: Characterized by idolatry, tribal feuds, female infanticide, moral decay, and absence of unified central government.",
+        "Early Life & Prophethood: Born in the Year of the Elephant (570 CE); known as Al-Amin (the Trustworthy) and Al-Sadiq (the Truthful). Received revelation at age 40.",
+        "Makkan Persecution & Boycott: Early Muslims faced severe torture, leading to migrations to Abyssinia (ruled by fair Christian King Negus) and eventually the social boycott of Banu Hashim.",
+        "The Hijrah (622 CE): Migration from Makkah to Yathrib (Madinah); marks year 1 of the Islamic Hijri calendar. Established the Constitution of Madinah (Mithaq al-Madinah) guaranteeing rights to Muslims, Jews, and allied tribes.",
+        "Key Military Encounters: Battle of Badr (624 CE - decisive victory despite numerical inferiority); Battle of Uhud (625 CE - lesson in obedience to archers); Battle of Khandaq (627 CE - defensive trench warfare strategy by Salman al-Farsi).",
+        "Treaty of Hudaybiyyah (628 CE) & Conquest of Makkah (630 CE): 10-year peace pact that led to rapid expansion of Islam and paved the way for the bloodless liberation of Makkah and cleansing of the Ka'bah."
+      ]
+    },
+    {
+      "topic": "The Rightly Guided Caliphs (Al-Khulafa ar-Rashidun)",
+      "subtopics": [
+        "Abu Bakr al-Siddiq: Ridda wars and Qur'an compilation",
+        "Umar ibn al-Khattab: Administrative expansions and reforms",
+        "Uthman ibn Affan and Ali ibn Abi Talib: Key events and challenges"
+      ],
+      "keypoints": [
+        "Abu Bakr al-Siddiq (632-634 CE): Consolidated the state by crushing apostasy movements (Ridda Wars), defeating false prophets (e.g., Musaylimah al-Kadhdhab), and initiating early Qur'an compilation.",
+        "Umar ibn al-Khattab (634-644 CE): Known as Al-Farooq. Expanded empire into Persia, Syria, and Egypt. Established public treasury (Bayt al-Mal), postal system, garrison cities, judicial administrative departments, and the Hijri dating system.",
+        "Uthman ibn Affan (644-656 CE): Known as Dhun-Nurayn. Expanded Islamic navy, oversaw global compilation/standardization of the Mushaf, faced internal political rebellions culminating in his martyrdom.",
+        "Ali ibn Abi Talib (656-661 CE): Known for wisdom and bravery. Shifted capital to Kufa; managed internal civil conflicts (Battle of the Camel, Battle of Siffin) and addressed the emergence of the Khawarij faction."
+      ]
+    },
+    {
+      "topic": "Moral Values, Social Responsibilities, and Contemporary Issues",
+      "subtopics": [
+        "Islamic virtues (Adab): Humility, honesty, brotherhood, and forgiveness",
+        "Social vices: Corruption, bribery, drug abuse, and terrorism",
+        "Human rights, religious tolerance, and peaceful coexistence"
+      ],
+      "keypoints": [
+        "Core Virtues (Adab): Islam emphasizes Sidq (truthfulness), Amanah (trustworthiness), Sabr (patience), Ihsan (excellence), and Birr al-Walidayn (filial piety/respect for parents).",
+        "Islamic Stance on Vices: Absolute prohibition of corruption, bribery (Rishwah), fraudulent weights/measures (Tatfeef), gambling (Maysir), intoxicants (Khamr), and illicit sexual relations (Zina).",
+        "Sanctity of Human Life: Inviolable in Shariah; saving one life is equivalent to saving humanity, and taking an innocent life is like killing all humanity (Surah al-Ma'idah 5:32).",
+        "Religious Tolerance: Qur'anic mandate forbids compulsion in religion ('La ikraaha fid-deen' - Surah al-Baqarah 2:256); insists on peaceful coexistence with non-Muslims and protection of minority rights.",
+        "Environmental Stewardship: Humans are designated as Khulafa (trustees/vicegerents) on Earth, commanded to preserve natural resources and avoid environmental degradation (Fasad)."
+      ]
+    }
+  ]
+}
