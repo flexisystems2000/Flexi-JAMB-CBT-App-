@@ -1,0 +1,128 @@
+{
+  "syllabus": {
+    "subject": "MUSIC",
+    "general_objectives": [
+      "appreciate and discuss the foundations of Music fairly and critically;",
+      "identify the features of the music of different periods through written/aural analysis;",
+      "investigate the Western and African music theory, history, peoples, forms and medium of performance (including instrumentation);",
+      "recognise the influence of socio-cultural and technological factors (including computer software application) on the lives and music of musicians; and",
+      "acquire a sound musical basis for further learning at the tertiary level."
+    ],
+    "structure": [
+      {
+        "section": "SECTION A: RUDIMENTS OF MUSIC",
+        "contents_notes": "1. The staff: (a) Great staff, (b) Ledger lines and spaces, (c) Open score (vocal score) and (d) G clef (Treble), C clef (Alto, Tenor, etc) F clef (Bass). 2. Music Notes/Rests and their corresponding values. 3. Time-signature: (simple and compound time-signatures), the correct grouping of notes and barring of unbarred passages. 4. A. Key-signatures and scales: (i) Technical names of the various degrees of the scale, (ii) Diatonic major/minor (natural, harmonic and melodic), Chromatic scales. B. Determination of the key of a piece of music with or without key signature NOT exceeding two sharps and two flats. 5. (a) Keyboard setting and enharmonic equivalents, (b) Accidentals. 6. Intervals: 6a. Recognition of diatonic / chromatic intervals and their inversions (e.g. perfect unison, perfect 4th, perfect 5th, perfect 8ve), major/minor 2nd, 3rd, 6th and 7th diminished 5th and augmented 4th. 7. Definition of simple musical terms, signs and abbreviations. 8. (a) Transcription of music from staff into tonic solfa notation and vice-versa, (b) Transposition using the treble (G) and bass (F) staves NOT exceeding two sharps and two flats.",
+        "objectives": [
+          "identify all the components of the staff and their uses;",
+          "determine the relative duration of different notes and rests and their applications;",
+          "interpret varied rhythmic patterns;",
+          "group and bar unbarred passage correctly;",
+          "ascertain names of the various degrees of the diatonic scales and keys;",
+          "identify simple scale passages with or without key-signature;",
+          "differentiate between diatonic and chromatic scales;",
+          "identify the names of the white and black keys and their relationship, e.g. C sharp = Db = Bx;",
+          "state function of the accidentals;",
+          "determine different qualities of intervals (melodic and harmonic) and their inversion;",
+          "interpret simple musical terms signs and abbreviations;",
+          "read music in any given notation both in staff and solfa notations;",
+          "rewrite a music passage on a given stave;",
+          "transcribe from staff notation to solfa notation."
+        ]
+      },
+      {
+        "section": "SECTION B: ELEMENTARY HARMONY",
+        "contents_notes": "1. Triads and their inversions in major/minor keys, NOT exceeding two sharps and two flats. (a) Primary triads in major keys. (b) Secondary triads in major keys. Note A: Chord indications (major = capital Roman numerals e.g. I; minor = small Roman numerals e.g. ii; diminished = small Roman numerals with a 'o' sign e.g. viiº; augmented = capital numerals with a '+' e.g. III+). Note B: In major scale, major triads are I, IV, V; minor are ii, iii, vi; diminished is viiº. Note C: In harmonic minor, minor are i, iv; major are V, VI; diminished are ii, viiº; augmented is III+. Note D: Primary triads are I, IV, V in major scales but i, iv, V in harmonic minor scales. 2. (a) Basic chord progressions in four parts vocal style (SATB) in major keys NOT exceeding two sharps and two flats. (b) Dominant 7th chord in root position only. 3. Kinds of motion: Parallel, Similar, Contrary and Oblique. 4. Cadences in major keys NOT exceeding two sharps and two flats: (a) perfect/full close cadence, (b) imperfect/half close/semi cadence, (c) plagal / Amen cadence, (d) interrupted / deceptive / evaded / surprise cadence. 5. Non-harmonic tones / Non-chord tones; identification and application of the following: (a) neighbouring tones / auxiliary notes; and (b) passing tones / notes. 6. Modulation: Simple diatonic modulations (using a single melodic line) from any given major key NOT exceeding two sharps and two flats to any of its closely related keys (dominant and subdominant). 7. Elementary Composition: (a) Setting of words to written melody, (b) Recognition of suitable answers to given musical phrases, (c) Two-part free counterpoint.",
+        "objectives": [
+          "identify triads and their inversions in both major and minor;",
+          "compare types of triads;",
+          "determine the use of triads;",
+          "determine the basic chord progressions in a music passage;",
+          "recognize the dominant 7th chord;",
+          "identify the various kinds of motion in a musical passage;",
+          "differentiate between the various motions;",
+          "identify the various types of cadences in a musical score;",
+          "analyse the various the types of cadences and their resolutions;",
+          "relate harmonic or non-harmonic tones to the chords with which they are associated;",
+          "determine the key of a given melody and its modulation;",
+          "identify suitable melody to given words, compatible, balanced or contrasting phrases;",
+          "identify the basic rules of two-part writing (counterpoint)."
+        ]
+      },
+      {
+        "section": "SECTION C: HISTORY AND LITERATURE OF AFRICAN MUSIC",
+        "contents_notes": "1. Nigerian folksongs, types, forms and characteristics: (a) Types: cradle, folk-tales, games, war, satirical, dirges / funeral, historical, praise and worksong, etc. (b) Forms: call and response, strophic, through composed, antiphony, etc. (c) Characteristics: (i) Vocal styles: recitative, yodeling, ululation, incantation, heaving, whistling, nasalisation, etc. (ii) Scales/modes: tritonic, tetratonic, pentatonic, hexatonic etc. (iii) Metre/Rhythm: Metric and non-metric, polymetric, cross-rhythm, syncopation, hemiola, poly-rhythm, etc. 2. General knowledge of the features and forms of Nigerian traditional music and other arts: (i) Festivals: e.g. Osun, Ifa, Ogun, Ekpo, Ofala, Iri ji (New Yam Festival), Ovia Osese, Mmanwu (Masquerade), Ila-Oso, Argungu (Fishing), Eyo/Adamu Orisa, Gelede, etc. (ii) Dances and other arts: Social, Ritual and Ceremonial e.g. Masquerade, Koroso, Atilogwu, Ikperikpe (war dance), Egedeege, Kwaghir, Agbon, Nkwa Umuagbogho, Bata, Bori, Swange, Dundun, Kokoma, Abigbo, Okonko, etc. 3. Instruments: Nigerian traditional musical instruments classifications: (a) Aerophones: kakaki, algaita, sarewa, pedete, obati, farai, kaho, imar, mongom, taluk, damalgo, odikakora, oja, opi, pipilo, udu, nnuk, ofiom, ekutu, teremagbe, ayeta-ode, akpele, etc. (b) Chordophones: goge, kukuma, komo, kwamsa, kuntigi, lasha, molo, garaya, gurmi, une, ubo-akwara, goje, etc. (c) Idiophones: kundung, karawa, shantu, oyo, ichaka, ogene, aja, ekpili, ekwe, udu, ikoro, ngedegwu, okpokoro, ekere, mgbiligba, alo, ubo-aka, sekere, agogo, agidigbo, oma, aro, ukuse, eromwon, etc. (d) Membranophones: taushi, banga, balle, ganga, tambari, tandu, kuntuku, kalangu, gangan-noma, igba, nsing, ban yogume, emoba, ipese, igbin, bata, bembe, gudugudu, kanango, dundun, gangan, etc. 4. Knowledge of the lives and music of the following African traditional musicians: A. Nigerians: (i) Sani Sabulu, Sani Dan Indo, Hassan Wayam, Barmani Coge, Danlami Nasarawa, Garba Super, Dankwairo, Aminu mai Asharalle, Shehu Ajilo, Dan Maraya Jos, Dan Alalo, Mamman Shata, Haruna Uji, etc. (ii) Ezigbo Obiligbo, Seven-Seven, Morocco Maduka, Okechukwu Nwatu, Mike Ejeagha, Afam Ogbuotobo etc. (iii) Kokoro (the blind Minstrel), Anikura, Tunde Alao, Olanrewaju Adepoju, Ademola Onibon-okuta, Elemure Ogunyemi, Comfort Omoge etc. B. Other Africans: Vinoko Akpalu, Daniel Amponsah (alias Koo Nimo), Efua Basa, Kwaa Mensah etc. 5. Evolution and Development of African Popular Music: Highlife, Juju, Afro-beat, Fuji, Apala, Reggae, Makosa, Ikwokirikwo, Okukuseku, Ekassa, Akuko na egwu, Awurebe, Waka, Hiplife, Hip-hop, etc. 6. Knowledge of the lives and music of the following African Popular Musicians: A. Nigerians: Bongos Ikwe, Oliver De Coque, Nelly Uchendu, Osita Osadebe, Bright Chimezie, Bobby Benson, Victor Uwaifo, Sonny Okosun, Fela Anikulapo Kuti, I. K. Dairo, Victor Olaiya, Ebenezer Obey, Sunny Ade, Fatai Rolling Dollar, Bala Miller, Alhaji Uba Rawa, Zaaki Adzee, 2Face, Rude Boy (Paul Okoye), Mr. P (Peter Okoye), Djnee, Paul Play Dairo, Eedris Abdulkareem, D'Banj, Sunny Neji, Lagbaja, Zule Zoo, Daddy Showkey, Majek Fashek, Ras Kimono, Jeremiah Gyang, Flavour, Olamide, M.I, Iyanya, Wizkid, Davido, Omawunmi, Lara George, Sola Allynson, Ara, Asa, Onyeka Onwenu, Christy Essien-Igbokwe, Nasir Hausawa etc. B. Other Africans: Manu Dibango, E. T. Mensah, Jerry Hansen, Kofi Olomide, Awilo Logomba, Papa Wemba, Salif Kaita, Angelina Kidjo, Lucky Dube, Yvonne Chakachaka, Brenda Fasie, Sarkodie etc. 7. Knowledge of the lives and music of the following African Art Musicians: A. Nigerians: W. W. C. Echezona, Laz Ekwueme, Sam Akpabot, Ikoli Harcourt Whyte, Joshua Uzoigwe, Mosun Omibiyi-Obidike, Tunji Vidal, Ademola Adegbite, Yemi Olaniyan, Ayo Bankole, Akin Euba, Sam Ojukwu, A. K. Achinivu, Bode Omojola, Felix Nwuba, Christopher Oyesiku, Dayo Dedeke, Adams Fiberesima, Dan Agu, Chris Onyeji, Godwin Sadoh, Meki Nzewi, Solomon Ikibe, Idolor E.G., Femi Adedeji, Anthony Mereni, A. A. Layade, etc. B. Other Africans: Joseph S. Maison, N. Z. Nayo, J. H. Kwabena Nketia, Gymah Labi, Philip Gbeho, Ephraim Amu, C.K. Adom, A.A. Mensah, C.W.K. Mereku, A. A. Agordoh, J. O. Ofosu, S.G. Boateng etc.",
+        "objectives": [
+          "identify various folksongs and their types;",
+          "define and compare their forms and features;",
+          "mention some characteristic features of vocal, scale and rhythmic styles in African music;",
+          "analyse the features and forms of Nigerian traditional music and the arts;",
+          "differentiate between the various types of festivals, dances, their origin; and",
+          "identify the relationship between music, dance and drama in African festivals;",
+          "identify the characteristic features of the classes of the musical instruments;",
+          "classify them into their categories; and",
+          "trace their origin;",
+          "identify different groups to which various musicians belong;",
+          "trace their biographies;",
+          "mention their musical styles; and",
+          "assess their contributions to the music industry;",
+          "differentiate one musical genre from another; and",
+          "examine their influence on society;",
+          "relate the musicians to the music they perform;",
+          "examine their type of music; and",
+          "assess their contributions to the development of music;",
+          "relate the art composers to their compositions;",
+          "examine their type of compositions; and",
+          "assess their contributions to the development of art Music Education in Nigeria."
+        ]
+      },
+      {
+        "section": "SECTION D: HISTORY AND LITERATURE OF WESTERN MUSIC",
+        "contents_notes": "1. (A) Historical development of Western music styles in respect of the periods: (i) Medieval/Middle Age (800-1400), (ii) Renaissance period (1400-1600), (iii) Baroque period (1600-1750), (iv) Classical period (1750-1820), (v) Romantic period (1820-1900), (vi) 20th Century (1900-1999). (B) Composers: Palestrina, Claudio Monteverdi, Henry Purcell, J.S. Bach, G. F. Handel, W. A. Mozart, Franz Joseph Haydn, Ludwig van Beethoven, Franz Schubert, Frederic Chopin, Igor Stravinsky, Arnold Schoenberg, Zoltan Kodaly, Claude Debussy, etc. 2. Music Forms and Media: (i) Binary, Ternary, Rondo, Sonata Allegro, Dance Suite, Canon, Free Fantasia, Theme and variation, etc. (ii) Orchestral and Band instruments and classifications. (iii) The human voice (its types, ranges and qualities). (iv) Keyboard Instruments: the organ, piano, electronic keyboard, etc. (v) Knowledge of the following instruments: ukulele, banjo, guitar, mandolin, harp, accordion, xylophone, marimba, etc. (vi) Computer Music Technology: software (Finale, Sibelius, Cubase, Reason, Sound Forge Nero), tuning fork, pitch pipe, etc. 3. Introduction to Artificial Intelligence (AI) in Music Technology: meaning, evolutionary trend/historical background, types, application of AI tools in Music composition, AI-Powered Music Generators etc.",
+        "objectives": [
+          "identify the various periods with dates from Medieval to 20th century period; and",
+          "trace the stages of the development of western musical practice from the medieval to the end of the 20th century period;",
+          "identify the composers; and",
+          "assess their contributions;",
+          "identify the general forms and various types of instruments in Western music;",
+          "relate Music to modern technology;",
+          "assess the contributions of AI."
+        ]
+      },
+      {
+        "section": "SECTION E: COMPARATIVE MUSIC STUDIES",
+        "contents_notes": "1. An overview of the following black musicians (composers, performers, etc) in the diaspora: Mighty Sparrow, James Brown, Bob Marley, Michael Jackson, Stevie Wonder, Lionel Richie, R. Kelly, Lauryn Hill, Kirk Franklin, Tupac Shakur, Shabba Ranks, Quincy Jones, Boyz II Men, Sean Paul, Janet Jackson, Whitney Houston, Beyonce, Brandy, Usher, Kevin Lyttle, Bobby Brown, M. C. Hammer, L. L. Cool J., Dr. Dre, Snoop Doggy, Mary J. Blige, Jay Z, Chris Brown, Bruno Mars, Ne-Yo, Rihanna, Louis Armstrong, Jimmy Cliff, Diana Ross, etc. 2. Forms to be examined include African-American spiritual, gospel music, jazz, rhythm and blues, soul, calypso, rock 'n' roll, reggae, afro-beat, tango, rap, chachacha, bolero, twist, hip-hop, etc. 3. The spirit of nationalism in Nigerian music: One Love (Onyeka Onwenu), Which Way Nigeria? (Sonny Okosun), First National Anthem (Nigeria We Hail Thee) - Frances Berda (1960-1978), Second National Anthem (Arise Oh Compatriots) - Ben Odiase (1978-2025), Current National Anthem (Nigeria We Hail Thee) - Frances Berda (2025 till date), Nigeria for All (Sunny Ade), Nigeria Go Survive (Veno Marioghae), etc.",
+        "objectives": [
+          "identify the musicians in the diaspora by their names and works;",
+          "assess their individual musical influences on the global society;",
+          "identify the various forms of musical genres;",
+          "trace the origins of the musical genres;",
+          "identify the nationalistic composers by their names and work;",
+          "identify some of the features and materials used by nationalist composers to create, project and sustain cultural and patriotic awareness; and",
+          "assess their roles in Nigerian nationalism."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Adesipe, A.E. (2025). Essential Music for Senior Secondary Schools with Introduction to Artificial Intelligence. Tonad Publishers, Mowe Ibafo, Ogun State, Nigeria. Also available on Amazon Kindle Direct Publishing platform.",
+      "Adesipe, A.E. (2025). Artificial Intelligence in African Music and Instrumental Technology, Amazon Kindle Direct Publishing.",
+      "Adesipe, A.E. (2024). History of Nigerian Folksongs, ADLEK Printing Press, Ilorin Kwara State, Nigeria. Also available on https://selar.co/hy5796, https://selar.com/jf4f24",
+      "Adesipe, A.E. (2024). Nigerian Festivals and Traditional Instruments, Amazon Kindle Direct Publishing. Also available on https://selar.com/580b72",
+      "Adesipe, A.E. (2025). African Music and Instrumental Technology, Amazon Kindle Direct Publishing.",
+      "Akpabot, S.E. (1986). Foundation of Traditional Music. Ibadan Spectrum Books, Nigeria.",
+      "Agu, C.C. (1999). Forms and Analysis of African Music. Enugu: New Generation Books, Nigeria.",
+      "Echezona, W. W. C. (1981). Nigerian Musical Instruments, Enugu: Apollo Publishing Ltd. Nigeria.",
+      "Ekwueme, Lucy. U. (2007). Songs for Happy Little People, Lagos: West African Book Publisher Limited.",
+      "Hosier, (1961). Instruments of the Orchestra Oxford: Oxford University Press.",
+      "Kamien Roger (2008). Music An Appreciation. New York McGraw Hill Book Company.",
+      "Kennedy, M. (1985). The Concise Oxford Dictionary of Music, (Third Edition), London: Oxford University Press.",
+      "Kitson, C. H. (1978). Elementary Harmony Book 2, London: Oxford University Press.",
+      "Kofoworola, Z. O. And Lateef, Y. (1987). Hausa performing Arts and Music, Lagos: Nigeria Magazine.",
+      "Mensah, A. A. (Undated) Folksongs for Schools, Accra.",
+      "Mensah, I.T. (1990) Understanding Music. Books 1-3. Otuamic Publications.",
+      "Nketia J. H. K. (1973). African Music in Ghana, Folksongs of Ghana. University Press, Accra Ghana.",
+      "Osunniyi, J.A. (1994). An Easy Way to Learning, Lagos: Music. Jac-Ola Printing Press, Nigeria.",
+      "Robert Manford et al (1990). Music for Senior Secondary Schools. H. Gangaram Bombay.",
+      "Vidal, A.O. (2012). Selected Topics on Nigerian Music. Ile-Ife: Imef African Music Publishers, Nigeria."
+    ]
+  }
+}

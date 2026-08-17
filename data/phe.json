@@ -1,0 +1,41 @@
+{
+  "syllabus": {
+    "subject": "PHYSICAL AND HEALTH EDUCATION",
+    "general_objectives": [
+      "Acquire basic knowledge and practical skills in motor activities, fitness, body maintenance and self-awareness;",
+      "Acquire basic knowledge required to practice positive health habits and maintenance of health;",
+      "Understand relationship between human movement and biological, physical and social sciences;",
+      "Appreciate ecological relationship between man and his environment with a view to preventing the spread of diseases;",
+      "Stimulate and sustain their interest in Physical and Health Education."
+    ],
+    "structure": [
+      {
+        "section": "SECTION A: FOUNDATIONS AND PRINCIPLES OF PHYSICAL AND HEALTH EDUCATION",
+        "contents_notes": "1. Principles, meaning, scope and philosophy of Physical Education (PE): a. Definition, nature, scope and objectives of PE. b. Philosophy of the Founding Fathers of PE (Hetherington, Dudley Sergent, Thomas Wood, John Dewey). c. History and Development of PE in i. ancient Greece (Sparta, Athens) and Rome, ii. Nigeria (Pre-colonial, colonial and post-colonial).",
+        "objectives": [
+          "state the meaning, nature, objectives and scope of PE;",
+          "narrate the philosophy of the Founding Fathers;",
+          "trace the historical development of PE in ancient Greece, Rome and Nigeria."
+        ]
+      },
+      {
+        "section": "SECTION B: HEALTH EDUCATION AND FAMILY LIVING",
+        "contents_notes": "Topics related to family life, health education, family planning and methods of family planning, advantages, challenges facing family life, and agencies promoting healthy family living (school, NGO, religious homes).",
+        "objectives": [
+          "define family planning and state its importance;",
+          "identify the various methods of family planning and state their advantages;",
+          "state the challenges facing family life;",
+          "identify agencies promoting healthy family living."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Afuekwe A. I. (2007). An Introductory Textbook of Physical Education for Secondary Schools and Colleges. Vol. 1. Sales Point (Nig.) Co.",
+      "Afuekwe A. I. (2009). Health Topics in the New Curriculum of Physical and Health Education. Vol. 1. Seas Print (Nig.) Co.",
+      "Nnabueze, U. C. (2002). Foundation of Health and Physical Education for Schools. Vol. II Enugu: Okotech Publishers.",
+      "Ofadeji, A. A. (2013). Comprehensive Textbook on Physical and Health Education.",
+      "Oworu, O. O. (2004). Fundamentals of Physical Education. Lucky Odoni (Nig.) Enterprises.",
+      "Oyerinde, O. O., Dada, J. O. & Oloyede, R. O. (2021). A Textbook of Physical and Health Education for Secondary School in Contemporary Nigeria Education System. Fabonish Publisher, Positive Press, Ibadan. 4th Edition."
+    ]
+  }
+}

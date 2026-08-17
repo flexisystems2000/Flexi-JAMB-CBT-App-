@@ -1,0 +1,226 @@
+{
+  "syllabus": {
+    "subject": "CHEMISTRY",
+    "general_objectives": [
+      "understand the basic principles and concepts in chemistry;",
+      "interpret scientific data relating to chemistry;",
+      "deduce the relationships between chemistry and other sciences; and",
+      "apply the knowledge of chemistry to industry and everyday life."
+    ],
+    "structure": [
+      {
+        "section": "1. Separation of Mixtures and Purification of Chemical Substances",
+        "contents_notes": "(a) Elements, compounds and mixtures (b) Chemical and physical changes (c) Pure and impure substances (d) Boiling, density, freezing and melting points (e) Separation processes: Evaporation, simple and fractional distillation, sublimation, re-crystallization, paper and column chromatography, simple and fractional crystallization, magnetization, decantation, filtration and centrifugation",
+        "objectives": [
+          "distinguish between elements, compounds and mixture;",
+          "differentiate between chemical and physical changes;",
+          "distinguish between pure and impure substances;",
+          "use boiling and melting points as criteria for purity of chemical substances;",
+          "identify the properties of the components of a mixture;",
+          "specify an appropriate separation or purification process for a given mixture."
+        ]
+      },
+      {
+        "section": "2. Chemical Combination",
+        "contents_notes": "(a) Laws of chemical combination: (i) Law of conservation of mass (ii) Law of constant composition (iii) Law of multiple proportions. (b) Law of reciprocal proportion (c) Atomic theory: (i) Dalton's atomic theory and its limitations (ii) Modern modifications of Dalton's atomic theory",
+        "objectives": [
+          "perform simple calculations on laws of chemical combination;",
+          "compare the laws of chemical combination;",
+          "state Dalton's atomic theory and its limitations;",
+          "relate Dalton's atomic theory to the laws of chemical combination;",
+          "state the modern modifications of Dalton's atomic theory."
+        ]
+      },
+      {
+        "section": "3. Kinetic Theory of Matter and Gas Laws",
+        "contents_notes": "(a) Kinetic theory of matter: (i) Postulates of the kinetic theory of matter (ii) Application of kinetic theory of matter to explain the nature of solids, liquids and gases (iii) Application of kinetic theory of matter to change of state: melting, boiling, evaporation, condensation, sublimation and freezing. (b) The gas laws: (i) Boyle's law (ii) Charles's law (iii) General gas equation: P\u2081V\u2081/T\u2081 = P\u2082V\u2082/T\u2082 (iv) Ideal gas equation: PV = nRT (v) Dalton's law of partial pressure (vi) Graham's law of diffusion (vii) Avogadro's law and Gay-Lussac's law",
+        "objectives": [
+          "state the postulates of kinetic theory of matter;",
+          "use the kinetic theory to explain the nature of solids, liquids and gases;",
+          "use the kinetic theory to explain changes of state;",
+          "state Boyle's, Charles's, Dalton's, Graham's, Avogadro's and Gay-Lussac's laws;",
+          "perform mathematical calculations on gas laws;"
+        ]
+      },
+      {
+        "section": "4. Atomic Structure and Bonding",
+        "contents_notes": "(a) Concept of atom, molecule and ion (b) Sub-atomic particles: electron, proton and neutron; their relative masses and charges (c) Proton number (atomic number), mass number, isotopes and nuclear symbols (d) Atomic mass (relative atomic mass based on C-12) and molecular mass (relative molecular mass) (e) Electronic configuration of atoms and ions of the first thirty elements (f) Orbital concept: s, p and d orbitals (g) Periodic table: (i) Periods and groups (ii) Periodic trends: atomic radius, ionic radius, ionization energy, electron affinity and electronegativity (h) Chemical bonding: (i) Electrovalent (ionic) bonding (ii) Covalent bonding (co-ordinate, dative and localized/delocalized bonds) (iii) Metallic bonding (iv) Intermolecular forces: van der Waals forces and hydrogen bonding (v) Shape of simple molecules: linear, trigonal planar, tetrahedral, pyramidal and V-shaped (bent)",
+        "objectives": [
+          "distinguish between atom, molecule and ion;",
+          "specify the relative masses and charges of sub-atomic particles;",
+          "determine the number of protons, neutrons and electrons from nuclear symbols;",
+          "define isotopes and relative atomic mass;",
+          "write the electronic configuration of atoms and ions (1 to 30);",
+          "describe s, p and d orbitals;",
+          "relate electronic configuration to the position of elements in the periodic table;",
+          "interpret periodic trends across periods and down groups;",
+          "describe the formation of ionic, covalent and metallic bonds;",
+          "differentiate between properties of ionic and covalent compounds;",
+          "explain intermolecular forces and their effects on physical properties;",
+          "predict the shapes of simple molecules based on electron pair repulsion."
+        ]
+      },
+      {
+        "section": "5. Nuclear Chemistry",
+        "contents_notes": "(a) Radioactivity: natural and artificial (b) Nuclear radiations: alpha (\u03b1), beta (\u03b2) and gamma (\u03b3) rays; their properties and detection (c) Nuclear equations: balancing of nuclear equations (d) Half-life: concept and simple calculations (e) Nuclear fission and fusion (f) Uses of radionuclides: in medicine, agriculture, industry and dating",
+        "objectives": [
+          "distinguish between natural and artificial radioactivity;",
+          "compare the properties of alpha, beta and gamma radiations;",
+          "balance nuclear equations for radioactive decay;",
+          "perform simple calculations involving half-life;",
+          "distinguish between nuclear fission and nuclear fusion;",
+          "state the applications of radioactive isotopes."
+        ]
+      },
+      {
+        "section": "6. Energetics",
+        "contents_notes": "(a) Concept of enthalpy (heat content), \u0394H (b) Exothermic and endothermic reactions (c) Thermochemical equations: heat of reaction, heat of formation, heat of combustion and heat of neutralization (d) Hess's law of constant heat summation (e) Bond energy and calculations based on bond energies (f) Concept of entropy and Gibbs free energy: spontaneity of reactions (\u0394G = \u0394H - T\u0394S)",
+        "objectives": [
+          "define enthalpy and distinguish between exothermic and endothermic reactions;",
+          "write and interpret thermochemical equations;",
+          "perform calculations based on heat of reaction, combustion, formation and neutralization;",
+          "apply Hess's law to determine heat of reaction;",
+          "calculate heat of reaction using bond energy values;",
+          "relate entropy and free energy changes to the spontaneity of a reaction."
+        ]
+      },
+      {
+        "section": "7. Chemical Kinetics and Equilibrium",
+        "contents_notes": "(a) Rate of chemical reaction: factors affecting rate of reaction (concentration/pressure, temperature, surface area, catalyst and light) (b) Activation energy and collision theory (c) Reversible reactions and chemical equilibrium (d) Le Chatelier's principle: effects of changes in concentration, pressure and temperature on equilibrium system (e) Equilibrium constant, Kc and Kp: expression and simple calculations",
+        "objectives": [
+          "define rate of chemical reaction;",
+          "explain the factors that affect the rate of chemical reactions;",
+          "use collision theory to explain activation energy and reaction rates;",
+          "define chemical equilibrium and state its dynamic nature;",
+          "apply Le Chatelier's principle to predict shifts in equilibrium systems;",
+          "write expressions for equilibrium constants and perform basic calculations."
+        ]
+      },
+      {
+        "section": "8. Acids, Bases and Salts",
+        "contents_notes": "(a) Definitions of acids and bases: Arrhenius, Br\u00f8nsted-Lowry and Lewis concepts (b) Properties of acids and bases (c) Strong and weak acids and bases (d) pH scale and pH calculations (e) Indicators: choice of indicators for acid-base titrations (f) Salts: classification (normal, acid, basic, double and complex salts) (g) Methods of preparation of salts (h) Hydrolysis of salts (i) Buffer solutions: definition and examples",
+        "objectives": [
+          "compare definitions of acids and bases according to Arrhenius, Br\u00f8nsted-Lowry and Lewis;",
+          "state the physical and chemical properties of acids and bases;",
+          "distinguish between strong and weak acids and bases using degree of ionization;",
+          "calculate pH and pOH of simple solutions;",
+          "select suitable indicators for specific acid-base titrations;",
+          "classify salts and describe their modes of preparation;",
+          "explain the phenomenon of salt hydrolysis;",
+          "define buffer solutions and specify their components."
+        ]
+      },
+      {
+        "section": "9. Oxidation and Reduction (Redox) Reactions",
+        "contents_notes": "(a) Concept of oxidation and reduction in terms of oxygen, hydrogen, electronegative/electropositive elements and electron transfer (b) Oxidation numbers: determination of oxidation numbers of elements in compounds and ions (c) Balancing of redox equations: ion-electron and oxidation number methods (d) Oxidizing and reducing agents",
+        "objectives": [
+          "define oxidation and reduction using different criteria;",
+          "calculate the oxidation number of an element in a chemical species;",
+          "identify oxidizing and reducing agents in redox equations;",
+          "balance redox equations using appropriate methods."
+        ]
+      },
+      {
+        "section": "10. Electrochemistry",
+        "contents_notes": "(a) Electrolysis: electrolyte and non-electrolyte; electrolytic cell (b) Faraday's laws of electrolysis: (i) First law: W = zIt (ii) Second law: W\u2081/E\u2081 = W\u2082/E\u2082 (c) Factors affecting preferential discharge of ions: position in electrochemical series, concentration and nature of electrodes (d) Applications of electrolysis: electroplating, purification and extraction of metals (e) Electrochemical (galvanic/voltaic) cells: standard electrode potential, electromotive force (emf) calculations, cell notation and types of batteries (primary and secondary)",
+        "objectives": [
+          "distinguish between electrolytes and non-electrolytes;",
+          "state Faraday's first and second laws of electrolysis and perform calculations;",
+          "predict products of electrolysis based on the factors affecting preferential discharge;",
+          "state industrial applications of electrolysis;",
+          "describe the structure and operation of galvanic cells;",
+          "calculate standard cell potential (emf) from standard reduction potentials;",
+          "represent cell systems using standard cell notations."
+        ]
+      },
+      {
+        "section": "11. Non-Metals and Their Compounds",
+        "contents_notes": "(a) Hydrogen: preparation, properties and uses (b) Halogens (Group 17): chlorine, bromine, iodine; preparation, properties, uses and hydrogen halides (c) Oxygen and Sulfur (Group 16): (i) Oxygen: preparation, properties, uses and oxides (ii) Sulfur: allotropes, extraction (Frasch process), sulfur (IV) oxide, sulfur (VI) oxide and tetraoxosulfate (VI) acid (Contact process) (d) Nitrogen and Phosphorus (Group 15): (i) Nitrogen: preparation, properties, uses, ammonia (Haber process), oxides of nitrogen and trioxonitrate (V) acid (ii) Phosphorus: allotropes and compounds (e) Carbon (Group 14): allotropes, oxides of carbon, trioxocarbonate (IV) acid and its salts",
+        "objectives": [
+          "describe laboratory and industrial methods for preparing hydrogen, oxygen, chlorine, ammonia and trioxonitrate (V) acid;",
+          "state the physical and chemical properties of the specified non-metals and their compounds;",
+          "explain the chemical principles involved in industrial processes: Haber, Contact and Frasch processes;",
+          "compare the allotropic forms of sulfur, phosphorus and carbon;",
+          "analyze the environmental impacts of non-metal oxides (acid rain, greenhouse effect)."
+        ]
+      },
+      {
+        "section": "12. Metals and Their Compounds",
+        "contents_notes": "(a) General properties of metals: physical and chemical (b) Alkali metals (Group 1): sodium; extraction (Downs cell), properties and compounds (NaOH, Na\u2082CO\u2083, NaHCO\u2083, NaCl) (c) Alkaline earth metals (Group 2): calcium; properties and compounds (CaCO\u2083, CaO, Ca(OH)\u2082, CaSO\u2084\u00b72H\u2082O) (d) Aluminum: extraction (Hall-H\u00e9roult process), properties, uses and amphoteric nature (e) Transition metals (d-block): iron, copper; extraction of iron (Blast furnace), properties, uses, alloys and general characteristics of transition elements (variable oxidation states, complex ion formation, paramagnetism, catalytic activity and colored compounds)",
+        "objectives": [
+          "outline the general physical and chemical features of metals;",
+          "describe the metallurgical extraction processes for sodium, aluminum and iron;",
+          "state the chemical equations associated with extraction and refining reactions;",
+          "describe the properties, uses and compounds of sodium, calcium and aluminum;",
+          "identify the unique chemical properties that characterize transition metals;",
+          "specify the components and applications of common alloys (steel, brass, bronze)."
+        ]
+      },
+      {
+        "section": "13. Organic Chemistry I: Hydrocarbons",
+        "contents_notes": "(a) Tetravalency of carbon and catenation (b) Functional groups and homologous series (c) IUPAC nomenclature of organic compounds (d) Alkanes: petroleum refining, fractional distillation, cracking, reforming; preparation, properties (substitution and combustion reactions) of methane (e) Alkenes: preparation, properties (addition and polymerization reactions) of ethene (f) Alkynes: preparation, properties of ethyne (g) Aromatic hydrocarbons: structure, resonance, properties (substitution reactions) of benzene",
+        "objectives": [
+          "explain tetravalency and catenation as factors for the diversity of organic compounds;",
+          "identify functional groups and classify compounds into homologous series;",
+          "apply IUPAC rules to name straight-chain and branched organic compounds;",
+          "describe the fractional distillation of crude oil, cracking and reforming processes;",
+          "describe the preparation, chemical reactions and uses of alkanes, alkenes and alkynes;",
+          "distinguish between saturated and unsaturated hydrocarbons using test reagents;",
+          "describe the structure and typical substitution reactions of benzene."
+        ]
+      },
+      {
+        "section": "14. Organic Chemistry II: Alkanols, Alkanals, Alkanones, Alkanoic Acids and Esters",
+        "contents_notes": "(a) Alkanols: classification (primary, secondary, tertiary); fermentation process; preparation, properties and uses of ethanol (b) Alkanals and Alkanones: functional groups, preparation, chemical properties (oxidation and reduction) and differentiation tests (Fehling's and Tollens' reagents) (c) Alkanoic acids: preparation, properties and uses of ethanoic acid (d) Esters: esterification, properties, uses, fats and oils, saponification (soap making) and synthetic detergents",
+        "objectives": [
+          "classify alkanols into primary, secondary and tertiary types;",
+          "describe the production of ethanol by fermentation and industrial hydration of ethene;",
+          "compare the preparation and chemical properties of alkanals and alkanones;",
+          "distinguish between alkanals and alkanones using specific chemical tests;",
+          "describe the esterification reaction and specify the chemical nature of fats and oils;",
+          "explain the processes of saponification and the cleaning action of soaps and detergents."
+        ]
+      },
+      {
+        "section": "15. Polymers and Biomolecules",
+        "contents_notes": "(a) Polymers: definition; addition polymerization (e.g., polyethene, PVC) and condensation polymerization (e.g., nylon, Terylene) (b) Natural polymers: rubber, starch, cellulose and proteins (c) Thermoplastics and thermosetting plastics (d) Carbohydrates: classification (monosaccharides, disaccharides, polysaccharides); hydrolysis of starch (e) Proteins: amino acids as building blocks; peptide bonds; denaturation of proteins",
+        "objectives": [
+          "distinguish between addition and condensation polymerization mechanisms;",
+          "classify commercial polymers into thermoplastics and thermosetting plastics;",
+          "identify natural polymers and describe their monomeric units;",
+          "classify carbohydrates and outline the chemical tests for reducing sugars and starch;",
+          "describe the structure of proteins and the nature of peptide linkages."
+        ]
+      },
+      {
+        "section": "16. Chemical Industries and Environmental Chemistry",
+        "contents_notes": "(a) Chemical industries: classification (heavy, fine, plastics, fertilizers, pharmaceuticals, metallurgical) (b) Raw materials for chemical industries (c) Environmental pollution: air pollution (CO, SO\u2082, NO\u2092, chlorofluorocarbons, particulate matter); water pollution (sewage, industrial effluents, oil spillage, agricultural run-offs); soil pollution (plastic wastes, heavy metals) (d) Biotechnology: industrial application of enzymes and microorganisms in waste treatment, food processing and fuel production",
+        "objectives": [
+          "classify chemical industries based on their products and raw materials utilized;",
+          "distinguish between fine and heavy chemicals with examples;",
+          "identify major environmental pollutants, specify their sources and evaluate their effects;",
+          "describe methods used to manage, treat and control industrial and domestic wastes;",
+          "explain the relevance of biotechnology and enzymatic processes in modern industries."
+        ]
+      },
+      {
+        "section": "17. Earth and Space Chemistry",
+        "contents_notes": "(a) Solar system: composition of the solar system (sun, planets, satellites, asteroids) (b) Segments of the earth: atmosphere, hydrosphere, lithosphere and biosphere (c) Natural satellites: the moon and its characteristics (d) Planetary data: identification, relative positions and basic chemical/physical characteristics of planets in the solar system",
+        "objectives": [
+          "state the composition and layout of the solar system;",
+          "list the planets in order of their distance from the sun;",
+          "identify and describe the core chemical/physical features of the four segments of the earth;",
+          "identify natural satellites and specify properties of the earth's moon;",
+          "recognize specific planetary facts, including identifying the smallest and farthest planet."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Ababio, O. Y. (2009). New School Chemistry for Senior Secondary Schools (Fourth edition), Onitsha: Africana FIRST Publishers Limited.",
+      "Bajah, S.T., Teibo, B. O., Onwu, G. and Obikwere, A. Book 1 (1999). Senior Secondary Chemistry, Books 2 and 3 (2000). Lagos: Longman.",
+      "Ojokuku, G. O. (2012). Understanding Chemistry for Schools and Colleges, (Revised Edition), Zaria: Press-On Chem.",
+      "Omwirhiren, E. M. (2016). Comprehensive Chemistry for Senior Secondary Schools, Lagos: Academy Press Plc.",
+      "Uche, I. O., Adenuga, I. J. and Iwuagwu, S. L. (2003). Countdown to WASSCE/SSCE, NECO, JME Chemistry, Ibadan: Evans."
+    ]
+  }
+}

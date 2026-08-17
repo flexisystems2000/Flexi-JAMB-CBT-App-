@@ -1,0 +1,125 @@
+{
+  "syllabus": {
+    "subject": "LITERATURE IN ENGLISH",
+    "general_objectives": [
+      "stimulate and sustain their interest in Literature in English;",
+      "create an awareness of the general principles of Literature and the functions of language;",
+      "appreciate literary works of all genres and across all cultures;",
+      "apply the knowledge of Literature in English to the understanding of cultural literature, political and economic activities in the society."
+    ],
+    "structure": [
+      {
+        "section": "DRAMA",
+        "contents_notes": "a. Types: i. Tragedy, ii. Comedy, iii. Tragicomedy, iv. Melodrama, v. Farce, vi. Opera etc. b. Dramatic Techniques: i. Characterisation, ii. Dialogue, iii. Flashback, iv. Mime, v. Costume, vi. Music/Dance, vii. Décor/scenery, viii. Acts/Scenes, ix. Soliloquy/aside, x. Figures of Speech. c. Interpretation of the Prescribed Texts: i. Theme, ii. Plot, iii. Socio-political context, iv. Setting.",
+        "objectives": [
+          "identify the various types of drama;",
+          "analyse the contents of the various types of drama;",
+          "compare and contrast the features of different types of drama;",
+          "demonstrate adequate knowledge of dramatic techniques and stage directions used in each prescribed text;",
+          "differentiate between styles of selected playwrights;",
+          "determine the theme of any prescribed text;",
+          "identify the plot of the play;",
+          "apply the lessons of the play to social reality;",
+          "identify the spatial setting and temporal period of the play."
+        ]
+      },
+      {
+        "section": "PROSE",
+        "contents_notes": "a. Types: i. Prose fiction: Novel, Novella/Novelette, Short story. ii. Non-fiction: Biography, Autobiography, Memoir. iii. Faction: combination of fact and fiction. b. Techniques/Devices: i. Narrative: Point of view (Omniscient, First Person, Second person, Third person, Stream of consciousness, Epiphany). ii. Characterisation: Round, flat, foil, hero, antihero, villain, heroine, etc. iii. Language: Grammar, diction and clarity of expression. c. Textual Analysis: i. Theme, ii. Plot, iii. Setting (Temporal/Spatial), iv. Socio-political context.",
+        "objectives": [
+          "differentiate between types of novel;",
+          "identify the category that each prescribed text belongs to;",
+          "analyse the components of each type of prose;",
+          "identify the balance of facts and fiction in literary faction;",
+          "identify the narrative techniques used in each of the prescribed texts;",
+          "determine an author's narrative style;",
+          "distinguish between one type of character from another;",
+          "determine the thematic pre-occupation of the prescribed text;",
+          "indicate the plot of the novel;",
+          "identify the setting and period/timing of the novel;",
+          "relate the prescribed text to social reality."
+        ]
+      },
+      {
+        "section": "POETRY",
+        "contents_notes": "a. Types: i. Sonnet, ii. Ode, iii. Lyrics, iv. Elegy, v. Ballad, vi. Panegyric, vii. Epic, viii. Blank Verse, etc. b. Poetic devices: i. Imagery, ii. Sound (Rhyme/Rhythm, repetition, pun, onomatopoeia, etc.), iii. Diction, iv. Persona. c. Appreciation: i. Thematic preoccupation, ii. Socio-political relevance, iii. Style.",
+        "objectives": [
+          "identify different types of poetry;",
+          "identify the distinctive features of the poetic types;",
+          "determine the devices used by various poets;",
+          "show how poetic devices are used for aesthetic effect in each poem;",
+          "identify the figure of speech in the texts;",
+          "show how poetic devices convey message and meaning;",
+          "Deduce the poet's thematic preoccupation from the poem;",
+          "appraise poetry as an art with moral values;",
+          "apply the lessons from the poem to social reality."
+        ]
+      },
+      {
+        "section": "GENERAL LITERARY TERMS AND PRINCIPLES",
+        "contents_notes": "a. Literary terms: foreshadowing, suspense, theatre, monologue, dialogue, soliloquy, symbolism, protagonist, antagonist, figures of speech, satire, stream of consciousness, synecdoche, metonymy, etc., in addition to those listed above under the different genres.",
+        "objectives": [
+          "identify literary terms that are specific to drama, prose and poetry;",
+          "identify areas of overlap in all the genres e.g. verse in drama and poetry, narration in all the genres."
+        ]
+      },
+      {
+        "section": "LITERARY APPRECIATION",
+        "contents_notes": "Unseen passages/extracts from Drama, Prose and Poetry.",
+        "objectives": [
+          "identify literary devices used in a given passage/extract;",
+          "provide an interpretation of the given passage/extract;",
+          "relate the extract to true life experiences."
+        ]
+      }
+    ],
+    "selected_texts": {
+      "drama": {
+        "african": [
+          "Efua Sutherland: Marriage of Anansewa"
+        ],
+        "non_african": [
+          "Williams Shakespeare: Anthony and Cleopatra"
+        ]
+      },
+      "prose": {
+        "african": [
+          "Pede Hollist: So the Path Does not Die",
+          "Elma Shaw: Redemption Road"
+        ],
+        "non_african": [
+          "Susanne Bellefeuille: Path of Lucas: The Journey He Endured"
+        ]
+      },
+      "poetry": {
+        "african": [
+          "Gabriel Okara: Once Upon a Time",
+          "Elizabeth L.A. Kamara: New Tongue",
+          "Wole Soyinka: Night",
+          "Niyi Osundare: Not my Business",
+          "S.O.H. Afriyie-Vidza: Hearty Garlands",
+          "Syl Cheney-Coker: The Breast of the Sea"
+        ],
+        "non_african": [
+          "Lord Byron: She Walks in Beauty",
+          "Geoffery Chaucer: The Nun's Priest Tale (shortened)",
+          "Fleur Adcock: The Telephone Call",
+          "Wilfred Wilson Gipson: The Stone"
+        ]
+      }
+    },
+    "recommended_texts": [
+      "Obafemi, O. and Agoi (eds) Of shadows and Rainbows -Musings in Times of Covid (An Anthology of poems, plays and short stories) PEN Nigeria, Online",
+      "Hayward, J. (ed.) (1968) The Penguin Book of English Verse, London Penguin",
+      "Johnson, R.,Ker, D, Maduka, C. Obafemi, O (eds.) (1996) New Poetry from Africa, Ibadan: UP Plc",
+      "Kermode, F. (1964) Oxford Anthology of English Literature, Vol. II, London: OUP",
+      "Nduke Ofiono and Odoh Diego Okenyodo (eds) Camouflage; Best of contemporary writing from Nigeria, an anthology of new Nigerian writers, mace books association, 2021, New edition.",
+      "Parker, E.W. (ed.) (1980) A Peagent of Longer Poems London: Longman",
+      "Senanu, K. E. and Vincent, T. (eds.) (1993) A Selection of African Poetry, Lagos: Longman",
+      "Soyinka, W. (ed.) (1987) Poems of Black Africa, Ibadan: Heinemann",
+      "Abrams, M. H. (1981) A Glossary of Literary Terms, (4th Edition) New York, Holt Rinehalt and Winston",
+      "Emeaba, O. E. (1982) A Dictionary of Literature, Aba: Inteks Press",
+      "Murphy, M. J. (1972) Understanding Unseen, An Introduction to English Poetry and English Novel for Overseas Students, George Allen and Unwin Ltd."
+    ]
+  }
+}

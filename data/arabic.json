@@ -1,0 +1,116 @@
+{
+  "syllabus": {
+    "subject": "ARABIC",
+    "general_objectives": [
+      "Answer comprehension questions correctly in standard Arabic",
+      "Translate simple texts from English to Arabic and vice versa",
+      "Apply the rules of Arabic grammar functionally",
+      "Appreciate Arabic literary texts within the contexts of their environment and eras",
+      "Use Arabic as a living world language in communication where necessary"
+    ],
+    "structure": [
+      {
+        "section": "SECTION A: COMPREHENSION",
+        "contents_notes": "It consists of a passage of seventy (70) words. Five multiple-choice questions are to be set on the passage. The contents should be within the experience of the candidates e.g. current affairs, sports, education, politics, economy, health, culture and ethics.",
+        "objectives": [
+          "Use appropriate words or phrases for specific thought",
+          "Deduce the lesson in the passage",
+          "Determine the main theme of the passage",
+          "Give an appropriate title to the passage",
+          "Interpret the meanings of particular words"
+        ]
+      },
+      {
+        "section": "SECTION B: TRANSLATION",
+        "contents_notes": "This section consists of ten (10) questions. Five of them are on translation from English into Arabic while the other five are on translation from Arabic into English. Translation into English includes key words and phrases in a sentence. Translated questions are to be based on standard Arabic and English usages.",
+        "objectives": [
+          "Use an appropriate Arabic word or phrase to convey the meaning of an English word or phrase",
+          "Determine an appropriate English word or phrase for an Arabic statement",
+          "Interpret idiomatic expressions in both Arabic and English",
+          "Transfer ideas expressed in Arabic to English and vice versa",
+          "Communicate effectively in Arabic and English"
+        ]
+      },
+      {
+        "section": "SECTION C: GRAMMAR",
+        "contents_notes": "Major grammatical features in Arabic to be examined include: 1. Demonstrative, relative pronouns, conditional and interrogative (أسماء الإشارة والموصولة والشرط والاستفهام). 2. Gender (Masculine and Feminine) (المذكر والمؤنث). 3. Characteristics of noun (علامات الاسم). 4. Dual (المثنى). 5. Plurals (الجموع): a. sound masculine plural (جمع المذكر السالم), b. sound feminine plural (جمع المؤنث السالم), c. broken plural (جمع التكسير). 6. Construct phrase (المضاف والمضاف إليه). 7. Separable and inseparable pronouns (الضمائر المنفصلة والمتصلة). 8. Appendants (التوابع): a. adjective (النعت), b. conjunction (العطف), c. the permutative (البدل), d. emphasis (التوكيد). 9. Prepositions (حروف الجر والنصب والجزم). 10. Transitive & Intransitive verbs (الفعل اللازم والفعل المتعدي). 11. The perfect verb (الفعل الماضي). 12. The imperfect verb (فعل المضارع): a. the indicative (المرفوع), b. the subjunctive (المنصوب), c. the jussive (المجزوم). 13. The imperative verb (فعل الأمر). 14. The modifiers (النواسخ): a. Kana and its associates (كان وأخواتها), b. Inna and its associates (إن وأخواتها), c. Zanna and its associates (ظن و أخواتها). 15. Trilateral and derived verb (الفعل الثلاثي المجرد والمزيد فيه). 16. Verbal noun (المصدر). 17. Derivatives (المشتقات): a. active participle (اسم الفاعل), b. passive participle (اسم المفعول), c. comparative/superlative (اسم التفضيل), d. noun of instrument (اسم الآلة), e. nouns of time and place (اسما الزمان والمكان), f. relative adjective (اسم النسبة), g. hyperbole noun (اسم المبالغة). 18. Conditional sentence (الجملة الشرطية). 19. Numeral (1-1000) (العدد فقط 1-1000). 20. Active and passive voice (الفاعل و نائب الفاعل). 21. Subject and predicate (المبتدأ والخبر). 22. Nouns in the accusative (منصوبات الأسماء): a. direct object (المفعول به), b. adverbs of place and time (المفعول فيه - ظرف), c. adverb of circumstance (الحال), d. the exempted with illa (المستثنى بالا), e. the specification (التمييز), f. the vocative (المنادى).",
+        "objectives": [
+          "Identify the various forms of demonstrative and relative pronouns",
+          "Compare gender markers in Arabic",
+          "Identify the characteristics of Arabic nouns",
+          "Differentiate between singular and dual forms of nouns",
+          "Construct plural forms of singular nouns",
+          "Identify construct phrases and their usages",
+          "Differentiate between separable and inseparable pronouns",
+          "Identify correct usage of adjectives, conjunctions, permutative and emphasis in Arabic sentences",
+          "Apply correct preposition particles in a given sentence",
+          "Differentiate between transitive and intransitive verbs and use them in sentences",
+          "Identify the perfect verbs and their forms",
+          "Identify the imperfect verbs and their grammatical words in sentences",
+          "Identify the imperative verbs and their forms",
+          "Identify the kinds of modifiers and apply them in Arabic usage",
+          "Differentiate between trilateral and derived verbs",
+          "Identify the types of derivatives",
+          "Apply the rules governing conditional sentences, identify, construct and differentiate them in normal sentences",
+          "Recognise and count Arabic numerals from 1 to 1000 and identify the intricacies involved in their usage",
+          "Distinguish between doer and doer-substitute and apply them in sentences",
+          "Identify different types of adverbial clause, the exempted, specification and the vocative and use them in standard Arabic"
+        ]
+      },
+      {
+        "section": "SECTION D: COMPOSITION",
+        "contents_notes": "This section consists of five (5) questions on subjects relating to the lives and environment of the candidates, e.g. education, culture, health, politics, economy, sports and current affairs.",
+        "objectives": [
+          "Use appropriate words for specific thoughts",
+          "Use correct idiomatic expressions in Arabic",
+          "Communicate effectively in Arabic",
+          "Express ideas clearly in Arabic",
+          "Demonstrate the use of common Arabic idioms and proverbs"
+        ]
+      },
+      {
+        "section": "SECTION E: ARABIC LITERATURE",
+        "contents_notes": "This section consists of ten (10) questions on notable literary figures and their works cutting across the various periods which include the following: a) Introduction to Arabic literature (المدخل إلى الأدب العربي), Definition, sections, arts, literary eras, poetry types/purposes, prose types. b) The Pre-Islamic Period (500-610 C.E.) (العصر الجاهلي): Al-Shanfara (الشنفرى ولاميته), Aktham bin Saifi al-Tamimi (أكثم بن الصيفي التميمي وخطبته). c) The Islamic Periods (610 – 1798 C.E.) (العصور الإسلامية): Al-Hajjaj bin Yusuf al-Thaqafi (الحجاج بن يوسف الثقفي), Ali bin Abi Talib (علي بن أبي طالب), Abdullah bin al-Muqaffa (عبد الله بن المقفع), Jarir bin Atiyah (جرير بن عطية). d) The Modern Period (1798 to date) (العصر الحديث): Ahmad Shawqi (أحمد شوقي), Gibran Khalil Gibran (جبران خليل جبران), Abbas Mahmoud al-Aqqad (عباس محمود العقاد). e) Arabic Literature in West Africa (الأدب العربي في غرب إفريقيا): Asma'u bint al-Sheikh Usman bin Fodio (أسماء بنت الشيخ عثمان بن فودي), Ali Abd al-Qadir al-Asali (علي عبد القادر العسلي), Muhammad Al-Amin Sambo Gassama (محمد الأمين سامبوا غساما), Adam Yahya al-Fulani (آدم يحيى الفلاني).",
+        "objectives": [
+          "Identify the essence of Arabic literature; poetry, prose and their periods",
+          "Identify pre-Islamic Arabic poetic and prosaic traditions and conventions",
+          "Identify and analyse the style of figurative expressions contained in a given Islamic literature",
+          "Describe the aesthetic features in literary texts and assess their modern cultural values",
+          "Evaluate areas of successful use of Arabic as a medium of West African novel and drama, analyse their contents and describe their major characteristics and plots"
+        ]
+      }
+    ],
+    "recommended_texts": {
+      "comprehension_composition_and_translation": [
+        "بشير أحمد محيي الدين و المرضي مختار المرضي, المطالعة الواضحة,, كنو - نيجيريا, شركة طن لامي وأبنائه.",
+        "سيد حمرة مالك (2005م), الإنشاء العربي المتوسط للمدارس الثانوية, إبادن, مطبعة الجامعة ب. ل. س.",
+        "عبد الفتاح صبري وعلي عمر بك, القراءة الرشيدة, الجزء 1 - 4, القاهرة, دار المعارف.",
+        "عبد الله الطيب, سمير التلاميذ الجزء 1 - 2 الخرطوم, مكتب النشر.",
+        "غرب ط. زاريا (1999م), كيف تكتب الإنشاء, كنو - نيجيريا مطبعة جامعة بايرو.",
+        "محمد الأول أبو بكر والآخرون, العربية الميسرة الجديدة للمرحلة الثانوية, إبادن, دار سبكترم للطباعة والنشر.",
+        "محمد بديع شريف و سليم حكيم و الحاج حسين آدمو : العربية الجديدة في نيجيريا الكتاب 1-3 إكيجا - لاغوش, لونغمان.",
+        "Adekilekun, A. L. A.: Learning Arabic Language, Ilorin.",
+        "Balogun, I. A. B. and Oseni Z. I. (1982) A Modern Arabic Course Book 1 Lagos: Islamic Publications Bureau.",
+        "Haywood, J. A. and Nahmad, H. M. (1965), A New Arabic Grammar of the Written Language, London: Lund Humphries.",
+        "Malik, S. H. A. (1982) A Guide to Arabic Composition, Books I & II, Lagos I.P.B.",
+        "Arabic newspapers, magazines and journals."
+      ],
+      "grammar": [
+        "علي الجارم و مصطفى أمين, النحو الواضح لمدارس المرحلة الأولية, الجرء 1 - 3 القاهرة, دار المعارف.",
+        "محمد أجروم الصنهاجي, متن الأجرومية, القاهرة.",
+        "محمد محيي الدين عبد الحميد, التحفة السنية بشرح المقدمة الأجرومية, بيروت, دار الفكر.",
+        "Haywood, J.A and Nahmad, H.M (1965), A New Arabic Grammar of the Written Language, London: Lund Humphries."
+      ],
+      "arabic_literature": [
+        "أحمد الاسكندري والآخرون, المفصل في تاريخ الأدب العربي, القاهرة, المعارف العمومية.",
+        "زكريا حسين (2004م), المأدبة الأدبية للطلاب العربية في أفريقيا, أوتثي, دار النور.",
+        "عبد الله بن محمد بن فودي تزيين الورقات إبادن, مطبعة جامعة إبادن.",
+        "عبد الوهاب دنلاد شنت (2009م), الشعر العربي النيجيري بين الماضي والحاضر ولاية نيجر نيجيريا, مطبعة بيك المحدودة.",
+        "عيسى ألبي أبو بكر (الدكتور), ديوان الرياض, مدينة إيوو - نيجيريا, النهار.",
+        "مرتضى بدماصي (1997م), مستقبل اللغة العربية في نيجيريا, لاغوس, دار النشر الإسلامية .",
+        "صديق فاروق أبو الرضا مختارات من توجيهات المنبر للشيخ آدم عبد الله الإلوري, القاهرة, مطبعة المعرفة.",
+        "محمد ثالث مي أنغو (2006م), لماذا يكرهوننا, ط2, كنو, مطبعة سمباش"
+      ]
+    }
+  }
+}

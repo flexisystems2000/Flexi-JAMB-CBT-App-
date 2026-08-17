@@ -1,0 +1,144 @@
+{
+  "syllabus": {
+    "subject": "ECONOMICS",
+    "general_objectives": [
+      "Demonstrate sufficient knowledge and understanding of the basic concepts, tools and their general applications to economic analysis;",
+      "Identify and explain the basic structures, operations and roles of the various economic units and institutions (national and international);",
+      "Describe major economic activities – production, distribution and consumption;",
+      "Identify and appraise the basic and current economic problems of society;",
+      "Develop the competence to proffer solutions to economic problems identified."
+    ],
+    "structure": [
+      {
+        "section": "SECTION A: Foundations of Economics and Economic Systems",
+        "contents_notes": "1. Economics as a science: a. Basic Concepts: Wants, Scarcity, choice, scale of preference, opportunity cost, Rationality, production, distribution, consumption b. Economic problems of: What, how and for whom to produce and efficiency of resource use c. Application of PPF to solution of economic problems. 2. Economic Systems: a. Types and characteristics of free enterprise, centrally planned and mixed economies b. Solutions to economic problems under different systems c. Contemporary issues in economic systems (economic reforms e.g. deregulation, banking sector consolidation, cash policy reform). 3. Methods and Tools of Economic Analysis: a. Scientific Approach: i. inductive and deductive methods ii. positive and normative reasoning b. Basic Tools: i. tables, charts and graphs ii. measures of central tendency: mean, median and mode, and their applications iii. measures of dispersion: variance, standard deviation, range and their applications iv. merits and demerits of the tools.",
+        "objectives": [
+          "Compare various concepts in economics and their applications;",
+          "Interpret graphs/schedules in relation to the concepts;",
+          "Identify economic problems;",
+          "Proffer solutions to economic problems;",
+          "Compare the various economic systems;",
+          "Apply the knowledge of economic systems to contemporary issues in Nigeria;",
+          "Proffer solutions to economic problems in different economic systems;",
+          "Distinguish between the various forms of reasoning;",
+          "Apply these forms of reasoning to real life situations;",
+          "Use the tools to interpret economic data;",
+          "Analyse economic data using the tools;",
+          "Assess the merits and demerits of the tools."
+        ]
+      },
+      {
+        "section": "SECTION B: Microeconomic Theories: Demand, Supply, and Consumer Behaviour",
+        "contents_notes": "1. The Theory of Demand: a. i. meaning and determinants of demand ii. demand schedules and curves iii. the distinction between change in quantity demanded and change in demand b. Types of demand: Composite, derived, competitive and joint demand c. Types, nature and determinants of elasticity and their measurement - price, income and cross elasticity of demand d. Importance of elasticity of demand to consumers, producers and government. 2. The Theory of Consumer Behaviour: a. Basic Concepts: i. utility (cardinal, ordinal, total, average and marginal utility analysis) ii. indifference curve and marginal analyses b. Diminishing marginal utility and the law of demand c. Consumer equilibrium using the indifference curve and marginal analyses d. Income and substitution effects e. Consumer surplus and its applications. 3. The Theory of Supply: a. i. Meaning and determinants of supply ii. Supply schedules and supply curves iii. Distinction between change in quantity supplied and change in supply b. Types of supply: Joint/complementary, competitive and composite supply c. Elasticity of Supply: determinants, measurements, nature and applications. 4. The Theory of Price Determination: a. Market equilibrium: reflection of the interplay of demand and supply b. The concepts of market and price c. Functions of the price system d. Interferences with the price system: i. Price control (maximum and minimum price legislation) ii. Black market e. Effects of changes in supply and demand on equilibrium price and quantity.",
+        "objectives": [
+          "Identify the factors determining demand;",
+          "Interpret demand curves from demand schedules;",
+          "Differentiate between change in quantity demanded and change in demand;",
+          "Compare the various types of demand and their interrelationships;",
+          "Relate the determinants to the nature of elasticity;",
+          "Compute elasticities;",
+          "Interpret elasticity coefficients in relation to real life situations;",
+          "Explain the various utility concepts;",
+          "Apply the law of demand using the marginal utility analysis;",
+          "Use indifference curve and marginal analyses to determine consumer equilibrium;",
+          "Relate the income and substitution effects;",
+          "Apply consumer surplus to real life situations;",
+          "Identify the factors determining supply;",
+          "Interpret supply curves from supply schedules;",
+          "Differentiate between change in quantity supplied and change in supply;",
+          "Compare the various types of supply and their interrelationships;",
+          "Relate the determinants to the nature of elasticity of supply;",
+          "Compute elasticity of supply;",
+          "Explain the concepts of market and price;",
+          "Examine the functions of the price system;",
+          "Evaluate the effects of government interference with the price system;",
+          "Differentiate between minimum and maximum price legislation;",
+          "Interpret the effects of changes in supply and demand on equilibrium price and quantity."
+        ]
+      },
+      {
+        "section": "SECTION C: Production, Cost, Revenue, and Market Structures",
+        "contents_notes": "1. The Theory of Production: a. Meaning and types of production b. Concepts of production and their interrelationships (TP, AP, MP and the law of variable proportion) c. Division of labour and specialization d. Scale of Production: Internal and external economies of scale and their implications e. Production functions. 2. Theory of Costs and Revenue: a. Cost concepts: Fixed, variable, total, marginal and average costs b. Accountants' and economists' notions of cost (opportunity cost, explicit and implicit costs) c. Short-run and long-run cost curves d. Revenue concepts: Total, average and marginal revenue e. The marginal cost and the supply curve of a firm. 3. Market Structures: a. Perfectly Competitive Market: i. Assumptions and characteristics ii. Short-run and long-run equilibrium positions b. Imperfect Market: i. Pure monopoly, discriminatory monopoly and monopolistic competition ii. Short-run and long-run equilibrium c. Break-even/shut-down analysis in the various markets.",
+        "objectives": [
+          "Relate TP, AP and MP with the law of variable proportion;",
+          "Compare internal and external economies of scale in production and their effects;",
+          "Identify the types of production functions;",
+          "Compare the different types of returns to scale and their implications;",
+          "Examine the benefits of specialization and division of labour;",
+          "Explain the various cost concepts;",
+          "Differentiate between accountants' and economists' notions of costs;",
+          "Interpret the short-run and long-run cost curves;",
+          "Establish the relationship between marginal cost and supply curve;",
+          "Explain the various revenue concepts;",
+          "Analyse the assumptions and characteristics of a perfectly competitive market;",
+          "Differentiate between short-run and long-run equilibrium of a perfectly competitive firm;",
+          "Analyse the assumptions and characteristics of imperfect markets;",
+          "Differentiate between the short-run and long-run equilibrium of imperfectly competitive firms;",
+          "Establish the conditions for the break-even/shut down of firms."
+        ]
+      },
+      {
+        "section": "SECTION D: Macroeconomics: National Income, Money, and Finance",
+        "contents_notes": "1. National Income: a. The Concepts of GNP, GDP, NI, NNP b. National Income measurements and their problems c. Uses and limitations of national income estimates d. The circular flow of income (two and three-sector models) e. The concepts of consumption, investment and savings f. The multiplier and its effects g. Elementary theory of income determination and equilibrium national income. 2. Money and Inflation: a. Types, characteristics and functions of money b. Demand for money and the supply of money c. Quantity Theory of money (Fisher equation) d. The value of money and the price level e. Inflation: Types, measurements, effects and control f. Deflation: Measurements, effects and control. 3. Financial Institutions: a. Banking Sector: Central Bank, Commercial Banks, Development Banks, Merchant Banks and other financial institutions b. The roles of financial institutions in economic development c. Money and Capital Markets d. Financial sector regulators and their functions e. Money creation process and its challenges f. Monetary policy instruments and their effects. 4. Public Finance: a. Meaning and objectives of public finance b. Fiscal policy and its instruments c. Sources of government revenue d. Principles of taxation, tax structure and incidence of taxation e. Public expenditure: classification and effects f. Government budget and public debts g. Revenue allocation and resource control in Nigeria.",
+        "objectives": [
+          "Identify the major concepts in national income;",
+          "Compare the different ways of measuring national income;",
+          "Examine their problems;",
+          "Assess the uses and limitations of national income estimates;",
+          "Interpret the circular flow of income using the two and three-sector models;",
+          "Explain between the types, characteristics and functions of money;",
+          "Identify the factors affecting the demand for and the supply of money;",
+          "Examine the relationship between the value of money and the price level;",
+          "Identify the components in the quantity theory of money;",
+          "Examine the causes and effects of inflation;",
+          "Calculate and interpret the consumer price index;",
+          "Examine ways of controlling inflation and deflation;",
+          "Differentiate between the types and functions of financial institutions;",
+          "Analyse the roles of financial institutions in economic growth;",
+          "Distinguish between the money and capital markets;",
+          "Identify the various financial sector regulators and their functions;",
+          "Explain the money creation process and its challenges;",
+          "Examine the various monetary policy instruments and their effects;",
+          "Identify the objectives of public finance;",
+          "Explain fiscal policy and its instruments;",
+          "Compare the various sources of government revenue;",
+          "Analyse the principles and incidence of taxation and its effects;",
+          "Examine the effects of public expenditure on the economy;",
+          "Examine the types and effects of budgets;",
+          "Highlight the criteria for revenue allocation in Nigeria and their impact."
+        ]
+      },
+      {
+        "section": "SECTION E: Economic Growth, Development, and International Trade",
+        "contents_notes": "1. Economic Growth and Development: a. Meaning and scope b. Indicators of growth and development c. Factors affecting economic growth and development d. Problems and strategies of economic development in Nigeria. 2. Agriculture and Industry in Nigeria: a. Role of agriculture and industry in economic development b. Problems of agriculture and industrial sectors c. Government policies and institutional frameworks for agricultural and industrial development. 3. Natural Resources and Population: a. Development of natural resources (petroleum, gas, solid minerals) and resource control b. Population: Size, distribution, growth, structure and demographic transitions c. Impact of population on economic development. 4. International Trade and Economic Cooperations: a. Principles of international trade (absolute and comparative advantage) b. Balance of payments: Concepts, deficits, surpluses and adjustment mechanisms c. Trade restrictions: Tariffs, quotas, bans and their implications d. International financial and economic organizations (ECOWAS, AFCFTA, IMF, World Bank, WTO, OPEC).",
+        "objectives": [
+          "Distinguish between economic growth and development;",
+          "Identify and evaluate indicators of economic growth and development;",
+          "Examine the problems and strategies of economic development in Nigeria;",
+          "Assess the role of agriculture and industry in Nigeria's development;",
+          "Analyse the problems facing agriculture and industry and evaluate government interventions;",
+          "Examine the development and impact of natural resources in Nigeria;",
+          "Analyse population data and trace demographic trends;",
+          "Assess the impact of population growth on economic development;",
+          "Explain the principles of international trade;",
+          "Examine the components and adjustments of the balance of payments;",
+          "Evaluate the reasons for and effects of trade restrictions;",
+          "Assess the roles and impacts of international economic organizations on Nigeria's economy."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Aderinto, A. A. et al. (2014). Economics for Senior Secondary Schools, Books 1 - 3, Ibadan: Onibonoje Press.",
+      "Anyanwuocha, R. A. I. (2011). Fundamentals of Economics for Senior Secondary Schools, Books 1 - 3, Onitsha: Africana FIRST Publishers Limited.",
+      "Brown, C. V. and Jackson, P. M. (1990). Public Sector Economics, Oxford: Basil Blackwell.",
+      "Hanson, J. L. (1986). A Textbook of Economics, London: Macdonald and Evans.",
+      "Jhingan, M. L. (2010). Microeconomic Theory, Delhi: Vrinda Publications (P) Ltd.",
+      "Jhingan, M. L. (2010). Macroeconomic Theory, Delhi: Vrinda Publications (P) Ltd.",
+      "Lipsey, R. G. and Chrystal, K. A. (2007). Economics, Oxford: Oxford University Press.",
+      "Onuchuku, O. and Amadi, A. (2006). Elementary Macroeconomics, Port Harcourt: University of Port Harcourt Press.",
+      "Samuelson, P. A. and Nordhaus, W. D. (2005). Economics, New Delhi: Tata McGraw-Hill.",
+      "Unified Tertiary Matriculation Examination (UTME) Past Questions and Answers in Economics."
+    ],
+    "note": "For structure and formatting consistency, refer to the document format established in Arabic.pdf, Art.pdf, Chemistry.pdf, and crk.json."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "syllabus": {
+    "subject": "ART",
+    "general_objectives": [
+      "exhibit knowledge of the fundamental elements, principles and terminologies of art;",
+      "show knowledge of historical dimensions of art with emphasis on Nigerian arts and crafts;",
+      "demonstrate knowledge of artistic techniques, processes, the use of materials and maintenance of tools and equipment;",
+      "display aesthetic awareness of the environment, meaning and functions of art in society."
+    ],
+    "structure": [
+      {
+        "section": "SECTION A",
+        "contents_notes": "1. CLASSIFICATION OF ART: a. Visual Arts: (Fine and Applied Arts), b. Performing Arts: (Music, Dance and Drama), c. Literary Arts: (Poetry, Prose, Recital) etc. 2. ELEMENTS AND PRINCIPLES OF DESIGN: a. Elements: line, colour, shape, form, texture, tone, value, space etc. b. Principles: balance, rhythm, proportion, harmony, contrast, repetition, dominance, variety, etc. 3. TERMS: ART Pigments, motif, greenware, armature, silhouette, chiaroscuro, cire-perdue, terra-cotta etc.",
+        "objectives": [
+          "differentiate between the three branches of art;",
+          "identify the elements of design with the aid of illustration;",
+          "analyze the principles of design with the aid of illustration;",
+          "identify art terms;",
+          "link the terms to their areas of art;",
+          "use the terms in analyzing artworks."
+        ]
+      },
+      {
+        "section": "SECTION B",
+        "contents_notes": "1. HISTORICAL DIMENSIONS OF ART: Prehistoric, Greek and Roman Art; a. Medieval Art: architecture, surface decorations and calligraphy; b. Renaissance Art and Artists: Giotto Di Bondone, Michelangelo Buonarroti, Leonardo da Vinci and Raphael (Raffaello Santi) etc. c. 19th and 20th Century Art Movements: Impressionism, Realism, Futurism, Cubism, Bauhaus, Pop art, Abstract Expressionism and Fauvism. 2. TRADITIONAL AFRICAN ART: Egypt, Ashanti, Dogon, Mossi, Fon, Senufo, Bambara, Mende, Kissi, Bamileke and Bakumba. 3. TRADITIONAL NIGERIAN ART: Nok, Igbo-Ukwu, Ife, Benin, Esie, Igala, Jukun, Akwanshi, and Mbari. 4. NIGERIAN CRAFTS: Pottery, woodworks, cloth-weaving, carving, leather works, metal works, beadworks, body decoration, mat and cane weaving. 5. DEVELOPMENT IN CONTEMPORARY NIGERIAN ARTS AND ARTISTS: a. Art Schools: Zaria, Nsukka, Osogbo group etc. b. Nigerian artists and art educators: Aina Onabolu, Ben Enwonwu, S. I. Wangboje, Jimoh Akolo, Dele Jegede etc. c. Museums, galleries and art centres; d. Art institutions, cultural art centres, national art organizations - Nigerian Society for Education through Arts (NSEA), Society for Nigerian Artists (S.N.A), National Council for Arts and Culture (N.C.A.C), etc. e. Major Festivals: Argungu Fishing Festival, Eyo, Egungun, Iri-ji (New Yam), Durbar, Igue, Ekpo, Odo, etc.",
+        "objectives": [
+          "compare their materials, styles and techniques;",
+          "classify the periods and styles with emphasis on architecture, surface decoration and calligraphy;",
+          "compare the artists, their works and styles;",
+          "differentiate between the various art movements;",
+          "analyze their styles techniques, innovations and influences;",
+          "categorize works in terms of style, materials and locations;",
+          "analyze the works in terms of functions, characteristics and locations;",
+          "trace the origins, locations and styles;",
+          "determine the influence of the art schools and groups towards the development of art;",
+          "assess the artists in terms of their works, specializations, techniques and styles;",
+          "analyze the functions of museums, galleries, art centres;",
+          "evaluate their impact on the development of art; assess their roles and functions;",
+          "examine the characteristics of major festivals of art and culture."
+        ]
+      },
+      {
+        "section": "SECTION C",
+        "contents_notes": "1. ARTISTIC SKILLS, TECHNIQUES AND PROCESSES: a. Two-Dimensional Art: drawing, painting, graphics and textile design. b. Perspective: i. Linear, angular, aerial, parallel etc. ii. Perspective terms: foreground, picture plane, eye-level, vanishing point, foreshortening, optical illusion, depth etc. c. Sculpture, Ceramics and Crafts. d. Computer Graphics: CorelDraw. 2. TOOLS, MATERIALS AND EQUIPMENT: a. Two-Dimensional Art Tools: brushes, lino cutters, drawing instruments, calligraphic pens, sharpeners etc. b. Two-dimensional Art Materials: pencils, charcoal, pastel, crayon, fixative, fabric, dyes, lino, wood blocks etc. c. Two-Dimensional Art Equipment: Light table, spray gun, enlarger, computer etc. d. Improvisation of tools, materials and equipment: i. Two-Dimensional Art: colours, brushes, calligraphic pens etc. ii. Three-Dimensional Art: spatula, kiln, beater, etc.",
+        "objectives": [
+          "the techniques, skills and processes with emphasis on tone, composition and colour application;",
+          "the types of perspective;",
+          "the use of perspective rules and terms;",
+          "techniques, skills and processes;",
+          "the basic tools of designs;",
+          "maintain art tools;",
+          "use art materials;",
+          "operate and maintain art equipment;",
+          "improvise alternative tools, material and equipment;"
+        ]
+      },
+      {
+        "section": "SECTION D",
+        "contents_notes": "1. ART APPRECIATION: Man-made objects: architecture, sculpture etc; Natural phenomena: Zuma Rock, Ikogosi Warm Springs, etc. 2. MEANING AND FUNCTIONS OF ART IN SOCIETY: a. Functions of art in the society: religious, social, cultural, political, therapeutic and economic needs. b. Functions of art in electronic and print media: advertisement, education, recreation etc. 3. ART ENTREPRENEURSHIP: Job prospects in the Visual Arts: Ceramist, Curator, Textile designer, Industrial designer, Sculptor, Photographer, Cartoonist, Illustrator etc.",
+        "objectives": [
+          "identify the aesthetic qualities of natural and man-made phenomena in Nigerian environment;",
+          "differentiate between natural and man-made aesthetic phenomena;",
+          "examine the functions of art;",
+          "use art to enhance societal values;",
+          "assess the role of art in electronic and print media;",
+          "identify job opportunities in the Visual Arts."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Banjoko, I. (2000) Visual Arts made Easy: Textbook for Schools and Colleges, Lagos, Movic Publishing Company Ltd.",
+      "Egonwa, O.D. (1991) African Art: A contemporary Source Book, Benin: Osasu Publishers.",
+      "Egunlae, S.A. (1985) The Essential Ground work in Art and Design, Omotola Standard Press and Bookshop (Nig) Ltd.",
+      "Erese, U. O. and Ogunsina E. D. (1989) Creative Arts and Crafts for J. S. S. Onibonoje Press.",
+      "Nahab, S. J. (2003) Art of the Millennium for Senior Secondary Schools, Ehindero (Nig.) Ltd.",
+      "Ogumor, E. (1993) Certificate Art for Junior Secondary Schools and Senior Secondary Schools, Ibadan: University Press Plc.",
+      "Olaosebikan W. A. (1982) Cultural and Creative Arts, Evans.",
+      "Olurukooba, B. K. (1991) Art for Senior Secondary Schools, ABU.",
+      "Uzoagba I. N. (1982) Understanding Art in General Education, Onitsha; African Publishing Ltd.",
+      "Wangboje, I. N. (1982) A Textbook on Art for Junior and Senior Secondary Schools, Evans Publishers.",
+      "Oyedun, Y.F. (2017) Excel in Arts, Photography, Dyeing, Starching and Bleaching, Lagos Yemsol Graphic Communication"
+    ],
+    "note": "For structure and translation consistency, refer to the document format established in Arabic.pdf."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "subject": "Hausa",
+  "document_title": "WAEC / WASSCE Hausa Syllabus",
+  "preamble": "The Hausa syllabus is designed to evaluate candidates' proficiency in reading, writing, and comprehending the Hausa language. It assesses knowledge of core linguistic features (orthography, phonology, morphology, syntax, and semantics), translation skills, deep understanding of oral and written literature, and appreciation of Hausa culture, customs, and social institutions.",
+  "objectives": [
+    "Acquire the ability to read and write competently in standard Hausa language;",
+    "Demonstrate knowledge of basic Hausa linguistic features (phonology, morphology, syntax, and semantics);",
+    "Show a comprehensive understanding of oral and written Hausa literature;",
+    "Appreciate the culture, customs, traditional occupations, and social institutions of the Hausa people;",
+    "Demonstrate competence in translating concepts, idioms, and passages between English and Hausa."
+  ],
+  "examination_scheme": {
+    "summary": "The examination tests candidates across language, culture, and literature domains through multiple-choice objective items based on comprehension, grammar, cultural concepts, oral traditions, and prescribed literary texts.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple-Choice Objective Test",
+        "duration": "1 hour 45 minutes",
+        "marks": "100",
+        "details": "Consists of objective test items covering Language, Culture, and Literature."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "SECTION 1: Harshe (Language)",
+      "contents": [
+        "1. Ka'idojin Rubutu da Auna Fahimta: Hausa orthography rules, alphabetization, spelling, punctuation, and paragraphing; comprehension from unseen passages; essay/composition writing.",
+        "2. Fassara: Translation rules and techniques for proverbial, idiomatic expressions, and terminology between English and Hausa.",
+        "3. Tsarin Sauti: Phonology, consonant/vowel production, tone system (high, low, falling), syllable structure, and phonological processes.",
+        "4. Kirar Kalma da Ginin Jumla: Morphology (affixation, gender/number) and Syntax (word classes, tense/aspect, sentence/clause types).",
+        "5. Ma'ana: Semantics, ambiguity, synonyms, antonyms, idioms, proverbs, and metaphorical expressions."
+      ]
+    },
+    {
+      "section_name": "SECTION 2: Al'adu (Culture)",
+      "contents": [
+        "6. Rayuwar Hausawa da Zamantakewa: Lifecycle customs (birth, naming, marriage, death), family structures (gandu), and social traditions.",
+        "7. Sana'o'i, Bukatu, da Sarautun Gargajiya: Traditional occupations, household material culture, and traditional governance structures.",
+        "8. Bukukuwa, Wasanni, Bauta, da Magungunan Gargajiya: Religious/traditional festivals, traditional games, beliefs (Bori, Camfe-camfe), and traditional medicine."
+      ]
+    },
+    {
+      "section_name": "SECTION 3: Adabi (Literature)",
+      "contents": [
+        "9. Adabin Baka: Oral literature including folktales (tatsuniya), praise songs (kirari), riddles, oral poetry (wakokin baka), and traditional drama (Tashe, Yan Kama).",
+        "10. Rubutaccen Adabi: In-depth literary analysis of set texts -> Prose: 'Maraya' by I. A. Mahe | Poetry: 'Wakokin Wayar Da kai' by A. Anwar | Drama: 'Malam Zalimu' by A. H. Gidan Dabino."
+      ]
+    }
+  ],
+  "reading_list": [
+    "Mahe, I. A. (2021). Maraya. Ibadan: Extension Publishers Limited.",
+    "Gidan Dabino, A. H. (2013). Malam Zalimu. Kano: Gidan Dabino Publishers.",
+    "Anwar, A. (2024). Wakokin Wayar Da kai Don Manazarta Hausa Na Daya. Zaria: ABU Press.",
+    "CSNL/BUK (2006). Kamusun Hausa Na Jami'ar Bayero. Zaria: ABU Press.",
+    "Sani, M.A.Z. (1999). Tsarin Sauti Da Nahawun Hausa. Ibadan: UP Plc."
+  ]
+}

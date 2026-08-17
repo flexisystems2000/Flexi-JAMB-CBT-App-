@@ -1,0 +1,137 @@
+{
+  "subject": "Geography",
+  "preamble": "The Geography syllabus is designed to evaluate candidates' understanding of spatial patterns, physical processes, and human-environment interactions. It emphasizes map reading, practical techniques, field work methods, regional geography with special reference to Nigeria and Africa, and global geographical concepts.",
+  "aims": [
+    "Handle and interpret topographical maps, photographs, statistical data, diagrams, and basic field survey results;",
+    "Demonstrate knowledge of man's physical and human environment and how man lives and earns a living on the Earth's surface with special reference to Nigeria and Africa;",
+    "Show understanding of the interrelationship between man and his environment;",
+    "Apply geographical concepts, skills, and principles to solving real-world problems;",
+    "Understand field work techniques and the practical study of a local area in the field."
+  ],
+  "requirements": [
+    "Candidates should be equipped with standard drawing and survey instruments, including rulers, protractors, pairs of compasses, and graph papers for map work.",
+    "Calculators may be used where quantitative analysis, map scale conversions, or statistical calculations are required."
+  ],
+  "examination_scheme": {
+    "summary": "The examination tests candidates across practical, physical, human, and regional geography domains through objective, practical, and essay-based assessment formats.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of multiple choice objective questions covering practical, physical, human, and regional geography topics."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay and Practical Paper",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "Consists of essay questions and practical map reading/interpretation tasks requiring detailed responses, cross-profiles, data interpretation, and regional case studies."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "PART I: Practical Geography",
+      "topics": [
+        {
+          "title": "1. Maps and Scale Measurement",
+          "notes": "Types and uses of maps; scale types and conversions; measurement of distances, areas, reduction and enlargement; directions, bearings, and gradients on topographical maps."
+        },
+        {
+          "title": "2. Map Reading, Interpretation, and Statistical Representation",
+          "notes": "Drawing cross-profiles and determining intervisibility; recognition and description of physical and human features on topographical maps; computation and interpretation of statistical data, charts, and diagrams."
+        },
+        {
+          "title": "3. Elementary Surveying and Geographic Information Systems (GIS)",
+          "notes": "Surveying techniques: chain and prismatic compass, open and closed traverses, procedures, problems, advantages, and disadvantages; GIS components, techniques, data sources (remote sensing, digitizing, scanning), applications (defense, agriculture, rural development), and challenges in Nigeria."
+        },
+        {
+          "title": "4. Field Work and Local Field Study",
+          "notes": "Fieldwork techniques, methods of data collection, observation, field sketching, interviewing, equipment handling, data presentation, analysis, and reporting in local area geographical studies."
+        }
+      ]
+    },
+    {
+      "section_name": "PART II: Physical Geography",
+      "topics": [
+        {
+          "title": "5. The Earth as a Planet and the Earth's Crust",
+          "notes": "Solar system position, rotation, revolution, shape, size; latitude (distance) and longitude (time); internal and external structure; four spheres and energy/water cycle relationships; rock types, characteristics, formation, and uses; tectonic forces."
+        },
+        {
+          "title": "6. Major Landforms, Volcanism, Earthquakes, and Denudation",
+          "notes": "Mountains, plateaux, plains, coastal, karst, and desert landforms; volcanic landforms, origin, types, and earthquake events; tropical denudation processes: weathering, erosion, mass movement, and deposition by water, wind, and waves."
+        },
+        {
+          "title": "7. Water Bodies, Weather, Climate, and Vegetation",
+          "notes": "Oceans, seas, and ocean currents (distribution, causes, effects, uses); lakes and river courses; weather and climate elements, factors, and measuring instruments; Greek and Köppen climate classifications; basic science of climate change; plant growth factors, plant succession, vegetation types, distribution, and human impact."
+        },
+        {
+          "title": "8. Soils, Environmental Resources, Ecosystems, and Hazards",
+          "notes": "Soil properties, formation factors, profiles, tropical soil types, and human impact; renewable vs. non-renewable environmental resources; land ecosystems, balance, and human impacts; natural and human-induced environmental hazards (drought, flooding, deforestation, pollution, desertification) and prevention/conservation methods."
+        }
+      ]
+    },
+    {
+      "section_name": "PART III: Human Geography",
+      "topics": [
+        {
+          "title": "9. Population Dynamics and Distribution",
+          "notes": "World population patterns (Amazon Basin, N.E. USA, India, Japan, West Coast of Southern Africa); birth/death rates, age/sex structure; distribution factors, growth problems, and migration types, causes, and effects."
+        },
+        {
+          "title": "10. Settlement Systems",
+          "notes": "Rural and urban settlement patterns (dispersed, nucleated, linear); factors influencing location, growth, and functions of settlements; urban problems and rural-urban interrelationships with reference to Western Europe, USA, Middle East, and West Africa."
+        },
+        {
+          "title": "11. Selected Economic Activities",
+          "notes": "Primary, secondary, tertiary, and quaternary activities; agricultural systems, factors, and problems; manufacturing industries, locational factors, distribution, and tropical African industrialization issues; transportation/communication modes and economic roles; world trade patterns and commodity routes; tourism importance, problems, and solutions."
+        }
+      ]
+    },
+    {
+      "section_name": "PART IV: Regional Geography",
+      "topics": [
+        {
+          "title": "12. Physical and Human Setting of Nigeria",
+          "notes": "Location, size, political states, boundaries, neighbours, and ethnic groups; geology, relief, landforms, climate, drainage, vegetation, and soils of Nigeria; population size, distribution, migration, and natural resource conservation."
+        },
+        {
+          "title": "13. Economic Geography of Nigeria",
+          "notes": "Agricultural systems and development challenges; manufacturing industries, product distribution, and locational factors; transportation and communication modes; regional and international trade dynamics; tourism importance and destination management."
+        },
+        {
+          "title": "14. Economic Community of West African States (ECOWAS)",
+          "notes": "Meaning, historical development, objectives, and mandate of ECOWAS; member states identification; advantages, prospects, trade integration challenges, and proposed solutions."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "Adegoke, M.A. (2013). A Comprehensive Text on Physical, Human and Regional Geography.",
+        "Adeleke, B.O. & Areola, O. (2002) / Leong, G.C. Certificate Physical and Human Geography for Senior Secondary School (West African Edition). Ibadan: Oxford University Press.",
+        "Balogun, O.Y. (2009). Senior Secondary Atlas. Nigeria: Longman Nigeria.",
+        "Bradshaw, M. et al. (2004). Contemporary World Regional Geography. New York: McGraw Hill.",
+        "Bunet, R.B. & Okunrotifa, P.O. (1999). General Geography in Diagrams for West Africa. China: Longman.",
+        "Collins New Secondary Atlas. Macmillan.",
+        "Emiela, S.A. (2014). Senior Secondary Geography (New Syllabus Edition). Geographical Bureau Nig. Ltd.",
+        "Fellman, D. et al. (2005). Introduction to Geography (7th Edition). New York: McGraw Hill.",
+        "Getis, A. et al. (2004). Introduction to Geography (9th Edition). New York: McGraw Hill.",
+        "Iloeje, N.P. (1982). A New Geography of Nigeria (New Edition). Hong Kong: London.",
+        "Iloeje, N.P. (1999). A New Geography of West Africa. Hong Kong: Longman.",
+        "Iwena, O.A. (2018). Essential Geography for Senior Secondary Schools. Ibafo, Nigeria: Tonad Publishers Limited.",
+        "Nimako, D.A. (2000). Map Reading of West Africa. Essex: Longman.",
+        "Okunrotifa, P.O. & Michael, S. (2000). A Regional Geography of Africa (New Edition). Essex: London.",
+        "Udo, R.K. (1970). Geographical Regions of Nigeria. London: Longman.",
+        "Waugh, D. (1995). Geography: An Integrated Approach (2nd Edition). China: Nelson.",
+        "Wisdomline Pass at Once JAMB."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "syllabus": {
+    "subject": "IGBO",
+    "general_objectives": [
+      "Communicate and read effectively in Igbo;",
+      "Analyse issues in the language;",
+      "Interpret and explain figurative and idiomatic expressions in Igbo and",
+      "Apply Igbo literature to their daily life experiences and to demonstrate Igbo cultural values."
+    ],
+    "structure": [
+      {
+        "section": "SECTION A: LANGUAGES (ASUSŲ)",
+        "contents_notes": "1. Essay (Edemede): a. Basic principles of essay writing: introduction, body and conclusion. b. Basic essay types and their characteristics: Narrative (Akomako), Descriptive and Expository (Nkowa na Nkowami), Argumentative (Mgbagha/Arumaruuka), Speech making (Ekwumekwu), Letter Writing (Edemleta), Dialogue (Mkparitauka). 2. Comprehension (Aghotaazaa): One passage of about one hundred and fifty (150) words. 3. Sounds and Sound Patterns (Udaasusu na Usoro Udaasusų): a. Vowels and Consonants (Udaume na mgbochiume). b. Sound Patterns/Processes: i. Syllabic nasals (udaimi), ii. Semi-vowel (Myiriudaume), iii. Nasal homoganicity (ndagba myiriudaume), iv. Syllable structure (nkeji mkpuruokwu), v. Vowel harmony (ndakorita udaume), vi. Vowel assimilation (olilo udaume), vii. Vowel elision and consonant elision (ndapu udaume na ndapu mgbochiume). c. Tone and tone marking (Udaolu na Akara udaolu). 4. Spelling and spelling rules (Nsupe na Iwu Nsupe). 5. Igbo Orthography (Mkpuruedemede Igbo). 6. Dialect and Standard Igbo (Olundi/Olumba na Igbo Izugbe). 7. Igbo Word Derivation (Usoro Mmubaokwu n'Igbo): Processes of word derivation: coinages, loans and loans-blends (Mmubawanye mkpuruokwu site n'usoro mmeputa, mkpuputa, mbite na mbiogwa). 8. Grammar (Utoasusụ): a. Parts of speech (Nkejiasusụ): Nominals (Mkpoaha), verbs (ngwaa), adjectives (nkowa), adverbs (nkwuwa), affixes (mgbakwunye), enclitics (nsokwunye), dgz. The structure, types and characteristics of morpheme (Ndoko, udi na njirimara mofim): Free & bound (nnooroonwe na ndabe). i) the word (mkpuruokwu), ii) the phrase (nkebiokwu), iii) the clause (nkebiahirị): nominal, adverbial and adjectival clause (kemkpoaha, kenkwuwa na kenkowa), iv) the sentence (ahiriokwu): simple (mfe), compound (ukwu), complex (mgbagwo, dgz). 9. Translation (Ntụghari).",
+        "objectives": [
+          "identify the basic principles of essay writing;",
+          "use words and expressions appropriate to a particular topic;",
+          "differentiate between different essay types;",
+          "describe the characteristics of essay types;",
+          "compare different types of essay;",
+          "criticize other people's essays.",
+          "explain the meanings of difficult words;",
+          "give correct answers;",
+          "differentiate between figurative and idiomatic expressions from the passage;",
+          "deduce conclusion(s) based on the passage.",
+          "identify vowels, consonants and syllabic nasals;",
+          "distinguish between the speech sounds of the Igbo language;",
+          "recognise semi-vowels ('m'& 'n') and nasal homoganicity;",
+          "divide words into syllables;",
+          "identify the vowel groups in Igbo;",
+          "describe vowel assimilation, vowel elision and consonant elision;",
+          "assign tone marks appropriately.",
+          "detect words written correctly in Igbo;",
+          "determine appropriate word division in Igbo.",
+          "indicate the Igbo orthography;",
+          "distinguish between the Igbo and English orthography.",
+          "differentiate between standard Igbo and dialects;",
+          "use standard Igbo in their writings.",
+          "differentiate between loan and coined words;",
+          "identify loan words and loan-blends in Igbo;",
+          "spell Igbo words appropriately.",
+          "differentiate between grammatical categories;",
+          "identify parts of speech and their functions;",
+          "differentiate between types of affixes and their functions;",
+          "determine types and characteristics of morphemes;",
+          "identify words, phrases, clauses, sentences, their types and characteristics.",
+          "translate English into Igbo and vice versa;",
+          "communicate effectively in Igbo and English."
+        ]
+      },
+      {
+        "section": "SECTION B: LITERATURE (AGUMAGU)",
+        "contents_notes": "1. Literary devices (Atumatuokwu) dika alliteration (biambia mgbochiume), assonance (biambia udaume), parallelism (kwunkwugha), metaphor (mburu), simile (myiri), hyperbole (egbeokwu), personification (mmemmadu) proverbs (ilu), dgz. 2. Oral Literature: Agumagụ Ọnu/ Agụmagụ Odinala: Folktales (ifo), myths (nkomiriko), legends (nkokiriko), poems (abu), songs (uri), chants (mbem), riddles (agwugwa), oral drama (ejije onu), tongue-twister (okwuntuhi) dgz. 3. Written Literature (Agụmagụ Ederede): (a) Prose (iduuazi): Tony U. Ubesie (1993). Juo Obinna. Oxford University Press. (b) Poetry (Abụ): Inno Uzoma Nwadike (2014). Akonuche. Obosi: Pacific Publishers Ltd. ABỤ NDỊ A HỌPUTARA (Selected Poems): 1. Ochịchị (18-19), 2. Onye Ndu (22-23), 3. Nne Oma (29-30), 4. Oke Ochichọ (40-41), 5. Asila M Na O Di Mma (53-54), 6. Ihe Uwa (60-61), 7. Jiri Nwayo (62-63), 8. Eziokwu (65-66), 9. Mma (67-69), 10. Nwanyi (92-94), 11. Aja Ala (101-103), 12. Ala Igbo (108-111), 13. Ndụ M N'uwa A (131-132), 14. Oji (150-151), 15. Uwa Emebighi (151-154), 16. Amamihe (168-169), 17. Ndụ Nwaanyi (178-180), 18. Nna M Ogoenyi (181-184), 19. Uloakwukwo (192-193), 20. Akwa Nnabuenyi Ugonna Bere (249-252). (c) DRAMA (EJIJE): J. C. Maduekwe (1979). Otu Mkpisi Aka. Longman Nigeria (Learn Africa).",
+        "objectives": [
+          "identify all literary devices in the passages;",
+          "interpret literary devices;",
+          "differentiate between types of literary devices;",
+          "use Igbo literary devices appropriately.",
+          "create folk stories, chants, riddles, oral drama etc.;",
+          "analyse various genres of oral literature;",
+          "present underlying ideas/formulae in accordance with principles;",
+          "apply the lessons of oral literature to their everyday life.",
+          "interpret the text;",
+          "isolate the characters in the book;",
+          "identify figurative and idiomatic expressions in the text;",
+          "analyse the text;",
+          "identify the author, publisher and date of publication;",
+          "draw moral lessons from the text.",
+          "compare the types and themes of the poems;",
+          "relate the poet's idea to the contents of the poems;",
+          "compare figurative and idiomatic expressions in the poems;",
+          "analyse the structures of the poems;",
+          "apply acquired knowledge and moral lessons from the poems to their daily lives.",
+          "identify the type of drama the text belongs to;",
+          "determine the themes in the text;",
+          "identify the story lines;",
+          "find out the characters in the book;",
+          "appreciate the language style of the play;",
+          "appraise the social problems raised by the author in the play;",
+          "apply acquired knowledge to their personal lives.",
+          "Identify the moral lessons from the drama text."
+        ]
+      },
+      {
+        "section": "SECTION C: CUSTOMS AND INSTITUTIONS (Omenala na Ewumewu)",
+        "contents_notes": "Igbo customs and institutions as categorized below: 1. Ekele di iche ice: ekele ututų, ehihie, anyasi, nri, onye nọ n'oria, nlakpu, orụ dg. 2. Alumdi na nwunye, igba alukwaghim. 3. Omụmụ na ile omugwo, ikuputa nwa, ibi ugwu, įgụ aha, įzụ ahịa nwa, įhụ eze. 4. Echichi: Nze na Ozo, Eze/Obi/Igwe, Iyom/Loolo. 5. Ike ekpe, iri ekpe, įkwa ozu, igba mkpe. 6. Umụnna, umuokpu/umuada, iyomdi, nwadiala. 7. Ogbo/ebiri/uke, ohanaeze, ezinaulo. 8. Arụ na nsoala: Ihe nso, anụ nso, osisi nso, ebe nso. 9. Ochichi Odinala: Igwe/Eze, Nze na Ozo, umụnna, ezinaulo, umuokpu/umuada, otu ogbọ. 10. Nnabata obịa, oji na įtu nzu, itu aha, ikwo aka utụtụ, ịgọ ofọ. 11. Ihe ofufe: Igba afa, ịchu aja, įgọ mmuo, ofufe. 12. Ngwa ofufe: Ofo, ikenga, okpesi. 13. Nkwenye: įdu isi/inu iyi, igba ndụ, oriko, ilo uwa, ogbanje, nro, ihi anụ, iha/ichu mmiri, dg. 14. Akunauba: inwe ala, ike ala, iri ekpe, elulu (ikpa okuko, ewu, dg). 15. Abamaba: Mmọnwụ, ọkọnko, ekpe, omabe, odo, dibia, dg. 16. Egwuregwu: mgba, egwu onwa, ikpo oga, izụ nchọ, įzų okwe, igba/ịchọ oro, dg. 17. Akaorụ ndị Igbo: Orụ ugbo, įkụ azụ, ikpu uzu, izụ ahịa, ịtụ ihe ọtụtụ, ịchụ nta, ime dibia, įkpụ ite, dg. 18. Emume: Ofala, įbo uzo, iwa ji/iri ji, igbu ewu ukwu, iru mgbede, iwa akwa, akwamozu, igụ afọ, dg.",
+        "objectives": [
+          "describe the customs of their people;",
+          "determine the rules and regulations guiding specified aspects of the culture and tradition of the Igbo people;",
+          "describe the importance of the aspects of Igbo culture;",
+          "identify changes that have occurred as a result of civilization;",
+          "explore their environment for a better appreciation of their culture."
+        ]
+      },
+      {
+        "section": "SECTION D: General and Current Affairs (Ihe Ndi na-eme Ugbua)",
+        "contents_notes": "1. Topical issues in the Igbo language, literature and culture e.g., Ahiajioku, Odenigbo lectures and Ohaneze Ndi Igbo. 2. Authors, Publishers, dates and places of publication of works in Igbo. 3. Igbo Studies Association (ISA). CURRENT ISSUES (Okwuakpunonụ) Note: Item writers should also choose their topics for comprehension exercises from such current issues as the following: 1. HIV/AIDS, Cancer and Corona Virus (Oria Mminwu/Obirinaajaocha, Awa eto na Oria koro). 2. Drug Abuse (Inu Ogwu Agharaaghara). 3. Cultism (Otu Nzuzo). 4. Rights of Women and Children (Oruuru Umunwaanyị na Umuaka). 5. Human Rights Violation and Child Abuse (Inapu Mmadų Ikike na Mmeto Nwata). 6. Religious Conflicts (Nsogbu Ndokurita Ekpemekpe Uka). 7. Kidnapping (Ntorọ Mmadụ).",
+        "objectives": [
+          "identify some dates, themes and functions of Ahiajioku, Odenigbo and Ohaneze Ndi Igbo Lectures;",
+          "identify authors, publishers and dates of publication of various textbooks in Igbo;",
+          "acquaint themselves with the functions and contributions of the Igbo Studies Association (ISA).",
+          "acquaint themselves with current issues;",
+          "examine their effects;",
+          "suggest remedies to the problems."
+        ]
+      }
+    ],
+    "recommended_texts": [
+      "Agu-Ofodile, M.C. (2007). Nkuzi Asusu Igbo N'ụzọ Dị Mfe Maka Ndị Sinjo Sekondirį Nke Ato. Ibadan: Austin Modest Publishers.",
+      "Uba Mgbemena, A. (2006): Ntoala Usoroasusų Igbo. Ibadan: Gold Press Ltd.",
+      "Ofili, D. N., Anozie C. C. and Chukwu, A. O. (2012): Lingwistiiki Sayensį Asusu II. Enugu: Computer Edge Publishers.",
+      "Ezikeojiaku, P. A., Okebalama, C. N., Onweluzo, C. N. and Ekwe B. U. (1991). Ule Igbo Maka Sinio Sekondiri. Ibadan: University Press Plc.",
+      "Anozie, C. C. (2003). Igbo Kwenu. Akuko na Omenala ndi Igbo. Enugu: Computer Edge Publishers.",
+      "Ikekeonwu, C., Ezikeojiaku, P. A., Ubani, A. and Ugoji, J. (1999). Fonoloji na Grama Igbo. Ibadan: University Press Plc.",
+      "Emenanjo, E. N., Dike, O. N., Agomo S. N. and Ezeuko, R. O. (1999). Exam Focus Maka WASSCE Na UTME. Ibadan: University Press Plc.",
+      "Ofomata, C. E. (2005): Ndezu Utoasusu Igbo. Enugu: Format Publishers (Nig.) Ltd.",
+      "Nzeako, J. U. T. (1972). Omenala Ndi Igbo. Ibadan: Longman (Nig.) Ltd.",
+      "Okoye, O. F. S., Ofoegbu, N. F. and Ezidiegwu, B. L. (1997) Ogbara Churụ Elidingtoasusụ Igbo maka Sinio Sekondiri. Onitsha: Houston Publishers Ltd.",
+      "Osuagwu, B. I. N. (1979). Ndi Igbo na Omenala Ha. Nigeria: Macmillan.",
+      "Ubesie, T. U. (1978). Odinala Ndi Igbo. Ibadan: Oxford University Press.",
+      "Umeh, I. O. A., Onyekaonwu, G. O., Nwadike, I. U. and Okeke I. O. (1992). Utọasusu na Agụmagụ Igbo nke Sinjo Sekondirį Sukul. Ibadan: Evans."
+    ]
+  }
+}
