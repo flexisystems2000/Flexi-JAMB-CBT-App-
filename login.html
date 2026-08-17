@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication - Flexi Educational Consult</title>
+    
+    <link rel="stylesheet" href="theme.css">
+    <script src="lucide.min.js"></script>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
+        .login-card { width: 100%; max-width: 400px; background-color: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: var(--card-shadow); }
+        .card-header { text-align: center; margin-bottom: 20px; }
+        .brand-title { color: var(--green, #008000); font-size: 1.5rem; font-weight: 800; }
+        .form-group { margin-bottom: 14px; }
+        .form-label { display: block; font-size: 0.8rem; font-weight: 700; color: var(--subtext); margin-bottom: 6px; text-transform: uppercase; }
+        .input-wrapper { position: relative; display: flex; align-items: center; }
+        .form-input { width: 100%; padding: 12px 38px 12px 14px; border-radius: 8px; border: 1px solid var(--border); background-color: var(--bg); color: var(--text); outline: none; }
+        .eye-icon { position: absolute; right: 12px; cursor: pointer; color: #888; }
+        .btn-submit { width: 100%; padding: 14px; border-radius: 25px; border: none; background: linear-gradient(135deg, #008000, #004d00); color: #fff; font-weight: 700; cursor: pointer; margin-top: 10px; }
+        .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; }
+        .btn-google { width: 100%; padding: 12px; border-radius: 25px; border: 1px solid var(--border); background-color: var(--bg); color: var(--text); font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 12px; }
+        .divider { display: flex; align-items: center; margin: 16px 0; color: var(--subtext); font-size: 0.8rem; }
+        .divider::before, .divider::after { content: ''; flex: 1; border-bottom: 1px solid var(--border); }
+        .divider span { padding: 0 10px; }
+        .status-box { padding: 10px; border-radius: 8px; font-size: 0.85rem; margin-bottom: 16px; text-align: center; display: none; }
+        .status-box.error { background: rgba(229, 62, 62, 0.15); color: #e53e3e; border: 1px solid rgba(229, 62, 62, 0.3); }
+        .status-box.info { background: rgba(49, 130, 206, 0.15); color: #3182ce; border: 1px solid rgba(49, 130, 206, 0.3); }
+        .status-box.success { background: rgba(56, 161, 105, 0.15); color: #38a169; border: 1px solid rgba(56, 161, 105, 0.3); }
+        .strength-meter { height: 4px; background: var(--border); border-radius: 2px; margin-top: 6px; overflow: hidden; display: none; }
+        .strength-fill { height: 100%; width: 0%; transition: all 0.3s ease; }
+        .requirements-box { margin-top: 8px; font-size: 0.75rem; display: none; }
+        .criteria.valid { color: var(--green, #008000); }
+        .criteria.invalid { color: #888; }
+        .toggle-area { text-align: center; margin-top: 16px; font-size: 0.9rem; color: var(--subtext); }
+        .step-indicator { font-size: 0.85rem; color: var(--green, #008000); font-weight: 700; margin-bottom: 12px; display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <div class="card-header">
+            <h1 class="brand-title" id="auth-title">Welcome Back</h1>
+            <div id="otp-step-indicator" class="step-indicator"></div>
+        </div>
+
+        <div id="status-box" class="status-box"></div>
+
+        <form onsubmit="return false;">
+            <div class="form-group" id="name-field-group" style="display: none;">
+                <label class="form-label">Full Name</label>
+                <input type="text" id="auth-name" class="form-input" placeholder="John Doe">
+            </div>
+
+            <div class="form-group" id="email-field-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" id="auth-email" class="form-input" placeholder="student@flexi.com">
+            </div>
+
+            <div class="form-group" id="otp-field-group" style="display: none;">
+                <label class="form-label">6-Digit OTP Code</label>
+                <input type="text" id="auth-otp" class="form-input" maxlength="6" placeholder="123456">
+            </div>
+
+            <div class="form-group" id="password-field-group">
+                <label class="form-label" id="pass-label">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="auth-pass" class="form-input" placeholder="••••••••">
+                    <i data-lucide="eye" id="eye-icon" class="eye-icon"></i>
+                </div>
+                <div id="strength-meter" class="strength-meter">
+                    <div id="strength-fill" class="strength-fill"></div>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span id="strength-text" style="font-size:0.75rem; font-weight:600;"></span>
+                </div>
+                <div id="requirements-box" class="requirements-box">
+                    <div id="req-length" class="criteria invalid">• At least 6 characters</div>
+                    <div id="req-letter" class="criteria invalid">• At least 1 lowercase letter</div>
+                    <div id="req-uppercase" class="criteria invalid">• At least 1 uppercase letter</div>
+                    <div id="req-number" class="criteria invalid">• At least 1 number</div>
+                </div>
+            </div>
+
+            <div class="form-group" id="confirm-password-field-group" style="display: none;">
+                <label class="form-label">Confirm Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="auth-confirm-pass" class="form-input" placeholder="••••••••">
+                    <i data-lucide="eye" id="confirm-eye-icon" class="eye-icon"></i>
+                </div>
+            </div>
+
+            <div id="forgot-link-container" style="text-align: right; margin-bottom: 12px;">
+                <span id="forgot-pass-link" style="color:var(--green, #008000); font-size:0.85rem; font-weight:600; cursor:pointer;">Forgot Password?</span>
+            </div>
+
+            <button type="button" id="main-auth-btn" class="btn-submit">LOGIN</button>
+        </form>
+
+        <div id="google-block">
+            <div class="divider"><span>Or continue with</span></div>
+            <button type="button" id="google-auth-btn" class="btn-google">
+                <svg width="18" height="18" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                Sign in with Google
+            </button>
+        </div>
+
+        <div id="toggle-area" class="toggle-area">
+            Don't have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Sign Up</span>
+        </div>
+    </div>
+
+    <footer style="margin-top: 20px; font-size: 0.8rem; color: var(--subtext);">
+        © <span id="current-year"></span> Flexi Educational Consult
+    </footer>
+
+    <script src="idb.js"></script>
+<script src="theme.js"></script>
+    <!-- YOUR EXACT SCRIPT GOES HERE -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { 
+            getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, 
+            updateProfile, GoogleAuthProvider, signInWithPopup, 
+            onAuthStateChanged 
+        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const RENDER_BASE_URL = "https://flexieduconsult-email-server.onrender.com";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+            authDomain: "auth.flexieduconsult.com.ng",
+            projectId: "waec2026jamb2027",
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const googleProvider = new GoogleAuthProvider();
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                const urlParams = new URLSearchParams(window.location.search);
+                const redirect = urlParams.get('redirect');
+                
+                if (redirect) {
+                    window.location.replace(decodeURIComponent(redirect));
+                } else {
+                    window.location.replace("index.html");
+                }
+            }
+        });
+
+        const statusBox = document.getElementById('status-box');
+        const mainBtn = document.getElementById('main-auth-btn');
+        const passInput = document.getElementById('auth-pass');
+        const passLabel = document.getElementById('pass-label');
+        const confirmPassInput = document.getElementById('auth-confirm-pass');
+        const emailInput = document.getElementById('auth-email');
+        const nameInput = document.getElementById('auth-name');
+        const otpInput = document.getElementById('auth-otp');
+        
+        const eyeIcon = document.getElementById('eye-icon');
+        const confirmEyeIcon = document.getElementById('confirm-eye-icon');
+        
+        const nameFieldGroup = document.getElementById('name-field-group');
+        const passwordFieldGroup = document.getElementById('password-field-group');
+        const confirmPasswordFieldGroup = document.getElementById('confirm-password-field-group');
+        const emailFieldGroup = document.getElementById('email-field-group');
+        const otpFieldGroup = document.getElementById('otp-field-group');
+        const otpStepIndicator = document.getElementById('otp-step-indicator');
+        
+        const forgotLinkContainer = document.getElementById('forgot-link-container');
+        const googleBlock = document.getElementById('google-block');
+        const authTitle = document.getElementById('auth-title');
+        const toggleArea = document.getElementById('toggle-area');
+        const forgotPassLink = document.getElementById('forgot-pass-link');
+        
+        const strengthMeter = document.getElementById('strength-meter');
+        const strengthFill = document.getElementById('strength-fill');
+        const strengthText = document.getElementById('strength-text');
+        const reqBox = document.getElementById('requirements-box');
+
+        let currentView = "login";
+        let resetStep = 1;
+
+        const switchView = (view) => {
+            currentView = view;
+            resetStep = 1;
+            statusBox.style.display = "none";
+            passInput.value = "";
+            confirmPassInput.value = "";
+            otpInput.value = "";
+            passLabel.innerText = "Password";
+            
+            strengthMeter.style.display = "none";
+            reqBox.style.display = "none";
+            otpStepIndicator.style.display = "none";
+            otpFieldGroup.style.display = "none";
+            emailFieldGroup.style.display = "block";
+
+            if (view === "login") {
+                authTitle.innerText = "Welcome Back";
+                nameFieldGroup.style.display = "none";
+                passwordFieldGroup.style.display = "block";
+                confirmPasswordFieldGroup.style.display = "none";
+                forgotLinkContainer.style.display = "block";
+                googleBlock.style.display = "block";
+                mainBtn.innerText = "LOGIN";
+                toggleArea.innerHTML = `Don't have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Sign Up</span>`;
+            } 
+            else if (view === "signup") {
+                authTitle.innerText = "Create Account";
+                nameFieldGroup.style.display = "block";
+                passwordFieldGroup.style.display = "block";
+                confirmPasswordFieldGroup.style.display = "block";
+                forgotLinkContainer.style.display = "none";
+                googleBlock.style.display = "block";
+                mainBtn.innerText = "SIGN UP";
+                toggleArea.innerHTML = `Already have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Login</span>`;
+            } 
+            else if (view === "forgot") {
+                authTitle.innerText = "Reset Password";
+                otpStepIndicator.innerText = "Step 1 of 2: Enter Email";
+                otpStepIndicator.style.display = "block";
+                nameFieldGroup.style.display = "none";
+                passwordFieldGroup.style.display = "none";
+                confirmPasswordFieldGroup.style.display = "none";
+                forgotLinkContainer.style.display = "none";
+                googleBlock.style.display = "none";
+                mainBtn.innerText = "SEND OTP CODE";
+                toggleArea.innerHTML = `Back to <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Login</span>`;
+            }
+
+            document.getElementById('toggle-action').onclick = () => {
+                if (currentView === "login") switchView("signup");
+                else switchView("login");
+            };
+        };
+
+        forgotPassLink.onclick = () => switchView("forgot");
+        document.getElementById('toggle-action').onclick = () => switchView("signup");
+
+        eyeIcon.onclick = () => {
+            const isProtected = passInput.type === "password";
+            passInput.type = isProtected ? "text" : "password";
+            eyeIcon.style.color = isProtected ? "var(--green, #008000)" : "#888";
+        };
+        
+        confirmEyeIcon.onclick = () => {
+            const isProtected = confirmPassInput.type === "password";
+            confirmPassInput.type = isProtected ? "text" : "password";
+            confirmEyeIcon.style.color = isProtected ? "var(--green, #008000)" : "#888";
+        };
+
+        const showStatus = (msg, type) => {
+            statusBox.innerText = msg;
+            statusBox.className = "status-box " + type; 
+            statusBox.style.display = "block";
+        };
+
+        document.getElementById('google-auth-btn').onclick = async () => {
+            try {
+                await signInWithPopup(auth, googleProvider);
+            } catch (e) {
+                showStatus(e.message.replace('auth/', '').replace(/-/g, ' '), "error");
+            }
+        };
+
+        passInput.addEventListener('input', () => {
+            if (currentView !== "signup") {
+                strengthMeter.style.display = "none";
+                reqBox.style.display = "none";
+                return;
+            }
+
+            const value = passInput.value;
+            if (!value) {
+                strengthMeter.style.display = "none";
+                reqBox.style.display = "none";
+                return;
+            }
+
+            strengthMeter.style.display = "block";
+            reqBox.style.display = "block";
+
+            let score = 0;
+            const checks = {
+                length: value.length >= 6,
+                letter: /[a-z]/.test(value),
+                uppercase: /[A-Z]/.test(value),
+                number: /[0-9]/.test(value)
+            };
+
+            document.getElementById('req-length').className = checks.length ? "criteria valid" : "criteria invalid";
+            document.getElementById('req-letter').className = checks.letter ? "criteria valid" : "criteria invalid";
+            document.getElementById('req-uppercase').className = checks.uppercase ? "criteria valid" : "criteria invalid";
+            document.getElementById('req-number').className = checks.number ? "criteria valid" : "criteria invalid";
+
+            if (checks.length) score++;
+            if (checks.letter) score++;
+            if (checks.uppercase) score++;
+            if (checks.number) score++;
+
+            switch (score) {
+                case 1:
+                    strengthFill.style.width = "25%"; strengthFill.style.background = "#d9534f";
+                    strengthText.innerText = "Weak"; strengthText.style.color = "#d9534f";
+                    break;
+                case 2:
+                    strengthFill.style.width = "50%"; strengthFill.style.background = "#f0ad4e";
+                    strengthText.innerText = "Medium"; strengthText.style.color = "#f0ad4e";
+                    break;
+                case 3:
+                    strengthFill.style.width = "75%"; strengthFill.style.background = "#5bc0de";
+                    strengthText.innerText = "Strong"; strengthText.style.color = "#5bc0de";
+                    break;
+                case 4:
+                    strengthFill.style.width = "100%"; strengthFill.style.background = "var(--green, #008000)";
+                    strengthText.innerText = "Very Secure"; strengthText.style.color = "var(--green, #008000)";
+                    break;
+            }
+        });
+
+        mainBtn.onclick = async () => {
+            const email = emailInput.value.trim();
+            const pass = passInput.value;
+            const confirmPass = confirmPassInput.value;
+            const otp = otpInput.value.trim();
+            statusBox.style.display = "none";
+
+            if (!email) return showStatus("Please enter your email address.", "error");
+
+            try {
+                if (currentView === "login") {
+                    if (!pass) return showStatus("Please enter your password.", "error");
+                    mainBtn.disabled = true;
+                    showStatus("Logging in...", "info");
+                    await signInWithEmailAndPassword(auth, email, pass);
+                    window.location.href = "index.html";
+                } 
+                else if (currentView === "signup") {
+                    if (!pass) return showStatus("Please enter your password.", "error");
+                    const name = nameInput.value.trim();
+                    if (!name) return showStatus("Please enter your full name.", "error");
+                    
+                    const passesAllRules = pass.length >= 6 && /[a-z]/.test(pass) && /[A-Z]/.test(pass) && /[0-9]/.test(pass);
+                    if (!passesAllRules) return showStatus("Please fulfill all password criteria rules.", "error");
+
+                    if (pass !== confirmPass) return showStatus("Passwords do not match.", "error");
+
+                    mainBtn.disabled = true;
+                    showStatus("Creating account...", "info");
+                    const res = await createUserWithEmailAndPassword(auth, email, pass);
+                    await updateProfile(res.user, { displayName: name });
+                    window.location.href = "index.html";
+                } 
+                else if (currentView === "forgot") {
+                    if (resetStep === 1) {
+                        mainBtn.disabled = true;
+                        showStatus("Sending OTP code to your email...", "info");
+
+                        const response = await fetch(`${RENDER_BASE_URL}/api/send-otp`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ email })
+                        });
+
+                        const data = await response.json();
+                        mainBtn.disabled = false;
+
+                        if (response.ok && data.success) {
+                            resetStep = 2;
+                            otpStepIndicator.innerText = "Step 2 of 2: Verify Code & Update Password";
+                            otpFieldGroup.style.display = "block";
+                            passwordFieldGroup.style.display = "block";
+                            passLabel.innerText = "New Password";
+                            mainBtn.innerText = "VERIFY & UPDATE PASSWORD";
+                            showStatus("OTP code sent! Please check your email inbox or spam folder.", "success");
+                        } else {
+                            showStatus(data.message || "Failed to send OTP.", "error");
+                        }
+                    } 
+                    else if (resetStep === 2) {
+                        if (otp.length !== 6) return showStatus("Please enter the 6-digit OTP code.", "error");
+                        if (!pass || pass.length < 6) return showStatus("New password must be at least 6 characters.", "error");
+
+                        mainBtn.disabled = true;
+                        showStatus("Verifying code and updating password...", "info");
+
+                        const response = await fetch(`${RENDER_BASE_URL}/api/verify-otp`, {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ email, otp, newPassword: pass })
+                        });
+
+                        const data = await response.json();
+                        mainBtn.disabled = false;
+
+                        if (response.ok && data.success) {
+                            showStatus("Password updated successfully! Redirecting to login...", "success");
+                            setTimeout(() => {
+                                switchView("login");
+                            }, 2500);
+                        } else {
+                            showStatus(data.message || "Failed to reset password.", "error");
+                        }
+                    }
+                }
+            } catch (e) {
+                mainBtn.disabled = false;
+                showStatus(e.message.replace('auth/', '').replace(/-/g, ' '), "error");
+            }
+        };
+       
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        lucide.createIcons();
+    </script>
+</body>
+</html>

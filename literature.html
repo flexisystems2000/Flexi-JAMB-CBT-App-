@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novels</title>
+  <link rel="stylesheet" href="theme.css">
+  
+  <style>
+    :root {
+      --flexi-navy: #008000;
+      --flexi-green: #004d00;
+      --badge-bg: rgba(0, 128, 0, 0.15);
+      --badge-text: var(--flexi-navy);
+      --radius: 12px;
+    }
+
+    /* RESET & BASE STYLES */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 20px 12px;
+      transition: .3s ease;
+    }
+
+    /* HEADER & ACCENT STRIPE */
+    .page-header {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+
+    .page-header h1 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--flexi-navy);
+      margin-bottom: 10px;
+    }
+
+    /* Green Separator Stripe */
+    .header-stripe {
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--flexi-navy) 0%, rgba(0, 128, 0, 0.2) 100%);
+      border-radius: 2px;
+    }
+
+    /* 3-COLUMN GRID LAYOUT */
+    .novels-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* CARD DESIGN */
+    .novel-card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 135px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+      user-select: none;
+      box-shadow: var(--card-shadow);
+    }
+
+    .novel-card:active {
+      transform: scale(0.96);
+    }
+
+    /* ICON BOX */
+    .icon-box {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+
+    /* Icon Color Themes adapted to Flexi Brand / Consistent Palette */
+    .icon-blue { background-color: rgba(0, 128, 0, 0.15); color: var(--flexi-navy); }
+    .icon-purple { background-color: rgba(0, 77, 0, 0.15); color: var(--flexi-green); }
+    .icon-orange { background-color: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+    .icon-green { background-color: rgba(0, 128, 0, 0.2); color: var(--flexi-navy); }
+
+    .icon-box svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    /* CARD TEXT */
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      line-height: 1.2;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .category {
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: var(--subtext);
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+
+    /* COMING SOON STYLING */
+    .novel-card.coming-soon {
+      opacity: 0.7;
+    }
+
+    .coming-soon-badge {
+      color: #f59e0b;
+    }
+
+    /* TOAST NOTIFICATION */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background-color: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="app"></div>
+  <div id="toast" class="toast"></div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      const colorThemes = ['icon-blue', 'icon-purple', 'icon-orange', 'icon-green'];
+
+      // STATE DATA
+      const state = {
+        novels: [
+          {
+            id: 'lekki-headmaster',
+            title: 'THE LEKKI HEADMASTER',
+            category: 'JAMB NOVEL',
+            isAvailable: true,
+            pdfUrl: 'https://www.dropbox.com/scl/fi/5ditv27rnlfucqcq4gqjc/THE-LEKKI-HEADMASTER.pdf?rlkey=j1r3hg0fpwhj9z4zifczad9r7&st=1e1njzqo&dl=1',
+            colorClass: 'icon-blue'
+          },
+          ...Array.from({ length: 14 }, (_, i) => ({
+            id: `novel-placeholder-${i + 1}`,
+            title: `NOVEL TITLE ${i + 1}`,
+            category: 'COMING SOON',
+            isAvailable: false,
+            pdfUrl: null,
+            colorClass: colorThemes[(i + 1) % colorThemes.length]
+          }))
+        ]
+      };
+
+      const app = document.getElementById('app');
+      const toast = document.getElementById('toast');
+
+      const bookIconSvg = `
+        <svg viewBox="0 0 24 24">
+          <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.2.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"/>
+        </svg>
+      `;
+
+      // RENDER SPA
+      function render() {
+        app.innerHTML = `
+          <header class="page-header">
+            <h1>Novels</h1>
+            <div class="header-stripe"></div>
+          </header>
+
+          <main class="novels-grid">
+            ${state.novels.map(novel => `
+              <div 
+                class="novel-card ${!novel.isAvailable ? 'coming-soon' : ''}" 
+                data-id="${novel.id}"
+                data-url="${novel.pdfUrl || ''}"
+                data-available="${novel.isAvailable}"
+              >
+                <div class="icon-box ${novel.colorClass}">
+                  ${bookIconSvg}
+                </div>
+
+                <div class="card-content">
+                  <div class="title">${novel.title}</div>
+                  <div class="category ${!novel.isAvailable ? 'coming-soon-badge' : ''}">
+                    ${novel.category}
+                  </div>
+                </div>
+              </div>
+            `).join('')}
+          </main>
+        `;
+
+        bindEvents();
+      }
+
+      function bindEvents() {
+        document.querySelectorAll('.novel-card').forEach(card => {
+          card.addEventListener('click', () => {
+            const isAvailable = card.getAttribute('data-available') === 'true';
+            const pdfUrl = card.getAttribute('data-url');
+
+            if (isAvailable && pdfUrl) {
+              showToast("Downloading file...");
+              window.location.href = pdfUrl;
+            } else {
+              showToast("Coming soon!");
+            }
+          });
+        });
+      }
+
+      function showToast(message) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => {
+          toast.classList.remove('show');
+        }, 2000);
+      }
+
+      render();
+    });
+  </script>
+</body>
+</html>

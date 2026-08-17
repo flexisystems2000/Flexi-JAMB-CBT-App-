@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexi Educational Consult</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <meta name="theme-color" content="#008000">
+    <link rel="stylesheet" href="theme.css">
+    <script src="boxicons.js"></script>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+            background:var(--bg);
+            min-height:100vh;
+            padding:20px;
+            transition:.3s ease;
+        }
+
+        /* Blur effect applied to container when unauthenticated */
+        .container {
+            max-width:600px;
+            margin:auto;
+            transition: filter 0.4s ease, opacity 0.4s ease;
+        }
+
+        .container.blurred {
+            filter: blur(10px);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .header{
+            position:relative;
+            text-align:center;
+            margin-bottom:20px;
+            padding-right:70px; /* prevents overlap */
+        }
+
+        .header h1{
+            color:#008000;
+            font-size:1.9rem;
+            font-weight:800;
+            margin-bottom:5px;
+        }
+
+        .header p{
+            color:var(--subtext);
+            font-size:.9rem;
+            letter-spacing:1px;
+        }
+
+        /* Theme Toggle Button */
+        .theme-btn{
+            position:absolute;
+            top:5px;
+            right:5px;
+            width:48px;
+            height:48px;
+            border:none;
+            border-radius:50%;
+            background:var(--btn-bg);
+            color:var(--btn-color);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:pointer;
+            box-shadow:var(--card-shadow);
+            transition:.3s ease;
+        }
+
+        .theme-btn:hover{
+            transform:translateY(-2px);
+        }
+
+        /* Welcome Banner */
+        .welcome-banner{
+            background:linear-gradient(135deg,#008000,#004d00);
+            color:#fff;
+            padding:20px;
+            border-radius:20px;
+            margin-bottom:20px;
+            box-shadow:var(--card-shadow);
+        }
+
+        .welcome-banner h2{
+            font-size:1.3rem;
+            margin-bottom:5px;
+        }
+
+        .welcome-banner p{
+            opacity:.95;
+            font-size:.95rem;
+        }
+
+        /* Grid */
+        .grid{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            gap:15px;
+        }
+
+        .card{
+            height:170px;
+            border-radius:20px;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-decoration:none;
+            color:#fff;
+            text-align:center;
+            padding:15px;
+            box-shadow:var(--card-shadow);
+            transition:.25s ease;
+        }
+
+        .card:hover{
+            transform:translateY(-4px);
+        }
+
+        .card:active{
+            transform:scale(.97);
+        }
+
+        .card span{
+            font-size:14px;
+            font-weight:700;
+            letter-spacing:.5px;
+        }
+
+        /* Card colors */
+        .card-home{background:linear-gradient(135deg,#008000,#004d00);}
+        .card-study{background:linear-gradient(135deg,#001f3f,#003366);}
+        .card-test{background:linear-gradient(135deg,#003366,#00509d);}
+        .card-chat{background:linear-gradient(135deg,#004d00,#008000);}
+        .card-more{
+            background:linear-gradient(135deg,#001f3f,#004d00);
+            grid-column:span 2;
+            height:120px;
+        }
+
+        /* --- LOGIN IFRAME MODAL STYLES --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            backdrop-filter: blur(6px);
+        }
+
+        .modal-card {
+            width: 95%;
+            max-width: 440px;
+            height: 90vh;
+            max-height: 700px;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-card iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        @media(max-width:480px){
+            body{padding:15px;}
+
+            .header h1{
+                font-size:1.6rem;
+            }
+
+            .card{
+                height:150px;
+            }
+
+            .card-more{
+                height:110px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" id="pageContainer">
+    <div class="header">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">
+            <svg id="themeIcon"
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="22" height="22"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+                <!-- moon default -->
+                <path d="M21 12.79A9 9 0 1 1 11.21 3
+                         7 7 0 0 0 21 12.79z"/>
+            </svg>
+        </button>
+
+        <h1>Flexi Educational Consult</h1>
+        <p>LEARN • PRACTICE • CONNECT</p>
+    </div>
+
+    <div class="welcome-banner">
+        <h2>Welcome to Flexi</h2>
+        <p>Your Digital Learning Companion</p>
+    </div>
+
+    <div class="grid">
+        <a href="index.html" class="card card-home">
+            <box-icon name="home-alt" color="#ffffff" size="md"></box-icon>
+            <span>HOME</span>
+        </a>
+
+        <a href="study.html" class="card card-study">
+            <box-icon name="book-reader" color="#ffffff" size="md"></box-icon>
+            <span>STUDY</span>
+        </a>
+
+        <a href="test.html" class="card card-test">
+            <box-icon name="pencil" color="#ffffff" size="md"></box-icon>
+            <span>TAKE CBT TEST</span>
+        </a>
+
+        <a href="chat.html" class="card card-chat">
+            <box-icon name="chat" color="#ffffff" size="md"></box-icon>
+            <span>CHAT</span>
+        </a>
+
+        <a href="more.html" class="card card-more">
+            <box-icon name="cog" color="#ffffff" size="md"></box-icon>
+            <span>MORE</span>
+        </a>
+    </div>
+</div>
+
+<!-- LOGIN MODAL IFRAME OVERLAY -->
+<div id="loginModal" class="modal-overlay hidden">
+    <div class="modal-card">
+        <iframe id="loginIframe" src="" title="Login Portal"></iframe>
+    </div>
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+
+<!-- PAGE THEME & SERVICE WORKER LOGIC -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const themeBtn = document.getElementById("themeToggle");
+        if (themeBtn) {
+            themeBtn.addEventListener("click", async () => {
+                const themeVal = document.body.classList.contains("dark") ? "dark" : "light";
+                if (typeof IDB !== 'undefined') {
+                    await IDB.setItem("theme", themeVal);
+                } else {
+                    localStorage.setItem("theme", themeVal);
+                }
+                if (typeof updateThemeIcon === "function") {
+                    updateThemeIcon();
+                }
+            });
+        }
+    });
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js');
+        });
+    }
+</script>
+
+<!-- FIREBASE AUTH CHECK & IFRAME POP-UP LOGIC -->
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+    // Matching Firebase config from your login page
+    const firebaseConfig = {
+        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+        authDomain: "auth.flexieduconsult.com.ng",
+        projectId: "waec2026jamb2027",
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    const LOGIN_FILE_PATH = "login.html"; // Ensure this matches your login page filename
+
+    const modal = document.getElementById('loginModal');
+    const iframe = document.getElementById('loginIframe');
+    const pageContainer = document.getElementById('pageContainer');
+
+    // 1. Monitor user authentication state
+    onAuthStateChanged(auth, (user) => {
+        if (!user) {
+            // User not signed in -> show blurred overlay & pop up iframe
+            showLoginModal();
+        } else {
+            // User is signed in -> unblur page & remove iframe
+            hideLoginModal();
+        }
+    });
+
+    function showLoginModal() {
+        if (!iframe.src || !iframe.src.includes(LOGIN_FILE_PATH)) {
+            iframe.src = LOGIN_FILE_PATH;
+        }
+        modal.classList.remove('hidden');
+        pageContainer.classList.add('blurred');
+    }
+
+    function hideLoginModal() {
+        modal.classList.add('hidden');
+        pageContainer.classList.remove('blurred');
+        iframe.src = ""; // Unload iframe contents
+    }
+
+    // 2. Listen for auth success postMessage sent from login inside the iframe
+    window.addEventListener('message', (event) => {
+        if (event.data?.type === 'AUTH_SUCCESS') {
+            hideLoginModal();
+        }
+    });
+</script>
+</body>
+</html>

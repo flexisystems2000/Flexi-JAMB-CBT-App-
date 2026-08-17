@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson Notes</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root {
+      --flexi-navy: #008000;
+      --flexi-green: #004d00;
+      --badge-bg: rgba(0, 128, 0, 0.15);
+      --badge-text: var(--flexi-navy);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: .3s ease;
+      padding-bottom: 40px;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: var(--header);
+      border-bottom: 5px solid var(--flexi-green);
+      padding: 1rem 2rem;
+      box-shadow: var(--card-shadow);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.25rem;
+      color: var(--flexi-navy);
+    }
+
+    .btn-back {
+      background-color: var(--card);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      display: none;
+      box-shadow: var(--card-shadow);
+    }
+
+    .btn-back:hover {
+      background-color: var(--border);
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    /* Cards Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid var(--border);
+      border-left: 4px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.12);
+      border-left-color: var(--flexi-green);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--flexi-navy);
+    }
+
+    /* Specific Page Elements */
+    .badge {
+      display: inline-block;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Highlight class for Subtopics & Keypoints/Notes */
+    .highlight {
+      color: var(--flexi-green);
+      font-weight: 600;
+    }
+
+    .subtopic-list {
+      list-style-type: square;
+      padding-left: 1.25rem;
+      margin-top: 0.5rem;
+    }
+
+    .subtopic-list li {
+      margin-bottom: 0.5rem;
+      color: var(--subtext);
+    }
+
+    .keypoint-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .keypoint-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--flexi-green);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      line-height: 1.5;
+      color: var(--text);
+      box-shadow: var(--card-shadow);
+    }
+
+    .toggle-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 1rem;
+      border-radius: var(--radius);
+      box-shadow: var(--card-shadow);
+    }
+
+    .toggle-bar h2 {
+      color: var(--flexi-navy);
+    }
+
+    .toggle-btn {
+      background-color: var(--flexi-navy);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .toggle-btn:hover {
+      background-color: var(--flexi-green);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="header-title">Lesson Notes</h1>
+    <button class="btn-back" id="back-btn" onclick="goBack()">← Back</button>
+  </header>
+
+  <div class="container">
+
+    <!-- PAGE 1: Categories -->
+    <section id="page-1" class="page active">
+      <h2 style="margin-bottom: 1rem; color: var(--flexi-navy);">Select Category</h2>
+      <div class="grid">
+        <div class="card" onclick="selectCategory('science')">
+          <h3>Science</h3>
+        </div>
+        <div class="card" onclick="selectCategory('art')">
+          <h3>Art</h3>
+        </div>
+        <div class="card" onclick="selectCategory('commercial')">
+          <h3>Commercial</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: Subjects -->
+    <section id="page-2" class="page">
+      <h2 style="margin-bottom: 1rem; color: var(--flexi-navy);" id="category-title">Select Subject</h2>
+      <div class="grid" id="subjects-grid"></div>
+    </section>
+
+    <!-- PAGE 3: Topics -->
+    <section id="page-3" class="page">
+      <h2 style="margin-bottom: 0.5rem; color: var(--flexi-navy);" id="subject-title">Topics</h2>
+      <p style="margin-bottom: 1.0rem; color: var(--subtext);" id="subject-meta"></p>
+      <div class="grid" id="topics-grid"></div>
+    </section>
+
+    <!-- PAGE 4: Detail View -->
+    <section id="page-4" class="page">
+      <div class="toggle-bar">
+        <h2 id="topic-title">Topic Details</h2>
+        <button class="toggle-btn" id="toggle-view-btn" onclick="toggleViewMode()">Switch to Notes View</button>
+      </div>
+
+      <!-- Subtopics Section (Dynamically hidden if empty) -->
+      <div id="subtopics-container" style="margin-bottom: 2rem;">
+        <h3 class="highlight" style="margin-bottom: 0.5rem;">Subtopics</h3>
+        <ul class="subtopic-list highlight" id="subtopics-list"></ul>
+      </div>
+
+      <!-- Content Section (Keypoints or Notes) -->
+      <div>
+        <h3 class="highlight" id="content-heading" style="margin-bottom: 0.5rem;">Keypoints</h3>
+        <div class="keypoint-list" id="content-list"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    // State Tracking
+    let historyStack = [];
+    let currentSubjectData = null;
+    let selectedTopicIndex = null;
+    let isNotesView = false;
+
+    // Subjects Mapping per Category
+    const categorySubjects = {
+      science: ["English","Mathematics", "Biology", "Chemistry", "Physics","Economics","Computer Science"],
+      art: ["Literature in English","Government","English","Mathematics", "Economics", "Christian Religious Studies(CRS)", "Islamic Studies (IRS)", "Arabic", "Hausa", "Igbo", "Yoruba"],
+      commercial: ["English","Mathematics", "Account", "Economics","Commerce"]
+    };
+
+    // Clean up raw LaTeX markers like \text{...} or $...$ for plain text display
+    function cleanLatex(text) {
+      if (!text) return '';
+      return text
+        .replace(/\$\\text\{([^}]+)\}\$/g, '$1')
+        .replace(/\\text\{([^}]+)\}/g, '$1')
+        .replace(/\$/g, '');
+    }
+
+    // Navigation Handler
+    function navigateTo(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+      
+      const backBtn = document.getElementById('back-btn');
+      if (pageId === 'page-1') {
+        backBtn.style.display = 'none';
+        historyStack = [];
+      } else {
+        backBtn.style.display = 'block';
+      }
+    }
+
+    function goBack() {
+      if (historyStack.length > 0) {
+        const previousPage = historyStack.pop();
+        navigateTo(previousPage);
+      } else {
+        navigateTo('page-1');
+      }
+    }
+
+    // Page 1 -> Page 2
+    function selectCategory(cat) {
+      historyStack.push('page-1');
+      document.getElementById('category-title').innerText = `${cat.toUpperCase()} Subjects`;
+      
+      const grid = document.getElementById('subjects-grid');
+      grid.innerHTML = '';
+
+      categorySubjects[cat].forEach(subject => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<h3>${subject}</h3>`;
+        card.onclick = () => loadSubjectJSON(subject);
+        grid.appendChild(card);
+      });
+
+      navigateTo('page-2');
+    }
+
+    // Page 2 -> Page 3 (Searches and loads the JSON file dynamically)
+    function loadSubjectJSON(subjectName) {
+      historyStack.push('page-2');
+      
+      // Convert subject name into standard filename format (e.g., "Financial Accounting" -> "financial_accounting.json")
+      const filename = subjectName.toLowerCase().replace(/\s+/g, '_') + '.json';
+      
+      fetch(`./subjects/${filename}`)
+        .then(response => {
+          if (!response.ok) throw new Error("JSON file not found");
+          return response.json();
+        })
+        .then(data => {
+          currentSubjectData = data;
+          renderTopicsPage();
+          navigateTo('page-3');
+        })
+        .catch(err => {
+          alert(`Could not load data for ${subjectName}. Please make sure './subjects/${filename}' exists.`);
+          console.error(err);
+        });
+    }
+
+    function renderTopicsPage() {
+      document.getElementById('subject-title').innerText = currentSubjectData.subject;
+      document.getElementById('subject-meta').innerText = `${currentSubjectData.curriculum} | ${currentSubjectData.format}`;
+      
+      const grid = document.getElementById('topics-grid');
+      grid.innerHTML = '';
+
+      currentSubjectData.topics.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <span class="badge">Topic ${index + 1}</span>
+          <h3>${cleanLatex(item.topic)}</h3>
+        `;
+        card.onclick = () => selectTopic(index);
+        grid.appendChild(card);
+      });
+    }
+
+    // Page 3 -> Page 4
+    function selectTopic(index) {
+      historyStack.push('page-3');
+      selectedTopicIndex = index;
+      isNotesView = false;
+      renderDetailPage();
+      navigateTo('page-4');
+    }
+
+    function renderDetailPage() {
+      const topicData = currentSubjectData.topics[selectedTopicIndex];
+      
+      document.getElementById('topic-title').innerText = cleanLatex(topicData.topic);
+      
+      // Render Subtopics (Skip rendering if missing or empty)
+      const subtopicsContainer = document.getElementById('subtopics-container');
+      const subtopicsList = document.getElementById('subtopics-list');
+      subtopicsList.innerHTML = '';
+
+      if (topicData.subtopics && topicData.subtopics.length > 0) {
+        subtopicsContainer.style.display = 'block';
+        topicData.subtopics.forEach(sub => {
+          const li = document.createElement('li');
+          li.innerText = cleanLatex(sub);
+          subtopicsList.appendChild(li);
+        });
+      } else {
+        subtopicsContainer.style.display = 'none';
+      }
+
+      // Render Keypoints/Notes Content
+      updateContentView(topicData);
+    }
+
+    function toggleViewMode() {
+      isNotesView = !isNotesView;
+      const topicData = currentSubjectData.topics[selectedTopicIndex];
+      updateContentView(topicData);
+    }
+
+    function updateContentView(topicData) {
+      const heading = document.getElementById('content-heading');
+      const toggleBtn = document.getElementById('toggle-view-btn');
+      const contentList = document.getElementById('content-list');
+
+      contentList.innerHTML = '';
+
+      if (isNotesView) {
+        heading.innerText = "Notes View";
+        toggleBtn.innerText = "Switch to Notes View";
+      } else {
+        heading.innerText = "Notes View";
+        toggleBtn.innerText = "Switch to Notes View";
+      }
+
+      topicData.keypoints.forEach(point => {
+        const item = document.createElement('div');
+        item.className = 'keypoint-item';
+        
+        // Formats text cleanly depending on the active view
+        const cleanedText = cleanLatex(point);
+        item.innerText = isNotesView ? `• ${cleanedText}` : cleanedText;
+        
+        contentList.appendChild(item);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAMB Brochure | Flexi Educational Consult</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    :root {
+      --flexi-navy: #008000;
+      --flexi-green: #004d00;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      transition: .3s ease;
+    }
+
+    /* Full-width header */
+    .header-wrapper {
+      width: 100%;
+      background-color: var(--header);
+      border-bottom: 5px solid var(--flexi-green);
+      margin-bottom: 20px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .header-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 28px 20px;
+      text-align: center;
+      color: var(--text);
+    }
+
+    .header-content h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+      color: var(--flexi-navy);
+    }
+
+    .header-content p {
+      font-size: 0.85rem;
+      color: var(--subtext);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px 24px 16px;
+    }
+
+    .nav-bar {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--text);
+      box-shadow: var(--card-shadow);
+    }
+
+    .nav-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Dropdown Selectors */
+    .select-box-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .select-box {
+      width: 100%;
+    }
+
+    .select-box label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--subtext);
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .select-box select {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background-color: var(--card);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-weight: 600;
+      outline: none;
+      box-shadow: var(--card-shadow);
+      cursor: pointer;
+    }
+
+    .select-box select:focus {
+      border-color: var(--flexi-green);
+    }
+
+    /* Search Box */
+    .search-box {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px 14px 46px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background-color: var(--card);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      box-shadow: var(--card-shadow);
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--flexi-green);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--subtext);
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 14px;
+    }
+
+    .course-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .course-card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 16px 20px;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.1s ease, border-color 0.2s;
+    }
+
+    .course-card:active {
+      transform: scale(0.98);
+    }
+
+    .course-card:hover {
+      border-color: var(--flexi-green);
+    }
+
+    .course-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    .arrow-icon {
+      color: var(--subtext);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .no-results {
+      text-align: center;
+      color: var(--subtext);
+      padding: 20px;
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flexi Header -->
+  <div class="header-wrapper">
+    <div class="header-content">
+      <h1>Flexi Educational Consult</h1>
+      <p id="facultyHeaderTitle">Degree (Universities) - Faculty Courses</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Back Button -->
+    <div class="nav-bar">
+      <a class="back-btn" href="index.html">&#8592;</a>
+      <div class="nav-title">Back to Main</div>
+    </div>
+
+    <!-- Institution & Faculty Selectors -->
+    <div class="select-box-group">
+      <!-- Institution Category Switcher -->
+      <div class="select-box">
+        <label for="institutionSelect">Select Institution Type</label>
+        <select id="institutionSelect">
+          <option value="Universities">Degree (Universities)</option>
+          <option value="Polytechnics">ND / HND (Polytechnics & Monotechnics)</option>
+          <option value="Colleges">NCE (Colleges of Education)</option>
+          <option value="IEIs">Innovation Enterprise Institutions (IEIs)</option>
+        </select>
+      </div>
+
+      <!-- Faculty Switcher -->
+      <div class="select-box">
+        <label for="facultySelect">Select Faculty / Category</label>
+        <select id="facultySelect">
+          <option value="Administration">Administration</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Engineering">Engineering, Environment & Technology</option>
+          <option value="Education">Education</option>
+          <option value="Law">Law</option>
+          <option value="Medical">Medical, Pharmaceutical & Health Services</option>
+          <option value="Sciences">Sciences</option>
+          <option value="SocialSciences">Social Sciences</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Real-time Search Filter -->
+    <div class="search-box">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search Course..." />
+    </div>
+
+    <div class="section-title">Select a Course:</div>
+    
+    <div class="course-list" id="courseListContainer"></div>
+    <div class="no-results" id="noResultsMsg">No courses found matching your search.</div>
+  </div>
+
+  <!-- Global Theme Script -->
+  <script src="idb.js"></script>
+<script src="theme.js"></script>
+
+  <script>
+    // Master Dataset for all 8 Faculties
+    const brochureData = {
+      "Administration": [
+        "Accounting", "Actuarial Science", "Banking and Finance", "Business Administration",
+        "Business Management", "Cooperative and Rural Development", "Entrepreneurship", "Finance",
+        "Human Resource Management", "Industrial Relations and Personnel Management", "Insurance",
+        "International Relations", "Local Government and Development Studies", "Management",
+        "Marketing", "Office and Information Management", "Public Administration",
+        "Purchasing and Supply", "Secretarial Administration", "Taxation", "Transport Management"
+      ],
+      "Agriculture": [
+        "Agricultural Economics", "Agricultural Economics and Extension", "Agricultural Extension",
+        "Agricultural Extension and Rural Development", "Agronomy", "Animal Science", "Crop Science",
+        "Crop Science and Horticulture", "Crop Protection", "Crop Protection and Environmental Biology",
+        "Soil Science", "Soil Resources Management", "Food Science and Technology", "Fisheries",
+        "Fisheries and Aquaculture", "Forestry", "Forestry and Wildlife Management",
+        "Forestry and Environmental Management", "Home Science and Management", "Horticulture",
+        "Water Resources and Agro-Meteorology", "Agricultural Engineering", "Agricultural Biochemistry",
+        "Agricultural Technology", "Plant Science", "Plant Breeding and Seed Science"
+      ],
+      "Engineering": [
+        "Agricultural Engineering", "Architecture", "Building", "Chemical Engineering",
+        "Civil Engineering", "Computer Engineering", "Electrical Engineering",
+        "Electrical and Electronics Engineering", "Electronics Engineering", "Environmental Management",
+        "Estate Management", "Geomatics", "Industrial and Production Engineering", "Industrial Design",
+        "Information and Communication Engineering", "Mechanical Engineering", "Mechatronics Engineering",
+        "Metallurgical and Materials Engineering", "Mining Engineering", "Petroleum Engineering",
+        "Polymer and Textile Engineering", "Quantity Surveying", "Surveying and Geoinformatics",
+        "Telecommunication Engineering", "Urban and Regional Planning", "Water Resources Engineering",
+        "Wood Products Engineering"
+      ],
+      "Education": [
+        "Adult Education", "Adult and Continuing Education", "Arts Education", "Business Education",
+        "Curriculum and Instruction", "Early Childhood Education", "Educational Administration",
+        "Educational Foundations", "Educational Management", "Educational Psychology",
+        "Educational Technology", "Guidance and Counselling", "Health Education", "Human Kinetics",
+        "Library and Information Science", "Primary Education Studies", "Science Education",
+        "Social Science Education", "Special Education", "Teacher Education", "Technical Education",
+        "Vocational Education", "Agricultural Education", "Biology Education", "Chemistry Education",
+        "Christian Religious Studies Education", "Computer Education", "Economics Education",
+        "English Education", "French Education", "Geography Education", "History Education",
+        "Integrated Science Education", "Islamic Studies Education", "Mathematics Education",
+        "Music Education", "Physical and Health Education", "Physics Education",
+        "Political Science Education", "Social Studies Education", "Yoruba Education", "Igbo Education",
+        "Hausa Education", "Fine and Applied Arts Education"
+      ],
+      "Law": [
+        "Common Law", "Civil Law", "Commercial and Industrial Law", "International Law and Jurisprudence",
+        "Private and Property Law", "Public Law", "Islamic Law", "Customary Law",
+        "Jurisprudence and International Law", "Business Law", "Constitutional Law", "Criminal Law", "Law"
+      ],
+      "Medical": [
+        "Anatomy", "Audiology", "Dentistry", "Dental Surgery", "Dental Technology", "Dental Therapy",
+        "Environmental Health Science", "Epidemiology", "Human Anatomy", "Human Nutrition and Dietetics",
+        "Medical Biochemistry", "Medical Laboratory Science", "Medical Rehabilitation",
+        "Medicine and Surgery", "Microbiology and Parasitology", "Nursing", "Nursing Science",
+        "Nutrition and Dietetics", "Occupational Therapy", "Optometry", "Pharmaceutical Chemistry",
+        "Pharmaceutical Technology", "Pharmacognosy", "Pharmacology", "Pharmacy", "Physiology",
+        "Physiotherapy", "Prosthetics and Orthotics", "Public Health", "Radiography",
+        "Radiography and Radiation Science", "Speech and Language Therapy", "Veterinary Anatomy",
+        "Veterinary Medicine", "Veterinary Physiology", "Veterinary Public Health", "Veterinary Surgery"
+      ],
+      "Sciences": [
+        "Actuarial Science", "Applied Biology", "Applied Biophysics", "Applied Geology",
+        "Applied Geophysics", "Biochemistry", "Biological Science", "Biology", "Biotechnology",
+        "Botany", "Cell Biology and Genetics", "Chemistry", "Computer Science", "Cyber Security",
+        "Data Science", "Ecology", "Environmental Biology", "Environmental Science", "Forensic Science",
+        "Geography", "Geology", "Geophysics", "Industrial Chemistry", "Industrial Mathematics",
+        "Industrial Physics", "Information Technology", "Marine Biology", "Mathematics",
+        "Microbiology", "Physics", "Plant Science", "Pure and Applied Biology",
+        "Pure and Applied Chemistry", "Pure and Applied Mathematics", "Statistics", "Zoology"
+      ],
+      "SocialSciences": [
+        "Anthropology", "Criminology and Security Studies", "Demography and Social Statistics",
+        "Economics", "Geography", "Geography and Environmental Management", "International Relations",
+        "Mass Communication", "Peace and Conflict Studies", "Political Science", "Psychology",
+        "Public Administration", "Sociology", "Sociology and Anthropology", "Social Work",
+        "Urban and Regional Planning", "Development Studies", "Intelligence and Security Studies",
+        "Population Studies", "Gender Studies"
+      ]
+    };
+
+    const institutionSelect = document.getElementById('institutionSelect');
+    const facultySelect = document.getElementById('facultySelect');
+    const courseListContainer = document.getElementById('courseListContainer');
+    const searchInput = document.getElementById('searchInput');
+    const facultyHeaderTitle = document.getElementById('facultyHeaderTitle');
+    const noResultsMsg = document.getElementById('noResultsMsg');
+
+    // Render courses based on selected institution and faculty
+    function renderCourses() {
+      const facultyKey = facultySelect.value;
+      const institutionKey = institutionSelect.value;
+      const courses = brochureData[facultyKey] || [];
+      
+      courseListContainer.innerHTML = '';
+      
+      // Update sub-header title text dynamically
+      const selectedInstitutionText = institutionSelect.options[institutionSelect.selectedIndex].text;
+      const selectedFacultyText = facultySelect.options[facultySelect.selectedIndex].text;
+      facultyHeaderTitle.textContent = `${selectedInstitutionText} - Faculty of ${selectedFacultyText}`;
+
+      courses.forEach(course => {
+        const a = document.createElement('a');
+        a.className = 'course-card';
+        a.href = `requirements.html?institution=${encodeURIComponent(institutionKey)}&faculty=${encodeURIComponent(facultyKey)}&course=${encodeURIComponent(course)}`;
+        
+        a.innerHTML = `
+          <span class="course-name">${course}</span>
+          <span class="arrow-icon">&#10095;</span>
+        `;
+        courseListContainer.appendChild(a);
+      });
+
+      // Re-apply search filter
+      filterCourses();
+    }
+
+    // Live search function
+    function filterCourses() {
+      const term = searchInput.value.toLowerCase().trim();
+      const cards = courseListContainer.getElementsByClassName('course-card');
+      let visibleCount = 0;
+
+      Array.from(cards).forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(term)) {
+          card.style.display = 'flex';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      noResultsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    // Read URL query parameters if present
+    const urlParams = new URLSearchParams(window.location.search);
+    const institutionParam = urlParams.get('institution');
+    const facultyParam = urlParams.get('faculty');
+
+    if (institutionParam) {
+      const matchingOption = Array.from(institutionSelect.options).find(opt => opt.value.toLowerCase() === institutionParam.toLowerCase());
+      if (matchingOption) institutionSelect.value = matchingOption.value;
+    }
+
+    if (facultyParam && brochureData[facultyParam]) {
+      facultySelect.value = facultyParam;
+    }
+
+    // Event Listeners
+    institutionSelect.addEventListener('change', renderCourses);
+    facultySelect.addEventListener('change', renderCourses);
+    searchInput.addEventListener('input', filterCourses);
+
+    // Initial Render
+    renderCourses();
+  </script>
+</body>
+</html>
