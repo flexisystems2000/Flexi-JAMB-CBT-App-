@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administration Courses | Flexi Educational Consult</title>
+  <style>
+    :root {
+      --bg-color: #f8f6f6;
+      --card-bg: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --border-color: #e5e7eb;
+      --flexi-navy: #0f172a;
+      --flexi-green: #10b981;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+    }
+
+    /* Full-width container for the header so it covers the whole top space */
+    .header-wrapper {
+      width: 100%;
+      background-color: var(--flexi-navy);
+      border-bottom: 5px solid var(--flexi-green);
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .header-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 28px 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .header-content h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .header-content p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px 24px 16px;
+    }
+
+    .nav-bar {
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: var(--text-main);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+
+    .nav-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px 14px 46px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--flexi-green);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .course-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .course-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      transition: transform 0.1s ease, border-color 0.2s;
+    }
+
+    .course-card:active {
+      transform: scale(0.98);
+    }
+
+    .course-card:hover {
+      border-color: var(--flexi-green);
+    }
+
+    .course-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .arrow-icon {
+      color: var(--text-muted);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flexi Navy Blue Header with Green Stripe covering full vertical space -->
+  <div class="header-wrapper">
+    <div class="header-content">
+      <h1>Flexi Educational Consult</h1>
+      <p>Faculty of Administration Courses</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Back Button to return to main faculties page -->
+    <div class="nav-bar">
+      <a class="back-btn" href="index.html">&#8592;</a>
+      <div class="nav-title">Back to Faculties</div>
+    </div>
+
+    <!-- Real-time Search Filter -->
+    <div class="search-box">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search Course..." />
+    </div>
+
+    <div class="section-title">Select a Course:</div>
+    
+    <div class="course-list" id="courseListContainer">
+      <a class="course-card" href="requirements.html?course=Accounting">
+        <span class="course-name">Accounting</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Actuarial%20Science">
+        <span class="course-name">Actuarial Science</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Banking%20and%20Finance">
+        <span class="course-name">Banking and Finance</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Business%20Administration">
+        <span class="course-name">Business Administration</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Business%20Management">
+        <span class="course-name">Business Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Cooperative%20and%20Rural%20Development">
+        <span class="course-name">Cooperative and Rural Development</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Entrepreneurship">
+        <span class="course-name">Entrepreneurship</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Finance">
+        <span class="course-name">Finance</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Human%20Resource%20Management">
+        <span class="course-name">Human Resource Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Industrial%20Relations%20and%20Personnel%20Management">
+        <span class="course-name">Industrial Relations and Personnel Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Insurance">
+        <span class="course-name">Insurance</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=International%20Relations">
+        <span class="course-name">International Relations</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Local%20Government%20and%20Development%20Studies">
+        <span class="course-name">Local Government and Development Studies</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Management">
+        <span class="course-name">Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Marketing">
+        <span class="course-name">Marketing</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Office%20and%20Information%20Management">
+        <span class="course-name">Office and Information Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Public%20Administration">
+        <span class="course-name">Public Administration</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Purchasing%20and%20Supply">
+        <span class="course-name">Purchasing and Supply</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Secretarial%20Administration">
+        <span class="course-name">Secretarial Administration</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Taxation">
+        <span class="course-name">Taxation</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="course-card" href="requirements.html?course=Transport%20Management">
+        <span class="course-name">Transport Management</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Search filter script to instantly filter courses as you type
+    const searchInput = document.getElementById('searchInput');
+    const courseListContainer = document.getElementById('courseListContainer');
+    const cards = courseListContainer.getElementsByClassName('course-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      Array.from(cards).forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(term)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

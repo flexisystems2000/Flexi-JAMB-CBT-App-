@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAMB Brochure | Flexi Educational Consult</title>
+  <style>
+    :root {
+      --bg-color: #f8f6f6;
+      --card-bg: #ffffff;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --border-color: #e5e7eb;
+      --flexi-navy: #0f172a;
+      --flexi-green: #10b981;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+    }
+
+    /* Full-width container for the header so it covers the whole top space */
+    .header-wrapper {
+      width: 100%;
+      background-color: var(--flexi-navy);
+      border-bottom: 5px solid var(--flexi-green);
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .header-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 28px 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .header-content h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      letter-spacing: 0.3px;
+    }
+
+    .header-content p {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 0 16px 24px 16px;
+    }
+
+    .search-box {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px 14px 46px;
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+      color: var(--text-main);
+      font-size: 0.95rem;
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--flexi-green);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .faculty-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faculty-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      border: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      transition: transform 0.1s ease, border-color 0.2s;
+    }
+
+    .faculty-card:active {
+      transform: scale(0.98);
+    }
+
+    .faculty-card:hover {
+      border-color: var(--flexi-green);
+    }
+
+    .faculty-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .arrow-icon {
+      color: var(--text-muted);
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Flexi Navy Blue Header with Green Stripe covering full vertical space -->
+  <div class="header-wrapper">
+    <div class="header-content">
+      <h1>Flexi Educational Consult</h1>
+      <p>Official JAMB Brochure & Faculties</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Real-time Search Filter -->
+    <div class="search-box">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search Faculty..." />
+    </div>
+
+    <div class="section-title">Select a Faculty:</div>
+    
+    <div class="faculty-list" id="facultyListContainer">
+      <a class="faculty-card" href="courses.html?faculty=Administration">
+        <span class="faculty-name">Administration</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Agriculture">
+        <span class="faculty-name">Agriculture</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Engineering,%20Environment%20and%20Technology">
+        <span class="faculty-name">Engineering, Environment and Technology</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Education">
+        <span class="faculty-name">Education</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Art%20and%20Humanities">
+        <span class="faculty-name">Art and Humanities</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Law">
+        <span class="faculty-name">Law</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Medical,%20Pharmaceutical%20and%20Health%20services">
+        <span class="faculty-name">Medical, Pharmaceutical and Health services</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Sciences">
+        <span class="faculty-name">Sciences</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+
+      <a class="faculty-card" href="courses.html?faculty=Social%20and%20Management%20Sciences">
+        <span class="faculty-name">Social and Management Sciences</span>
+        <span class="arrow-icon">&#10095;</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // Search filter script to instantly filter faculties as you type
+    const searchInput = document.getElementById('searchInput');
+    const facultyListContainer = document.getElementById('facultyListContainer');
+    const cards = facultyListContainer.getElementsByClassName('faculty-card');
+
+    searchInput.addEventListener('input', (e) => {
+      const term = e.target.value.toLowerCase();
+      Array.from(cards).forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(term)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
