@@ -1,0 +1,135 @@
+{
+  "subject": "Civic Education",
+  "preamble": "This syllabus aims at assessing the candidate's ability to understand the importance of citizenship in the society; explain the structure, functions, and responsibilities of government to the people; know emerging issues in the society; understand the rights, duties, and obligations of citizens to government and society; and appreciate democratic values and strive to uphold them.",
+  "aims": [
+    "understand the importance of citizenship in society;",
+    "explain the structure, functions, and responsibilities of government to the people;",
+    "know emerging issues in the society;",
+    "understand the rights, duties, and obligations of citizens to government and society;",
+    "appreciate democratic values and strive to uphold them."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Paper 1 and Paper 2; both of which will be in a composite paper and will be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "40",
+        "details": "A 1-hour multiple choice test consisting of fifty questions drawn from the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "60",
+        "details": "A 2-hour essay-type test consisting of three sections (Sections A, B, and C) with three questions each. Candidates must answer four questions, choosing at least one from each section."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "National Ethics, Discipline, Rights and Obligations",
+      "topics": [
+        {
+          "title": "1. Values",
+          "notes": "Definition, types, and importance of values to the society."
+        },
+        {
+          "title": "2. Citizenship and Nationalism",
+          "notes": "Meaning of citizenship and citizenship education; goals of citizenship education; duties and obligations of citizens; meaning of nationalism; ways of promoting national consciousness, integrity, and unity in society; nationalistic roles of individuals and groups; identification of local and world civic problems."
+        },
+        {
+          "title": "3. Human Rights",
+          "notes": "Meaning, categories, and characteristics of human rights; historical background and importance of the Universal Declaration of Human Rights (UDHR); seven core freedoms of UDHR; roles of individuals, groups, and government in promoting UDHR; limitations to human rights."
+        },
+        {
+          "title": "4. Law and Order",
+          "notes": "Definition, features, and importance of law and order in society; meaning, types, importance, and roles of constituted authority."
+        },
+        {
+          "title": "5. Responsible Parenthood",
+          "notes": "Meaning of responsible parenthood; roles of responsible parents; importance of responsible parenthood in national development."
+        },
+        {
+          "title": "6. Traffic Regulations",
+          "notes": "Meaning and importance of traffic regulations in society; roles of individuals and government in maintaining traffic regulations."
+        },
+        {
+          "title": "7. Inter-Personal and Inter-Communal Relationships",
+          "notes": "Meaning, types, and skills promoting inter-personal relationships; meaning, importance, and resolution skills for inter-communal relationships and conflicts."
+        }
+      ]
+    },
+    {
+      "section_name": "Emerging Issues in Society",
+      "topics": [
+        {
+          "title": "8. Cultism",
+          "notes": "Meaning, origin, causes, and consequences of cultism; prominent cult groups and their symbols in Nigeria; preventive measures against cultism in society."
+        },
+        {
+          "title": "9. Drugs and Drug Abuse",
+          "notes": "Meaning of drug abuse; commonly abused drugs and methods of abuse; symptoms and behaviors of drug addicts; prevention strategies; government agencies fighting drug trafficking/abuse (e.g., NDLEA) and relevant anti-drug laws."
+        },
+        {
+          "title": "10. Human Trafficking",
+          "notes": "Meaning, causes, effects, and consequences of human trafficking; government and individual efforts towards curbing human trafficking."
+        },
+        {
+          "title": "11. HIV/AIDS",
+          "notes": "Meaning, causes, symptoms, effects, and prevention of HIV/AIDS; addressing stigmatization of people living with HIV/AIDS."
+        },
+        {
+          "title": "12. Youth Empowerment",
+          "notes": "Meaning, importance, and benefits of youth empowerment; key empowerment skills; government programs and initiatives towards youth empowerment."
+        }
+      ]
+    },
+    {
+      "section_name": "Governmental System and Processes",
+      "topics": [
+        {
+          "title": "13. Structure and Functions of Government",
+          "notes": "Meaning, structure, tiers, and core functions of government."
+        },
+        {
+          "title": "14. Democracy, Rule of Law and National Development",
+          "notes": "Meaning, types, features, pillars, and problems of democracy; concept, features, importance, and challenges of the Rule of Law; role of democracy and Rule of Law in driving national development (good governance, employment creation, poverty alleviation)."
+        },
+        {
+          "title": "15. Political Apathy",
+          "notes": "Meaning, causes, and consequences of political apathy; reasons leaders fail to protect followers' interests and remedies; strategies for discouraging political apathy."
+        },
+        {
+          "title": "16. Civil Society and Popular Participation",
+          "notes": "Meaning, types, importance, and modes (traditional and modern) of popular participation; achieving political participation; meaning, functions, qualities (accountability, justice, equity), and challenges (corruption, donor influence) of civil society."
+        },
+        {
+          "title": "17. Public Service in Democracy",
+          "notes": "Meaning, functions, problems, and shortcomings of the public service; strategic measures for improving public service delivery."
+        }
+      ]
+    }
+  ],
+  "references": [
+    "L. Adamolekun — Politics and Administration in Nigeria (Spectrum Books Ltd)",
+    "A. Adebayo — Principles and Practice of Public Administration in Nigeria (Spectrum Books Ltd)",
+    "R. Anifowose & F. Enemuo (eds) — Elements of Politics (Sam Iroanusi Publications)",
+    "A. Appadorai — The Substance of Politics (Oxford University Press)",
+    "K. Banji — Citizenship Education (Dedun Educational Books)",
+    "Federal Government of Nigeria — 1999 Constitution of Federal Republic of Nigeria as Amended (Federal Government Press)",
+    "LEAP Africa — Rage for Change, a Guide for Young Nigerians who Desire to Make a Difference (LEAP Africa)",
+    "O. A. Meneke & L. Nwebo — Milestone Comprehensive Civic Education for Senior Secondary Schools, Books 1 & 2 (Milestone Publishers Limited)",
+    "O. O. Nwaubani — Citizenship Education and Nigerian Culture (T-Excel Publishers)",
+    "O. A. Ogunbamerun — Reading on Campus Secret Acts (O.A.U Press Ltd)",
+    "R. W. Okunloye, et al — Civic Education for Senior Secondary, Books 1, 2 & 3 (Learn Africa PLC)",
+    "L. Olurode & O. Soyombo (eds) — Readings in Campus Violence (John West Publications Ltd)",
+    "E. O. Oni, et al — Straight-Gate Civic Education for Senior Secondary Schools, Books 1 & 2 (Straight-Gate Publishers Ltd)",
+    "O. Oyediran, et al — Government For Senior Secondary Schools (Longman Nig Ltd)",
+    "O. Oyediran — Introduction to Political Science (Oyediran Consults International)",
+    "R. H. Tanya — HIV/AIDS: Hope in the Midst of Despair (Megarona Ltd)",
+    "M. N. Ukegbu, et al — Basic Civic Education for Senior Secondary Schools (Maybiks Nigeria Publisher)",
+    "United Nations Organization — Human Rights: The International Bill of Human Rights (UNO)"
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "subject": "Business Management",
+  "preamble": "The course in Business Management at the senior school level embraces principles and activities in the core functional areas of business management. It also covers the legal environment of business, information technology, globalization, economic integration, and entrepreneurship.",
+  "aims": [
+    "understanding and appreciation of the basic concepts, principles, and practices of business management;",
+    "understanding of the role of business management in an economy;",
+    "ability to relate the concepts and principles of business management to practical business situations;",
+    "ability to pursue further studies in business management."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Paper 1 and Paper 2; both of which will constitute a composite paper and will be taken at a single sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objectives",
+        "duration": "1 hour",
+        "marks": "30",
+        "details": "Fifty compulsory multiple-choice objective questions covering the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Case Study and Essay Questions",
+        "duration": "2 hours",
+        "marks": "70",
+        "details": "Consists of a compulsory case study question (200-250 words, 25 marks) and seven essay questions. Candidates must answer the compulsory case study and any three essay questions (15 marks each)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Nature and Functions of Management",
+      "topics": [
+        {
+          "title": "1. Meaning and Process of Management",
+          "notes": "Meaning of Management and administration; basic functions of management; levels of management; types and roles of managers; difference between administration and management."
+        },
+        {
+          "title": "2. Forms of Business Organization",
+          "notes": "Meaning of business organization; identification of major forms (Sole Proprietorship, Partnership, Limited Liability Company, Public Corporations, Co-operative Society); procedures for formation, characteristics, advantages, and disadvantages of each form; causes of business failure."
+        },
+        {
+          "title": "3. Business and Society",
+          "notes": "Meaning of business environment; forces in the business environment; ethical, legal, and social responsibilities of businesses; primary and secondary stakeholders (meaning and differences); responsibilities of businesses towards stakeholders."
+        },
+        {
+          "title": "4. Planning and Decision Making",
+          "notes": "Meaning and importance of planning; steps in planning, types of planning, limitations to planning; meaning and importance of decision making; steps in the decision-making process; types of decisions (programmed and non-programmed); levels of management decisions."
+        },
+        {
+          "title": "5. Organizing",
+          "notes": "Meaning, importance, and activities of organizing; principles of organizing, organizational structure, and organizational charts; centralization and decentralization (meaning, differences, advantages, and disadvantages); meaning and benefits of delegation; reasons why managers do not delegate; reasons why subordinates do not accept delegation; guidelines for delegation."
+        },
+        {
+          "title": "6. Directing",
+          "notes": "Meaning and elements of directing; motivation (meaning, intrinsic and extrinsic factors, Maslow's Hierarchy of Needs); leadership (importance of good leadership, leadership styles, and sources of power available to leaders); communication (meaning, importance, formal and informal channels, communication process, barriers to communication, and guidelines to effective communication)."
+        },
+        {
+          "title": "7. Controlling",
+          "notes": "Meaning and reasons for controlling; steps in controlling; tools for controlling."
+        }
+      ]
+    },
+    {
+      "section_name": "Management Information Technology & Legal Environment",
+      "topics": [
+        {
+          "title": "8. Information and Communications Technology (ICT) in Business",
+          "notes": "Concept of Information and Communications Technology (ICT); meaning, differences, and sources of business data and information; functions and applications of computers in business; advantages and challenges of using computers in business."
+        },
+        {
+          "title": "9. Law of Contract",
+          "notes": "Meaning and elements of a contract; classification of contracts; vitiating factors (void and voidable contracts); ways of discharging a contract."
+        },
+        {
+          "title": "10. Principles of Agency",
+          "notes": "Creation of agency; rights and duties of a principal; rights and duties of an agent; termination of agency."
+        },
+        {
+          "title": "11. Negotiable Instruments",
+          "notes": "Meaning and characteristics of negotiable instruments; types of negotiable instruments (cheques, bills of exchange, promissory notes); cheques (class, types, advantages, disadvantages, and ways of avoiding cheque frauds)."
+        }
+      ]
+    },
+    {
+      "section_name": "Finance, Government & International Business",
+      "topics": [
+        {
+          "title": "12. Money and Banking",
+          "notes": "Meaning, characteristics, and functions of money; meaning and causes of inflation; types of banks; functions of the Central Bank; functions of commercial and other types of banks; types of bank accounts; tools of monetary control."
+        },
+        {
+          "title": "13. Risk Management, Insurance & Stock Exchange",
+          "notes": "Meaning of risk and risk management; types of business risks; meaning, importance, and principles of insurance; types of insurance and insurance policies; meaning, functions, and types of securities on the Stock Exchange."
+        },
+        {
+          "title": "14. Role of Government in the Economy",
+          "notes": "Role of government in an economy; sources and types of government revenue; purpose of taxation, types of taxes, and challenges of tax collection; types and items of government expenditure."
+        },
+        {
+          "title": "15. International Trade and Developing Economies",
+          "notes": "Meaning of trade; differences between domestic and international trade; documents used in domestic and international trade; reasons for international trade; theories of absolute cost and comparative cost advantage; restrictions in international trade; Balance of Payments (BOP) and measures for correcting BOP deficits; challenges of developing economies in relation to international trade; ways government can improve developing economies; role of international bodies (IMF, IBRD, UNCTAD)."
+        },
+        {
+          "title": "16. Globalization and Economic Integration",
+          "notes": "Meaning, causes, advantages, and disadvantages of globalization; meaning of economic integration; roles of regional bodies in economic integration (ECOWAS, AU, EU, ACP, ASEAN)."
+        }
+      ]
+    },
+    {
+      "section_name": "Functional Management & Entrepreneurship",
+      "topics": [
+        {
+          "title": "17. Human Resource Management and Labour Relations",
+          "notes": "Meaning and functions of human resource management; steps in recruitment and selection; sources of recruitment; types of training; job analysis (job description and job specification); performance appraisal (meaning and importance); meaning of labour relations, trade unions, and industrial relations; functions of trade unions; meaning and functions of employers' associations; collective bargaining process, importance, and rights of parties."
+        },
+        {
+          "title": "18. Fundamentals of Production Management",
+          "notes": "Meaning of production and production management; forms of production (extractive, manufacturing, construction, commercial, and personal services); factors of production; meaning, advantages, and disadvantages of specialization and exchange; types of production processes (job, batch, flow); steps in production planning and control."
+        },
+        {
+          "title": "19. Principles of Marketing & e-Commerce",
+          "notes": "Meaning and activities of marketing; market segmentation (meaning and bases); elements of the marketing mix (product, price, promotion, place); steps in new product development; stages of the product life cycle (introduction, growth, maturity, decline); functions of packaging and uses of branding; pricing factors and objectives; promotion (meaning, importance, types); channels of distribution; functions of wholesalers and retailers; e-commerce meaning and importance."
+        },
+        {
+          "title": "20. Business Finance",
+          "notes": "Meaning of business finance; short-term and long-term sources of finance; government lending programmes; venture capital funds."
+        },
+        {
+          "title": "21. Entrepreneurship and Small Business",
+          "notes": "Meaning, role, and characteristics of an entrepreneur; content of a business plan; reasons for business success and failure; record keeping (meaning, importance, types); time management (meaning, importance, techniques); small businesses (meaning, categories, formation procedures, economic importance, challenges, and government support); ways of sustaining an established business."
+        }
+      ]
+    }
+  ],
+  "references": [
+    "Ansah, J.K. — Introduction to Business Management (Wilas Press Ltd)",
+    "Attieku, B., Marfo-Yiadom, E., Dorkey, T., and Tekyi, K. — Business Management (Smartline Limited)",
+    "Boachie-Mensah, F.O. — Essentials of Management (Woeli Publishing Services)",
+    "Browne, D., Barass, M.W., Dransfield, R., and Needham, D. — Business Studies for AS Level (Heinemann Education Publishers)",
+    "Buckley, M., Brindley, B., and Greenwood, M.S. — Business Studies (Longman Group)",
+    "Callaghan, P. (ed) — Advanced Level Business Studies (Sunderhid Tyre and Wear)",
+    "Carysforth, C. and Neild, M. — Intermediate Business (Heinemann Education Publishers)",
+    "Danks, S. — Advanced Business Studies (DP Publications)",
+    "Du Toit, G.S., Erasmus, B.G., and Strydom, J.W. — Introduction to Business Management (Oxford University Press South Africa)",
+    "Fardon, M. (ed) — Business Studies (Osborne Books Limited)",
+    "Needham, D. and Dransfield, R. — Business Studies (Stanley Thornes)",
+    "Needle, D. — Business in Context (International Thomson Business Press)",
+    "Nickels, W.G., McHugh, J.M., and McHugh, S.M. — Understanding Business (Irwin McGraw-Hill)",
+    "Marfo-Yiadom, E. — Introduction to Business (Excellent Printing & Publishing)",
+    "Redmond, P.W.D. — Mercantile Law (Pitman Publishing Ltd)"
+  ]
+}

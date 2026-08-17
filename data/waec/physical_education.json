@@ -1,0 +1,103 @@
+{
+  "subject": "Physical Education (WASSCE)",
+  "document_title": "West African Senior School Certificate Examination Physical Education Syllabus",
+  "objectives": [
+    "Understanding of movement activities and the relationships between movement and concepts from biological, physical and social sciences",
+    "Skills needed in basic motor activities, fitness, maintenance and self awareness",
+    "An appreciation of the role of movement and physical activity in human development",
+    "The understanding of physical activity and exercise as tools for health and wellness promotion"
+  ],
+  "examination_scheme": {
+    "paper_1": {
+      "duration": "50 minutes",
+      "marks": "50 marks",
+      "description": "Fifty multiple-choice questions"
+    },
+    "paper_2": {
+      "duration": "1 hour 20 minutes",
+      "marks": "50 marks total",
+      "sections": [
+        "Section A: Athletics, balls and racket games (3 short essay questions, answer 2 for 20 marks)",
+        "Section B: Foundation of physical education (2 short essay questions, answer 1 for 10 marks)",
+        "Section C: Basic human anatomy and physiology in physical education (2 short essay questions, answer 1 for 10 marks)",
+        "Section D: Sports administration and competitions (2 short essay questions, answer 1 for 10 marks)"
+      ]
+    },
+    "paper_3": {
+      "practical_call_response_time": "Maximum 120 seconds (2 minutes)",
+      "sections": [
+        "Section A: Athletics (Track and Field events) - 3 questions, answer 2 (25 marks each)",
+        "Section B: Ball games - 2 questions, answer 1 (20 marks)",
+        "Section C: Racket games - 2 questions, answer 1 (20 marks)",
+        "Section D: Gymnastics - 2 questions, answer 1 (10 marks)"
+      ]
+    }
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "A. Principles and Philosophy of Physical Education",
+      "contents": [
+        "Philosophy of Physical Education (Principles and philosophies of founding fathers like Hetherington, Dudley Sergent, Thomas Wood, and John Dewey; changes in concept; education of the physical vs. education through the physical)",
+        "Physical education ideologies (Nationalism, patriotism, and national ideologies in physical education and sport)",
+        "Recreation (Definition, importance, types of indoor/outdoor activities, differences between recreational activities and lifetime sports)",
+        "Intramural and Extramural activities And tournament (Definitions, benefits, types of tournaments, advantages/disadvantages)",
+        "Traditional sports in West Africa (Origin, types, and values in different West African countries)",
+        "Greek Festivals and The Olympic Games (Ancient Greek festivals/Olympian games, Sparta and Athens, origin and importance of modern Olympic Games)"
+      ]
+    },
+    {
+      "section_name": "B. National and International Sports Competitions",
+      "contents": [
+        "Sports Championship at national level (National championships by sports associations/federations, corporate organizations, and the national sports festival)",
+        "Institutional sports (Universities games, polytechnic games, colleges of education games, national school sports federation)",
+        "The All African Games (History, reasons for timing disparity, Supreme Council of Sports in Africa / SCSA)",
+        "International Competitions (FIFA World Cup, Olympic/Paralympic Games, Commonwealth Games, All Africa Games, World Athletics Championship, World Swimming Championship)"
+      ]
+    },
+    {
+      "section_name": "C. Basic Human Anatomy and Physiology in Relation to Physical Activities",
+      "contents": [
+        "Skeletal System (Main parts, functions of the human skeleton, bones and joints involved in movement)",
+        "Nervous System (Brain, spinal cord, nerves, simple reflex action)",
+        "Circulatory System (Heart muscle, effects of exercise on the heart, blood circulation, function of blood, types of circulation)",
+        "Respiratory System (Trachea, lungs, nose, functions, types of respiration, aerobic and anaerobic sports)",
+        "Skeletal muscles (Major muscles, types of muscle contraction, muscle cramp causes/prevention/first aid)",
+        "Somatotype (Description of body types, relationship between body type and physical activities/sports)",
+        "Posture (Correct posture, postural defects such as kyphosis, scoliosis, lordosis, flat foot, corrective measures)"
+      ]
+    },
+    {
+      "section_name": "D. Practice of Athletics, Games and Dance",
+      "contents": [
+        "Athletics - Track Events (Sprints 50m-400m, hurdles, relay races with visual/non-visual baton take-over, middle/long distance, marathon, rules, officiating)",
+        "Athletics - Field Events (Throwing events like discus, javelin, shot put; jumps like high jump, long jump, triple jump, pole vault; equipment, techniques, rules, safety)",
+        "Games - Ball Games (Football, basketball, volleyball, hockey, handball, rules, regulations, officiating, skills)",
+        "Racket Games (Tennis, table tennis, badminton, court specifications, equipment, skills, rules, officiating)",
+        "Traditional Dances (Dances from regional countries, costumes, types of traditional dance and steps)"
+      ]
+    },
+    {
+      "section_name": "E. Physical Fitness and Conditioning",
+      "contents": [
+        "Physical fitness (Definition, health-related and performance/skill-related components, benefits of physical activity and exercise)",
+        "Health and Personal hygiene (Importance of health in PE, care of the body, appropriate sportswear selection and effects)"
+      ]
+    },
+    {
+      "section_name": "F. Nutrition, Drug and Sports",
+      "contents": [
+        "Nutrition (Classes of food nutrients, balanced diet, dietary considerations in sports like pre-game nutrition and role of carbohydrates)",
+        "Drug in sports (Meaning, types of drugs such as stimulants, narcotics, hallucinogens, sedatives, ergogenic aids, misuse and effects on performance)",
+        "Sports injuries (Common injuries like dislocation, sprain, strain, fracture, bruise, cramp; first aid and first aid box contents)",
+        "Corrective and adapted physical education programme (Definitions, categories of special needs, corrective exercises, artificial respiration, safety precautions)"
+      ]
+    },
+    {
+      "section_name": "G. Sports Administration",
+      "contents": [
+        "Administrative structure and functions of sports at national, regional/state, and local government levels (organograms)",
+        "Administrative structure and functions of sports at institutional level (organograms)"
+      ]
+    }
+  ]
+}

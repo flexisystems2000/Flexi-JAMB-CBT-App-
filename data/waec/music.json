@@ -1,0 +1,107 @@
+{
+  "subject": "Music",
+  "preamble": "Music permeates the way of life across all cultures, serving entertainment, cultural, artistic, therapeutic, and commercial purposes. The Music syllabus evaluates candidates' basic elements of music through reading, writing, listening, aural recognition, performance, and composition, while fostering appreciation for historical, socio-economic, and artistic developments in African, Diaspora, and Western musical traditions.",
+  "aims": [
+    "Explore basic elements of music through reading, writing, listening, aural recognition, improvisation, and composition;",
+    "Develop performance skills and artistic confidence as a soloist on voice or a chosen instrument;",
+    "Appreciate the historical, social, and economic factors influencing music development across West Africa and the world;",
+    "Compose short vocal and instrumental musical pieces and explore basic computer software applications in music."
+  ],
+  "requirements": [
+    "Candidates must take all three papers: Paper 1 (Objective), Paper 2 (Essay/Theory/Analysis), and Paper 3 (Aural and Performance Tests).",
+    "For Paper 3B (Performance Test), candidates are required to perform on one chosen instrument among Voice, Violin, Pianoforte/Electronic Keyboard, Flute, Atenteben, Recorder, B-flat Trumpet, or E-flat Alto Saxophone."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of three compulsory papers assessing objective recall, theory, melody composition, set-work analysis, recorded aural dictation, and practical solo instrument performance.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "40",
+        "details": "Consists of forty compulsory multiple-choice objective questions drawn from the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay, Theory & Analysis",
+        "duration": "2 hours",
+        "marks": "60",
+        "details": "Consists of five essay-type questions out of which candidates answer three. Question 1 (Theory/Composition: Melody Writing, Harmony, and Counterpoint) and Question 2 (Analysis of prescribed set-works) are compulsory."
+      },
+      {
+        "paper": "Paper 3A",
+        "title": "Aural Test",
+        "duration": "45 minutes",
+        "marks": "50",
+        "details": "A compulsory listening test administered via audio recording (CD/media) comprising seven dictation and identification tests."
+      },
+      {
+        "paper": "Paper 3B",
+        "title": "Performance Test",
+        "duration": "30 minutes",
+        "marks": "50",
+        "details": "Practical examination assessing solo performance on a chosen instrument or voice."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Theory and Composition",
+      "topics": [
+        {
+          "title": "1. Rudiments of Music",
+          "notes": "Notation (Staff, Clefs: C, G, F), Scales (Diatonic Major/Minor, Chromatic), Modes (Pentatonic, Hexatonic, Heptatonic), Keys and Key Signatures, Time Signatures (Simple and Compound), Intervals, Transcription, Transposition, Musical terms, signs, ornaments, and abbreviations."
+        },
+        {
+          "title": "2. Elementary Harmony",
+          "notes": "Chords and Triads (Primary, Secondary, Chord vii, 7th Chords), Chord Progressions (Cadences), harmonizing melodies using primary/secondary triads, six-four chords, non-harmonic tones, Modulations, Four-part harmony (SATB), and Two-part free Counterpoint."
+        },
+        {
+          "title": "3. Composition",
+          "notes": "Melodic continuation: extending a given phrase in a major or minor key to form a 12 to 16 bar melody. Vocal composition: setting a given English text to music."
+        },
+        {
+          "title": "4. Form and Analysis",
+          "notes": "Simple forms, extended forms, structural forms in traditional African music and contemporary African art music, and analysis of designated prescribed set-works."
+        }
+      ]
+    },
+    {
+      "section_name": "Aural Tests",
+      "topics": [
+        {
+          "title": "1. Audio Aural Tests",
+          "notes": "Administered via recorded audio (CD/media). Covers seven practical listening modules: (1) Rhythmic Dictation, (2) Melody Writing, (3) Writing Upper or Lower part of a Two-Part Phrase, (4) Chord Identification, (5) Cadence Identification, (6) Modulation Recognition, and (7) Identification/Description of Musical Themes."
+        }
+      ]
+    },
+    {
+      "section_name": "Traditional & Contemporary African Music",
+      "topics": [
+        {
+          "title": "1. Role and Characteristics of African Music",
+          "notes": "Role of music in traditional African society and ceremonies. Musical characteristics: Scales/Modes, Rhythm, Polyphony, Form, Vocal styles, Texture, and Instrumentation. Interrelationship of music with dance, drama, and festivals."
+        },
+        {
+          "title": "2. Musical Instruments and Genres",
+          "notes": "Classification, descriptions, musical and non-musical functions of African instruments. Vocal genres: Dirges, Lullabies, Ritual, Folk, Satirical, and other traditional vocal types. Study of selected traditional dance types from Ghana and Nigeria."
+        }
+      ]
+    },
+    {
+      "section_name": "History and Literature of Music",
+      "topics": [
+        {
+          "title": "1. African and Diaspora Musicians",
+          "notes": "Biographies, contributions, and styles of Traditional, Popular (Highlife, Afrobeat, Juju, Fuji, Waka, Afro-Pop, Afro-Reggae, Hip-Hop), and Contemporary Art musicians from Nigeria and Ghana. Study of Black music in the Diaspora: Spirituals, Jazz, Blues, Rock, Gospel, Soul, Calypso, Reggae, and Afrobeat."
+        },
+        {
+          "title": "2. Western Art Music History",
+          "notes": "Overview of Western composers, stylistic characteristics, forms, and major historical periods: Medieval, Renaissance, Baroque, Classical, Romantic, and 20th Century."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": []
+}

@@ -1,0 +1,113 @@
+{
+  "subject": "Commerce",
+  "preamble": "There will be two papers, Paper 1 and Paper 2, both of which will constitute a composite paper to be taken at one sitting.",
+  "aims": [
+    "assess candidates' understanding of the fundamental concepts, scope, and functions of commerce and e-commerce;",
+    "evaluate candidates' knowledge of occupations, production processes, and forms of business units;",
+    "test candidates' understanding of commercial capital, profits, trade associations, and channels of distribution;",
+    "assess candidates' familiarity with home and foreign trade procedures, documentation, and international economic groupings;",
+    "evaluate candidates' knowledge of financial systems, marketing concepts, legal aspects of business, and business management."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Paper 1 and Paper 2, both of which will constitute a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "50 minutes",
+        "marks": "50",
+        "details": "A 50-minute test consisting of fifty multiple choice questions drawn from the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "A 2-hour essay-type test consisting of eight questions. Candidates will be required to answer any five questions."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Basic Concepts and Business Units",
+      "topics": [
+        {
+          "title": "1. Introduction to Commerce",
+          "notes": "Definition, scope, functions, and historical background of Commerce and E-Commerce."
+        },
+        {
+          "title": "2. Occupation",
+          "notes": "Meaning and types (Industrial, Commercial, Service); factors determining choice of occupation and career opportunities."
+        },
+        {
+          "title": "3. Production",
+          "notes": "Meaning, factors (Land, Labour, Capital, Entrepreneurship), and types (Primary, Secondary, Tertiary); division of labour/specialization (types, advantages, disadvantages, limitations); inter-relationship between production and exchange."
+        },
+        {
+          "title": "4. Business Units",
+          "notes": "Meaning and objectives of business; forms (Sole Proprietorship, Partnership, Co-operative Societies, Credit Union & Thrift Societies, Public Enterprises, Companies); characteristics, formation, capital sources, advantages, and disadvantages; amalgamations, mergers, acquisitions, trusts, holding companies, cartels, and consortiums; dissolution/liquidation procedures."
+        },
+        {
+          "title": "5. Trade Associations",
+          "notes": "Aims and functions of Trade Associations, Chambers of Commerce, Employers' Associations, and Consumer Associations/Consumerism."
+        },
+        {
+          "title": "6. Business Capital and Profits",
+          "notes": "Meaning and types of capital (Authorized, Called-up, Paid-up, Liquid, Capital Owned); credit sources, instruments, and functions; calculation and importance of working capital, profits (gross and net), and turnover."
+        }
+      ]
+    },
+    {
+      "section_name": "Trade, Documentation and Financial Systems",
+      "topics": [
+        {
+          "title": "7. Home and Foreign Trade",
+          "notes": "Purpose and branches of trade; Home trade (retail and wholesale types, functions, trends, elimination/survival of middlemen, channels of distribution); Foreign trade (types, basic concepts like terms of trade and balance of payments, barriers, tariffs, functions of port/customs authorities and export promotion councils)."
+        },
+        {
+          "title": "8. Purchase and Sale of Goods",
+          "notes": "Procedures and documentation (Indent, Invoices, Credit/Debit notes, Letters of hypothecation, Certificates of origin/inspection); price quotations (discounts, COD, CWO, CIF, FOB, Ex-works, E&OE); terms and means of payment (legal tender, cheques, standing orders, bills of exchange, electronic payments)."
+        },
+        {
+          "title": "9. Finance and Financial Institutions",
+          "notes": "Money (evolution, forms, functions); Banking (Central Bank, Commercial Banks, E-banking, accounts, Bureau-de-Change); Insurance (principles, life/non-life, insurable/uninsurable risks, underwriting, reinsurance); Capital and Stock Markets (raising funds, shares, stocks, bonds, speculators, second-tier securities market); Commodity Exchanges (requirements, trading methods, benefits)."
+        }
+      ]
+    },
+    {
+      "section_name": "Commercial Services and Management",
+      "topics": [
+        {
+          "title": "10. Transport, Tourism, Communication and Warehousing",
+          "notes": "Transport (importance, forms, choices, documentation like waybills and manifests); Tourism (advantages and disadvantages); Communication (types, post office, courier, e-mail/internet, computer appreciation); Warehousing (importance, functions, types, advantages)."
+        },
+        {
+          "title": "11. Advertising",
+          "notes": "Meaning, roles, types (informative, persuasive, competitive), methods (direct/indirect), and media selection."
+        },
+        {
+          "title": "12. Marketing and Customer Service",
+          "notes": "Meaning, importance, and functions of marketing; marketing mix (4Ps); customer services (pre and after-sales); sales promotion methods (trade fairs, exhibitions, personal selling)."
+        },
+        {
+          "title": "13. Legal Aspects of Business and Consumer Protection",
+          "notes": "Elements of contract and agency; Sale of Goods Act and Hire Purchase Act; employer/employee obligations; business registration, patents, trademarks, copyrights; consumer protection (need, means, government legislation like Food and Drugs Act, SON, Price Control)."
+        },
+        {
+          "title": "14. Government Policies and Business Management",
+          "notes": "Commercialization, privatization, and deregulation; business management objectives, resources (man, money, materials, goodwill), organizational structure (charts, delegation, span of control), business environment, social responsibility, and internal communication."
+        },
+        {
+          "title": "15. International Economic Groupings",
+          "notes": "History, membership, objectives, achievements, and challenges of ECOWAS, Niger Basin Commission, Lake Chad Basin Commission, Mano River Union, European Union, and West African Clearing House."
+        }
+      ]
+    }
+  ],
+  "references": [
+    "M. O. Odedokun, P. C. Udokogu & C. O. N. Oguji — Senior Secondary Commerce, Books 1, 2 & 3",
+    "E. McCarthy Jerome & Jr. William Perreault — Basic Marketing",
+    "G. B. Giles — Marketing (The M & E Handbook Series)",
+    "Prof. Achumba — Consumer Behaviour (University of Lagos)"
+  ]
+}

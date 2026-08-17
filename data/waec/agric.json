@@ -1,0 +1,643 @@
+{
+  "subject": "Agricultural Science",
+  "preamble": "This syllabus has been designed to portray Agricultural Science as an applied science with emphasis on the acquisition of knowledge and skills associated with the content. A general review of the Junior Secondary School Agricultural Science syllabus is presumed. Candidates will be expected to answer questions on all the topics set out in the column headed syllabus. The notes therein are intended to indicate the scope of the questions which will be set, but they are not to be considered as an exhaustive list of limitations and illustration. Every school offering Agricultural Science must establish a farm where crops are grown, keep at least one species of ruminant and one non-ruminant, and establish a fish pond where feasible.",
+  "objectives": [
+    "Stimulate and sustain students' interest in agriculture.",
+    "Enable students acquire functional knowledge and practical skills to prepare them for further studies and occupation in agriculture."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers: Papers 1, 2 and 3 all of which must be taken. Papers 1 and 2 will be a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objectives",
+        "duration": "50 minutes",
+        "marks": "50 marks",
+        "details": "Will consist of fifty multiple choice questions to be answered within 50 minutes for 50 marks."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Questions",
+        "duration": "2 hours 10 minutes",
+        "marks": "90 marks",
+        "details": "Will consist of six essay questions with each drawn from at least two themes in the syllabus. Candidates will be required to answer five of the questions within 2 hours 10 minutes for 90 marks."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test / Alternative to Practical",
+        "duration": "1 hour 30 minutes",
+        "marks": "60 marks",
+        "details": "Will be a practical paper for school candidates and alternative to practical paper for private candidates. It will consist of four questions, all of which should be answered within 1 hour 30 minutes for 60 marks."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "A. BASIC CONCEPTS",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Meaning and importance of agriculture",
+          "details": [
+            "Definition and branches of agricultural science.",
+            "Importance of agriculture to the individual, community and nation."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Problems of agricultural development and possible solutions",
+          "details": [
+            "Problems related to land tenure, basic amenities, finance, transportation, storage and processing facilities, agricultural education and extension, tools and machinery, farm inputs, marketing system, and environmental degradation.",
+            "Assessment includes incidence of pests and diseases, vagaries of weather, labour, and government policy.",
+            "Possible solutions to identified problems."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Meaning and differences between subsistence and commercial agriculture",
+          "details": [
+            "Meaning of subsistence and commercial agriculture.",
+            "Differences between subsistence and commercial agriculture based on their characteristics.",
+            "Advantages and disadvantages of subsistence and commercial agriculture.",
+            "Problems of subsistence and commercial agriculture."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Roles of government in agricultural development",
+          "details": [
+            "Agricultural finance: credit and subsidy.",
+            "Agricultural education.",
+            "Agricultural extension services.",
+            "Agricultural policies and programmes (e.g., OFN, ADP, Farm Settlement, ASRP, NACS)."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Role of non-governmental organizations in agricultural development",
+          "details": [
+            "Meaning of non-governmental organizations (NGOs).",
+            "Roles of NGOs in agricultural development (e.g., WARDA, IITA, ILCA, ICRISAT)."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "Agricultural laws and reforms",
+          "details": [
+            "Land tenure systems in West Africa.",
+            "Government laws on land use in West Africa.",
+            "Advantages and disadvantages of the Land Use Act (Decree) and land reforms in West Africa."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "B. AGRICULTURAL ECOLOGY",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Meaning and importance of agricultural ecology",
+          "details": [
+            "Meaning of agricultural ecology and ecosystem.",
+            "Components of farm ecosystem e.g., biotic and abiotic.",
+            "Interactions of components in terrestrial and aquatic agro-ecosystems (mono/sole cropping, mixed cropping, mixed farming, fish ponds, forestry)."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Land and its uses",
+          "details": [
+            "Meaning and characteristics of land (free gift of nature, immobile, limited in supply).",
+            "Agricultural uses: crop production, wildlife conservation, livestock, aquaculture, forestry, apiculture.",
+            "Non-agricultural uses: industry, housing, transport, health centres, religious sites, mining, recreational centres, schools, markets."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Factors affecting land availability for agricultural purpose",
+          "details": [
+            "Physical factors: soil type, topography, land degradation, soil pollution.",
+            "Economic factors: population pressure, industrial expansion, mining, tourism.",
+            "Socio-cultural factors: land tenure system, religious purposes."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Agro-allied industries and relationship between agriculture and industry",
+          "details": [
+            "Agro-based industries and raw materials (paper, beverage, textile, soap, leather, canning).",
+            "Relationship between agriculture and industries: provision of raw materials, market for industrial goods, food for workers."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Environmental factors affecting crop and animal distribution and production",
+          "details": [
+            "Climatic factors: rainfall, temperature, light, wind, relative humidity.",
+            "Biotic factors: predators, parasites, soil micro-organisms, pests, pathogens, weeds; interrelationships (competition, parasitism, mutualism).",
+            "Edaphic factors: soil pH, soil texture, soil structure, soil type."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "Rock formation",
+          "details": [
+            "Types of rock: igneous, sedimentary, metamorphic.",
+            "Processes of rock formation."
+          ]
+        },
+        {
+          "topic_number": 7,
+          "title": "Soil formation and profile development",
+          "details": [
+            "Factors of soil formation: parent rock, organisms, climate, topography, time.",
+            "Processes of soil formation: physical and chemical weathering.",
+            "Soil profile development: identification, description, and importance of soil horizons."
+          ]
+        },
+        {
+          "topic_number": 8,
+          "title": "Types, composition and properties of soil",
+          "details": [
+            "Types of soil and separation into sand, silt, and clay fractions.",
+            "Chemical and biological composition: soil macro and micro nutrients, soil water, macro-organisms, microbes, soil air.",
+            "Soil pH: determination, causes, and correction of acidity/alkalinity.",
+            "Physical properties: texture, structure, water holding capacity, porosity, capillarity, consistency."
+          ]
+        },
+        {
+          "topic_number": 9,
+          "title": "Plant nutrients and nutrient cycle",
+          "details": [
+            "Macro-nutrients (N, P, K, Ca, Mg, S) and Micro-nutrients (Zn, Fe, Mo, Co, Bo, Cu): functions and deficiency symptoms.",
+            "Factors affecting nutrient availability (pH, leaching, crop removal, burning).",
+            "Methods of replenishing nutrients: crop rotation, manuring, fertilizer application, fallowing, liming, cover-cropping.",
+            "Nutrient cycles: Nitrogen, Carbon, Water, Phosphorus.",
+            "Organic agriculture: meaning and importance."
+          ]
+        },
+        {
+          "topic_number": 10,
+          "title": "Irrigation",
+          "details": [
+            "Meaning and importance of irrigation systems.",
+            "Types: overhead (sprinkler), surface (flooding, furrow, basin, border), underground (perforated pipes, drip).",
+            "Advantages, disadvantages, and problems associated with irrigation."
+          ]
+        },
+        {
+          "topic_number": 11,
+          "title": "Drainage",
+          "details": [
+            "Meaning and importance of drainage.",
+            "Types of drainage systems: surface (channel, furrow) and subsurface/underground.",
+            "Advantages and disadvantages of drainage systems."
+          ]
+        },
+        {
+          "topic_number": 12,
+          "title": "Agricultural pollution",
+          "details": [
+            "Meaning and causes: excessive agro-chemicals, oil spillage, livestock waste disposal.",
+            "Effects on farmers and agricultural productivity.",
+            "Ways of minimizing land and pond pollution."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "C. AGRICULTURAL ENGINEERING/MECHANIZATION",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Simple farm tools",
+          "details": [
+            "Meaning, types (cutlass, hoe, spade, shovel), identification, uses, and general maintenance."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Farm machinery and implements",
+          "details": [
+            "Farm machinery: tractor, bulldozer, shellers, dryers, incubators, milking machines, combine harvester.",
+            "Tractor-coupled implements: ploughs, harrows, ridgers, planters, harvesters, sprayers.",
+            "Meaning, functions, and identification of parts."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Maintenance practices and precautionary measures",
+          "details": [
+            "Reasons for maintenance and routine servicing practices.",
+            "Precautionary measures in the use of farm machinery."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Agricultural mechanization",
+          "details": [
+            "Meaning and mechanized operations (ploughing, harrowing, planting, harvesting, milking).",
+            "Advantages, disadvantages, and limitations of mechanization."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Prospects of agricultural mechanization",
+          "details": [
+            "Ways of improving mechanization: developing affordable machinery and establishing agricultural engineering schools."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "Farm power",
+          "details": [
+            "Sources of farm power.",
+            "Advantages and disadvantages of different farm power sources."
+          ]
+        },
+        {
+          "topic_number": 7,
+          "title": "Farm surveying",
+          "details": [
+            "Meaning, importance, common survey equipment, uses, and maintenance."
+          ]
+        },
+        {
+          "topic_number": 8,
+          "title": "Farm planning",
+          "details": [
+            "Meaning, factors to consider, and importance of farm planning."
+          ]
+        },
+        {
+          "topic_number": 9,
+          "title": "Principles of farmstead planning",
+          "details": [
+            "Meaning of farmstead, site selection, location of structures, and sketching layout."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "D. CROP PRODUCTION",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Classification of crops",
+          "details": [
+            "Classification based on uses (cereals, pulses, roots/tubers, vegetables).",
+            "Classification based on life cycle (annual, biennial, perennial, ephemeral).",
+            "Classification based on morphology (monocotyledonous, dicotyledonous)."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Husbandry of selected crops",
+          "details": [
+            "Husbandry practices for representative crops: Cereals, Pulses, Roots and tubers, Vegetables, Fruits, Beverages, Spices, Oils, Fibres, Latex, and Sugar cane.",
+            "Aspects covered: botanical/common names, climatic/soil requirements, propagation, spacing, fertilizer application, pest/disease control, harvesting, and storage."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Pasture and forage crops",
+          "details": [
+            "Meaning, uses, types of pasture, and common grasses/legumes.",
+            "Factors affecting productivity, establishment, and management practices of pasture."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Crop improvement",
+          "details": [
+            "Aims and methods (introduction, selection, breeding).",
+            "Genetic terms (traits, chromosomes, genes) and Mendel's 1st and 2nd laws of inheritance.",
+            "Advantages and disadvantages of crop improvement."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "E. FORESTRY",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Forest management",
+          "details": [
+            "Meaning, importance of forestry, forest regulations, and management practices.",
+            "Implications of deforestation."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Agro-forestry practices in West Africa",
+          "details": [
+            "Meaning and systems: taungya system, alley cropping, ley farming.",
+            "Identification of suitable tree species."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "F. ORNAMENTAL PLANTS",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Meaning and importance of ornamental plants",
+          "details": [
+            "Definition and socio-aesthetic importance."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Common types of ornamental plants",
+          "details": [
+            "Types according to uses: bedding plants, hedging plants, lawn grasses.",
+            "Common and botanical names of examples."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Settings and location for planting ornamental plants",
+          "details": [
+            "Site selection and design arrangements."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Methods of cultivating ornamental plants",
+          "details": [
+            "Propagation by seed and vegetative methods."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Maintenance of ornamental plants",
+          "details": [
+            "Maintenance practices: watering, mulching, pruning."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "G. CROP PROTECTION",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Diseases of crops",
+          "details": [
+            "Meaning and general effects of diseases.",
+            "Causal organisms, symptoms, transmission, prevention, and control for fungal, viral, bacterial, and nematode diseases in major crop groupings."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Pests of crops",
+          "details": [
+            "Meaning and classification of insect (biting/chewing, piercing/sucking, boring) and non-insect pests (birds, rodents).",
+            "Field and storage pests: life cycle, damage, economic importance, and control.",
+            "Side effects of control methods (chemical pollution, biological disruption, burning)."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Weeds",
+          "details": [
+            "Meaning, types, features, and common/botanical names of weeds.",
+            "Effects on crops and economic importance.",
+            "Control methods: cultural, biological, chemical, physical, and mechanical."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "H. ANIMAL PRODUCTION",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Types and classification of farm animals",
+          "details": [
+            "Types: cattle, sheep, goat, poultry, pig, rabbit, fish.",
+            "Classification by habitat (terrestrial/aquatic) and uses (food, protection, pet)."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Anatomy and physiology of farm animals",
+          "details": [
+            "Parts, internal organs, and organ systems (digestive, circulatory, respiratory).",
+            "Differences between monogastric and ruminant digestive systems."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Animal reproduction",
+          "details": [
+            "Meaning, hormonal roles, and reproductive system structures.",
+            "Reproductive processes: oestrus cycle, heat period, mating, gestation, parturition, lactation, colostrum.",
+            "Egg formation process in poultry."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Environmental physiology",
+          "details": [
+            "Meaning and effects of climatic changes (temperature, humidity, light) on growth, reproduction, milk, and egg production."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Livestock management",
+          "details": [
+            "Systems of management: extensive, intensive, semi-intensive.",
+            "Housing, feeding, hygiene, record keeping, and finishing of ruminants and non-ruminants."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "Animal nutrition",
+          "details": [
+            "Classification of feeds and sources/functions of nutrients.",
+            "Types of rations: balanced diet, maintenance, and production rations.",
+            "Causes, symptoms, and correction of malnutrition (e.g., ketosis, rickets)."
+          ]
+        },
+        {
+          "topic_number": 7,
+          "title": "Rangeland and pasture management",
+          "details": [
+            "Importance, characteristics, and common grasses/legumes in rangeland.",
+            "Factors affecting herbage production and methods of rangeland improvement."
+          ]
+        },
+        {
+          "topic_number": 8,
+          "title": "Animal improvement",
+          "details": [
+            "Aims and methods: introduction, selection, breeding.",
+            "Breeds (local, exotic, cross/hybrid) and performance comparisons.",
+            "Artificial insemination: techniques, semen collection, advantages, and disadvantages."
+          ]
+        },
+        {
+          "topic_number": 9,
+          "title": "Animal health management",
+          "details": [
+            "Causal organisms, symptoms, transmission, prevention, and control of livestock diseases (viral, bacterial, fungal, protozoan).",
+            "Endoparasites and ectoparasites: life cycles, economic importance, and control.",
+            "General preventive measures: quarantine, immunization, sanitation, breeding for resistance."
+          ]
+        },
+        {
+          "topic_number": 10,
+          "title": "Aquaculture",
+          "details": [
+            "Types: fish, shrimp, and crab farming.",
+            "Siting, establishing, stocking, feeding, harvesting, processing, and preserving fish.",
+            "Fishery regulations, tools, and fishing methods."
+          ]
+        },
+        {
+          "topic_number": 11,
+          "title": "Apiculture or bee keeping",
+          "details": [
+            "Types of bees (indigenous/exotic) and importance of apiculture.",
+            "Traditional vs. modern methods and bee keeping equipment.",
+            "Precautionary measures in apiary management."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "I. AGRICULTURAL ECONOMICS AND EXTENSION",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Basic economic principles",
+          "details": [
+            "Scarcity, choice, scale of preference, and the law of diminishing returns."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Factors of production",
+          "details": [
+            "Land, capital, labour, and management/entrepreneur.",
+            "Rural-urban migration effects on agricultural labour."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Principles of demand",
+          "details": [
+            "Definition, Law of demand, determinants, movements along, and shifts in demand curve."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Principles of supply",
+          "details": [
+            "Definition, Law of supply, determinants, movements along, and shifts in supply curve."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "Implications of demand and supply for agricultural production",
+          "details": [
+            "Price support, price control, and subsidy programmes."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "Functions of a farm manager",
+          "details": [
+            "Definition, roles, responsibilities, and operational problems faced by farm managers."
+          ]
+        },
+        {
+          "topic_number": 7,
+          "title": "Agricultural finance",
+          "details": [
+            "Importance, sources of farm finance, and classification of credit (short/medium/long term, institutional/non-institutional, cash/kind).",
+            "Problems faced by farmers procuring loans and financial institutions granting credit.",
+            "Capital market institutions, stock exchange, and agri-business financing."
+          ]
+        },
+        {
+          "topic_number": 8,
+          "title": "Farm records and accounts",
+          "details": [
+            "Types: inventory, production, income/expenditure, special records.",
+            "Farm accounting: profit & loss, balance sheet, salvage value, appreciation, depreciation, budget."
+          ]
+        },
+        {
+          "topic_number": 9,
+          "title": "Marketing of agricultural produce",
+          "details": [
+            "Marketing channels, agents, and marketing functions (assembling, transport, processing).",
+            "Export crops, export guidelines, corporate bodies (e.g., ANCE), and marketing problems."
+          ]
+        },
+        {
+          "topic_number": 10,
+          "title": "Agricultural insurance",
+          "details": [
+            "Importance, insurance premiums, and policy types (crop, livestock, vehicle, fire, life).",
+            "Problems and limitations in agricultural insurance."
+          ]
+        },
+        {
+          "topic_number": 11,
+          "title": "Agricultural extension",
+          "details": [
+            "Meaning, extension methods (individual, group, mass contact), and qualities of good extension workers.",
+            "Programs in West Africa (ADP, NDE, Agro-service centres) and implementation problems."
+          ]
+        }
+      ]
+    },
+    {
+      "section_title": "PRACTICAL AGRICULTURAL SCIENCE",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Agricultural Ecology Practical",
+          "details": [
+            "Manual soil texture evaluation, fertile vs. infertile soil examination, soil profile description.",
+            "Rock identification (igneous, sedimentary, metamorphic).",
+            "Laboratory work: mechanical sedimentation analysis, bulk density, pore space, moisture content, water holding capacity, wilting point, capillarity, pH determination.",
+            "Chemical fertilizers and organic manure preparation (compost, green manure, farmyard)."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "Agricultural Engineering and Mechanization Practical",
+          "details": [
+            "Identification, uses, and maintenance of garden/horticultural tools, farm tractors, and tractor-drawn/animal-drawn implements.",
+            "Identification of harvesting, processing, storage, livestock, fishing, and surveying equipment."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "Crop Production Practical",
+          "details": [
+            "Identification of seeds, seedlings, storage organs, pasture grasses, and weeds.",
+            "Identification of field/storage pests, disease causal agents, damage symptoms, and control measures.",
+            "Seedbed preparation, germination tests, fertilizer application, mulching, and propagation methods (layering, grafting, budding)."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "Animal Production Practical",
+          "details": [
+            "Breed identification, restraints, grooming, external features, and internal organs (digestive, reproductive, excretory).",
+            "Animal by-products, feedstuffs/rations, endoparasites, ectoparasites, and disease prevention methods.",
+            "Routine livestock management operations (debeaking, dehorning, castration, ear-notching, tattooing) and fish harvesting/preservation."
+          ]
+        }
+      ]
+    }
+  ],
+  "reading_list": []
+}

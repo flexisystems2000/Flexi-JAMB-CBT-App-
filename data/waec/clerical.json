@@ -1,0 +1,183 @@
+{
+  "subject": "Clerical Office Duties",
+  "preamble": "This syllabus covers the principles, procedures, equipment, and personal habits essential for performing clerical duties effectively in a modern business office environment.",
+  "objectives": [
+    "Understand the principles and procedures in performing clerical duties in an office.",
+    "Apply knowledge acquired on the uses of office equipment and materials to perform basic clerical duties.",
+    "Communicate effectively within an organizational context.",
+    "Explain basic personal and professional habits and attitudes necessary for the performance of office duties.",
+    "Develop problem-solving skills to deal with clerical and secretarial issues in the office.",
+    "Provide a solid foundation for further courses in business studies."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Paper 1 and Paper 2, both of which must be taken.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Questions",
+        "duration": "50 mins",
+        "marks": "30 marks",
+        "details": "Consists of fifty compulsory multiple-choice objective questions covering the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Case Study & Essay Questions",
+        "duration": "2 hours 10 mins",
+        "marks": "70 marks",
+        "details": "Consists of one compulsory case study based on office situations (22 marks) and six essay questions, out of which candidates must answer any three (16 marks each)."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "Core Office & Administrative Procedures",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "THE OFFICE",
+          "details": [
+            "Definition and functions of an office (Receiving, Recording, Processing/Analysing, Giving, Storing information, Safeguarding Assets).",
+            "Sections of an office (Reception, General Office, Stores, Mail Room/Registry) and their roles.",
+            "Departments (Accounts, Purchasing, Sales, HR, Production, Legal, Administration, Transport) and departmental interrelationships.",
+            "Office Personnel roles (Office Manager, Supervisor, Clerks, Secretaries, Receptionist, Typist, Messenger) and secretary classifications.",
+            "Professional Image (Personal and business attributes, social habits, personal hygiene, and time management skills/wasters).",
+            "Office Layout (Open and closed layouts, factors determining choice, planning reasons, advantages, and disadvantages)."
+          ]
+        },
+        {
+          "topic_number": 2,
+          "title": "ORGANISATION",
+          "details": [
+            "Principles of Organisation (Unity of objectives, Span of control, Authority/Responsibility, Delegation, Unity of command, Supervision, Remuneration, Esprit de corps).",
+            "Organisational Structures (Line, Line and staff, Staff, Functional, Matrix).",
+            "Organisational Chart/Organogram: Construction, uses, advantages, and disadvantages."
+          ]
+        },
+        {
+          "topic_number": 3,
+          "title": "BUSINESS TRANSACTIONS",
+          "details": [
+            "Documents used in transactions (Enquiry, Quotation, LPO, Proforma Invoice, Delivery Note/Waybill, Debit/Credit Note, Statement of Account, Receipts, etc.).",
+            "Methods of Payment (Cash, Cheque, Standing order, Credit transfer, Money transfer) with advantages and disadvantages.",
+            "Payroll Handling: Terminologies (Gross pay, Net pay, PAYE), methods of determining workers' pay (piece rate, time rate, commission, overtime), and payroll preparation.",
+            "Tax Regimes: Types of taxes (VAT, Income Tax, CST, Property Tax, Customs Duty) and their importance.",
+            "Petty Cash and the Imprest system: Preparation and maintenance of the petty cash book."
+          ]
+        },
+        {
+          "topic_number": 4,
+          "title": "BANKING",
+          "details": [
+            "Types of Banks: Functions of Commercial, Development, Merchant, Rural/Community Banks, and the Central Bank.",
+            "Types of Accounts: Features of Savings, Current, and Fixed Deposit accounts.",
+            "Cheques: Definition, types, valid cheque features, parties involved, reasons for dishonouring, and cheque crossings."
+          ]
+        },
+        {
+          "topic_number": 5,
+          "title": "STOCK PROCEDURE",
+          "details": [
+            "Ordering Stock: Meaning of stock, importance of stockkeeping, and ordering procedures.",
+            "Storekeeper Duties and requirements for a efficient stock system.",
+            "Requisition Procedure and stock record documentation (Bin cards, tally cards, purchase orders).",
+            "Stocktaking methods (Annual, Periodic, Perpetual) and Stock Control levels (Minimum, Maximum, Re-order level).",
+            "Stock Valuation methods (Cost price, Average price, Market price, Lower price)."
+          ]
+        },
+        {
+          "topic_number": 6,
+          "title": "OFFICE EQUIPMENT AND MACHINES",
+          "details": [
+            "General Office Machines (Computers, Photocopiers, Dictaphones, Duplicators, Calculators, Cash Registers, Scanners): Selection factors, manual vs. electric machines, and maintenance.",
+            "Computers and ICT: Components, types, peripheral devices, internet/intranet, WWW, and service providers.",
+            "Mail Room Equipment (Franking machines, Shredders, Letter openers, Scales, Guillotines, Staplers)."
+          ]
+        },
+        {
+          "topic_number": 7,
+          "title": "COMMUNICATION",
+          "details": [
+            "Forms and Channels of Communication (Verbal, Non-verbal, Visual; Vertical, Horizontal, Diagonal).",
+            "Barriers to Effective Communication (Organisational, Physical, Psychological, Socio-Cultural).",
+            "Business Correspondence: Letters, Circulars, Memos, and Report types (Short formal/informal, Routine, Special, Statutory).",
+            "Mail Handling: Incoming and outgoing mail procedures, registers, postage books, and messenger receipts.",
+            "Meetings: Kinds, requirements for valid meetings, officials' duties, terminologies, and drafting documents (Notice, Agenda, Minutes)."
+          ]
+        },
+        {
+          "topic_number": 8,
+          "title": "BUSINESS ENGLISH",
+          "details": [
+            "Proofreading and Office Abbreviations: Purpose of proofreading, correcting passage errors, expanding abbreviations.",
+            "Rules for spelling, word division, and punctuation."
+          ]
+        },
+        {
+          "topic_number": 9,
+          "title": "FILING AND INDEXING",
+          "details": [
+            "Classification Methods (Alphabetical, Numerical, Subject, Geographical, Chronological, Alpha-numeric).",
+            "Filing Systems (Lateral, Suspension, Vertical, Horizontal) and rules for good filing.",
+            "Indexing and Cross-Referencing: Types, forms, and importance.",
+            "Electronic Filing (including microfilming/micrographics) and Centralized vs. Departmental filing."
+          ]
+        },
+        {
+          "topic_number": 10,
+          "title": "REFERENCE BOOKS AND SOURCES OF INFORMATION",
+          "details": [
+            "Reference Books: Dictionaries, Encyclopaedias, Atlases, Trade Journals, Telephone Directories, Government Publications (Gazette, Hansard, White paper).",
+            "Sources of Information: Personal/Driving documents, Passport, Visa, Tax Clearance.",
+            "Business Information sources: Exchange rates, stock exchange listings, bank financial bulletins."
+          ]
+        },
+        {
+          "topic_number": 11,
+          "title": "POST OFFICE SERVICES",
+          "details": [
+            "Postal Services: Express mail, Special mail, Poste restante, Private mail bag/box, Registered mail, Business reply service.",
+            "Courier Services (EMS, DHL, FedEx) and Post Office Agency/Remittance services (Postal Orders, Money Transfers)."
+          ]
+        },
+        {
+          "topic_number": 12,
+          "title": "HUMAN RELATIONS",
+          "details": [
+            "Internal Office Relations and Public Relations: Factors promoting goodwill and strategies for improving interpersonal skills."
+          ]
+        },
+        {
+          "topic_number": 13,
+          "title": "HEALTH, SAFETY AND WELFARE IN THE OFFICE",
+          "details": [
+            "Health hazards and office accidents: Prevention measures.",
+            "Staff Welfare services, benefits, and their advantages."
+          ]
+        },
+        {
+          "topic_number": 14,
+          "title": "PRE-EMPLOYMENT PROCEDURES",
+          "details": [
+            "Designing job advertisements.",
+            "Writing letters of application and preparing a Curriculum Vitae (CV).",
+            "Interview preparation techniques."
+          ]
+        },
+        {
+          "topic_number": 15,
+          "title": "ENTREPRENEURSHIP AND SMALL SCALE BUSINESS",
+          "details": [
+            "Characteristics of an entrepreneur.",
+            "Features and importance of small-scale enterprises in society."
+          ]
+        }
+      ]
+    }
+  ],
+  "reading_list": [
+    "John Harrison - Secretarial Duties (Pitman Publishing Ltd.)",
+    "Elendu O. Elendu - Office Practice for Colleges (New Africa Publishing Co. Ltd. Owerri, 1985)",
+    "Sheila May - Case Studies, A Skills-Based Approach (Pitman Publishing Ltd.)",
+    "John Harrison - Office Procedure (Pitman Publishing Ltd.)"
+  ]
+}

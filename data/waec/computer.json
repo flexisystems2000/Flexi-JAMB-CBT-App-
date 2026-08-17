@@ -1,0 +1,118 @@
+{
+  "subject": "Computer Studies",
+  "preamble": "This examination syllabus is developed from the National Curriculum for Senior Secondary School Computer Studies. It highlights the scope of the course for Computer Studies examinations at this level. Its structuring revolves around a conceptual approach across major thematic areas, including computer fundamentals, hardware, software, operations, applications, file management, problem-solving skills, ICT, ethics, and human issues. This examination syllabus is not a substitute for the teaching syllabus.",
+  "aims": [
+    "test candidates' understanding, knowledge, and acquisition of basic concepts of computer and its operations;",
+    "test candidates' manipulative, computational, and problem-solving skills;",
+    "test candidates' application of software packages;",
+    "test candidates' operation of computer-related simple devices;",
+    "test candidates' online skills and their applications;",
+    "test candidates' safe attitudes and good practices on effective use of computers;",
+    "test candidates' potential for higher studies in computer-related areas."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers, Papers 1, 2, and 3, all of which must be taken. Papers 1 and 2 shall be a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "25",
+        "details": "Consists of 50 multiple-choice objective questions drawn from the entire syllabus, all to be answered in 1 hour."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "1 hour",
+        "marks": "30",
+        "details": "Consists of five essay questions. Candidates will be required to answer any three in 1 hour."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test",
+        "duration": "2 hours",
+        "marks": "45",
+        "details": "Tests actual practical skills of school candidates and knowledge of practical work for private candidates. It consists of three questions to be answered in 2 hours."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Computer Evolution and Fundamentals",
+      "topics": [
+        {
+          "title": "1. Computer Evolution",
+          "notes": "Features, components, and uses of early computing devices (Abacus, Slide Rule, Napier's bones, Pascal calculator, Leibnitz multiplier, Jacquard loom, Babbage's Analytical Engine, Hollerith Census Machine, Burrough's Machine) and modern devices (ENIAC, EDVAC, UNIVAC 1, Desktop PCs, Laptops, Palmtops); contributions of computer pioneers."
+        },
+        {
+          "title": "2. Fundamentals of Computing",
+          "notes": "Definition and overview of a computer system; hardware and software constituents; functional parts and characteristics of computers (electronic nature, accuracy, speed, interactivity); definitions, examples, and differences between data and information."
+        },
+        {
+          "title": "3. Computer Ethics and Human Issues",
+          "notes": "Sources of security breaches (viruses, worms, Trojans, hackers, poor ICT policies/network implementation); preventive measures (antivirus software, firewalls, encryption, web certificates); legal issues (software copyright, ownership rights, privacy, cybercrimes such as identity theft, internet fraud, hacking)."
+        }
+      ]
+    },
+    {
+      "section_name": "Hardware and Architecture",
+      "topics": [
+        {
+          "title": "4. Computer Hardware",
+          "notes": "Input devices (keyboard key classifications, mouse, scanner, light pen, joystick); Output devices (monitors, printers, speakers, plotters); Central Processing Unit (ALU and Control Unit functions); Memory units (Primary: RAM/ROM; Secondary: hard disks, CDs, DVDs, flash drives, unit conversions from bits to terabytes); Logic circuits (AND, OR, NOT, NAND, NOR, XOR truth tables and gates)."
+        },
+        {
+          "title": "5. Basic Computer Operations",
+          "notes": "Booting and shut down processes (cold and warm booting, desktop features); computer data conversion (registers such as MDR, CIR, SCR, address buses, bus width/speed factors, Input-Process-Output cycle)."
+        }
+      ]
+    },
+    {
+      "section_name": "Software and Applications",
+      "topics": [
+        {
+          "title": "6. Computer Software",
+          "notes": "System software (Operating systems like Windows, Linux, UNIX, MS-DOS; translators like assemblers, compilers, interpreters; utility programs); Application software definitions and categories; command-line vs Graphical User Interfaces (GUI)."
+        },
+        {
+          "title": "7. Word Processing and Spreadsheets",
+          "notes": "Word processing (MS Word features, document creation, editing, formatting, spell check, mail merge); Spreadsheet packages (MS Excel features, cell ranges, data types, formulas, built-in functions, chart generation)."
+        },
+        {
+          "title": "8. Databases, Graphics and Presentations",
+          "notes": "Database concepts (MS Access, tables, records, fields, keys, relational/hierarchical models, queries, reporting); Graphics packages (CorelDraw features and basic design); Presentation software (MS PowerPoint slide creation, animations, slide shows)."
+        }
+      ]
+    },
+    {
+      "section_name": "File Management, ICT and Problem Solving",
+      "topics": [
+        {
+          "title": "9. Managing Computer Files",
+          "notes": "File structures (data item, record, file, database); organization methods (serial, sequential, indexed, random); file classifications (master, transaction, reference); file security, loss prevention, backups, advantages and limitations of computer files over manual filing."
+        },
+        {
+          "title": "10. Information and Communication Technology (ICT)",
+          "notes": "ICT classification (broadcasting, telecommunications, data networks, satellite, information systems); network types (PAN, LAN, MAN, WAN) and topologies (Star, Bus, Ring); network hardware (routers, switches, modems, cables, connectors); Internet protocols, WWW navigation, e-mail services, and web development software."
+        },
+        {
+          "title": "11. Developing Problem-Solving Skills",
+          "notes": "Programming languages (Machine, Low-Level, High-Level); algorithm development and flowcharting symbols; BASIC programming (data types, statements, arithmetic operations, arrays, built-in functions); Program Development Cycle; Systems Development Life Cycle (SDLC) stages."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "List of Required Equipment and Facilities",
+      "details": [
+        "Computer sets and laptops",
+        "Scanners, printers, fax machines, and GSM phones",
+        "Storage media (Hard disks, flash drives, memory chips, CDs, DVDs)",
+        "Network cables (Power, data, twisted pair, coaxial, fibre optic) and connectors (RJ45, RJ11)",
+        "Software packages (Word processing, database, BASIC interpreter/compiler, CorelDraw)"
+      ]
+    }
+  ],
+  "references": []
+}

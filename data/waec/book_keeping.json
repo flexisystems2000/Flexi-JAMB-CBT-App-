@@ -1,0 +1,134 @@
+{
+  "subject": "Book Keeping",
+  "preamble": "The Book Keeping syllabus is designed to assess the candidates' basic knowledge of business activities and understanding of financial system for the purpose of establishing a business and laying a good foundation for further studies.",
+  "aims": [
+    "knowledge of basic skills required to start a business;",
+    "ability to appreciate the rules and functions of book keeping;",
+    "ability to apply the basic knowledge and skills in Book Keeping to modern business activities."
+  ],
+  "examination_scheme": {
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Questions",
+        "duration": "50 mins",
+        "marks": "40",
+        "details": "Forty multiple-choice objective questions, all of which must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Theory and Practice",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Composite paper consisting of two sections. Section A (Theory): 4 questions, candidates answer 2 (20 marks). Section B (Practice): 5 questions, candidates answer 3 (60 marks)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Core Book Keeping Concepts & Financial Accounting",
+      "topics": [
+        {
+          "title": "1. Introduction to Book Keeping",
+          "notes": "Meaning, definition, history, nature, importance, and functions of book keeping; career opportunities and beneficiaries; qualities and values of book keepers. Assets and Liabilities: definition, differences, classification, and examples. Business Transactions: meaning, types, and parties involved. Classification of Accounts: personal accounts (debtors and creditors), impersonal accounts (real and nominal). Source Documents: definition, identification, types, and uses."
+        },
+        {
+          "title": "2. Concepts and Conventions",
+          "notes": "Definition, identification, and differences between accounting concepts and conventions."
+        },
+        {
+          "title": "3. Books of Original Entry",
+          "notes": "Definition, purpose, types, format, uses, and preparation of Books of Original Entry."
+        },
+        {
+          "title": "4. Ledger and Principles of Double Entry",
+          "notes": "Ledger: definition, classification, format, uses, and preparation. Principles of Double Entry: meaning, history, rules, and posting double entries."
+        },
+        {
+          "title": "5. Cash Book",
+          "notes": "Meaning, purpose, description, differences, and preparation of single column, double column, three column, and petty cash books."
+        },
+        {
+          "title": "6. Bank Reconciliation Statement",
+          "notes": "Meaning and purpose; terminologies and banking documents; causes of differences between cash book and bank statement balances."
+        },
+        {
+          "title": "7. Trial Balance and Errors",
+          "notes": "Meaning, functions, rules, and preparation of trial balance; meaning, types, and classification of errors; correction of errors and preparation of Suspense Account."
+        },
+        {
+          "title": "8. Financial Statements of Sole Proprietorship",
+          "notes": "Trading Account: definition, purpose, format, preparation, and stock valuation methods (FIFO and LIFO). Profit and Loss Account: definition, purpose, format, and preparation. Balance Sheet: meaning, content, format, and preparation."
+        },
+        {
+          "title": "9. Adjustments to Financial Statements",
+          "notes": "Adjustments for prepayments, accruals, depreciation, bad and doubtful debts. Meaning and methods of depreciation (straight line and reducing balance)."
+        },
+        {
+          "title": "10. Control Accounts",
+          "notes": "Meaning and preparation of Sales Ledger and Purchases Ledger Control Accounts."
+        },
+        {
+          "title": "11. Single Entry and Incomplete Records",
+          "notes": "Meaning, limitations, and preparation of final accounts from incomplete records."
+        },
+        {
+          "title": "12. Accounts of Not-For-Profit Organizations",
+          "notes": "Purpose, content, and preparation of Receipts and Payments Accounts, and Income and Expenditure Accounts."
+        },
+        {
+          "title": "13. Manufacturing Accounts",
+          "notes": "Meaning, purpose, terminologies, and preparation of Manufacturing, Trading, and Profit and Loss Accounts."
+        },
+        {
+          "title": "14. Partnership Accounts",
+          "notes": "Meaning and terms (partnership deed, drawings, interest on capital, interest on drawings); preparation of Capital and Current Accounts, Profit and Loss Appropriation Account, and Balance Sheet; admission of new partners and Goodwill Account."
+        },
+        {
+          "title": "15. Joint Venture Accounts",
+          "notes": "Meaning, purpose, and differences between joint venture and partnership."
+        },
+        {
+          "title": "16. Departmental and Branch Accounts",
+          "notes": "Importance, differences, and preparation of Departmental and simple Branch Accounts."
+        },
+        {
+          "title": "17. Introduction to Company Accounts",
+          "notes": "Formation, terminologies, and preparation of simple financial statements."
+        },
+        {
+          "title": "18. Interpretation of Accounts",
+          "notes": "Purpose and computation of financial ratios: net profit margin, stock turnover, quick ratio, acid test ratio, gross profit margin, and return on capital employed."
+        },
+        {
+          "title": "19. Purchase of Business",
+          "notes": "Reasons, terminologies, and preparation of accounts related to the purchase and sale of a business."
+        },
+        {
+          "title": "20. Consignment Accounts",
+          "notes": "Terminologies and preparation of simple Consignment Accounts."
+        },
+        {
+          "title": "21. Hire Purchase",
+          "notes": "Meaning and preparation of accounts in both seller's and hirer's books."
+        },
+        {
+          "title": "22. Contract Accounts",
+          "notes": "Meaning, purpose, terminologies, and preparation of Contract Accounts."
+        },
+        {
+          "title": "23. Cooperative Accounts",
+          "notes": "Meaning and objectives of cooperative societies."
+        }
+      ]
+    }
+  ],
+  "note": "Emphasis should be on practical application",
+  "references": [
+    "F. Wood — Business Accounting Vol. 1 and 2",
+    "Spicer & Peggler — Book-keeping and Accounts (ELBS)",
+    "F.P. Langley — Introduction to Accounting for Business Studies",
+    "Jennings — Accounting I and II",
+    "O.A. Longe and R.A. Kezeem — Essential Financial Accounting for Senior Secondary School"
+  ]
+}

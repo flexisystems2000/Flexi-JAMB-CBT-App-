@@ -1,0 +1,130 @@
+{
+  "subject": "Yorùbá",
+  "preamble": "This examination syllabus is based entirely on the Senior Secondary School Yoruba curriculum developed by the National Educational Research and Development Council (NERDC). It evaluates candidates' proficiency in reading, writing, and speaking Yorùbá, alongside their mastery of Yorùbá sound systems, grammatical structures, literary analysis, and cultural customs/institutions. Official Yorùbá orthography and metalanguage are required.",
+  "aims": [
+    "Enable candidates to speak, read, and write competently in Yorùbá and communicate effectively with other speakers of the language;",
+    "Familiarize candidates with the sound system, grammatical structures, orthography, and linguistic features of the Yorùbá language;",
+    "Acquaint candidates with the analytical tools needed for a thorough appreciation of Yorùbá speech usage, oral/written literature, and culture (customs and institutions)."
+  ],
+  "requirements": [
+    "Rubrics for both Paper 1 and Paper 2 shall be written in Yorùbá.",
+    "Candidates are required to use official Yorùbá orthography and approved metalanguage in writing their answers."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two papers (Paper 1 and Paper 2) covering Language, Literature, and Culture.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "60",
+        "details": "Consists of 60 multiple-choice objective questions testing Language (Comprehension, Composition, Sound System, Grammar, Translation), Literature (Literary Appreciation, Oral Literature, Written Literature), and Culture (Customs and Institutions)."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Test (Language, Literature & Culture)",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "Consists of essay questions divided into three sections: Section A (Language: Composition, Sound System, Grammar - answer 3 questions), Section B (Literature: Oral and Written set books - answer 2 questions), and Section C (Culture: Customs and Institutions - answer 1 question)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Èdè (Language)",
+      "topics": [
+        {
+          "title": "1. Àròkọ (Composition)",
+          "notes": "Writing structured essays (~300 words) across various types: Narrative (Àròkọ Ìtan/Àpèjúwe), Descriptive, Argumentative, Expository, Dialogue (Àròkọ Oníṣòrọ̀-ǹgbeṣèsì), Debate, and Letter Writing (Lẹ́tà Gbẹ̀fẹ́/Lẹ́tà Oníṣẹ́)."
+        },
+        {
+          "title": "2. Fónọ́lọ́jì Àti Àpèjúwe Ìró (Sound System)",
+          "notes": "Vowels (Àwọn Író Fáwẹ́lì), Consonants (Àwọn Író Kọ́nṣónanti), Syllabic Nasal (Író Àránmúpè), Syllable Structure (Àdìmú Silabu), Sound Processes (Ináwó Író, Harmony, Assimilation, Elision), Orthography (Àkọtọ́ Èdè Yorùbá), Tones, and Tone Notation (Àmì Ohùn)."
+        },
+        {
+          "title": "3. Gírámà Àti Ìfọ̀rọ̀lo (Grammar & Sentence Structure)",
+          "notes": "Word Classes (Ọ̀rọ̀-orúkọ, Ọ̀rọ̀-ìṣe, Ọ̀rọ̀-àpèjúwe, Ọ̀rọ̀-àpọ́nlé, mbl.), Word Formation/Structure (Ìmọ̀-ọ̀rọ̀), Numerals (Ọ̀nkà Yorùbá), Grammatical Categories, Phrases (Àpólà), Clauses, and Sentence Types/Structure (Àgbéyẹ̀wọ̀ Ọ̀rọ̀-akójo)."
+        },
+        {
+          "title": "4. Ògbufọ̀ (Translation)",
+          "notes": "Principles and practice of translating passages accurately between English and Yorùbá while maintaining semantic fidelity and stylistic nuances."
+        }
+      ]
+    },
+    {
+      "section_name": "Lítíréṣọ̀ (Literature)",
+      "topics": [
+        {
+          "title": "1. Ìmọ̀ Ìfìntútù Lítíréṣọ̀ (Literary Appreciation)",
+          "notes": "Basic principles of literary appreciation, figures of speech, structural evaluation, thematic analysis, and stylistic techniques in Yorùbá literature."
+        },
+        {
+          "title": "2. Lítíréṣọ̀ Àtenudẹ́nu (Oral Literature)",
+          "notes": "Analysis of prescribed set books across three primary genres: Oral Prose (Àlọ́ Àpàgbe/Ìtàn Àtẹnudẹ́nu), Oral Poetry (Ewì Àtenudẹ́nu, Ìjálá, Oríkì, Èṣù, Ífá), and Oral Drama (Eré Oníṣẹ́ Àtenudẹ́nu)."
+        },
+        {
+          "title": "3. Lítíréṣọ̀ Àkọsílẹ̀ (Written Literature)",
+          "notes": "Analysis of prescribed set books across three primary genres: Written Prose (Ìtàn Àròsọ Wúnrẹn), Written Poetry (Ewì Àkọsílẹ̀), and Written Drama (Eré Oníṣẹ́ Àkọsílẹ̀)."
+        }
+      ]
+    },
+    {
+      "section_name": "Àṣà Àti Ìṣe (Culture & Institutions)",
+      "topics": [
+        {
+          "title": "1. Àṣà Ibíle (Customs)",
+          "notes": "Make-up and body adornments (Oge Ṣíṣe), In-door and outdoor games (Eré Ìdárayá), Pregnancy care and child-birth (Ìtọ́jú Oyún àti Ìbí), Naming ceremonies (Ìsomọ́lórúkọ), Home training and etiquette (Ìkọ́ni Ní Ilé/Ìwà Ọmọlúwàbí), Yorùbá foods (Oúnjẹ Yorùbá), Non-verbal communication (Ààmì Àìfọ̀rọ̀sọ̀), Funeral rites (Ìsìnkú), and Inheritance protocols (Ìsúnmọ́/Ìpín Ọọ̀ṣọ̀)."
+        },
+        {
+          "title": "2. Àwọn Àjọ/Àtẹ skeletal (Institutions)",
+          "notes": "Traditional occupations (Iṣẹ́ Abínibí), Marriage institutions (Ìgbéyàwó), Traditional political administration (Òṣèlú Ìbílẹ̀), Child care, Ancestral worship (Àwọn Bàbá Ńlá), Yoruba spiritual beliefs regarding Olódùmarè and Divinities (Ìgbàgbọ́ nípa Olódùmarè àti Àwọn Òrìṣà), Modern religious interactions, and Traditional economics (Orọ̀ Ajé)."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Set Books (Àwọn Ìwe Àyànfẹ́)",
+      "details": "Language & Grammar Texts: Abiodun, Jibola (1996) 'Aroko Ati Aayan Ogbufo'; Owolabi, K. (1989) 'Ijinle Itupale Ede Yoruba'; Bamgbose, A. (1991) 'Fonoloji Ati Girama Yoruba'. Oral Literature Set Books: Prose - Ojo, Olagoke (2005) 'Ijapa Tiroko Oko Yannibo'; Poetry - Abimbola, Wande (2004) 'Awon Oju Odu Mererindinlogun' (pp. xxi-xxxi, 52-96); Drama - Ogunniran, L. (2007) 'Eegun Alare'. Written Literature Set Books: Prose - Eso-Oluborode, Sunday (1994) 'Olorunsogo'; Poetry - Olayiwola, Ademola (2007) 'Akowe ko wura'; Drama - Awe, Debo (2004) 'Apoti Alakara'. Cultural Texts: Adeoye, C.L. (1979) 'Asa Ati Ise Yoruba'; Olajubu, O. (1978) 'Iwe Asa Ibile Yoruba'; Daramola, A. ati Jeje 'Asa Ati Orisa'."
+    }
+  ],
+  "references": [
+    {
+      "type": "Language References",
+      "books": [
+        "Iwe Ede Iperi Yoruba Vol. 1 by D. Mustapha et al. (1983)",
+        "Iwe Ede Iperi Yoruba Vol. II by D. Mustapha et al. (1987)",
+        "Eko Ede Yoruba Ode Oni SSI-III by A. Bamgbose (ed.) (1983)",
+        "YSAN/NERDC Publications edited by O. Awobuluyi (1990)",
+        "Egbe Akomolede ati Asa Yoruba Publications (1988) - UPL/NERDC",
+        "Yoruba Language Texts by W. B. Ajayi (1989) - Macmillan",
+        "Ijinle Ede ati Litireso Yoruba by O. Owolabi et al. (1984) - Evans",
+        "Iwe Imodotun Yoruba I-III by A. Babalola et al. (1988) - Longman",
+        "Eko Ede Yoruba Ode Oni JSI-III by Y. Awoyale et al. (1984) - Macmillan",
+        "Yoruba Gbode by Egbe Akomolede ati Asa Yoruba (1986) - Macmillan",
+        "Modern Lesson in Yoruba Part I-III by J. S. A. Odujinrin - Odujinrin Publishers",
+        "Essentials of Yoruba Grammar by O. Awobuluyi (1978) - UPL",
+        "A Short Yoruba Grammar by A. Bamgbose (1967) - Vantage",
+        "Owe Pelu Itumo by Kola Akinlade (1987) - Gbemi Sodipo Press",
+        "Yoruba Idioms by M. A. Fabunmi (1969) - Corpomutt Publishers",
+        "Owe Lesin Oro by I. O. Delano - UPL",
+        "Owe ati Asayan Oro Yoruba by Supo Koseemanii (1987) - Heinemann",
+        "Asayan Akanlo - Ede Yoruba by A. Olopade (1991) - Longman",
+        "Imo Ede, Asa ati Litireso Yoruba I-III by S. Y. Adewoyin (2006) - AUP"
+      ]
+    },
+    {
+      "type": "Literature and Culture References",
+      "books": [
+        "Iwe Afinimona Lori Awon Iwe Fagunwa by Alaba and Ogunsipe (1982) - Nelson",
+        "Iwe Akoyawo Alaye lori O le ku by Bisi Ogunsina (1981) - Evans",
+        "Ewi Yoruba Lakotun I-III by Egbe Akomolede ati Asa Yoruba (2007) - Macmillan",
+        "Akojopo Ijinle Asa Yoruba by T. A. A. Ladele et al. (1986) - Evans",
+        "Igbagbo ati Esin Yoruba by C. L. Adeoye (1985) - Vantage",
+        "Aroko by O. Opadotun (1966) - Longman",
+        "Ogun ni ile Yoruba by A. A. Adeniji (1987) - UPL",
+        "Oruko Yoruba by C. L. Adeoye (1982)"
+      ]
+    }
+  ]
+}

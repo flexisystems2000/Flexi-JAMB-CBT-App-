@@ -1,0 +1,271 @@
+{
+  "subject": "General Mathematics / Mathematics (Core)",
+  "aims_of_the_syllabus": [
+    "Mathematical competency and computational skills",
+    "Understanding of mathematical concepts and their relationship to the acquisition of entrepreneurial skills for everyday living in the global world",
+    "Ability to translate problems into mathematical language and solve them using appropriate methods",
+    "Ability to be accurate to a degree relevant to the problem at hand",
+    "Logical, abstract and precise thinking"
+  ],
+  "examination_scheme": {
+    "description": "There will be two papers, Papers 1 and 2, both of which must be taken",
+    "paper_1": "Will consist of fifty multiple-choice objective questions, drawn from the common areas of the syllabus, to be answered in 1.5 hours for 50 marks",
+    "paper_2": {
+      "description": "Will consist of thirteen essay questions in two sections - Sections A and B, to be answered in 2.5 hours for 100 marks. Candidates will be required to answer ten questions in all",
+      "section_a": "Will consist of five compulsory questions, elementary in nature carrying a total of 40 marks. The questions will be drawn from the common areas of the syllabus",
+      "section_b": "Will consist of eight questions of greater length and difficulty. The questions shall include a maximum of two which shall be drawn from parts of the syllabuses which may not be peculiar to candidates' home countries. Candidates will be expected to answer five questions for 60 marks"
+    }
+  },
+  "detailed_syllabus": {
+    "number_and_numeration": [
+      {
+        "topic": "Number bases",
+        "contents": "Conversion of numbers from one base to another; Basic operations on number bases",
+        "notes": "Conversion from one base to base 10 and vice versa. Conversion from one base to another base. Addition, subtraction and multiplication of number bases"
+      },
+      {
+        "topic": "Modular Arithmetic",
+        "contents": "Concept of Modulo Arithmetic; Addition, subtraction and multiplication operations in modulo arithmetic; Application to daily life",
+        "notes": "Interpretation of modulo arithmetic e.g. 6 + 4 = k (mod 7), 3 x 5 = b (mod 6), m = 2 (mod 3), etc. Relate to market days, clock, shift duty, etc"
+      },
+      {
+        "topic": "Fractions, Decimals and Approximations",
+        "contents": "Basic operations on fractions and decimals; Approximations and significant figures",
+        "notes": "Approximations should be realistic e.g. a road is not measured correct to the nearest cm"
+      },
+      {
+        "topic": "Indices",
+        "contents": "Laws of indices; Numbers in standard form (scientific notation)",
+        "notes": "Include negative and fractional indices. Expression of large and small numbers in standard form e.g. 375300000 = 3.753 x 10^8, 0.00000035 = 3.5 x 10^-7"
+      },
+      {
+        "topic": "Logarithms",
+        "contents": "Relationship between indices and logarithms; Basic rules of logarithms; Use of tables of logarithms and antilogarithms",
+        "notes": "Calculations involving multiplication, division, powers and roots. Use of tables of squares, square roots and reciprocals is accepted"
+      },
+      {
+        "topic": "Sequence and Series",
+        "contents": "Patterns of sequences; Arithmetic progression (A.P.); Geometric Progression (G.P.)",
+        "notes": "Determine any term of a given sequence. Simple cases only, including word problems (Include sum for A.P. and exclude sum for G.P.)"
+      },
+      {
+        "topic": "Sets",
+        "contents": "Idea of sets, universal sets, finite and infinite sets, subsets, empty sets and disjoint sets. Union, intersection and complement of sets; Solution of practical problems using Venn diagrams",
+        "notes": "Use of Venn diagrams restricted to at most 3 sets"
+      },
+      {
+        "topic": "Logical Reasoning",
+        "contents": "Simple statements; True and false statements; Negation of statements, implications",
+        "notes": "Use of symbols and Venn diagrams"
+      },
+      {
+        "topic": "Positive and negative integers, rational numbers",
+        "contents": "The four basic operations on rational numbers",
+        "notes": "Match rational numbers with points on the number line. Notation: Natural numbers (N), Integers (Z), Rational numbers (Q)"
+      },
+      {
+        "topic": "Surds (Radicals)",
+        "contents": "Simplification and rationalization of simple surds; Basic operations on surds",
+        "notes": "Surds of the form a / sqrt(b), a*sqrt(b) and a + b where a is a rational number and b is a positive integer. Basic operations on surds"
+      },
+      {
+        "topic": "Matrices and Determinants",
+        "contents": "Identification of order, notation and types of matrices; Addition, subtraction, scalar multiplication and multiplication of matrices; Determinant of a matrix",
+        "notes": "Not more than 3x3 matrices. Restrict to 2x2 matrices for operations, determinants, and simultaneous linear equations"
+      },
+      {
+        "topic": "Ratio, Proportions and Rates",
+        "contents": "Ratio between two similar quantities; Proportion between two or more similar quantities; Financial partnerships, rates of work, costs, taxes, foreign exchange, density, mass, distance, time and speed",
+        "notes": "Relate to real life situations. Include average rates, taxes e.g. VAT, Withholding tax, etc"
+      },
+      {
+        "topic": "Percentages",
+        "contents": "Simple interest, commission, discount, depreciation, profit and loss, compound interest, hire purchase and percentage error",
+        "notes": "Limit compound interest to a maximum of 3 years"
+      },
+      {
+        "topic": "Financial Arithmetic",
+        "contents": "Depreciation/Amortization; Annuities; Capital Market Instruments",
+        "notes": "Calculation of depreciation on fixed assets, amortization on capitalized assets, simple problems on annuities, and shares/stocks, debentures, bonds"
+      },
+      {
+        "topic": "Variation",
+        "contents": "Direct, inverse, partial and joint variations",
+        "notes": "Expression of various types of variation in mathematical symbols and application to simple practical problems"
+      }
+    ],
+    "algebraic_processes": [
+      {
+        "topic": "Algebraic expressions",
+        "contents": "Formulating algebraic expressions from given situations; Evaluation of algebraic expressions",
+        "notes": "Application to simple practical problems"
+      },
+      {
+        "topic": "Simple operations on algebraic expressions",
+        "contents": "Expansion; Factorization; Binary Operations",
+        "notes": "Factorization of expressions like ax + ay, a^2 - b^2, ax^2 + bx + c. Carry out binary operations on real numbers"
+      },
+      {
+        "topic": "Solution of Linear Equations",
+        "contents": "Linear equations in one variable; Simultaneous linear equations in two variables",
+        "notes": "Solving by elimination, substitution and graphical methods. Word problems involving one or two variables"
+      },
+      {
+        "topic": "Change of Subject of Formula/Relation",
+        "contents": "Change of subject of a formula/relation; Substitution",
+        "notes": "Finding the value of a variable given the values of other variables"
+      },
+      {
+        "topic": "Quadratic Equations",
+        "contents": "Solution of quadratic equations; Forming quadratic equation with given roots; Application of solution of quadratic equation in practical problems",
+        "notes": "Using factorization, completing the square, and use of formula. Simple rational roots only"
+      },
+      {
+        "topic": "Graphs of Linear and Quadratic functions",
+        "contents": "Interpretation of graphs, coordinate of points, table of values, drawing quadratic graphs and obtaining roots; Graphical solution of a pair of equations; Drawing tangents to curves to determine gradient",
+        "notes": "Finding coordinates of maximum/minimum points, intercepts, axis of symmetry, and solving related equations"
+      },
+      {
+        "topic": "Linear Inequalities",
+        "contents": "Solution of linear inequalities in one variable; Graphical solution of linear inequalities in two variables; Graphical solution of simultaneous linear inequalities in two variables",
+        "notes": "Application to real life situations e.g. minimum cost, maximum profit, linear programming"
+      },
+      {
+        "topic": "Algebraic Fractions",
+        "contents": "Operations on algebraic fractions with monomial and binomial denominators; Values for which a fraction is undefined",
+        "notes": "Simple cases only"
+      },
+      {
+        "topic": "Functions and Relations",
+        "contents": "Types of Functions; Functions as a mapping, determination of the rule of a given mapping/function",
+        "notes": "One-to-one, one-to-many, many-to-one, many-to-many"
+      }
+    ],
+    "mensuration": [
+      {
+        "topic": "Lengths and Perimeters",
+        "contents": "Use of Pythagoras theorem, sine and cosine rules to determine lengths and distances; Lengths of arcs of circles, perimeters of sectors and segments; Longitudes and Latitudes",
+        "notes": "Distances along latitudes and longitudes and their corresponding angles"
+      },
+      {
+        "topic": "Areas",
+        "contents": "Triangles and special quadrilaterals; Circles, sectors and segments of circles; Surface areas of cubes, cuboids, cylinder, pyramids, right triangular prisms, cones and spheres",
+        "notes": "Areas of similar figures, compound shapes, and relationship between sector of a circle and surface area of a cone"
+      },
+      {
+        "topic": "Volumes",
+        "contents": "Volumes of cubes, cuboids, cylinders, cones, right pyramids and spheres; Volumes of similar solids",
+        "notes": "Include volumes of compound shapes"
+      }
+    ],
+    "plane_geometry": [
+      {
+        "topic": "Angles",
+        "contents": "Angles at a point add up to 360 degrees; Adjacent angles on a straight line are supplementary; Vertically opposite angles are equal",
+        "notes": "Consider acute, obtuse, reflex angles, etc"
+      },
+      {
+        "topic": "Angles and intercepts on parallel lines",
+        "contents": "Alternate angles are equal; Corresponding angles are equal; Interior opposite angles are supplementary; Intercept theorem",
+        "notes": "Application to proportional division of a line segment"
+      },
+      {
+        "topic": "Triangles and Polygons",
+        "contents": "Sum of angles of a triangle; Exterior angle of a triangle; Congruent triangles; Properties of special triangles and quadrilaterals; Properties of similar triangles; Sum of angles of a polygon; Exterior angles of a polygon; Parallelograms on the same base",
+        "notes": "Formal proofs of underlined topics may be required"
+      },
+      {
+        "topic": "Circles",
+        "contents": "Chords; Angles subtended by arcs and at the centre; Angle in a semicircle; Angles in same and opposite segments; Perpendicularity of tangent and radius; Alternate segment theorem",
+        "notes": "Formal proofs of underlined topics may be required"
+      },
+      {
+        "topic": "Construction",
+        "contents": "Bisectors of angles and line segments; Parallel or perpendicular lines; Standard angles; Triangles and quadrilaterals from sufficient data",
+        "notes": "Include combinations of standard angles e.g. 75, 105, 135 degrees"
+      },
+      {
+        "topic": "Loci",
+        "contents": "Knowledge of basic loci and their intersections in 2 dimensions",
+        "notes": "Application to real life situations"
+      }
+    ],
+    "coordinate_geometry": [
+      {
+        "topic": "Coordinate Geometry of Straight Lines",
+        "contents": "Concept of x-y plane; Coordinates of points; Midpoint and distance between two points; Gradient (slope) of a line; Equation of a line",
+        "notes": "Equations in the form y = mx + c and y - y_1 = m(x - x_1)"
+      }
+    ],
+    "trigonometry": [
+      {
+        "topic": "Sine, Cosine and Tangent of an angle",
+        "contents": "Sine, cosine and tangent of acute angles; Use of tables; Trigonometric ratios of 30, 45 and 60 degrees; Angles from 0 to 360 degrees; Graphs of sine and cosine; Graphs of trigonometric ratios",
+        "notes": "Relate to the unit circle"
+      },
+      {
+        "topic": "Angles of elevation and depression",
+        "contents": "Calculating angles of elevation and depression; Application to heights and distances",
+        "notes": "Simple problems only"
+      },
+      {
+        "topic": "Bearings",
+        "contents": "Bearing of one point from another; Calculation of distances and angles",
+        "notes": "Use of diagram required; Sine and cosine rules may be used"
+      }
+    ],
+    "introductory_calculus": [
+      {
+        "topic": "Introductory Calculus",
+        "contents": "Differentiation of algebraic functions; Integration of simple algebraic functions",
+        "notes": "Application to maximum and minimum values, rates of change, distance/velocity/time, and evaluation of simple definite integrals"
+      }
+    ],
+    "statistics_and_probability": [
+      {
+        "topic": "Statistics",
+        "contents": "Frequency distribution; Pie charts, bar charts, histograms and frequency polygons; Mean, median and mode for discrete and grouped data; Cumulative frequency curve (Ogive); Measures of dispersion",
+        "notes": "Measures include range, inter-quartile range, variance, mean deviation and standard deviation"
+      },
+      {
+        "topic": "Probability",
+        "contents": "Experimental and theoretical probability; Addition of probabilities for mutually exclusive and independent events; Multiplication of probabilities for independent events",
+        "notes": "Simple practical problems only, including problems with and without replacement"
+      }
+    ],
+    "vectors_and_transformation": [
+      {
+        "topic": "Vectors in a Plane",
+        "contents": "Vectors as directed line segments; Cartesian components; Magnitude, equal vectors, addition/subtraction, zero vector, parallel vectors, scalar multiplication",
+        "notes": "Knowledge of graphical representation is necessary"
+      },
+      {
+        "topic": "Transformation in the Cartesian Plane",
+        "contents": "Reflection, rotation, translation, and enlargement of points and shapes",
+        "notes": "Restrict plane to x and y axes, specific lines, origin rotations (-180 to 180 degrees), translation vectors, and scale factors"
+      }
+    ]
+  },
+  "units": {
+    "length": "1000 millimetres (mm) = 100 centimetres (cm) = 1 metre (m). 1000 metres = 1 kilometre (km)",
+    "area": "10,000 square metres (m^2) = 1 hectare (ha)",
+    "capacity": "1000 cubic centimeters (cm^3) = 1 litre (l)",
+    "mass": "1000 milligrammes (mg) = 1 gramme (g). 1000 grammes (g) = 1 kilogramme (kg). 1000 kilogrammes (kg) = 1 tonne",
+    "currencies": {
+      "the_gambia": "100 bututs (b) = 1 Dalasi (D)",
+      "ghana": "100 Ghana pesewas (Gp) = 1 Ghana Cedi (GH¢)",
+      "liberia": "100 cents (c) = 1 Liberian Dollar (LD)",
+      "nigeria": "100 kobo (k) = 1 Naira (N)",
+      "sierra_leone": "100 cents (c) = 1 Leone (Le)",
+      "uk": "100 pence (p) = 1 pound (£)",
+      "usa": "100 cents (c) = 1 dollar ($)",
+      "french_speaking_territories": "100 centimes (c) = 1 Franc (fr)"
+    }
+  },
+  "other_important_information": [
+    "Mathematics and Statistical tables published or approved by WAEC may be used in the examination room",
+    "The use of non-programmable, silent and cordless calculators is allowed without printout, receive/send capabilities",
+    "Candidates should bring rulers, pairs of compasses, protractors, set squares, etc. Graph papers ruled in 2mm squares will be provided",
+    "Some questions may prohibit the use of tables and/or calculators"
+  ]
+}

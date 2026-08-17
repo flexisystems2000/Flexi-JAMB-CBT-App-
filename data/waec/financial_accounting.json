@@ -1,0 +1,260 @@
+{
+  "subject": "FINANCIAL ACCOUNTING",
+  "preamble": "This syllabus covers basic accounting principles, double entry systems, preparation of financial statements, and specialized accounting systems to assess candidates' comprehension and application of accounting concepts across various business entities.",
+  "objectives": [
+    "Understanding of accounting principles and the role of accounting in recording business transactions.",
+    "Appreciation and application of the rules and functions of Accounting as they apply to organization.",
+    "Foundation for further studies in Accounting."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Paper 1 and Paper 2, both of which must be taken.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice",
+        "duration": "1 hour",
+        "marks": "25 marks",
+        "details": "Fifty multiple choice questions covering the entire syllabus. All questions should be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Theory and Practice",
+        "duration": "2.5 hours",
+        "marks": "75 marks",
+        "details": "Consists of two sections: Section A (Theory of Financial Accounting) with 4 questions (answer 2 for 30 marks) and Section B (Financial Accounting Practice) with 5 questions (answer 3 for 45 marks)."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "GENERAL ACCOUNTING PRINCIPLES AND PRACTICE",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Introduction to Financial Accounting",
+          "details": [
+            "1.1 History, nature and functions of Accounting.",
+            "1.2 Users of Accounting information.",
+            "1.3 Stages in the Accounting process.",
+            "1.4 Characteristics of Accounting information."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "The Accounting Equation and Double Entry Principles",
+          "details": [
+            "2.1 Accounting Equation.",
+            "2.2 Purpose and functions of source documents.",
+            "2.3 Subsidiary books.",
+            "2.4 The ledger: classification of Accounts.",
+            "2.5 Cash Book: analytical cash book, including petty cash book.",
+            "2.6 Preparation of Trial Balance.",
+            "2.7 Bank Reconciliation Statements.",
+            "2.8 Correction of errors and Suspense Account."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "Accounting Concepts",
+          "details": [
+            "3.1 Meaning.",
+            "3.2 Types.",
+            "3.3 Significance.",
+            "3.4 Limitations."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 4,
+          "title": "The Final Accounts of a Sole Trader/proprietorship",
+          "details": [
+            "4.1 Trading, profit and loss accounts/Income statement.",
+            "4.2 Balance sheet/statement of financial position.",
+            "4.3 Adjustments to final accounts."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "Provisions and Reserves",
+          "details": [
+            "5.1 Provision for doubtful debts/Allowance for doubtful debts.",
+            "5.2 Provision for discounts.",
+            "5.3 Depreciation - concepts, reasons for recording and methods: (i) straight line; (ii) reducing balance; (iii) sum of the years digits; (iv) revaluation.",
+            "5.4 Accounting for depreciation.",
+            "5.5 Reserves - revenue and capital reserves."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 6,
+          "title": "Manufacturing Accounts",
+          "details": [
+            "6.1 Purpose of Manufacturing Accounts.",
+            "6.2 Cost classification in Manufacturing Accounts.",
+            "6.3 Preparation of final Accounts of Manufacturing concern."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 7,
+          "title": "Control Accounts and Self-balancing Ledgers",
+          "details": [
+            "7.1 Meaning and uses of control accounts.",
+            "7.2 Types: (i) sales ledger control, (ii) purchases ledger control.",
+            "7.3 Preparation of Control Accounts.",
+            "7.4 Reconciliation of Control Accounts."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "Single Entry and Incomplete Records",
+          "details": [
+            "8.1 Meaning and limitations.",
+            "8.2 Computation of profit or loss from opening and closing balance sheets.",
+            "8.3 Conversion of single entry to double entry.",
+            "8.4 Preparation of final accounts from a set of incomplete records.",
+            "8.5 Mark up and Margin."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "ORGANIZATIONAL ACCOUNTS",
+      "topics": [
+        {
+          "topic_number": 9,
+          "title": "Accounts of Not-for-Profit Making Organizations",
+          "details": [
+            "9.1 Meaning and terminologies.",
+            "9.2 Receipts and payments accounts.",
+            "9.3 Subscriptions Account.",
+            "9.4 Income and expenditure accounts.",
+            "9.5 Accumulated fund.",
+            "9.6 Balance sheet.",
+            "9.7 Profit or loss from income generating activities."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 10,
+          "title": "Partnership Accounts",
+          "details": [
+            "10.1 Nature and formation of partnership.",
+            "10.2 Partnership agreements/Deed.",
+            "10.3 Profit and loss appropriation accounts.",
+            "10.4 Partners capital account and balance sheet.",
+            "10.5 Admission of a new partner.",
+            "10.6 Treatment of goodwill and revaluation of assets.",
+            "10.7 Dissolution of partnership (Questions will not be set on Garner V. Murray and piecemeal realization)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 11,
+          "title": "Company Accounts",
+          "details": [
+            "11.1 Nature and formation of a company.",
+            "11.2 Types of companies and shares.",
+            "11.3 Issue of shares.",
+            "11.4 Loan capital, debentures/loan notes and mortgages.",
+            "11.5 Final accounts of company for internal use only.",
+            "11.6 Interpretation of accounts using simple ratios.",
+            "11.7 Purchase of business account.",
+            "11.8 Statement of Cash Flow (using direct and indirect methods). Note: Separate questions may be set to meet statutory requirements of individual countries."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 12,
+          "title": "Departmental and Branch Accounts",
+          "details": [
+            "12.1 Meaning and importance.",
+            "12.2 Differences between a department and branch.",
+            "12.3 Preparation of departmental account.",
+            "12.4 Preparation of Branch Account excluding foreign branches.",
+            "12.5 Inter branch transactions."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 13,
+          "title": "Public Sector Accounting",
+          "details": [
+            "13.1 Meaning and difference between Public Sector and Private Sector Accounts.",
+            "13.2 Sources of public revenue.",
+            "13.3 Capital and recurrent expenditures.",
+            "13.4 Preparation of simple government accounts."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "SPECIALIZED TOPICS AND REGIONAL VARIANTS",
+      "topics": [
+        {
+          "topic_number": 14,
+          "title": "Accounting for Value Added Tax (Ghana only)",
+          "details": [
+            "14.1 Purpose of VAT.",
+            "14.2 Characteristics of VAT.",
+            "14.3 Bases of computing input/output VAT.",
+            "14.4 Preparation of VAT returns.",
+            "14.5 Exempt goods and services."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 15,
+          "title": "Information Technology in Accounting (Ghana only)",
+          "details": [
+            "15.1 Manual and computerized Accounting Processing Systems.",
+            "15.2 Processes involved in data processing.",
+            "15.3 Computer Hardware and Software.",
+            "15.4 Merits and demerits of manual and computerized accounting processing systems."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 16,
+          "title": "Miscellaneous Accounts (Nigeria, The Gambia, Sierra Leone and Liberia only)",
+          "details": [
+            "16.1 Meaning, introduction, terminologies and preparation of simple: (i) Joint Venture Accounts, (ii) Consignment Accounts, (iii) Contract Accounts, (iv) Hire Purchase Accounts."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 17,
+          "title": "Financial System (Nigeria, The Gambia, Sierra Leone and Liberia only)",
+          "details": [
+            "17.1 Meaning and components.",
+            "17.2 Meaning, functions and features of: (i) money market; (ii) capital market; (iii) insurance market.",
+            "17.3 Methods of raising funds from the capital market: (i) offer for sale; (ii) offer for subscription; (iii) rights issue; (iv) private placement.",
+            "17.4 Requirements for accessing the capital market.",
+            "17.5 Benefits of capital market to: (i) investors; (ii) government; (iii) economy; (iv) individual company.",
+            "17.6 Types, features and reasons for regulation."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "reading_list": [
+    "Business Accounting Volume 1 by Frank Wood (West African Edition).",
+    "Business Accounting Volume 2 by Frank Wood.",
+    "Accounting and Finance by A. H. Millchamp.",
+    "Foundation Accounting by J. D. Magee.",
+    "Basic Accounting by S. C. Malhorta, P. K. Botchwey, and P. A. Omunya.",
+    "Accounting for Senior Secondary School by Amankwah.",
+    "Accounting in Business by R. J. Bull.",
+    "Company Accounts by J. N. Amorin.",
+    "Principles of Accounting by K. B. Appiah Mensah.",
+    "Incorporated Private Partnership Act 1962, Act 152."
+  ]
+}

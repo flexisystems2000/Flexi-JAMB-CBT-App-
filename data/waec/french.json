@@ -1,0 +1,121 @@
+{
+  "subject": "French",
+  "preamble": "The French syllabus is drawn from the Senior High School curricula of member countries and seeks to impart students with the requisite knowledge, skills, attitudes and values to communicate effectively in French for personal development and understanding of, and participation in, the affairs of the Sub-region and the world at large.",
+  "aims": [
+    "Test candidates' ability to use the four language skills (listening, speaking, reading, and writing) to promote communicative competence."
+  ],
+  "requirements": [],
+  "examination_scheme": {
+    "summary": "There will be three papers: Paper 1, Paper 2, and Paper 3, all of which must be taken. Papers 1 and 2 will be a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "40",
+        "details": "Consists of forty multiple choice objective questions divided into Section A (Comprehension - 10 questions based on two passages) and Section B (Structure - 30 questions on structural patterns, words, and expressions). All questions must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay and Letter Writing",
+        "duration": "1 hour 15 minutes",
+        "marks": "40",
+        "details": "Consists of two sections: Section A (Essay) with three questions, and Section B (Letter Writing) with three questions. Candidates are required to answer two questions in all—one question from each section (~100 words per essay)."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Oral Test / Listening, Reading, and Conversation",
+        "duration": "40 minutes",
+        "marks": "50",
+        "details": "Tests listening comprehension ( passage read twice with written responses to 10 questions), reading aloud for pronunciation/fluency, and conversation (dialogue and exposition on general/contemporary themes)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Grammatical Structures and Parts of Speech",
+      "topics": [
+        {
+          "title": "1. Parts of Speech and Morphology",
+          "notes": "Articles (definite, indefinite, partitive - gender and number); Verbs (regular and irregular verbs, common moods/tenses, standard idiomatic expressions such as avoir + noun, venir de + infinitive); Nouns (complements, gender, number); Pronouns (personal, possessive, indefinite, demonstrative, relative, impersonal); Adjectives (possessive, demonstrative, indefinite, interrogative - agreements and positions); Adverbs (formation, position, and special adverbs like mal, vite, fort, tout); Negatives (ne...pas, ne...rien, ne...jamais, etc.); Conjunctions (et, mais, donc, ou, parce que, etc.); Prepositions (à, de, sur, en, devant, etc.)."
+        }
+      ]
+    },
+    {
+      "section_name": "Sentence Structure and Pragmatics",
+      "topics": [
+        {
+          "title": "2. Sentence Patterns and Expressions",
+          "notes": "Declarative, interrogative, exclamative structures; Voice (active and passive); Direct and reported speech; Compound and complex sentence formation; Idiomatic expressions and proverbs; Formal and informal forms of writing; Contextual meaning and communicative registers (expressing politeness, disgust, disappointment); Common figures of speech (similes, metaphors, hyperboles); Structures of major 'Actes de Parole' (exprimer la déception, la probation, le dégoût, la surprise, le plaisir, le regret, etc.)."
+        }
+      ]
+    },
+    {
+      "section_name": "Listening and Reading Comprehension Skills",
+      "topics": [
+        {
+          "title": "3. Comprehension and Listening Dynamics",
+          "notes": "Reading and understanding standard written documents in French (passages of ~150 words); Listening comprehension strategies for straightforward oral passages (~200 words) on issues of general interest; Question response strategies including open-ended answers, sentence transformation, and word substitution."
+        }
+      ]
+    },
+    {
+      "section_name": "Oral Communication and Literature",
+      "topics": [
+        {
+          "title": "4. Oral Expression, Dialogue, and Literature",
+          "notes": "Reading aloud techniques emphasizing correct French pronunciation, rhythm, and fluency (~100-word passages); Engaging in interactive dialogue responding to a minimum of 10 questions on general/contemporary themes (sports, health, leisure, education, politics, culture); Monologue and exposition skills to present freely on a given topic (minimum 5 sentences); Selected literature text analysis (for Ghana candidates: response to literature-based questions)."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Selected Literature Texts (Ghana Candidates Only)",
+      "content": "1. J. N. D. Dodoo: La Belle Fleur et d'autres Histoires, Accra\n2. Tunde Ajiboye: Olurounbi ou Le Prix d'un Pari\n3. Hector Malot: Sans Famille, Paris"
+    }
+  ],
+  "references": [
+    {
+      "type": "Course Books",
+      "books": [
+        "De Grandsaigne, J: France-Afrique 4, Lagos, Macmillan",
+        "Plaisant, Chantal, et al: Trans Afrique 3, Lagos, Macmillan",
+        "Ajiboye, Tunde et al: Nouvel Horizon 4, Ibadan, Bounty Press Ltd.",
+        "Mazauric, Catherine et al: On y va 3, Ibadan, Spectrum Books",
+        "Berard, Evelyne et al: Tempo 1 & 2, Didier, Hatier",
+        "Task Force (MEST): Et en français 1-3, Freetown",
+        "Girardet J. & Pécheir J: écho junior A2 méthode de français, Paris : CLÉ Internationale"
+      ]
+    },
+    {
+      "type": "General Grammar Books",
+      "books": [
+        "Ajiboye, T.: Companion to French Grammar, Ilorin, Info-Links Publishers",
+        "Ferrar H. A: French Reference Grammar, Oxford University Press",
+        "Dangnaud-Macé, P & Sylès, G.: Le Français sans faute, Paris, Hatier",
+        "Le Nouveau Bescherelle: La grammaire pour tous, Paris: Hatier",
+        "Soyoye, F. A: Manuel de conjugaison de verbes, Sophire Ed. Resources"
+      ]
+    },
+    {
+      "type": "Oral Practice",
+      "books": [
+        "Ajiboye, T: An Introduction to Practice in Oral French, Revised edition, Ibadan, Bounty Press Ltd.",
+        "Grandsaigne, J: France Afrique 5, Lagos, Macmillan",
+        "Adegbilero, L. M.: Teaching Yourself French (with cassette/CD) Revised edition, Ibadan, Bounty Press Ltd.",
+        "Chamberlain, Alan & Steele Ross: Guide pratique de la communication, Paris, Didier"
+      ]
+    },
+    {
+      "type": "Dictionaries & Glossaries",
+      "books": [
+        "Micro Robert / Petit Robert",
+        "Petit Larousse",
+        "Dictionnaire du français fondamental pour l'Afrique",
+        "Shorter Harrap's, Collins, Cassell's (French-English / English-French)",
+        "Français Fondamental for West Africa, WAEC, Accra, Black Mask Ltd"
+      ]
+    }
+  ]
+}

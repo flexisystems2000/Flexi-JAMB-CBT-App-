@@ -1,0 +1,173 @@
+{
+  "subject": "Technical Drawing (WASSCE)",
+  "document_title": "West African Senior School Certificate Examination Technical Drawing Syllabus",
+  "structure_of_the_examination": {
+    "paper_1": {
+      "duration": "2 1/2 hours",
+      "description": "Objective/Geometrical Drawing consisting of Sections A and B.",
+      "section_a": "40 compulsory multiple choice questions for 40 marks in 1 hour. Part I: 30 questions on general principles, techniques, uses of plane and solid geometry. Part II: Two alternatives IIA (Building Drawing) and IIB (Mechanical Drawing), 10 questions (31-40). Candidates answer either part IIA or IIB.",
+      "section_b": "4 questions on plane and solid geometry carrying 60 marks in 1 1/2 hours. Candidates answer 3 questions."
+    },
+    "paper_2": {
+      "duration": "2 1/2 hours",
+      "description": "Short Structured Questions and Practical Drawing consisting of Sections A and B.",
+      "section_a": "Two parts, I and II. Candidates answer either part for 30 marks in 45 minutes. Part I (not available in Ghana): 10 structured questions. Part II (not available in Nigeria): 3 questions requiring sketches, candidates answer two (Q1 and any other).",
+      "section_b": "Two questions: one each on Building Drawing and Mechanical Drawing. Candidates answer either question in 1 3/4 hours for 70 marks."
+    }
+  },
+  "detailed_syllabus": {
+    "preliminaries": [
+      {
+        "content": "Types of drawing and application",
+        "notes": "Pictorial and orthographic. Uses and care of equipment."
+      },
+      {
+        "content": "Lines, Lettering and Dimensioning",
+        "notes": "Types of lines and their uses. Types and styles of lettering. Title blocks, Border lines (conform to BS, ISO). Dimensioning: Principles and techniques."
+      }
+    ],
+    "plane_geometry": [
+      {
+        "content": "Division of lines into a given number of equal parts or proportion and its applications",
+        "notes": "Simple exercises involving mathematical problems."
+      },
+      {
+        "content": "Plain and Diagonal scales and their uses including scale of chords",
+        "notes": ""
+      },
+      {
+        "content": "Measurement and construction of angles",
+        "notes": "Exercises involving the use of protractor and a pair of compasses."
+      },
+      {
+        "content": "Triangles, quadrilaterals and polygons",
+        "notes": "Regular and irregular figures."
+      },
+      {
+        "content": "Circle and its properties",
+        "notes": ""
+      },
+      {
+        "content": "Tangency involving circles, arcs and lines",
+        "notes": "Blending of lines and curves. Mutually tangential circles - internal and external. Application to spanners, anchors, tools, and parts."
+      },
+      {
+        "content": "Inscribed, circumscribed and escribed figures",
+        "notes": ""
+      },
+      {
+        "content": "Similar figures (enlargement and reduction)",
+        "notes": "Equivalent and proportional figures determined either by area or sides."
+      },
+      {
+        "content": "Areas of figures",
+        "notes": "Determination of areas by construction."
+      },
+      {
+        "content": "Loci",
+        "notes": "Construction of straight lines, circles, ellipses, parabolas, hyperbolas, helices, trochoids (inferior and superior), spirals, cycloids, hypocycloids, epicycloids, involutes and link mechanisms."
+      }
+    ],
+    "solid_geometry": [
+      {
+        "content": "Pictorial drawing - isometric, oblique, perspective",
+        "notes": "Approximate methods for drawing oblique and isometric curves. Isometric scale, dimensioning cabinet, cavalier etc. One and two points perspective. Isometric circles."
+      },
+      {
+        "content": "Freehand sketches of simple objects",
+        "notes": "Pictorial and orthographic forms."
+      },
+      {
+        "content": "Orthographic projection",
+        "notes": "Both 1st and 3rd angle projections."
+      },
+      {
+        "content": "Auxiliary projection of geometrical figures",
+        "notes": "Prisms, cones, cylinders, pyramids (right or oblique) or combinations of them (including second auxiliary projection)."
+      },
+      {
+        "content": "Traces of a line, true length of straight lines, points and line relationship",
+        "notes": "Location of points and lines in space, true lengths and true angles, intersecting lines, plane relationships, types of planes and edges, views of a plane, true shape of lamina."
+      },
+      {
+        "content": "Sectional views and true shapes",
+        "notes": "Including application to plane figures and intersecting planes. True shapes of sections of prisms, cylinders, pyramids and cones (ellipse, parabola, hyperbola, circle, triangle)."
+      },
+      {
+        "content": "Development",
+        "notes": "Surfaces of right and oblique pyramids, prisms, cylinders and cones and their frustums. Transition pieces."
+      },
+      {
+        "content": "Interpenetration",
+        "notes": "Intersection of surfaces."
+      }
+    ],
+    "building_drawing": [
+      {
+        "content": "Freehand drawing",
+        "notes": "Pictorial and orthographic sketches of building details and tools used in building industries. Recommendations of current BS 1192 (metric)."
+      },
+      {
+        "content": "Intersection of straight and curved moulding in the same plane",
+        "notes": "Including determination of the true shape of mitres."
+      },
+      {
+        "content": "Construction of arches",
+        "notes": "Semi-elliptical, segmental, semi-circular, tudor, equilateral parabolic etc."
+      },
+      {
+        "content": "Roofs",
+        "notes": "Flat, pitched, gabbled, butterfly, lean-to, etc. Development of roof-surfaces and determination of bevels."
+      },
+      {
+        "content": "Simple working drawings and details",
+        "notes": "Simple houses, garages, sheds, etc. Dimensioning, lettering, conventional representation of materials and fittings."
+      },
+      {
+        "content": "Constructional details of parts of buildings",
+        "notes": "Foundations, walls and openings, jambs, sills, lintels, roofs, doors, windows, staircases (half-turn, dog-leg, straight-flight), frames, linings, architraves, floors, simple reinforcement for columns, beams, piers, slabs etc."
+      },
+      {
+        "content": "Orthographic projection of buildings",
+        "notes": "Sectional views and the use of different scales. Up to 2 floors only."
+      }
+    ],
+    "mechanical_drawing": [
+      {
+        "content": "Freehand drawing",
+        "notes": "Sketches of engineering components, tools, electrical circuits, plant layouts. Recommendations of current BS 308A (metric)."
+      },
+      {
+        "content": "Dimensioning",
+        "notes": "Plumbing and welding symbols. Emphasis on correct techniques."
+      },
+      {
+        "content": "Fasteners and locking devices - conventional representations",
+        "notes": "Permanent and temporary joints e.g. welded and riveted joints, bolts and nuts, screws, studs, splined shafts, cotters, collars, keys etc."
+      },
+      {
+        "content": "Helices and their applications",
+        "notes": "Screw threads and springs (both left and right handed)."
+      },
+      {
+        "content": "Working and assembling drawing and details in both first and third angles projections",
+        "notes": "Dimensioning, reference balloon, parts list, title blocks, lettering and good draughtsmanship."
+      },
+      {
+        "content": "Sectioning",
+        "notes": "Full, half, part, offset, broken, removed, aligned, revolved sections etc."
+      }
+    ]
+  },
+  "list_of_materials_and_tools": [
+    "Standard Drawing Board",
+    "T-Square",
+    "Clips or Drawing Pins",
+    "French Curve",
+    "Flexible Curve",
+    "Eraser",
+    "30\"/60\" and 45° set squares",
+    "Drawing Set",
+    "Pencils (HB, 2H)"
+  ]
+}

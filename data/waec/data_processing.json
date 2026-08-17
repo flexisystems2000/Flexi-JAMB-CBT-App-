@@ -1,0 +1,348 @@
+{
+  "subject": "DATA PROCESSING",
+  "preamble": "This examination syllabus is derived from the Senior Secondary School curriculum on Data Processing published by the NERDC. It is designed to test basic knowledge and skills acquisition in data processing. A conceptual approach was used in preparing the syllabus, considering areas that would encourage the development of entrepreneurial skills for everyday living. This syllabus is not a teaching syllabus. It is an examination syllabus. Teachers are therefore advised to use the national teaching syllabus for the teaching-learning process.",
+  "objectives": [
+    "Test candidates' acquisition of basic skills of data processing and management.",
+    "Test candidates' level of competence in ICT applications that will promote the acquisition of entrepreneurial skills for everyday living in the global world.",
+    "Test candidates' knowledge in the application of ICT in facilitating business transaction and education.",
+    "Test candidates' preparedness for further studies in Data Processing and Management."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers, Papers 1 and 2 both of which shall be taken as a composite paper at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "40 marks",
+        "details": "Will consist of forty multiple-choice objective questions, all of which are to be answered in 1 hour for 40 marks."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay and Practical Test",
+        "duration": "2 hours",
+        "marks": "70 marks",
+        "details": "Will consist of two sections: Sections A and B. Candidates will be required to answer five questions in all. Section A: will consist of four essay questions. Candidates will be required to answer any three in 1 hour for 30 marks. Section B: will be a test of practical work. It shall consist of two compulsory essay questions to be answered in 1 hour for 40 marks."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "INFORMATION AGE",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "History of Computers",
+          "details": [
+            "i. Computing devices.",
+            "ii. Concept of Number system in computing.",
+            "iii. Generations of Computer: first, second, third, fourth, fifth generations of computer."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "Data and Information",
+          "details": [
+            "i. Definition of data and information.",
+            "ii. Types of Data.",
+            "iii. Ways of handling Data.",
+            "iv. Definition of Data.",
+            "v. Digitalization."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "BASIC COMPUTING",
+      "topics": [
+        {
+          "topic_number": 3,
+          "title": "Classification of Computers",
+          "details": [
+            "Classify computers by: Type, Size, Usage."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 4,
+          "title": "Application of ICT in everyday life",
+          "details": [
+            "i. Uses of ICT in everyday activities.",
+            "ii. Impact of ICT in the society."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "Components of Computers",
+          "details": [
+            "i. Input Devices.",
+            "ii. Output Devices.",
+            "iii. System Unit.",
+            "iv. Storage Devices."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "INFORMATION PROCESSING",
+      "topics": [
+        {
+          "topic_number": 6,
+          "title": "The art of Information processing",
+          "details": [
+            "i. Definition of Information Processing.",
+            "ii. Steps involved in Information Processing."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "INFORMATION TRANSMISSION",
+      "topics": [
+        {
+          "topic_number": 7,
+          "title": "Process of Information transmission",
+          "details": [
+            "i. Definition of information transmission.",
+            "ii. Methods of transmitting information."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "Medium of Information Transmission",
+          "details": [
+            "i. Types of Information Transmission.",
+            "ii. Classification of means of transmission."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 9,
+          "title": "Networking",
+          "details": [
+            "i. Meaning of Networking, Internet and Intranet.",
+            "ii. Types of Networking."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 10,
+          "title": "Internet",
+          "details": [
+            "i. Definition of Internet.",
+            "ii. Benefits of internet.",
+            "iii. Internet browsers.",
+            "iv. Internet security.",
+            "v. Abuse of the Internet."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "TOOLS FOR PROCESSING INFORMATION",
+      "topics": [
+        {
+          "topic_number": 11,
+          "title": "Operating System",
+          "details": [
+            "i. Definition of Operating System.",
+            "ii. Types of Operating System.",
+            "iii. Examples of Operating System.",
+            "iv. Functions of Operating System."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 12,
+          "title": "Word Processing",
+          "details": [
+            "i. Definition of Word Processing.",
+            "ii. Uses of Word Processing.",
+            "iii. Examples of word Processing software.",
+            "iv. Starting, loading and exiting word processing.",
+            "v. Creating, saving and retrieving documents."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 13,
+          "title": "Spreadsheet",
+          "details": [
+            "i. Definition.",
+            "ii. Uses.",
+            "iii. Examples of Spreadsheet Applications.",
+            "iv. Loading and exiting spreadsheets.",
+            "v. Creating, saving and retrieving Spreadsheet files."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 14,
+          "title": "Database Management System",
+          "details": [
+            "i. Definition.",
+            "ii. Uses.",
+            "iii. Examples of Database Applications.",
+            "iv. Loading and exiting DBMS.",
+            "v. Creating, saving and retrieving database files."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 15,
+          "title": "Presentation Package",
+          "details": [
+            "i. Definition, uses, and examples.",
+            "ii. Loading and exiting Presentation programs.",
+            "iii. Creating, saving and retrieving presentation files."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 16,
+          "title": "Web Design Packages",
+          "details": [
+            "i. Definition.",
+            "ii. Uses.",
+            "iii. Components.",
+            "iv. Examples."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 17,
+          "title": "Graphic Packages",
+          "details": [
+            "i. Definition.",
+            "ii. Uses of Graphic software packages.",
+            "iii. Examples of graphic packages."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "COMPUTER MAINTENANCE, ETHICS AND HUMAN ISSUES",
+      "topics": [
+        {
+          "topic_number": 18,
+          "title": "Maintenance of Computer",
+          "details": [
+            "i. General Cleaning.",
+            "ii. Battery Charging and replacement for portable systems and UPS.",
+            "iii. DVD drive lens cleaning.",
+            "iv. Details of Hardware maintenance.",
+            "v. Details of Software maintenance.",
+            "vi. Computer crash and data recovery."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 19,
+          "title": "Computer Ethics",
+          "details": [
+            "i. Computer room management ethics.",
+            "ii. Laboratory rules and regulations."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 20,
+          "title": "Safety Measures",
+          "details": [
+            "i. The sitting arrangement.",
+            "ii. Positioning of the monitor, keyboard, CPU, mouse and any other peripheral devices.",
+            "iii. Illuminating the computer room.",
+            "iv. Maintaining a dust free environment.",
+            "v. Keep liquid away from the computer room."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 21,
+          "title": "Career opportunities in Data Processing",
+          "details": [
+            "i. Professions in computer.",
+            "ii. Qualities of a good data processing professional.",
+            "iii. Computer professional bodies."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 22,
+          "title": "Computer Virus",
+          "details": [
+            "i. Definition.",
+            "ii. Types/Examples.",
+            "iii. Sources.",
+            "iv. Signals of virus warning.",
+            "v. Virus prevention, detection and deletion."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "DATA MANAGEMENT",
+      "topics": [
+        {
+          "topic_number": 23,
+          "title": "Relational Model",
+          "details": [
+            "i. Database and table creation using application packages.",
+            "ii. Creating relationships between tables.",
+            "iii. Creation of forms, queries and report."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 24,
+          "title": "File Organization",
+          "details": [
+            "i. Definition of File organization.",
+            "ii. Types of File organization."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 25,
+          "title": "Database Security",
+          "details": [
+            "i. Concept of data security, access control and data encryption.",
+            "ii. Role of a database administrator."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 26,
+          "title": "Parallel and Distributed databases",
+          "details": [
+            "i. Basic concept of parallel and distributed database.",
+            "ii. Storing data in a distributed database (DBMS)."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "LIST OF FACILITIES AND MAJOR EQUIPMENT/MATERIALS REQUIRED",
+      "details": [
+        "(1) Pictures/Charts showing different computing devices and other relevant information such as computers in a network - Quantity: 5",
+        "(2) Computer system with Graphical User Interface (GUI), internet ready system - Quantity: 5",
+        "(3) Standard software packages such as Open Office, Microsoft office etc. (Latest version is desirable) - Quantity: 1",
+        "(4) Multimedia systems and applications such as projector, speakers - Quantity: 1",
+        "(5) Graphic packages such as CorelDraw - Quantity: 1"
+      ]
+    }
+  ],
+  "reading_list": []
+}

@@ -1,0 +1,221 @@
+{
+  "subject": "Christian Religious Studies (May not be taken with Islamic Religious Studies and/or West African Traditional Religion)",
+  "aims_and_objectives": [
+    "have knowledge, understanding and appreciation of the religious, cultural, historical and social background of the biblical materials prescribed to be studied;",
+    "understand the nature of biblical moral lessons in the selected passages/themes from the Bible and the extent of their relevance and possible application to present day social, political, religious and cultural life and existence;",
+    "identify difficulties involved in the application of healthy attitudes, concepts and skills acquired from the Bible in ensuring peaceful co-existence and national development;",
+    "demonstrate adequate preparation for higher education through critical thinking and independent work."
+  ],
+  "scheme_of_examination": {
+    "description": "There will be two papers, Papers 1 and 2, both of which will be a composite paper to be taken at one sitting.",
+    "paper_1": "Will consist of fifty multiple choice objective questions all of which must be answered within 1 hour for 40 marks.",
+    "paper_2": {
+      "description": "Will consist of nine essay-type questions. Candidates will be required to answer four questions within 2 hours for 60 marks.",
+      "sections": [
+        "Section A: Themes from the Old Testament - four questions.",
+        "Section B: Themes from the Synoptic Gospels and the Acts of the Apostle - three questions.",
+        "Section C: Themes from selected Epistles two questions."
+      ],
+      "instruction": "Candidates will be required to answer four questions in all, choosing at least one question from each section and the fourth question from either Section A or Section B.",
+      "bible_version": "The Revised Standard Version of the Bible will be used in setting of questions."
+    }
+  },
+  "detailed_syllabus": {
+    "section_a_old_testament": [
+      {
+        "topic_number": 1,
+        "title": "The Sovereignty of God",
+        "notes": [
+          "(a) God, the Creator - Gen. 1; 2",
+          "(b) God, the Controller of the universe - Gen. 1; 2"
+        ]
+      },
+      {
+        "topic_number": 2,
+        "title": "Parental Responsibility",
+        "notes": [
+          "(a) Joseph - Gen. 37: 1-28, 41: 1-57, 45: 1-15",
+          "(b) Moses - Exodus 1; 2; 3; 4: 1-17; 5: 1-5, 22-23; 6: 28-30, 7: 1-7; 14; 32: 1-14",
+          "(c) Joshua - Numbers 13: 1-33; 14: 1-19; Numbers 27: 15-23; Joshua 1: 1-9",
+          "(d) Deborah - Judges 4"
+        ]
+      },
+      {
+        "topic_number": 3,
+        "title": "Leadership roles",
+        "notes": [
+          "Eli and Samuel - 1 Sam 2: 11-36; 3: 1-18; 4: 10-22; 8: 1-5",
+          "Consequences of Saul's disobedience - 1 Samuel 15: 1-26; 16: 14-23; 31: 1-13"
+        ]
+      },
+      {
+        "topic_number": 4,
+        "title": "Submission to the will of God",
+        "notes": [
+          "(a) David's submission to the will of God - 1 Sam 26;",
+          "(b) David's sin, repentance and forgiveness - 2 Sam 12: 15-25"
+        ]
+      },
+      {
+        "topic_number": 5,
+        "title": "Making Decisions",
+        "notes": [
+          "(a) Solomon's wisdom - 1 Kings 3: 3-28; 4: 29-34; 5: 1-12; 8",
+          "(b) The unwise decision of Solomon and Rehoboam - 1 Kings 9: 15-23; 11: 1-13; 12: 1-20"
+        ]
+      },
+      {
+        "topic_number": 6,
+        "title": "Supremacy of God",
+        "notes": [
+          "(a) Religious tensions during Ahab's reign - 1 Kings 16: 29-34; 17: 1-7; 18: 1-19",
+          "(b) Elijah at Mount Carmel - 1 Kings 18: 17-46"
+        ]
+      },
+      {
+        "topic_number": 7,
+        "title": "Greed and its effects",
+        "notes": [
+          "(a) Ahab - 1 Kings 21: 1-29",
+          "(b) Gehazi - 2 Kings 5"
+        ]
+      },
+      {
+        "topic_number": 8,
+        "title": "Religious reforms",
+        "notes": [
+          "The reign of King Josiah - 2 Kings 22; 23: 1-30"
+        ]
+      },
+      {
+        "topic_number": 9,
+        "title": "Concern for one's Nation",
+        "notes": [
+          "(a) The condition of the nation - 2 Kings 24; 25: 1-17",
+          "(b) Response to the state of the nation - Nehemiah 1; 2: 9-20; 4"
+        ]
+      },
+      {
+        "topic_number": 10,
+        "title": "Faith in God",
+        "notes": [
+          "(a) Faith and courage - Ezra 1; 4; 5: 1-2; 6: 13-22; 7: 1-10; Daniel 3",
+          "(b) Faith and power - Daniel 6"
+        ]
+      },
+      {
+        "topic_number": 11,
+        "title": "Nature of God",
+        "notes": [
+          "(a) True religion and social justice - Amos - Amos 2: 6-8; 4; 5: 1-24; 7: 10-17; 8",
+          "(b) God's divine love - Hosea - Hosea 1; 2; 3; 6"
+        ]
+      }
+    ],
+    "section_b_synoptic_gospels_and_acts": [
+      {
+        "topic_number": 1,
+        "title": "Baptism and Temptation of Jesus",
+        "notes": [
+          "(a) The Baptism - Matthew 3: 13-17; Mark 1: 9-11; Luke 3: 21-22",
+          "(b) The Temptation - Matthew 4: 1-11; Mark 1: 12-13; Luke 4: 1-13"
+        ]
+      },
+      {
+        "topic_number": 2,
+        "title": "The Call and Demands of Discipleship",
+        "notes": [
+          "Matthew 4: 18-25; 8: 18-22; 9: 9-13; Mark 1: 16-20; 2: 13-17; Luke 5: 1-11; 9: 57-63; 14: 25-33"
+        ]
+      },
+      {
+        "topic_number": 3,
+        "title": "Jesus' Teaching on forgiveness",
+        "notes": [
+          "Matthew 6: 12, 14-15; 18: 21-35"
+        ]
+      },
+      {
+        "topic_number": 4,
+        "title": "The Trials of Jesus",
+        "notes": [
+          "(a) Jesus at Gethsemane - Matthew 26: 36-56; Mark 14: 32-52",
+          "(b) Peter's Denials - Matthew 26: 69-75; Mark 14: 66-72; Luke 22: 54-62",
+          "(c) Condemnation of Jesus - Matthew 26: 47-75; Mark 14: 53-72; Luke 22: 66-71; 23: 1-12"
+        ]
+      },
+      {
+        "topic_number": 5,
+        "title": "The Crucifixion, Burial and Resurrection of Jesus",
+        "notes": [
+          "(a) Crucifixion and burial - Matthew 27: 32-66; Mark 15: 16-47; Luke 23: 26-56",
+          "(b) The Resurrection - Matthew 28: 1-10; Mark 16: 1-14; Luke 24: 1-35"
+        ]
+      },
+      {
+        "topic_number": 6,
+        "title": "Fellowship in the Early Church",
+        "notes": [
+          "Acts 1: 15-26; 2: 41-47; 4: 32-37; 5: 1-11; 6: 2-6"
+        ]
+      },
+      {
+        "topic_number": 7,
+        "title": "The Holy Spirit and the Mission to the Gentiles",
+        "notes": [
+          "(a) The Holy Spirit at Pentecost - Acts 2",
+          "(b) Mission to the Gentiles - Acts 9; 11: 1-18"
+        ]
+      },
+      {
+        "topic_number": 8,
+        "title": "Opposition to the Gospel Message",
+        "notes": [
+          "Acts 4: 1-31; 5: 17-42; 6: 8-9; 7: 1-10; 12: 1-24"
+        ]
+      }
+    ],
+    "section_c_selected_epistles": [
+      {
+        "topic_number": 1,
+        "title": "The Epistles of James",
+        "notes": [
+          "(a) Faith and Works - James 1: 2-27; 2: 14-26",
+          "(b) Impartiality - James 2: 1-13",
+          "(c) Effective Prayers - James 1: 2-8; 5: 13-18"
+        ]
+      },
+      {
+        "topic_number": 2,
+        "title": "The Epistle of 1 Peter",
+        "notes": [
+          "(a) Good Citizenship - 1 Peter 2: 13-17",
+          "(b) Christians Living among non-Christians - 1 Peter 2: 1-25",
+          "(c) Interpersonal Relationship among Christians - 1 Peter 5: 1-11"
+        ]
+      }
+    ]
+  },
+  "suggested_reading_list": {
+    "general": [
+      "The Holy Bible (Revised Standard Version)",
+      "New Clarendon Bible Series: Bright, John: History and Religion of Israel",
+      "Anderson, B. W.: The Living World of the Old Testament",
+      "Kee. H. C. & Young: The Living World of the New Testament",
+      "Cambell, D. B. J.: The Synoptic Gospels",
+      "New Bible Commentary - Cambridge."
+    ],
+    "old_testament": [
+      "Quarcoopome, T. N. O.: History and Religion of Israel AUP, Ibadan, 1986.",
+      "Dickson, Kwesi: History and Religion of Israel Darton L & T 1968",
+      "Dickson, Kwesi: From the Institution of the Monarchy to the fall of the Northern Kingdom"
+    ],
+    "new_testament": [
+      "Guy, H. A.: The Life of Christ",
+      "Guy, H. A.: The Acts of the Apostles",
+      "Pobee, John S: Matthew and Mark for Schools",
+      "Dickson K.A: The Gospel According to Luke (Accra, Asempa Publishers)",
+      "Awolabi Joshua: Simple Approach to Christian Religious Knowledge Elis Association, Lagos 2011"
+    ]
+  }
+}

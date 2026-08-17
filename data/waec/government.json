@@ -1,0 +1,244 @@
+{
+  "subject": "Government",
+  "aims_and_objectives": [
+    "define the concepts of Government and show their understanding of its principles, institutions and processes.",
+    "recognize their role as an informed citizens and their contributions towards the achievement of national development.",
+    "evaluate the successes, failures and problems of governments in West Africa.",
+    "analyse the constitutional developments and processes of colonial and post - independent government.",
+    "appreciate the role of their country as a member of the international community."
+  ],
+  "scheme_of_the_examinations": {
+    "papers": [
+      {
+        "paper_number": 1,
+        "description": "Will consist of fifty multiple-choice objective questions drawn from the entire syllabus. Candidates will be required to answer all the questions in 1 hour for 40 marks."
+      },
+      {
+        "paper_number": 2,
+        "description": "This will be a 2-hour essay type test consisting of two sections, Sections A and B, carrying 60 marks.",
+        "sections": [
+          {
+            "section_letter": "A",
+            "section_title": "Elements of Government",
+            "instructions": "Shall contain five questions out of which candidates shall be required to attempt any two."
+          },
+          {
+            "section_letter": "B",
+            "section_title": "Political and Constitutional Developments in West Africa and International Relations",
+            "instructions": "Shall contain sets of five questions each; one set for one member country. Each candidate is to answer two questions chosen from the set on the country in which he/she is taking the examination."
+          }
+        ]
+      }
+    ]
+  },
+  "detailed_syllabus": {
+    "section_a_elements_of_government": [
+      {
+        "topic": "1. Meaning and Scope of the Subject Matter - Government",
+        "content": [
+          "Government as an institution of the state",
+          "Definition of state, features, structure and functions.",
+          "Government as a process or art or governing.",
+          "Government as an academic field of study - reasons for studying government."
+        ]
+      },
+      {
+        "topic": "2. Basic Concepts and Principles of Government",
+        "content": [
+          "Basic concepts - State, Society, Nation, Power, Authority, Legitimacy, Sovereignty, Democracy, Political Culture and Socialization, Communalism, Feudalism and oligarchy, Liberalism, Socialism, Communism, Capitalism, Fascism, Aristocracy, Totalitarianism.",
+          "Meaning and features.",
+          "Basic principles - Rule of Law, Fundamental Human Rights, Separation of Powers/Checks and Balances, Constitutionalism, Political participation, Representative Government, Centralization and Decentralization - (Delegated Legislation, Devolution and Decentralization)."
+        ]
+      },
+      {
+        "topic": "3. Constitutions",
+        "content": [
+          "Definition and Sources",
+          "Functions",
+          "Types and Features, (Written and Unwritten, Rigid and Flexible)."
+        ]
+      },
+      {
+        "topic": "4. Organs of Government",
+        "content": [
+          "The Executive, the Legislature and the Judiciary - Judicial Independence. (Types, Structure, Composition/membership; Functions; powers and limitations)."
+        ]
+      },
+      {
+        "topic": "5. State Structure and Characteristics of Government",
+        "content": [
+          "Types - Unitary, Federal, Confederal, Presidential or Non-parliamentary, Parliamentary or Cabinet, Monarchical and Republican.",
+          "Meaning, types, features, merits and demerits."
+        ]
+      },
+      {
+        "topic": "6. Citizenship",
+        "content": [
+          "Meaning, mode of acquisition, rights, duties and obligations of individuals in the state.",
+          "Means of safeguarding rights of citizens."
+        ]
+      },
+      {
+        "topic": "7. Political Parties and Party Systems",
+        "content": [
+          "Political Parties - definition, organization/structure, and functions.",
+          "Party Systems - definition, types, merits and demerits."
+        ]
+      },
+      {
+        "topic": "8. Pressure Groups, Public Opinion and Mass Media",
+        "content": [
+          "Pressure Groups - definition, types, mode of operation and functions;",
+          "Public opinion - definition, formation, Measurement and importance;",
+          "Mass Media - definition, roles and impact."
+        ]
+      },
+      {
+        "topic": "9. The Electoral Systems, Processes and Electoral Management Body",
+        "content": [
+          "Electoral Systems and Processes (Election- Meaning and purpose of elections; Franchise - meaning, and limitations; Types, advantages and disadvantages of Electoral Systems).",
+          "Electoral Management Body - definition, function, problems/constrains."
+        ]
+      },
+      {
+        "topic": "10. Public/Civil Service Administration",
+        "content": [
+          "Public/Civil Service - Meaning, Structure, Characteristics and Functions.",
+          "Public/Civil Service Commission - meaning and Functions.",
+          "Public Corporations - definition, purposes, functions, control, challenges, need for commercialization and privatization.",
+          "Local Governments - Meaning, structure, Purposes, Functions, Sources of revenue, control and problems."
+        ]
+      }
+    ],
+    "section_b_political_and_constitutional_developments_in_west_africa_and_international_relations": [
+      {
+        "topic": "11. Pre-Colonial Political System of Candidates' Respective Countries",
+        "content": {
+          "nigeria": "Hausa/Fulani, the Yoruba and the Igbo.",
+          "ghana": "The Akan and the Talensi.",
+          "sierra_leone": "The Mende and Temme.",
+          "the_gambia": "The Wolof, Mandingo and Jola.",
+          "liberia": "The Vai and the Kru."
+        }
+      },
+      {
+        "topic": "12. Colonial Administration",
+        "content": [
+          "The Policy and Structure of the British Colonial Administration - Crown Colony, Protectorate and Indirect Rule.",
+          "The Policy of French Colonial Administration - Assimilation and Association (Loi Cadre).",
+          "Impact, Advantages and disadvantages of Colonial Rule."
+        ]
+      },
+      {
+        "topic": "13. Nationalism in Candidates' Respective Countries",
+        "content": [
+          "Nationalism: Meaning, factors and effects.",
+          "Key Nationalist leaders/movements and their contributions."
+        ]
+      },
+      {
+        "topic": "14. Constitutional Developments in Candidates' Respective Countries",
+        "content": [
+          "Pre-Independence Constitutions (Nigeria: Clifford 1922, Richards 1946, Macpherson 1951, Littleton 1954; Ghana: Clifford 1916, Guggisberg 1925, Burns 1946, Arden Clarke 1951, Nkrumah 1954; Sierra Leone: Slatter 1924, Stevenson 1947, Beresford Stooke 1951, The 1956 and 1958 Constitutions; The Gambia)",
+          "Post-Independence Constitutions (Nigeria: Independence 1960, Republican 1963, 1979, 1989, 1999; Ghana: Independence 1957, Republican 1960, 2nd Republican 1969, 3rd Republican 1979, 4th Republican 1992; Sierra Leone: Independence 1961, Republican 1971, 1978, 1991; The Gambia: Independence 1965, Republican 1970, 2nd Republican 1997; Liberia: Independence/Republican 1947, 2nd Republican 1985)"
+        ]
+      },
+      {
+        "topic": "15. Development of Major Political Parties in the Candidates' Respective Countries",
+        "content": [
+          "Formation, Objectives, Sources of Finance, Achievements and Failures for Nigeria, Sierra Leone, The Gambia, and Liberia."
+        ]
+      },
+      {
+        "topic": "16. Military Rule in the Candidates' Respective Countries",
+        "content": [
+          "Causes, effects and various military regimes in Nigeria, Ghana, Sierra Leone, The Gambia, and Liberia."
+        ]
+      },
+      {
+        "topic": "17. Federal/Unitary Systems of Government in West Africa",
+        "content": [
+          "Origin, Factors, Structure, Features and Problems in Nigeria, Sierra Leone, The Gambia, and Liberia."
+        ]
+      },
+      {
+        "topic": "18. Foreign Policies of the Candidates' Respective Countries",
+        "content": [
+          "Definitions, Factors, objectives, advantages and disadvantages for Nigeria, Ghana, Sierra Leone, The Gambia, and Liberia."
+        ]
+      },
+      {
+        "topic": "19. International Organizations",
+        "content": [
+          "The United Nations Organizations (UNO), The Commonwealth of Nations, African Union (AU) - NEPAD, The Economic Community of West African States (ECOWAS). Origin, aims/objectives, achievements and problems."
+        ]
+      }
+    ]
+  },
+  "suggested_reading_list": [
+    {
+      "author": "Adu Boahen, A",
+      "title": "Ghana Evolution and Change in the 19th and 20th Centuries"
+    },
+    {
+      "author": "Shillington K.",
+      "title": "Ghana and the Rawlings Factor"
+    },
+    {
+      "author": "Hodgkin T.",
+      "title": "African Political Parties"
+    },
+    {
+      "author": "Garbrah . K.",
+      "title": "Foreign Policies of Major Countries, Subject Publications, New Delhi"
+    },
+    {
+      "author": "Addae P. G.",
+      "title": "Senior Secondary School Government Bks. 1&2"
+    },
+    {
+      "author": "Nofiu S. O. A.",
+      "title": "A-ONE in Government"
+    },
+    {
+      "author": "Echiefu S. M",
+      "title": "Modern Government"
+    },
+    {
+      "author": "Appadorai A.",
+      "title": "The Substance of Politics"
+    },
+    {
+      "author": "Price J. H.",
+      "title": "Political Institutions in West Africa"
+    },
+    {
+      "author": "Leeds C. A.",
+      "title": "Political Studies"
+    },
+    {
+      "author": "Amoa G. Y.",
+      "title": "Groundwork of Government in West Africa"
+    },
+    {
+      "author": "Dare and Oyewole",
+      "title": "A Textbook of Government for Senior Secondary School"
+    },
+    {
+      "author": "Oyediran and Co.",
+      "title": "Government for Senior Secondary School."
+    },
+    {
+      "author": "Francis Adigwe",
+      "title": "Essentials of Government"
+    },
+    {
+      "author": "Dennis Austin",
+      "title": "Politics in Ghana 1946-1960"
+    },
+    {
+      "author": "Prah Isaac",
+      "title": "Government for Senior Secondary School"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "subject": "Marketing",
+  "preamble": "The Marketing syllabus at the Senior Secondary School level in Nigeria is designed to assess candidates' basic knowledge, practical skills, and understanding of marketing concepts. It encompasses an overview of marketing principles, the marketing mix, consumer and organizational buyer behavior, market research, channel management, international trade, electronic marketing, and marketing-focused entrepreneurship.",
+  "aims": [
+    "Assess knowledge, practical skills, and foundational concepts needed to pursue marketing as a career;",
+    "Evaluate ability to set up, fund, locate, and effectively manage a retail or commercial market outlet;",
+    "Examine understanding of the crucial roles marketing plays in economic development and resource distribution."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "Candidates are expected to demonstrate practical skills in product design and the production of sample advertisements as part of their coursework preparation."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two composite papers (Paper 1 and Paper 2) taken at a single sitting, assessing objective recall, analytical essay writing, and practical application of marketing concepts.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "50 minutes",
+        "marks": "40",
+        "details": "Consists of forty compulsory multiple-choice objective questions covering the entire breadth of the syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Test",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of six essay questions, out of which candidates are expected to answer any four questions carrying 20 marks each."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Fundamentals of Marketing & Environment",
+      "topics": [
+        {
+          "title": "1. Introduction to Marketing",
+          "notes": "Meaning of marketing. Basic terms: needs, wants, demands, product, exchange, transactions, and markets. Historical development of marketing in Nigeria. Primary and secondary functions of marketing."
+        },
+        {
+          "title": "2. Marketing Concepts",
+          "notes": "Meaning and evolution of marketing philosophies: Production, Product, Selling, Marketing, and Societal Marketing concepts."
+        },
+        {
+          "title": "3. Marketing Mix and Marketing Environment",
+          "notes": "Meaning and elements of the Marketing Mix (4 Ps: Product, Price, Place, Promotion). Definition of the Marketing Environment and internal/external factors affecting it: political, cultural, religious, economic, technological, and social influences."
+        }
+      ]
+    },
+    {
+      "section_name": "Product, Pricing & Buyer Behavior",
+      "topics": [
+        {
+          "title": "1. Products & Design",
+          "notes": "Definition and classification of products: Industrial goods, consumer goods, services, primary and secondary products, and mineral products (oil and non-oil). Key distinctions between product classes. Practical applications of Product Design."
+        },
+        {
+          "title": "2. Markets & Consumer/Organizational Behaviour",
+          "notes": "Definition and classifications of markets: Consumer and Organizational (industrial, reseller, and government). Consumer and organizational buying behavior: influencing factors and the consumer decision-making process in logical sequence."
+        },
+        {
+          "title": "3. Pricing Strategies",
+          "notes": "Meaning of pricing. Determinants of price. Pricing strategies (haggling, cost-plus, demand-based, and competition-based) and their practical applications."
+        }
+      ]
+    },
+    {
+      "section_name": "Promotion, Merchandising & Communication",
+      "topics": [
+        {
+          "title": "1. Advertising",
+          "notes": "Definition and functions of advertising. Advertising media: types, advantages, and disadvantages. Practical production of sample advertisements."
+        },
+        {
+          "title": "2. Sales Promotion",
+          "notes": "Meaning and functions of sales promotion. Forms of promotional techniques: price-off, coupons, sales force competitions, loyalty schemes, premium offers, trade-in allowances, sampling, training schemes, and merchandising incentives."
+        },
+        {
+          "title": "3. Merchandising",
+          "notes": "Meaning, elements (packaging, branding, and labeling), influencing factors, and core functions of merchandising."
+        }
+      ]
+    },
+    {
+      "section_name": "Distribution, Logistics & Market Facilitation",
+      "topics": [
+        {
+          "title": "1. Distribution & Channels",
+          "notes": "Definition of distribution and channels of distribution. Types of distribution channels, factors influencing channel choice, and functions of channel intermediaries."
+        },
+        {
+          "title": "2. Transportation & Warehousing",
+          "notes": "Transportation: meaning, modes, choices, importance, factors influencing selection, and essential documentation. Warehousing: meaning, types, functions, and key warehouse operational activities."
+        },
+        {
+          "title": "3. Market Unions and Facilitators",
+          "notes": "Market Unions: meaning, types, and roles in local markets. Market Facilitators: meaning, types, and supporting functions in commerce."
+        },
+        {
+          "title": "4. Marketing Planning and Research",
+          "notes": "Meaning, process, importance, elements, and data requirements for marketing planning. Reasons for marketing planning and research, and practical utilization of market feedback."
+        }
+      ]
+    },
+    {
+      "section_name": "Modern Practices & Entrepreneurship",
+      "topics": [
+        {
+          "title": "1. International Marketing",
+          "notes": "Meaning, importance, reasons, and entry methods for international marketing. Environmental influencing factors and guiding regulatory frameworks."
+        },
+        {
+          "title": "2. ICT in Marketing (E-Marketing)",
+          "notes": "Electronic marketing (E-Marketing): definition, importance, practical uses, ethical considerations, and common abuses."
+        },
+        {
+          "title": "3. Entrepreneurship in Marketing",
+          "notes": "Definitions of entrepreneurship and entrepreneur. Sources of business funding. Factors affecting the location of market outlets. Outlets management: purchasing, supply chain, inventory, and practical selling and bargaining skills."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "Fundamentals of Marketing by O. O. Shokan - MAM Education Limited, Lagos",
+        "Commerce Textbook by G. A. Saka and J. O. Nnabuko - Emiola Publisher Ltd",
+        "Marketing in Nigeria: Concepts, Principles and Decisions (2nd Edition) by B. A. Agbonifoh, O. E. Ogwo, D. A. Nnolim, and A. D. Nkamnebe (2007) - Afritowers Limited Publisher"
+      ]
+    }
+  ]
+}

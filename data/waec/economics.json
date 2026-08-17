@@ -1,0 +1,334 @@
+{
+  "subject": "ECONOMICS",
+  "preamble": "This syllabus is designed to assess candidates' knowledge of basic economic principles needed for rational decision making relating to individuals, businesses, government and society. Such knowledge is necessary in enhancing their appreciation of government economic policies, problems of implementation and how they impact on the economy. This will help candidates to understand that economics is not only an academic field of study but also a practical subject.",
+  "objectives": [
+    "Test candidates' knowledge of the basic economic principles, concepts, and the tools for economic analysis.",
+    "Test candidates' understanding of the structure and functioning of economic institutions - commercial, agricultural, industrial and financial institutions.",
+    "Test candidates' understanding of the basis for rational economic decisions.",
+    "Test candidates' ability to explain the basis and structure of the West African economy, including the roles of agriculture, industry and mining and their contributions to the national income.",
+    "Test candidates' ability to follow the role and status of the West African countries in international economic relationships.",
+    "Test candidates' ability to appreciate the problems West African countries encounter in their economic development."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers - Paper 1 and Paper 2; both of which will be in a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "50 marks",
+        "details": "Will consist of fifty multiple choice questions to be taken in 1 hour for 50 marks."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "80 marks",
+        "details": "Will consist of eight essay-type questions in two sections: Sections A and B. Section A will consist of two data response questions. Candidates will be required to answer four questions in all, choosing one question from Section A and any three questions from Section B. The paper shall last 2 hours for 80 marks."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "DETAILED SYLLABUS",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "DEFINITION AND SCOPE OF ECONOMICS",
+          "details": [
+            "Scarcity and Choice, Scale of Preference, Opportunity Cost, Production Possibility Curve.",
+            "Economic activities Production, Distribution and Consumption.",
+            "Classification of economic activities - Primary, Secondary and Tertiary and their relative contributions in terms of output/income, employment, savings, investment and foreign exchange."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "FACTORS OF PRODUCTION",
+          "details": [
+            "Land, labour, capital and entrepreneurship - meaning, characteristics and importance."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "TYPES AND BASIC FEATURES OF ECONOMIC SYSTEMS",
+          "details": [
+            "(a) Types: capitalism, socialism and mixed economy.",
+            "(b) Basic features of each.",
+            "(c) Advantages and disadvantages of each.",
+            "(d) Economic problems of society and the approaches for solving them under each of the systems."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 4,
+          "title": "BASIC TOOLS OF ECONOMIC ANALYSIS",
+          "details": [
+            "Tables, graphs and charts.",
+            "Some basic statistical measures and representations: arithmetic mean, median, mode and their simple applications."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "DEMAND",
+          "details": [
+            "Concept of demand and law of demand, the demand schedules and curve, reasons for exceptional demand curves, types of demand (derived, composite, joint and competitive); factors determining demand for goods and services - price of the commodity, prices of other commodities, income, tastes, price expectation, etc.",
+            "Distinction between a shift of and movement along a demand curve; concept of elasticity of demand.",
+            "Types of elasticity of demand and their measurement - price, income and cross elasticities of demand: importance of the concept of elasticity of demand to consumers, producers and government."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 6,
+          "title": "SUPPLY",
+          "details": [
+            "Concept of supply and law of supply, supply schedules and curve, types of Supply - composite, complementary and competitive.",
+            "Factors determining supply - input prices, technology, prices of other commodities, climatic factors, etc.",
+            "Distinction between the shift of and movement along the supply curve.",
+            "Concept and measurement of elasticity of supply and its importance to producers and government."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 7,
+          "title": "THEORY OF CONSUMER BEHAVIOUR",
+          "details": [
+            "The utility concepts - total utility, average utility, marginal utility and the calculation of utility schedules.",
+            "The law of diminishing marginal utility, relationship between total utility, average utility and marginal utility.",
+            "The concept of equilibrium of a consumer. Determination of consumer equilibrium.",
+            "The effects of changes in price on consumer equilibrium.",
+            "The relationship between marginal utility and the demand curve."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "THEORY OF PRICE DETERMINATION",
+          "details": [
+            "The Concept of the market; interaction between demand and supply.",
+            "Price determination under free and regulated markets. Equilibrium price and quantity in product and factor markets.",
+            "The effects of changes in supply and demand on equilibrium prices and quantities.",
+            "Introduction to algebraic determination of equilibrium price and quantity.",
+            "Price controls: maximum and minimum price regulations - meaning and their effects; rationing, black market (parallel market)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 9,
+          "title": "THEORY OF PRODUCTION",
+          "details": [
+            "Production: division of labour and specialization.",
+            "Scale of production (Internal and External economies).",
+            "Concept of total, average and marginal productivity and law of variable proportions."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 10,
+          "title": "THEORY OF COST AND REVENUE",
+          "details": [
+            "(i) Cost concepts: total cost, average cost, marginal cost, variable cost, fixed cost; short run and long run costs.",
+            "(ii) Distinction between economist's and accountant's view of cost (opportunity cost and money cost).",
+            "(iii) Revenue concepts: total, average and marginal revenue; Marginal revenue Product."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 11,
+          "title": "MARKET STRUCTURES",
+          "details": [
+            "Concept of a market, characteristics of various market structures, determination of price and output under different structures - perfect competition and imperfect competition (monopoly and monopolistic competition).",
+            "Review of cost and revenue concepts.",
+            "Price discrimination."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 12,
+          "title": "BUSINESS ORGANIZATIONS",
+          "details": [
+            "Types and basic features of business enterprises - Sole Proprietorship; Partnership, Joint-Stock companies (Private and Public), Co-operatives; Statutory Corporation, Joint ventures.",
+            "Sources of funds.",
+            "General and basic problems of business enterprises.",
+            "Privatization and Commercialization as solutions to problems of public enterprises.",
+            "Indigenization and nationalization policies."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 13,
+          "title": "DISTRIBUTIVE TRADE",
+          "details": [
+            "Process of distribution, role of producers, role of wholesalers, retailers and co-operatives.",
+            "The role of government agencies in product distribution and the problems of distribution and their solutions."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 14,
+          "title": "POPULATION AND LABOUR MARKET",
+          "details": [],
+          "subsections": [
+            {
+              "subtitle": "(a) Population",
+              "details": [
+                "Determination and implication of size and growth of population.",
+                "Rural - urban migration.",
+                "Malthusian theory of population.",
+                "Geographical, age, sex and occupational distribution.",
+                "Importance and problems of census.",
+                "Population and economic development (under-population, optimum population and over-population)."
+              ]
+            },
+            {
+              "subtitle": "(b) Labour Market",
+              "details": [
+                "(i) Concept of labour force and human capital, efficiency and mobility of labour, factors affecting the size of the labour force, particularly the population characteristics (age, sex, occupation, education, etc.).",
+                "(ii) Supply of and demand for labour: wage determination. Concept of unemployment and underemployment, Trade Unions, Employers' association and Government policies on labour and wages."
+              ]
+            }
+          ]
+        },
+        {
+          "topic_number": 15,
+          "title": "AGRICULTURE",
+          "details": [
+            "Structure (e.g. food crops, export crops, livestock, fisheries).",
+            "Systems of agriculture (peasant, commercial, co-operative and state farming).",
+            "Importance of agriculture to the national economy.",
+            "Marketing of agricultural products (commodity boards).",
+            "Agricultural policies (minimum agricultural prices) problems of agriculture and remedies."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 16,
+          "title": "INDUSTRIALIZATION",
+          "details": [
+            "Meaning and types of industry.",
+            "Definition of industrial concepts: plant, firm, industry and industrial estates.",
+            "Location of industry, localization, role of industrialization in economic development.",
+            "Strategies of industrialization. Problems of industrialization.",
+            "The link between agricultural and industrial development."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 17,
+          "title": "NATIONAL INCOME",
+          "details": [
+            "Meaning of major national income concepts e.g. Gross Domestic Product, Gross National Product, Net National Product, etc.",
+            "Different ways of measuring national income and their problems.",
+            "Uses and limitations of national income data; trends and structure of national income."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 18,
+          "title": "MONEY AND INFLATION",
+          "details": [],
+          "subsections": [
+            {
+              "subtitle": "(a) Money",
+              "details": [
+                "Definition and historical development - barter and its problems, types, characteristics, functions.",
+                "Supply of and demand for money, value of money and the price level."
+              ]
+            },
+            {
+              "subtitle": "(b) Inflation",
+              "details": [
+                "Meaning, types, causes, effects and control."
+              ]
+            }
+          ]
+        },
+        {
+          "topic_number": 19,
+          "title": "FINANCIAL INSTITUTIONS",
+          "details": [
+            "Types (traditional, Central Bank, Commercial Bank, Development Bank, Merchant Bank, and Insurance Companies, Building Societies): development and functions of financial institutions.",
+            "Money and capital markets: meaning, types and functions."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 20,
+          "title": "PUBLIC FINANCE",
+          "details": [
+            "Fiscal policy and objectives of public finance.",
+            "Sources of government revenue.",
+            "Taxation - types (direct and indirect), objectives, merits, demerits and incidence; Principles/canons of taxation; Rates of taxation (proportional, progressive and regressive).",
+            "Direct and indirect taxation: incidence and effects of taxes.",
+            "Composition/structure of public expenditure (recurrent and capital expenditure): effects of public expenditure.",
+            "Government budget and the national debt."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 21,
+          "title": "ECONOMIC DEVELOPMENT AND PLANNING",
+          "details": [
+            "Meaning of economic development, distinction between economic growth and development, characteristics and problems of developing countries.",
+            "Elements of development planning (objectives of planning, and problems of planning).",
+            "Types of plans (short term, medium term, perspective or long term, rolling plan etc.)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 22,
+          "title": "INTERNATIONAL TRADE AND BALANCE OF PAYMENTS",
+          "details": [],
+          "subsections": [
+            {
+              "subtitle": "(a) International Trade",
+              "details": [
+                "Differences between domestic and international trade, the basis of international trade, absolute and comparative cost advantage, terms of trade (definition and measurement).",
+                "Commercial policy (objectives) and instruments tariffs (types) and direct control.",
+                "Trend and structure of West African countries' external trade."
+              ]
+            },
+            {
+              "subtitle": "(b) Balance of Payments",
+              "details": [
+                "Role of money in international transactions, meaning and components of balance of payments, balance of payments disequilibrium.",
+                "Balance of payments adjustments (exchange rate policy, exchange control, monetary and fiscal policies) and financing (the use of reserves and international borrowing)."
+              ]
+            }
+          ]
+        },
+        {
+          "topic_number": 23,
+          "title": "ECONOMIC INTEGRATION",
+          "details": [
+            "Economic Integration (objectives, levels of and features).",
+            "Development and problems of economic integration in West Africa - ECOWAS."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 24,
+          "title": "INTERNATIONAL ECONOMIC ORGANIZATIONS",
+          "details": [
+            "Development and role of: Organization of Petroleum Exporting Countries (OPEC), Economic Commission for Africa (ECA), International Monetary Fund (IMF), International Bank for Reconstruction and Development (IBRD), African Development Bank (AfDB), United Nations Conference on Trade and Development (UNCTAD), etc.",
+            "Relevance of such organizations to West African Countries."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 25,
+          "title": "MAJOR NATURAL RESOURCES",
+          "details": [
+            "Development of major natural resources (petroleum, gold, diamond, timber, groundnut etc.).",
+            "Effects on West African economies (positive and negative)."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "reading_list": []
+}

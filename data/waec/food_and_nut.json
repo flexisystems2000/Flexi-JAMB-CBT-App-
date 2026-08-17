@@ -1,0 +1,150 @@
+{
+  "subject": "Foods and Nutrition",
+  "preamble": "Food is one of the basic needs of man. Without good food, an individual would not be able to function properly in all spheres of life. Good food promotes health and therefore it is important that students are exposed to ways of selecting, preparing and cooking wholesome food for themselves and others. Foods and Nutrition as a vocational subject prepares students for the world of work. It also encourages the creative use of local foods and associated food service to meet the nutritional needs and other demands of consumers.",
+  "aims": [
+    "acquire basic knowledge about foods and nutrition;",
+    "understand the relationship between nutrition and health;",
+    "identify career opportunities in foods and nutrition and acquire skills for further studies;",
+    "apply the general principles underlying meal planning, selection, preparation and serving of food to feed family and other consumers for different occasions;",
+    "understand the need for planning an efficient and safe kitchen;",
+    "choose, use, care and store kitchen equipment and tools effectively;",
+    "appreciate the importance of sanitation in the kitchen food preparation and service;",
+    "apply basic principles underlying food processing, storage and preservation;",
+    "acquire basic knowledge in consumer education;",
+    "acquire research skills and use the information to experiment, develop and improve local dishes;",
+    "set up a business in the food industry using all the basic skills acquired."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers: Paper 1, Paper 2, and Paper 3, all of which must be taken. Papers 1 and 2 will be taken at a single sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "60",
+        "details": "Comprises sixty multiple-choice questions covering the entire syllabus, all of which must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "1 hour 15 minutes",
+        "marks": "40",
+        "details": "Comprises six essay-type questions, out of which candidates are required to answer four."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test",
+        "duration": "3 hours",
+        "marks": "100",
+        "details": "Practical examination conducted by a visiting examiner to assess practical cookery skills, meal preparation, and presentation."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Nutrition and Health",
+      "topics": [
+        {
+          "title": "1. Introduction to Foods and Nutrition",
+          "notes": "Meaning and basic concepts of nutrition; importance of human nutrition; factors affecting foods and nutrition; influence of food habits and culture."
+        },
+        {
+          "title": "2. Careers Associated with Foods and Nutrition",
+          "notes": "Career pathways in food and nutrition industries; factors influencing career selection; essential professional characteristics and skills required."
+        },
+        {
+          "title": "3. Basic Food Nutrients",
+          "notes": "Classification, functions, and food sources of nutrients; dietary deficiency diseases; metabolism (digestion and absorption of carbohydrates, proteins, and fats); food composition tables; qualitative food tests for carbohydrates, proteins, and fats."
+        }
+      ]
+    },
+    {
+      "section_name": "Food Laboratory, Equipment, and Meal Management",
+      "topics": [
+        {
+          "title": "4. Kitchen Planning and Hygiene",
+          "notes": "Types of kitchens (traditional, modern, institutional); kitchen planning factors and layouts; commercial and local cleaning agents and abrasives."
+        },
+        {
+          "title": "5. Kitchen Equipment and Safety",
+          "notes": "Classification, selection, operation, care, and storage of large and small kitchen appliances and tools; types, causes, and prevention of kitchen accidents; first aid kit contents and simple emergency treatments."
+        },
+        {
+          "title": "6. Meal Management and Sanitation",
+          "notes": "Meal planning principles, terminology, factors, and patterns; special nutritional requirements (pregnant/lactating mothers, infants, children, adolescents, elderly, vegetarians); diet therapy for medical conditions (HIV & AIDS, convalescents, obesity, hypertension, diabetes); personal, food, and kitchen hygiene; food-borne diseases and food safety regulations."
+        }
+      ]
+    },
+    {
+      "section_name": "Food Commodities",
+      "topics": [
+        {
+          "title": "7. Animal Products and Cereals",
+          "notes": "Selection, structure, nutritive value, and storage of milk, dairy products (cheese, yogurt), eggs, meat, poultry, and fish; classification, versatility, thickening properties, and nutritional significance of cereals and grains."
+        },
+        {
+          "title": "8. Fruits, Vegetables, Legumes, and Starchy Roots",
+          "notes": "Classification, structure, nutritive values, storage methods, and dietary role of fruits, vegetables, legumes, and oilseeds; classification, dietary uses, and health implications of fats and oils; preparation and dishes using starchy roots and plantains."
+        }
+      ]
+    },
+    {
+      "section_name": "Food Storage and Preservation",
+      "topics": [
+        {
+          "title": "9. Food Spoilage, Preservation, and Storage",
+          "notes": "Causes, agents, and signs of food spoilage; principles and methods of food preservation; storage of perishable vs. non-perishable foods; maintenance and use of storage facilities (refrigerators, freezers, granaries, barns, shelves)."
+        }
+      ]
+    },
+    {
+      "section_name": "Food Preparation and Flour Cookery",
+      "topics": [
+        {
+          "title": "10. Principles and Methods of Cooking",
+          "notes": "Reasons for cooking; moist heat methods (boiling, stewing, steaming) and dry heat methods (baking, roasting, grilling, frying); heat transfer mechanisms (conduction, convection, radiation); culinary terminology; food additives and adulteration."
+        },
+        {
+          "title": "11. Flour Cookery and Confectionery",
+          "notes": "Types of flour, raising agents (air, steam, carbon dioxide), and basic ingredients; preparation of batters, doughs, biscuits, cakes (rubbed-in, creamed, whisked, melted, sponge), pastries (shortcrust, suet, flaky), yeast mixtures, and cake decoration/icing techniques."
+        }
+      ]
+    },
+    {
+      "section_name": "Specialized Cookery and Entertaining",
+      "topics": [
+        {
+          "title": "12. Beverages and Convenience Foods",
+          "notes": "Classification, nutritional value, and preparation of non-alcoholic (coffee, tea, cocoa, fruit juices) and alcoholic beverages; selection, uses, advantages, disadvantages, and preparation of convenience foods."
+        },
+        {
+          "title": "13. Rechauffé and Festive Dishes",
+          "notes": "Principles, guidelines, importance, and preparation of rechauffé (leftover) dishes; planning, selection, and execution of dishes for festive occasions and special events."
+        },
+        {
+          "title": "14. Art of Entertaining",
+          "notes": "Hostess duties and party planning; table settings, appointments, covers, and dining etiquette; formal and informal meal service styles."
+        }
+      ]
+    },
+    {
+      "section_name": "Experimental Cookery, Consumer Education, and Entrepreneurship",
+      "topics": [
+        {
+          "title": "15. Experimental Cookery",
+          "notes": "Research methodology in recipe development; improving local dishes and nutritional values; experimental utilization of indigenous fruits (e.g., passion fruit, royal palm fruit) and non-wheat flours (cereal, root, legume flours)."
+        },
+        {
+          "title": "16. Consumer Education and Budgeting",
+          "notes": "Consumer rights and protection agencies; food budgeting factors; purchasing guidelines, bulk buying pros and cons."
+        },
+        {
+          "title": "17. Catering Entrepreneurship and Work Ethics",
+          "notes": "Establishing a catering enterprise; characteristics of successful food entrepreneurs; workplace ethics; functions, materials, and techniques of food packaging."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": []
+}

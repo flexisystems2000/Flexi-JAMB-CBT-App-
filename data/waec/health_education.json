@@ -1,0 +1,170 @@
+{
+  "subject": "Health Education",
+  "preamble": "This examination syllabus is drawn from the Senior School Health Education curriculum and directed towards empowering students to acquire correct, adequate, and timely information to develop attitudes and practices that restore, maintain, and promote positive health.",
+  "aims": [
+    "Acquire basic knowledge of the human body and necessary skills for health maintenance;",
+    "Acquire positive health practices within the school and community environments;",
+    "Identify and demonstrate the ecological relationship between human beings and their environment as a foundation for disease prevention;",
+    "Make practical observations and draw inferences that carry health implications;",
+    "Develop the readiness necessary for professional training in health-related careers."
+  ],
+  "requirements": [
+    "Candidates are expected to have practical exposure using anatomical models, health kits, and diagnostic materials.",
+    "Candidates should be familiar with local and national health agencies, safety practices, and environmental sanitation procedures."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of three papers: Paper 1 (Objective), Paper 2 (Short-Structured and Essay), and Paper 3 (Practical Test or Alternative to Practical).",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple-Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of 50 multiple-choice objective questions drawn from all sections of the syllabus, all of which must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Short-Structured and Essay Questions",
+        "duration": "1 hour",
+        "marks": "70",
+        "details": "Divided into two sections: Section A contains six compulsory short-structured questions (30 marks); Section B contains three essay questions out of which candidates answer two (40 marks)."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test / Alternative to Practical",
+        "duration": "1 hour 45 minutes",
+        "marks": "80",
+        "details": "A practical test for school candidates and an alternative to practical work for private candidates, evaluating practical skills, observations, specimens, and laboratory/field applications."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "SECTION A: History and Development of Health Education",
+      "topics": [
+        {
+          "title": "1. Meaning and Settings for Health Education",
+          "notes": "Definitions of health and health education; settings for health education including home-based, school-based, community-based, health facility-based, and workplace-based settings; meaning and scope of health promotion."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION B: Human Anatomy and Physiology",
+      "topics": [
+        {
+          "title": "2. Cells, Tissues, and Sense Organs",
+          "notes": "Somatic and sex cells, cell division, differentiation, growth, and development. Structure and functions of sense organs: eye, ear, skin, nose, and tongue."
+        },
+        {
+          "title": "3. Systems of the Body and Posture",
+          "notes": "Structures and functions of body systems: skeletal, muscular, circulatory, digestive, excretory, respiratory, nervous, and endocrine systems; concept of homeostasis. Posture and postural defects: definitions, characteristics, determination, types, and effects."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION C: Personal Health",
+      "topics": [
+        {
+          "title": "4. Personal Hygiene and Health Screening",
+          "notes": "Meaning and importance of physical health; personal hygiene practices; promotion and maintenance of health. Health screening for eye defects, auditory defects, and skin disorders. Dental health education: types of human teeth and dental diseases."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION D: Community Health",
+      "topics": [
+        {
+          "title": "5. Community and School Health Programmes",
+          "notes": "Community health services: definition, providers, and community efforts. School health programme: definition, components, goals, objectives, and promotion linkages. Family health: maternal and child health, family size, and budgeting. Ageing, death education, epidemiology, and vital statistics."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION E: Environmental Health",
+      "topics": [
+        {
+          "title": "6. Housing, Sanitation, and Pollution",
+          "notes": "Housing criteria, components, and health effects of poor sanitation. Water supply: sources, purification, and uses. Waste disposal: types and methods. Pollution: types, sources, and health consequences. Industrial occupation hazards and control of pests and vectors."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION F: Nutrition and Food Nutrients",
+      "topics": [
+        {
+          "title": "7. Nutrition, Diet, and Food Hygiene",
+          "notes": "Classes, sources, functions, and caloric values of food nutrients; balanced/adequate diets; water in nutrition; nutritional processes. Beverages and special diets for different groups of people. Food hygiene, preservation, and storage techniques."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION G: Safety Education and First Aid",
+      "topics": [
+        {
+          "title": "8. First Aid, Disasters, and Accidents",
+          "notes": "First Aid: meaning, aims, principles, kit components, management of specific emergency conditions, and first aid agencies. Disaster management: types and relief activities. Accidents: types, causes, and prevention. Disability and rehabilitation services."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION H: Drug, Alcohol, and Tobacco Education",
+      "topics": [
+        {
+          "title": "9. Drug Education and Substance Misuse",
+          "notes": "Drug education terminologies, classes of drugs, modes of administration, and drug abuse. Behaviour-altering chemicals: health and social implications of tobacco, alcohol, and illicit drug use."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION I: Communicable and Non-Communicable Diseases",
+      "topics": [
+        {
+          "title": "10. Disease Prevention and Control",
+          "notes": "Communicable diseases: definition and classification (air-borne, water/food-borne, insect-borne, worm infections, animal-borne, contact diseases) and factors necessary for transmission. Non-communicable diseases: deficiency, growth/hereditary, and organic/systemic disorders."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION J: Family Life and Human Sexuality Education",
+      "topics": [
+        {
+          "title": "11. Reproduction, Sexuality, and Family Planning",
+          "notes": "Human reproduction: structures, functions, conception, pregnancy, and reproductive disorders. Human sexuality education: meaning, importance, and life skills. Family roles, family life challenges, family planning, safe motherhood, and population education."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION K: Emotional and Social Health",
+      "topics": [
+        {
+          "title": "12. Mental Health and Interpersonal Relations",
+          "notes": "Interpersonal relationships, personality traits, emotional problems, and solutions. Mental health: definition, promotion, types of mental disorders, prevention, and importance."
+        }
+      ]
+    },
+    {
+      "section_name": "SECTION L: Consumer Health Education",
+      "topics": [
+        {
+          "title": "13. Consumer Products, Services, and Protection",
+          "notes": "Consumer health products and healthcare services; factors influencing consumer choices; consumer protection laws. Quacks and quackery; nostrums; health insurance systems and the impact of health advertisements."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Required Practical & Teaching Materials",
+      "books": [
+        "Models of body organs (e.g., eye, ear, heart, tooth) and human skeletal/bone models",
+        "First aid box and essential kits, fire extinguishers, and sand buckets",
+        "Laboratory tools: microscope, stethoscope, dissecting set, hand lens, Snellen chart, sphygmomanometer, thermometer, and litmus paper",
+        "Reagents for testing starch, protein, and fat",
+        "Contraceptive devices and safe motherhood demonstration kits",
+        "Preserved specimens of worms, pests, and vectors",
+        "Posters and photographs of body systems, disease conditions, accident scenes, disaster zones, food preservation methods, road safety signs, and abused substances/tobacco products"
+      ]
+    }
+  ]
+}

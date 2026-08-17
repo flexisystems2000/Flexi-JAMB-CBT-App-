@@ -1,0 +1,117 @@
+{
+  "subject": "Hausa",
+  "preamble": "This examination syllabus is designed to evaluate candidates' competence in speaking, reading, and writing Hausa accurately and effectively. It tests comprehensive mastery across the three core domains of the subject: Hausa Language (including phonology, grammar, and composition), Literature (both oral traditions and written texts), and Culture (customs, beliefs, social institutions, and traditional practices). Official Hausa orthography and metalanguage are strictly required.",
+  "aims": [
+    "Enable candidates to speak, read, and write competently in Hausa and communicate effectively with other speakers of the language;",
+    "Familiarize candidates with the sound system, grammatical structures, orthography, and linguistic properties of Hausa;",
+    "Acquaint candidates with the critical tools needed for a thorough appreciation of Hausa speech usage, oral/written literature, and culture (customs and institutions)."
+  ],
+  "requirements": [
+    "Rubrics for Paper 2 shall be written in Hausa.",
+    "Candidates are required to write their answers using official Hausa orthography and approved metalanguage."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two papers (Paper 1 and Paper 2) carrying a total maximum score of 160 marks (scaled to 100%).",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "60",
+        "details": "A multiple-choice test consisting of 60 items across three sections: Section A - Language (30 items: Comprehension, Composition, Sound System, Grammar, Translation), Section B - Literature (22 items: Literary Appreciation, Oral Literature, Written Literature), and Section C - Culture (8 items: Customs and Institutions)."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Test (Language, Literature & Culture)",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "An essay test divided into three sections: Section A (Language: Composition - 25 marks, Sound System, and Grammar - 15 marks each; candidates answer 3 questions), Section B (Literature: Oral and Written set books - 15 marks each; candidates answer 2 questions), and Section C (Culture: Customs and Institutions - 15 marks; candidates answer 1 question)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Harshe (Language)",
+      "topics": [
+        {
+          "title": "1. Insha'i da Rubutun Wasika (Composition & Letter Writing)",
+          "notes": "Writing structured essays (~300 words) across various forms: Narrative (Insha'i Na Labari), Descriptive (Insha'i Na Siffance), Argumentative (Insha'i Na Muhawara), Expository (Insha'i Na Bayani), Dialogue (Muhawara ta kai tsaye), Proverbial (Karin Magana), and Letter Writing (Rubutun Wasika)."
+        },
+        {
+          "title": "2. Tsarin Sauti (Sound System)",
+          "notes": "Consonants, Vowels, and Syllable Structure (Furucin bakake da wasula da kirar gaba); Open and Closed Syllables (budaddiyar gaba, rufaffiyar gaba); Vowel Production, Length, and Diphthongs; Tone Notation and Tone Patterns (High, Low, and Falling tones)."
+        },
+        {
+          "title": "3. Nahawu (Grammar)",
+          "notes": "Word Structure and Formation (Ginin kalmomi: Root, Affix, Prefix, Infix, Suffix); Word Classes (Azuzuwan kalmomi: Noun, Verb, Adjective, Adverb, Pronoun, Conjunction, Specifier, Quantifier, Demonstrative, Ideophone, Diminutive, Stabilizer, Referential); Grammatical Categories (Tense, Aspect, Negative, Gender, Number); Sentence Structure and Types (Subject/Predicate, Simple, Complex, and Compound sentences)."
+        },
+        {
+          "title": "4. Fassarawa (Translation)",
+          "notes": "Principles and practice of translating passages accurately between English and Hausa while maintaining semantic fidelity and stylistic nuances."
+        }
+      ]
+    },
+    {
+      "section_name": "Adabi (Literature)",
+      "topics": [
+        {
+          "title": "1. Ka'idojin Binciken Adabi (Literary Appreciation)",
+          "notes": "Basic principles of literary appreciation, structural evaluation, thematic analysis, and stylistic techniques across Hausa prose, poetry, and drama."
+        },
+        {
+          "title": "2. Adabin Baka (Oral Literature)",
+          "notes": "Analysis of oral literary genres and prescribed set books across Oral Prose (Tatsuniya, tarihihi, Karin Magana, Ka-Cinci-Ka-Cinci), Oral Poetry (Wakokin Baka), and Traditional Drama (Wasannin Gargajiya)."
+        },
+        {
+          "title": "3. Rubutaccen Adabi (Written Literature)",
+          "notes": "Analysis of modern written literary works and prescribed set books across Written Prose (Zube), Written Poetry (Rubutattun wakoki), and Written Drama (Wasan kwaikwayo)."
+        }
+      ]
+    },
+    {
+      "section_name": "Al'ada da Al'adun Gargajiya (Culture & Institutions)",
+      "topics": [
+        {
+          "title": "1. Gaisuwar Ban Girma da Tarbiyya (Greetings & Moral Upbringing)",
+          "notes": "Forms of greetings (Gaisuwar ban girma, taya murna, lokatai, Jaje, Ta'aziyya); Moral training (Tarbiyya), respect for parents and elders, civic obedience (Da'a ga hukuma), and hospitality (Karimci: Kyauta, Ciyarwa, Sadaka)."
+        },
+        {
+          "title": "2. Iyali da Al'adun Mutum (Family Rites & Lifecycle)",
+          "notes": "Marriage customs (Al'adun Aure), pregnancy, child birth, naming ceremonies (Radin Suna), child rearing/weaning (Reno, Yaye), circumcision (Kaciya), family ties (Zumunci), and funeral rites (Al'adun Mutuwa)."
+        },
+        {
+          "title": "3. Zamantakewa da Sarauta (Social Beliefs, Occupations & Governance)",
+          "notes": "Traditional beliefs and practices (camfi, bori, duba, tsibbu, maita, fatalwa); Traditional Occupations (Noma, Kira, Saka, Jima, Wanzanci, Kitso, Sassaka, Kiwo, Dukanci, Fawa, Su, Rini, Kasuwanci, Dillanci); Traditional Medicine (Magungunan gargajiya); Governance and Traditional Offices (Sarautun gargajiya); Traditional Recreation (Wasannin dandali: Dambe, Kokawa, Kalankuwa, Shanci, Sukuwa, Hawan kaho)."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Set Books (Ayyukan Littattafai)",
+      "details": "Oral Literature Set Books: Prose - 'Labarun Gargajiya 2' by Yahaya, I. Y. (O.U.P. Zaria); Poetry - 'Kowa Ya Sha Kida' by Muhammad, S. I. (Longman Nig. Plc); Drama - 'Wasannin Tashe A Kasar Hausa' by Umar, M. B. (NNPC Zaria). Written Literature Set Books: Prose - 'Nagari Na Kowa' by Jabiru, A. (NNPC Zaria); Poetry - 'Ciza ka Busa' by Ismaila, J. (Longman Nig. Plc); Drama - 'Zamanin Nan Namu' by Shu'aibu, M. (NNPC Zaria)."
+    }
+  ],
+  "references": [
+    {
+      "type": "Language, Sound System, and Grammar References",
+      "books": [
+        "Tsarin Sauti Da Nahawun Hausa by Sani, M. A. Z. (U.P. Plc, Ibadan, 1999)",
+        "Exam Focus Hausa Language by Sani, M. A. Z. et al. (U.P. Plc, Ibadan, 2000)",
+        "Darussan Hausa 1 - 3 by Yahaya, I. Y. et al. (U.P. Plc, Ibadan, 1992)"
+      ]
+    },
+    {
+      "type": "Literature and Culture Reference Texts",
+      "books": [
+        "Jagoran Nazarin Kagaqqun Labarai by Mukhtar, I. (A.J. Publishers, Kano, 2002)",
+        "Rabe-raben Adabi Da Muhimmancinsa by Dangambo, A. (Truimp Publishing Company, Kano, 1984)",
+        "Harshe Da Adabin Hausa A Kamalle by Ismaila, J. and Tanimu, M. Y. (Spectrum Books, Ibadan, 2007)",
+        "Rayuwar Hausawa by CSNL/BUK (Nelson Lagos, 1980)",
+        "Hausa Customs by Madauci, I. et al. (NNPC, Zaria, 1970)",
+        "Labaru Na Da Da Na Yanzu (NNPC, 1985)",
+        "Zaman Mutum Da Sana'arsa by E. M. Rimmer, et al. (NNPC, Zaria, reprint 2002)"
+      ]
+    }
+  ]
+}

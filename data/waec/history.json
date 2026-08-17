@@ -1,0 +1,184 @@
+{
+  "subject": "History",
+  "preamble": "The History syllabus is designed to evaluate candidates' understanding of national, regional, and global historical developments from earliest times to 2000. It emphasizes critical historical analysis, the relationship between past and contemporary events, factors fostering national unity and international understanding, and the socio-political evolution of West African states within a global context.",
+  "aims": [
+    "Demonstrate knowledge of national histories from earliest times to 2000 with emphasis on inter-group relations and state formation;",
+    "Develop intellectual capacity and skills in historical interpretation, evaluation, and analysis;",
+    "Relate acquired historical skills to contemporary national, regional, and global realities;",
+    "Appreciate factors that promote national unity, peaceful coexistence, and global cooperation;",
+    "Understand the similarities and differences in national, social, and political institutions across West Africa;",
+    "Demonstrate comprehensive knowledge of key historical developments in West Africa from earliest times to 2000;",
+    "Relate events in member countries and West Africa to broader international developments;",
+    "Present clear, logical, and well-structured historical arguments."
+  ],
+  "requirements": [
+    "Candidates are required to study Paper 1 (West Africa and the Wider World) as a compulsory component.",
+    "Candidates must study Paper 2 corresponding to their specific national history (The Gambia, Ghana, Liberia, Nigeria, or Sierra Leone)."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two papers: Paper 1 (a multiple-choice test on West Africa and the Wider World) and Paper 2 (an essay test focusing on the national history of the candidate's country).",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "West Africa and the Wider World",
+        "duration": "1 hour",
+        "marks": "40",
+        "details": "Consists of 50 multiple-choice objective questions covering West Africa and the Wider World from earliest times to 2000. All questions are compulsory."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "National Histories Essay Test",
+        "duration": "2 hours",
+        "marks": "60",
+        "details": "An essay-type test tailored to member countries. Each country's paper is divided into three chronological sections (Sections A, B, and C). Candidates answer four questions in total, choosing at least one question from each section."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "PAPER 1: West Africa and the Wider World (Earliest Times to 2000)",
+      "topics": [
+        {
+          "title": "1. Historiography and Historical Skills",
+          "notes": "Meaning and utility of History; sources of historical reconstruction; traditional and modern historical methods; prospects and applications of Information and Communication Technology (ICT) in historical research."
+        },
+        {
+          "title": "2. Trans-Saharan Trade",
+          "notes": "Origins, routes, organization, and political, socio-economic, and cultural impacts on West African states."
+        },
+        {
+          "title": "3. Islam in West Africa",
+          "notes": "Introduction, mechanisms of spread, Islamic revolutions, and socio-political and cultural effects across West Africa."
+        },
+        {
+          "title": "4. European Contact with West Africa",
+          "notes": "Motives for early European exploration, immediate socio-economic impacts, and West African responses to early contact."
+        },
+        {
+          "title": "5. Trans-Atlantic Slave Trade",
+          "notes": "Origins, triangular trade organization, human and economic impact on West Africa, and the abolition campaign."
+        },
+        {
+          "title": "6. Christian Missionary Activities in West Africa",
+          "notes": "Role in slave trade suppression, evangelical and educational efforts, medical developments, and broader socio-cultural impact."
+        },
+        {
+          "title": "7. The Scramble for and Partition of West Africa",
+          "notes": "Impact of the Industrial Revolution, Berlin Conference (1884–1885), military subjugation, occupation strategies, and West African resistance."
+        },
+        {
+          "title": "8. Colonial Rule and Economic Exploitation",
+          "notes": "Patterns of colonial administration (Indirect Rule, Assimilation, Association); colonial economy and infrastructure; underdevelopment mechanisms; impact of World Wars I and II on colonial West Africa."
+        },
+        {
+          "title": "9. Post-Independence Challenges in West Africa",
+          "notes": "Neo-colonialism and economic vulnerability; political instability, military interventions, civil wars, boundary disputes, and threats to regional integration."
+        },
+        {
+          "title": "10. West Africa in International Organizations",
+          "notes": "Membership, aims, achievements, and challenges in the United Nations (UN), Organization of African Unity / African Union (OAU/AU), and Economic Community of West African States (ECOWAS)."
+        }
+      ]
+    },
+    {
+      "section_name": "PAPER 2: National History - Nigeria",
+      "topics": [
+        {
+          "title": "1. Section A (Earliest Times to 1800): Land, Civilizations, and Early External Contact",
+          "notes": "Historiography and sources of Nigerian history. Geographical zones and environmental impacts. Ancient civilizations (Nok, Ife, Igbo-Ukwu, Benin). Centralized states (Kanem-Borno, Hausa States, Nupe, Oyo, Benin) and non-centralized societies (Igbo, Efik, Tiv). Inter-group relations, migrations, trade, and traditional industries (pottery, iron working, bronze casting, salt making, weaving). Trans-Saharan trade, early European coastal trade, Islam, Christianity, and the Trans-Atlantic slave trade."
+        },
+        {
+          "title": "2. Section B (19th Century): State Formation, Jihad, and British Conquest",
+          "notes": "The Sokoto Caliphate: establishment, administration, and regional impact. Borno under El-Kanemi and the Shehus; fall of Borno. Christian missionary expansion. Yorubaland in the 19th century: fall of Oyo, Ibadan expansion, and intra-Yoruba wars. Benin in the 19th century. First phase of British colonial conquest (1851–1900)."
+        },
+        {
+          "title": "3. Section C (1900 to 2000): Colonial Era, Decolonization, and Modern Republics",
+          "notes": "Second phase of British conquest (1900–1914); 1914 Amalgamation; Indirect Rule system; colonial economy and social developments. Decolonization and nationalism post-WWII; path to 1960 independence. First Republic (1960–1966); military coups, Nigerian Civil War (1967–1970), reconstruction; Murtala/Obasanjo administration; Second Republic (1979–1983); Buhari, Babangida, Abacha regimes; transition to Fourth Republic (1999) and Obasanjo administration up to 2000. Contemporary issues: debt, terrorism, religious conflicts, youth unemployment. Global relations: UN, AU, ECOWAS, Commonwealth, OPEC, and global peacekeeping."
+        }
+      ]
+    },
+    {
+      "section_name": "PAPER 2: National History - Ghana",
+      "topics": [
+        {
+          "title": "1. Section A (Earliest Times to AD 1800): Pre-History and Continental Civilizations",
+          "notes": "Historiography and African history sources. Pre-history (hunters/gatherers). Ancient civilizations: Pharaonic Egypt, Berber North Africa, Axum, Ancient Ethiopia, Bantu migration/complexes (Zimbabwe, Mapungubwe), Swahili coastal civilization. West African Sudanese states (Ghana, Mali, Songhai, Kanem-Borno, Hausa) and Forest/Coastal states (Ife, Oyo, Asante, Dahomey)."
+        },
+        {
+          "title": "2. Section B (Earliest Times to AD 1900): Peopling, States, and European Contact",
+          "notes": "Pre-history of Ghana (Kintampo culture, Begho, Bono-Manso). Peopling of Northern, Forest, and Coastal zones; emergence of states (Dagomba, Denkyira, Akwamu, Asante, Fante, Ga). Centralized, non-centralized, and theocratic political structures; social institutions, traditional medicine, metallurgy, art forms (Adinkra, Kete, Adowa). European arrival, trade shifts (gold, slave trade), Berlin Conference, Christian missions, Bond of 1844, and Aborigines Rights Protection Society (ARPS)."
+        },
+        {
+          "title": "3. Section C (AD 1900 to 1991): Decolonization, Republics, and International Role",
+          "notes": "Early and late nationalist movements (NCBWA, Youth Conference, UGCC, CPP) and leaders (Danquah, Nkrumah). Economic/social policies under Sir Gordon Guggisberg. Post-independence: Nkrumah era (one-party state, Pan-Africanism, fall of regime); political successions (NLC, Busia's Second Republic, Acheampong/Akuffo NRC/SMC, Rawlings 1979 AFRC, Limann Third Republic, PNDC era up to 1991). International relations: UN, Commonwealth, NAM, AU, ECOWAS, ACP/EEC."
+        }
+      ]
+    },
+    {
+      "section_name": "PAPER 2: National History - The Gambia",
+      "topics": [
+        {
+          "title": "1. Section A (Earliest Times to 1800): Socio-Political Foundations and Early Trade",
+          "notes": "Historiography and historical skills. Political, social, and economic organization of ethnic groups (Wollof, Mandinka, Fula, Jola, Aku, Serahuli). Traditional crafts and industries (salt making, boat building, ironworking). Early European trade and Christianity; spread of Islam; Trans-Atlantic slave trade impact."
+        },
+        {
+          "title": "2. Section B (19th Century): Religious Struggles and Colonial Encroachment",
+          "notes": "Abolition of slave trade and anti-slavery campaigns (Barra, Sabiji, Fuladu). Founding of Bathurst (Banjul). Christian missions. Soninke-Marabout wars and jihadist leaders. Resistance to British colonialism (Foday Kombo Sillah, Foday Kabbah Dumbuya, Musa Molloh Baldeh)."
+        },
+        {
+          "title": "3. Section C (1900 to 2000): Colonial Rule, Independence, and the Second Republic",
+          "notes": "British Indirect Rule; colonial economy, agriculture (groundnuts), transport, education, health. Trade unions, political parties, and independence negotiations (1965). Post-independence political evolution: Republican status, parliamentary democracy, Senegambia relations, 1981 attempted coup, 1994 AFPRC military coup, and Second Republic (1996–2000). Membership in UN, Commonwealth, AU, ECOWAS."
+        }
+      ]
+    },
+    {
+      "section_name": "PAPER 2: National History - Sierra Leone",
+      "topics": [
+        {
+          "title": "1. Section A (Earliest Times to 1800): Ethnic Groups, Invasions, and Early Trade",
+          "notes": "Historiography and sources. Organization of ethnic groups (Temne, Mende, Limba, Loko, Susu, Mandingo, Sherbro/Bullom). Indigenous crafts and metallurgy. Mane invasions and socio-political realignment. Early European trade, Christianity, Islam, and Trans-Atlantic slave trade."
+        },
+        {
+          "title": "2. Section B (19th Century): Colony Establishment, Krio Era, and Protectorate Wars",
+          "notes": "Founding of Freetown settlement and Crown Colony status. Emergence, rise, and decline of the Krio. Christian missionary activities. Colonial interventions in the hinterland. Activities of Samori Toure. Declaration of the 1896 Protectorate and the Hut Tax War."
+        },
+        {
+          "title": "3. Section C (1900 to 2000): Administration, Decolonization, and Civil Conflict",
+          "notes": "Colonial administration of Colony and Protectorate (Indirect Rule, Protectorate Assembly). Economic development (mining, agriculture). Decolonization (1947–1961 independence). Post-independence political eras: Margai administrations, NRC military rule, Siaka Stevens era, Momoh administration, rebel war outbreak (RUF), NPRC military rule, Tejan Kabbah government up to 2000. Foreign relations: UN, Commonwealth, AU, ECOWAS, Mano River Union."
+        }
+      ]
+    },
+    {
+      "section_name": "PAPER 2: National History - Liberia",
+      "topics": [
+        {
+          "title": "1. Section A (Earliest Times to 1800): Land, Migrations, and Indigenous Institutions",
+          "notes": "Historiography and sources. Geography and demographic distribution of ethnic groups (Kru, Bassa, Krahn, Gio, Mano, Grebo, Lorma, Kpelle, Mandingo, Vai, Gola, Dey, Mende, etc.). Migrations, indigenous kingdoms, chiefdoms, confederacies, social institutions, crafts, European trade, and Trans-Atlantic slave trade."
+        },
+        {
+          "title": "2. Section B (19th Century): Settlement, Commonwealth, and Republic Creation",
+          "notes": "Americo-Liberian migration, American Colonization Society (ACS) settlements, missionary work. Formation of the Commonwealth of Liberia; settler-indigenous relations and land expansion. 1847 Declaration of Independence, Constitution, political party origins, administrations of Joseph Jenkins Roberts and Edward James Roye. Foreign diplomatic recognition and boundary disputes with British/French powers."
+        },
+        {
+          "title": "3. Section C (1900 to 2000): Political Consolidation, Civil War, and Peace Building",
+          "notes": "Administrations of David Coleman, Arthur Barclay; Fernando Po labor crisis and League of Nations investigation. Administrations of Edwin Barclay, William Tubman, William Tolbert. 1980 military coup (Samuel Doe). Outbreak of Civil War (1989), ECOWAS/ECOMOG intervention, interim governments, Charles Taylor administration (1997–2000). International relations: UN, AU, ECOWAS, Mano River Union."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "General Reference Textbooks",
+      "books": [
+        "Ajayi, J. F. A. & Crowder, M. (Eds.). (1985). History of West Africa (Vols. 1 & 2). Longman.",
+        "Adu Boahen, A. (1987). African Perspectives on Colonialism. Johns Hopkins University Press.",
+        "Falola, T. & Heaton, M. M. (2008). A History of Nigeria. Cambridge University Press.",
+        "Buah, F. K. (1998). A History of Ghana. Macmillan Education.",
+        "Fyfe, C. (1962). A History of Sierra Leone. Oxford University Press.",
+        "Liebenow, J. G. (1987). Liberia: The Quest for Democracy. Indiana University Press.",
+        "Hughes, A. & Perfect, D. (2006). A Political History of The Gambia. University of Rochester Press."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "subject": "Home Management",
+  "preamble": "The Home Management syllabus is designed to evaluate candidates' knowledge, appreciation, and application of fundamental management concepts, human and material resources, and decision-making processes essential for effective family living and societal contribution. It assesses practical skills in caring for the home, consumer education, nutrition, clothing, housing, health practices, and self-reliant entrepreneurial skills for daily life.",
+  "aims": [
+    "Assess knowledge, understanding, appreciation, and application of management concepts, goals, values, standards, and needs;",
+    "Evaluate proficiency in applying decision-making and work-simplification processes in managing family resources;",
+    "Demonstrate effective utilization of human, material, and community resources available for home management;",
+    "Apply basic practical skills in caring for the home, managing family clothing, and maintaining personal and environmental health;",
+    "Develop critical consumer skills, awareness of consumer rights, and environmentally friendly consumption practices;",
+    "Promote sound health, safety, and sanitation practices within the home and immediate environment;",
+    "Cultivate self-reliant, creative, and entrepreneurial skills for wealth creation and effective living."
+  ],
+  "requirements": [
+    "Candidates must take all three papers: Paper 1 (Objective), Paper 2 (Essay), and Paper 3 (Practical Test).",
+    "Paper 1 and Paper 2 are composite papers taken in a single sitting.",
+    "Paper 3 is a 3-hour practical examination conducted by an appointed visiting examiner."
+  ],
+  "examination_scheme": {
+    "summary": "The examination comprises three compulsory papers: Papers 1 and 2 are written composite tests, while Paper 3 evaluates practical home management skills.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty multiple-choice objective questions covering the entire syllabus. All questions are compulsory."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Test",
+        "duration": "1 hour 15 minutes",
+        "marks": "50",
+        "details": "Consists of six essay questions. Candidates are required to answer any four questions."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test",
+        "duration": "3 hours",
+        "marks": "100",
+        "details": "A practical examination administered by a visiting examiner appointed by WAEC to assess practical proficiency in home management tasks."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Principles of Management",
+      "topics": [
+        {
+          "title": "1. Definition and Scope of Home Management",
+          "notes": "Definition, fundamental concepts, and potential career paths and opportunities related to Home Management."
+        },
+        {
+          "title": "2. The Management Process",
+          "notes": "Steps in management process: planning, organizing, implementing, and evaluating. Application of the process to specific home tasks."
+        },
+        {
+          "title": "3. Motivations for Home Management",
+          "notes": "Factors motivating management: personal characteristics, values, goals, standards, needs, and life events."
+        },
+        {
+          "title": "4. Family Resources and Work Simplification",
+          "notes": "Definition, characteristics, and classifications of resources: human (time, energy, skills) and non-human/material/community resources. Principles of work simplification applied to home activities."
+        },
+        {
+          "title": "5. Decision Making, Time, and Energy Management",
+          "notes": "Decision-making processes, steps in decision making, and techniques for efficient management of time and energy in the home."
+        }
+      ]
+    },
+    {
+      "section_name": "Family Living",
+      "topics": [
+        {
+          "title": "1. The Family System",
+          "notes": "Definition and types of family (nuclear, monogamous, polygamous, extended); advantages and disadvantages of each. Stages of the family life cycle (beginning, expanding, contracting, empty-nest). Functions of the family, roles and responsibilities of members (parents, children, working mothers, single parents). Family relationships, factors influencing harmony, and conflict resolution mechanisms."
+        },
+        {
+          "title": "2. Courtship and Marriage",
+          "notes": "Types of marriage; interpersonal relationships (healthy guidelines, consequences of indiscriminate sexual behavior, sex education). Selecting a life partner (health factors: blood group, genotype, HIV status; dating, courtship, engagement). Preparation for marriage (maturity, financial readiness, family introductions). Traditional, religious, and civil marriage ceremonies."
+        },
+        {
+          "title": "3. Parenthood and Childcare",
+          "notes": "Preparation for parenthood: family planning, human reproduction, pregnancy, ante-natal care. Childbirth: labor, delivery, post-natal care, and immunization schedule. Parenting responsibilities: physical care, bathing, feeding, and meeting developmental needs."
+        }
+      ]
+    },
+    {
+      "section_name": "Feeding the Family",
+      "topics": [
+        {
+          "title": "1. Food Nutrients and Culinary Science",
+          "notes": "Classes of food nutrients, scientific study of functions and sources. Cooking terminology, basic cooking methods (moist, dry, combination), and the effect of heat on food nutrients."
+        },
+        {
+          "title": "2. Special Nutritional Needs and Meal Planning",
+          "notes": "Nutritional needs across life stages: infants, toddlers, adolescents, adults, pregnant/lactating women, the elderly, convalescents, invalids, and vegetarians. Principles of planning balanced meals for diverse groups."
+        },
+        {
+          "title": "3. Food Purchasing, Preservation, and Kitchen Management",
+          "notes": "Guidelines for economical and safe food purchasing. Methods and importance of food storage and preservation. Kitchen layout planning, hygiene practices, and safety measures."
+        },
+        {
+          "title": "4. Meal Service and Hospitality",
+          "notes": "Preparation and serving of meals, snacks, and beverages. Cooking equipment, utensils, tableware, table settings, and social etiquette in home entertaining."
+        }
+      ]
+    },
+    {
+      "section_name": "Clothing the Family",
+      "topics": [
+        {
+          "title": "1. Clothing and Textiles",
+          "notes": "Meaning, functions, and types of clothing. Classification and origin of textile fibers and fabrics. Fabric construction methods: weaving, knitting, crocheting, etc."
+        },
+        {
+          "title": "2. Household Linen and Wardrobe Planning",
+          "notes": "Types, selection, and functions of household linen. Guidelines for selecting, planning, and organizing wardrobes for individuals and families."
+        },
+        {
+          "title": "3. Care and Maintenance of Clothing",
+          "notes": "Laundry agents (water, soaps, detergents, fabric rinses, stiffening agents, bleaches) and equipment. Management of family wash, stain identification and removal techniques, care of special garments, sewing equipment, simple repairs, and proper storage techniques."
+        }
+      ]
+    },
+    {
+      "section_name": "Housing the Family",
+      "topics": [
+        {
+          "title": "1. Choice and Acquisition of a Family House",
+          "notes": "Definition and types of houses (bungalow, duplex, storey building; traditional vs. modern). Methods of acquisition (renting, mortgage, building, buying, inheritance, gift). Economic, social, psychological, site, and ventilation factors influencing selection."
+        },
+        {
+          "title": "2. Setting Up a Home and Interior Decoration",
+          "notes": "Distinction between a house and a home. Equipment and furnishings (large/small equipment, hard/soft furnishings, fixtures). Elements and principles of design (color, texture, line, proportion, balance). Guidelines for interior decoration and flower arrangements."
+        },
+        {
+          "title": "3. Home Utilities, Maintenance, and Safety",
+          "notes": "Utilities: water sources, purification, and storage; electricity meter reading and billing; cooking fuels (gas, kerosene, firewood, charcoal, electricity). Cleaning agents, tools, and care of diverse surfaces (wood, tile, formica) and floor coverings (carpets, rugs, terrazzo, parquet). Functional area cleaning, bed making, safety measures, first aid, and prevention of home accidents."
+        },
+        {
+          "title": "4. Environmental Sanitation",
+          "notes": "Importance of environmental sanitation. Waste disposal methods (household waste, drainage systems, pollution prevention) and household pest control."
+        }
+      ]
+    },
+    {
+      "section_name": "Wealth Creation and Management",
+      "topics": [
+        {
+          "title": "1. Creativity and Entrepreneurship",
+          "notes": "Meaning and importance of creativity and entrepreneurship. Entrepreneurial skills and small enterprise opportunities (fashion design, hair dressing, catering, bead making)."
+        },
+        {
+          "title": "2. Money Management and Wealth Creation",
+          "notes": "Principles of money management; steps in family budgeting (income vs. expenditure). Meaning and methods of wealth creation (saving, trading, capital market investments: stocks, shares, treasury bills)."
+        }
+      ]
+    },
+    {
+      "section_name": "Consumer Education",
+      "topics": [
+        {
+          "title": "1. Consumer Rights, Responsibilities, and Information",
+          "notes": "Definition and importance of consumer education. Sources and uses of consumer information. Basic rights and responsibilities of consumers."
+        },
+        {
+          "title": "2. Legislation, Agencies, and Buying Practices",
+          "notes": "Consumer protection laws, regulatory agencies, and their functions. Wise purchasing practices, market survey procedures, and strategies for preventing home wastage through eco-friendly consumption."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "Johnson, R. O., Akingbehin, A., & Mifie, J. Home Management. Longman.",
+        "Wright, E. O., & Adesimi-Davies, L. Home Management for Secondary Schools. Evans Brothers Ltd.",
+        "Joe, M. E. A., Eyisi, O., et al. Home Management for Secondary Schools (Books 1–3). University Press Plc.",
+        "Anyakoha, E. Home Management for Secondary Schools 1005 Q & A Series. Fep Publisher Ltd."
+      ]
+    }
+  ]
+}

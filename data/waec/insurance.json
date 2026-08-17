@@ -1,0 +1,106 @@
+{
+  "subject": "Insurance",
+  "preamble": "The Insurance syllabus is designed to evaluate candidates' understanding of basic insurance principles, risk management, regulatory frameworks, policy documentation, and market practice. It aims to assess the application of foundational insurance concepts in commercial, legal, and operational contexts across individual, corporate, and social sectors.",
+  "aims": [
+    "Assess understanding of basic concepts, historical evolution, and foundational principles of Insurance;",
+    "Evaluate knowledge of legal documentation, policy structures, and operational procedures in effecting and renewing insurance contracts;",
+    "Examine familiarity with non-life and life insurance products, claim processes, and risk mitigation strategies;",
+    "Test knowledge of market operators, professional bodies, and regulatory frameworks governing the insurance industry."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "Candidates are expected to demonstrate critical analytical capability in evaluating case studies and practical claims scenarios."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two composite papers (Paper 1 and Paper 2) taken at a single sitting, assessing objective knowledge, case study analytical skills, and essay writing.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "50 minutes",
+        "marks": "50",
+        "details": "Consists of fifty compulsory multiple-choice objective questions covering the full scope of the syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Case Study and Essay",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of two sections: Section A contains a compulsory case study passage (200–250 words) with compulsory questions carrying 20 marks; Section B contains six essay questions, out of which candidates must answer four questions carrying 15 marks each."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Fundamentals of Insurance & Core Principles",
+      "topics": [
+        {
+          "title": "1. Introduction to Insurance",
+          "notes": "Meaning and historical development (pre- and post-independence era, key legislations). Parties and essential features of insurance contracts. Concepts, classifications, societal impacts of risks, and insurable vs. uninsurable risks. Meaning and types of hazards. Primary and secondary functions, benefits, and definitions of perils vs. risks and hazards."
+        },
+        {
+          "title": "2. Principles of Insurance",
+          "notes": "Insurable Interest: meaning, essential features, and application in life and property policies. Utmost Good Faith: duty of disclosure, breaches, and effects. Proximate Cause: application in claims. Indemnity: methods of provision and application in property/liability insurance. Subrogation: rights and duties. Contribution: conditions and applications."
+        }
+      ]
+    },
+    {
+      "section_name": "Documentation & Insurance Operations",
+      "topics": [
+        {
+          "title": "1. Documents Used in Effecting Contract",
+          "notes": "Proposal Forms: functions, uses, and applicable contracts. Cover Notes: contents, functions, and issuance. Certificate of Insurance: purpose in Motor, Marine, and Employer's Liability. Insurance Policy: component parts, structure, and contracting parties."
+        },
+        {
+          "title": "2. Insurance Practice & Operations",
+          "notes": "Reinsurance: meaning, forms (Facultative and Treaty), functions, and uses. Insurance Renewals: renewal notices, legal status, No Claim Discount (NCD), and Long Term Agreement (LTA). Insurance Claims: notification, documentation, investigation, discharge vouchers, payment procedures, duties of insured/underwriter, and roles of Loss Assessors and Loss Adjusters. Premium: rating factors, premium loading, and partial/full return of premium."
+        }
+      ]
+    },
+    {
+      "section_name": "Insurance Products",
+      "topics": [
+        {
+          "title": "1. Non-Life Insurance Products (Part I)",
+          "notes": "Motor Insurance: policy types (private, commercial, special), scope of cover (Act only, Third Party, Comprehensive), and ECOWAS Brown Card. Fire Insurance: standard policy cover, special perils, property types, and buyers. Theft & Burglary Insurance: commercial/household premises and key distinctions. Money Insurance: scope, money definitions, and custody covers. Fidelity Guarantee Insurance: policy types, bonds, and commercial guarantees."
+        },
+        {
+          "title": "2. Non-Life Insurance Products (Part II)",
+          "notes": "Engineering Insurance: covers (Boiler, Explosion, Computer all risks) and scope. Marine Insurance: perils, Hull, Cargo, and Freight policies. Aviation Insurance: covers, risks, rating factors, and international conventions (Montreal, Hague, Warsaw). Employer's Liability & Public Liability: employee compensation, benefits, personal and product liabilities. Professional Indemnity: applicable professions. Business Interruption & Personal Accident Insurance: consequential loss causes, injury/death benefit covers, and group vs. personal policies."
+        }
+      ]
+    },
+    {
+      "section_name": "Insurance Market Structure, Regulations & Terminology",
+      "topics": [
+        {
+          "title": "1. Insurance Market Operators",
+          "notes": "Market participants: Insurance/Reinsurance Companies (sellers), Intermediaries (Brokers and Agents), Buyers (individual, corporate, public), and Supporting Services (Loss Assessors and Loss Adjusters)."
+        },
+        {
+          "title": "2. Insurance Regulators & Professional Bodies",
+          "notes": "Meaning, roles, purpose, and membership of regulatory and trade bodies: Nigerian Insurance Association (NIA), Nigerian Council of Registered Insurance Brokers (NCRIB), Institute of Loss Adjusters of Nigeria (ILAN), National Insurance Commission (NAICOM), and Chartered Insurance Institute of Nigeria (CIIN)."
+        },
+        {
+          "title": "3. Common Insurance Terminology",
+          "notes": "Key terms and meanings: Hazards, Perils, Concealment, Disclosure, Days of Grace, Ex-Gratia Payment, Extra-Premium, Endorsement, Excepted Perils, Subject Matter of Insurance, Under-Insurance, Return Premium, Surrender Value, and Cover Note."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "Insurance for Beginners by Oloyede, F. A. and Rauf-Lawal, S. A.",
+        "Introduction to Insurance by Robert Ngarakwe and Dr. Nwezeaku, N. C.",
+        "Principles and Practice of Insurance by Robert Ngarakwe and Dr. Nwezeaku, N. C.",
+        "Insurance Fundamentals by Adeola Banjo, K. (Mrs.)",
+        "Principles and Practice of Insurance by Adeola Banjo, K. (Mrs.)",
+        "Introduction to Insurance - A Nigerian Perspective by Victor I. Okonkwo",
+        "Insurance For Beginners by Rauf-Lawal, Semiu A. O."
+      ]
+    }
+  ]
+}

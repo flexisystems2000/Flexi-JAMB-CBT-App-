@@ -1,0 +1,87 @@
+{
+  "subject": "Information and Communication Technology (Core)",
+  "preamble": "The Information and Communication Technology (Core) syllabus evaluates candidates' understanding of foundational ICT concepts, basic hardware and software operations, threat mitigation, productivity applications, and safe internet usage. It aims to assess practical applications in education, business, and daily life while building readiness for higher educational pursuits.",
+  "aims": [
+    "Assess knowledge and understanding of basic concepts of Information and Communication Technology;",
+    "Evaluate candidate capabilities in applying ICT knowledge to educational, personal, and business contexts;",
+    "Ensure candidate preparedness and foundational technical competence for higher studies."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "Candidates are expected to demonstrate practical proficiency in productivity applications (Word Processing, Spreadsheets, Presentation) and internet utilities."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two composite papers (Paper 1 and Paper 2) taken in a single sitting, assessing objective knowledge, practical problem-solving, and theoretical concepts.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "45 minutes",
+        "marks": "20",
+        "details": "Consists of forty multiple-choice objective questions covering the full scope of the syllabus. All questions are compulsory."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Practical Test and Essay",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of two sections: four compulsory questions testing practical ICT knowledge and six essay-type questions. Candidates must answer all four practical questions and any two of the essay questions."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Core ICT Concepts & Computer Hardware/Software",
+      "topics": [
+        {
+          "title": "1. Introduction to Basic ICT Concepts and Computers",
+          "notes": "Meaning of ICT and related terminologies. Uses of common ICT tools (mobile phones, computers, Internet, television, radio). Impact of ICT on education, social interaction, and economic development. Information processing cycle and the distinction between raw data and information. Types and classifications of computers."
+        },
+        {
+          "title": "2. Computer Hardware Architecture",
+          "notes": "Categories of computer hardware: system unit components, input/output peripherals, and secondary storage media."
+        },
+        {
+          "title": "3. Computer Software Systems",
+          "notes": "Classification of software: System software (operating systems, utilities) and Application software. Key differences between open-source and proprietary software."
+        },
+        {
+          "title": "4. Computer Threats, Health Hazards, and Safeguards",
+          "notes": "Meaning and categories of computer threats. Natural threats (earthquakes, excessive heat, floods) vs. Human threats (viruses, worms, intentional damage, unauthorized access). Health hazards to computer users (ergonomic hazards, eye strain, repetitive strain injury). Preventive measures, remedies to threats, and hazard management."
+        }
+      ]
+    },
+    {
+      "section_name": "Productivity Applications",
+      "topics": [
+        {
+          "title": "1. Word Processing",
+          "notes": "Word Processing packages, uses, and importance. Core terminology and concepts. Creating, editing, formatting, and saving documents. Inserting objects (tables, graphics, shapes). Document printing procedures. Typing speed and accuracy targets (30–35 words per minute)."
+        },
+        {
+          "title": "2. Spreadsheets",
+          "notes": "Spreadsheet packages, uses, and business/educational applications. Key concepts and terminologies (cells, rows, columns, ranges). Data types (text, numbers, formulas, dates). Creating and saving workbooks. Constructing and inserting mathematical formulas and built-in functions. Editing, formatting, and printing worksheets."
+        },
+        {
+          "title": "3. Presentation Packages",
+          "notes": "Presentation software uses and key features. Creating, editing, formatting, and saving slide decks. Inserting objects, media, and visuals. Master slides and layout consistency. Operating slide shows. Essential guidelines for delivering presentations. Printing presentation materials (handouts, slides)."
+        }
+      ]
+    },
+    {
+      "section_name": "Internet and Digital Communication",
+      "topics": [
+        {
+          "title": "1. The Internet and Web Navigation",
+          "notes": "Meaning, core concepts, terminologies (URL, HTTP, IP address), and hardware/software connectivity requirements. Navigation features and uses of web browser windows. Rules, ethics, and regulations (Netiquette)."
+        },
+        {
+          "title": "2. Communication Tools and Web Services",
+          "notes": "Electronic mail (sending, receiving, managing attachments). Digital tools for communication, instant messaging, uploading, downloading, search engines, and social networking platforms."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": []
+}

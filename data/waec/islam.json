@@ -1,0 +1,132 @@
+{
+  "subject": "Islamic Studies",
+  "preamble": "The Islamic Studies syllabus is designed to evaluate candidates' knowledge and understanding of Islamic history, scripture, theology, jurisprudence, and moral principles. It assesses candidates' ability to analyze the historical development of Islam, comprehend the primary sources of Islamic guidance (Qur'an and Hadith), and apply Islamic teachings to contemporary socio-economic, moral, and spiritual life.",
+  "aims": [
+    "Assess knowledge of the historical and contemporary development of Islam and derive relevant practical lessons;",
+    "Evaluate understanding of the spiritual, moral, socio-economic, and intellectual roles of Islam in society;",
+    "Examine the ability to apply Islamic teachings and legal principles (Shari'ah) to daily personal and community life."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "Candidates are expected to demonstrate proficiency in reading, memorizing, interpreting, and deriving moral lessons from prescribed Qur'anic Suwar and selected Ahadith of An-Nawawi."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two composite papers (Paper 1 and Paper 2) taken at a single sitting, testing objective recall, scriptural textual analysis, historical knowledge, and essay writing.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "50 minutes",
+        "marks": "50",
+        "details": "Consists of fifty compulsory multiple-choice objective questions covering all parts of the syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Test",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "Consists of six essay questions, one of which is compulsory. Candidates are required to answer the compulsory question and any three of the optional questions."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Tarikh (Historical Development of Islam)",
+      "topics": [
+        {
+          "title": "1. The Jahiliyyah: Arabia Before Islam",
+          "notes": "Geographical location of Arabia. Pre-Islamic social life (marriage, divorce, inheritance), religious practices (idol worship, major deities), political systems, and economic livelihoods. Comprehensive Islamic reforms introduced to Jahiliyyah practices."
+        },
+        {
+          "title": "2. Life of Prophet Muhammad (S.A.W.)",
+          "notes": "Birth, marriage, call to prophethood, and mission. The Hijrah: causes, course, and historical significance. Formation of the Ummah and the Madinan Constitution. Leadership qualities of the Prophet. Causes, courses, and effects of the Battles of Badr, Uhud, and Khandaq. Treaty of Hudaybiyyah: terms and outcomes. Conquest of Makkah. Farewell Pilgrimage: description, sermon, and lessons. Death of the Prophet."
+        },
+        {
+          "title": "3. The Khulafa'ur-Rashidīn (Rightly-Guided Caliphs)",
+          "notes": "Biographies, major contributions to Islam, administrative innovations, and lessons derived from the lives of Abu-Bakr Ibn Abī Quhhāfah, 'Umar Ibn al-Khattab, 'Uthman Ibn 'Affan, and 'Ali Ibn Abi Talib."
+        },
+        {
+          "title": "4. Islam in West Africa",
+          "notes": "Advent and roles of traders, teachers, murābitun, Sufi orders, mujaddidun (reformers), and Hajj in the spread of Islam. Comprehensive impact of Islam on the socio-political, economic, and linguistic structures of ancient West African empires (Ghana, Mali, Songhai, and Kanem-Borno)."
+        }
+      ]
+    },
+    {
+      "section_name": "Qur'an & Scriptural Studies",
+      "topics": [
+        {
+          "title": "1. Revelation, Preservation, and Importance of the Qur'an",
+          "notes": "Revelation: Cave Hira, initial revelation, modes, and piecemeal nature. Preservation: structural arrangement, distinction between Makki and Madani Suwar, recording, compilation, standardization, and pivotal roles of the Companions. Importance: The Qur'an as the primary source of guidance in social, political, spiritual, and moral spheres."
+        },
+        {
+          "title": "2. Prescribed Suwar for Detailed Study",
+          "notes": "Reading (Arabic/Transliteration), memorization, translation, meaning, and lessons of: Suratul Fatihah (Q.1), Suratud Duha (Q.93), Suratut Tin (Q.95), Suratul 'Alaq (Q.96:1-5), Suratul Qadr (Q.97), Suratul Kafirun (Q.109), Suratun Nasr (Q.110), Suratul Ikhlas (Q.112), Suratul Falaq (Q.113), and Suratun Nas (Q.114)."
+        },
+        {
+          "title": "3. Moral Lessons from the Qur'an",
+          "notes": "Textual analysis and moral applications: Duty and attitude towards parents (Q.17:23-24; Q.31:13-15). Honesty in words, trade, and deeds (Q.2:42; Q.61:2-3; Q.17:35). Prohibition and societal harms of gambling (Q.2:219; Q.5:90-91)."
+        }
+      ]
+    },
+    {
+      "section_name": "Hadith Studies",
+      "topics": [
+        {
+          "title": "1. Introduction to Hadith and Sunnah",
+          "notes": "Definitions, distinctions, similarities, and doctrinal importance. Structural components of Hadith: Isnad, Matn, and Rawi. Criteria for textual/chain authenticity. Classifications: Sahih, Hasan, and Da'if. Overview of the Six Sound Collections (Sihah us-Sittah) and their compilers."
+        },
+        {
+          "title": "2. Selected Ahadith from An-Nawawi's Forty Hadith",
+          "notes": "Reading, memorization, translation, detailed meaning, and practical lessons of Hadith numbers: 1, 5, 7, 9, 13, 15, 16, 18, 34, and 41."
+        }
+      ]
+    },
+    {
+      "section_name": "Tawhid & Fiqh (Theology & Jurisprudence)",
+      "topics": [
+        {
+          "title": "1. 'Iman (Faith) and Shirk",
+          "notes": "Articles of Faith: Belief in Allah (Kalimatush-Shahadah), Angels, Books, Prophets (focusing on Ulul-'Azm: Ibrahim, Nuh, Musa, 'Isa, Muhammad), Day of Resurrection, and Divine Decree (Qada' and Qadar). Shirk: definition, forms, idol worship, and ancestor/hero worship."
+        },
+        {
+          "title": "2. Taharah (Purification) and Salat (Prayer)",
+          "notes": "Taharah: principles and execution of Istinja', Wudu', At-Tayammum, and Ghusl. Salat: meaning, importance, vitiating factors, congregational prayer, and Sujudus-Sahwi. Types: obligatory, non-obligatory (Nawafil, Duha, Witr), special prayers (Jum'ah, 'Idayn, Janazah, Istisqa', Tarawih, Kusufayn, Istikhara), and Salatus-Safar."
+        },
+        {
+          "title": "3. Sawm (Fasting), Zakat (Charity), and Hajj (Pilgrimage)",
+          "notes": "Sawm: types (compulsory, voluntary), observance, exemptions, vitiating acts, and benefits. Zakat: Zakat vs. Sadaqah, Nisab calculations across livestock, money, and agriculture, beneficiaries (Q.9:60), and Zakatul-Fitr. Hajj & Umrah: origins, prerequisites, types (Ifrad, Tamattu, Qiran), rites, invalidating acts, and significance."
+        },
+        {
+          "title": "4. Shari'ah, Nikah (Marriage), and Talaq (Divorce)",
+          "notes": "Shari'ah: definition, primary/secondary sources (Qur'an, Sunnah, Ijma', Qiyas), and legal significance. Nikah: concept, prohibited degrees of marriage, validity conditions, rights/duties of spouses, and prevention of ill-treatment (Idrar). Talaq: Islamic position, forms (Talaq, Khul', Faskh, Mubara'ah, Zihar, Li'an), and 'Iddah duration and rules."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "The Holy Qur'an (text, translation and commentary) by A. Yusuf Ali",
+        "The Meaning of the Glorious Koran by Mohammed Marmaduke Pickthall",
+        "Islamic Religious Knowledge for WASC (Book 1: Qur'an and Tafsir, Book 2: Fiqh, Book 3: Hadith) by M. Bushir Sambo and Mohammed Higab",
+        "The Life of Muhammad by Muhammad Husayn Haykal",
+        "Islam in Focus by Hammudah Abdalati",
+        "Islamic Studies for Secondary Schools Books 1 & 2 by B. 'Aisha Lemu",
+        "Selected Traditions of An-Nawawi by M.O.A. Abdul",
+        "Studies in Islam Series Books 1-5 by M.O.A. Abdul",
+        "AL-'IZZIYYAH for English Audience by Quadri Y.A. and Oloyede, I.O.",
+        "Islamic Religious Knowledge for Senior Secondary School Series 1-3 by Seriki and Badmos",
+        "Yasin wal-Qur'an by S.H.A. Malik",
+        "The Classical Caliphate by M.O.A. Abdul",
+        "West Africa and Islam by P.B. Clarke",
+        "A History of Islam in West Africa by J.S. Trimingham",
+        "Essentials of Islamic Studies Books 1 & 2 by M.O. Raheemson",
+        "40 Hadith: An Explanation by Dr. Yushau Sodiq",
+        "Islamic Studies by Sulemana, M. (2004)",
+        "Islam: The Religion of Peace by Muhammad Jamiu Yunus (2011)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "subject": "Further Mathematics / Mathematics (Elective)",
+  "preamble": "The syllabus is designed to assess candidates' development of further conceptual and manipulative skills in Mathematics, bridging the gap between Elementary Mathematics and Higher Mathematics. It aims to prepare candidates for tertiary education in Mathematics, Engineering, Science, and related professional fields.",
+  "aims": [
+    "Development of further conceptual and manipulative skills in Mathematics;",
+    "Understanding of an intermediate course of study which bridges the gap between Elementary Mathematics and Higher Mathematics;",
+    "Acquisition of aspects of Mathematics that can meet the needs of potential Mathematicians, Engineers, Scientists and other professionals;",
+    "Ability to analyse data and draw valid conclusions;",
+    "Development of logical, abstract, and precise reasoning skills."
+  ],
+  "requirements": [
+    "Mathematics and Statistical tables published or approved by WAEC may be used in the examination room.",
+    "The use of non-programmable, silent, and cordless calculators is allowed, subject to restrictions against printing, communication, or phone integration.",
+    "Candidates should bring drawing instruments such as rulers, pairs of compasses, protractors, and set squares.",
+    "Note: Some questions may explicitly prohibit the use of tables and/or calculators."
+  ],
+  "examination_scheme": {
+    "summary": "There will be two papers: Paper 1 and Paper 2, both of which must be taken. Total marks available for the syllabus is 140 marks.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour 30 minutes",
+        "marks": "40",
+        "details": "Consists of forty multiple choice objective questions covering the entire syllabus (Pure Mathematics: 30 questions; Statistics & Probability: 4 questions; Vectors & Mechanics: 6 questions). All questions must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours 30 minutes",
+        "marks": "100",
+        "details": "Consists of two sections: Section A (48 marks) has eight compulsory elementary questions (Pure Math: 4, Statistics/Prob: 2, Vectors/Mech: 2). Section B (52 marks) has seven longer questions across three parts (Part I Pure Math: 3, Part II Stats/Prob: 2, Part III Vectors/Mech: 2); candidates must answer four questions with at least one from each part."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Pure Mathematics",
+      "topics": [
+        {
+          "title": "1. Sets",
+          "notes": "Idea of a set defined by a property; set notations and their meanings; disjoint sets, universal set, and complement of set; Venn diagrams and their applications to problem solving; commutative, associative, and distributive laws over union and intersection."
+        },
+        {
+          "title": "2. Surds",
+          "notes": "Surds of the form a/sqrt(b), a*sqrt(b), and a+b*sqrt(n) where a is rational, b is a positive integer, and n is not a perfect square; rationalization of denominators."
+        },
+        {
+          "title": "3. Binary Operations",
+          "notes": "Properties of binary operations: closure, commutativity, associativity, and distributivity; identification of identity elements and inverses."
+        },
+        {
+          "title": "4. Logical Reasoning",
+          "notes": "Rules of syntax: true or false statements; rules of logic applied to arguments, implications, and deductions; construction and interpretation of truth tables."
+        },
+        {
+          "title": "5. Functions",
+          "notes": "Domain and co-domain of a function; one-to-one, onto, identity, and constant mappings; determination of inverse functions; composite functions."
+        },
+        {
+          "title": "6. Polynomial Functions",
+          "notes": "Linear functions, equations, and inequalities; quadratic functions, equations, and inequalities; cubic functions and cubic equations."
+        },
+        {
+          "title": "7. Rational Functions",
+          "notes": "Rational functions of the form Q(x) = f(x)/g(x), g(x) != 0 where g(x) and f(x) are polynomials; resolution of rational functions into partial fractions."
+        },
+        {
+          "title": "8. Indices and Logarithmic Functions",
+          "notes": "Laws of indices and exponential equations; laws of logarithms, change of base, and logarithmic equations."
+        },
+        {
+          "title": "9. Permutation and Combinations",
+          "notes": "Fundamental counting principles; simple cases of arrangements (permutations); simple cases of selection of objects (combinations)."
+        },
+        {
+          "title": "10. Binomial Theorem",
+          "notes": "Expansion of (a+b)^n for positive integral n; use of approximation (1+x)^n approx 1+nx for any rational n where x is sufficiently small."
+        },
+        {
+          "title": "11. Sequences and Series",
+          "notes": "Finite and infinite sequences; linear sequences / Arithmetic Progression (A.P.) and exponential sequences / Geometric Progression (G.P.); finite and infinite series; linear and exponential series; recurrence series."
+        },
+        {
+          "title": "12. Matrices and Linear Transformation",
+          "notes": "Matrix algebra and properties; determinants of 2x2 and 3x3 matrices; inverse of 2x2 matrices; application of matrices to linear transformations in 2D space."
+        },
+        {
+          "title": "13. Trigonometry",
+          "notes": "Trigonometric ratios, identities, and rules; compound and multiple angle formulas; trigonometric functions, graphs, and solution of trigonometric equations."
+        },
+        {
+          "title": "14. Co-ordinate Geometry",
+          "notes": "Straight lines (distance, midpoint, gradient, parallel/perpendicular lines); conic sections (equations and properties of circles, parabolas, ellipses, and hyperbolas in standard forms)."
+        },
+        {
+          "title": "15. Differentiation",
+          "notes": "Idea of a limit; derivative of a function from first principles; differentiation of polynomials and trigonometric functions; product, quotient, and chain rules; differentiation of implicit and transcendental functions; second-order derivatives; rates of change, small changes (dx), maxima and minima."
+        },
+        {
+          "title": "16. Integration",
+          "notes": "Indefinite integrals as anti-derivatives; integration techniques; definite integrals; applications of definite integrals (areas under curves, volumes of solids of revolution)."
+        }
+      ]
+    },
+    {
+      "section_name": "Statistics and Probability",
+      "topics": [
+        {
+          "title": "17. Statistics",
+          "notes": "Tabulation and graphical representation of data (histograms, cumulative frequency curves); measures of central tendency (location); measures of dispersion (variance, standard deviation); scatter diagrams and linear correlation."
+        },
+        {
+          "title": "18. Probability",
+          "notes": "Meaning of probability and relative frequency; calculation of probability using simple sample spaces; addition and multiplication rules for independent and mutually exclusive events; probability distributions (binomial, Poisson, normal distributions)."
+        }
+      ]
+    },
+    {
+      "section_name": "Vectors and Mechanics",
+      "topics": [
+        {
+          "title": "19. Vectors",
+          "notes": "Definitions of scalar and vector quantities; vector representations; algebra of vectors (commutative, associative, and distributive properties); unit vectors and position vectors; resolution and composition of vectors; scalar (dot) product and applications; vector (cross) product and applications."
+        },
+        {
+          "title": "20. Statics",
+          "notes": "Definition and representation of forces; composition and resolution of coplanar forces acting at a point; general coplanar forces on rigid bodies; equilibrium conditions for bodies; determination of resultants, moments of forces, and friction laws."
+        },
+        {
+          "title": "21. Dynamics",
+          "notes": "Concepts of linear motion; equations of motion under constant acceleration; impulse and momentum conservation principles; motion of projectiles under gravity."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Standard Units and Currency Conversions",
+      "content": "Length: 1000 mm = 100 cm = 1 m; 1000 m = 1 km\nArea: 10,000 m² = 1 hectare (ha)\nCapacity: 1000 cm³ = 1 litre (l)\nMass: 1000 mg = 1 g; 1000 g = 1 kg; 1000 kg = 1 tonne\n\nCurrencies:\n• The Gambia: 100 bututs (b) = 1 Dalasi (D)\n• Ghana: 100 Ghana pesewas (Gp) = 1 Ghana Cedi (GH₵)\n• Liberia: 100 cents (c) = 1 Liberian Dollar (LD$)\n• Nigeria: 100 kobo (k) = 1 Naira (₦)\n• Sierra Leone: 100 cents (c) = 1 Leone (Le)\n• UK: 100 pence (p) = 1 Pound (£)\n• USA: 100 cents (c) = 1 Dollar ($)\n• French Speaking Territories: 100 centimes (c) = 1 Franc (fr)"
+    }
+  ],
+  "references": []
+}

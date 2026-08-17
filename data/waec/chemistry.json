@@ -1,0 +1,378 @@
+{
+  "subject": "CHEMISTRY",
+  "preamble": "This syllabus is drawn purposely for examination, hence the topics are not necessarily arranged in the order in which they should be taught. The following assumptions were made in drawing of the syllabus: (1) That candidates must have covered the Integrated Science/Basic Science or General Science and Mathematics syllabuses at the Junior Secondary School (JSS)/Junior High School (J.H.S) level; (2) That candidates would carry out as many of the suggested activities and project work as possible, and consequently develop the intended competencies and skills as spelt out in the relevant Chemistry teaching syllabuses; (3) That schools which offer the subject have well-equipped laboratories. Note: Candidates are required to have the knowledge of the significant figures, S.I. units and the conventional/IUPAC system of nomenclature.",
+  "objectives": [
+    "Assess candidates' understanding of basic chemistry concepts.",
+    "Assess candidates' level of acquisition of laboratory skills including awareness of hazards and safety measures.",
+    "Assess candidates' level of awareness of the inter-relationship between chemistry and other discipline.",
+    "Assess candidates' level of awareness of the linkage between chemistry and industry/environment/everyday life in terms of benefits and hazards.",
+    "Assess candidates' skills of critical and logical thinking."
+  ],
+  "examination_scheme": {
+    "summary": "There shall be three papers - Papers 1, 2 and 3 all of which must be taken. Paper 1 and 2 shall be a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objectives",
+        "duration": "1 hour",
+        "marks": "50 marks",
+        "details": "Will consist of fifty multiple choice objective questions drawn from Section A of the syllabus (i.e. the portion of the syllabus which is common to all candidates). Candidates will be required to answer all the questions within 1 hour for 50 marks."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "100 marks",
+        "details": "Will be a 2-hour essay paper covering the entire syllabus and carrying 100 marks. The paper will be in two sections: Sections A and B. Section A: Will consist of ten short structured questions drawn from the common portion of the syllabus (Section A) for 25 marks. Section B: Will consist of two questions from the common portion (Section A) and two questions from the section peculiar to the candidate's country (Section B or C). Candidates answer any three questions for 25 marks each."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test / Alternative to Practical",
+        "duration": "2 hours (School) / 1 hour 30 minutes (Private)",
+        "marks": "50 marks",
+        "details": "This shall be a 2-hour practical test for school candidates or 1 hour 30 minutes alternative to practical work test for private candidates. Each version shall contain three compulsory questions carrying 50 marks: One on quantitative analysis, one on qualitative analysis, and a third testing familiarity with suggested practical activities."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "SECTION A: FOR ALL CANDIDATES",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "INTRODUCTION TO CHEMISTRY",
+          "details": [
+            "(a) (i) Measurement of physical quantities (mass, length, time, temperature, and volume). (ii) Scientific measurements and their importance in chemistry (SI units, significant figures, precision, and accuracy).",
+            "(b) Scientific Methods: Outline the scientific method to include observation, hypothesis, experimentation, formulation of laws and theories."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "STRUCTURE OF THE ATOM",
+          "details": [
+            "(a) Gross features of the atom: Dalton's atomic theory and limitations, J.J. Thompson's experiment, Bohr's model, Rutherford's alpha scattering experiment.",
+            "(b) (i) Atomic number/proton number, number of neutrons, isotopes, atomic mass, mass number. Symbols of sub-atomic particles. (ii) Relative atomic mass (Ar) and relative molecular mass (Mr) based on Carbon-12 scale. (iii) Characteristics and nature of matter: atoms, molecules, and ions as building blocks.",
+            "(c) Particulate nature of matter: physical and chemical changes.",
+            "(d) (i) Electron Configuration (s, p, d for first 30 elements). (ii) Orbitals (shapes of s and p orbitals). (iii) Rules and principles for filling in electrons (Aufbau Principle, Hund's Rule, Pauli Exclusion Principle)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "STANDARD SEPARATION TECHNIQUES FOR MIXTURES",
+          "details": [
+            "(a) Classification of mixtures (solid-solid, solid-liquid, liquid-liquid, gas-gas).",
+            "(b) Separation techniques (crystallization, distillation, precipitation, magnetization, chromatography, sublimation, etc.).",
+            "(c) Criteria for purity (boiling point for liquids, melting point for solids)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 4,
+          "title": "PERIODIC CHEMISTRY",
+          "details": [
+            "(a) Periodicity of the elements.",
+            "(b) Different categories of elements in the periodic table (metals, semi-metals, non-metals, halogens, alkali metals, alkaline earth metals, transition metals).",
+            "(c) Periodic law: Trends on periodic table (atomic size, ionic size, ionization energy, electron affinity, electronegativity). Periodic gradation of third period elements (Na-Ar).",
+            "(d) Reactions between acids and metals, their oxides and trioxocarbonates (IV) (Period 3 and 4 metals).",
+            "(e) Periodic gradation of elements in group seven (halogens: F, Cl, Br, I).",
+            "(f) Elements of the first transition series (21Sc - 30Zn): electron configurations, physical properties, chemical reactivity, variable oxidation states, coloured compounds, complexes, catalysis, paramagnetism, hardness."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "CHEMICAL BONDS",
+          "details": [
+            "(a) Interatomic bonding.",
+            "(b) Formation and properties of ionic bonds and compounds; IUPAC naming.",
+            "(c) Formation and properties of covalent bonds and compounds; coordinate (dative) covalent bonding.",
+            "(d) Shapes of molecular compounds (BeCl2, BF3, CH4, NH3, CO2).",
+            "(e) Metallic Bonding and properties of metals.",
+            "(f) Intermolecular bonding and forces (van der Waals forces, dipole-dipole, hydrogen bonding)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 6,
+          "title": "STOICHIOMETRY AND CHEMICAL REACTIONS",
+          "details": [
+            "(a) Symbols, formulae, equations, empirical/molecular formulae, IUPAC names, laws of chemical combination.",
+            "(b) Amount of substance: the mole, Avogadro's constant, molar quantities.",
+            "(c) Mole ratios and stoichiometric calculations.",
+            "(d) Solutions: dilute/concentrated, acidic/basic/neutral, concentration terms (g dm^-3, mol dm^-3), standard solutions.",
+            "(e) Preparation of solutions from liquid solutes by dilution."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 7,
+          "title": "STATES OF MATTER",
+          "details": [
+            "(a) Kinetic theory of matter: postulates, state changes, diffusion, Brownian motion.",
+            "(b) Gases: gas laws (Boyle's, Charles', Dalton's, Graham's, Avogadro's, Ideal gas equation PV=nRT), preparation and properties of H2, NH3, CO2.",
+            "(c) Liquids: characteristics, vapour pressure, boiling point.",
+            "(d) Solids: ionic, metallic, covalent network, molecular solids.",
+            "(e) Structures, properties, and uses of diamond and graphite.",
+            "(f) Determination of melting points of covalent solids."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "ENERGY AND ENERGY CHANGES",
+          "details": [
+            "(a) Energy and enthalpy concepts.",
+            "(b) Exothermic and endothermic processes; enthalpy changes in combustion, dissolution, and neutralization."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 9,
+          "title": "ACIDS, BASES AND SALTS",
+          "details": [
+            "(a) Definitions (Arrhenius concept) and physical/chemical properties.",
+            "(b) Electrolytes and non-electrolytes; classification into strong and weak.",
+            "(c) Concept of pH, scale, and significance.",
+            "(d) Salts: types, preparations, uses, and hydrolysis.",
+            "(e) Deliquescent, efflorescent, and hygroscopic compounds.",
+            "(f) Acid-Base indicators and titrations."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 10,
+          "title": "SOLUBILITY OF SUBSTANCES",
+          "details": [
+            "(a) General principles: saturated/unsaturated solutions, solubility curves, crystallization.",
+            "(b) Practical applications to qualitative analysis and solubility calculations."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 11,
+          "title": "CHEMICAL KINETICS AND EQUILIBRIUM SYSTEM",
+          "details": [
+            "(a) Rate of reactions: factors affecting rates, collision and transition state theories, activation energy, graphs.",
+            "(b) Equilibrium: dynamic equilibrium, Le Chatelier's principle."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 12,
+          "title": "REDOX REACTIONS",
+          "details": [
+            "(a) Oxidation and reduction processes, oxidation numbers.",
+            "(b) Oxidizing and reducing agents; balancing redox equations.",
+            "(c) Electrochemical cells: standard electrode potential, cell notation, e.m.f, primary/secondary cells.",
+            "(d) Electrolysis: electrolytic cells, mechanisms, Faraday's laws, practical applications.",
+            "(e) Corrosion of metals: rusting of iron, prevention."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 13,
+          "title": "CHEMISTRY OF CARBON COMPOUNDS",
+          "details": [
+            "(a) Classification and functional groups (alkanes, alkenes, alkynes, alkanols, alkanoic acids, esters, amines, benzene).",
+            "(b) Separation and purification of organic compounds.",
+            "(c) Petroleum/crude oil: fractional distillation, cracking, reforming, petrochemicals, octane number.",
+            "(d) Homologous series and isomerism (structural and geometric).",
+            "(e) Detailed study of alkanes, alkenes, alkynes, benzene, alkanols, alkanoic acids, and alkanoates."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 14,
+          "title": "CHEMISTRY, INDUSTRY AND THE ENVIRONMENT",
+          "details": [
+            "(a) Chemical industry: raw materials, heavy vs. fine chemicals, plant location.",
+            "(b) Pollution: air, water, soil; greenhouse effect, ozone depletion.",
+            "(c) Biotechnology: fermentation, food processing."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 15,
+          "title": "BASIC BIOCHEMISTRY AND SYNTHETIC POLYMERS",
+          "details": [
+            "(a) Proteins: amino acid polymers, peptide linkages, hydrolysis, tests (Biuret, Millon's, Ninhydrin).",
+            "(b) Amino acids: structure and difunctional nature.",
+            "(c) Fats and oils: esters of glycerol, saponification, soap vs. detergents.",
+            "(d) Carbohydrates: monosaccharides, disaccharides, polysaccharides, tests (Fehling's, Benedict's, Tollen's, Iodine).",
+            "(e) Synthetic polymers: addition and condensation polymerization, thermoplastics vs. thermosets."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "SECTION B: FOR CANDIDATES IN GHANA ONLY",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "STRUCTURE OF THE ATOM",
+          "details": [
+            "(a) Elementary treatment of mass spectrometer, wave nature of electrons, quantum numbers.",
+            "(b) Nuclear chemistry: nucleons, nuclide, alpha/beta/gamma radiations, radioactivity, fission/fusion, half-life, binding energy."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "PERIODIC CHEMISTRY",
+          "details": [
+            "(a) Reactions of Period 3 and 4 metals.",
+            "(b) Acidic properties of non-metal oxides.",
+            "(c) Physical and chemical properties of Period 3 elements and compounds; thermal stability.",
+            "(d) Silicon: structures of SiO2 and CO2, uses.",
+            "(e) Halogens: inter-atomic bond energies, hydrides, acid strengths.",
+            "(f) Complex compounds: ligands, coordination, nomenclature, shapes (tetrahedral, square planar, octahedral)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "CHEMICAL BONDS",
+          "details": [
+            "(a) Formation of ionic bonds (lattice energy, covalent character, polar covalent bonds).",
+            "(b) Hybridization (sp, sp2, sp3, sp3d2) and formation of sigma (\u03c3) and pi (\u03c0) bonds."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 4,
+          "title": "SOLUTIONS",
+          "details": [
+            "Preparation of solutions from stock liquid solutes, density, % purity, standardization."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "ENERGY AND ENERGY CHANGES",
+          "details": [
+            "(a) Open, closed, isolated systems; enthalpy of atomization, sublimation, hydration.",
+            "(b) Hess's Law of heat summation and Born-Haber cycle.",
+            "(c) Bond energy and bond dissociation energy calculations."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 6,
+          "title": "ACIDS, BASES AND SALTS",
+          "details": [
+            "(a) Br\u00f8nsted-Lowry and Lewis concepts, conjugate pairs.",
+            "(b) pH, pOH, Kw, Ka, Kb, pKa, pKb calculations.",
+            "(c) Buffer solutions: definition and preparation.",
+            "(d) Double indicator titrations and back titrations; titration curves."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 7,
+          "title": "SOLUBILITY OF SUBSTANCES",
+          "details": [
+            "Solubility product (Ksp) calculations and factors affecting solubility; lattice vs. hydration energy."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "CHEMICAL KINETICS AND EQUILIBRIUM SYSTEMS",
+          "details": [
+            "(a) Rate law, order of reaction (zero, first, second order), half-life for first order, rate determining step.",
+            "(b) Law of Mass Action: Kc, Kp derivations and calculations; homogeneous vs. heterogeneous equilibria."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 9,
+          "title": "CHEMISTRY OF CARBON COMPOUNDS",
+          "details": [
+            "(a) Detection of N, S, halogens; estimation of C, H, O; solvent extraction.",
+            "(b) Inductive and mesomeric effects; nucleophiles, electrophiles, free radicals; homolytic/heterolytic fission.",
+            "(c) Free radical substitution mechanism of alkanes.",
+            "(d) Monosubstituted benzene reactions (toluene, phenol, aniline, benzoic acid, nitrobenzene)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 10,
+          "title": "CHEMICAL INDUSTRY AND ENVIRONMENT",
+          "details": [
+            "Mining and extraction of Au, Al, Mn, Fe, diamond, limestone; cement production and environmental impact."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "SECTION C: FOR CANDIDATES IN NIGERIA, SIERRA-LEONE, LIBERIA AND THE GAMBIA",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "NON METALS AND THEIR COMPOUNDS",
+          "details": [
+            "(a) Carbon: allotropes (diamond, graphite, amorphous), coal types, destructive distillation, coke, producer/water gas, oxides of carbon, trioxocarbonates.",
+            "(b) Oxygen: laboratory and industrial preparation, properties, neutral/acidic/basic/amphoteric oxides.",
+            "(c) Hydrogen: preparation, properties, uses.",
+            "(d) Water and solution: composition, hard/soft water, water treatment.",
+            "(e) Halogens: chlorine preparation, properties, bleaching agents.",
+            "(f) Hydrogen chloride gas: preparation, fountain experiment.",
+            "(g) Nitrogen: industrial/laboratory preparation, ammonia, trioxonitrate (V) acid and salts.",
+            "(h) Sulphur: allotropes, trioxosulphate (IV) acid, tetraoxosulphate (VI) acid (Contact process).",
+            "(i) Noble gases: properties and uses."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "METALS AND THEIR COMPOUNDS",
+          "details": [
+            "(a) Extraction of metals: Aluminium, Iron, Tin.",
+            "(b) Alloys: Cu, Al, Pb, Fe, Sn alloys and uses.",
+            "(c) Properties and uses of Sodium, Calcium, Copper, and their major compounds."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "PRACTICALS",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "GENERAL SKILLS AND PRINCIPLES",
+          "details": [
+            "Measurement of mass/volume, preparation/dilution of standard solutions, filtration, recrystallization, melting point determination, heats of neutralization/solution, pH measurement, reaction rate graphs, equilibrium constants."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "QUANTITATIVE ANALYSIS",
+          "details": [
+            "Acid-Base Titrations: standard solutions, molar mass, concentration, purity, water of crystallization, double indicator method (Ghana).",
+            "Redox Titrations: Acidic MnO4- with Fe2+, Acidic MnO4- with C2O4(2-), I2 in KI vs S2O3(2-)."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "QUALITATIVE ANALYSIS",
+          "details": [
+            "Characteristic and confirmatory tests for cations: NH4+, Ca2+, Pb2+, Cu2+, Fe2+, Fe3+, Al3+, Zn2+.",
+            "Tests for anions: Cl-, SO3(2-), CO3(2-), NO3-, SO4(2-).",
+            "Tests for gases: H2, NH3, CO2, HCl, SO2.",
+            "Organic functional group tests: Alkenes, Alkanols, Alkanoic acids, Sugars (Fehling's/Benedict's), Starch (Iodine), Proteins (Ninhydrin, Xanthoproteic, Biuret, Millon's)."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "reading_list": []
+}

@@ -1,0 +1,172 @@
+{
+  "subject": "Forestry",
+  "preamble": "The Senior High School Forestry Syllabus has been structured to assess candidates' knowledge of forestry and forest conservation. It will also assess candidates' knowledge and skills in forestry practices that will form the basis for sound tertiary education in forestry and also make them employable in the forestry industry and related disciplines.",
+  "aims": [
+    "Appreciation of the importance of forests to life;",
+    "Knowledge and skills in current forestry practices;",
+    "Understanding of the effects of population growth on forests;",
+    "Understanding of the causes and effects of forest degradation;",
+    "Understanding of the regulations governing the use of the forests and forest resources;",
+    "Knowledge of the functions of forestry sector institutions;",
+    "Basic skills in establishing and managing forest plantations;",
+    "Ability to contribute to the conservation and sustainable use of forests."
+  ],
+  "requirements": [
+    "Schools offering Forestry are expected to keep demonstration plots where a variety of both indigenous and exotic forest trees are grown and maintained to develop their skills in the management of forest stands.",
+    "It is recommended that students of the subject should visit forest reserves, national parks, zoos and forest plantations, forestry institutions and industries for experiential learning as part of their course work.",
+    "It is also recommended that they will keep practical notebooks and specimen albums containing records of activities based on laboratory, nursery and field observations to develop their documentation skills."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers: Paper 1, Paper 2, and Paper 3, all of which must be taken. Papers 1 and 2 will be a composite paper to be taken at one sitting.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty multiple choice objective questions, all of which must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of six essay-type questions. Candidates will be required to answer four questions for 20 marks each."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test / Alternative to Practical",
+        "duration": "2 hours",
+        "marks": "60",
+        "details": "Practical paper for school candidates or alternative to practical work test for private candidates. Consists of four questions, all of which must be answered."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Introduction to Forestry",
+      "topics": [
+        {
+          "title": "1. Basic Concepts of Forest and Forestry",
+          "notes": "Meaning of forest and forestry; differences between Forestry and Agriculture in land occupancy, time frame, risk; business aspects of forestry; functions of the forest; types of plants (trees, shrubs, herbs, climbers, special plants); local and botanical names of timber trees."
+        },
+        {
+          "title": "2. Introduction to Forest Ecology",
+          "notes": "Concept of forest ecology, plant habitats (water-logged/aquatic, dry land, valley/slope, hill tops/terrestrial, arboreal), animal habitat characteristics; forest ecosystem meaning, types, major components, food chains, food webs, producer-consumer relationships, symbiotic associations, saprophytes vs. epiphytes; ecosystem functions (regulation, supporting, cultural) and effects of good and degraded ecosystems on health."
+        },
+        {
+          "title": "3. Ecological Zones",
+          "notes": "Vegetation zones in West Africa (Wet-evergreen, Moist-evergreen, Moist semi-deciduous, Dry semi-deciduous, Mangroves, Savannah); climatic, edaphic, and biotic factors affecting vegetation distribution; composition and structure of Tropical High Forest, Savannah, Coastal Scrub, and Grassland; characteristics of virgin/primeval, secondary, natural, and artificial forests; forest types in relation to latitudes (Tropical, Temperate Coniferous, Arctic); angiosperms vs. gymnosperms."
+        },
+        {
+          "title": "4. Introduction to Wildlife",
+          "notes": "Concept of wildlife and wildlife resources; common and scientific names of wildlife species; socio-economic, environmental, scientific, and tourism importance of wildlife; endangered, rare, and common species; wildlife reserves in Ghana (National Parks, Game Production Reserves, Wildlife Sanctuaries, Strict Nature Reserves); wildlife management practices in reserves and zoos."
+        },
+        {
+          "title": "5. Plant Parts and Tree Identification",
+          "notes": "Morphological and anatomical features of leaves, stems, and roots; covering and vascular tissues (xylem, phloem, cambium, epidermis, cortex, pith); observable features for tree identification (leaves, bark, buttress, stem form); local, trade, and scientific names; rubrics of scientific nomenclature."
+        }
+      ]
+    },
+    {
+      "section_name": "Forest Estates",
+      "topics": [
+        {
+          "title": "6. Concept and Management of Forest Estates",
+          "notes": "Processes for reservation and constitution of a forest estate; role of Reserve Settlement Commissioner; internal/external pillaring and admitted rights; protected vs. non-protected forests; management systems for public and private estates; management problems (bushfires, illegal farming, illegal felling, chain-sawing, illegal mining) and solutions."
+        },
+        {
+          "title": "7. Current State of the Forest and Protective Measures",
+          "notes": "Historical trends of forest area, composition, population growth, and depletion rates; measures by Forest Services Division to protect resources (log export ban, star rating of species, differential stumpage fees, participatory forestry, yield selection and approval, permits, felling rights)."
+        },
+        {
+          "title": "8. Deforestation and Regeneration Concepts",
+          "notes": "Meaning, indicators, causes, and effects of deforestation on soil fertility, habitats, economy, and environment; meanings and differences between reforestation, afforestation, and reafforestation; silvicultural terminologies (silvics, silviculture, soil seed bank, shade/light-demanding plants, plant succession, forest gaps)."
+        },
+        {
+          "title": "9. Natural and Artificial Regeneration",
+          "notes": "Natural regeneration concepts, soil seed bank, gap dynamics, line/spot planting methods, advantages over artificial regeneration; agro-forestry practices and benefits; taungya systems (history, conditions, pros and cons); artificial regeneration using indigenous or exotic species in pure/mixed stands; pros and cons of exotic species."
+        },
+        {
+          "title": "10. Invasive Alien Species",
+          "notes": "Identification, characteristics, and control of aquatic invasive species (Eichhornia crassipes, Salvinia molesta, Pistia stratiotes, Mimosa pigra) and terrestrial invasive species (Chromolaena odorata, Broussonetia papyrifera, Leucaena leucocephala)."
+        }
+      ]
+    },
+    {
+      "section_name": "Plantation Establishment and Forest Mensuration",
+      "topics": [
+        {
+          "title": "11. Plantation Development",
+          "notes": "Purpose and differences from natural forests; factors influencing development (wood deficit, environmental degradation, stock improvement, industrial needs); planning and design (objectives, site selection, preparation, species selection, cost considerations)."
+        },
+        {
+          "title": "12. Nursery Establishment",
+          "notes": "Functions, importance, and types of nurseries (permanent vs. flying); cultural practices (bed preparation, pricking out, stumping, stripling, hardening-off, transplanting, seed treatment/sowing, watering, weeding, shading); tools and equipment; pests (slugs, snails, termites) and diseases (damping off, rust) with controls; record keeping and cost analysis."
+        },
+        {
+          "title": "13. Planting and Tending Operations",
+          "notes": "Site clearing, pegging, seedling planting methods; tending operations (weeding, beating up, pruning, thinning) and consequences of improper tending; operational costs and record keeping."
+        },
+        {
+          "title": "14. Forest Mensuration",
+          "notes": "Meaning, importance, and purpose of forest mensuration; measuring tools and equipment (Haga altimeter, tape, clinometer, compass, measuring chain, ranging poles, arrows); parameters and metric units for height, diameter, girth, and volume; enumeration kinds (100%, 5%, 2%) and sampling methods (selective, systematic, random); stock, strip, and land surveys and conventional symbols."
+        }
+      ]
+    },
+    {
+      "section_name": "Harvesting and Marketing of Forest Resources",
+      "topics": [
+        {
+          "title": "15. Harvesting of Timber and Non-Timber Forest Products (NTFPs)",
+          "notes": "Pre-harvesting activities (stock survey, reconnaissance, inspections, tree selection); natural forest vs. plantation procedures (permits, yield approval, felling, extraction); log markings (property mark, locality mark, compartment number, stock survey number, tree number, reserve code, log number); extraction, transportation, safety; NTFP examples (Marantaceae leaves, chewing sticks, medicinal plants, canes, rafters, bushmeat) and sustainable harvesting methods."
+        },
+        {
+          "title": "16. Wildlife Harvesting and Conservation",
+          "notes": "Harvesting techniques (hunting, trapping, baiting, gathering) and sustainability; harmful wildlife harvesting practices (chemicals, fire, gin-traps); control measures (education, sanctions, permits, closed seasons, night hunting bans)."
+        },
+        {
+          "title": "17. Marketing, Processing, and Forestry Enterprises",
+          "notes": "Direct vs. indirect forest benefits; contribution to national economy; demand factors in local vs. foreign markets; marketing agencies (GEPC, TIDD, private companies); timber industries (sawmills, plywood, chipboard mills), processing steps, equipment (bandmills, veneer lathes), products (sawn boards, veneer, plywood); establishing forestry enterprises, business opportunities, resources, and career pathways."
+        }
+      ]
+    },
+    {
+      "section_name": "Forestry Sector Structures",
+      "topics": [
+        {
+          "title": "18. Policy, Implementation, Institutions, and Rights",
+          "notes": "Functions of the Ministry responsible for forestry; structures and functions of the Forestry Commission (FC) and divisions (FSD, WD, TIDD); research and training institutions (FORIG, FRNR, FFRT, WITC); rights to forest resources (Timber Utilization Contract - TUC, Timber Utilization Permit - TUP, Salvage Permits, NTFP permits); permit acquisition procedures and violations (illegal felling, poaching, encroachment)."
+        },
+        {
+          "title": "19. Stakeholders, Land Tenure, and Forest Law",
+          "notes": "Roles of government institutions, traditional authorities, local communities, NGOs, and forest industries; land tenure systems (communal, individual, leasehold) pros and cons; roles of stools/skins and government; land registration procedures and impacts on land use (fragmentation, litigation); forest and wildlife policies and legislation."
+        }
+      ]
+    },
+    {
+      "section_name": "Income Generation Ventures",
+      "topics": [
+        {
+          "title": "20. Cultivation of Mushroom",
+          "notes": "Economic, nutritional, medicinal, and agricultural importance; mushroom biology and classification (Basidiomycetes, poisonous vs. non-poisonous, commercial types); substrates and nutrition; life cycle; cultivation methods (pit, high/low bed, plastic bag/indoor commercial); production practices (composting, bagging, sterilizing, inoculation, cropping); harvesting signs, post-harvest handling, processing, and preservation."
+        },
+        {
+          "title": "21. Beekeeping",
+          "notes": "Importance of beekeeping; apiary establishment (site selection, hive types, baiting, capturing); colony members and social structure (queen, drones, workers); routine management, safety precautions, pest and disease control; colony maturity, harvesting, processing honey and wax, and marketing strategies."
+        }
+      ]
+    },
+    {
+      "section_name": "Practical Syllabus",
+      "topics": [
+        {
+          "title": "22. Practical Field and Laboratory Skills",
+          "notes": "Fauna recognition via footprints, tracks, droppings, external features; flora recognition via leaves, bark, stem form, crown shape, floral/fruit keys; identification, maintenance, and safe use of forestry tools, equipment, and machinery; practical nursery practices (soil treatment, seed testing/sowing, pricking-out, hardening-off); plantation establishment practicals (surveying, site clearing, pegging, planting, tending, record keeping); practical mensuration of height, diameter, girth, volume, and slope angles; timber felling safety, procedures, and log marking practicals; processing methods for timber and NTFPs; practical setup, management, harvesting, and processing for mushroom cultivation and beekeeping."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": []
+}

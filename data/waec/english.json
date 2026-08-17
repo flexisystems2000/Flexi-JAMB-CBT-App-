@@ -1,0 +1,87 @@
+{
+  "subject": "English Language",
+  "preamble": "This examination sets out to test the different basic skills of communicating in English using the mediums of speech and writing. The examination will test the receptive and productive abilities of candidates through reading comprehension, summary, vocabulary, lexis and structure, listening comprehension, and recognition of different aspects of spoken English.",
+  "aims": [
+    "use correct English;",
+    "write about incidents in English that are appropriate to specified audiences and situations;",
+    "organize material in paragraphs that are chronologically, spatially, and logically coherent;",
+    "control sentence structures accurately;",
+    "exhibit variety in the use of sentence patterns;",
+    "comply with the rules of grammar;",
+    "spell and punctuate correctly;",
+    "comprehend written and spoken English;",
+    "recognize implied meaning, tones, and attitudes;",
+    "use an acceptable pronunciation that can be comprehended by others;",
+    "recognize the physical characteristics of English sounds and the letters that represent them;",
+    "pick out and summarize relevant information from set passages."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers: Paper 1, Paper 2, and Paper 3, all of which must be taken.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test (Lexis and Structure)",
+        "duration": "1 hour",
+        "marks": "40",
+        "details": "Consists of 80 multiple-choice questions testing vocabulary, lexis, and grammatical structure."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay, Comprehension, and Summary",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "Consists of three sections: Section A (Essay Writing - 50 marks, 50 mins), Section B (Comprehension - 20 marks, 30 mins), and Section C (Summary - 30 marks, 40 mins)."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Oral English / Listening Comprehension",
+        "duration": "45 minutes",
+        "marks": "30",
+        "details": "Test of Orals (for candidates in Nigeria and Liberia) or Listening Comprehension Test (for candidates in Gambia, Sierra Leone, and Ghana)."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Lexis and Structure (Paper 1)",
+      "topics": [
+        {
+          "title": "1. Vocabulary and Lexical Fields",
+          "notes": "Acquisition and usage of vocabulary across key areas including Building/Construction, Agriculture, Fishing, Stock Exchange, Health, Environment, Culture/Institutions, Law & Order, Motor Vehicles & Travel, Government & Administration, Sports, Religion, Science & Technology, Animal Husbandry, Advertising, and the Human Internal Body System."
+        },
+        {
+          "title": "2. Grammatical Structure",
+          "notes": "Patterns of word-form changes (number, tense, degree); combination of word categories into phrases, clauses, and sentences; accurate use of structural words (conjunctions, determiners, prepositions)."
+        }
+      ]
+    },
+    {
+      "section_name": "Written English and Comprehension (Paper 2)",
+      "topics": [
+        {
+          "title": "3. Essay Writing",
+          "notes": "Writing continuous prose (minimum of 450 words) appropriate to specified audiences and situations. Formats include letters, speeches, narrative, descriptive, argumentative/debate, reports, articles, exposition, and creative writing."
+        },
+        {
+          "title": "4. Comprehension and Summary",
+          "notes": "Reading comprehension testing direct facts, implied meanings, tones, attitudes, figures of speech, and grammatical functions; summary writing emphasizing extraction and concise organization of main ideas."
+        }
+      ]
+    },
+    {
+      "section_name": "Oral English and Phonetics (Paper 3)",
+      "topics": [
+        {
+          "title": "5. Consonant Contrasts and Phonology",
+          "notes": "Recognition and differentiation of initial, medial, and final consonant phonemes (e.g., /ð/ vs /d/, /s/ vs /z/, /f/ vs /v/, /p/ vs /b/, /t/ vs /d/, /k/ vs /g/, /ʃ/ vs /tʃ/)."
+        },
+        {
+          "title": "6. Consonant Clusters and Spoken Patterns",
+          "notes": "Identification and pronunciation of initial and final consonant clusters (e.g., pl-/pr-, st-/str-, -lt/-ld, -nt/-nd, -sk/-ks, -ft/-vd); word stress, sentence stress, intonation patterns, and pitch direction."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": []
+}

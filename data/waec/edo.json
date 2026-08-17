@@ -1,0 +1,154 @@
+{
+  "subject": "EDO",
+  "preamble": "This examination syllabus is drawn entirely from the senior secondary school curriculum for Edo which was developed by NERDC in 2006.",
+  "aims_and_objectives": [
+    "enable candidates speak, read and write competently in Edo to communicate effectively with other speakers of the language;",
+    "familiarize candidates with the sound system, grammatical structures and other features of Edo Language;",
+    "acquaint candidates with the necessary tools needed for a thorough appreciation of Edo Speech Usage, Literature and Culture (customs and institutions)."
+  ],
+  "scheme_of_examination": {
+    "summary": "The examination will consist of two papers, Papers 1 and 2. It will test all aspects of Edo Language: comprehension, composition, sound system, grammar and translation. It will also test selected texts of oral and written literature as well as Basic Principles of Literary Appreciation, Customs and Institutions. The rubrics shall be written in Edo.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple-choice",
+        "duration": "1 hour",
+        "marks": "60 marks",
+        "weight": "30%",
+        "details": "Total of 60 items testing Language (30 items), Literature (22 items), and Culture (8 items)."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay-Type",
+        "duration": "2 hours",
+        "marks": "100 marks",
+        "weight": "70%",
+        "details": "Candidates will be required to answer six questions in all: three questions from Section A (Language); two questions from Section B (Literature); and one question from Section C (Culture) using official Edo orthography and metalanguage."
+      }
+    ]
+  },
+  "syllabus_content": [
+    {
+      "section_title": "LANGUAGE",
+      "topics": [
+        {
+          "topic_number": 1,
+          "title": "Composition",
+          "details": [
+            "Essay writing (approx. 300 words).",
+            "Types: Narrative, Descriptive, Argumentative, Expository, Dialogue, Debate, Letter writing."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 2,
+          "title": "Sound System",
+          "details": [
+            "Vowels, Consonants and Syllabic nasal (production in terms of place and manner, basic phonetic and phonemic classification).",
+            "Syllable structure.",
+            "Sound processes (e.g. vowel harmony, assimilation, elision).",
+            "Sound system aspect of orthography.",
+            "Tones and tone notation."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 3,
+          "title": "Grammar",
+          "details": [
+            "Numerals: basic and derived.",
+            "Word structure and word formation.",
+            "Word classes: nouns, verbs, adverbs, pronouns, adjectives, etc.",
+            "Grammatical categories: subject, object, complement, predicate, number, person, tense, aspect, mood, etc.",
+            "Phrases and clauses.",
+            "The structure and type of sentences."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "LITERATURE",
+      "topics": [
+        {
+          "topic_number": 4,
+          "title": "Basic Principles of Literary Appreciation",
+          "details": [
+            "Concepts and elements of literary appreciation in Edo literature."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 5,
+          "title": "Oral Literature",
+          "details": [
+            "Prose, Poetry, and Drama set texts in Edo oral tradition."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 6,
+          "title": "Written Literature",
+          "details": [
+            "Prose, Poetry, and Drama set texts in written Edo literature."
+          ],
+          "subsections": []
+        }
+      ]
+    },
+    {
+      "section_title": "CULTURE",
+      "topics": [
+        {
+          "topic_number": 7,
+          "title": "Customs",
+          "details": [
+            "Make-up and adornments.",
+            "In-door and out-door games.",
+            "Pregnancy and its care.",
+            "Names and naming ceremonies.",
+            "Home training: greetings, respect for superiors, cleanliness, tolerance, integrity, hard work.",
+            "Edo foods.",
+            "Non-verbal communication.",
+            "Funerals: traditional and modern methods.",
+            "Inheritance: traditional and modern methods."
+          ],
+          "subsections": []
+        },
+        {
+          "topic_number": 8,
+          "title": "Institutions",
+          "details": [
+            "Traditional occupations.",
+            "Marriage.",
+            "Politics: family structure, age grades, chieftaincy, Obaship.",
+            "Child care.",
+            "Ancestors.",
+            "Edo beliefs about Osalobua/Osanobua (God), deities/divinities, other invisible forces.",
+            "Modern religions: Islam, Christianity.",
+            "Economy: adverts, money lending, cooperative efforts."
+          ],
+          "subsections": []
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "SELECTED TEXTS (2014-2020)",
+      "details": [
+        "Prose: 'Iden Nokpokhuo' by Osaren Omoregie; 'Oro' (pp 1-49) by Emovon & Osemwegie.",
+        "Poetry: 'Asikoko Ekharha Oghe Edo' edited by Obazee Gabriel et al.",
+        "Drama: 'Eseikho' by Ikponmwosa Osemwegie.",
+        "Oral Literature: 'Izelogha' by Osemwegie, Osayomwanbo E.",
+        "Language & Culture Reference: 'Edo course Bk 4-6' by Dr. E. O. Imasuen; 'Edo phonetics and phonology' by Victor Edosa Omozuwa; 'Edo Proverbs and Figure of Speech' by Ogie Emwinma."
+      ]
+    }
+  ],
+  "reading_list": [
+    "Erhahon Ivie - Okha Edo",
+    "Eghareuba, J. U. - A short History of Bini",
+    "Ahiatuoghiomwan, Enabulele - Imaguero",
+    "Agheyisi, (Prof) - An Edo/English Dictionary"
+  ]
+}

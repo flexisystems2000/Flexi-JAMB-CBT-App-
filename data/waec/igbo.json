@@ -1,0 +1,126 @@
+{
+  "subject": "Igbo",
+  "preamble": "A sound knowledge of the Igbo language, literature, and culture is a fundamental need for all who desire a comprehensive understanding of the Igbo people. Based on this, the Igbo syllabus is designed for candidates studying Igbo to ensure they go through the rubrics of the language. The syllabus covers important areas such as the sound system, grammar, literature, culture, and worldview, evaluated using standard Igbo orthography and metalanguage.",
+  "aims": [
+    "Enable candidates to speak, read, and write Igbo properly and communicate effectively in the language;",
+    "Familiarize candidates with the sound system, grammatical structures, and linguistic features of the Igbo language;",
+    "Expose candidates to Igbo culture, customs, institutions, social values, and worldview;",
+    "Provide candidates with necessary tools for creative writing, literary appreciation, and critical analysis of Igbo literature."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "The rubrics of all examination papers shall be written in Igbo.",
+    "Candidates are required to answer all questions in Igbo using the standard orthography metalanguage."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two compulsory papers (Paper 1 and Paper 2) taken at a single sitting. Paper 1 is a multiple-choice objective test, while Paper 2 tests composition, language structure, literature, and culture.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "60",
+        "details": "Consists of sixty multiple-choice objective questions divided into three sections: Section A (Language: 30 items covering Comprehension, Composition/Letter writing, Sound system, Grammar, and Translation), Section B (Literature: 22 items covering Literary Appreciation, Oral Literature, and Written Literature), and Section C (Culture: 8 items covering Customs and Institutions). All questions are compulsory."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay, Literature, and Culture Test",
+        "duration": "2 hours",
+        "marks": "100",
+        "details": "A written test divided into three sections (Section A: Essay and Language; Section B: Literature; Section C: Culture). Candidates answer six out of thirteen questions: one 300-word essay/letter from Part I, one sound system question from Part II, one grammar question from Part III, one oral literature text question, one written literature text question, and one culture question."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Asụsụ (Language)",
+      "topics": [
+        {
+          "title": "1. Edemede na Leta (Composition and Letter Writing)",
+          "notes": "Essay writing principles across various genres: Narrative, Descriptive, Argumentative, Expository, Dialogue, Debate, and Formal/Informal Letter writing (~300 words)."
+        },
+        {
+          "title": "2. Nsokorịta Sawa na Ụdaasụsụ (Sound System / Phonology)",
+          "notes": "Igbo phonemes (vowels, consonants, syllabic nasals, production, and classification). Syllable structures. Sound processes (vowel harmony, vowel assimilation, vowel elision, consonant elision). Tone, tone notation, and the Igbo alphabet."
+        },
+        {
+          "title": "3. Ụdị na Ụdị Asụsụ (Grammar and Linguistics)",
+          "notes": "Igbo spelling rules, word formation processes, Igbo dialects vs. Standard Igbo, loan words, and Igbo metalanguage (new terminology). Word classes, grammatical categories, phrases, clauses, sentence types, lexis, structure, and punctuation marks."
+        }
+      ]
+    },
+    {
+      "section_name": "Agụmagụ (Literature)",
+      "topics": [
+        {
+          "title": "1. Mmbido Agụmagụ na Ntụle Agụmagụ (Literary Appreciation)",
+          "notes": "Basic principles of literary appreciation, literary devices, figures of speech, and stylistic tools in Igbo literature."
+        },
+        {
+          "title": "2. Agụmagụ Ọnụ (Oral Literature)",
+          "notes": "Definition, characteristics, classification, and social functions of oral literature. Genres include folktales (ifo), anecdotes (ụkabuilu), legends, myths, poems, songs, proverbs, riddles, chants, oral drama, and tongue twisters."
+        },
+        {
+          "title": "3. Agụmagụ Ederede (Written Literature)",
+          "notes": "Analysis, themes, characterization, setting, and plot structure of prescribed written prose, poetry, and drama texts."
+        }
+      ]
+    },
+    {
+      "section_name": "Omenala na Ewumewu (Culture and Institutions)",
+      "topics": [
+        {
+          "title": "1. Omenala (Customs)",
+          "notes": "Igbo rites of passage, traditional belief systems, rituals, festivals, values, and worldview."
+        },
+        {
+          "title": "2. Ewumewu (Institutions)",
+          "notes": "Social, political, and economic institutions in Igboland (e.g., chieftaincy, age grades, secret societies, traditional governance, family systems)."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Prescribed Texts (Oral Literature)",
+      "books": [
+        "Ezennxnxs",
+        "Qka Mgba"
+      ]
+    },
+    {
+      "type": "Prescribed Texts (Written Prose)",
+      "books": [
+        "Xwa Adighị Ka Echere (Kanụgozi F.)",
+        "Agụgü M.O.",
+        "Eke Na Egwurugwu (Nwadike I.U.)",
+        "Iroaganachi J."
+      ]
+    },
+    {
+      "type": "Prescribed Texts (Written Poetry)",
+      "books": [
+        "Abụ Akwamaozu (Ọzọchukwu S)",
+        "Mbem na Egwu Igbo (Ọgbala F.C.)",
+        "Ndidi Amaka (Okoro C.L)",
+        "Anụ Gbaa Ajọqsụ (Ọfọmata C.)",
+        "Xwa Bụ Agha (Nwadike I.U.)",
+        "Ọdịkona Mba (Okebalama C.N.)",
+        "Oke Soro Ngwere (Okechukwu Ihejirika)",
+        "Akọ na Uche (Echebima G.N)",
+        "Akọnuche (Nwadike I.U)"
+      ]
+    },
+    {
+      "type": "Prescribed Texts (Written Drama)",
+      "books": [
+        "Nke M Ji Ka Nwaozuzu G.L.",
+        "Amaghị Igbo Asụsụ Oyibo (Okeke C.)",
+        "Nka Dị na Ntị (Okoro Emeka)",
+        "Afere (Chukwuemeka O.)",
+        "Ka Ọ dị Ma Nke A..... (Agụgü M.O.)"
+      ]
+    }
+  ]
+}

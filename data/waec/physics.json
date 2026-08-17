@@ -1,0 +1,189 @@
+{
+  "subject": "Physics (WASSCE)",
+  "document_title": "West African Senior School Certificate Examination Physics Syllabus",
+  "aims": [
+    "Acquire proper understanding of the basic principles and applications of Physics",
+    "Develop scientific skills and attitudes as pre-requisites for further scientific activities",
+    "Recognize the usefulness, and limitations of scientific method to appreciate its applicability in other disciplines and in every life",
+    "Develop abilities, attitudes and skills that encourage efficient and safe practice",
+    "Develop scientific attitudes such as accuracy, precision, objectivity, integrity, initiative and inventiveness"
+  ],
+  "assessment_objectives": {
+    "acquisition_of_knowledge_and_understanding": [
+      "Scientific phenomena, facts laws, definitions, concepts and theories",
+      "Scientific vocabulary, terminology and conventions (including symbols, quantities and units)",
+      "The use of scientific apparatus, including techniques of operation and aspects of safety",
+      "Scientific quantities and their determinations",
+      "Scientific and technological applications with their social economic and environmental implications"
+    ],
+    "information_handling_and_problem_solving": [
+      "Locate select, organize and present information from a variety of sources including everyday experience",
+      "Analyse and evaluate information and other data",
+      "Use information to identify patterns, report trends and draw inferences",
+      "Present reasonable explanations for natural occurrences, patterns and relationships",
+      "Make predictions from data"
+    ],
+    "experimental_and_problem_solving_techniques": [
+      "Follow instructions",
+      "Carry out experimental procedures using apparatus",
+      "Make and record observations, measurements and estimates with due regard to precision, accuracy and units",
+      "Interpret, evaluate and report on observations and experimental data",
+      "Identify problems, plan and carry out investigations, including the selection of techniques, apparatus, measuring devices and materials",
+      "Evaluate methods and suggest possible improvements",
+      "State and explain the necessary precautions taken in experiments to obtain accurate results"
+    ]
+  },
+  "scheme_of_examination": {
+    "paper_1": "50 multiple choice questions lasting 1 1/4 hours and carrying 50 marks",
+    "paper_2": "Two sections, Sections A and B lasting 1 1/2 hours and carrying 60 marks. Section A: seven short-structured questions, answer any five for 15 marks. Section B: five essay questions, answer any three for 45 marks",
+    "paper_3": "Practical test for school candidates or alternative to practical work paper for private candidates. Three questions, answer any two in 2 3/4 hours for 50 marks"
+  },
+  "detailed_syllabus": {
+    "part_1_interaction_of_matter_space_and_time": [
+      {
+        "topics": "1. Concepts of matter",
+        "notes": "Simple structure of matter, three physical states (solid, liquid, gas), particle nature evidence (Brownian motion, kinetic theory), pressure in a gas, evaporation/boiling, cohesion, adhesion, capillarity, crystalline vs amorphous substances"
+      },
+      {
+        "topics": "2. Fundamental and derived quantities and units",
+        "notes": "Fundamental quantities (length, mass, time, electric current, luminous intensity, thermodynamic temperature, amount of substance) and units (m, kg, s, A, cd, K, mol). Derived quantities (volume, density, speed) and units (m^3, kgm^-3, ms^-1)"
+      },
+      {
+        "topics": "3. Position, distance and displacement",
+        "notes": "Position as location using X, Y, Z axes, measurement using string, metre rule, vernier calipers, micrometer screw gauge. Direction as bearing using compass and protractor. Distance vs displacement"
+      },
+      {
+        "topics": "4. Mass and weight",
+        "notes": "Distinction using lever/beam/electronic balance for mass and spring balance for weight. Units: kg and N"
+      },
+      {
+        "topics": "5. Time",
+        "notes": "Concept of time interval, measurement using heart-beat, sand-clock, ticker-timer, pendulum, stopwatch/clock. Unit: second(s)"
+      },
+      {
+        "topics": "6. Fluid at rest",
+        "notes": "Volume, density, relative density. Pressure in fluids, Pascal's principle, hydraulic press, car brakes, atmospheric pressure, barometers, manometers, siphons, syringes, pumps. Archimedes' principle and law of flotation"
+      },
+      {
+        "topics": "7. Motion",
+        "notes": "Types of motion (random, rectilinear, translational, rotational, circular, orbital, spin, oscillatory). Relative motion, cause of motion (forces: contact and non-contact/field forces, solid friction, viscosity/fluid friction, terminal velocity, circular motion, banking of roads)"
+      },
+      {
+        "topics": "8. Speed and velocity",
+        "notes": "Concept of speed and velocity, uniform/non-uniform, ticker-timer, distance/displacement-time graph, instantaneous speed/velocity"
+      },
+      {
+        "topics": "9. Rectilinear acceleration",
+        "notes": "Concept of acceleration/deceleration, uniform/non-uniform, velocity-time graph, equations of motion with constant acceleration, motion under gravity"
+      },
+      {
+        "topics": "10. Scalars and vectors",
+        "notes": "Scalars vs vectors, representation, addition of forces/vectors using force board, resolution of vectors, resultant velocity"
+      },
+      {
+        "topics": "11. Equilibrium of forces",
+        "notes": "Principle of moments, torque, couple, conditions for equilibrium of rigid bodies under parallel and non-parallel forces, centre of gravity and stability"
+      },
+      {
+        "topics": "12. Simple harmonic motion",
+        "notes": "Illustration, definition, speed, acceleration, period, frequency, amplitude, energy of S.H.M., forced vibration and resonance"
+      },
+      {
+        "topics": "13. Newton's laws of motion",
+        "notes": "First law (inertia), second law (force, acceleration, momentum, impulse, conservation of momentum), third law (action and reaction)"
+      }
+    ],
+    "part_2_energy_mechanical_and_heat": [
+      {
+        "topics": "14. Energy",
+        "notes": "Forms of energy, world energy resources (renewable and non-renewable), conservation of energy"
+      },
+      {
+        "topics": "15. Work, Energy and Power",
+        "notes": "Concept of work, energy as capability to do work, work done in gravitational field, potential energy, kinetic energy, conservation of mechanical energy, power, application of mechanical energy in simple machines (levers, pulleys, inclined plane, wedge, screw, wheel and axle, gears, efficiency)"
+      },
+      {
+        "topics": "16. Heat Energy",
+        "notes": "Temperature measurement, thermometric scales/liquids, effects of heat on matter, thermal expansion (linear, area, volume expansivities, consequences, anomalies), heat transfer (conduction, convection, radiation), gas laws (Boyle's, Charles', pressure, general gas law), measurement of heat energy (heat capacity, specific heat capacity), latent heat, specific latent heat, evaporation, boiling, vapour pressure, humidity, relative humidity, dew point"
+      }
+    ],
+    "part_3_waves": [
+      {
+        "topics": "17. Production and propagation of waves",
+        "notes": "Mechanical waves, pulsating system, ripple tank, waveform, amplitude, wavelength, frequency, period, mathematical relationships (v = f lambda, T = 1 / f)"
+      },
+      {
+        "topics": "18. Types of waves",
+        "notes": "Transverse and longitudinal waves, mathematical representation of wave motion y = A sin(wt +/- 2 pi x / lambda)"
+      },
+      {
+        "topics": "19. Properties of waves",
+        "notes": "Reflection, refraction, diffraction, interference, superposition, standing/stationary waves"
+      },
+      {
+        "topics": "20. Light waves",
+        "notes": "Sources of light, rectilinear propagation, reflection at plane and curved surfaces, refraction at plane and curved surfaces, optical instruments, dispersion of white light"
+      },
+      {
+        "topics": "21. Electromagnetic waves",
+        "notes": "Types of radiation in electromagnetic spectrum (radio, infrared, visible light, ultra-violet, X-rays, gamma rays)"
+      },
+      {
+        "topics": "22. Sound Waves",
+        "notes": "Sources, transmission, speed in media, echoes and reverberation, noise and music, characteristics (pitch, loudness, quality), vibration in strings, forced vibration, resonance, harmonics, overtones, vibration of air in pipes"
+      }
+    ],
+    "part_4_fields": [
+      {
+        "topics": "23. Description property of fields",
+        "notes": "Concept of fields (gravitational, electric, magnetic), properties of force fields"
+      },
+      {
+        "topics": "24. Gravitational field",
+        "notes": "Acceleration due to gravity (g), Newton's law of gravitation, universal gravitational constant (G), gravitational potential, escape velocity"
+      },
+      {
+        "topics": "25. Electric Field",
+        "notes": "Electrostatics (production of charges, storage, lines of force, Coulomb's law, electric field intensity, electric potential, capacitance) and Current electricity (production from cells, Ohm's law, resistance, electric circuits, conduction, energy and power, shunt/multiplier, resistivity/conductivity, measurement)"
+      },
+      {
+        "topics": "26. Magnetic field",
+        "notes": "Properties of magnets, magnetization/demagnetization, magnetic flux/density, magnetic force on current-carrying conductors and moving charges, electromagnets, earth's magnetic field"
+      },
+      {
+        "topics": "27. Electromagnetic field",
+        "notes": "Electromagnetic induction, Faraday's law, Lenz's law, motor-generator effect, inductance, eddy currents, power transmission and distribution"
+      },
+      {
+        "topics": "28. Simple a.c. circuits",
+        "notes": "Graphical representation of e.m.f. and current, peak and r.m.s. values, series circuit, reactance, impedance, vector diagrams, resonance, power in a.c. circuit"
+      }
+    ],
+    "part_5_atomic_and_nuclear_physics": [
+      {
+        "topics": "29. Structure of the atom",
+        "notes": "Models of the atom (Thomson, Rutherford, Bohr, electron-cloud), energy quantization, photoelectric effect, thermionic emission, X-rays"
+      },
+      {
+        "topics": "30. Structure of the nucleus",
+        "notes": "Composition of the nucleus, radioactivity (natural and artificial), nuclear reactions (fusion and fission, binding energy, mass defect, E = delta mc^2)"
+      },
+      {
+        "topics": "31. Wave-particle paradox",
+        "notes": "Electron diffraction, duality of matter"
+      }
+    ]
+  },
+  "harmonized_topics_for_short_structured_questions": [
+    "1. Derived quantities and dimensional analysis",
+    "2. Projectile motion",
+    "3. Satellites and rockets",
+    "4. Elastic properties of solid (Hooke's law, Young's modulus, thermal conductivity)",
+    "5. Fibre optics",
+    "6. Introduction to LASER",
+    "7. Magnetic materials",
+    "8. Electrical conduction through materials (Electronics, semiconductors, doping, junction diode)",
+    "9. Structure of matter (Diffusion via kinetic theory)",
+    "10. Wave-particle paradox"
+  ]
+}

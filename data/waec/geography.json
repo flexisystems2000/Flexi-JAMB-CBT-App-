@@ -1,0 +1,132 @@
+{
+  "subject": "Geography",
+  "preamble": "The Geography syllabus is designed to evaluate candidates' knowledge of internal and external features of the Earth's crust, the spatial spread of physical and human phenomena, and the dynamic interactions between human activity and the natural environment. It emphasizes spatial patterns, environmental processes, regional studies across West Africa, map reading, field work skills, and sustainable ecosystem management.",
+  "aims": [
+    "Explain concepts of differential character and spatial relationships across surface features of the Earth;",
+    "Analyze human-environment relationships within physical and cultural settings;",
+    "Demonstrate basic knowledge of physical and human environments and their functional inter-relationships;",
+    "Formulate and apply geographical principles to interpret and analyze spatial problems in immediate and global environments;",
+    "Demonstrate practical skills for accurate, orderly, and objective geographical field and classroom investigations;",
+    "Communicate geographical ideas effectively through reports, graphs, charts, sketches, diagrams, and maps;",
+    "Explain the cultural, social, and economic circumstances of populations in West Africa and the wider region."
+  ],
+  "requirements": [
+    "Candidates must take all three papers: Paper 1 (Objective), Paper 2 (Essay), and Paper 3 (Practical and Physical Geography).",
+    "Paper 3 includes a compulsory 25-mark map reading and interpretation question based on contoured survey maps of West Africa.",
+    "Specific national topics apply based on candidate location (e.g., Geographic Information System concepts for candidates in Nigeria; Surveying principles for candidates in Ghana, Sierra Leone, Liberia, and The Gambia)."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of three compulsory papers testing objective recall, human/regional essay writing, and practical/physical geography skills.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty multiple-choice objective questions drawn from topics common to all member countries."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Human and Regional Geography",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of nine essay-type questions organized into three sections (Section A: Economic and Human Geography; Section B: Regional Geography of Candidate's Home Country; Section C: Regional Geography of Africa). Candidates answer four questions in total according to national instructions."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Elements of Practical and Physical Geography",
+        "duration": "1 hour 50 minutes",
+        "marks": "70",
+        "details": "Consists of eight essay questions out of which candidates answer four. Question 1 on map reading and interpretation is compulsory and carries 25 marks."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Elements of Practical and Physical Geography",
+      "topics": [
+        {
+          "title": "1. Mapwork & Surveying",
+          "notes": "Meaning, types, and uses of maps. Map reading, analysis, and interpretation based on contoured survey maps of parts of West Africa. Elementary surveying principles: terms, instruments (chain, prismatic compass), plotting traverses, and overcoming field obstacles (Ghana, Sierra Leone, Liberia, The Gambia)."
+        },
+        {
+          "title": "2. Geographic Information System (GIS) & Statistical Mapping",
+          "notes": "GIS: basic concepts, components, data sources, practical applications, and operational challenges (Nigeria only). Graphical representation of statistical data: bar graphs, line graphs, flow charts, dot maps, proportional circles, density maps, and isopleth maps."
+        },
+        {
+          "title": "3. Physical Geography Processes",
+          "notes": "The Earth as a planet (shape, size, movements). Hydrosphere (oceans, water bodies, hydrological cycle). Rocks (types, modes of formation, characteristics). Tectonic processes (folding, faulting, earthquakes, volcanism). Denudational processes (weathering, mass movement, erosion/deposition by water, wind, ice). Weather and climate, vegetation zones, soils, and environmental interactions."
+        }
+      ]
+    },
+    {
+      "section_name": "Economic and Human Geography",
+      "topics": [
+        {
+          "title": "1. World Population & Settlement",
+          "notes": "World population: growth factors, distribution patterns, spatial movement/migration, and demographic growth problems. Settlement geography: rural/urban types, spatial patterns, location factors, functional classification, urban growth, hierarchy, and rural-urban interactions."
+        },
+        {
+          "title": "2. Transportation, Trade & Industry",
+          "notes": "Transportation modes (land, water, air), transport networks, role in economic development, traffic problems, and solutions. Industrial geography: classification, location factors, development contributions, and operational challenges. International and internal trade: concepts, types, determinants, and economic importance."
+        },
+        {
+          "title": "3. Tourism",
+          "notes": "Concept and definitions of tourism, major world/regional tourist centers, motivations, socio-economic significance, environmental impacts, problems, and management strategies."
+        }
+      ]
+    },
+    {
+      "section_name": "Aspects of Regional Geography",
+      "topics": [
+        {
+          "title": "1. Regional Geography of Home Country (Nigeria, Ghana, Sierra Leone, Liberia, Senegambia)",
+          "notes": "Broad national outlines: physical setting (relief, drainage, climate, vegetation), population distribution/migration, natural resource base, primary economic activities (agriculture, fishing, lumbering, mining), manufacturing industries, transport/communication networks, trade, tourism, developmental issues, environmental concerns, and geopolitical factors."
+        },
+        {
+          "title": "2. Regional Geography of Africa & West African Cooperation",
+          "notes": "General continent-wide physical and socio-economic patterns. In-depth study of selected agricultural/mineral production systems (irrigation agriculture, plantation farming, oil production, lumbering, gold and copper mining). Population distribution across West Africa and economic integration through ECOWAS."
+        }
+      ]
+    },
+    {
+      "section_name": "Field Work Techniques",
+      "topics": [
+        {
+          "title": "1. Practical Environmental Studies",
+          "notes": "Field investigation methods, data collection, direct observation, recording, and reporting across key field modules: land use mapping (rural/urban), local market surveys, rural-urban traffic flow studies, daily commuting/journey-to-work patterns, and local soil erosion assessment."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "General Geography in Diagram for West Africa by R. B. Bunnett & P. O. Okunrotifa (Longman)",
+        "Certificate Physical and Human Geography (West African Edition) by B. O. Akindele & G. C. Leong (Oxford)",
+        "Introduction to Physical Geography by Strahler, A. N. (Wiley International Ed.)",
+        "Principles of Physical Geography by Monkhouse, F. J. (University of London)",
+        "Comprehensive Geography of Tropical Africa by Reuben K. Udo (Longman)",
+        "Geographical Regions of Nigeria by Reuben K. Udo (Longman)",
+        "A New Geography of Nigeria (New Edition) by N. P. Iloeje (Longman)",
+        "Senior Secondary Geography Series (Books 1-3) by M. A. Abegunde et al. (Longman)",
+        "New Geography of Ghana by Dickson K. B. & Benneh G. (Ghana University Press)",
+        "Geography for Senior Secondary Schools in Ghana by Dickson & Acheampong (Ghana Education Service)",
+        "An Outline Geography of West Africa by Oboli, H. O. N. (Harrap & Company)",
+        "Sierra Leone in Maps by J. L. Clarke (Hodder & Stoughton)",
+        "A New Geography of Sierra Leone by Gwyn-Jones (Hodder & Stoughton)",
+        "Africa by Pritchard, J. M. (Longman)",
+        "Macmillan Senior School Atlas by M. Duze & Afolabi Ojo (Macmillan)",
+        "New Secondary School Atlas by Collins (Longman)",
+        "World Atlas by Philips (Longman)",
+        "Longman Dictionary of Geography (Human and Physical) by Audrey N. Clary (Longman)",
+        "A Penguin Dictionary of Geography by Moore, W. E. (Longman)",
+        "Basic Geography Course for Senior Secondary Schools (Books 1-3) by N. P. Iloeje, P. C. Onokala & F. O. Odemerho (Macmillan)",
+        "Macmillan Senior School Atlas for Liberia Schools (Macmillan)",
+        "IGCSE Geography by Guiness, P. & Nagle, G. (Hodder Education, UK)"
+      ]
+    }
+  ]
+}

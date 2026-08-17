@@ -1,0 +1,157 @@
+{
+  "subject": "Literature-in-English",
+  "preamble": "The Literature-in-English syllabus is designed to evaluate candidates' appreciation of literary works across prose, drama, and poetry. It assesses candidates' understanding of literary techniques, figures of speech, thematic concerns, characterization, stylistic devices, and cultural/historical contexts across African and Non-African prescribed texts, including Shakespearean drama.",
+  "aims": [
+    "Develop candidates' appreciation of literary arts, creative expression, and aesthetic values;",
+    "Evaluate competence in analyzing themes, characterization, plot structures, and stylistic devices in prescribed texts;",
+    "Enhance critical thinking and literary appreciation through exposure to diverse African and Non-African prose, drama, and poetry;",
+    "Examine understanding of Shakespearean drama, universal literary concepts, and unseen literary appreciation."
+  ],
+  "requirements": [
+    "Candidates must take all three papers: Paper 1 (Objective & Unseen), Paper 2 (Drama & Poetry), and Paper 3 (Prose).",
+    "Candidates are required to study all prescribed texts specified in the official WASSCE 2026–2030 harmonized syllabus."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of three compulsory papers testing literary appreciation, unseen prose and poetry, and set African and Non-African texts across drama, poetry, and prose.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective and Unseen Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty multiple-choice objective questions covering general principles of literary appreciation, literary terms, unseen prose passages, unseen poems, and general questions on prescribed set texts."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Drama and Poetry",
+        "duration": "1 hour 15 minutes",
+        "marks": "50",
+        "details": "Consists of essay questions divided into two sections: Section A (African and Non-African Drama) and Section B (African and Non-African Poetry). Candidates answer essay questions based on prescribed texts."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Prose and Shakespeare",
+        "duration": "1 hour 15 minutes",
+        "marks": "50",
+        "details": "Consists of essay questions divided into two sections: Section A (African and Non-African Prose) and Section B (Shakespearean Text). Candidates answer questions testing thematic, character, and stylistic analysis."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "General Literary Appreciation & Unseen Texts",
+      "topics": [
+        {
+          "title": "1. Literary Terms and Concepts",
+          "notes": "Identification and analysis of figures of speech (metaphor, simile, personification, irony, hyperbole, oxymoron, paradox, alliteration, assonance, etc.), drama terms (soliloquy, dramatic irony, catharsis, hubris), poetic forms (sonnet, elegy, ode, ballad, free verse), and narrative techniques (point of view, stream of consciousness, flashback)."
+        },
+        {
+          "title": "2. Unseen Prose and Poetry Analysis",
+          "notes": "Critical analysis of unseen short prose excerpts and unseen poems, focusing on mood, tone, central theme, imagery, structure, and authorial intention."
+        }
+      ]
+    },
+    {
+      "section_name": "Drama & Shakespearean Studies",
+      "topics": [
+        {
+          "title": "1. Shakespearean Drama",
+          "notes": "Detailed study of 'Antony and Cleopatra' by William Shakespeare, covering historical context, tragic structure, character motivation, political themes, imagery, and dramatic techniques."
+        },
+        {
+          "title": "2. African Drama",
+          "notes": "Thematic analysis, dramatic structure, characterization, and cultural background of prescribed African plays: 'Once Upon an Elephant' by Bosede Ademilua-Afolayan and 'The Marriage of Anansewa' by Efua Sutherland."
+        },
+        {
+          "title": "3. Non-African Drama",
+          "notes": "Structural, contextual, and thematic study of prescribed Non-African plays: 'An Inspector Calls' by J. D. Priestley and 'A Man for All Seasons' by Robert Bolt."
+        }
+      ]
+    },
+    {
+      "section_name": "Prose Fiction",
+      "topics": [
+        {
+          "title": "1. African Prose",
+          "notes": "In-depth study of plot, narrative perspective, characterization, setting, socio-political themes, and stylistic devices in prescribed African novels: 'So the Path Does Not Die' by Pede Hollist and 'Redemption Road' by Elma Shaw."
+        },
+        {
+          "title": "2. Non-African Prose",
+          "notes": "Analytical study of plot, character development, social commentary, thematic depth, and prose techniques in prescribed Non-African novels: 'To Kill a Mockingbird' by Harper Lee and 'Path of Lucas: The Journey He Endured' by Susanne Bellefeuille."
+        }
+      ]
+    },
+    {
+      "section_name": "Poetry",
+      "topics": [
+        {
+          "title": "1. African Poetry",
+          "notes": "Detailed textual, stylistic, and thematic study of prescribed African poems: 'Once Upon a Time' (Gabriel Okara), 'New Tongue' (Elizabeth L. A. Kamara), 'Night' (Wole Soyinka), 'Not My Business' (Niyi Osundare), 'Hearty Garlands' (S.O.H. Afriyie-Vidza), and 'The Breast of the Sea' (Syl Cheney-Coker)."
+        },
+        {
+          "title": "2. Non-African Poetry",
+          "notes": "Textual and stylistic analysis, tone, rhythm, and themes in prescribed Non-African poems: 'She Walks in Beauty' (Lord Byron), 'The Nun's Priest's Tale' [shortened] (Geoffrey Chaucer), 'Digging' (Seamus Heaney), 'Still I Rise' (Maya Angelou), 'The Telephone Call' (Fleur Adcock), and 'The Stone' (Wilfred Wilson Gibson)."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Prescribed Shakespearean Text",
+      "books": [
+        "Antony and Cleopatra by William Shakespeare"
+      ]
+    },
+    {
+      "type": "Prescribed African Prose",
+      "books": [
+        "So the Path Does Not Die by Pede Hollist",
+        "Redemption Road by Elma Shaw"
+      ]
+    },
+    {
+      "type": "Prescribed Non-African Prose",
+      "books": [
+        "To Kill a Mockingbird by Harper Lee",
+        "Path of Lucas: The Journey He Endured by Susanne Bellefeuille"
+      ]
+    },
+    {
+      "type": "Prescribed African Drama",
+      "books": [
+        "Once Upon an Elephant by Bosede Ademilua-Afolayan",
+        "The Marriage of Anansewa by Efua Sutherland"
+      ]
+    },
+    {
+      "type": "Prescribed Non-African Drama",
+      "books": [
+        "An Inspector Calls by J. D. Priestley",
+        "A Man for All Seasons by Robert Bolt"
+      ]
+    },
+    {
+      "type": "Prescribed African Poetry",
+      "books": [
+        "Once Upon a Time by Gabriel Okara",
+        "New Tongue by Elizabeth L. A. Kamara",
+        "Night by Wole Soyinka",
+        "Not My Business by Niyi Osundare",
+        "Hearty Garlands by S.O.H. Afriyie-Vidza",
+        "The Breast of the Sea by Syl Cheney-Coker"
+      ]
+    },
+    {
+      "type": "Prescribed Non-African Poetry",
+      "books": [
+        "She Walks in Beauty by Lord Byron",
+        "The Nun's Priest's Tale (shortened) by Geoffrey Chaucer",
+        "Digging by Seamus Heaney",
+        "Still I Rise by Maya Angelou",
+        "The Telephone Call by Fleur Adcock",
+        "The Stone by Wilfred Wilson Gibson"
+      ]
+    }
+  ]
+}

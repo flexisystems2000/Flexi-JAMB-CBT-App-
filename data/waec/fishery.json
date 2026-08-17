@@ -1,0 +1,163 @@
+{
+  "subject": "Fisheries (Alternative A)",
+  "preamble": "Fisheries is important to the economic development of West Africa and this syllabus has been structured to guide the assessment of learners' knowledge and entrepreneurial skills in fisheries and related vocations. It is also to guide the assessment in practically oriented knowledge and skills in fisheries.",
+  "aims": [
+    "understand the importance of fisheries in the socio-economic development of West Africa;",
+    "recognize the dangers of overfishing practices;",
+    "understand the regulations governing fishing practices in the country;",
+    "distinguish between freshwater, brackish water, and marine habitats and resources;",
+    "develop practical skills in fish farming;",
+    "acquire basic entrepreneurship skills in fisheries-related vocations and businesses;",
+    "understand the effects of water pollution on fishery resources;",
+    "apply fish preservation and processing techniques;",
+    "understand the basic biology of fishes;",
+    "apply basic fish health management practices."
+  ],
+  "examination_scheme": {
+    "summary": "There will be three papers: Paper 1, Paper 2, and Paper 3, all of which must be taken.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Multiple Choice Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty multiple-choice objective questions drawn from the entire syllabus, all of which must be answered."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Essay Paper",
+        "duration": "2 hours",
+        "marks": "80",
+        "details": "Consists of six essay-type questions. Candidates are required to answer four questions (20 marks each)."
+      },
+      {
+        "paper": "Paper 3",
+        "title": "Practical Test",
+        "duration": "2 hours",
+        "marks": "60",
+        "details": "Practical paper for school candidates or alternative to practical work test for private candidates, consisting of three compulsory questions."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Introduction to Fisheries",
+      "topics": [
+        {
+          "title": "1. Fisheries and National Development",
+          "notes": "Meaning and scope of fisheries; types of fisheries (culture, capture, subsistence, artisanal, commercial, industrial); role of fisheries in national socio-economic development (food security, employment, income generation, cultural significance)."
+        },
+        {
+          "title": "2. Fishery Organisms and Habitats",
+          "notes": "Identification and description of common organisms (fin fishes, crustaceans, molluscs); characteristics of freshwater, brackish water, and marine habitats (pelagic and demersal); identification, effects, prevention, and control of aquatic invasive alien species (e.g., water hyacinth, papyrus reed, kariba weed, water lettuce)."
+        },
+        {
+          "title": "3. Grouping of Fishery Organisms",
+          "notes": "Classification and distribution of organisms across habitats: Tilapia, Clarias, Chrysichthys, Heterotis, Lates, Bagrus, Alestes, Synodontis, prawns, crabs, grey mullet, shrimps, Sardinella, sea bream, tuna, mackerel, anchovy, sharks, cuttlefish, clams, rays, and sea urchins."
+        }
+      ]
+    },
+    {
+      "section_name": "Fishing Activities",
+      "topics": [
+        {
+          "title": "4. Fish Landing Sites and Facilities",
+          "notes": "Types and locations of landing sites (beaches, harbours, lagoons, river banks); usage of infrastructure (winches, cold stores, ice plants, fuel stations, dry docks, jetties, breakwaters); landing activities and sanitation practices for waste/oil spill disposal."
+        },
+        {
+          "title": "5. Fishing Gear, Craft, and Methods",
+          "notes": "Classification, construction, maintenance, and trade-offs of active gear (cast net, seine net, trawl, dredges) and passive gear (hooks, stationary nets, traps); craft types (canoes, trawlers, purse seiners) and accessories; active/passive fishing methods across inland, coastal, and deep-sea environments; identification, impact, and prevention of harmful fishing practices."
+        }
+      ]
+    },
+    {
+      "section_name": "Fish Biology",
+      "topics": [
+        {
+          "title": "6. Identification and Classification",
+          "notes": "Common and scientific names of fishery species; taxonomic classification under phylum and class levels for Mollusca, Arthropoda, and Echinodermata, and to subclass level for Chordata."
+        },
+        {
+          "title": "7. Structure and Function",
+          "notes": "Fish morphometrics (total, standard, and fork lengths, weight); external structural adaptations of molluscs, crustaceans, cartilaginous, and bony fishes; internal anatomy and functions of bony fishes (gills, alimentary canal, heart/vessels, kidneys, gonads)."
+        },
+        {
+          "title": "8. Life Processes in Fishes",
+          "notes": "Mechanisms of locomotion and fin balance (pitching, rolling, yawing); feeding and digestion; blood circulation; gaseous exchange; osmoregulation and excretion; reproduction (gametogenesis, spawning, parental care, egg examination, sex identification); growth factors and life cycles."
+        },
+        {
+          "title": "9. Fish Ecology",
+          "notes": "Physicochemical parameters of aquatic habitats (temperature, dissolved oxygen, salinity, pH, turbidity, upwelling) and measurement using test kits; ecological processes (food chains, webs, pyramids, predation, adaptation); causes, impact, and mitigation of water pollution."
+        },
+        {
+          "title": "10. Fish Genetics and Evolution",
+          "notes": "Mendelian genetics applied to fish breeding (chromosomes, inheritance of traits like skin color, production of super male tilapia and GIFT strains)."
+        }
+      ]
+    },
+    {
+      "section_name": "Aquaculture",
+      "topics": [
+        {
+          "title": "11. Introduction to Aquaculture and Aquarium Management",
+          "notes": "Definition, scope, and national status of aquaculture; key constraints and mitigation strategies; design, construction, stocking, species selection, and routine management of aquaria."
+        },
+        {
+          "title": "12. Fish Farming Systems and Construction",
+          "notes": "Intensity levels (extensive, semi-intensive, intensive) and production systems (monoculture, polyculture, integrated); culturing structures (earthen ponds, cages, concrete tanks, raceways, pens); site selection criteria (topography, soil, water availability, security); step-by-step pond construction methodology."
+        },
+        {
+          "title": "13. Fish Pond Management and Disease Control",
+          "notes": "Stocking guidelines; routine pond maintenance and water quality management; feed types, nutrient composition, formulation, and feeding regimes; harvesting methods (partial and total); identification, symptoms, prevention, and treatment of common diseases (Gill rot, Furunculosis, Ich)."
+        }
+      ]
+    },
+    {
+      "section_name": "Fish Utilization",
+      "topics": [
+        {
+          "title": "14. Nutritive Value and Spoilage",
+          "notes": "Nutritional profile of fishery products (proteins, lipids, minerals, vitamins) and laboratory test procedures; indicators, causes (microbial, enzymatic, oxidation), effects, and health risks of fish spoilage."
+        },
+        {
+          "title": "15. Processing, Preservation, and Packaging",
+          "notes": "Distinction between processing and preservation; preparation methods (scaling, gutting, filleting); traditional (smoking, drying, salting, frying) and modern (freezing, canning, irradiation) preservation methods; equipment operation (e.g., Chorkor smoker); packaging materials; commercial products and by-products."
+        }
+      ]
+    },
+    {
+      "section_name": "Fisheries Management, Business, and Community Practices",
+      "topics": [
+        {
+          "title": "16. Management, Policies, and Regulations",
+          "notes": "Management objectives (Maximum Sustainable Yield, stock conservation); management tools (closed seasons, mesh size limits, quotas, traditional taboos/festivals); fisheries data collection (catch/effort, length-weight distributions); government policies, subsidies, and international law (EEZ, IUCN Red List, CBD, ICCAT)."
+        },
+        {
+          "title": "17. Business of Fisheries, Marketing, and Institutional Framework",
+          "notes": "Financial management (budgeting, cashflow projections, pricing); fish marketing, quality control, value chains, major Ghanaian markets (Tema, Takoradi, Elmina, Yeji, Mankessim); major fishing communities, cultural festivals, institutional roles (Water Research Institute, University of Ghana), and career pathways."
+        }
+      ]
+    },
+    {
+      "section_name": "Practical Requirements",
+      "topics": [
+        {
+          "title": "18. Practical Skills and Demonstrations",
+          "notes": "Hands-on identification and operation of fishing gear, craft, processing tools, and feed ingredients; field/laboratory identification and classification of organisms, invasive weeds, and spoiled fish; water quality testing (pH, DO, temperature, salinity); pond construction soil tests; diagnosis of fish disease symptoms."
+        }
+      ]
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Institutional Requirements and Facility Specifications",
+      "details": [
+        "Schools offering Fisheries must maintain at least one functional aquarium and a fish pond or concrete tank on site.",
+        "Teaching must be supplemented with organized field visits to established commercial fish farms, research institutes (e.g., Water Research Institute), and fishing companies.",
+        "Each candidate must maintain an individual practical notebook documenting laboratory observations, aquarium monitoring, farm activities, field trips, and specimen collections.",
+        "Schools are required to prepare and maintain an illustrative educational album containing diagrams and photos of fishery organisms, gear, craft, and culture facilities."
+      ]
+    }
+  ],
+  "references": []
+}

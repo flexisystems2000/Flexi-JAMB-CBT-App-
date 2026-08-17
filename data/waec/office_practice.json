@@ -1,0 +1,112 @@
+{
+  "subject": "Office Practice",
+  "preamble": "The Office Practice syllabus is designed to assess candidates' knowledge, understanding, and application of administrative principles, office procedures, organizational structures, communication methods, document management, and meeting protocols. It evaluates candidates' readiness for modern business administration and secretarial roles.",
+  "aims": [
+    "Assess knowledge of office procedures, functions, structures, and modern organizational setups;",
+    "Evaluate understanding of office equipment operation, mail handling, filing systems, and document preparation;",
+    "Examine proficiency in effective business communication, report writing, reception duties, and meeting management protocols."
+  ],
+  "requirements": [
+    "Candidates must take both Paper 1 and Paper 2 as a composite paper administered at a single sitting.",
+    "Paper 2 includes a compulsory practical case study question designed to test real-world administrative decision-making and problem-solving skills."
+  ],
+  "examination_scheme": {
+    "summary": "The examination consists of two composite papers (Paper 1 and Paper 2) taken at a single sitting, assessing objective knowledge, administrative essay writing, and case study analysis.",
+    "papers": [
+      {
+        "paper": "Paper 1",
+        "title": "Objective Test",
+        "duration": "1 hour",
+        "marks": "50",
+        "details": "Consists of fifty compulsory multiple-choice objective questions covering the entire syllabus."
+      },
+      {
+        "paper": "Paper 2",
+        "title": "Case Study and Essay Test",
+        "duration": "2 hours 10 minutes",
+        "marks": "100",
+        "details": "Consists of a compulsory question based on a simple administrative case study, along with six essay-type questions. Candidates must answer the case study question and any four of the essay questions."
+      }
+    ]
+  },
+  "detailed_syllabus": [
+    {
+      "section_name": "Office Organization & Structure",
+      "topics": [
+        {
+          "title": "1. The Office & Procedures",
+          "notes": "Definition, functions, physical layout, sections, and operating procedures of an office. Principles of office organization: span of control, unity of command/control, unity of function, and scalar chain."
+        },
+        {
+          "title": "2. Departments in an Organization",
+          "notes": "Key departments in a commercial/administrative enterprise (e.g., Accounts/Finance, Personnel/HR, Marketing/Sales, Purchasing, Production). Core functions of each department and interpretation of organizational charts."
+        },
+        {
+          "title": "3. Office Equipment & Care",
+          "notes": "Meaning and types of office equipment. Manual equipment: Typewriter, perforator, stapling machine, duplicating machine. Electrical/Electronic equipment: Photocopier, shredding machine, computer, scanner, facsimile machine. Specific uses, operational handling, and maintenance routines for office equipment."
+        }
+      ]
+    },
+    {
+      "section_name": "Front Office & Mail Management",
+      "topics": [
+        {
+          "title": "1. The Reception",
+          "notes": "Meaning of reception and duties/qualities of a professional receptionist. Essential reception documents (visitor's book, appointment register, telephone message pad). Standard operational procedures for making and receiving telephone calls."
+        },
+        {
+          "title": "2. Mail Handling Procedures",
+          "notes": "Types of mail: Personal, Official, Urgent, Confidential. Classification: Incoming and Outgoing mail. Systematic step-by-step procedures and registers used for handling incoming and outgoing mail."
+        }
+      ]
+    },
+    {
+      "section_name": "Documentation, Correspondence & Filing",
+      "topics": [
+        {
+          "title": "1. Office Documents & Correspondence",
+          "notes": "Meaning, uses, and preparation of office documents categorized into Administrative, Sales, Stores, and Purchasing documents. Types, structure, and drafting of office correspondence: Memos, business letters, notices of meeting, minutes, reports, and circulars."
+        },
+        {
+          "title": "2. Filing Systems & Records Management",
+          "notes": "Definition and primary purposes of filing. Filing systems: Vertical, Lateral, and Electronic filing. Filing classifications: Alphabetical, Chronological, Numerical, Geographical, Alpha-numerical, and Subject. Sequential steps in filing and essential filing equipment."
+        }
+      ]
+    },
+    {
+      "section_name": "Business Communication & Information",
+      "topics": [
+        {
+          "title": "1. Business Communication",
+          "notes": "Definition and importance of communication. Types: Verbal (oral, written) and Non-verbal (visual, audio, audio-visual). Media: Print (newspapers, handbills, flyers) and Electronic (radio, television, audio/video conferencing). Service providers and channels: NIPOST, telecommunications, media houses, satellite, internet, and GSM."
+        },
+        {
+          "title": "2. Information Management",
+          "notes": "Definition, types, uses, primary/secondary sources, and storage of information. Qualities of good information: timeliness, accuracy, speed of delivery, relevance, and usability."
+        }
+      ]
+    },
+    {
+      "section_name": "Meetings & Report Writing",
+      "topics": [
+        {
+          "title": "1. Meetings & Protocols",
+          "notes": "Definition, purpose, and types of meetings (Statutory, Emergency, Board, Management, Annual General Meeting, Staff, Committee). Standard order of business and procedure for conducting meetings. Essential meeting terminologies (Agenda, Adoption, AOB, Adjournment, Quorum, Motion). Roles of the Chairman and Secretary, and procedures for drafting minutes."
+        },
+        {
+          "title": "2. Report Writing",
+          "notes": "Meaning and importance of reports. Formal reports (short, long, investigative) vs. routine/periodic reports. Key structural components and drafting techniques for administrative reports."
+        }
+      ]
+    }
+  ],
+  "appendices": [],
+  "references": [
+    {
+      "type": "Recommended Textbooks",
+      "books": [
+        "Modern Office Practice for Vocational Business Students by M. S. Amadin"
+      ]
+    }
+  ]
+}
