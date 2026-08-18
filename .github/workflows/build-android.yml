@@ -50,30 +50,46 @@ jobs:
             cp google-services.json android/app/google-services.json
             echo "google-services.json copied successfully"
           else
-            echo "WARNING: google-services.json not found in root"
+            echo "WARNING: google-services.json not found"
           fi
+
+      - name: Force higher Android SDK & Gradle versions
+        run: |
+          # Update variables.gradle or build.gradle to use higher SDK
+          sed -i 's/compileSdkVersion = [0-9]\+/compileSdkVersion = 36/' android/variables.gradle || true
+          sed -i 's/targetSdkVersion = [0-9]\+/targetSdkVersion = 36/' android/variables.gradle || true
+          sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
+          sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
+
+          # Update Android Gradle Plugin
+          sed -i 's/com.android.tools.build:gradle:[0-9.]\+/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
+          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]\+")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
+
+          echo "=== Updated build files ==="
+          cat android/variables.gradle || true
+          head -40 android/build.gradle || true
 
       - name: Generate icons & splash
         run: |
-          echo "=== Source assets ==="
-          ls -la assets/ || true
           npx @capacitor/assets generate --android \
             --iconBackgroundColor '#000000' \
             --splashBackgroundColor '#0A1F6E' \
-            --logoSplashScale 0.3
-          echo "=== Generated resources ==="
-          find android/app/src/main/res -name "*ic_launcher*" -o -name "*splash*" | head -20 || true
+            --logoSplashScale 0.3 || true
 
       - name: Apply Google Services plugin
         run: |
-          sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
-          echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
+          if ! grep -q "com.google.gms:google-services" android/build.gradle; then
+            sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
+          fi
+          if ! grep -q "com.google.gms.google-services" android/app/build.gradle; then
+            echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
+          fi
 
       - name: Sync
         run: npx cap sync
 
       - name: Build Debug APK
-        run: cd android && ./gradlew assembleDebug
+        run: cd android && ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
