@@ -98,10 +98,27 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
-      - name: Print Debug SHA-1
+      - name: Ensure Debug Keystore Exists
         run: |
-          echo "=================== YOUR SHA-1 FINGERPRINT ==================="
-          keytool -list -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android | grep "SHA1:" || true
+          mkdir -p ~/.android
+          if [ ! -f ~/.android/debug.keystore ]; then
+            echo "Debug keystore not found. Generating default debug keystore..."
+            keytool -genkey -v -keystore ~/.android/debug.keystore \
+              -storepass android -alias androiddebugkey -keypass android \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      - name: Extract & Print Certificate SHA-1 and SHA-256 Fingerprints
+        run: |
+          echo "=============================================================="
+          echo "              FIREBASE CERTIFICATE FINGERPRINTS               "
+          echo "=============================================================="
+          
+          # Debug Keystore Fingerprints
+          echo "--> DEBUG KEYSTORE SHA-1 & SHA-256:"
+          keytool -list -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey | grep -E "SHA1:|SHA256:" || true
+          
           echo "=============================================================="
 
       - name: Build Debug APK
