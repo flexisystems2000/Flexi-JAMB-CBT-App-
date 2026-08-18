@@ -65,19 +65,13 @@ jobs:
 
       - name: Force higher Android SDK & Gradle versions
         run: |
-          # Update variables.gradle or build.gradle to use higher SDK
           sed -i 's/compileSdkVersion = [0-9]\+/compileSdkVersion = 36/' android/variables.gradle || true
           sed -i 's/targetSdkVersion = [0-9]\+/targetSdkVersion = 36/' android/variables.gradle || true
           sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
           sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
 
-          # Update Android Gradle Plugin
           sed -i 's/com.android.tools.build:gradle:[0-9.]\+/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
           sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]\+")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
-
-          echo "=== Updated build files ==="
-          cat android/variables.gradle || true
-          head -40 android/build.gradle || true
 
       - name: Generate icons & splash
         run: |
@@ -98,14 +92,24 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
-      - name: Generate Debug Keystore
+      - name: Setup or Restore Keystore
         run: |
           mkdir -p ~/.android
-          echo "Creating debug keystore..."
-          keytool -genkey -v -keystore ~/.android/debug.keystore \
-            -storepass android -alias androiddebugkey -keypass android \
-            -keyalg RSA -keysize 2048 -validity 10000 \
-            -dname "CN=Android Debug,O=Android,C=US"
+          if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
+            echo "Restoring permanent keystore from secrets..."
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
+          else
+            echo "Generating new permanent keystore..."
+            keytool -genkey -v -keystore ~/.android/debug.keystore \
+              -storepass android -alias androiddebugkey -keypass android \
+              -keyalg RSA -keysize 2048 -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+            
+            echo "=================== COPY THIS BASE64 TEXT ==================="
+            base64 -w 0 ~/.android/debug.keystore
+            echo ""
+            echo "============================================================="
+          fi
 
       - name: Print Keystore Fingerprints (SHA-1 & SHA-256)
         run: |
