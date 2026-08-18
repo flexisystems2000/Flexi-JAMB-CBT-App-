@@ -146,8 +146,8 @@
     }
     const auth = firebase.auth();
 
-    // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Critical Fix) ==========
-    let socialLoginReady = false;
+    // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Improved) ==========
+let socialLoginReady = false;
 let socialLoginInitPromise = null;
 
 function getSocialLoginPlugin() {
@@ -155,16 +155,19 @@ function getSocialLoginPlugin() {
 }
 
 async function ensureSocialLoginReady() {
-    if (socialLoginReady) return true;
+    if (socialLoginReady) {
+        console.log("✅ SocialLogin already ready");
+        return true;
+    }
 
     const plugin = getSocialLoginPlugin();
     if (!plugin) {
-        console.warn("SocialLogin plugin not found");
+        console.error("❌ SocialLogin plugin not found");
         return false;
     }
 
-    // If already initializing, wait for it
     if (socialLoginInitPromise) {
+        console.log("⏳ Waiting for existing initialize promise...");
         try {
             await socialLoginInitPromise;
             return socialLoginReady;
@@ -176,16 +179,20 @@ async function ensureSocialLoginReady() {
     socialLoginInitPromise = (async () => {
         try {
             console.log("--> Starting SocialLogin.initialize...");
+            console.log("Using webClientId:", WEB_CLIENT_ID);
+
             await plugin.initialize({
                 google: {
-                    webClientId: "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com",
+                    webClientId: WEB_CLIENT_ID,
                     mode: 'online'
                 }
             });
+
             socialLoginReady = true;
-            console.log("✅ SocialLogin ready");
+            console.log("✅ SocialLogin.initialize succeeded");
         } catch (err) {
-            console.error("❌ SocialLogin init failed:", err);
+            console.error("❌ SocialLogin.initialize failed:", err);
+            console.error("Error details:", JSON.stringify(err, null, 2));
             socialLoginReady = false;
             throw err;
         }
@@ -201,7 +208,6 @@ async function ensureSocialLoginReady() {
 
 // Start pre-init as soon as possible
 ensureSocialLoginReady();
-
     // ========== UI ELEMENTS ==========
     const statusBox = document.getElementById('status-box');
     const mainBtn = document.getElementById('main-auth-btn');
@@ -251,28 +257,32 @@ ensureSocialLoginReady();
         statusBox.style.display = "block";
     };
 
-    // ========== NATIVE GOOGLE LOGIN (Clean version) ==========
-    
-    async function handleGoogleLogin() {
+   // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Improved) ==========
+async function handleGoogleLogin() {
     console.log("--> handleGoogleLogin triggered");
+
     try {
         showStatus("Opening Google Sign-In...", "info");
 
         const plugin = getSocialLoginPlugin();
         if (!plugin) {
-            showStatus("Native SocialLogin plugin not found. Rebuild the app.", "error");
+            showStatus("Native SocialLogin plugin not found. Please rebuild the app.", "error");
             return;
         }
 
-        // Wait for initialization (with timeout protection)
-        showStatus("Preparing Google...", "info");
+        // Longer timeout + better feedback
+        showStatus("Preparing Google Sign-In (this may take a few seconds)...", "info");
+
         const ready = await Promise.race([
             ensureSocialLoginReady(),
-            new Promise((_, reject) => setTimeout(() => reject(new Error("Initialization timeout")), 8000))
+            new Promise((_, reject) =>
+                setTimeout(() => reject(new Error("Initialization timeout after 20 seconds")), 20000)
+            )
         ]);
 
         if (!ready) {
-            showStatus("Google Sign-In failed to initialize. Try again.", "error");
+            showStatus("Google Sign-In failed to initialize. Check console for details.", "error");
+            console.error("SocialLogin is not ready after initialize attempt");
             return;
         }
 
@@ -286,20 +296,24 @@ ensureSocialLoginReady();
             }
         });
 
-        console.log("--> Plugin response:", JSON.stringify(result));
+        console.log("--> Full plugin response:", JSON.stringify(result, null, 2));
 
-        const idToken = result?.result?.idToken 
-                     || result?.authentication?.idToken 
+        // Try multiple possible token locations
+        const idToken = result?.result?.idToken
+                     || result?.authentication?.idToken
                      || result?.idToken
-                     || result?.result?.accessToken;
+                     || result?.result?.accessToken
+                     || result?.accessToken;
 
         if (!idToken) {
             showStatus("No authentication token returned from Google.", "error");
-            console.error("Full result:", result);
+            console.error("Could not find idToken in response. Full result:", result);
             return;
         }
 
+        console.log("--> Got idToken, signing into Firebase...");
         showStatus("Signing into Firebase...", "info");
+
         const credential = firebase.auth.GoogleAuthProvider.credential(idToken);
         await auth.signInWithCredential(credential);
 
@@ -307,7 +321,12 @@ ensureSocialLoginReady();
 
     } catch (e) {
         console.error("--> Google Auth Error:", e);
-        const msg = e?.message || e?.errorMessage || e?.code || JSON.stringify(e);
+        console.error("Error name:", e?.name);
+        console.error("Error message:", e?.message);
+        console.error("Error code:", e?.code);
+        console.error("Full error object:", JSON.stringify(e, Object.getOwnPropertyNames(e), 2));
+
+        const msg = e?.message || e?.errorMessage || e?.code || "Unknown error";
         showStatus("Error: " + msg, "error");
     }
 }
