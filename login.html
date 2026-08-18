@@ -299,57 +299,75 @@
         statusBox.style.display = "block";
     };
 
-    // ========== NATIVE GOOGLE LOGIN ==========
-    document.getElementById('google-auth-btn').onclick = async () => {
-        try {
-            showStatus("Opening Google Sign-In...", "info");
+   // ========== NATIVE GOOGLE LOGIN (with better logging) ==========
+document.getElementById('google-auth-btn').onclick = async () => {
+    try {
+        showStatus("Opening Google Sign-In...", "info");
 
-            const isNative = window.Capacitor && window.Capacitor.isNativePlatform();
+        const isNative = window.Capacitor && window.Capacitor.isNativePlatform();
+        console.log("Is Native:", isNative);
 
-            if (!isNative) {
-                showStatus("Google Sign-In is only available in the mobile app", "error");
-                return;
-            }
-
-            const ready = await initSocialLogin();
-            if (!ready) {
-                showStatus("Google Sign-In plugin not ready. Please rebuild the app.", "error");
-                return;
-            }
-
-            const { SocialLogin } = window.Capacitor.Plugins;
-
-            const result = await SocialLogin.login({
-                provider: 'google',
-                options: {
-                    scopes: ['email', 'profile']
-                }
-            });
-
-            console.log("Native Google result:", result);
-
-            // Extract the ID token
-            const idToken = result?.result?.idToken 
-                         || result?.authentication?.idToken 
-                         || result?.idToken;
-
-            if (!idToken) {
-                throw new Error("No ID token received from Google");
-            }
-
-            // Sign in to Firebase with the native token
-            const credential = GoogleAuthProvider.credential(idToken);
-            await signInWithCredential(auth, credential);
-
-            showStatus("Login successful!", "success");
-            window.location.replace("index.html");
-
-        } catch (e) {
-            console.error("Google Sign-In error:", e);
-            const message = e?.message || e?.errorMessage || "Google Sign-In failed";
-            showStatus(message.replace('auth/', '').replace(/-/g, ' '), "error");
+        if (!isNative) {
+            showStatus("This only works inside the mobile app", "error");
+            return;
         }
-    };
+
+        // Check if plugin exists
+        if (!window.Capacitor?.Plugins?.SocialLogin) {
+            showStatus("SocialLogin plugin not found. Rebuild needed.", "error");
+            console.error("Available plugins:", Object.keys(window.Capacitor?.Plugins || {}));
+            return;
+        }
+
+        const { SocialLogin } = window.Capacitor.Plugins;
+
+        // Initialize
+        showStatus("Initializing Google...", "info");
+        await SocialLogin.initialize({
+            google: {
+                webClientId: "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com"
+            }
+        });
+
+        showStatus("Requesting Google account...", "info");
+
+        const result = await SocialLogin.login({
+            provider: 'google',
+            options: {
+                scopes: ['email', 'profile'],
+                style: 'bottom'          // tries to force bottom sheet
+            }
+        });
+
+        console.log("Full Google result:", JSON.stringify(result, null, 2));
+        showStatus("Got response from Google...", "info");
+
+        const idToken = result?.result?.idToken 
+                     || result?.authentication?.idToken 
+                     || result?.idToken
+                     || result?.result?.accessToken;
+
+        if (!idToken) {
+            console.error("No token found in result:", result);
+            showStatus("No ID token received. Check console.", "error");
+            return;
+        }
+
+        showStatus("Signing into Firebase...", "info");
+
+        const credential = GoogleAuthProvider.credential(idToken);
+        await signInWithCredential(auth, credential);
+
+        showStatus("Success! Redirecting...", "success");
+        window.location.replace("index.html");
+
+    } catch (e) {
+        console.error("FULL ERROR:", e);
+        const msg = e?.message || e?.errorMessage || e?.code || JSON.stringify(e);
+        showStatus("Error: " + msg, "error");
+    }
+};
+    
 
     passInput.addEventListener('input', () => {
         if (currentView !== "signup") {
