@@ -42,7 +42,7 @@ jobs:
             ./ www/
 
       - name: Add Android platform
-        run: npx cap add android
+        run: npx cap add android || true
 
       - name: Copy google-services.json
         run: |
@@ -52,6 +52,16 @@ jobs:
           else
             echo "WARNING: google-services.json not found"
           fi
+
+      - name: Inject Google App ID into strings.xml
+        run: |
+          mkdir -p android/app/src/main/res/values
+          cat <<EOF > android/app/src/main/res/values/strings_google.xml
+          <?xml version="1.0" encoding="utf-8"?>
+          <resources>
+              <string name="server_client_id">465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com</string>
+          </resources>
+          EOF
 
       - name: Force higher Android SDK & Gradle versions
         run: |
@@ -86,7 +96,13 @@ jobs:
           fi
 
       - name: Sync
-        run: npx cap sync
+        run: npx cap sync android
+
+      - name: Print Debug SHA-1
+        run: |
+          echo "=================== YOUR SHA-1 FINGERPRINT ==================="
+          keytool -list -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey -keypass android | grep "SHA1:" || true
+          echo "=============================================================="
 
       - name: Build Debug APK
         run: cd android && ./gradlew assembleDebug --stacktrace
