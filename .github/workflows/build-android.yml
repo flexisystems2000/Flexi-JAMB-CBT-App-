@@ -92,21 +92,68 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
+      # ========== NEW STEP: Inject Capgo SocialLogin MainActivity ==========
+      - name: Inject Capgo SocialLogin MainActivity
+        run: |
+          cat > android/app/src/main/java/com/flexiedu/consult/MainActivity.java << 'EOF'
+          package com.flexiedu.consult;
+
+          import android.content.Intent;
+          import android.util.Log;
+          import com.getcapacitor.BridgeActivity;
+          import com.getcapacitor.Plugin;
+          import com.getcapacitor.PluginHandle;
+          import ee.forgr.capacitor.social.login.GoogleProvider;
+          import ee.forgr.capacitor.social.login.ModifiedMainActivityForSocialLoginPlugin;
+          import ee.forgr.capacitor.social.login.SocialLoginPlugin;
+
+          public class MainActivity extends BridgeActivity implements ModifiedMainActivityForSocialLoginPlugin {
+
+              @Override
+              public void onActivityResult(int requestCode, int resultCode, Intent data) {
+                  super.onActivityResult(requestCode, resultCode, data);
+
+                  if (requestCode >= GoogleProvider.REQUEST_AUTHORIZE_GOOGLE_MIN &&
+                      requestCode < GoogleProvider.REQUEST_AUTHORIZE_GOOGLE_MAX) {
+
+                      PluginHandle pluginHandle = getBridge().getPlugin("SocialLogin");
+                      if (pluginHandle == null) {
+                          Log.i("Google Activity Result", "SocialLogin plugin handle is null");
+                          return;
+                      }
+
+                      Plugin plugin = pluginHandle.getInstance();
+                      if (!(plugin instanceof SocialLoginPlugin)) {
+                          Log.i("Google Activity Result", "SocialLogin plugin instance is not SocialLoginPlugin");
+                          return;
+                      }
+
+                      ((SocialLoginPlugin) plugin).handleGoogleLoginIntent(requestCode, data);
+                  }
+              }
+
+              @Override
+              public void IHaveModifiedTheMainActivityForTheUseWithSocialLoginPlugin() {}
+          }
+          EOF
+          echo "MainActivity.java injected successfully"
+      # ====================================================================
+
       - name: Setup or Restore Keystore
         run: |
-          mkdir -p ~/.android
+          mkdir -p \~/.android
           if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
             echo "Restoring permanent keystore from secrets..."
-            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > \~/.android/debug.keystore
           else
             echo "Generating new permanent keystore..."
-            keytool -genkey -v -keystore ~/.android/debug.keystore \
+            keytool -genkey -v -keystore \~/.android/debug.keystore \
               -storepass android -alias androiddebugkey -keypass android \
               -keyalg RSA -keysize 2048 -validity 10000 \
               -dname "CN=Android Debug,O=Android,C=US"
             
             echo "=================== COPY THIS BASE64 TEXT ==================="
-            base64 -w 0 ~/.android/debug.keystore
+            base64 -w 0 \~/.android/debug.keystore
             echo ""
             echo "============================================================="
           fi
@@ -114,7 +161,7 @@ jobs:
       - name: Print Keystore Fingerprints (SHA-1 & SHA-256)
         run: |
           echo "=================== YOUR SHA-1 & SHA-256 FINGERPRINTS ==================="
-          keytool -list -v -keystore ~/.android/debug.keystore \
+          keytool -list -v -keystore \~/.android/debug.keystore \
             -storepass android -alias androiddebugkey | grep -E "SHA1:|SHA256:"
           echo "========================================================================="
 
