@@ -66,16 +66,8 @@ jobs:
 
       - name: Apply Google Services plugin
         run: |
-          # Add Google Services classpath to project-level build.gradle
           sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
-
-          # Apply the plugin at the bottom of app-level build.gradle
           echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
-
-          echo "=== android/build.gradle (head) ==="
-          head -30 android/build.gradle
-          echo "=== android/app/build.gradle (tail) ==="
-          tail -10 android/app/build.gradle
 
       - name: Sync
         run: npx cap sync
