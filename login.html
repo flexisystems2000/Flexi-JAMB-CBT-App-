@@ -211,7 +211,10 @@
             if (!socialLoginInitialized) {
                 console.log("--> Initializing SocialLogin Native Plugin...");
                 await plugin.initialize({
-                    google: { webClientId: WEB_CLIENT_ID }
+                    google: {
+                        webClientId: WEB_CLIENT_ID,
+                        mode: 'online'
+                    }
                 });
                 socialLoginInitialized = true;
             }
@@ -219,11 +222,11 @@
             showStatus("Requesting Google account...", "info");
             console.log("--> Executing plugin.login()...");
             
+            // Native call to trigger Google Play Services account picker sheet
             const result = await plugin.login({
                 provider: 'google',
                 options: {
-                    scopes: ['email', 'profile'],
-                    style: 'bottom'
+                    scopes: ['email', 'profile']
                 }
             });
 
