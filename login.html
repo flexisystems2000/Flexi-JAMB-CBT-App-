@@ -128,9 +128,13 @@
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
     import { 
-        getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, 
-        updateProfile, GoogleAuthProvider, signInWithPopup, signInWithRedirect,
-        onAuthStateChanged, getRedirectResult
+        getAuth, 
+        signInWithEmailAndPassword, 
+        createUserWithEmailAndPassword, 
+        updateProfile, 
+        GoogleAuthProvider, 
+        signInWithCredential,
+        onAuthStateChanged
     } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
     const RENDER_BASE_URL = "https://flexieduconsult-email-server.onrender.com";
@@ -143,23 +147,36 @@
 
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
-    const googleProvider = new GoogleAuthProvider();
 
-    // Force the account picker to always appear
-    googleProvider.setCustomParameters({
-        prompt: 'select_account'
-    });
+    // ========== NATIVE GOOGLE SIGN-IN SETUP ==========
+    let socialLoginInitialized = false;
 
-    // ========== HANDLE REDIRECT RESULT (Very important for Android) ==========
-    getRedirectResult(auth)
-        .then((result) => {
-            if (result && result.user) {
-                window.location.replace("index.html");
+    async function initSocialLogin() {
+        if (socialLoginInitialized) return true;
+
+        try {
+            // Access the native plugin
+            const { SocialLogin } = window.Capacitor.Plugins;
+
+            if (!SocialLogin) {
+                console.warn("SocialLogin plugin not found");
+                return false;
             }
-        })
-        .catch((error) => {
-            console.warn("Redirect result error:", error);
-        });
+
+            await SocialLogin.initialize({
+                google: {
+                    webClientId: "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com"
+                }
+            });
+
+            socialLoginInitialized = true;
+            console.log("SocialLogin initialized successfully");
+            return true;
+        } catch (err) {
+            console.error("Failed to initialize SocialLogin:", err);
+            return false;
+        }
+    }
 
     onAuthStateChanged(auth, (user) => {
         if (user) {
@@ -282,26 +299,55 @@
         statusBox.style.display = "block";
     };
 
-    // ========== IMPROVED GOOGLE LOGIN ==========
+    // ========== NATIVE GOOGLE LOGIN ==========
     document.getElementById('google-auth-btn').onclick = async () => {
         try {
             showStatus("Opening Google Sign-In...", "info");
 
             const isNative = window.Capacitor && window.Capacitor.isNativePlatform();
 
-            if (isNative) {
-                // Android / Capacitor → use redirect
-                await signInWithRedirect(auth, googleProvider);
-            } else {
-                // Browser → use popup
-                const result = await signInWithPopup(auth, googleProvider);
-                if (result.user) {
-                    window.location.replace("index.html");
-                }
+            if (!isNative) {
+                showStatus("Google Sign-In is only available in the mobile app", "error");
+                return;
             }
+
+            const ready = await initSocialLogin();
+            if (!ready) {
+                showStatus("Google Sign-In plugin not ready. Please rebuild the app.", "error");
+                return;
+            }
+
+            const { SocialLogin } = window.Capacitor.Plugins;
+
+            const result = await SocialLogin.login({
+                provider: 'google',
+                options: {
+                    scopes: ['email', 'profile']
+                }
+            });
+
+            console.log("Native Google result:", result);
+
+            // Extract the ID token
+            const idToken = result?.result?.idToken 
+                         || result?.authentication?.idToken 
+                         || result?.idToken;
+
+            if (!idToken) {
+                throw new Error("No ID token received from Google");
+            }
+
+            // Sign in to Firebase with the native token
+            const credential = GoogleAuthProvider.credential(idToken);
+            await signInWithCredential(auth, credential);
+
+            showStatus("Login successful!", "success");
+            window.location.replace("index.html");
+
         } catch (e) {
             console.error("Google Sign-In error:", e);
-            showStatus(e.message.replace('auth/', '').replace(/-/g, ' '), "error");
+            const message = e?.message || e?.errorMessage || "Google Sign-In failed";
+            showStatus(message.replace('auth/', '').replace(/-/g, ' '), "error");
         }
     };
 
