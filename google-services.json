@@ -51,11 +51,19 @@
       },
       "oauth_client": [
         {
-          "client_id": "465373608641-al2850c78btq3fut41raq8vj81mk4nfl.apps.googleusercontent.com",
+          "client_id": "465373608641-5g2hggrj5efomk1a48hqopgim5m0mj8j.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.flexiedu.consult",
-            "certificate_hash": "c4e8278c8599c08a439429cf832e991c1b5f0d1c"
+            "certificate_hash": "0034a0b7adfed7f64fa10f8580469953666c570d"
+          }
+        },
+        {
+          "client_id": "465373608641-kb7g4ipe6g3bf5mvkjfedsuvvo9e6bnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flexiedu.consult",
+            "certificate_hash": "76912a9e53cf3399637b301786c6a0992988c6e7"
           }
         },
         {
