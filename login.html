@@ -8,7 +8,12 @@
     <script src="lucide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
-     <style>
+    
+    <!-- Firebase Standard Scripts for Native Compatibility -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+    <style>
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, sans-serif; }
         body { background-color: var(--bg); color: var(--text); min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
         .login-card { width: 100%; max-width: 400px; background-color: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: var(--card-shadow); }
@@ -101,7 +106,7 @@
 
         <div id="google-block">
             <div class="divider"><span>Or continue with</span></div>
-            <button type="button" id="google-auth-btn" class="btn-google">
+            <button type="button" id="google-auth-btn" class="btn-google" onclick="handleGoogleLogin()">
                 <svg width="18" height="18" viewBox="0 0 24 24">
                     <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                     <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -125,18 +130,7 @@
 <script src="idb.js"></script>
 <script src="theme.js"></script>
 
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { 
-        getAuth, 
-        signInWithEmailAndPassword, 
-        createUserWithEmailAndPassword, 
-        updateProfile, 
-        GoogleAuthProvider, 
-        signInWithCredential,
-        onAuthStateChanged
-    } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-
+<script>
     const RENDER_BASE_URL = "https://flexieduconsult-email-server.onrender.com";
     const WEB_CLIENT_ID = "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com";
 
@@ -146,8 +140,11 @@
         projectId: "waec2026jamb2027",
     };
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+    // Initialize Firebase Compat
+    if (!firebase.apps.length) {
+        firebase.initializeApp(firebaseConfig);
+    }
+    const auth = firebase.auth();
 
     const statusBox = document.getElementById('status-box');
     const mainBtn = document.getElementById('main-auth-btn');
@@ -170,7 +167,6 @@
     
     const forgotLinkContainer = document.getElementById('forgot-link-container');
     const googleBlock = document.getElementById('google-block');
-    const googleBtn = document.getElementById('google-auth-btn');
     const authTitle = document.getElementById('auth-title');
     const toggleArea = document.getElementById('toggle-area');
     const forgotPassLink = document.getElementById('forgot-pass-link');
@@ -185,7 +181,7 @@
     let socialLoginInitialized = false;
 
     // Monitor Authentication State
-    onAuthStateChanged(auth, (user) => {
+    auth.onAuthStateChanged((user) => {
         if (user) {
             const urlParams = new URLSearchParams(window.location.search);
             const redirect = urlParams.get('redirect');
@@ -198,6 +194,63 @@
         statusBox.className = "status-box " + type; 
         statusBox.style.display = "block";
     };
+
+    // Global Google Sign-In Action Handler
+    async function handleGoogleLogin() {
+        console.log("--> handleGoogleLogin triggered");
+        try {
+            showStatus("Opening Google Sign-In...", "info");
+
+            const plugin = window.Capacitor?.Plugins?.SocialLogin;
+            if (!plugin) {
+                alert("Native SocialLogin plugin bridge not found.");
+                showStatus("SocialLogin plugin not found in native environment.", "error");
+                return;
+            }
+
+            if (!socialLoginInitialized) {
+                console.log("--> Initializing SocialLogin Native Plugin...");
+                await plugin.initialize({
+                    google: { webClientId: WEB_CLIENT_ID }
+                });
+                socialLoginInitialized = true;
+            }
+
+            showStatus("Requesting Google account...", "info");
+            console.log("--> Executing plugin.login()...");
+            
+            const result = await plugin.login({
+                provider: 'google',
+                options: {
+                    scopes: ['email', 'profile'],
+                    style: 'bottom'
+                }
+            });
+
+            console.log("--> Plugin response:", JSON.stringify(result));
+
+            const idToken = result?.result?.idToken 
+                         || result?.authentication?.idToken 
+                         || result?.idToken
+                         || result?.result?.accessToken;
+
+            if (!idToken) {
+                showStatus("No authentication token returned from Google.", "error");
+                return;
+            }
+
+            showStatus("Signing into Firebase...", "info");
+            const credential = firebase.auth.GoogleAuthProvider.credential(idToken);
+            await auth.signInWithCredential(credential);
+
+            showStatus("Success! Redirecting...", "success");
+        } catch (e) {
+            console.error("--> Google Auth Error:", e);
+            const msg = e?.message || e?.errorMessage || e?.code || JSON.stringify(e);
+            showStatus("Error: " + msg, "error");
+            alert("Google Sign-In Error: " + msg);
+        }
+    }
 
     // Toggle Dynamic Layout Views
     const switchView = (view) => {
@@ -274,79 +327,6 @@
         confirmEyeIcon.style.color = isProtected ? "var(--green, #008000)" : "#888";
     };
 
-    // Initialize Native SocialLogin Plugin
-    async function initSocialLogin() {
-        if (socialLoginInitialized) return true;
-        try {
-            const plugin = window.Capacitor?.Plugins?.SocialLogin;
-            if (!plugin) return false;
-
-            await plugin.initialize({
-                google: { webClientId: WEB_CLIENT_ID }
-            });
-
-            socialLoginInitialized = true;
-            return true;
-        } catch (err) {
-            console.error("SocialLogin Init Error:", err);
-            return false;
-        }
-    }
-
-    // Google Auth Action Handler
-    googleBtn.onclick = async () => {
-        try {
-            showStatus("Opening Google Sign-In...", "info");
-
-            const isNative = window.Capacitor && window.Capacitor.isNativePlatform();
-            if (!isNative) {
-                showStatus("Native Google Sign-In requires running inside the mobile app.", "error");
-                return;
-            }
-
-            const plugin = window.Capacitor?.Plugins?.SocialLogin;
-            if (!plugin) {
-                showStatus("SocialLogin plugin not found in native environment.", "error");
-                return;
-            }
-
-            const initialized = await initSocialLogin();
-            if (!initialized) {
-                showStatus("Could not initialize Google plugin.", "error");
-                return;
-            }
-
-            showStatus("Requesting Google account...", "info");
-            const result = await plugin.login({
-                provider: 'google',
-                options: {
-                    scopes: ['email', 'profile'],
-                    style: 'bottom'
-                }
-            });
-
-            const idToken = result?.result?.idToken 
-                         || result?.authentication?.idToken 
-                         || result?.idToken
-                         || result?.result?.accessToken;
-
-            if (!idToken) {
-                showStatus("No authentication token returned from Google.", "error");
-                return;
-            }
-
-            showStatus("Signing into Firebase...", "info");
-            const credential = GoogleAuthProvider.credential(idToken);
-            await signInWithCredential(auth, credential);
-
-            showStatus("Success! Redirecting...", "success");
-        } catch (e) {
-            console.error("Google Auth Error:", e);
-            const msg = e?.message || e?.errorMessage || e?.code || "Authentication failed";
-            showStatus("Error: " + msg, "error");
-        }
-    };
-
     // Password Strength Meter Listener
     passInput.addEventListener('input', () => {
         if (currentView !== "signup") {
@@ -418,7 +398,7 @@
                 if (!pass) return showStatus("Please enter your password.", "error");
                 mainBtn.disabled = true;
                 showStatus("Logging in...", "info");
-                await signInWithEmailAndPassword(auth, email, pass);
+                await auth.signInWithEmailAndPassword(email, pass);
             } 
             else if (currentView === "signup") {
                 if (!pass) return showStatus("Please enter your password.", "error");
@@ -432,8 +412,8 @@
 
                 mainBtn.disabled = true;
                 showStatus("Creating account...", "info");
-                const res = await createUserWithEmailAndPassword(auth, email, pass);
-                await updateProfile(res.user, { displayName: name });
+                const res = await auth.createUserWithEmailAndPassword(email, pass);
+                await res.user.updateProfile({ displayName: name });
             } 
             else if (currentView === "forgot") {
                 if (resetStep === 1) {
