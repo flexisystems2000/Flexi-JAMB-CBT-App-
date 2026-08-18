@@ -98,34 +98,48 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
-      - name: Ensure Debug Keystore Exists
+      - name: Decode Permanent Keystore
         run: |
-          mkdir -p ~/.android
-          if [ ! -f ~/.android/debug.keystore ]; then
-            echo "Debug keystore not found. Generating default debug keystore..."
-            keytool -genkey -v -keystore ~/.android/debug.keystore \
-              -storepass android -alias androiddebugkey -keypass android \
-              -keyalg RSA -keysize 2048 -validity 10000 \
-              -dname "CN=Android Debug,O=Android,C=US"
+          mkdir -p android/app
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android/app/release-key.jks
+            echo "Permanent keystore decoded successfully."
+          else
+            echo "WARNING: KEYSTORE_BASE64 secret not found. Falling back to debug keystore."
           fi
 
-      - name: Extract & Print Certificate SHA-1 and SHA-256 Fingerprints
+      - name: Print Keystore Fingerprints (SHA-1 & SHA-256)
         run: |
-          echo "=============================================================="
-          echo "              FIREBASE CERTIFICATE FINGERPRINTS               "
-          echo "=============================================================="
-          
-          # Debug Keystore Fingerprints
-          echo "--> DEBUG KEYSTORE SHA-1 & SHA-256:"
-          keytool -list -v -keystore ~/.android/debug.keystore -storepass android -alias androiddebugkey | grep -E "SHA1:|SHA256:" || true
-          
+          echo "=================== YOUR SHA-1 FINGERPRINT ==================="
+          if [ -f android/app/release-key.jks ]; then
+            keytool -list -v -keystore android/app/release-key.jks \
+              -alias "${{ secrets.KEY_ALIAS }}" \
+              -storepass "${{ secrets.KEYSTORE_PASSWORD }}" | grep -E "SHA1:|SHA256:" || true
+          else
+            keytool -list -v -keystore ~/.android/debug.keystore \
+              -storepass android -alias androiddebugkey -keypass android | grep -E "SHA1:|SHA256:" || true
+          fi
           echo "=============================================================="
 
-      - name: Build Debug APK
-        run: cd android && ./gradlew assembleDebug --stacktrace
+      - name: Build APK
+        run: |
+          cd android
+          if [ -f app/release-key.jks ]; then
+            echo "Building signed Release APK..."
+            ./gradlew assembleRelease \
+              -Pandroid.injected.signing.store.file=app/release-key.jks \
+              -Pandroid.injected.signing.store.password=${{ secrets.KEYSTORE_PASSWORD }} \
+              -Pandroid.injected.signing.key.alias=${{ secrets.KEY_ALIAS }} \
+              -Pandroid.injected.signing.key.password=${{ secrets.KEY_PASSWORD }} --stacktrace
+          else
+            echo "Building Debug APK..."
+            ./gradlew assembleDebug --stacktrace
+          fi
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: flexi-app-debug
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: flexi-app
+          path: |
+            android/app/build/outputs/apk/release/*.apk
+            android/app/build/outputs/apk/debug/*.apk
