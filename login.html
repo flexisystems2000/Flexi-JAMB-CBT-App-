@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
     <script>eruda.init();</script>
     
-    <!-- Firebase Standard Scripts for Native Compatibility -->
+    <!-- Firebase Compat (better for Capacitor) -->
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 
@@ -140,12 +140,39 @@
         projectId: "waec2026jamb2027",
     };
 
-    // Initialize Firebase Compat
+    // Initialize Firebase
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
     }
     const auth = firebase.auth();
 
+    // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Critical Fix) ==========
+    let socialLoginReady = false;
+
+    (async function preInitSocialLogin() {
+        try {
+            if (!window.Capacitor?.Plugins?.SocialLogin) {
+                console.warn("SocialLogin plugin not available yet");
+                return;
+            }
+
+            const plugin = window.Capacitor.Plugins.SocialLogin;
+
+            await plugin.initialize({
+                google: {
+                    webClientId: WEB_CLIENT_ID,
+                    mode: 'online'
+                }
+            });
+
+            socialLoginReady = true;
+            console.log("✅ SocialLogin pre-initialized successfully");
+        } catch (err) {
+            console.error("❌ SocialLogin pre-init failed:", err);
+        }
+    })();
+
+    // ========== UI ELEMENTS ==========
     const statusBox = document.getElementById('status-box');
     const mainBtn = document.getElementById('main-auth-btn');
     const passInput = document.getElementById('auth-pass');
@@ -178,7 +205,6 @@
 
     let currentView = "login";
     let resetStep = 1;
-    let socialLoginInitialized = false;
 
     // Monitor Authentication State
     auth.onAuthStateChanged((user) => {
@@ -195,34 +221,34 @@
         statusBox.style.display = "block";
     };
 
-    // Global Google Sign-In Action Handler
+    // ========== NATIVE GOOGLE LOGIN (Clean version) ==========
     async function handleGoogleLogin() {
         console.log("--> handleGoogleLogin triggered");
         try {
             showStatus("Opening Google Sign-In...", "info");
 
             const plugin = window.Capacitor?.Plugins?.SocialLogin;
+
             if (!plugin) {
-                alert("Native SocialLogin plugin bridge not found.");
-                showStatus("SocialLogin plugin not found in native environment.", "error");
+                showStatus("Native SocialLogin plugin not found. Please rebuild the app.", "error");
                 return;
             }
 
-            if (!socialLoginInitialized) {
-                console.log("--> Initializing SocialLogin Native Plugin...");
+            // If pre-init failed, try one more time
+            if (!socialLoginReady) {
+                console.log("--> Retrying SocialLogin initialize...");
                 await plugin.initialize({
                     google: {
                         webClientId: WEB_CLIENT_ID,
                         mode: 'online'
                     }
                 });
-                socialLoginInitialized = true;
+                socialLoginReady = true;
             }
 
             showStatus("Requesting Google account...", "info");
-            console.log("--> Executing plugin.login()...");
-            
-            // Native call to trigger Google Play Services account picker sheet
+
+            // This should now open the native bottom sheet immediately
             const result = await plugin.login({
                 provider: 'google',
                 options: {
@@ -247,15 +273,15 @@
             await auth.signInWithCredential(credential);
 
             showStatus("Success! Redirecting...", "success");
+
         } catch (e) {
             console.error("--> Google Auth Error:", e);
             const msg = e?.message || e?.errorMessage || e?.code || JSON.stringify(e);
             showStatus("Error: " + msg, "error");
-            alert("Google Sign-In Error: " + msg);
         }
     }
 
-    // Toggle Dynamic Layout Views
+    // ========== VIEW SWITCHING ==========
     const switchView = (view) => {
         currentView = view;
         resetStep = 1;
@@ -304,7 +330,6 @@
             toggleArea.innerHTML = `Back to <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Login</span>`;
         }
 
-        // Re-bind click handlers for dynamic elements
         const toggleActionBtn = document.getElementById('toggle-action');
         if (toggleActionBtn) {
             toggleActionBtn.onclick = () => {
@@ -315,9 +340,9 @@
     };
 
     forgotPassLink.onclick = () => switchView("forgot");
-    switchView("login"); // Initialize default view safely
+    switchView("login");
 
-    // Password visibility toggles
+    // Password visibility
     eyeIcon.onclick = () => {
         const isProtected = passInput.type === "password";
         passInput.type = isProtected ? "text" : "password";
@@ -330,7 +355,7 @@
         confirmEyeIcon.style.color = isProtected ? "var(--green, #008000)" : "#888";
     };
 
-    // Password Strength Meter Listener
+    // Password strength meter
     passInput.addEventListener('input', () => {
         if (currentView !== "signup") {
             strengthMeter.style.display = "none";
@@ -386,7 +411,7 @@
         }
     });
 
-    // Primary Auth Actions (Login, Sign Up, Password Reset)
+    // Email / Password / OTP actions
     mainBtn.onclick = async () => {
         const email = emailInput.value.trim();
         const pass = passInput.value;
