@@ -92,9 +92,11 @@ jobs:
       - name: Sync
         run: npx cap sync android
 
-      # ========== NEW STEP: Inject Capgo SocialLogin MainActivity ==========
+      # ========== IMPROVED: Inject + Verify Capgo SocialLogin MainActivity ==========
       - name: Inject Capgo SocialLogin MainActivity
         run: |
+          mkdir -p android/app/src/main/java/com/flexiedu/consult
+
           cat > android/app/src/main/java/com/flexiedu/consult/MainActivity.java << 'EOF'
           package com.flexiedu.consult;
 
@@ -118,13 +120,13 @@ jobs:
 
                       PluginHandle pluginHandle = getBridge().getPlugin("SocialLogin");
                       if (pluginHandle == null) {
-                          Log.i("Google Activity Result", "SocialLogin plugin handle is null");
+                          Log.e("SocialLogin", "SocialLogin plugin handle is null");
                           return;
                       }
 
                       Plugin plugin = pluginHandle.getInstance();
                       if (!(plugin instanceof SocialLoginPlugin)) {
-                          Log.i("Google Activity Result", "SocialLogin plugin instance is not SocialLoginPlugin");
+                          Log.e("SocialLogin", "Plugin instance is not SocialLoginPlugin");
                           return;
                       }
 
@@ -133,11 +135,42 @@ jobs:
               }
 
               @Override
-              public void IHaveModifiedTheMainActivityForTheUseWithSocialLoginPlugin() {}
+              public void IHaveModifiedTheMainActivityForTheUseWithSocialLoginPlugin() {
+                  // Required by the plugin - do not remove
+              }
           }
           EOF
-          echo "MainActivity.java injected successfully"
-      # ====================================================================
+
+          echo "✅ MainActivity.java written"
+
+      - name: Verify MainActivity injection
+        run: |
+          echo "========== VERIFYING MainActivity.java =========="
+          if [ -f android/app/src/main/java/com/flexiedu/consult/MainActivity.java ]; then
+            echo "✅ File exists"
+            echo ""
+            echo "----- File content -----"
+            cat android/app/src/main/java/com/flexiedu/consult/MainActivity.java
+            echo "------------------------"
+            echo ""
+            if grep -q "ModifiedMainActivityForSocialLoginPlugin" android/app/src/main/java/com/flexiedu/consult/MainActivity.java; then
+              echo "✅ Contains required interface: ModifiedMainActivityForSocialLoginPlugin"
+            else
+              echo "❌ MISSING required interface!"
+              exit 1
+            fi
+            if grep -q "IHaveModifiedTheMainActivityForTheUseWithSocialLoginPlugin" android/app/src/main/java/com/flexiedu/consult/MainActivity.java; then
+              echo "✅ Contains required method"
+            else
+              echo "❌ MISSING required method!"
+              exit 1
+            fi
+          else
+            echo "❌ MainActivity.java NOT FOUND!"
+            exit 1
+          fi
+          echo "================================================="
+      # ==============================================================================
 
       - name: Setup or Restore Keystore
         run: |
