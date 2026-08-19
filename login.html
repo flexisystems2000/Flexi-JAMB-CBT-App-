@@ -132,6 +132,7 @@
 
 <script>
     const RENDER_BASE_URL = "https://flexieduconsult-email-server.onrender.com";
+    const GOOGLE_AUTH_BRIDGE_URL = "https://firebase-google-signup.onrender.com";
     const WEB_CLIENT_ID = "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com";
 
     const firebaseConfig = {
@@ -146,28 +147,57 @@
     }
     const auth = firebase.auth();
 
-    // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Improved) ==========
-let socialLoginReady = false;
-let socialLoginInitPromise = null;
+    // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN ==========
+    let socialLoginReady = false;
+    let socialLoginInitPromise = null;
 
-function getSocialLoginPlugin() {
-    return window.Capacitor?.Plugins?.SocialLogin || null;
-}
-
-async function ensureSocialLoginReady() {
-    if (socialLoginReady) {
-        console.log("✅ SocialLogin already ready");
-        return true;
+    function getSocialLoginPlugin() {
+        return window.Capacitor?.Plugins?.SocialLogin || null;
     }
 
-    const plugin = getSocialLoginPlugin();
-    if (!plugin) {
-        console.error("❌ SocialLogin plugin not found");
-        return false;
-    }
+    async function ensureSocialLoginReady() {
+        if (socialLoginReady) {
+            console.log("✅ SocialLogin already ready");
+            return true;
+        }
 
-    if (socialLoginInitPromise) {
-        console.log("⏳ Waiting for existing initialize promise...");
+        const plugin = getSocialLoginPlugin();
+        if (!plugin) {
+            console.error("❌ SocialLogin plugin not found");
+            return false;
+        }
+
+        if (socialLoginInitPromise) {
+            console.log("⏳ Waiting for existing initialize promise...");
+            try {
+                await socialLoginInitPromise;
+                return socialLoginReady;
+            } catch (e) {
+                return false;
+            }
+        }
+
+        socialLoginInitPromise = (async () => {
+            try {
+                console.log("--> Starting SocialLogin.initialize...");
+                console.log("Using webClientId:", WEB_CLIENT_ID);
+
+                await plugin.initialize({
+                    google: {
+                        webClientId: WEB_CLIENT_ID,
+                        mode: 'online'
+                    }
+                });
+
+                socialLoginReady = true;
+                console.log("✅ SocialLogin.initialize succeeded");
+            } catch (err) {
+                console.error("❌ SocialLogin.initialize failed:", err);
+                socialLoginReady = false;
+                throw err;
+            }
+        })();
+
         try {
             await socialLoginInitPromise;
             return socialLoginReady;
@@ -176,38 +206,9 @@ async function ensureSocialLoginReady() {
         }
     }
 
-    socialLoginInitPromise = (async () => {
-        try {
-            console.log("--> Starting SocialLogin.initialize...");
-            console.log("Using webClientId:", WEB_CLIENT_ID);
+    // Start pre-init as soon as possible
+    ensureSocialLoginReady();
 
-            await plugin.initialize({
-                google: {
-                    webClientId: WEB_CLIENT_ID,
-                    mode: 'online'
-                }
-            });
-
-            socialLoginReady = true;
-            console.log("✅ SocialLogin.initialize succeeded");
-        } catch (err) {
-            console.error("❌ SocialLogin.initialize failed:", err);
-            console.error("Error details:", JSON.stringify(err, null, 2));
-            socialLoginReady = false;
-            throw err;
-        }
-    })();
-
-    try {
-        await socialLoginInitPromise;
-        return socialLoginReady;
-    } catch (e) {
-        return false;
-    }
-}
-
-// Start pre-init as soon as possible
-ensureSocialLoginReady();
     // ========== UI ELEMENTS ==========
     const statusBox = document.getElementById('status-box');
     const mainBtn = document.getElementById('main-auth-btn');
@@ -257,79 +258,86 @@ ensureSocialLoginReady();
         statusBox.style.display = "block";
     };
 
-   // ========== PRE-INITIALIZE NATIVE SOCIAL LOGIN (Improved) ==========
-async function handleGoogleLogin() {
-    console.log("--> handleGoogleLogin triggered");
+    // ========== GOOGLE LOGIN WITH BRIDGE ==========
+    async function handleGoogleLogin() {
+        console.log("--> handleGoogleLogin triggered");
 
-    try {
-        showStatus("Opening Google Sign-In...", "info");
+        try {
+            showStatus("Opening Google Sign-In...", "info");
 
-        const plugin = getSocialLoginPlugin();
-        if (!plugin) {
-            showStatus("Native SocialLogin plugin not found. Please rebuild the app.", "error");
-            return;
-        }
-
-        // Longer timeout + better feedback
-        showStatus("Preparing Google Sign-In (this may take a few seconds)...", "info");
-
-        const ready = await Promise.race([
-            ensureSocialLoginReady(),
-            new Promise((_, reject) =>
-                setTimeout(() => reject(new Error("Initialization timeout after 20 seconds")), 20000)
-            )
-        ]);
-
-        if (!ready) {
-            showStatus("Google Sign-In failed to initialize. Check console for details.", "error");
-            console.error("SocialLogin is not ready after initialize attempt");
-            return;
-        }
-
-        showStatus("Requesting Google account...", "info");
-        console.log("--> Calling plugin.login()...");
-
-        const result = await plugin.login({
-            provider: 'google',
-            options: {
-                scopes: ['email', 'profile']
+            const plugin = getSocialLoginPlugin();
+            if (!plugin) {
+                showStatus("Native plugin not available. Please rebuild the app.", "error");
+                return;
             }
-        });
 
-        console.log("--> Full plugin response:", JSON.stringify(result, null, 2));
+            // Try native initialize
+            const ready = await Promise.race([
+                ensureSocialLoginReady(),
+                new Promise((_, reject) =>
+                    setTimeout(() => reject(new Error("Native initialize timeout")), 12000)
+                )
+            ]);
 
-        // Try multiple possible token locations
-        const idToken = result?.result?.idToken
-                     || result?.authentication?.idToken
-                     || result?.idToken
-                     || result?.result?.accessToken
-                     || result?.accessToken;
+            if (!ready) {
+                showStatus("Native Google Sign-In failed to start. Try again.", "error");
+                return;
+            }
 
-        if (!idToken) {
-            showStatus("No authentication token returned from Google.", "error");
-            console.error("Could not find idToken in response. Full result:", result);
-            return;
+            showStatus("Choose your Google account...", "info");
+
+            const result = await plugin.login({
+                provider: "google",
+                options: {
+                    scopes: ["email", "profile"]
+                }
+            });
+
+            console.log("--> Native result:", JSON.stringify(result, null, 2));
+
+            // Extract idToken from possible shapes
+            const idToken =
+                result?.result?.idToken ||
+                result?.authentication?.idToken ||
+                result?.idToken ||
+                result?.result?.accessToken;
+
+            if (!idToken) {
+                showStatus("No ID token received from Google.", "error");
+                console.error("Full native result:", result);
+                return;
+            }
+
+            // ===== SEND TO THE NEW BRIDGE SERVER =====
+            showStatus("Verifying with server...", "info");
+
+            const response = await fetch(`${GOOGLE_AUTH_BRIDGE_URL}/api/auth/google-native`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ idToken })
+            });
+
+            const data = await response.json();
+
+            if (!response.ok || !data.success || !data.customToken) {
+                showStatus(data.message || "Server verification failed", "error");
+                return;
+            }
+
+            // ===== SIGN IN WITH CUSTOM TOKEN =====
+            showStatus("Signing you in...", "info");
+            await auth.signInWithCustomToken(data.customToken);
+
+            showStatus("Success! Redirecting...", "success");
+
+        } catch (e) {
+            console.error("--> Google Auth Error:", e);
+            console.error("Error name:", e?.name);
+            console.error("Error message:", e?.message);
+            const msg = e?.message || e?.errorMessage || "Unknown error";
+            showStatus("Error: " + msg, "error");
         }
-
-        console.log("--> Got idToken, signing into Firebase...");
-        showStatus("Signing into Firebase...", "info");
-
-        const credential = firebase.auth.GoogleAuthProvider.credential(idToken);
-        await auth.signInWithCredential(credential);
-
-        showStatus("Success! Redirecting...", "success");
-
-    } catch (e) {
-        console.error("--> Google Auth Error:", e);
-        console.error("Error name:", e?.name);
-        console.error("Error message:", e?.message);
-        console.error("Error code:", e?.code);
-        console.error("Full error object:", JSON.stringify(e, Object.getOwnPropertyNames(e), 2));
-
-        const msg = e?.message || e?.errorMessage || e?.code || "Unknown error";
-        showStatus("Error: " + msg, "error");
     }
-}
 
     // ========== VIEW SWITCHING ==========
     const switchView = (view) => {
