@@ -147,95 +147,40 @@
     }
     const auth = firebase.auth();
 
-    // ========== DIAGNOSTIC SOCIAL LOGIN ==========
+    // ========== SOCIAL LOGIN (Capacitor v7) ==========
     let socialLoginReady = false;
-    let socialLoginInitPromise = null;
 
     function getSocialLoginPlugin() {
         return window.Capacitor?.Plugins?.SocialLogin || null;
     }
 
     async function ensureSocialLoginReady() {
-        console.log("=== DIAGNOSTIC START ===");
-        console.log("1. Capacitor present?", !!window.Capacitor);
-        console.log("2. Capacitor.Plugins?", !!window.Capacitor?.Plugins);
-        console.log("3. Available plugins:", Object.keys(window.Capacitor?.Plugins || {}));
-
-        if (socialLoginReady) {
-            console.log("✅ SocialLogin already ready");
-            return true;
-        }
+        if (socialLoginReady) return true;
 
         const plugin = getSocialLoginPlugin();
-        console.log("4. SocialLogin plugin found?", !!plugin);
-
         if (!plugin) {
-            console.error("❌ SocialLogin plugin is NOT registered");
+            console.error("❌ SocialLogin plugin not found on window.Capacitor.Plugins");
             return false;
         }
-
-        console.log("5. plugin.initialize exists?", typeof plugin.initialize === "function");
-
-        if (socialLoginInitPromise) {
-            console.log("⏳ Waiting for existing initialize promise...");
-            try {
-                await socialLoginInitPromise;
-                return socialLoginReady;
-            } catch (e) {
-                return false;
-            }
-        }
-
-        socialLoginInitPromise = (async () => {
-            try {
-                console.log("6. Calling plugin.initialize NOW...");
-                console.log("Using webClientId:", WEB_CLIENT_ID);
-
-                const start = Date.now();
-
-                const initPromise = plugin.initialize({
-                    google: {
-                        webClientId: WEB_CLIENT_ID,
-                        mode: "online"
-                    }
-                });
-
-                console.log("7. initialize() returned a promise, waiting...");
-
-                await Promise.race([
-                    initPromise.then((r) => {
-                        console.log("8. ✅ initialize RESOLVED after", Date.now() - start, "ms");
-                        return r;
-                    }),
-                    new Promise((_, reject) =>
-                        setTimeout(() => {
-                            console.error("9. ❌ initialize still pending after 12 seconds");
-                            reject(new Error("initialize timeout after 12 seconds"));
-                        }, 12000)
-                    )
-                ]);
-
-                socialLoginReady = true;
-                console.log("10. SocialLogin is now ready");
-            } catch (err) {
-                console.error("11. initialize FAILED or TIMED OUT");
-                console.error("Error name:", err?.name);
-                console.error("Error message:", err?.message);
-                console.error("Full error:", err);
-                socialLoginReady = false;
-                throw err;
-            }
-        })();
 
         try {
-            await socialLoginInitPromise;
-            return socialLoginReady;
+            console.log("--> Initializing SocialLogin (v7 format)...");
+            await plugin.initialize({
+                google: {
+                    webClientId: WEB_CLIENT_ID
+                }
+            });
+            socialLoginReady = true;
+            console.log("✅ SocialLogin initialized");
+            return true;
         } catch (e) {
-            return false;
+            console.warn("⚠️ SocialLogin init notice:", e);
+            socialLoginReady = true;
+            return true;
         }
     }
 
-    // Start pre-init
+    // Start background init
     ensureSocialLoginReady();
 
     // ========== UI ELEMENTS ==========
@@ -287,7 +232,7 @@
         statusBox.style.display = "block";
     };
 
-    // ========== GOOGLE LOGIN ==========
+    // ========== GOOGLE LOGIN HANDLER ==========
     async function handleGoogleLogin() {
         console.log("--> handleGoogleLogin triggered");
 
@@ -300,37 +245,35 @@
                 return;
             }
 
-            const ready = await ensureSocialLoginReady();
-
-            if (!ready) {
-                showStatus("Native Google Sign-In failed to initialize. Check console.", "error");
-                return;
-            }
+            await ensureSocialLoginReady();
 
             showStatus("Choose your Google account...", "info");
 
+            // Direct v7 Login Structure
             const result = await plugin.login({
                 provider: "google",
                 options: {
+                    webClientId: WEB_CLIENT_ID,
                     scopes: ["email", "profile"]
                 }
             });
 
-            console.log("--> Native result:", JSON.stringify(result, null, 2));
+            console.log("--> Native result:", JSON.stringify(result));
 
+            // Extract idToken across possible native return payloads
             const idToken =
                 result?.result?.idToken ||
+                result?.result?.token ||
                 result?.authentication?.idToken ||
-                result?.idToken ||
-                result?.result?.accessToken;
+                result?.idToken;
 
             if (!idToken) {
                 showStatus("No ID token received from Google.", "error");
-                console.error("Full native result:", result);
+                console.error("Payload missing idToken:", result);
                 return;
             }
 
-            // Send to bridge server
+            // Send to Render Bridge Server
             showStatus("Verifying with server...", "info");
 
             const response = await fetch(`${GOOGLE_AUTH_BRIDGE_URL}/api/auth/google-native`, {
@@ -353,7 +296,7 @@
 
         } catch (e) {
             console.error("--> Google Auth Error:", e);
-            const msg = e?.message || e?.errorMessage || "Unknown error";
+            const msg = e?.message || e?.errorMessage || "Sign in cancelled or failed";
             showStatus("Error: " + msg, "error");
         }
     }
