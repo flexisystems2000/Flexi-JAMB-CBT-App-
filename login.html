@@ -104,7 +104,8 @@
             <button type="button" id="main-auth-btn" class="btn-submit">LOGIN</button>
         </form>
 
-        <div id="google-block">
+        <!-- Google block hidden until laptop debugging -->
+        <div id="google-block" style="display: none;">
             <div class="divider"><span>Or continue with</span></div>
 
             <button
@@ -172,7 +173,6 @@
         try {
             console.log("--> Initializing SocialLogin (v7 format)...");
 
-            // Race initialization against a timeout so the app never hangs indefinitely
             const initPromise = plugin.initialize({
                 google: {
                     webClientId: WEB_CLIENT_ID
@@ -257,10 +257,8 @@
     // Monitor Authentication State + Persist user data
     auth.onAuthStateChanged(async (user) => {
         if (user) {
-            // Save user details so the app works offline
             await saveUserLocally(user);
 
-            // Redirect
             const urlParams = new URLSearchParams(window.location.search);
             const redirect = urlParams.get('redirect');
             window.location.replace(redirect ? decodeURIComponent(redirect) : "index.html");
@@ -290,7 +288,6 @@
 
             showStatus("Choose your Google account...", "info");
 
-            // Direct v7 Login Structure
             const result = await plugin.login({
                 provider: "google",
                 options: {
@@ -301,7 +298,6 @@
 
             console.log("--> Native result:", JSON.stringify(result));
 
-            // Extract idToken across possible native return payloads
             const idToken =
                 result?.result?.idToken ||
                 result?.result?.token ||
@@ -314,7 +310,6 @@
                 return;
             }
 
-            // Send to Render Bridge Server
             showStatus("Verifying with server...", "info");
 
             const response = await fetch(`${GOOGLE_AUTH_BRIDGE_URL}/api/auth/google-native`, {
@@ -333,7 +328,6 @@
             showStatus("Signing you in...", "info");
             await auth.signInWithCustomToken(data.customToken);
 
-            // onAuthStateChanged will handle the rest (save + redirect)
             showStatus("Success! Redirecting...", "success");
 
         } catch (e) {
@@ -365,7 +359,7 @@
             passwordFieldGroup.style.display = "block";
             confirmPasswordFieldGroup.style.display = "none";
             forgotLinkContainer.style.display = "block";
-            googleBlock.style.display = "block";
+            googleBlock.style.display = "none"; // Kept hidden on login view
             mainBtn.innerText = "LOGIN";
             toggleArea.innerHTML = `Don't have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Sign Up</span>`;
         } 
@@ -375,7 +369,7 @@
             passwordFieldGroup.style.display = "block";
             confirmPasswordFieldGroup.style.display = "block";
             forgotLinkContainer.style.display = "none";
-            googleBlock.style.display = "block";
+            googleBlock.style.display = "none"; // Kept hidden on signup view
             mainBtn.innerText = "SIGN UP";
             toggleArea.innerHTML = `Already have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Login</span>`;
         } 
@@ -489,7 +483,6 @@
                 mainBtn.disabled = true;
                 showStatus("Logging in...", "info");
                 await auth.signInWithEmailAndPassword(email, pass);
-                // onAuthStateChanged will save data + redirect
             } 
             else if (currentView === "signup") {
                 if (!pass) return showStatus("Please enter your password.", "error");
@@ -505,7 +498,6 @@
                 showStatus("Creating account...", "info");
                 const res = await auth.createUserWithEmailAndPassword(email, pass);
                 await res.user.updateProfile({ displayName: name });
-                // onAuthStateChanged will save data + redirect
             } 
             else if (currentView === "forgot") {
                 if (resetStep === 1) {
