@@ -10,6 +10,11 @@
       "overlaysWebView": false,
       "style": "LIGHT",
       "backgroundColor": "#f0f2f5"
+    },
+    "SocialLogin": {
+      "google": {
+        "webClientId": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com"
+      }
     }
   }
 }
