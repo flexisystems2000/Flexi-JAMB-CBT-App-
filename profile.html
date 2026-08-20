@@ -90,7 +90,7 @@
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      background-color: #9CA3AF; /* Standard Neutral Grey */
+      background-color: #9CA3AF;
       color: #ffffff;
       display: flex;
       align-items: center;
@@ -322,8 +322,9 @@
 
   <!-- Global Theme Script -->
   <script src="idb.js"></script>
-<script src="theme.js"></script>
-<script src="back-handler.js"></script>
+  <script src="theme.js"></script>
+  <script src="back-handler.js"></script>
+
   <!-- Firebase Integration Script -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
@@ -346,13 +347,89 @@
 
     let currentUid = null;
     let currentPhotoURL = "";
+    let isOfflineMode = false;
 
+    // ========== Local Storage Helpers ==========
+    async function getLocalItem(key) {
+      try {
+        if (typeof IDB !== "undefined" && typeof IDB.getItem === "function") {
+          const value = await IDB.getItem(key);
+          if (value !== null && value !== undefined && value !== "") return value;
+        }
+      } catch (e) {
+        console.warn("IDB read failed:", e);
+      }
+      return localStorage.getItem(key);
+    }
+
+    async function setLocalItem(key, value) {
+      try {
+        if (typeof IDB !== "undefined" && typeof IDB.setItem === "function") {
+          await IDB.setItem(key, value);
+          return;
+        }
+      } catch (e) {
+        console.warn("IDB write failed:", e);
+      }
+      localStorage.setItem(key, value);
+    }
+
+    async function clearLocalUser() {
+      try {
+        if (typeof IDB !== "undefined") {
+          await IDB.setItem("userName", "");
+          await IDB.setItem("userEmail", "");
+          await IDB.setItem("userUid", "");
+        }
+      } catch (e) {}
+      localStorage.removeItem("userName");
+      localStorage.removeItem("userEmail");
+      localStorage.removeItem("userUid");
+    }
+
+    // ========== Load Profile from Local Data (Offline Fallback) ==========
+    async function loadFromLocalData() {
+      const name = await getLocalItem("userName");
+      const email = await getLocalItem("userEmail");
+      const uid = await getLocalItem("userUid");
+
+      if (!name && !email && !uid) {
+        // No local data either → redirect
+        window.location.href = "index.html";
+        return false;
+      }
+
+      isOfflineMode = true;
+      currentUid = uid || "offline-user";
+
+      document.getElementById('user-email-display').textContent = email || "Offline Mode";
+      document.getElementById('input-name').value = name || (email ? email.split("@")[0] : "Candidate");
+
+      // Try to load extra profile data from localStorage if previously saved
+      const savedTarget = await getLocalItem("profileTarget") || "UTME / JAMB";
+      const savedBio = await getLocalItem("profileBio") || "";
+      const savedPhoto = await getLocalItem("profilePhoto") || "";
+
+      document.getElementById('input-target').value = savedTarget;
+      document.getElementById('input-bio').value = savedBio;
+      currentPhotoURL = savedPhoto;
+      updateAvatarDisplay(currentPhotoURL);
+
+      return true;
+    }
+
+    // ========== Main Auth Listener ==========
     onAuthStateChanged(auth, async (currentUser) => {
       if (!currentUser) {
-        window.location.href = "index.html";
+        // Firebase says no user → try offline fallback
+        console.log("No Firebase user. Trying local offline data...");
+        const hasLocal = await loadFromLocalData();
+        if (!hasLocal) return; // already redirected
         return;
       }
 
+      // Online + authenticated
+      isOfflineMode = false;
       currentUid = currentUser.uid;
       document.getElementById('user-email-display').textContent = currentUser.email || "No email linked";
 
@@ -373,15 +450,29 @@
           document.getElementById('input-target').value = target;
           document.getElementById('input-bio').value = bio;
 
+          // Also keep local copy updated
+          await setLocalItem("userName", name);
+          await setLocalItem("userEmail", currentUser.email || "");
+          await setLocalItem("userUid", currentUid);
+          await setLocalItem("profileTarget", target);
+          await setLocalItem("profileBio", bio);
+          await setLocalItem("profilePhoto", currentPhotoURL);
+
           updateAvatarDisplay(currentPhotoURL);
         } else {
           const defaultName = currentUser.displayName || (currentUser.email ? currentUser.email.split('@')[0] : "Member");
           document.getElementById('input-name').value = defaultName;
           currentPhotoURL = currentUser.photoURL || "";
           updateAvatarDisplay(currentPhotoURL);
+
+          await setLocalItem("userName", defaultName);
+          await setLocalItem("userEmail", currentUser.email || "");
+          await setLocalItem("userUid", currentUid);
         }
       } catch (err) {
-        console.error("Error loading profile data:", err);
+        console.error("Error loading profile data (possibly offline):", err);
+        // Fallback to local even if Firestore fails
+        await loadFromLocalData();
       }
     });
 
@@ -422,7 +513,7 @@
       }
     });
 
-    // Save Profile to Firestore
+    // Save Profile
     document.getElementById('profile-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!currentUid) return;
@@ -436,16 +527,25 @@
       const updatedBio = document.getElementById('input-bio').value.trim();
 
       try {
-        await setDoc(doc(db, "profiles", currentUid), {
-          displayName: updatedName,
-          targetExam: updatedTarget,
-          photoURL: currentPhotoURL,
-          bio: updatedBio,
-          updatedAt: new Date()
-        }, { merge: true });
+        // Always save locally first (works offline)
+        await setLocalItem("userName", updatedName);
+        await setLocalItem("profileTarget", updatedTarget);
+        await setLocalItem("profileBio", updatedBio);
+        await setLocalItem("profilePhoto", currentPhotoURL);
+
+        if (!isOfflineMode) {
+          // Online → also save to Firestore
+          await setDoc(doc(db, "profiles", currentUid), {
+            displayName: updatedName,
+            targetExam: updatedTarget,
+            photoURL: currentPhotoURL,
+            bio: updatedBio,
+            updatedAt: new Date()
+          }, { merge: true });
+        }
 
         updateAvatarDisplay(currentPhotoURL);
-        showToast("Profile saved successfully!");
+        showToast(isOfflineMode ? "Profile saved locally (offline)" : "Profile saved successfully!");
       } catch (err) {
         console.error("Error saving profile:", err);
         showToast("Failed to save changes.", true);
@@ -463,7 +563,16 @@
       logoutBtn.innerText = "Logging out...";
 
       try {
-        await signOut(auth);
+        // Clear local data
+        await clearLocalUser();
+
+        // Sign out from Firebase if possible
+        try {
+          await signOut(auth);
+        } catch (e) {
+          console.warn("Firebase signOut failed (probably offline):", e);
+        }
+
         window.location.href = "index.html";
       } catch (err) {
         console.error("Logout error:", err);
