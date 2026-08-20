@@ -8,27 +8,44 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
+      # ============================================================
+      # CHECKOUT
+      # ============================================================
       - name: Checkout
         uses: actions/checkout@v4
 
+      # ============================================================
+      # NODE
+      # ============================================================
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
+      # ============================================================
+      # JAVA
+      # ============================================================
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '21'
 
+      # ============================================================
+      # INSTALL DEPENDENCIES
+      # ============================================================
       - name: Install dependencies
         run: npm install
 
+      # ============================================================
+      # PREPARE WEB ASSETS
+      # ============================================================
       - name: Prepare web assets
         run: |
           mkdir -p www
+
           rsync -av \
             --exclude='.git' \
             --exclude='node_modules' \
@@ -41,9 +58,15 @@ jobs:
             --exclude='google-services.json' \
             ./ www/
 
+      # ============================================================
+      # ADD ANDROID PLATFORM
+      # ============================================================
       - name: Add Android platform
         run: npx cap add android || true
 
+      # ============================================================
+      # COPY GOOGLE SERVICES
+      # ============================================================
       - name: Copy google-services.json
         run: |
           if [ -f google-services.json ]; then
@@ -53,9 +76,13 @@ jobs:
             echo "WARNING: google-services.json not found"
           fi
 
+      # ============================================================
+      # GOOGLE APP ID
+      # ============================================================
       - name: Inject Google App ID into strings.xml
         run: |
           mkdir -p android/app/src/main/res/values
+
           cat <<EOF > android/app/src/main/res/values/strings_google.xml
           <?xml version="1.0" encoding="utf-8"?>
           <resources>
@@ -63,50 +90,179 @@ jobs:
           </resources>
           EOF
 
+      # ============================================================
+      # ANDROID SDK / GRADLE VERSIONS
+      # ============================================================
       - name: Force higher Android SDK & Gradle versions
         run: |
           sed -i 's/compileSdkVersion = [0-9]\+/compileSdkVersion = 36/' android/variables.gradle || true
           sed -i 's/targetSdkVersion = [0-9]\+/targetSdkVersion = 36/' android/variables.gradle || true
+
           sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
           sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
 
           sed -i 's/com.android.tools.build:gradle:[0-9.]*/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
-          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]*")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
+          sed -i 's/classpath(\"com.android.tools.build:gradle:[0-9.]*\")/classpath(\"com.android.tools.build:gradle:8.9.1\")/' android/build.gradle || true
 
-      - name: Generate icons & splash
+      # ============================================================
+      # FIRST CAPACITOR SYNC
+      #
+      # IMPORTANT:
+      # We sync BEFORE generating the custom icons and splash.
+      # This allows the custom native assets to be the final
+      # generated resources used by the Android build.
+      # ============================================================
+      - name: Sync Capacitor Android
         run: |
-          echo "=== Checking assets folder ==="
-          ls -la assets/ || echo "❌ assets/ folder not found!"
+          echo "=== Syncing Capacitor Android project ==="
+          npx cap sync android
 
-          echo "=== Generating icons & splash ==="
+      # ============================================================
+      # GENERATE CUSTOM FLEXI ICONS & SPLASH
+      #
+      # Source files:
+      #
+      # assets/icon-only.png
+      # assets/splash.png
+      # ============================================================
+      - name: Generate Flexi icons & splash
+        run: |
+          echo "=============================================="
+          echo "CHECKING FLEXI ASSETS"
+          echo "=============================================="
+
+          if [ ! -d "assets" ]; then
+            echo "❌ ERROR: assets/ folder not found!"
+            exit 1
+          fi
+
+          echo "Assets folder:"
+          ls -lah assets/
+
+          echo ""
+          echo "Checking app icon..."
+
+          if [ -f "assets/icon-only.png" ]; then
+            echo "✅ assets/icon-only.png found"
+          else
+            echo "❌ ERROR: assets/icon-only.png NOT FOUND!"
+            exit 1
+          fi
+
+          echo ""
+          echo "Checking splash icon..."
+
+          if [ -f "assets/splash.png" ]; then
+            echo "✅ assets/splash.png found"
+          else
+            echo "❌ ERROR: assets/splash.png NOT FOUND!"
+            exit 1
+          fi
+
+          echo ""
+          echo "=============================================="
+          echo "GENERATING ANDROID ICONS & SPLASH"
+          echo "=============================================="
+
           npx @capacitor/assets generate --android \
             --iconBackgroundColor '#000000' \
             --splashBackgroundColor '#0A1F6E' \
             --logoSplashScale 0.3
 
-          echo "=== Verifying generated icons ==="
-          if [ -d "android/app/src/main/res/mipmap-xxxhdpi" ]; then
-            echo "✅ Icons generated successfully:"
-            ls -la android/app/src/main/res/mipmap-xxxhdpi/
+          echo ""
+          echo "=============================================="
+          echo "VERIFYING GENERATED ICONS"
+          echo "=============================================="
+
+          if [ -f "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" ]; then
+            echo "✅ xxxhdpi launcher icon generated"
           else
-            echo "❌ ERROR: Icons were NOT generated!"
+            echo "❌ ERROR: xxxhdpi launcher icon missing!"
             exit 1
           fi
 
+          if [ -f "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" ]; then
+            echo "✅ xxhdpi launcher icon generated"
+          else
+            echo "❌ ERROR: xxhdpi launcher icon missing!"
+            exit 1
+          fi
+
+          if [ -f "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" ]; then
+            echo "✅ xhdpi launcher icon generated"
+          else
+            echo "❌ ERROR: xhdpi launcher icon missing!"
+            exit 1
+          fi
+
+          echo ""
+          echo "Generated launcher resources:"
+          find android/app/src/main/res \
+            -type f \
+            \( -name "ic_launcher.png" -o -name "ic_launcher_round.png" -o -name "ic_launcher_foreground.png" \) \
+            -print
+
+          echo ""
+          echo "Generated splash resources:"
+          find android/app/src/main/res \
+            -type f \
+            -name "splash.png" \
+            -print
+
+      # ============================================================
+      # VERIFY ANDROID MANIFEST ICON CONFIGURATION
+      # ============================================================
+      - name: Verify Android icon configuration
+        run: |
+          echo "=============================================="
+          echo "VERIFYING ANDROID MANIFEST"
+          echo "=============================================="
+
+          MANIFEST="android/app/src/main/AndroidManifest.xml"
+
+          if [ ! -f "$MANIFEST" ]; then
+            echo "❌ ERROR: AndroidManifest.xml not found!"
+            exit 1
+          fi
+
+          echo ""
+          echo "Launcher icon references:"
+          grep -n "android:icon" "$MANIFEST" || true
+
+          echo ""
+          echo "Round launcher icon references:"
+          grep -n "android:roundIcon" "$MANIFEST" || true
+
+          echo ""
+          echo "Checking generated launcher resources..."
+
+          if [ -d "android/app/src/main/res/mipmap-xxxhdpi" ]; then
+            ls -lah android/app/src/main/res/mipmap-xxxhdpi/
+          else
+            echo "❌ ERROR: mipmap-xxxhdpi directory missing!"
+            exit 1
+          fi
+
+          echo ""
+          echo "✅ Android icon resources verified"
+
+      # ============================================================
+      # APPLY GOOGLE SERVICES PLUGIN
+      # ============================================================
       - name: Apply Google Services plugin
         run: |
           if ! grep -q "com.google.gms:google-services" android/build.gradle; then
             sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
           fi
+
           if ! grep -q "com.google.gms.google-services" android/app/build.gradle; then
             echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
           fi
 
-      - name: Sync
-        run: npx cap sync android
-
-      # ========== UPDATED: Clean MainActivity for Capacitor v7 ==========
-      - name: Inject Capgo SocialLogin MainActivity
+      # ============================================================
+      # MAIN ACTIVITY
+      # ============================================================
+      - name: Inject Clean Capacitor v7 MainActivity
         run: |
           mkdir -p android/app/src/main/java/com/flexiedu/consult
 
@@ -120,10 +276,14 @@ jobs:
 
           echo "✅ Clean Capacitor v7 MainActivity.java written"
 
+      # ============================================================
+      # VERIFY MAIN ACTIVITY
+      # ============================================================
       - name: Verify MainActivity injection
         run: |
           echo "========== VERIFYING MainActivity.java =========="
-          if [ -f android/app/src/main/java/com/flexiedu/consult/MainActivity.java ]; then
+
+          if [ -f "android/app/src/main/java/com/flexiedu/consult/MainActivity.java" ]; then
             echo "✅ File exists"
             echo ""
             echo "----- File content -----"
@@ -133,38 +293,96 @@ jobs:
             echo "❌ MainActivity.java NOT FOUND!"
             exit 1
           fi
-          echo "================================================="
-      # ==============================================================================
 
+          echo "================================================="
+
+      # ============================================================
+      # SETUP / RESTORE KEYSTORE
+      # ============================================================
       - name: Setup or Restore Keystore
         run: |
-          mkdir -p \~/.android
+          mkdir -p ~/.android
+
           if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
             echo "Restoring permanent keystore from secrets..."
-            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > \~/.android/debug.keystore
+
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
           else
             echo "Generating new permanent keystore..."
-            keytool -genkey -v -keystore \~/.android/debug.keystore \
-              -storepass android -alias androiddebugkey -keypass android \
-              -keyalg RSA -keysize 2048 -validity 10000 \
+
+            keytool -genkey -v \
+              -keystore ~/.android/debug.keystore \
+              -storepass android \
+              -alias androiddebugkey \
+              -keypass android \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
               -dname "CN=Android Debug,O=Android,C=US"
-            
+
+            echo ""
             echo "=================== COPY THIS BASE64 TEXT ==================="
-            base64 -w 0 \~/.android/debug.keystore
+
+            base64 -w 0 ~/.android/debug.keystore
+
             echo ""
             echo "============================================================="
           fi
 
+      # ============================================================
+      # PRINT KEYSTORE FINGERPRINTS
+      # ============================================================
       - name: Print Keystore Fingerprints (SHA-1 & SHA-256)
         run: |
           echo "=================== YOUR SHA-1 & SHA-256 FINGERPRINTS ==================="
-          keytool -list -v -keystore \~/.android/debug.keystore \
-            -storepass android -alias androiddebugkey | grep -E "SHA1:|SHA256:"
+
+          keytool -list -v \
+            -keystore ~/.android/debug.keystore \
+            -storepass android \
+            -alias androiddebugkey | grep -E "SHA1:|SHA256:"
+
           echo "========================================================================="
 
-      - name: Build Debug APK
-        run: cd android && ./gradlew assembleDebug --stacktrace
+      # ============================================================
+      # FINAL CHECK BEFORE BUILD
+      # ============================================================
+      - name: Final icon and splash check
+        run: |
+          echo "=============================================="
+          echo "FINAL FLEXI ASSET CHECK"
+          echo "=============================================="
 
+          echo ""
+          echo "Launcher icons:"
+          find android/app/src/main/res \
+            -type f \
+            -name "ic_launcher*.png" \
+            -print
+
+          echo ""
+          echo "Splash files:"
+          find android/app/src/main/res \
+            -type f \
+            -name "splash.png" \
+            -print
+
+          echo ""
+          echo "=============================================="
+          echo "BUILDING APK WITH CUSTOM FLEXI ASSETS"
+          echo "=============================================="
+
+      # ============================================================
+      # BUILD DEBUG APK
+      # ============================================================
+      - name: Build Debug APK
+        run: |
+          cd android
+          ./gradlew clean
+          ./gradlew assembleDebug --stacktrace
+
+      # ============================================================
+      # UPLOAD APK
+      # ============================================================
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
