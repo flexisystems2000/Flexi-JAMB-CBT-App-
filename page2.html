@@ -1,535 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Study Past Questions - Flexi Educational Consult</title>
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/icon-192.png">
-    <meta name="theme-color" content="#008000">
+    <meta charset="UTF-8" />
     <link rel="stylesheet" href="theme.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Flexi CBT | JAMB Subject Selection</title>
 
     <style>
+        :root {
+            --flexi-navy: #003366;
+            --flexi-green: #008000;
+            --radius: 12px;
+        }
+
         * {
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: var(--bg, #f4f6f8);
-            min-height: 100vh;
-            padding: 20px;
-            transition: background 0.3s ease, color 0.3s ease;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: none;
+            transition: .3s ease;
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--header);
+            color: var(--text);
+            padding: 12px 10px;
+            border-bottom: 8px solid var(--flexi-green);
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            color: var(--flexi-green);
         }
 
         .container {
-            max-width: 600px;
-            margin: auto;
-            transition: filter 0.4s ease, opacity 0.4s ease;
-        }
-
-        .container.blurred {
-            filter: blur(10px);
-            pointer-events: none;
-            user-select: none;
-        }
-
-        .top-bar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-
-        /* Back Button adapts dynamically to current theme */
-        .back-btn {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background-color: var(--card-bg, #ffffff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text, #333333);
-            text-decoration: none;
-            box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.08));
-            border: 1px solid var(--border-color, transparent);
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        body.dark .back-btn {
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            border-color: #333333;
-        }
-
-        .header-title {
-            margin-bottom: 20px;
-        }
-
-        .header-title h1 {
-            color: #008000;
-            font-size: 1.6rem;
-            font-weight: 800;
-            margin-bottom: 4px;
-        }
-
-        .header-title p {
-            color: var(--subtext, #666666);
-            font-size: 0.9rem;
-        }
-
-        /* Mode Toggle Switch (Questions / Videos) */
-        .toggle-switch {
-            display: flex;
-            background: var(--card-bg, #e4e6eb);
-            border-radius: 30px;
-            padding: 4px;
-            margin-bottom: 25px;
-            width: fit-content;
-        }
-
-        body.dark .toggle-switch {
-            background: #252525;
-        }
-
-        .toggle-option {
-            padding: 8px 20px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            color: var(--subtext, #777777);
-            transition: all 0.3s ease;
-        }
-
-        .toggle-option.active {
-            background: var(--card-bg, #ffffff);
-            color: #008000;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.12);
-        }
-
-        body.dark .toggle-option.active {
-            background: #333333;
-            color: #00e600;
-        }
-
-        /* Form Controls Dark Theme Adaptation */
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 0.9rem;
-            font-weight: 700;
-            margin-bottom: 6px;
-            color: var(--text, #333333);
-        }
-
-        .form-control {
             width: 100%;
-            padding: 14px 16px;
-            border-radius: 14px;
-            border: 1.5px solid var(--border-color, #dddddd);
-            background-color: var(--card-bg, #ffffff);
-            color: var(--text, #222222);
-            font-size: 0.95rem;
-            outline: none;
-            appearance: none;
-            background-image: url('data:image/svg+xml;utf8,<svg fill="%23888888" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-            background-repeat: no-repeat;
-            background-position-x: 96%;
-            background-position-y: 50%;
-            transition: background-color 0.3s ease, border-color 0.3s ease;
-        }
-
-        /* Soft dark background for select options bar */
-        body.dark .form-control {
-            background-color: #1e1e1e;
-            border-color: #333333;
-            color: #e0e0e0;
-            background-image: url('data:image/svg+xml;utf8,<svg fill="%23aaaaaa" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
-        }
-
-        .form-control option {
-            background-color: var(--card-bg, #ffffff);
-            color: var(--text, #222222);
-        }
-
-        body.dark .form-control option {
-            background-color: #222222;
-            color: #e0e0e0;
-        }
-
-        .form-control option:disabled {
-            color: #888888;
-            opacity: 0.6;
-        }
-
-        .submit-btn {
-            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
             padding: 15px;
-            border-radius: 25px;
-            border: none;
-            background: linear-gradient(135deg, #008000, #004d00);
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            margin-top: 15px;
-            box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.15));
-            transition: transform 0.2s ease, opacity 0.2s ease;
         }
 
-        .submit-btn:active {
-            transform: scale(0.98);
-        }
-
-        /* CUSTOM ALERT MODAL STYLES */
-        .custom-alert-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.6);
-            backdrop-filter: blur(5px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 100000;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-
-        .custom-alert-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
-        }
-
-        .custom-alert-box {
-            width: 90%;
-            max-width: 360px;
-            background: var(--card-bg, #ffffff);
-            border-radius: 20px;
-            padding: 24px;
-            text-align: center;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            transform: translateY(20px);
-            transition: transform 0.3s ease;
-        }
-
-        body.dark .custom-alert-box {
-            background: #222222;
-            color: #ffffff;
-        }
-
-        .custom-alert-overlay.active .custom-alert-box {
-            transform: translateY(0);
-        }
-
-        .custom-alert-icon {
-            font-size: 2.8rem;
-            color: #008000;
-            margin-bottom: 12px;
-        }
-
-        .custom-alert-title {
+        .welcome-msg h2 {
+            color: var(--flexi-navy);
+            margin: 0;
             font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: var(--text, #222222);
+            text-align: center;
         }
 
-        body.dark .custom-alert-title {
-            color: #ffffff;
+        .welcome-msg p {
+            color: var(--subtext);
+            font-size: 0.85rem;
+            text-align: center;
+            margin-bottom: 15px;
         }
 
-        .custom-alert-msg {
-            font-size: 0.95rem;
-            color: var(--subtext, #666666);
+        .mode-section {
+            background: var(--card);
+            padding: 15px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
             margin-bottom: 20px;
-            line-height: 1.4;
         }
 
-        body.dark .custom-alert-msg {
-            color: #aaaaaa;
+        .mode-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: var(--flexi-navy);
+            margin-bottom: 8px;
+            display: block;
         }
 
-        .custom-alert-btn {
-            width: 100%;
-            padding: 12px;
-            border-radius: 12px;
-            border: none;
-            background: #008000;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 0.95rem;
-            cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-
-        .custom-alert-btn:active {
-            opacity: 0.85;
-        }
-
-        /* LOGIN IFRAME MODAL */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba(0, 0, 0, 0.6);
+        .subject-list,
+        .mode-list {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .subject-list {
+            background: var(--card);
+            padding: 15px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--card-shadow);
+        }
+
+        .sub-row {
+            display: flex;
             align-items: center;
-            z-index: 99999;
-            backdrop-filter: blur(6px);
+            padding: 10px 12px;
+            cursor: pointer;
+            user-select: none;
+            border-radius: 8px;
+            transition: background 0.15s ease;
         }
 
-        .modal-card {
-            width: 95%;
-            max-width: 440px;
-            height: 90vh;
-            max-height: 700px;
-            background: #ffffff;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        .sub-row:hover {
+            background: rgba(46, 139, 87, 0.05);
         }
 
-        .modal-card iframe {
-            width: 100%;
-            height: 100%;
+        .sub-row input {
+            margin-right: 12px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+            accent-color: var(--flexi-green);
+        }
+
+        .sub-row span {
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+
+        .sub-row.locked {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background: transparent !important;
+        }
+
+        .sub-row.compulsory {
+            background: rgba(0, 128, 0, 0.06);
+        }
+
+        .sub-row.compulsory input {
+            cursor: not-allowed;
+        }
+
+        .compulsory-label {
+            margin-left: auto;
+            font-size: 0.65rem;
+            font-weight: 700;
+            color: var(--flexi-green);
+            text-transform: uppercase;
+        }
+
+        .selection-info {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 0.78rem;
+            color: var(--subtext);
+        }
+
+        .selection-count {
+            font-weight: bold;
+            color: var(--flexi-green);
+        }
+
+        /* BUTTONS */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        .btn-change,
+        .btn-proceed {
             border: none;
+            padding: 14px;
+            border-radius: var(--radius);
+            font-weight: bold;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: var(--card-shadow);
         }
 
-        .hidden {
-            display: none !important;
+        .btn-change {
+            flex: 1;
+            background: var(--border);
+            color: var(--text);
         }
 
-        @media(max-width: 480px) {
-            body { padding: 15px; }
-            .header-title h1 { font-size: 1.4rem; }
+        .btn-change:hover {
+            opacity: 0.8;
+        }
+
+        .btn-proceed {
+            flex: 2;
+            background: var(--flexi-green);
+            color: white;
+        }
+
+        .btn-proceed:hover {
+            opacity: 0.9;
+        }
+
+        .btn-proceed:disabled {
+            background: var(--border);
+            color: var(--subtext);
+            cursor: not-allowed;
+            box-shadow: none;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container" id="pageContainer">
-    <div class="top-bar">
-        <a href="study.html" class="back-btn" aria-label="Go Back">
-            <box-icon name="left-arrow-alt" size="sm"></box-icon>
-        </a>
+<header>
+    <div class="header-container">
+        <h1>FLEXI EDUCATIONAL CONSULT</h1>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- WELCOME -->
+    <div class="welcome-msg">
+        <h2 id="exam-title">JAMB Subject Selection</h2>
+        <p id="exam-subtitle">
+            English Language is compulsory. Select 3 additional subjects.
+        </p>
     </div>
 
-    <div class="header-title">
-        <h1>Study Past Questions</h1>
-        <p>Get all exam questions from 1978 till date</p>
+    <!-- EXAM MODE -->
+    <div class="mode-section">
+        <span class="mode-title">Select Exam Mode:</span>
+
+        <div class="mode-list">
+
+            <label class="sub-row">
+                <input type="radio" name="examMode" value="Practice" checked>
+                <span>Practice Mode (50 mins)</span>
+            </label>
+
+            <label class="sub-row">
+                <input type="radio" name="examMode" value="Full">
+                <span>Full Exam Mode (2 hrs)</span>
+            </label>
+
+        </div>
     </div>
 
-    <div class="toggle-switch">
-        <div class="toggle-option active" id="optQuestions">Questions</div>
-        <div class="toggle-option" id="optVideos">Videos</div>
-    </div>
+    <!-- SUBJECTS -->
+    <form class="subject-list" id="subjectForm">
 
-    <form id="studyForm">
-        <div class="form-group">
-            <label for="subjectSelect">Subject</label>
-            <select id="subjectSelect" class="form-control" required></select>
+        <!-- COMPULSORY -->
+        <label class="sub-row compulsory">
+            <input
+                type="checkbox"
+                name="subject"
+                value="English Language"
+                checked
+                disabled
+            >
+            <span>English Language</span>
+            <span class="compulsory-label">Compulsory</span>
+        </label>
+
+        <!-- SUBJECTS -->
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Mathematics" onchange="validateSelection()">
+            <span>Mathematics</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Biology" onchange="validateSelection()">
+            <span>Biology</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Chemistry" onchange="validateSelection()">
+            <span>Chemistry</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Physics" onchange="validateSelection()">
+            <span>Physics</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Agricultural Science" onchange="validateSelection()">
+            <span>Agricultural Science</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Animal Husbandry" onchange="validateSelection()">
+            <span>Animal Husbandry</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Arabic" onchange="validateSelection()">
+            <span>Arabic</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Art" onchange="validateSelection()">
+            <span>Art</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Book Keeping" onchange="validateSelection()">
+            <span>Book Keeping</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Catering Craft Practice" onchange="validateSelection()">
+            <span>Catering Craft Practice</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Christian Religious Studies" onchange="validateSelection()">
+            <span>Christian Religious Studies</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Civic Education" onchange="validateSelection()">
+            <span>Civic Education</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Commerce" onchange="validateSelection()">
+            <span>Commerce</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Computer Studies" onchange="validateSelection()">
+            <span>Computer Studies</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Data Processing" onchange="validateSelection()">
+            <span>Data Processing</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Economics" onchange="validateSelection()">
+            <span>Economics</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Fine Arts" onchange="validateSelection()">
+            <span>Fine Arts</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Food and Nutrition" onchange="validateSelection()">
+            <span>Food and Nutrition</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="French" onchange="validateSelection()">
+            <span>French</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Further Mathematics" onchange="validateSelection()">
+            <span>Further Mathematics</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Geography" onchange="validateSelection()">
+            <span>Geography</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Government" onchange="validateSelection()">
+            <span>Government</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Hausa" onchange="validateSelection()">
+            <span>Hausa</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="History" onchange="validateSelection()">
+            <span>History</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Home Economics" onchange="validateSelection()">
+            <span>Home Economics</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Home Management" onchange="validateSelection()">
+            <span>Home Management</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Insurance" onchange="validateSelection()">
+            <span>Insurance</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Islamic Religious Studies" onchange="validateSelection()">
+            <span>Islamic Religious Studies</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Literature in English" onchange="validateSelection()">
+            <span>Literature in English</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Marketing" onchange="validateSelection()">
+            <span>Marketing</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Music" onchange="validateSelection()">
+            <span>Music</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Office Practice" onchange="validateSelection()">
+            <span>Office Practice</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Physical Education" onchange="validateSelection()">
+            <span>Physical Education</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Technical Drawing" onchange="validateSelection()">
+            <span>Technical Drawing</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Yoruba" onchange="validateSelection()">
+            <span>Yoruba</span>
+        </label>
+
+        <label class="sub-row">
+            <input type="checkbox" name="subject" value="Igbo" onchange="validateSelection()">
+            <span>Igbo</span>
+        </label>
+
+        <div class="selection-info">
+            Additional subjects selected:
+            <span id="selection-count" class="selection-count">0 / 3</span>
         </div>
 
-        <div class="form-group">
-            <label for="examTypeSelect">Examination Type</label>
-            <select id="examTypeSelect" class="form-control">
-                <option value="JAMB" selected>JAMB</option>
-                <option value="WAEC" disabled>WAEC (Disabled)</option>
-                <option value="NECO" disabled>NECO (Disabled)</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="examYearSelect">Examination Year</label>
-            <select id="examYearSelect" class="form-control">
-                <option value="All">All</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="questionTypeSelect">Question type</label>
-            <select id="questionTypeSelect" class="form-control">
-                <option value="Theory">Theory</option>
-                <option value="Objectives">Objectives</option>
-            </select>
-        </div>
-
-        <div class="form-group">
-            <label for="topicSelect">Question Topic</label>
-            <select id="topicSelect" class="form-control">
-                <option value="All">All</option>
-            </select>
-        </div>
-
-        <button type="submit" class="submit-btn">Start Study</button>
     </form>
+
+    <!-- BUTTONS -->
+    <div class="btn-group">
+
+        <button
+            type="button"
+            class="btn-change"
+            onclick="window.location.href='test.html'">
+            Change Simulator
+        </button>
+
+        <button
+            type="button"
+            id="proceed-btn"
+            class="btn-proceed"
+            disabled
+            onclick="saveAndMove()">
+            Proceed to Instructions
+        </button>
+
+    </div>
+
 </div>
 
-<!-- BEAUTIFUL CUSTOM ALERT MODAL -->
-<div id="customAlert" class="custom-alert-overlay">
-    <div class="custom-alert-box">
-        <div class="custom-alert-icon">
-            <box-icon name="info-circle" color="#008000" size="lg"></box-icon>
-        </div>
-        <div class="custom-alert-title" id="customAlertTitle">Notification</div>
-        <div class="custom-alert-msg" id="customAlertMsg">Something happened.</div>
-        <button class="custom-alert-btn" id="customAlertClose">Got It</button>
-    </div>
-</div>
-
-<!-- LOGIN MODAL IFRAME OVERLAY -->
-<div id="loginModal" class="modal-overlay hidden">
-    <div class="modal-card">
-        <iframe id="loginIframe" src="" title="Login Portal"></iframe>
-    </div>
-</div>
-<script src="back-handler.js"></script>
+<!-- Global Theme Script -->
 <script src="idb.js"></script>
 <script src="theme.js"></script>
+<script src="back-handler.js"></script>
 
 <script>
-    // Clean mapped subject list derived from your subject selection form
-    const SUBJECT_MAP = [
-        { label: "English Language", file: "use_of_english.json" },
-        { label: "Account", file: "accounting.json" },
-        { label: "Arabic", file: "arabic.json" },
-        { label: "Biology", file: "biology.json" },
-        { label: "Chemistry", file: "chemistry.json" },
-        { label: "Christian Religious Studies (CRS)", file: "christian_religious_studies__crs_.json" },
-        { label: "Commerce", file: "commerce.json" },
-        { label: "Computer Studies", file: "computer_studies.json" },
-        { label: "Economics", file: "economics.json" },
-        { label: "Fine Arts", file: "fine_art.json" },
-        { label: "Government", file: "government.json" },
-        { label: "Literature In English", file: "literature_in_english.json" },
-        { label: "Mathematics", file: "mathematics.json" },
-        { label: "Physics", file: "physics.json" },
-        { label: "Yoruba", file: "yoruba.json" }
-    ];
+(function () {
 
-    function showCustomAlert(title, message) {
-        const alertModal = document.getElementById("customAlert");
-        document.getElementById("customAlertTitle").textContent = title;
-        document.getElementById("customAlertMsg").textContent = message;
-        alertModal.classList.add("active");
-    }
+    const subjectForm = document.getElementById("subjectForm");
+    const proceedBtn = document.getElementById("proceed-btn");
+    const selectionCount = document.getElementById("selection-count");
 
-    document.getElementById("customAlertClose").addEventListener("click", () => {
-        document.getElementById("customAlert").classList.remove("active");
-    });
+    const compulsorySubject = "English Language";
 
-    document.addEventListener("DOMContentLoaded", () => {
-        // Populate Subjects Dropdown cleanly
-        const subjectSelect = document.getElementById("subjectSelect");
-        SUBJECT_MAP.forEach(item => {
-            const option = document.createElement("option");
-            option.value = item.file;
-            option.textContent = item.label;
-            subjectSelect.appendChild(option);
-        });
+    /*
+     * JAMB SUBJECTS
+     * English Language is compulsory.
+     * Candidate must select exactly 3 additional subjects.
+     */
 
-        // Populate Years Dropdown (1978 to current year)
-        const yearSelect = document.getElementById("examYearSelect");
-        const currentYear = new Date().getFullYear();
-        for (let year = currentYear; year >= 1978; year--) {
-            const option = document.createElement("option");
-            option.value = year;
-            option.textContent = year;
-            yearSelect.appendChild(option);
+    function getStorageValue(key) {
+        try {
+            if (typeof IDB !== "undefined" && typeof IDB.getItem === "function") {
+                return IDB.getItem(key);
+            }
+        } catch (error) {
+            console.warn("IndexedDB read failed:", error);
         }
 
-        // Direct routing for Videos option click
-        const optVideos = document.getElementById("optVideos");
-        optVideos.addEventListener("click", () => {
-            window.location.href = "video.html";
-        });
+        return Promise.resolve(localStorage.getItem(key));
+    }
 
-        // Form Submit Handler
-        document.getElementById("studyForm").addEventListener("submit", (e) => {
-            e.preventDefault();
-            const selectedFile = subjectSelect.value;
-            const examType = document.getElementById("examTypeSelect").value;
-            const year = yearSelect.value;
-            const qType = document.getElementById("questionTypeSelect").value;
-            const topic = document.getElementById("topicSelect").value;
+    function setStorageValue(key, value) {
+        try {
+            if (typeof IDB !== "undefined" && typeof IDB.setItem === "function") {
+                return IDB.setItem(key, value);
+            }
+        } catch (error) {
+            console.warn("IndexedDB write failed:", error);
+        }
 
-            if (!selectedFile) {
-                showCustomAlert("Selection Missing", "Please select a subject to proceed.");
+        localStorage.setItem(key, value);
+        return Promise.resolve();
+    }
+
+    /*
+     * Check whether the candidate has already been identified locally.
+     *
+     * We deliberately do NOT require Firebase on this page.
+     * The candidate information should already have been saved locally
+     * by the login/authentication flow.
+     */
+
+    async function initializePage() {
+
+        try {
+
+            const userName = await getStorageValue("userName");
+            const userEmail = await getStorageValue("userEmail");
+            const userUid = await getStorageValue("userUid");
+
+            /*
+             * If no candidate information exists locally, send the
+             * candidate back to login.
+             */
+            if (!userName && !userEmail && !userUid) {
+                window.location.href = "login.html";
                 return;
             }
 
-            window.location.href = `practice.html?file=${encodeURIComponent(selectedFile)}&type=${encodeURIComponent(examType)}&year=${encodeURIComponent(year)}&qtype=${encodeURIComponent(qType)}&topic=${encodeURIComponent(topic)}`;
-        });
-    });
+            /*
+             * Make sure this is the JAMB flow.
+             */
+            await setStorageValue("selectedExamType", "JAMB");
 
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js');
-        });
+            /*
+             * Keep FLEXI display name if it was selected from test.html.
+             * Otherwise default to JAMB.
+             */
+            const existingDisplayName = await getStorageValue("displayExamName");
+
+            if (!existingDisplayName) {
+                await setStorageValue("displayExamName", "JAMB");
+            }
+
+            document.body.style.display = "block";
+
+            validateSelection();
+
+        } catch (error) {
+
+            console.error("Page initialization error:", error);
+
+            /*
+             * If IndexedDB fails completely, still allow localStorage
+             * to determine whether the candidate exists.
+             */
+            const fallbackName = localStorage.getItem("userName");
+            const fallbackEmail = localStorage.getItem("userEmail");
+            const fallbackUid = localStorage.getItem("userUid");
+
+            if (!fallbackName && !fallbackEmail && !fallbackUid) {
+                window.location.href = "login.html";
+                return;
+            }
+
+            document.body.style.display = "block";
+            validateSelection();
+        }
     }
-</script>
 
-<!-- FIREBASE AUTH CHECK & IFRAME POP-UP LOGIC -->
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+    /*
+     * Validate JAMB subject selection.
+     *
+     * English Language is compulsory.
+     * Exactly 3 additional subjects must be selected.
+     */
+    window.validateSelection = function () {
 
-    const firebaseConfig = {
-        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
-        authDomain: "auth.flexieduconsult.com.ng",
-        projectId: "waec2026jamb2027",
+        const checkboxes = Array.from(
+            document.querySelectorAll('input[name="subject"]')
+        );
+
+        const additionalSubjects = checkboxes.filter(function (checkbox) {
+            return checkbox.value !== compulsorySubject;
+        });
+
+        const selectedAdditional = additionalSubjects.filter(function (checkbox) {
+            return checkbox.checked;
+        });
+
+        const count = selectedAdditional.length;
+
+        selectionCount.textContent = count + " / 3";
+
+        /*
+         * Once 3 additional subjects are selected,
+         * lock all unselected subjects.
+         */
+        additionalSubjects.forEach(function (checkbox) {
+
+            if (count >= 3 && !checkbox.checked) {
+
+                checkbox.disabled = true;
+
+                checkbox.parentElement.classList.add("locked");
+
+            } else {
+
+                checkbox.disabled = false;
+
+                checkbox.parentElement.classList.remove("locked");
+
+            }
+        });
+
+        /*
+         * Proceed only when exactly 3 additional subjects
+         * have been selected.
+         */
+        proceedBtn.disabled = count !== 3;
     };
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const LOGIN_FILE_PATH = "login.html";
+    /*
+     * Save the candidate's four subjects:
+     *
+     * 1. English Language
+     * 2. Additional subject
+     * 3. Additional subject
+     * 4. Additional subject
+     */
+    window.saveAndMove = async function () {
 
-    const modal = document.getElementById('loginModal');
-    const iframe = document.getElementById('loginIframe');
-    const pageContainer = document.getElementById('pageContainer');
+        const checkedAdditional = Array.from(
+            document.querySelectorAll('input[name="subject"]:checked')
+        ).filter(function (checkbox) {
+            return checkbox.value !== compulsorySubject;
+        });
 
-    onAuthStateChanged(auth, (user) => {
-        if (!user) {
-            showLoginModal();
-        } else {
-            hideLoginModal();
+        if (checkedAdditional.length !== 3) {
+
+            alert("Please select exactly 3 additional subjects.");
+
+            return;
         }
-    });
 
-    function showLoginModal() {
-        if (!iframe.src || !iframe.src.includes(LOGIN_FILE_PATH)) {
-            iframe.src = LOGIN_FILE_PATH;
+        const subjectKeys = [
+            compulsorySubject,
+            ...checkedAdditional.map(function (checkbox) {
+                return checkbox.value;
+            })
+        ];
+
+        const selectedModeElement = document.querySelector(
+            'input[name="examMode"]:checked'
+        );
+
+        const mode = selectedModeElement
+            ? selectedModeElement.value
+            : "Practice";
+
+        /*
+         * Save exactly the keys expected by page3.html
+         * and exam.html.
+         */
+        await setStorageValue(
+            "userSubjectKeys",
+            JSON.stringify(subjectKeys)
+        );
+
+        await setStorageValue(
+            "examMode",
+            mode
+        );
+
+        /*
+         * Make sure the selected exam type remains JAMB
+         * internally for the question-loading flow.
+         */
+        await setStorageValue(
+            "selectedExamType",
+            "JAMB"
+        );
+
+        /*
+         * Preserve the display name:
+         * JAMB or FLEXI depending on what the candidate selected.
+         */
+        const displayExamName = await getStorageValue("displayExamName");
+
+        if (!displayExamName) {
+
+            await setStorageValue(
+                "displayExamName",
+                "JAMB"
+            );
+
         }
-        modal.classList.remove('hidden');
-        pageContainer.classList.add('blurred');
+
+        /*
+         * Continue to the instructions page.
+         */
+        window.location.href = "page3.html";
+    };
+
+    /*
+     * Prevent the compulsory English checkbox from
+     * being accidentally changed through the UI.
+     */
+    const englishCheckbox = document.querySelector(
+        'input[name="subject"][value="English Language"]'
+    );
+
+    if (englishCheckbox) {
+        englishCheckbox.checked = true;
+        englishCheckbox.disabled = true;
     }
 
-    function hideLoginModal() {
-        modal.classList.add('hidden');
-        pageContainer.classList.remove('blurred');
-        iframe.src = "";
-    }
+    /*
+     * Start page.
+     */
+    initializePage();
 
-    window.addEventListener('message', (event) => {
-        if (event.data?.type === 'AUTH_SUCCESS') {
-            hideLoginModal();
-        }
-    });
+})();
 </script>
+
 </body>
 </html>
