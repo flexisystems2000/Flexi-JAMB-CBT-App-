@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Flexi CBT | Corrections</title>
+
+    <link rel="stylesheet" href="theme.css">
+
+    <style>
+        :root {
+            --flexi-green: #008000;
+            --flexi-navy: #003366;
+            --correct: #008000;
+            --wrong: #cc0000;
+            --unanswered: #777;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            padding-bottom: 40px;
+        }
+
+        /* HEADER */
+
+        header {
+            background: var(--header);
+            color: var(--text);
+            padding: 13px 15px;
+            border-bottom: 4px solid var(--flexi-green);
+            box-shadow: var(--card-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            font-size: 0.9rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .brand span {
+            color: var(--flexi-green);
+        }
+
+        /* MAIN */
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin: 15px 0 5px;
+            color: var(--flexi-navy);
+            font-size: 1.35rem;
+        }
+
+        .candidate-name {
+            text-align: center;
+            color: var(--subtext);
+            font-size: 0.8rem;
+            margin-bottom: 18px;
+        }
+
+        /* SUMMARY */
+
+        .summary-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+
+        .summary-item {
+            text-align: center;
+            padding: 10px 5px;
+            border-radius: 8px;
+            background: var(--bg);
+        }
+
+        .summary-item strong {
+            display: block;
+            font-size: 1.15rem;
+        }
+
+        .summary-item small {
+            display: block;
+            margin-top: 3px;
+            font-size: 0.68rem;
+            color: var(--subtext);
+        }
+
+        .correct-number {
+            color: var(--correct);
+        }
+
+        .wrong-number {
+            color: var(--wrong);
+        }
+
+        .unanswered-number {
+            color: var(--unanswered);
+        }
+
+        /* SUBJECT TABS */
+
+        .subject-tabs {
+            display: flex;
+            gap: 7px;
+            overflow-x: auto;
+            padding: 3px 1px 10px;
+            scrollbar-width: none;
+        }
+
+        .subject-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .subject-tab {
+            flex-shrink: 0;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text);
+            padding: 9px 13px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .subject-tab.active {
+            background: var(--flexi-green);
+            color: white;
+            border-color: var(--flexi-green);
+        }
+
+        /* QUESTION CARD */
+
+        .question-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 16px;
+            margin-bottom: 15px;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .question-number {
+            color: var(--flexi-navy);
+            font-size: 0.85rem;
+            font-weight: 800;
+        }
+
+        .status-badge {
+            padding: 5px 9px;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .status-correct {
+            background: rgba(0, 128, 0, 0.12);
+            color: var(--correct);
+        }
+
+        .status-wrong {
+            background: rgba(204, 0, 0, 0.12);
+            color: var(--wrong);
+        }
+
+        .status-unanswered {
+            background: rgba(100, 100, 100, 0.12);
+            color: var(--unanswered);
+        }
+
+        .question-text {
+            font-size: 0.93rem;
+            line-height: 1.55;
+            margin-bottom: 15px;
+            color: var(--text);
+            white-space: normal;
+            overflow-wrap: anywhere;
+        }
+
+        /* OPTIONS */
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .option {
+            padding: 11px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            font-size: 0.82rem;
+            line-height: 1.4;
+            color: var(--text);
+        }
+
+        .option.correct-option {
+            border: 2px solid var(--correct);
+            background: rgba(0, 128, 0, 0.08);
+        }
+
+        .option.wrong-option {
+            border: 2px solid var(--wrong);
+            background: rgba(204, 0, 0, 0.08);
+        }
+
+        .option-label {
+            font-weight: 800;
+            margin-right: 6px;
+        }
+
+        /* ANSWER INFORMATION */
+
+        .answer-box {
+            margin-top: 15px;
+            border-top: 1px solid var(--border);
+            padding-top: 13px;
+        }
+
+        .answer-row {
+            font-size: 0.8rem;
+            line-height: 1.5;
+            margin-bottom: 7px;
+        }
+
+        .answer-row strong {
+            color: var(--flexi-navy);
+        }
+
+        .correct-answer {
+            color: var(--correct);
+            font-weight: 700;
+        }
+
+        .candidate-answer {
+            color: var(--wrong);
+            font-weight: 700;
+        }
+
+        .not-answered {
+            color: var(--unanswered);
+            font-weight: 700;
+        }
+
+        /* EXPLANATION */
+
+        .explanation {
+            margin-top: 12px;
+            padding: 12px;
+            background: var(--bg);
+            border-left: 3px solid var(--flexi-green);
+            border-radius: 5px;
+            font-size: 0.78rem;
+            line-height: 1.55;
+            color: var(--text);
+        }
+
+        .explanation-title {
+            font-weight: 800;
+            color: var(--flexi-green);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* NAVIGATION */
+
+        .bottom-actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            border: 0;
+            border-radius: 8px;
+            padding: 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .primary-btn {
+            background: var(--flexi-green);
+            color: white;
+        }
+
+        .secondary-btn {
+            background: #666;
+            color: white;
+        }
+
+        /* EMPTY / ERROR */
+
+        .message-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 25px 18px;
+            text-align: center;
+            color: var(--subtext);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* MATHJAX */
+
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        @media (max-width: 480px) {
+
+            .summary-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .summary-item strong {
+                font-size: 1rem;
+            }
+
+            .question-card {
+                padding: 13px;
+            }
+
+            .bottom-actions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="brand">
+            FLEXI <span>CBT</span>
+        </div>
+
+        <div
+            id="exam-name-header"
+            style="font-size:0.72rem;color:var(--subtext);">
+            Corrections
+        </div>
+    </div>
+</header>
+
+
+<div class="container">
+
+    <h1 class="page-title">
+        Examination Corrections
+    </h1>
+
+    <div
+        id="candidate-name"
+        class="candidate-name">
+        Candidate
+    </div>
+
+
+    <!-- SUMMARY -->
+
+    <div class="summary-card">
+
+        <div class="summary-grid">
+
+            <div class="summary-item">
+                <strong
+                    id="correct-count"
+                    class="correct-number">
+                    0
+                </strong>
+
+                <small>Correct</small>
+            </div>
+
+            <div class="summary-item">
+                <strong
+                    id="wrong-count"
+                    class="wrong-number">
+                    0
+                </strong>
+
+                <small>Wrong</small>
+            </div>
+
+            <div class="summary-item">
+                <strong
+                    id="unanswered-count"
+                    class="unanswered-number">
+                    0
+                </strong>
+
+                <small>Unanswered</small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SUBJECT TABS -->
+
+    <div
+        id="subject-tabs"
+        class="subject-tabs">
+    </div>
+
+
+    <!-- QUESTIONS -->
+
+    <div id="questions-container"></div>
+
+
+    <!-- ACTIONS -->
+
+    <div class="bottom-actions">
+
+        <button
+            class="action-btn secondary-btn"
+            onclick="location.href='results.html'">
+            BACK TO RESULTS
+        </button>
+
+        <button
+            class="action-btn primary-btn"
+            onclick="location.href='test.html'">
+            NEW EXAM
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- LOCAL LIBRARIES -->
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+<script src="back-handler.js"></script>
+
+<!-- Local MathJax if available -->
+<script src="mathjax/tex-mml-chtml.js"></script>
+
+
+<script>
+
+    /*
+     * ============================================================
+     * FLEXI CBT - CORRECTIONS
+     * ============================================================
+     *
+     * This page is deliberately OFFLINE-FIRST.
+     *
+     * It does NOT require Firebase.
+     *
+     * It reads:
+     *
+     *   examQuestions
+     *   finalAnswers
+     *   latestExamResult
+     *   userName
+     *
+     * from IndexedDB/localStorage.
+     *
+     * Therefore the candidate can review corrections even
+     * without an internet connection.
+     */
+
+
+    let examQuestions = {};
+    let finalAnswers = {};
+    let latestResult = {};
+
+    let subjectList = [];
+
+    let currentSubject = null;
+
+
+    /*
+     * ============================================================
+     * LOCAL STORAGE HELPERS
+     * ============================================================
+     */
+
+    async function getLocalItem(key) {
+
+        try {
+
+            if (
+                typeof IDB !== "undefined" &&
+                typeof IDB.getItem === "function"
+            ) {
+
+                const value =
+                    await IDB.getItem(key);
+
+                if (
+                    value !== null &&
+                    value !== undefined &&
+                    value !== ""
+                ) {
+                    return value;
+                }
+
+            }
+
+        } catch (error) {
+
+            console.warn(
+                "IndexedDB read failed:",
+                key,
+                error
+            );
+
+        }
+
+        return localStorage.getItem(key);
+    }
+
+
+    /*
+     * ============================================================
+     * PARSE STORED DATA
+     * ============================================================
+     */
+
+    function parseStoredData(data) {
+
+        if (
+            data === null ||
+            data === undefined ||
+            data === ""
+        ) {
+            return null;
+        }
+
+        if (
+            typeof data === "object"
+        ) {
+            return data;
+        }
+
+        try {
+
+            return JSON.parse(data);
+
+        } catch (error) {
+
+            console.warn(
+                "Could not parse stored data:",
+                error
+            );
+
+            return null;
+        }
+    }
+
+
+    /*
+     * ============================================================
+     * LOAD DATA
+     * ============================================================
+     */
+
+    async function loadCorrectionData() {
+
+        /*
+         * Questions
+         */
+
+        const storedQuestions =
+            await getLocalItem(
+                "examQuestions"
+            );
+
+
+        /*
+         * Answers
+         */
+
+        const storedAnswers =
+            await getLocalItem(
+                "finalAnswers"
+            );
+
+
+        /*
+         * Result
+         */
+
+        const storedResult =
+            await getLocalItem(
+                "latestExamResult"
+            );
+
+
+        /*
+         * Candidate
+         */
+
+        const storedName =
+            await getLocalItem(
+                "userName"
+            );
+
+
+        examQuestions =
+            parseStoredData(
+                storedQuestions
+            ) || {};
+
+
+        finalAnswers =
+            parseStoredData(
+                storedAnswers
+            ) || {};
+
+
+        latestResult =
+            parseStoredData(
+                storedResult
+            ) || {};
+
+
+        /*
+         * Candidate name
+         */
+
+        const candidateName =
+            latestResult.name ||
+            latestResult.userName ||
+            storedName ||
+            "Candidate";
+
+
+        document.getElementById(
+            "candidate-name"
+        ).textContent =
+            candidateName;
+
+
+        /*
+         * Exam name
+         */
+
+        const examName =
+            latestResult.exam ||
+            latestResult.examName ||
+            latestResult.displayExamName ||
+            await getLocalItem(
+                "displayExamName"
+            ) ||
+            "CBT";
+
+
+        document.getElementById(
+            "exam-name-header"
+        ).textContent =
+            examName;
+
+
+        /*
+         * Verify questions.
+         */
+
+        if (
+            !examQuestions ||
+            typeof examQuestions !== "object" ||
+            Object.keys(examQuestions).length === 0
+        ) {
+
+            showMessage(
+                "No examination questions were found on this device."
+            );
+
+            return;
+        }
+
+
+        /*
+         * Build subject list.
+         */
+
+        subjectList =
+            Object.keys(
+                examQuestions
+            );
+
+
+        /*
+         * Make sure subjects with questions
+         * are displayed.
+         */
+
+        subjectList =
+            subjectList.filter(
+                subject => {
+
+                    return Array.isArray(
+                        examQuestions[subject]
+                    );
+
+                }
+            );
+
+
+        if (
+            subjectList.length === 0
+        ) {
+
+            showMessage(
+                "No question data was found for this examination."
+            );
+
+            return;
+        }
+
+
+        /*
+         * Build summary.
+         */
+
+        calculateSummary();
+
+
+        /*
+         * Build subject buttons.
+         */
+
+        buildSubjectTabs();
+
+
+        /*
+         * Show first subject.
+         */
+
+        selectSubject(
+            subjectList[0]
+        );
+
+
+        /*
+         * Render MathJax.
+         */
+
+        renderMath();
+
+    }
+
+
+    /*
+     * ============================================================
+     * SUMMARY
+     * ============================================================
+     */
+
+    function calculateSummary() {
+
+        let correct = 0;
+        let wrong = 0;
+        let unanswered = 0;
+
+
+        subjectList.forEach(
+            subject => {
+
+                const questions =
+                    examQuestions[
+                        subject
+                    ] || [];
+
+
+                const answers =
+                    finalAnswers[
+                        subject
+                    ] || {};
+
+
+                questions.forEach(
+                    (question, index) => {
+
+                        const candidateAnswer =
+                            getCandidateAnswer(
+                                answers,
+                                index,
+                                question
+                            );
+
+
+                        const correctAnswer =
+                            getCorrectAnswer(
+                                question
+                            );
+
+
+                        if (
+                            !candidateAnswer
+                        ) {
+
+                            unanswered++;
+
+                        } else if (
+                            answersMatch(
+                                candidateAnswer,
+                                correctAnswer
+                            )
+                        ) {
+
+                            correct++;
+
+                        } else {
+
+                            wrong++;
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        document.getElementById(
+            "correct-count"
+        ).textContent =
+            correct;
+
+
+        document.getElementById(
+            "wrong-count"
+        ).textContent =
+            wrong;
+
+
+        document.getElementById(
+            "unanswered-count"
+        ).textContent =
+            unanswered;
+
+    }
+
+
+    /*
+     * ============================================================
+     * SUBJECT TABS
+     * ============================================================
+     */
+
+    function buildSubjectTabs() {
+
+        const container =
+            document.getElementById(
+                "subject-tabs"
+            );
+
+
+        container.innerHTML = "";
+
+
+        subjectList.forEach(
+            (subject, index) => {
+
+                const button =
+                    document.createElement(
+                        "button"
+                    );
+
+
+                button.className =
+                    "subject-tab";
+
+
+                button.textContent =
+                    shortenSubjectName(
+                        subject
+                    );
+
+
+                button.dataset.subject =
+                    subject;
+
+
+                button.onclick = () => {
+
+                    selectSubject(
+                        subject
+                    );
+
+                };
+
+
+                if (
+                    index === 0
+                ) {
+
+                    button.classList.add(
+                        "active"
+                    );
+
+                }
+
+
+                container.appendChild(
+                    button
+                );
+
+            }
+        );
+
+    }
+
+
+    /*
+     * ============================================================
+     * SUBJECT SELECTION
+     * ============================================================
+     */
+
+    function selectSubject(subject) {
+
+        currentSubject =
+            subject;
+
+
+        document
+            .querySelectorAll(
+                ".subject-tab"
+            )
+            .forEach(
+                button => {
+
+                    button.classList.toggle(
+                        "active",
+                        button.dataset.subject === subject
+                    );
+
+                }
+            );
+
+
+        renderQuestions(
+            subject
+        );
+
+    }
+
+
+    /*
+     * ============================================================
+     * RENDER QUESTIONS
+     * ============================================================
+     */
+
+    function renderQuestions(
+        subject
+    ) {
+
+        const container =
+            document.getElementById(
+                "questions-container"
+            );
+
+
+        container.innerHTML = "";
+
+
+        const questions =
+            examQuestions[
+                subject
+            ] || [];
+
+
+        const answers =
+            finalAnswers[
+                subject
+            ] || {};
+
+
+        if (
+            questions.length === 0
+        ) {
+
+            showMessage(
+                "No questions found for this subject."
+            );
+
+            return;
+        }
+
+
+        questions.forEach(
+            (question, index) => {
+
+                const candidateAnswer =
+                    getCandidateAnswer(
+                        answers,
+                        index,
+                        question
+                    );
+
+
+                const correctAnswer =
+                    getCorrectAnswer(
+                        question
+                    );
+
+
+                const isAnswered =
+                    Boolean(
+                        candidateAnswer
+                    );
+
+
+                const isCorrect =
+                    isAnswered &&
+                    answersMatch(
+                        candidateAnswer,
+                        correctAnswer
+                    );
+
+
+                let statusClass;
+                let statusText;
+
+
+                if (
+                    !isAnswered
+                ) {
+
+                    statusClass =
+                        "status-unanswered";
+
+                    statusText =
+                        "Not Answered";
+
+                } else if (
+                    isCorrect
+                ) {
+
+                    statusClass =
+                        "status-correct";
+
+                    statusText =
+                        "Correct";
+
+                } else {
+
+                    statusClass =
+                        "status-wrong";
+
+                    statusText =
+                        "Incorrect";
+
+                }
+
+
+                const card =
+                    document.createElement(
+                        "div"
+                    );
+
+
+                card.className =
+                    "question-card";
+
+
+                card.innerHTML =
+                    buildQuestionHTML(
+                        question,
+                        index,
+                        candidateAnswer,
+                        correctAnswer,
+                        statusClass,
+                        statusText
+                    );
+
+
+                container.appendChild(
+                    card
+                );
+
+            }
+        );
+
+
+        renderMath();
+
+    }
+
+
+    /*
+     * ============================================================
+     * BUILD QUESTION HTML
+     * ============================================================
+     */
+
+    function buildQuestionHTML(
+        question,
+        index,
+        candidateAnswer,
+        correctAnswer,
+        statusClass,
+        statusText
+    ) {
+
+        const questionText =
+            question.question ||
+            question.text ||
+            question.q ||
+            "";
+
+
+        const options =
+            getOptions(
+                question
+            );
+
+
+        let optionsHTML = "";
+
+
+        options.forEach(
+            (option, optionIndex) => {
+
+                const letter =
+                    getOptionLetter(
+                        option,
+                        optionIndex
+                    );
+
+
+                const optionText =
+                    getOptionText(
+                        option
+                    );
+
+
+                let optionClass =
+                    "option";
+
+
+                /*
+                 * Correct option.
+                 */
+
+                if (
+                    answersMatch(
+                        letter,
+                        correctAnswer
+                    )
+                ) {
+
+                    optionClass +=
+                        " correct-option";
+
+                }
+
+
+                /*
+                 * Candidate's wrong option.
+                 */
+
+                if (
+                    candidateAnswer &&
+                    answersMatch(
+                        letter,
+                        candidateAnswer
+                    ) &&
+                    !answersMatch(
+                        letter,
+                        correctAnswer
+                    )
+                ) {
+
+                    optionClass +=
+                        " wrong-option";
+
+                }
+
+
+                optionsHTML += `
+                    <div class="${optionClass}">
+                        <span class="option-label">
+                            ${escapeHTML(letter)}.
+                        </span>
+
+                        ${optionText}
+                    </div>
+                `;
+
+            }
+        );
+
+
+        let candidateAnswerHTML;
+
+
+        if (
+            !candidateAnswer
+        ) {
+
+            candidateAnswerHTML = `
+                <span class="not-answered">
+                    Not answered
+                </span>
+            `;
+
+        } else if (
+            answersMatch(
+                candidateAnswer,
+                correctAnswer
+            )
+        ) {
+
+            candidateAnswerHTML = `
+                <span class="correct-answer">
+                    ${escapeHTML(candidateAnswer)}
+                </span>
+            `;
+
+        } else {
+
+            candidateAnswerHTML = `
+                <span class="candidate-answer">
+                    ${escapeHTML(candidateAnswer)}
+                </span>
+            `;
+
+        }
+
+
+        const explanation =
+            question.explanation ||
+            question.explain ||
+            question.solution ||
+            "";
+
+
+        const explanationHTML =
+            explanation
+                ? `
+                    <div class="explanation">
+                        <span class="explanation-title">
+                            Explanation
+                        </span>
+
+                        ${explanation}
+                    </div>
+                `
+                : "";
+
+
+        return `
+
+            <div class="question-header">
+
+                <div class="question-number">
+                    Question ${index + 1}
+                </div>
+
+                <div class="status-badge ${statusClass}">
+                    ${statusText}
+                </div>
+
+            </div>
+
+
+            <div class="question-text">
+                ${questionText}
+            </div>
+
+
+            <div class="options">
+                ${optionsHTML}
+            </div>
+
+
+            <div class="answer-box">
+
+                <div class="answer-row">
+
+                    <strong>
+                        Your answer:
+                    </strong>
+
+                    ${candidateAnswerHTML}
+
+                </div>
+
+
+                <div class="answer-row">
+
+                    <strong>
+                        Correct answer:
+                    </strong>
+
+                    <span class="correct-answer">
+                        ${escapeHTML(correctAnswer || "Not available")}
+                    </span>
+
+                </div>
+
+                ${explanationHTML}
+
+            </div>
+
+        `;
+
+    }
+
+
+    /*
+     * ============================================================
+     * GET OPTIONS
+     * ============================================================
+     */
+
+    function getOptions(question) {
+
+        if (
+            Array.isArray(
+                question.options
+            )
+        ) {
+
+            return question.options;
+
+        }
+
+
+        /*
+         * Support A/B/C/D object format.
+         */
+
+        const result = [];
+
+
+        [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+        ].forEach(
+            letter => {
+
+                if (
+                    question[letter] !== undefined
+                ) {
+
+                    result.push({
+                        letter: letter,
+                        text: question[letter]
+                    });
+
+                }
+
+            }
+        );
+
+
+        return result;
+
+    }
+
+
+    /*
+     * ============================================================
+     * OPTION LETTER
+     * ============================================================
+     */
+
+    function getOptionLetter(
+        option,
+        index
+    ) {
+
+        if (
+            option &&
+            typeof option === "object" &&
+            option.letter
+        ) {
+
+            return String(
+                option.letter
+            ).toUpperCase();
+
+        }
+
+
+        return String.fromCharCode(
+            65 + index
+        );
+
+    }
+
+
+    /*
+     * ============================================================
+     * OPTION TEXT
+     * ============================================================
+     */
+
+    function getOptionText(
+        option
+    ) {
+
+        if (
+            option &&
+            typeof option === "object"
+        ) {
+
+            return (
+                option.text ??
+                option.value ??
+                option.label ??
+                ""
+            );
+
+        }
+
+
+        return String(
+            option ?? ""
+        );
+
+    }
+
+
+    /*
+     * ============================================================
+     * GET CORRECT ANSWER
+     * ============================================================
+     */
+
+    function getCorrectAnswer(
+        question
+    ) {
+
+        return normalizeAnswer(
+            question.answer ??
+            question.correctAnswer ??
+            question.correct ??
+            question.correct_option ??
+            ""
+        );
+
+    }
+
+
+    /*
+     * ============================================================
+     * GET CANDIDATE ANSWER
+     * ============================================================
+     */
+
+    function getCandidateAnswer(
+        answers,
+        index,
+        question
+    ) {
+
+        if (
+            !answers ||
+            typeof answers !== "object"
+        ) {
+
+            return "";
+
+        }
+
+
+        /*
+         * Most likely format:
+         *
+         * answers[index]
+         */
+
+        if (
+            answers[index] !== undefined &&
+            answers[index] !== null
+        ) {
+
+            return normalizeAnswer(
+                answers[index]
+            );
+
+        }
+
+
+        /*
+         * Some answer structures may use
+         * question ID as the key.
+         */
+
+        if (
+            question &&
+            question.id !== undefined &&
+            answers[
+                question.id
+            ] !== undefined
+        ) {
+
+            return normalizeAnswer(
+                answers[
+                    question.id
+                ]
+            );
+
+        }
+
+
+        /*
+         * Alternative qIndex key.
+         */
+
+        const qKey =
+            `q${index + 1}`;
+
+
+        if (
+            answers[qKey] !== undefined
+        ) {
+
+            return normalizeAnswer(
+                answers[qKey]
+            );
+
+        }
+
+
+        return "";
+
+    }
+
+
+    /*
+     * ============================================================
+     * NORMALIZE ANSWERS
+     * ============================================================
+     */
+
+    function normalizeAnswer(
+        answer
+    ) {
+
+        if (
+            answer === null ||
+            answer === undefined
+        ) {
+
+            return "";
+
+        }
+
+
+        /*
+         * If an object was stored.
+         */
+
+        if (
+            typeof answer === "object"
+        ) {
+
+            return normalizeAnswer(
+                answer.letter ??
+                answer.value ??
+                answer.answer ??
+                answer.option ??
+                ""
+            );
+
+        }
+
+
+        return String(
+            answer
+        )
+        .trim()
+        .toUpperCase()
+        .replace(/\.$/, "");
+
+    }
+
+
+    /*
+     * ============================================================
+     * COMPARE ANSWERS
+     * ============================================================
+     */
+
+    function answersMatch(
+        first,
+        second
+    ) {
+
+        const a =
+            normalizeAnswer(first);
+
+        const b =
+            normalizeAnswer(second);
+
+
+        if (
+            !a ||
+            !b
+        ) {
+
+            return false;
+
+        }
+
+
+        /*
+         * Direct comparison.
+         */
+
+        if (
+            a === b
+        ) {
+
+            return true;
+
+        }
+
+
+        /*
+         * Handle answers such as:
+         *
+         * A
+         * A.
+         * (A)
+         * Option A
+         */
+
+        const cleanA =
+            a
+                .replace(/^\(?OPTION\s*/i, "")
+                .replace(/[()]/g, "")
+                .replace(/\.$/, "")
+                .trim();
+
+
+        const cleanB =
+            b
+                .replace(/^\(?OPTION\s*/i, "")
+                .replace(/[()]/g, "")
+                .replace(/\.$/, "")
+                .trim();
+
+
+        return cleanA === cleanB;
+
+    }
+
+
+    /*
+     * ============================================================
+     * SHORTEN SUBJECT NAME
+     * ============================================================
+     */
+
+    function shortenSubjectName(
+        subject
+    ) {
+
+        const names = {
+
+            "English Language":
+                "English",
+
+            "Use of English":
+                "English",
+
+            "Mathematics":
+                "Maths",
+
+            "Agricultural Science":
+                "Agric",
+
+            "Christian Religious Studies":
+                "CRS",
+
+            "Islamic Religious Studies":
+                "IRS",
+
+            "Literature in English":
+                "Literature"
+
+        };
+
+
+        return names[subject] ||
+            subject;
+
+    }
+
+
+    /*
+     * ============================================================
+     * MESSAGE
+     * ============================================================
+     */
+
+    function showMessage(
+        message
+    ) {
+
+        document.getElementById(
+            "questions-container"
+        ).innerHTML = `
+            <div class="message-card">
+                ${escapeHTML(message)}
+            </div>
+        `;
+
+    }
+
+
+    /*
+     * ============================================================
+     * ESCAPE HTML
+     * ============================================================
+     */
+
+    function escapeHTML(
+        value
+    ) {
+
+        const div =
+            document.createElement(
+                "div"
+            );
+
+
+        div.textContent =
+            value === undefined ||
+            value === null
+                ? ""
+                : String(value);
+
+
+        return div.innerHTML;
+
+    }
+
+
+    /*
+     * ============================================================
+     * MATHJAX
+     * ============================================================
+     */
+
+    function renderMath() {
+
+        if (
+            window.MathJax &&
+            typeof MathJax.typesetPromise === "function"
+        ) {
+
+            MathJax.typesetPromise()
+                .catch(
+                    error =>
+                        console.warn(
+                            "MathJax rendering failed:",
+                            error
+                        )
+                );
+
+        }
+
+    }
+
+
+    /*
+     * ============================================================
+     * START
+     * ============================================================
+     */
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+
+            loadCorrectionData()
+                .catch(
+                    error => {
+
+                        console.error(
+                            "Corrections initialization failed:",
+                            error
+                        );
+
+
+                        showMessage(
+                            "Unable to load your corrections. Please return to the result page and try again."
+                        );
+
+                    }
+                );
+
+        }
+    );
+
+</script>
+
+</body>
+</html>
