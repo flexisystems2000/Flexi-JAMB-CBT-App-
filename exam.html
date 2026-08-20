@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="theme.css">
+    <script src="lucide.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Flexi CBT | Simulator</title>
     
@@ -39,8 +40,8 @@
         .h-left span { color: var(--flexi-green, #008000); }
         .h-right { display: flex; align-items: center; gap: 12px; }
         #timer { font-size: 1.2rem; font-weight: bold; min-width: 80px; text-align: right; color: var(--text); }
-        .calc-icon { width: 26px; height: 26px; cursor: pointer; filter: var(--icon-filter, none); }
-
+        .calc-icon { width: 26px; height: 26px; cursor: pointer; color: var(--text); }
+        
         .beaker-wrap { width: 80px; height: 12px; display: flex; align-items: center; justify-content: flex-start; }
         .beaker-dot { width: 10px; height: 10px; background: #ff0000; border-radius: 50%; z-index: 2; }
         .beaker-liquid { height: 3px; background: #ff0000; transition: width 1s linear; margin-left: -2px; border-radius: 0 5px 5px 0; }
@@ -99,7 +100,7 @@
             <div id="beaker-liquid" class="beaker-liquid"></div>
         </div>
         <div id="timer">0:00:00</div>
-        <img src="https://i.postimg.cc/3rk3rtb6/Background-Eraser-20260213-084152616.png" class="calc-icon" id="calc-btn">
+        <i data-lucide="calculator" class="calc-icon" id="calc-btn"></i>
     </div>
 </header>
 
@@ -148,7 +149,7 @@
 <script src="back-handler.js"></script>
 <script src="idb.js"></script>
 <script src="theme.js"></script>
-
+<script>lucide.createIcons();</script>
 <script>
 let examData = {}, userAnswers = {}, visitedQuestions = {};
 let currentSubject = "", currentQIndex = 0;
