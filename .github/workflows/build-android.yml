@@ -70,15 +70,28 @@ jobs:
           sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
           sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
 
-          sed -i 's/com.android.tools.build:gradle:[0-9.]\+/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
-          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]\+")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
+          sed -i 's/com.android.tools.build:gradle:[0-9.]*/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
+          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]*")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
 
       - name: Generate icons & splash
         run: |
+          echo "=== Checking assets folder ==="
+          ls -la assets/ || echo "❌ assets/ folder not found!"
+
+          echo "=== Generating icons & splash ==="
           npx @capacitor/assets generate --android \
             --iconBackgroundColor '#000000' \
             --splashBackgroundColor '#0A1F6E' \
-            --logoSplashScale 0.3 || true
+            --logoSplashScale 0.3
+
+          echo "=== Verifying generated icons ==="
+          if [ -d "android/app/src/main/res/mipmap-xxxhdpi" ]; then
+            echo "✅ Icons generated successfully:"
+            ls -la android/app/src/main/res/mipmap-xxxhdpi/
+          else
+            echo "❌ ERROR: Icons were NOT generated!"
+            exit 1
+          fi
 
       - name: Apply Google Services plugin
         run: |
@@ -125,19 +138,19 @@ jobs:
 
       - name: Setup or Restore Keystore
         run: |
-          mkdir -p ~/.android
+          mkdir -p \~/.android
           if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
             echo "Restoring permanent keystore from secrets..."
-            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > \~/.android/debug.keystore
           else
             echo "Generating new permanent keystore..."
-            keytool -genkey -v -keystore ~/.android/debug.keystore \
+            keytool -genkey -v -keystore \~/.android/debug.keystore \
               -storepass android -alias androiddebugkey -keypass android \
               -keyalg RSA -keysize 2048 -validity 10000 \
               -dname "CN=Android Debug,O=Android,C=US"
             
             echo "=================== COPY THIS BASE64 TEXT ==================="
-            base64 -w 0 ~/.android/debug.keystore
+            base64 -w 0 \~/.android/debug.keystore
             echo ""
             echo "============================================================="
           fi
@@ -145,7 +158,7 @@ jobs:
       - name: Print Keystore Fingerprints (SHA-1 & SHA-256)
         run: |
           echo "=================== YOUR SHA-1 & SHA-256 FINGERPRINTS ==================="
-          keytool -list -v -keystore ~/.android/debug.keystore \
+          keytool -list -v -keystore \~/.android/debug.keystore \
             -storepass android -alias androiddebugkey | grep -E "SHA1:|SHA256:"
           echo "========================================================================="
 
