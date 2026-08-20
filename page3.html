@@ -176,6 +176,8 @@
             color: var(--flexi-navy);
             font-weight: bold;
             background-color: var(--bg);
+            text-align: center;
+            padding: 20px;
         }
 
         @media (max-width: 480px) {
@@ -193,6 +195,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <div id="loading" class="loading-screen">
@@ -214,6 +217,7 @@
             </div>
 
             <div class="info-summary">
+
                 <div>
                     Exam Type:
                     <span id="display-exam" class="highlight">Loading...</span>
@@ -234,38 +238,48 @@
                 </div>
 
                 <div id="display-subjects" class="subject-tags"></div>
+
             </div>
 
             <ul class="rules-list">
+
                 <li>
                     <b>Read Carefully:</b>
-                    Ensure you understand all questions before selecting an answer. You can skip questions and return to them later using the navigation panel.
+                    Ensure you understand all questions before selecting an answer.
+                    You can skip questions and return to them later using the navigation panel.
                 </li>
 
                 <li>
                     <b>Timing:</b>
-                    The countdown timer starts immediately after clicking the <b>Start Examination</b> button. The system will auto-submit once the allocated time expires.
+                    The countdown timer starts immediately after clicking the
+                    <b>Start Examination</b> button. The system will auto-submit
+                    once the allocated time expires.
                 </li>
 
                 <li>
                     <b>Selection:</b>
-                    Only one answer is correct for each multiple-choice question. You may change your answer before final submission.
+                    Only one answer is correct for each multiple-choice question.
+                    You may change your answer before final submission.
                 </li>
 
                 <li>
                     <b>Technical Requirements:</b>
-                    Do not refresh the browser or press the back button during the examination to avoid losing progress.
+                    Do not refresh the browser or press the back button during
+                    the examination to avoid losing progress.
                 </li>
 
                 <li>
                     <b>Auto-Save:</b>
-                    Your answers are automatically saved locally on your device during the examination.
+                    Your answers are automatically saved locally on your device
+                    during the examination.
                 </li>
 
                 <li>
                     <b>Submission:</b>
-                    Click the <b>Submit</b> button only when you are fully done. Submitted exams cannot be reopened.
+                    Click the <b>Submit</b> button only when you are fully done.
+                    Submitted exams cannot be reopened.
                 </li>
+
             </ul>
 
             <button class="btn-start" onclick="startExam()">
@@ -279,12 +293,18 @@
     <script src="idb.js"></script>
     <script src="theme.js"></script>
     <script src="back-handler.js"></script>
+
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import {
-            getAuth,
-            onAuthStateChanged
-        } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        /*
+         * Firebase is still available when the device is online.
+         *
+         * However, Firebase is NOT required to open this page if
+         * the candidate's information has already been stored locally.
+         */
+
+        let firebaseReady = false;
+        let auth = null;
 
         const firebaseConfig = {
             apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
@@ -292,79 +312,395 @@
             projectId: "waec2026jamb2027",
         };
 
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-
         const loadingScreen = document.getElementById("loading");
         const mainContent = document.getElementById("main-content");
 
-        onAuthStateChanged(auth, async (user) => {
-    if (user) {
-        // Save the candidate name so exam.html can use it
-        const candidateName =
-            user.displayName ||
-            (user.email ? user.email.split("@")[0] : null) ||
-            "Candidate";
+        /*
+         * ---------------------------------------------------------
+         * LOCAL STORAGE HELPERS
+         * ---------------------------------------------------------
+         */
 
-        if (typeof IDB !== "undefined") {
-            await IDB.setItem("userName", candidateName);
-            await IDB.setItem("userEmail", user.email || "");
-            await IDB.setItem("userUid", user.uid || "");
-        } else {
-            localStorage.setItem("userName", candidateName);
-            localStorage.setItem("userEmail", user.email || "");
-            localStorage.setItem("userUid", user.uid || "");
+        async function getLocalItem(key) {
+
+            try {
+
+                if (
+                    typeof IDB !== "undefined" &&
+                    typeof IDB.getItem === "function"
+                ) {
+                    const value = await IDB.getItem(key);
+
+                    if (value !== null && value !== undefined && value !== "") {
+                        return value;
+                    }
+                }
+
+            } catch (error) {
+
+                console.warn(
+                    "IndexedDB read failed for:",
+                    key,
+                    error
+                );
+
+            }
+
+            return localStorage.getItem(key);
         }
 
-        loadingScreen.style.display = "none";
-        mainContent.style.display = "block";
-        document.body.style.display = "block";
-        loadSelectionData();
-    } else {
-        window.location.href = "login.html";
-    }
-});
+
+        async function setLocalItem(key, value) {
+
+            try {
+
+                if (
+                    typeof IDB !== "undefined" &&
+                    typeof IDB.setItem === "function"
+                ) {
+                    await IDB.setItem(key, value);
+                    return;
+                }
+
+            } catch (error) {
+
+                console.warn(
+                    "IndexedDB write failed for:",
+                    key,
+                    error
+                );
+
+            }
+
+            localStorage.setItem(key, value);
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * LOAD CANDIDATE FROM LOCAL STORAGE
+         * ---------------------------------------------------------
+         */
+
+        async function getLocalCandidate() {
+
+            const userName = await getLocalItem("userName");
+            const userEmail = await getLocalItem("userEmail");
+            const userUid = await getLocalItem("userUid");
+
+            return {
+                userName: userName || "",
+                userEmail: userEmail || "",
+                userUid: userUid || ""
+            };
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * DISPLAY PAGE
+         * ---------------------------------------------------------
+         */
+
+        async function allowCandidateAccess() {
+
+            loadingScreen.style.display = "none";
+            mainContent.style.display = "block";
+            document.body.style.display = "block";
+
+            await loadSelectionData();
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * VERIFY CANDIDATE
+         * ---------------------------------------------------------
+         *
+         * Priority:
+         *
+         * 1. Firebase authenticated user if available.
+         * 2. Local IndexedDB/localStorage candidate information.
+         * 3. Login page if nothing exists.
+         *
+         */
+
+        async function verifyCandidate() {
+
+            /*
+             * FIRST:
+             * Try Firebase.
+             *
+             * If Firebase cannot load because the device is offline,
+             * the catch block will immediately use local data.
+             */
+
+            try {
+
+                const firebaseModule =
+                    await import(
+                        "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"
+                    );
+
+                const authModule =
+                    await import(
+                        "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"
+                    );
+
+                const app =
+                    firebaseModule.initializeApp(firebaseConfig);
+
+                auth =
+                    authModule.getAuth(app);
+
+                firebaseReady = true;
+
+                /*
+                 * Firebase auth state is asynchronous.
+                 *
+                 * We give it a chance to restore an existing
+                 * authenticated session.
+                 */
+
+                authModule.onAuthStateChanged(
+                    auth,
+                    async (user) => {
+
+                        if (user) {
+
+                            /*
+                             * Firebase user exists.
+                             * Save the latest candidate information locally.
+                             */
+
+                            const candidateName =
+                                user.displayName ||
+                                (
+                                    user.email
+                                        ? user.email.split("@")[0]
+                                        : null
+                                ) ||
+                                "Candidate";
+
+                            await setLocalItem(
+                                "userName",
+                                candidateName
+                            );
+
+                            await setLocalItem(
+                                "userEmail",
+                                user.email || ""
+                            );
+
+                            await setLocalItem(
+                                "userUid",
+                                user.uid || ""
+                            );
+
+                            await allowCandidateAccess();
+
+                            return;
+                        }
+
+                        /*
+                         * Firebase is available but there is no
+                         * currently authenticated user.
+                         *
+                         * Before sending the candidate to login,
+                         * check the locally stored candidate.
+                         */
+
+                        const localCandidate =
+                            await getLocalCandidate();
+
+                        if (
+                            localCandidate.userName ||
+                            localCandidate.userEmail ||
+                            localCandidate.userUid
+                        ) {
+
+                            await allowCandidateAccess();
+
+                        } else {
+
+                            window.location.href = "login.html";
+
+                        }
+
+                    }
+                );
+
+            } catch (error) {
+
+                /*
+                 * Firebase failed to load.
+                 *
+                 * This is expected when the device is offline.
+                 *
+                 * DO NOT redirect immediately.
+                 *
+                 * Check IndexedDB/localStorage instead.
+                 */
+
+                console.warn(
+                    "Firebase unavailable. Using offline candidate data.",
+                    error
+                );
+
+                const localCandidate =
+                    await getLocalCandidate();
+
+                if (
+                    localCandidate.userName ||
+                    localCandidate.userEmail ||
+                    localCandidate.userUid
+                ) {
+
+                    await allowCandidateAccess();
+
+                } else {
+
+                    /*
+                     * No Firebase session and no local candidate data.
+                     * The candidate must log in.
+                     */
+
+                    window.location.href = "login.html";
+
+                }
+
+            }
+
+        }
+
+
+        /*
+         * ---------------------------------------------------------
+         * LOAD EXAM SELECTION
+         * ---------------------------------------------------------
+         */
 
         async function loadSelectionData() {
 
-            // Exam Name
-            const displayName = ((typeof IDB !== "undefined") ? await IDB.getItem("displayExamName") : localStorage.getItem("displayExamName")) || "JAMB";
-            document.getElementById("display-exam").innerText = displayName;
+            /*
+             * EXAM NAME
+             */
 
-            // Subjects
-            const subjectsRaw = (typeof IDB !== "undefined") ? await IDB.getItem("userSubjectKeys") : localStorage.getItem("userSubjectKeys");
-            const subjects = subjectsRaw ? JSON.parse(subjectsRaw) : ["English Language"];
-            const subjectContainer = document.getElementById("display-subjects");
+            const displayName =
+                (
+                    await getLocalItem("displayExamName")
+                ) || "JAMB";
+
+            document.getElementById(
+                "display-exam"
+            ).innerText = displayName;
+
+
+            /*
+             * SUBJECTS
+             */
+
+            const subjectsRaw =
+                await getLocalItem("userSubjectKeys");
+
+            let subjects = [];
+
+            try {
+
+                subjects =
+                    subjectsRaw
+                        ? JSON.parse(subjectsRaw)
+                        : ["English Language"];
+
+            } catch (error) {
+
+                console.warn(
+                    "Could not parse selected subjects:",
+                    error
+                );
+
+                subjects = ["English Language"];
+
+            }
+
+
+            const subjectContainer =
+                document.getElementById("display-subjects");
 
             subjectContainer.innerHTML = "";
 
+
             subjects.forEach(subject => {
-                const tag = document.createElement("div");
+
+                const tag =
+                    document.createElement("div");
+
                 tag.className = "tag";
+
                 tag.innerText = subject;
+
                 subjectContainer.appendChild(tag);
+
             });
 
-            // Exam Mode
-            const mode = ((typeof IDB !== "undefined") ? await IDB.getItem("examMode") : localStorage.getItem("examMode")) || "Practice";
-            document.getElementById("display-mode").innerText = `${mode} Mode`;
 
-            // Time Logic
+            /*
+             * EXAM MODE
+             */
+
+            const mode =
+                (
+                    await getLocalItem("examMode")
+                ) || "Practice";
+
+            document.getElementById(
+                "display-mode"
+            ).innerText = `${mode} Mode`;
+
+
+            /*
+             * TIME
+             */
+
             let timeDisplay = "50 Minutes";
 
-            if (mode.toLowerCase() === "full") {
-                timeDisplay = "2 Hours (120 Minutes)";
+            if (
+                mode.toLowerCase() === "full"
+            ) {
+
+                timeDisplay =
+                    "2 Hours (120 Minutes)";
+
             }
 
-            document.getElementById("display-time").innerText = timeDisplay;
+            document.getElementById(
+                "display-time"
+            ).innerText = timeDisplay;
+
         }
+
+
+        /*
+         * ---------------------------------------------------------
+         * START EXAM
+         * ---------------------------------------------------------
+         */
 
         window.startExam = function () {
 
-            // Optional Sound or Animation can be added here
-
             window.location.href = "exam.html";
+
         };
+
+
+        /*
+         * ---------------------------------------------------------
+         * START VERIFICATION
+         * ---------------------------------------------------------
+         */
+
+        verifyCandidate();
+
     </script>
 
 </body>
