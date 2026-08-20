@@ -63,7 +63,7 @@ jobs:
       - name: Add Android platform
         run: npx cap add android || true
 
-     # ============================================================
+      # ============================================================
       # GENERATE ICONS & SPLASH (using resources/ folder)
       # ============================================================
       - name: Generate Android icons and splash screen
@@ -86,6 +86,7 @@ jobs:
 
           echo "=== Verifying generated icons ==="
           ls -lah android/app/src/main/res/mipmap-xxxhdpi/ || echo "No icons generated"
+
       # ============================================================
       # COPY GOOGLE SERVICES
       # ============================================================
@@ -110,36 +111,6 @@ jobs:
               <string name="server_client_id">465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com</string>
           </resources>
           EOF
-
-      # ============================================================
-      # ANDROID SDK / GRADLE VERSIONS
-      # ============================================================
-      - name: Force higher Android SDK & Gradle versions
-        run: |
-          sed -i 's/compileSdkVersion = [0-9]\+/compileSdkVersion = 36/' android/variables.gradle || true
-          sed -i 's/targetSdkVersion = [0-9]\+/targetSdkVersion = 36/' android/variables.gradle || true
-          sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
-          sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
-          sed -i 's/com.android.tools.build:gradle:[0-9.]*/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
-          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]*")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
-
-      # ============================================================
-      # APPLY GOOGLE SERVICES PLUGIN
-      # ============================================================
-      - name: Apply Google Services plugin
-        run: |
-          if ! grep -q "com.google.gms:google-services" android/build.gradle; then
-            sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
-          fi
-          if ! grep -q "com.google.gms.google-services" android/app/build.gradle; then
-            echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
-          fi
-
-      # ============================================================
-      # SYNC CAPACITOR
-      # ============================================================
-      - name: Sync Capacitor
-        run: npx cap sync android
 
       # ============================================================
       # MAIN ACTIVITY
@@ -172,18 +143,48 @@ jobs:
           fi
 
       # ============================================================
+      # ANDROID SDK / GRADLE VERSIONS
+      # ============================================================
+      - name: Force higher Android SDK & Gradle versions
+        run: |
+          sed -i 's/compileSdkVersion = [0-9]\+/compileSdkVersion = 36/' android/variables.gradle || true
+          sed -i 's/targetSdkVersion = [0-9]\+/targetSdkVersion = 36/' android/variables.gradle || true
+          sed -i 's/compileSdk [0-9]\+/compileSdk 36/' android/app/build.gradle || true
+          sed -i 's/targetSdk [0-9]\+/targetSdk 36/' android/app/build.gradle || true
+          sed -i 's/com.android.tools.build:gradle:[0-9.]*/com.android.tools.build:gradle:8.9.1/' android/build.gradle || true
+          sed -i 's/classpath("com.android.tools.build:gradle:[0-9.]*")/classpath("com.android.tools.build:gradle:8.9.1")/' android/build.gradle || true
+
+      # ============================================================
+      # APPLY GOOGLE SERVICES PLUGIN
+      # ============================================================
+      - name: Apply Google Services plugin
+        run: |
+          if ! grep -q "com.google.gms:google-services" android/build.gradle; then
+            sed -i '/dependencies {/a\        classpath "com.google.gms:google-services:4.4.2"' android/build.gradle
+          fi
+          if ! grep -q "com.google.gms.google-services" android/app/build.gradle; then
+            echo 'apply plugin: "com.google.gms.google-services"' >> android/app/build.gradle
+          fi
+
+      # ============================================================
+      # SYNC CAPACITOR (Runs AFTER MainActivity & Strings injection)
+      # ============================================================
+      - name: Sync Capacitor
+        run: npx cap sync android
+
+      # ============================================================
       # SETUP / RESTORE KEYSTORE
       # ============================================================
       - name: Setup or Restore Keystore
         run: |
-          mkdir -p \~/.android
+          mkdir -p ~/.android
           if [ -n "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" ]; then
             echo "Restoring permanent keystore from secrets..."
-            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > \~/.android/debug.keystore
+            echo "${{ secrets.DEBUG_KEYSTORE_BASE64 }}" | base64 -d > ~/.android/debug.keystore
           else
             echo "Generating new permanent keystore..."
             keytool -genkey -v \
-              -keystore \~/.android/debug.keystore \
+              -keystore ~/.android/debug.keystore \
               -storepass android \
               -alias androiddebugkey \
               -keypass android \
@@ -193,7 +194,7 @@ jobs:
               -dname "CN=Android Debug,O=Android,C=US"
 
             echo "=================== COPY THIS BASE64 TEXT ==================="
-            base64 -w 0 \~/.android/debug.keystore
+            base64 -w 0 ~/.android/debug.keystore
             echo ""
             echo "============================================================="
           fi
@@ -205,7 +206,7 @@ jobs:
         run: |
           echo "=================== YOUR SHA-1 & SHA-256 FINGERPRINTS ==================="
           keytool -list -v \
-            -keystore \~/.android/debug.keystore \
+            -keystore ~/.android/debug.keystore \
             -storepass android \
             -alias androiddebugkey | grep -E "SHA1:|SHA256:"
           echo "========================================================================="
