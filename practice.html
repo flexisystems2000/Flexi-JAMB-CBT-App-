@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="theme.css">
+    <script src="lucide.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Flexi CBT | Practice Questions</title>
     
@@ -42,8 +43,13 @@
         .back-btn { width: 44px; height: 44px; border-radius: 50%; background-color: var(--card-bg, #ffffff); display: flex; align-items: center; justify-content: center; color: var(--text, #333333); text-decoration: none; box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.08)); border: 1px solid var(--border-color, transparent); transition: background-color 0.3s ease, color 0.3s ease; }
         body.dark .back-btn { background-color: #1e1e1e; color: #e0e0e0; border-color: #333333; }
         
-        .calc-icon { width: 32px; height: 32px; cursor: pointer; filter: var(--icon-filter, none); }
-
+        .calc-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: var(--text, #333);
+        }
+        
         .question-card { background: var(--card-bg, #ffffff); border-radius: 16px; padding: 20px; box-shadow: var(--card-shadow, 0 4px 12px rgba(0,0,0,0.08)); margin-bottom: 20px; border: 1px solid var(--border-color, #eee); }
         body.dark .question-card { background: #1e1e1e; color: #ffffff; border-color: #333; }
 
@@ -94,7 +100,7 @@
         <a href="past.html" class="back-btn" aria-label="Go Back">
             <box-icon name="left-arrow-alt" size="sm"></box-icon>
         </a>
-        <img src="https://i.postimg.cc/3rk3rtb6/Background-Eraser-20260213-084152616.png" class="calc-icon" id="calc-btn" alt="Calculator">
+        <i data-lucide="calculator" class="calc-icon" id="calc-btn"></i>
     </div>
 
     <div class="question-card" id="questionCard">
