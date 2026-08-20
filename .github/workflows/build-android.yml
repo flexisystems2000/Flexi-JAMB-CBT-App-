@@ -63,32 +63,29 @@ jobs:
       - name: Add Android platform
         run: npx cap add android || true
 
-      # ============================================================
-      # GENERATE ICONS & SPLASH (Same method as F.E.C Admin Suite)
+     # ============================================================
+      # GENERATE ICONS & SPLASH (using resources/ folder)
       # ============================================================
       - name: Generate Android icons and splash screen
         run: |
           echo "=== Checking resources folder ==="
-          ls -lah resources/ || echo "resources/ folder not found"
+          ls -lah resources/
 
           if [ ! -f "resources/icon.png" ]; then
             echo "❌ ERROR: resources/icon.png is missing!"
-            echo "Please put your icon as: resources/icon.png"
             exit 1
           fi
 
           if [ ! -f "resources/splash.png" ]; then
             echo "❌ ERROR: resources/splash.png is missing!"
-            echo "Please put your splash as: resources/splash.png"
             exit 1
           fi
 
-          echo "=== Generating icons and splash ==="
-          npx capacitor-assets generate --android
+          echo "=== Generating icons and splash from resources/ ==="
+          npx capacitor-assets generate --android --assetPath resources
 
           echo "=== Verifying generated icons ==="
           ls -lah android/app/src/main/res/mipmap-xxxhdpi/ || echo "No icons generated"
-
       # ============================================================
       # COPY GOOGLE SERVICES
       # ============================================================
