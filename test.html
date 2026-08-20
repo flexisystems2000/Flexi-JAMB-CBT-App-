@@ -195,7 +195,7 @@
 
     <!-- JAMB -->
     <div class="exam-card" onclick="selectExam('JAMB')">
-        <img src="https://i.postimg.cc/651CKsfF/images-(2).jpg" alt="JAMB Logo" class="img-placeholder">
+        <img src="assets/images (2).jpeg" alt="JAMB Logo" class="img-placeholder">
 
         <div class="card-info">
             <b>JAMB CBT Simulator</b>
@@ -208,7 +208,7 @@
     <!-- WAEC (DISABLED) -->
     <div class="exam-card disabled">
         <span class="coming-soon-badge">Coming Soon</span>
-        <img src="https://i.postimg.cc/PxZSpX2Q/images-2.png" alt="WAEC Logo" class="img-placeholder">
+        <img src="assets/images\~2.png" alt="WAEC Logo" class="img-placeholder">
 
         <div class="card-info">
             <b>WAEC CBT Simulator</b>
@@ -221,7 +221,7 @@
     <!-- NECO (DISABLED) -->
     <div class="exam-card disabled">
         <span class="coming-soon-badge">Coming Soon</span>
-        <img src="https://i.postimg.cc/ZqjbkmrR/Neco-official-banner.jpg" alt="NECO Logo" class="img-placeholder">
+        <img src="assets/Neco_official_banner.jpg" alt="NECO Logo" class="img-placeholder">
 
         <div class="card-info">
             <b>NECO CBT Simulator</b>
@@ -231,9 +231,9 @@
         <div class="arrow">›</div>
     </div>
 
-    <!-- FLEXI -->
+    <!-- FLEXI / Custom -->
     <div class="exam-card" onclick="selectExam('FLEXI')">
-        <img src="https://i.postimg.cc/0Qm3PLw5/1771700279759-2.jpg" alt="Flexi Logo" class="img-placeholder">
+        <img src="assets/1771700279759-2.jpg" alt="Flexi Logo" class="img-placeholder">
 
         <div class="card-info">
             <b>Custom CBT Simulator</b>
@@ -245,7 +245,7 @@
 
     <!-- CHALLENGE -->
     <div class="exam-card" onclick="selectExam('CHALLENGE')">
-        <img src="https://i.postimg.cc/mD8T3060/51872167-blue-champion-cup-icon-number-1-illustration.jpg" alt="Trophy Logo" class="img-placeholder">
+        <img src="assets/51872167-blue-champion-cup-icon-number-1-illustration.jpg" alt="Trophy Logo" class="img-placeholder">
 
         <div class="card-info">
             <b>Challenge CBT Simulator</b>
@@ -275,35 +275,35 @@
     const auth = getAuth(app);
 
     window.selectExam = async (type) => {
-    // Block WAEC & NECO
-    if (type === 'WAEC' || type === 'NECO') {
-        return;
-    }
+        // Block WAEC & NECO
+        if (type === 'WAEC' || type === 'NECO') {
+            return;
+        }
 
-    // Challenge goes straight to the external link — no storage, no folderType
-    if (type === 'CHALLENGE') {
-        window.location.href = "https://flexisystems2000.github.io/weeklycbtmock/";
-        return;
-    }
+        // Challenge goes straight to the external link
+        if (type === 'CHALLENGE') {
+            window.location.href = "https://flexisystems2000.github.io/weeklycbtmock/";
+            return;
+        }
 
-    // JAMB + Custom (FLEXI) both use the JAMB flow
-    let folderType = (type === 'FLEXI') ? 'JAMB' : type;
+        // JAMB + Custom (FLEXI) both use the JAMB flow
+        let folderType = (type === 'FLEXI') ? 'JAMB' : type;
 
-    if (typeof IDB !== "undefined") {
-        await IDB.setItem("selectedExamType", folderType);
-        await IDB.setItem("displayExamName", type);
-    } else {
-        localStorage.setItem("selectedExamType", folderType);
-        localStorage.setItem("displayExamName", type);
-    }
+        if (typeof IDB !== "undefined") {
+            await IDB.setItem("selectedExamType", folderType);
+            await IDB.setItem("displayExamName", type);
+        } else {
+            localStorage.setItem("selectedExamType", folderType);
+            localStorage.setItem("displayExamName", type);
+        }
 
-    // Route
-    if (type === 'JAMB' || type === 'FLEXI') {
-        window.location.href = "page2.html";
-    } else {
-        window.location.href = "page2_waec.html";
-    }
-};
+        // Route
+        if (type === 'JAMB' || type === 'FLEXI') {
+            window.location.href = "page2.html";
+        } else {
+            window.location.href = "page2_waec.html";
+        }
+    };
 </script>
 </body>
 </html>
