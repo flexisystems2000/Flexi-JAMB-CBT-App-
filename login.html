@@ -241,9 +241,38 @@
     let currentView = "login";
     let resetStep = 1;
 
-    // Monitor Authentication State
-    auth.onAuthStateChanged((user) => {
+    // ========== HELPER: Save user data for offline use ==========
+    async function saveUserLocally(user) {
+        if (!user) return;
+
+        const name = user.displayName || (user.email ? user.email.split("@")[0] : "Candidate");
+
+        try {
+            if (typeof IDB !== "undefined") {
+                await IDB.setItem("userName", name);
+                await IDB.setItem("userEmail", user.email || "");
+                await IDB.setItem("userUid", user.uid || "");
+            } else {
+                localStorage.setItem("userName", name);
+                localStorage.setItem("userEmail", user.email || "");
+                localStorage.setItem("userUid", user.uid || "");
+            }
+            console.log("✅ User data saved locally for offline use");
+        } catch (err) {
+            console.warn("Failed to save to IDB, falling back to localStorage:", err);
+            localStorage.setItem("userName", name);
+            localStorage.setItem("userEmail", user.email || "");
+            localStorage.setItem("userUid", user.uid || "");
+        }
+    }
+
+    // Monitor Authentication State + Persist user data
+    auth.onAuthStateChanged(async (user) => {
         if (user) {
+            // Save user details so the app works offline
+            await saveUserLocally(user);
+
+            // Redirect
             const urlParams = new URLSearchParams(window.location.search);
             const redirect = urlParams.get('redirect');
             window.location.replace(redirect ? decodeURIComponent(redirect) : "index.html");
@@ -316,6 +345,7 @@
             showStatus("Signing you in...", "info");
             await auth.signInWithCustomToken(data.customToken);
 
+            // onAuthStateChanged will handle the rest (save + redirect)
             showStatus("Success! Redirecting...", "success");
 
         } catch (e) {
@@ -471,6 +501,7 @@
                 mainBtn.disabled = true;
                 showStatus("Logging in...", "info");
                 await auth.signInWithEmailAndPassword(email, pass);
+                // onAuthStateChanged will save data + redirect
             } 
             else if (currentView === "signup") {
                 if (!pass) return showStatus("Please enter your password.", "error");
@@ -486,6 +517,7 @@
                 showStatus("Creating account...", "info");
                 const res = await auth.createUserWithEmailAndPassword(email, pass);
                 await res.user.updateProfile({ displayName: name });
+                // onAuthStateChanged will save data + redirect
             } 
             else if (currentView === "forgot") {
                 if (resetStep === 1) {
