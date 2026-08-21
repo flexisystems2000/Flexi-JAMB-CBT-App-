@@ -35,7 +35,7 @@ body::before{
   padding:10px 12px 16px;
 }
 
-/* ===== TOP BAR ===== */
+/* TOP BAR */
 .top-bar{
   display:flex;align-items:center;justify-content:space-between;
   margin-bottom:8px;
@@ -55,14 +55,10 @@ body::before{
   font-size:.65rem;font-weight:900;
   padding:2px 6px;border-radius:8px;
 }
-.q-circle-wrap{
-  position:relative;width:72px;height:72px;
-}
+.q-circle-wrap{position:relative;width:72px;height:72px}
 .q-circle{
   width:72px;height:72px;border-radius:50%;
   background:radial-gradient(circle at 40% 35%,#1a3a7a,#0a1540);
-  border:3px solid transparent;
-  background-clip:padding-box;
   box-shadow:0 0 0 3px #ffd700,0 0 20px rgba(255,215,0,.35);
   display:flex;align-items:center;justify-content:center;
   font-size:1.6rem;font-weight:900;color:#fff;
@@ -81,9 +77,8 @@ body::before{
   border-radius:20px;padding:5px 10px;
   font-size:.85rem;font-weight:700;color:#7ec8ff;
 }
-.gems span{color:#4fc3f7}
 
-/* ===== PRIZE BANNER ===== */
+/* PRIZE BANNER */
 .prize-banner{
   background:linear-gradient(90deg,#e6b800,#ffd700,#f5c400);
   border-radius:8px;
@@ -91,23 +86,21 @@ body::before{
   text-align:center;
   margin:10px 0 14px;
   box-shadow:0 4px 15px rgba(255,200,0,.35);
-  position:relative;
   clip-path:polygon(4% 0%,96% 0%,100% 50%,96% 100%,4% 100%,0% 50%);
 }
 .prize-banner .main-prize{
   font-size:1.5rem;font-weight:900;color:#1a1200;
-  letter-spacing:.5px;
 }
 .prize-banner .sub-prize{
   font-size:.75rem;font-weight:700;color:#5a4500;
 }
 
-/* ===== QUESTION AREA ===== */
+/* QUESTION */
 .q-area{
   background:linear-gradient(180deg,rgba(10,30,80,.85),rgba(8,20,55,.9));
   border:1px solid rgba(80,140,255,.3);
   border-radius:14px;
-  padding:14px 14px 16px;
+  padding:14px;
   margin-bottom:14px;
   display:flex;gap:12px;align-items:flex-start;
 }
@@ -124,7 +117,7 @@ body::before{
   color:#e8f0ff;flex:1;
 }
 
-/* ===== ANSWER BUTTONS ===== */
+/* OPTIONS */
 .options{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
 .opt{
   display:flex;align-items:center;
@@ -134,7 +127,6 @@ body::before{
   padding:13px 16px 13px 14px;
   cursor:pointer;transition:.15s;
   font-size:.95rem;font-weight:600;color:#d8e8ff;
-  position:relative;
   clip-path:polygon(3% 0%,97% 0%,100% 50%,97% 100%,3% 100%,0% 50%);
 }
 .opt:active{transform:scale(.98)}
@@ -154,23 +146,25 @@ body::before{
 }
 .opt.dim{opacity:.3;pointer-events:none}
 
-/* ===== LIFELINES ===== */
+/* LIFELINES */
 .lifelines{
   display:flex;justify-content:center;gap:14px;
   margin-bottom:12px;
 }
 .life-btn{
-  width:58px;height:58px;border-radius:50%;
+  width:64px;height:64px;border-radius:50%;
   border:3px solid #3a7adf;
   background:radial-gradient(circle at 35% 30%,#1a4a9a,#0a2048);
-  color:#fff;font-size:.6rem;font-weight:800;
+  color:#fff;font-size:.55rem;font-weight:800;
   cursor:pointer;display:flex;flex-direction:column;
   align-items:center;justify-content:center;
   position:relative;transition:.15s;
   box-shadow:0 0 12px rgba(50,120,220,.3);
+  gap:2px;
 }
 .life-btn:active{transform:scale(.92)}
-.life-btn .icon{font-size:1.25rem;line-height:1}
+.life-btn .icon{font-size:1.2rem;line-height:1}
+.life-btn .life-label{font-size:.52rem;letter-spacing:.2px}
 .life-btn .badge{
   position:absolute;top:-4px;right:-4px;
   background:#ff5722;color:#fff;
@@ -184,7 +178,6 @@ body::before{
   border-color:#555;box-shadow:none;
 }
 
-/* ===== BOTTOM BANNER ===== */
 .bottom-banner{
   margin-top:auto;
   text-align:center;
@@ -198,7 +191,7 @@ body::before{
   text-transform:uppercase;
 }
 
-/* ===== OVERLAYS ===== */
+/* OVERLAYS */
 .overlay{
   position:fixed;inset:0;
   background:rgba(0,8,30,.94);
@@ -236,7 +229,6 @@ body::before{
 <body>
 <div class="game-wrap">
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <button class="walk-btn" onclick="walkAway()">
       <svg viewBox="0 0 24 24"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg>
@@ -256,36 +248,35 @@ body::before{
     </div>
   </div>
 
-  <!-- PRIZE BANNER -->
   <div class="prize-banner">
     <div class="main-prize" id="prizeMain">₦1,000</div>
     <div class="sub-prize" id="prizeSub">Safe: ₦0</div>
   </div>
 
-  <!-- QUESTION -->
   <div class="q-area">
     <div class="cat-icon" id="catIcon">📚</div>
     <div class="q-text" id="qText">Loading question...</div>
   </div>
 
-  <!-- OPTIONS -->
   <div class="options" id="options"></div>
 
   <!-- LIFELINES -->
   <div class="lifelines">
     <button class="life-btn" id="life5050" onclick="use5050()">
-      <span class="icon">½</span>50:50
+      <span class="icon">½</span>
+      <span class="life-label">50:50</span>
     </button>
     <button class="life-btn" id="lifeAudience" onclick="useAudience()">
       <span class="icon">👥</span>
-      <span class="badge">3</span>
+      <span class="life-label">Audience</span>
     </button>
     <button class="life-btn" id="lifeSwitch" onclick="useSwitch()">
       <span class="icon">🔄</span>
+      <span class="life-label">Switch</span>
     </button>
     <button class="life-btn" id="lifePhone" onclick="usePhone()">
-      <span class="icon">👤</span>
-      <span class="badge">5</span>
+      <span class="icon">📞</span>
+      <span class="life-label">Phone</span>
     </button>
   </div>
 
@@ -308,208 +299,259 @@ body::before{
   <div class="result-box">
     <h2 id="lifeTitle">Lifeline</h2>
     <div id="lifeContent"></div>
-    <button onclick="closeLife()">Continue</button>
+    <button onclick="closeLife()">CONTINUE</button>
   </div>
 </div>
 
-<audio id="sfx" preload="auto"></audio>
+<audio id="sfx" preload="none"></audio>
 
 <script>
 const LADDER = [1000,2000,3000,5000,10000,20000,30000,50000,75000,150000,250000,500000,750000,1000000,2000000];
 const SAFE = [4,9];
-let questions=[], qIndex=0, currentMoney=0, safeMoney=0;
-let used5050=false, usedPhone=false, usedAudience=false, usedSwitch=false;
-let answered=false, subject='';
+let questions = [], qIndex = 0, currentMoney = 0, safeMoney = 0;
+let used5050 = false, usedPhone = false, usedAudience = false, usedSwitch = false;
+let answered = false, subject = '';
 
-const sfx=document.getElementById('sfx');
-sfx.src='assets/millionaire-sounds.mp3';
-function playSound(){try{sfx.currentTime=0;sfx.play().catch(()=>{})}catch(e){}}
+const sfx = document.getElementById('sfx');
+sfx.src = 'assets/millionaire-sounds.mp3';
+sfx.loop = false;
 
-async function init(){
-  const p=new URLSearchParams(location.search);
-  subject=p.get('subject')||localStorage.getItem('millionaireSubject')||'English Language';
-  document.getElementById('subjectShort').textContent=subject.slice(0,3).toUpperCase();
+function stopSound() {
+  try { sfx.pause(); sfx.currentTime = 0; } catch(e) {}
+}
+
+async function init() {
+  const p = new URLSearchParams(location.search);
+  subject = p.get('subject') || localStorage.getItem('millionaireSubject') || 'English Language';
+  document.getElementById('subjectShort').textContent = subject.slice(0, 3).toUpperCase();
   await loadQuestions();
   showQuestion();
 }
 
-async function loadQuestions(){
-  const map={
-    'English Language':'use_of_english.json',
-    'Literature in English':'the_lekki_headmaster.json',
-    'Mathematics':'mathematics.json','Biology':'biology.json',
-    'Chemistry':'chemistry.json','Physics':'physics.json',
-    'Economics':'economics.json','Government':'government.json',
-    'Commerce':'commerce.json','Geography':'geography.json',
-    'Christian Religious Studies':'crs.json','Islamic Religious Studies':'irs.json'
+async function loadQuestions() {
+  const map = {
+    'English Language': 'use_of_english.json',
+    'Literature in English': 'the_lekki_headmaster.json',
+    'Mathematics': 'mathematics.json',
+    'Biology': 'biology.json',
+    'Chemistry': 'chemistry.json',
+    'Physics': 'physics.json',
+    'Economics': 'economics.json',
+    'Government': 'government.json',
+    'Commerce': 'commerce.json',
+    'Geography': 'geography.json',
+    'Christian Religious Studies': 'crs.json',
+    'Islamic Religious Studies': 'irs.json'
   };
-  const file=map[subject]||(subject.toLowerCase().replace(/\s+/g,'_')+'.json');
-  try{
-    for(const path of ['./question_bank/'+file,'question_bank/'+file,'./'+file]){
-      try{
-        const r=await fetch(path);
-        if(r.ok){
-          const d=await r.json();
-          const arr=Array.isArray(d)?d:(d.questions||[]);
-          questions=shuffle(arr).slice(0,15);
+  const file = map[subject] || (subject.toLowerCase().replace(/\s+/g, '_') + '.json');
+  try {
+    for (const path of ['./question_bank/' + file, 'question_bank/' + file, './' + file]) {
+      try {
+        const r = await fetch(path);
+        if (r.ok) {
+          const d = await r.json();
+          const arr = Array.isArray(d) ? d : (d.questions || []);
+          questions = shuffle(arr).slice(0, 15);
           break;
         }
-      }catch(e){}
+      } catch(e) {}
     }
-  }catch(e){}
-  if(questions.length<15) questions=shuffle(FALLBACK).slice(0,15);
+  } catch(e) {}
+  if (questions.length < 15) questions = shuffle(FALLBACK).slice(0, 15);
 }
 
-function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b}
+function shuffle(a) {
+  const b = [...a];
+  for (let i = b.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [b[i], b[j]] = [b[j], b[i]];
+  }
+  return b;
+}
 
-function showQuestion(){
-  answered=false;
-  const q=questions[qIndex];
-  if(!q){endGame(true);return}
+function showQuestion() {
+  answered = false;
+  const q = questions[qIndex];
+  if (!q) { endGame(true); return; }
 
-  document.getElementById('qCircle').textContent=qIndex+1;
-  document.getElementById('qText').textContent=q.question||q.text||'No question';
-  document.getElementById('prizeMain').textContent='₦'+LADDER[qIndex].toLocaleString();
-  document.getElementById('prizeSub').textContent='Safe: ₦'+safeMoney.toLocaleString();
-  document.getElementById('walkAmount').textContent='₦'+currentMoney.toLocaleString();
+  document.getElementById('qCircle').textContent = qIndex + 1;
+  document.getElementById('qText').textContent = q.question || q.text || 'No question';
+  document.getElementById('prizeMain').textContent = '₦' + LADDER[qIndex].toLocaleString();
+  document.getElementById('prizeSub').textContent = 'Safe: ₦' + safeMoney.toLocaleString();
+  document.getElementById('walkAmount').textContent = '₦' + currentMoney.toLocaleString();
 
-  let opts=q.options||[];
-  if(q.A||q.a) opts=[q.A||q.a,q.B||q.b,q.C||q.c,q.D||q.d];
-  opts=opts.map(o=>String(o).replace(/^[A-Da-d][.)]\s*/,'').trim());
-  while(opts.length<4) opts.push('—');
+  let opts = q.options || [];
+  if (q.A || q.a) opts = [q.A || q.a, q.B || q.b, q.C || q.c, q.D || q.d];
+  opts = opts.map(o => String(o).replace(/^[A-Da-d][.)]\s*/, '').trim());
+  while (opts.length < 4) opts.push('—');
 
-  const letters=['A','B','C','D'];
-  const box=document.getElementById('options');
-  box.innerHTML='';
-  opts.forEach((t,i)=>{
-    const d=document.createElement('div');
-    d.className='opt';
-    d.innerHTML=`<span class="letter">${letters[i]}:</span> ${t}`;
-    d.onclick=()=>selectAnswer(i);
+  const letters = ['A', 'B', 'C', 'D'];
+  const box = document.getElementById('options');
+  box.innerHTML = '';
+  opts.forEach((t, i) => {
+    const d = document.createElement('div');
+    d.className = 'opt';
+    d.innerHTML = '<span class="letter">' + letters[i] + ':</span> ' + t;
+    d.onclick = function() { selectAnswer(i); };
     box.appendChild(d);
   });
-  playSound();
 }
 
-function getCorrectIndex(q){
-  if(typeof q.answer==='number') return q.answer;
-  const a=String(q.answer||q.correct||'A').trim().toUpperCase();
-  if(a==='A'||a==='0')return 0; if(a==='B'||a==='1')return 1;
-  if(a==='C'||a==='2')return 2; if(a==='D'||a==='3')return 3;
+function getCorrectIndex(q) {
+  if (typeof q.answer === 'number') return q.answer;
+  const a = String(q.answer || q.correct || 'A').trim().toUpperCase();
+  if (a === 'A' || a === '0') return 0;
+  if (a === 'B' || a === '1') return 1;
+  if (a === 'C' || a === '2') return 2;
+  if (a === 'D' || a === '3') return 3;
   return 0;
 }
 
-function selectAnswer(idx){
-  if(answered)return; answered=true;
-  const correct=getCorrectIndex(questions[qIndex]);
-  document.querySelectorAll('.opt').forEach((el,i)=>{
-    el.style.pointerEvents='none';
-    if(i===correct) el.classList.add('correct');
-    if(i===idx&&i!==correct) el.classList.add('wrong');
+function selectAnswer(idx) {
+  if (answered) return;
+  answered = true;
+  const correct = getCorrectIndex(questions[qIndex]);
+  document.querySelectorAll('.opt').forEach((el, i) => {
+    el.style.pointerEvents = 'none';
+    if (i === correct) el.classList.add('correct');
+    if (i === idx && i !== correct) el.classList.add('wrong');
   });
-  playSound();
-  setTimeout(()=>{
-    if(idx===correct){
-      currentMoney=LADDER[qIndex];
-      if(SAFE.includes(qIndex)) safeMoney=currentMoney;
+  setTimeout(function() {
+    if (idx === correct) {
+      currentMoney = LADDER[qIndex];
+      if (SAFE.includes(qIndex)) safeMoney = currentMoney;
       qIndex++;
-      if(qIndex>=15) endGame(true);
+      if (qIndex >= 15) endGame(true);
       else showQuestion();
-    } else endGame(false);
-  },1500);
+    } else {
+      endGame(false);
+    }
+  }, 1500);
 }
 
-function use5050(){
-  if(used5050||answered)return;
-  used5050=true; document.getElementById('life5050').classList.add('used');
-  playSound();
-  const c=getCorrectIndex(questions[qIndex]);
-  const w=[0,1,2,3].filter(i=>i!==c);
-  shuffle(w).slice(0,2).forEach(i=>document.querySelectorAll('.opt')[i].classList.add('dim'));
-}
-
-function useAudience(){
-  if(usedAudience||answered)return;
-  usedAudience=true; document.getElementById('lifeAudience').classList.add('used');
-  playSound();
-  const c=getCorrectIndex(questions[qIndex]);
-  let pcts=[0,0,0,0]; pcts[c]=40+Math.floor(Math.random()*35);
-  let rem=100-pcts[c];
-  [0,1,2,3].filter(i=>i!==c).forEach((i,idx)=>{
-    if(idx===2) pcts[i]=rem; else{const v=Math.floor(Math.random()*(rem/2));pcts[i]=v;rem-=v;}
+function use5050() {
+  if (used5050 || answered) return;
+  used5050 = true;
+  document.getElementById('life5050').classList.add('used');
+  const c = getCorrectIndex(questions[qIndex]);
+  const wrongs = [0, 1, 2, 3].filter(function(i) { return i !== c; });
+  shuffle(wrongs).slice(0, 2).forEach(function(i) {
+    document.querySelectorAll('.opt')[i].classList.add('dim');
   });
-  const L=['A','B','C','D'];
-  let h='<div class="audience-bars">';
-  L.forEach((l,i)=>h+=`<div class="bar-row"><span>\( {l}</span><div class="bar-bg"><div class="bar-fill" style="width: \){pcts[i]}%"></div></div><span>${pcts[i]}%</span></div>`);
-  h+='</div>';
-  document.getElementById('lifeTitle').textContent='Ask the Audience';
-  document.getElementById('lifeContent').innerHTML=h;
+}
+
+function useAudience() {
+  if (usedAudience || answered) return;
+  usedAudience = true;
+  document.getElementById('lifeAudience').classList.add('used');
+
+  const c = getCorrectIndex(questions[qIndex]);
+  var pcts = [0, 0, 0, 0];
+  pcts[c] = 40 + Math.floor(Math.random() * 35);
+  var rem = 100 - pcts[c];
+  [0, 1, 2, 3].filter(function(i) { return i !== c; }).forEach(function(i, idx) {
+    if (idx === 2) pcts[i] = rem;
+    else {
+      var v = Math.floor(Math.random() * (rem / 2));
+      pcts[i] = v;
+      rem -= v;
+    }
+  });
+
+  var letters = ['A', 'B', 'C', 'D'];
+  var h = '<div class="audience-bars">';
+  letters.forEach(function(l, i) {
+    h += '<div class="bar-row"><span>' + l + '</span>' +
+         '<div class="bar-bg"><div class="bar-fill" style="width:' + pcts[i] + '%"></div></div>' +
+         '<span>' + pcts[i] + '%</span></div>';
+  });
+  h += '</div>';
+
+  document.getElementById('lifeTitle').textContent = 'Ask the Audience';
+  document.getElementById('lifeContent').innerHTML = h;
   document.getElementById('lifeOverlay').classList.add('show');
 }
 
-function usePhone(){
-  if(usedPhone||answered)return;
-  usedPhone=true; document.getElementById('lifePhone').classList.add('used');
-  playSound();
-  const c=getCorrectIndex(questions[qIndex]);
-  const L=['A','B','C','D'];
-  const conf=60+Math.floor(Math.random()*35);
-  document.getElementById('lifeTitle').textContent='Phone a Friend';
-  document.getElementById('lifeContent').innerHTML=`<div class="phone-msg">"I'm \( {conf}% sure the answer is <strong style="color:#ffd700"> \){L[c]}</strong>. Go with that!"</div>`;
+function usePhone() {
+  if (usedPhone || answered) return;
+  usedPhone = true;
+  document.getElementById('lifePhone').classList.add('used');
+
+  var c = getCorrectIndex(questions[qIndex]);
+  var letters = ['A', 'B', 'C', 'D'];
+  var conf = 60 + Math.floor(Math.random() * 35);
+
+  document.getElementById('lifeTitle').textContent = 'Phone a Friend';
+  document.getElementById('lifeContent').innerHTML =
+    '<div class="phone-msg">"I\'m ' + conf + '% sure the answer is ' +
+    '<strong style="color:#ffd700">' + letters[c] + '</strong>. Go with that!"</div>';
   document.getElementById('lifeOverlay').classList.add('show');
 }
 
-function useSwitch(){
-  if(usedSwitch||answered)return;
-  usedSwitch=true; document.getElementById('lifeSwitch').classList.add('used');
-  playSound();
-  // swap current question with a random unused one from remaining pool if possible
-  if(qIndex<questions.length-1){
-    const swap=qIndex+1+Math.floor(Math.random()*(questions.length-qIndex-1));
-    [questions[qIndex],questions[swap]]=[questions[swap],questions[qIndex]];
+function useSwitch() {
+  if (usedSwitch || answered) return;
+  usedSwitch = true;
+  document.getElementById('lifeSwitch').classList.add('used');
+  if (qIndex < questions.length - 1) {
+    var swap = qIndex + 1 + Math.floor(Math.random() * (questions.length - qIndex - 1));
+    var tmp = questions[qIndex];
+    questions[qIndex] = questions[swap];
+    questions[swap] = tmp;
   }
   showQuestion();
 }
 
-function closeLife(){document.getElementById('lifeOverlay').classList.remove('show')}
-
-function walkAway(){
-  if(!confirm('Walk away with ₦'+currentMoney.toLocaleString()+'?'))return;
-  endGame(true,true);
+function closeLife() {
+  document.getElementById('lifeOverlay').classList.remove('show');
 }
 
-function endGame(won,walked){
-  playSound();
-  const t=document.getElementById('resultTitle');
-  const m=document.getElementById('resultMsg');
-  const a=document.getElementById('resultAmount');
-  if(walked){t.textContent='You Walked Away!';m.textContent='You leave with:';a.textContent='₦'+currentMoney.toLocaleString()}
-  else if(won&&qIndex>=15){t.textContent='MILLIONAIRE!';m.textContent='All 15 correct!';a.textContent='₦'+LADDER[14].toLocaleString()}
-  else{t.textContent='Wrong Answer!';m.textContent='You leave with the safe amount:';a.textContent='₦'+safeMoney.toLocaleString()}
+function walkAway() {
+  if (!confirm('Walk away with ₦' + currentMoney.toLocaleString() + '?')) return;
+  endGame(true, true);
+}
+
+function endGame(won, walked) {
+  stopSound();
+  var t = document.getElementById('resultTitle');
+  var m = document.getElementById('resultMsg');
+  var a = document.getElementById('resultAmount');
+  if (walked) {
+    t.textContent = 'You Walked Away!';
+    m.textContent = 'You leave with:';
+    a.textContent = '₦' + currentMoney.toLocaleString();
+  } else if (won && qIndex >= 15) {
+    t.textContent = 'MILLIONAIRE!';
+    m.textContent = 'All 15 correct!';
+    a.textContent = '₦' + LADDER[14].toLocaleString();
+  } else {
+    t.textContent = 'Wrong Answer!';
+    m.textContent = 'You leave with the safe amount:';
+    a.textContent = '₦' + safeMoney.toLocaleString();
+  }
   document.getElementById('resultOverlay').classList.add('show');
 }
 
-const FALLBACK=[
-  {question:"What is the capital of Nigeria?",options:["A. Lagos","B. Abuja","C. Kano","D. Port Harcourt"],answer:"B"},
-  {question:"Who wrote 'Things Fall Apart'?",options:["A. Wole Soyinka","B. Chinua Achebe","C. Chimamanda Adichie","D. Buchi Emecheta"],answer:"B"},
-  {question:"What is 15 × 12?",options:["A. 150","B. 180","C. 170","D. 160"],answer:"B"},
-  {question:"Which gas do plants absorb?",options:["A. Oxygen","B. Nitrogen","C. Carbon dioxide","D. Hydrogen"],answer:"C"},
-  {question:"How many states are in Nigeria?",options:["A. 30","B. 36","C. 37","D. 42"],answer:"B"},
-  {question:"What is the chemical symbol for gold?",options:["A. Go","B. Gd","C. Au","D. Ag"],answer:"C"},
-  {question:"Who was the first President of Nigeria?",options:["A. Obafemi Awolowo","B. Nnamdi Azikiwe","C. Ahmadu Bello","D. Tafawa Balewa"],answer:"B"},
-  {question:"What is the square root of 144?",options:["A. 11","B. 12","C. 13","D. 14"],answer:"B"},
-  {question:"Which planet is known as the Red Planet?",options:["A. Venus","B. Mars","C. Jupiter","D. Saturn"],answer:"B"},
-  {question:"In which year did Nigeria gain independence?",options:["A. 1957","B. 1960","C. 1963","D. 1966"],answer:"B"},
-  {question:"What is the largest organ in the human body?",options:["A. Liver","B. Brain","C. Skin","D. Heart"],answer:"C"},
-  {question:"Which is the longest river in Nigeria?",options:["A. Benue","B. Niger","C. Cross River","D. Kaduna"],answer:"B"},
-  {question:"What does CPU stand for?",options:["A. Central Processing Unit","B. Computer Personal Unit","C. Central Program Utility","D. Control Processing Unit"],answer:"A"},
-  {question:"Who painted the Mona Lisa?",options:["A. Michelangelo","B. Leonardo da Vinci","C. Raphael","D. Picasso"],answer:"B"},
-  {question:"What is the currency of Japan?",options:["A. Yuan","B. Won","C. Yen","D. Ringgit"],answer:"C"},
-  {question:"How many continents are there?",options:["A. 5","B. 6","C. 7","D. 8"],answer:"C"},
-  {question:"What is H2O commonly known as?",options:["A. Salt","B. Water","C. Oxygen","D. Hydrogen"],answer:"B"},
-  {question:"Which animal is known as the king of the jungle?",options:["A. Tiger","B. Elephant","C. Lion","D. Gorilla"],answer:"C"},
-  {question:"What is the boiling point of water?",options:["A. 90°C","B. 100°C","C. 110°C","D. 120°C"],answer:"B"},
-  {question:"Who discovered gravity?",options:["A. Einstein","B. Newton","C. Galileo","D. Tesla"],answer:"B"}
+var FALLBACK = [
+  {question:"What is the capital of Nigeria?", options:["A. Lagos","B. Abuja","C. Kano","D. Port Harcourt"], answer:"B"},
+  {question:"Who wrote 'Things Fall Apart'?", options:["A. Wole Soyinka","B. Chinua Achebe","C. Chimamanda Adichie","D. Buchi Emecheta"], answer:"B"},
+  {question:"What is 15 × 12?", options:["A. 150","B. 180","C. 170","D. 160"], answer:"B"},
+  {question:"Which gas do plants absorb?", options:["A. Oxygen","B. Nitrogen","C. Carbon dioxide","D. Hydrogen"], answer:"C"},
+  {question:"How many states are in Nigeria?", options:["A. 30","B. 36","C. 37","D. 42"], answer:"B"},
+  {question:"What is the chemical symbol for gold?", options:["A. Go","B. Gd","C. Au","D. Ag"], answer:"C"},
+  {question:"Who was the first President of Nigeria?", options:["A. Obafemi Awolowo","B. Nnamdi Azikiwe","C. Ahmadu Bello","D. Tafawa Balewa"], answer:"B"},
+  {question:"What is the square root of 144?", options:["A. 11","B. 12","C. 13","D. 14"], answer:"B"},
+  {question:"Which planet is known as the Red Planet?", options:["A. Venus","B. Mars","C. Jupiter","D. Saturn"], answer:"B"},
+  {question:"In which year did Nigeria gain independence?", options:["A. 1957","B. 1960","C. 1963","D. 1966"], answer:"B"},
+  {question:"What is the largest organ in the human body?", options:["A. Liver","B. Brain","C. Skin","D. Heart"], answer:"C"},
+  {question:"Which is the longest river in Nigeria?", options:["A. Benue","B. Niger","C. Cross River","D. Kaduna"], answer:"B"},
+  {question:"What does CPU stand for?", options:["A. Central Processing Unit","B. Computer Personal Unit","C. Central Program Utility","D. Control Processing Unit"], answer:"A"},
+  {question:"Who painted the Mona Lisa?", options:["A. Michelangelo","B. Leonardo da Vinci","C. Raphael","D. Picasso"], answer:"B"},
+  {question:"What is the currency of Japan?", options:["A. Yuan","B. Won","C. Yen","D. Ringgit"], answer:"C"},
+  {question:"How many continents are there?", options:["A. 5","B. 6","C. 7","D. 8"], answer:"C"},
+  {question:"What is H2O commonly known as?", options:["A. Salt","B. Water","C. Oxygen","D. Hydrogen"], answer:"B"},
+  {question:"Which animal is known as the king of the jungle?", options:["A. Tiger","B. Elephant","C. Lion","D. Gorilla"], answer:"C"},
+  {question:"What is the boiling point of water?", options:["A. 90°C","B. 100°C","C. 110°C","D. 120°C"], answer:"B"},
+  {question:"Who discovered gravity?", options:["A. Einstein","B. Newton","C. Galileo","D. Tesla"], answer:"B"}
 ];
 
 init();
