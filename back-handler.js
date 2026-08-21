@@ -1,89 +1,249 @@
 // back-handler.js
 // Central Android / Capacitor Back Button Controller
-// Works hand-in-hand with the in-page back buttons.
+// The HTML back buttons and Android hardware back button
+// use the same navigation system.
 
 (function () {
     'use strict';
 
-    // --------------------------------------------------
-    // Shared goBack() that every page should call
-    // --------------------------------------------------
+    // Prevent this script from being initialized more than once
+    if (window.__FlexiBackInitialized) return;
+    window.__FlexiBackInitialized = true;
+
+
+    // =========================================================
+    // FLEXI BACK CONTROLLER
+    // =========================================================
+
     window.FlexiBack = {
-        /**
-         * Smart back navigation.
-         * Prefer history.back() when possible.
-         * Falls back to a safe home page.
-         */
-        goBack: function (fallbackUrl) {
-            fallbackUrl = fallbackUrl || 'index.html';
 
-            // If we have real history, use it
-            if (window.history.length > 1) {
-                window.history.back();
-                return;
+        // Page-specific back handler
+        _handler: null,
+
+        // Register a page-specific back action
+        setHandler: function (handler) {
+            if (typeof handler === 'function') {
+                this._handler = handler;
+            } else {
+                this._handler = null;
             }
-
-            // No history → go home cleanly (replace so we don't create another entry)
-            window.location.replace(fallbackUrl);
         },
 
-        /**
-         * Force exit the app (used on root pages)
-         */
+        // Remove the current page-specific handler
+        clearHandler: function () {
+            this._handler = null;
+        },
+
+
+        // =====================================================
+        // EXIT APP
+        // =====================================================
+
         exitApp: function () {
-            if (window.Capacitor?.Plugins?.App) {
-                window.Capacitor.Plugins.App.exitApp();
-            } else {
-                // Web fallback
-                window.close();
+            try {
+                const App = window.Capacitor?.Plugins?.App;
+
+                if (App && typeof App.exitApp === 'function') {
+                    App.exitApp();
+                    return true;
+                }
+            } catch (error) {
+                console.warn('FlexiBack: Unable to exit app:', error);
             }
+
+            // Browser fallback
+            try {
+                window.close();
+            } catch (error) {
+                console.warn('FlexiBack: Browser close failed:', error);
+            }
+
+            return true;
+        },
+
+
+        // =====================================================
+        // NORMAL PAGE BACK
+        // =====================================================
+
+        goBack: function (fallbackUrl) {
+
+            fallbackUrl = fallbackUrl || 'index.html';
+
+            // If the current page has registered its own
+            // back behaviour, use it first.
+            if (typeof this._handler === 'function') {
+                try {
+                    const handled = this._handler();
+
+                    // Returning true means the page handled Back.
+                    if (handled === true) {
+                        return true;
+                    }
+                } catch (error) {
+                    console.warn(
+                        'FlexiBack: Page back handler failed:',
+                        error
+                    );
+                }
+            }
+
+            // Normal browser/WebView history
+            if (window.history.length > 1) {
+                window.history.back();
+                return true;
+            }
+
+            // No previous page → go to fallback
+            if (fallbackUrl) {
+                window.location.replace(fallbackUrl);
+                return true;
+            }
+
+            return false;
+        },
+
+
+        // =====================================================
+        // HANDLE ANDROID BACK BUTTON
+        // =====================================================
+
+        handleAndroidBack: function () {
+
+            /*
+             * IMPORTANT:
+             *
+             * index.html is the HOME SCREEN.
+             *
+             * Whether the login iframe is open or closed,
+             * Android Back must EXIT the app.
+             */
+
+            const currentPage =
+                window.location.pathname
+                    .split('/')
+                    .pop()
+                    .toLowerCase();
+
+            const isHomePage =
+                currentPage === '' ||
+                currentPage === 'index.html';
+
+
+            // -------------------------------------------------
+            // HOME SCREEN
+            // -------------------------------------------------
+
+            if (isHomePage) {
+                this.exitApp();
+                return true;
+            }
+
+
+            // -------------------------------------------------
+            // OTHER PAGES
+            // -------------------------------------------------
+
+            // Give the current page its registered back action.
+            if (typeof this._handler === 'function') {
+                try {
+                    const handled = this._handler();
+
+                    if (handled === true) {
+                        return true;
+                    }
+                } catch (error) {
+                    console.warn(
+                        'FlexiBack: Android page handler failed:',
+                        error
+                    );
+                }
+            }
+
+
+            // -------------------------------------------------
+            // NORMAL WEBVIEW HISTORY
+            // -------------------------------------------------
+
+            if (window.history.length > 1) {
+                window.history.back();
+                return true;
+            }
+
+
+            // -------------------------------------------------
+            // NO HISTORY
+            // -------------------------------------------------
+
+            this.exitApp();
+            return true;
         }
     };
 
 
-    // --------------------------------------------------
-    // Capacitor hardware back button listener
-    // --------------------------------------------------
-    document.addEventListener('DOMContentLoaded', () => {
-        if (!window.Capacitor) return;
+    // =========================================================
+    // CAPACITOR ANDROID BACK BUTTON
+    // =========================================================
+
+    function initializeCapacitorBackButton() {
+
+        if (!window.Capacitor) {
+            console.log(
+                'FlexiBack: Capacitor not detected. Web mode enabled.'
+            );
+            return;
+        }
 
         try {
-            const App = window.Capacitor.Plugins?.App;
-            if (!App) {
-                console.warn('Capacitor App plugin not available');
+
+            const App = window.Capacitor?.Plugins?.App;
+
+            if (!App || typeof App.addListener !== 'function') {
+                console.warn(
+                    'FlexiBack: Capacitor App plugin not available.'
+                );
                 return;
             }
 
-            App.addListener('backButton', ({ canGoBack }) => {
+            App.addListener('backButton', function () {
 
-                // 1. Special case: Login modal / iframe is open
-                const loginModal = document.getElementById('loginModal');
-                if (loginModal && !loginModal.classList.contains('hidden')) {
-                    App.exitApp();
-                    return;
-                }
+                // Everything goes through the same controller
+                // used by the HTML buttons.
+                window.FlexiBack.handleAndroidBack();
 
-                // 2. If the page itself has a custom back handler, let it decide
-                if (typeof window.onFlexiBackButton === 'function') {
-                    const handled = window.onFlexiBackButton();
-                    if (handled === true) return; // page handled it
-                }
-
-                // 3. Normal navigation
-                if (canGoBack || window.history.length > 1) {
-                    window.history.back();
-                    return;
-                }
-
-                // 4. We are at the real root → close the app
-                App.exitApp();
             });
 
-            console.log('✅ Flexi Back handler ready');
+            console.log(
+                '✅ FlexiBack: Capacitor Android Back handler ready'
+            );
 
-        } catch (err) {
-            console.warn('Back button handler failed:', err);
+        } catch (error) {
+
+            console.warn(
+                'FlexiBack: Capacitor back handler failed:',
+                error
+            );
+
         }
-    });
+    }
+
+
+    // =========================================================
+    // INITIALIZE
+    // =========================================================
+
+    if (document.readyState === 'loading') {
+
+        document.addEventListener(
+            'DOMContentLoaded',
+            initializeCapacitorBackButton,
+            { once: true }
+        );
+
+    } else {
+
+        initializeCapacitorBackButton();
+
+    }
 
 })();
