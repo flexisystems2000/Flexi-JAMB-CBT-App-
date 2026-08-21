@@ -162,7 +162,7 @@
 <body>
 
     <header>
-        <button class="back-btn" onclick="history.back()">❮</button>
+        <button class="back-btn" onclick="FlexiBack.goBack('chat.html')">❮</button>
         <h3>Member Profile</h3>
     </header>
 
@@ -240,7 +240,7 @@
 
                 const initial = name.charAt(0).toUpperCase();
                 const avatarHTML = photoURL 
-                    ? `<div class="avatar-large"><img src="${escapeHTML(photoURL)}" alt="${escapeHTML(name)}"></div>`
+                    ? `<div class="avatar-large"><img src="\( {escapeHTML(photoURL)}" alt=" \){escapeHTML(name)}"></div>`
                     : `<div class="avatar-large">${initial}</div>`;
 
                 cardEl.innerHTML = `
@@ -255,7 +255,7 @@
                     </div>
 
                     <div class="action-btns">
-                        <button class="btn btn-secondary" onclick="history.back()">Go Back</button>
+                        <button class="btn btn-secondary" onclick="FlexiBack.goBack('chat.html')">Go Back</button>
                     </div>
                 `;
 
