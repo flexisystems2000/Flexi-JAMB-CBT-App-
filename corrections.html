@@ -530,7 +530,7 @@
 
         <button
             class="action-btn secondary-btn"
-            onclick="location.href='results.html'">
+            onclick="FlexiBack.goBack('results.html')">
             BACK TO RESULTS
         </button>
 
@@ -851,6 +851,21 @@
         selectSubject(
             subjectList[0]
         );
+
+
+        /*
+         * Register page-specific back handler:
+         * Hardware back first tries previous question.
+         */
+        if (window.FlexiBack) {
+            FlexiBack.setHandler(function () {
+                if (currentQuestionIndex > 0) {
+                    goToPrevious();
+                    return true; // handled
+                }
+                return false; // let FlexiBack do normal back
+            });
+        }
 
 
         /*
