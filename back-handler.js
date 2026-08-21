@@ -1,226 +1,361 @@
 // back-handler.js
 // Central Android / Capacitor Back Button Controller
-// The HTML back buttons and Android hardware back button
-// use the same navigation system.
+// ============================================================
+// RULES:
+// 1. index.html = Home screen → Android Back exits the app.
+// 2. Login iframe does NOT change Home screen Back behaviour.
+// 3. Other pages → Android Back uses browser/WebView history.
+// 4. Pages can register special Back behaviour when necessary.
+// 5. There must be only ONE Capacitor backButton listener.
+// ============================================================
 
 (function () {
     'use strict';
 
-    // Prevent this script from being initialized more than once
-    if (window.__FlexiBackInitialized) return;
+    // Prevent duplicate initialization
+    if (window.__FlexiBackInitialized) {
+        console.log('FlexiBack: Already initialized.');
+        return;
+    }
+
     window.__FlexiBackInitialized = true;
 
 
-    // =========================================================
+    // ============================================================
     // FLEXI BACK CONTROLLER
-    // =========================================================
+    // ============================================================
 
     window.FlexiBack = {
 
-        // Page-specific back handler
+        // Optional page-specific handler
         _handler: null,
 
-        // Register a page-specific back action
+
+        // ========================================================
+        // REGISTER PAGE-SPECIFIC BACK HANDLER
+        // ========================================================
+
         setHandler: function (handler) {
+
             if (typeof handler === 'function') {
                 this._handler = handler;
             } else {
                 this._handler = null;
             }
+
         },
 
-        // Remove the current page-specific handler
+
+        // ========================================================
+        // CLEAR PAGE-SPECIFIC BACK HANDLER
+        // ========================================================
+
         clearHandler: function () {
             this._handler = null;
         },
 
 
-        // =====================================================
-        // EXIT APP
-        // =====================================================
+        // ========================================================
+        // CHECK HOME PAGE
+        // ========================================================
+
+        isHomePage: function () {
+
+            const path = window.location.pathname
+                .split('/')
+                .pop()
+                .toLowerCase();
+
+            return (
+                path === '' ||
+                path === 'index.html'
+            );
+        },
+
+
+        // ========================================================
+        // EXIT APPLICATION
+        // ========================================================
 
         exitApp: function () {
-            try {
-                const App = window.Capacitor?.Plugins?.App;
 
-                if (App && typeof App.exitApp === 'function') {
+            try {
+
+                const App =
+                    window.Capacitor?.Plugins?.App;
+
+                if (
+                    App &&
+                    typeof App.exitApp === 'function'
+                ) {
+
                     App.exitApp();
                     return true;
                 }
+
             } catch (error) {
-                console.warn('FlexiBack: Unable to exit app:', error);
+
+                console.warn(
+                    'FlexiBack: Capacitor exit failed:',
+                    error
+                );
+
             }
+
 
             // Browser fallback
             try {
+
                 window.close();
+
             } catch (error) {
-                console.warn('FlexiBack: Browser close failed:', error);
+
+                console.warn(
+                    'FlexiBack: Browser close failed:',
+                    error
+                );
+
             }
 
             return true;
         },
 
 
-        // =====================================================
-        // NORMAL PAGE BACK
-        // =====================================================
+        // ========================================================
+        // GO TO A SPECIFIC PAGE
+        // ========================================================
+
+        goTo: function (url) {
+
+            if (!url) {
+                return false;
+            }
+
+            window.location.href = url;
+
+            return true;
+        },
+
+
+        // ========================================================
+        // NORMAL BACK
+        // ========================================================
 
         goBack: function (fallbackUrl) {
 
             fallbackUrl = fallbackUrl || 'index.html';
 
-            // If the current page has registered its own
-            // back behaviour, use it first.
+
+            // First allow the page to handle Back itself.
             if (typeof this._handler === 'function') {
+
                 try {
+
                     const handled = this._handler();
 
-                    // Returning true means the page handled Back.
                     if (handled === true) {
                         return true;
                     }
+
                 } catch (error) {
+
                     console.warn(
-                        'FlexiBack: Page back handler failed:',
+                        'FlexiBack: Page handler failed:',
                         error
                     );
+
                 }
+
             }
 
-            // Normal browser/WebView history
+
+            // Normal browser / WebView history
             if (window.history.length > 1) {
+
                 window.history.back();
+
                 return true;
             }
 
-            // No previous page → go to fallback
+
+            // No history available
             if (fallbackUrl) {
-                window.location.replace(fallbackUrl);
+
+                window.location.replace(
+                    fallbackUrl
+                );
+
                 return true;
             }
+
 
             return false;
         },
 
 
-        // =====================================================
-        // HANDLE ANDROID BACK BUTTON
-        // =====================================================
+        // ========================================================
+        // HANDLE ANDROID HARDWARE BACK
+        // ========================================================
 
         handleAndroidBack: function () {
 
-            /*
-             * IMPORTANT:
-             *
-             * index.html is the HOME SCREEN.
-             *
-             * Whether the login iframe is open or closed,
-             * Android Back must EXIT the app.
-             */
-
-            const currentPage =
-                window.location.pathname
-                    .split('/')
-                    .pop()
-                    .toLowerCase();
-
-            const isHomePage =
-                currentPage === '' ||
-                currentPage === 'index.html';
-
-
-            // -------------------------------------------------
+            // ----------------------------------------------------
             // HOME SCREEN
-            // -------------------------------------------------
+            // ----------------------------------------------------
+            //
+            // IMPORTANT:
+            //
+            // Whether the login iframe is OPEN or CLOSED,
+            // index.html is still the HOME SCREEN.
+            //
+            // Therefore:
+            //
+            // Android Back → EXIT APP
+            //
+            // We deliberately DO NOT inspect the iframe here.
+            // ----------------------------------------------------
 
-            if (isHomePage) {
+            if (this.isHomePage()) {
+
+                console.log(
+                    'FlexiBack: Home screen → exiting app.'
+                );
+
                 this.exitApp();
+
                 return true;
             }
 
 
-            // -------------------------------------------------
+            // ----------------------------------------------------
             // OTHER PAGES
-            // -------------------------------------------------
+            // ----------------------------------------------------
+            //
+            // Give the page an opportunity to handle Back
+            // before using normal history.
+            // ----------------------------------------------------
 
-            // Give the current page its registered back action.
             if (typeof this._handler === 'function') {
+
                 try {
-                    const handled = this._handler();
+
+                    const handled =
+                        this._handler();
 
                     if (handled === true) {
                         return true;
                     }
+
                 } catch (error) {
+
                     console.warn(
                         'FlexiBack: Android page handler failed:',
                         error
                     );
+
                 }
+
             }
 
 
-            // -------------------------------------------------
-            // NORMAL WEBVIEW HISTORY
-            // -------------------------------------------------
+            // ----------------------------------------------------
+            // NORMAL HISTORY
+            // ----------------------------------------------------
 
             if (window.history.length > 1) {
+
+                console.log(
+                    'FlexiBack: Going back through history.'
+                );
+
                 window.history.back();
+
                 return true;
             }
 
 
-            // -------------------------------------------------
+            // ----------------------------------------------------
             // NO HISTORY
-            // -------------------------------------------------
+            // ----------------------------------------------------
+            //
+            // If a page was opened directly and has no history,
+            // return to Home rather than doing nothing.
+            // ----------------------------------------------------
 
-            this.exitApp();
+            console.log(
+                'FlexiBack: No history → returning to home.'
+            );
+
+            window.location.replace('index.html');
+
             return true;
         }
     };
 
 
-    // =========================================================
-    // CAPACITOR ANDROID BACK BUTTON
-    // =========================================================
+    // ============================================================
+    // CAPACITOR BACK BUTTON
+    // ============================================================
 
     function initializeCapacitorBackButton() {
 
         if (!window.Capacitor) {
+
             console.log(
-                'FlexiBack: Capacitor not detected. Web mode enabled.'
+                'FlexiBack: Capacitor not detected.'
             );
+
             return;
         }
 
+
         try {
 
-            const App = window.Capacitor?.Plugins?.App;
+            const App =
+                window.Capacitor?.Plugins?.App;
 
-            if (!App || typeof App.addListener !== 'function') {
+
+            if (
+                !App ||
+                typeof App.addListener !== 'function'
+            ) {
+
                 console.warn(
-                    'FlexiBack: Capacitor App plugin not available.'
+                    'FlexiBack: Capacitor App plugin unavailable.'
                 );
+
                 return;
             }
 
-            App.addListener('backButton', function () {
 
-                // Everything goes through the same controller
-                // used by the HTML buttons.
-                window.FlexiBack.handleAndroidBack();
+            // ----------------------------------------------------
+            // SINGLE ANDROID BACK LISTENER
+            // ----------------------------------------------------
 
-            });
+            App.addListener(
+                'backButton',
+                function () {
+
+                    console.log(
+                        'FlexiBack: Android Back pressed.'
+                    );
+
+                    window.FlexiBack
+                        .handleAndroidBack();
+
+                }
+            );
+
 
             console.log(
-                '✅ FlexiBack: Capacitor Android Back handler ready'
+                '✅ FlexiBack: Android Back listener initialized.'
             );
+
 
         } catch (error) {
 
-            console.warn(
-                'FlexiBack: Capacitor back handler failed:',
+            console.error(
+                'FlexiBack: Failed to initialize Android Back:',
                 error
             );
 
@@ -228,9 +363,9 @@
     }
 
 
-    // =========================================================
-    // INITIALIZE
-    // =========================================================
+    // ============================================================
+    // INITIALIZATION
+    // ============================================================
 
     if (document.readyState === 'loading') {
 
@@ -245,5 +380,6 @@
         initializeCapacitorBackButton();
 
     }
+
 
 })();
