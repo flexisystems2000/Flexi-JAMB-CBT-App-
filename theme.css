@@ -14,6 +14,13 @@
     --sent-bg:#008000;
 }
 
+/* ===== DARK THEME ===== */
+/*
+   The theme is allowed on both html and body.
+   This prevents the browser from showing a light
+   background before body.dark is applied.
+*/
+html.dark,
 body.dark{
     --bg:#121212;
     --text:#ffffff;
@@ -30,17 +37,31 @@ body.dark{
     --sent-bg:#008000;
 }
 
-/* ===== Safe Area Support (Status bar / Notch / Navigation bar) ===== */
-html {
-    height: 100%;
+/* ===== GLOBAL PAGE BACKGROUND ===== */
+
+html{
+    height:100%;
+    background-color:var(--bg);
+    color:var(--text);
 }
 
-body {
-    min-height: 100% !important;
-    min-height: 100dvh !important;
-    padding-top: max(16px, env(safe-area-inset-top)) !important;
-    padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
-    padding-left: max(16px, env(safe-area-inset-left)) !important;
-    padding-right: max(16px, env(safe-area-inset-right)) !important;
-    box-sizing: border-box !important;
+body{
+    min-height:100% !important;
+    min-height:100dvh !important;
+
+    background-color:var(--bg);
+    color:var(--text);
+
+    padding-top:max(16px, env(safe-area-inset-top)) !important;
+    padding-bottom:max(16px, env(safe-area-inset-bottom)) !important;
+    padding-left:max(16px, env(safe-area-inset-left)) !important;
+    padding-right:max(16px, env(safe-area-inset-right)) !important;
+
+    box-sizing:border-box !important;
+}
+
+/* ===== SAFE AREA SUPPORT ===== */
+
+html{
+    height:100%;
 }
