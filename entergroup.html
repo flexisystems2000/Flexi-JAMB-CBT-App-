@@ -166,7 +166,7 @@
 <body>
 
     <header>
-        <button class="back-btn" onclick="history.back()">❮</button>
+        <button class="back-btn" onclick="FlexiBack.goBack('chat.html')">❮</button>
         <h3 id="group-title">Group Chat</h3>
     </header>
 
@@ -314,10 +314,10 @@
                             const profile = profileCache.get(msg.senderUid);
                             if (profile && (profile.photoURL || profile.photoUrl || profile.avatarUrl)) {
                                 const photo = profile.photoURL || profile.photoUrl || profile.avatarUrl;
-                                avatarHTML = `<div class="avatar profile-link" data-uid="${escapeHTML(msg.senderUid)}"><img src="${escapeHTML(photo)}"></div>`;
+                                avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"><img src=" \){escapeHTML(photo)}"></div>`;
                             } else {
                                 const initial = msg.sender ? msg.sender.charAt(0).toUpperCase() : "U";
-                                avatarHTML = `<div class="avatar profile-link" data-uid="${escapeHTML(msg.senderUid)}">${initial}</div>`;
+                                avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"> \){initial}</div>`;
                             }
                         }
 
@@ -327,8 +327,8 @@
                             <div class="msg-row ${isSent ? 'sent' : 'received'}">
                                 ${avatarHTML}
                                 <div class="msg-bubble">
-                                    ${!isSent ? `<div class="msg-name profile-link" data-uid="${escapeHTML(msg.senderUid)}">${escapeHTML(msg.sender || 'Anonymous')}</div>` : ''}
-                                    ${msg.text ? `<div class="msg-text">${escapeHTML(msg.text)}</div>` : ''}
+                                    \( {!isSent ? `<div class="msg-name profile-link" data-uid=" \){escapeHTML(msg.senderUid)}">${escapeHTML(msg.sender || 'Anonymous')}</div>` : ''}
+                                    \( {msg.text ? `<div class="msg-text"> \){escapeHTML(msg.text)}</div>` : ''}
                                     ${renderImageGrid(images, serializedImages)}
                                 </div>
                             </div>
@@ -358,15 +358,15 @@
             const c = safeImages.length;
             
             let gridHTML = "";
-            if (c === 1) gridHTML = `<div class="img-grid img-grid-1" data-images="${serializedImages}"><div class="img-item" data-index="0"><img src="${safeImages[0]}"></div></div>`;
-            else if (c === 2) gridHTML = `<div class="img-grid img-grid-2" data-images="${serializedImages}"><div class="img-item" data-index="0"><img src="${safeImages[0]}"></div><div class="img-item" data-index="1"><img src="${safeImages[1]}"></div></div>`;
-            else if (c === 3) gridHTML = `<div class="img-grid img-grid-3" data-images="${serializedImages}"><div class="img-item" data-index="0"><img src="${safeImages[0]}"></div><div class="img-item" data-index="1"><img src="${safeImages[1]}"></div><div class="img-item" data-index="2"><img src="${safeImages[2]}"></div></div>`;
-            else if (c === 4) gridHTML = `<div class="img-grid img-grid-4" data-images="${serializedImages}">${safeImages.map((img, idx) => `<div class="img-item" data-index="${idx}"><img src="${img}"></div>`).join('')}</div>`;
+            if (c === 1) gridHTML = `<div class="img-grid img-grid-1" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div></div>`;
+            else if (c === 2) gridHTML = `<div class="img-grid img-grid-2" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="${safeImages[1]}"></div></div>`;
+            else if (c === 3) gridHTML = `<div class="img-grid img-grid-3" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="\( {safeImages[1]}"></div><div class="img-item" data-index="2"><img src=" \){safeImages[2]}"></div></div>`;
+            else if (c === 4) gridHTML = `<div class="img-grid img-grid-4" data-images="\( {serializedImages}"> \){safeImages.map((img, idx) => `<div class="img-item" data-index="\( {idx}"><img src=" \){img}"></div>`).join('')}</div>`;
             else gridHTML = `<div class="img-grid img-grid-more" data-images="${serializedImages}">
                 <div class="img-item" data-index="0"><img src="${safeImages[0]}"></div>
                 <div class="img-item" data-index="1"><img src="${safeImages[1]}"></div>
                 <div class="img-item" data-index="2"><img src="${safeImages[2]}"></div>
-                <div class="img-item" data-index="3"><img src="${safeImages[3]}"><div class="img-more-overlay">+${c - 4}</div></div>
+                <div class="img-item" data-index="3"><img src="\( {safeImages[3]}"><div class="img-more-overlay">+ \){c - 4}</div></div>
             </div>`;
 
             return gridHTML;
@@ -449,7 +449,7 @@
         }
 
         function applyTransform() {
-            lightboxImg.style.transform = `translate(${currentX}px, ${currentY}px) scale(${scale})`;
+            lightboxImg.style.transform = `translate(${currentX}px, \( {currentY}px) scale( \){scale})`;
         }
 
         function getDistance(touches) {
