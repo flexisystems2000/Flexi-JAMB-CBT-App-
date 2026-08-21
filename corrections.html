@@ -163,6 +163,47 @@
             border-color: var(--flexi-green);
         }
 
+        /* QUESTION NAVIGATION */
+
+        .question-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 12px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 10px 12px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .nav-btn {
+            border: 0;
+            border-radius: 8px;
+            padding: 10px 16px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            cursor: pointer;
+            min-width: 90px;
+            background: var(--flexi-green);
+            color: white;
+        }
+
+        .nav-btn:disabled {
+            background: #999;
+            cursor: not-allowed;
+            opacity: 0.65;
+        }
+
+        .question-counter {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--flexi-navy);
+            text-align: center;
+            flex: 1;
+        }
+
         /* QUESTION CARD */
 
         .question-card {
@@ -372,6 +413,12 @@
             .bottom-actions {
                 grid-template-columns: 1fr;
             }
+
+            .nav-btn {
+                min-width: 75px;
+                padding: 10px 12px;
+                font-size: 0.75rem;
+            }
         }
     </style>
 </head>
@@ -455,6 +502,23 @@
     </div>
 
 
+    <!-- QUESTION NAVIGATION -->
+
+    <div id="question-nav" class="question-nav" style="display: none;">
+        <button id="prev-btn" class="nav-btn" onclick="goToPrevious()">
+            ← Previous
+        </button>
+
+        <div id="question-counter" class="question-counter">
+            Question 1 of 1
+        </div>
+
+        <button id="next-btn" class="nav-btn" onclick="goToNext()">
+            Next →
+        </button>
+    </div>
+
+
     <!-- QUESTIONS -->
 
     <div id="questions-container"></div>
@@ -523,6 +587,7 @@
     let subjectList = [];
 
     let currentSubject = null;
+    let currentQuestionIndex = 0;
 
 
     /*
@@ -971,6 +1036,8 @@
         currentSubject =
             subject;
 
+        currentQuestionIndex = 0;
+
 
         document
             .querySelectorAll(
@@ -988,26 +1055,42 @@
             );
 
 
-        renderQuestions(
-            subject
-        );
+        renderCurrentQuestion();
 
     }
 
 
     /*
      * ============================================================
-     * RENDER QUESTIONS
+     * RENDER CURRENT QUESTION (ONE AT A TIME)
      * ============================================================
      */
 
-    function renderQuestions(
-        subject
-    ) {
+    function renderCurrentQuestion() {
 
         const container =
             document.getElementById(
                 "questions-container"
+            );
+
+        const navBar =
+            document.getElementById(
+                "question-nav"
+            );
+
+        const counter =
+            document.getElementById(
+                "question-counter"
+            );
+
+        const prevBtn =
+            document.getElementById(
+                "prev-btn"
+            );
+
+        const nextBtn =
+            document.getElementById(
+                "next-btn"
             );
 
 
@@ -1016,19 +1099,21 @@
 
         const questions =
             examQuestions[
-                subject
+                currentSubject
             ] || [];
 
 
         const answers =
             finalAnswers[
-                subject
+                currentSubject
             ] || {};
 
 
         if (
             questions.length === 0
         ) {
+
+            navBar.style.display = "none";
 
             showMessage(
                 "No questions found for this subject."
@@ -1038,103 +1123,151 @@
         }
 
 
-        questions.forEach(
-            (question, index) => {
-
-                const candidateAnswer =
-                    getCandidateAnswer(
-                        answers,
-                        index,
-                        question
-                    );
+        // Clamp index just in case
+        if (currentQuestionIndex < 0) {
+            currentQuestionIndex = 0;
+        }
+        if (currentQuestionIndex >= questions.length) {
+            currentQuestionIndex = questions.length - 1;
+        }
 
 
-                const correctAnswer =
-                    getCorrectAnswer(
-                        question
-                    );
+        navBar.style.display = "flex";
 
 
-                const isAnswered =
-                    Boolean(
-                        candidateAnswer
-                    );
+        const total = questions.length;
+        const index = currentQuestionIndex;
+        const question = questions[index];
 
 
-                const isCorrect =
-                    isAnswered &&
-                    answersMatch(
-                        candidateAnswer,
-                        correctAnswer
-                    );
+        // Update counter
+        counter.textContent =
+            `Question ${index + 1} of ${total}`;
 
 
-                let statusClass;
-                let statusText;
+        // Enable / disable navigation buttons
+        prevBtn.disabled = (index === 0);
+        nextBtn.disabled = (index === total - 1);
 
 
-                if (
-                    !isAnswered
-                ) {
-
-                    statusClass =
-                        "status-unanswered";
-
-                    statusText =
-                        "Not Answered";
-
-                } else if (
-                    isCorrect
-                ) {
-
-                    statusClass =
-                        "status-correct";
-
-                    statusText =
-                        "Correct";
-
-                } else {
-
-                    statusClass =
-                        "status-wrong";
-
-                    statusText =
-                        "Incorrect";
-
-                }
+        const candidateAnswer =
+            getCandidateAnswer(
+                answers,
+                index,
+                question
+            );
 
 
-                const card =
-                    document.createElement(
-                        "div"
-                    );
+        const correctAnswer =
+            getCorrectAnswer(
+                question
+            );
 
 
-                card.className =
-                    "question-card";
+        const isAnswered =
+            Boolean(
+                candidateAnswer
+            );
 
 
-                card.innerHTML =
-                    buildQuestionHTML(
-                        question,
-                        index,
-                        candidateAnswer,
-                        correctAnswer,
-                        statusClass,
-                        statusText
-                    );
+        const isCorrect =
+            isAnswered &&
+            answersMatch(
+                candidateAnswer,
+                correctAnswer
+            );
 
 
-                container.appendChild(
-                    card
-                );
+        let statusClass;
+        let statusText;
 
-            }
+
+        if (
+            !isAnswered
+        ) {
+
+            statusClass =
+                "status-unanswered";
+
+            statusText =
+                "Not Answered";
+
+        } else if (
+            isCorrect
+        ) {
+
+            statusClass =
+                "status-correct";
+
+            statusText =
+                "Correct";
+
+        } else {
+
+            statusClass =
+                "status-wrong";
+
+            statusText =
+                "Incorrect";
+
+        }
+
+
+        const card =
+            document.createElement(
+                "div"
+            );
+
+
+        card.className =
+            "question-card";
+
+
+        card.innerHTML =
+            buildQuestionHTML(
+                question,
+                index,
+                candidateAnswer,
+                correctAnswer,
+                statusClass,
+                statusText
+            );
+
+
+        container.appendChild(
+            card
         );
 
 
         renderMath();
 
+    }
+
+
+    /*
+     * ============================================================
+     * PREVIOUS / NEXT NAVIGATION
+     * ============================================================
+     */
+
+    function goToPrevious() {
+
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            renderCurrentQuestion();
+        }
+    }
+
+
+    function goToNext() {
+
+        const questions =
+            examQuestions[currentSubject] || [];
+
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            renderCurrentQuestion();
+        }
     }
 
 
