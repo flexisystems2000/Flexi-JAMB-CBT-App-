@@ -1326,66 +1326,44 @@
                         optionIndex
                     );
 
-
-                const optionText =
+                let optionText =
                     getOptionText(
                         option
                     );
 
+                // Remove leading letter if the option text already starts with it
+                // e.g. "A. Deserve" → "Deserve"
+                const letterPattern = new RegExp(
+                    `^\\s*${letter}\\s*[\\.\\)\\-:]\\s*`,
+                    "i"
+                );
 
-                let optionClass =
-                    "option";
+                optionText = optionText.replace(letterPattern, "").trim();
 
+                let optionClass = "option";
 
-                /*
-                 * Correct option.
-                 */
-
-                if (
-                    answersMatch(
-                        letter,
-                        correctAnswer
-                    )
-                ) {
-
-                    optionClass +=
-                        " correct-option";
-
+                // Correct option
+                if (answersMatch(letter, correctAnswer)) {
+                    optionClass += " correct-option";
                 }
 
-
-                /*
-                 * Candidate's wrong option.
-                 */
-
+                // Candidate's wrong option
                 if (
                     candidateAnswer &&
-                    answersMatch(
-                        letter,
-                        candidateAnswer
-                    ) &&
-                    !answersMatch(
-                        letter,
-                        correctAnswer
-                    )
+                    answersMatch(letter, candidateAnswer) &&
+                    !answersMatch(letter, correctAnswer)
                 ) {
-
-                    optionClass +=
-                        " wrong-option";
-
+                    optionClass += " wrong-option";
                 }
-
 
                 optionsHTML += `
                     <div class="${optionClass}">
                         <span class="option-label">
                             ${escapeHTML(letter)}.
                         </span>
-
                         ${optionText}
                     </div>
                 `;
-
             }
         );
 
