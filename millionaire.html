@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Who Wants to be a Millionaire – Flexi</title>
+    <link rel="stylesheet" href="theme.css">
+    <script src="boxicons.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg, #0a0a1a);
+            min-height: 100vh;
+            color: var(--text, #fff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 16px 40px;
+            transition: .3s ease;
+        }
+
+        /* LOGO */
+        .logo-wrap {
+            text-align: center;
+            margin-bottom: 28px;
+            max-width: 340px;
+            width: 100%;
+        }
+
+        .logo-wrap img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 0 30px rgba(0, 128, 0, 0.25);
+        }
+
+        .logo-title {
+            margin-top: 14px;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #008000;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-sub {
+            font-size: 0.85rem;
+            color: var(--subtext, #aaa);
+            margin-top: 4px;
+        }
+
+        /* MAIN CARD */
+        .main-card {
+            background: var(--card, #1a1a2e);
+            border: 1px solid var(--border, #003366);
+            border-radius: 18px;
+            padding: 28px 22px;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: var(--card-shadow, 0 8px 24px rgba(0,0,0,0.3));
+        }
+
+        .section-label {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        /* Subject select */
+        .subject-select {
+            width: 100%;
+            padding: 14px 16px;
+            border-radius: 12px;
+            border: 2px solid #003366;
+            background: var(--bg, #0f0f1a);
+            color: var(--text, #fff);
+            font-size: 1rem;
+            font-weight: 600;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23008000' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            cursor: pointer;
+            margin-bottom: 22px;
+        }
+
+        .subject-select:focus {
+            border-color: #008000;
+        }
+
+        /* Buttons */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .btn:active {
+            transform: scale(0.97);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #008000, #004d00);
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        .btn-primary:disabled {
+            background: #555;
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #003366;
+            border: 2px solid #003366;
+        }
+
+        .hint {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--subtext, #888);
+            margin-top: 18px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO -->
+    <div class="logo-wrap">
+        <!-- Put the logo image in your assets folder and update the src -->
+        <img src="assets/millionaire-logo.webp" alt="Who Wants to be a Millionaire"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div style="display:none; font-size:1.8rem; font-weight:900; color:#008000; line-height:1.2;">
+            WHO WANTS TO BE A<br>MILLIONAIRE?
+        </div>
+        <div class="logo-title">WHO WANTS TO BE A MILLIONAIRE?</div>
+        <div class="logo-sub">Flexi Educational Consult</div>
+    </div>
+
+    <!-- MAIN CONTROLS -->
+    <div class="main-card">
+        <label class="section-label">Choose Subject</label>
+        <select id="subjectSelect" class="subject-select">
+            <option value="" disabled selected>-- Select a subject --</option>
+            <option value="English Language">English Language</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Biology">Biology</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Physics">Physics</option>
+            <option value="Agricultural Science">Agricultural Science</option>
+            <option value="Animal Husbandry">Animal Husbandry</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Art">Art</option>
+            <option value="Book Keeping">Book Keeping</option>
+            <option value="Catering Craft Practice">Catering Craft Practice</option>
+            <option value="Christian Religious Studies">Christian Religious Studies</option>
+            <option value="Civic Education">Civic Education</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Computer Studies">Computer Studies</option>
+            <option value="Data Processing">Data Processing</option>
+            <option value="Economics">Economics</option>
+            <option value="Fine Arts">Fine Arts</option>
+            <option value="Food and Nutrition">Food and Nutrition</option>
+            <option value="French">French</option>
+            <option value="Further Mathematics">Further Mathematics</option>
+            <option value="Geography">Geography</option>
+            <option value="Government">Government</option>
+            <option value="Hausa">Hausa</option>
+            <option value="History">History</option>
+            <option value="Home Economics">Home Economics</option>
+            <option value="Home Management">Home Management</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Islamic Religious Studies">Islamic Religious Studies</option>
+            <option value="Literature in English">Literature in English</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Music">Music</option>
+            <option value="Office Practice">Office Practice</option>
+            <option value="Physical Education">Physical Education</option>
+            <option value="Technical Drawing">Technical Drawing</option>
+            <option value="Yoruba">Yoruba</option>
+            <option value="Igbo">Igbo</option>
+        </select>
+
+        <button id="startBtn" class="btn btn-primary" disabled onclick="startGame()">
+            Start Game
+        </button>
+
+        <button class="btn btn-secondary" onclick="window.location.href='index.html'">
+            Back to Home
+        </button>
+
+        <p class="hint">
+            Select a subject, then start the game.<br>
+            Answer 15 questions correctly to win ₦1,000,000!
+        </p>
+    </div>
+
+    <script src="back-handler.js"></script>
+    <script src="theme.js"></script>
+    <script>
+        const select = document.getElementById('subjectSelect');
+        const startBtn = document.getElementById('startBtn');
+
+        select.addEventListener('change', () => {
+            startBtn.disabled = !select.value;
+        });
+
+        function startGame() {
+            const subject = select.value;
+            if (!subject) return;
+
+            // Save selected subject (same way your CBT does)
+            if (typeof IDB !== 'undefined') {
+                IDB.setItem('millionaireSubject', subject);
+            } else {
+                localStorage.setItem('millionaireSubject', subject);
+            }
+
+            // For now just show confirmation – later we will go to the real game screen
+            alert('Selected subject: ' + subject + '\n\nFull game screen coming next!');
+            // window.location.href = 'millionaire-game.html?subject=' + encodeURIComponent(subject);
+        }
+    </script>
+</body>
+</html>
