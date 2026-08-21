@@ -61,6 +61,7 @@ body{
     text-decoration:none;
     transition:.2s;
     flex-shrink:0;
+    cursor:pointer;
 }
 
 .back-btn:hover{
@@ -255,7 +256,7 @@ body{
     <div class="header-row">
 
         <div class="title-group">
-            <a href="index.html" class="back-btn">
+            <a href="javascript:void(0)" class="back-btn" onclick="FlexiBack.goBack('index.html')">
                 <box-icon name="arrow-back" color="var(--text)"></box-icon>
             </a>
 
@@ -323,7 +324,7 @@ function escapeHTML(str) {
 window.openChat = (otherUid, otherName) => {
     if (!auth.currentUser) return;
     const chatId = [auth.currentUser.uid, otherUid].sort().join('_');
-    window.location.href = `chat_enter.html?chatId=${chatId}&otherUid=${otherUid}&name=${encodeURIComponent(otherName)}`;
+    window.location.href = `chat_enter.html?chatId=\( {chatId}&otherUid= \){otherUid}&name=${encodeURIComponent(otherName)}`;
 };
 
 // Global Group Creation Handler (Code 2)
@@ -363,7 +364,7 @@ window.openGroup = async (id, name, isJoined) => {
         });
         joinedGroupIds.add(id);
     }
-    window.location.href = `entergroup.html?id=${id}&name=${encodeURIComponent(name)}`;
+    window.location.href = `entergroup.html?id=\( {id}&name= \){encodeURIComponent(name)}`;
 };
 
 // Fetch Joined Groups for Current User
@@ -414,14 +415,14 @@ function listenToChats() {
             const photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
             
             const avatarHTML = photo 
-                ? `<img src="${escapeHTML(photo)}" alt="${escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
+                ? `<img src="\( {escapeHTML(photo)}" alt=" \){escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
                 : '👤';
 
             const safeName = escapeHTML(u.name || 'User');
             const safeDocId = escapeHTML(uDoc.id);
 
             chatList.innerHTML += `
-                <div class="list-item" onclick="openChat('${safeDocId}', '${safeName}')">
+                <div class="list-item" onclick="openChat('\( {safeDocId}', ' \){safeName}')">
                     <div class="item-info">
                         <div class="avatar">${avatarHTML}</div>
                         <div class="details">
@@ -429,7 +430,7 @@ function listenToChats() {
                             <p>Tap to open direct chat</p>
                         </div>
                     </div>
-                    ${unread > 0 ? `<div class="badge">${unread}</div>` : ''}
+                    \( {unread > 0 ? `<div class="badge"> \){unread}</div>` : ''}
                 </div>
             `;
         });
@@ -482,7 +483,7 @@ function listenToGroups() {
                             <p>Admin: ${safeAdmin}</p>
                         </div>
                     </div>
-                    <button class="btn-action ${isJoined ? 'btn-enter' : ''}" onclick="openGroup('${groupId}', '${safeGroupName}', ${isJoined})">
+                    <button class="btn-action \( {isJoined ? 'btn-enter' : ''}" onclick="openGroup(' \){groupId}', '${safeGroupName}', ${isJoined})">
                         ${isJoined ? 'ENTER' : 'JOIN'}
                     </button>
                 </div>
