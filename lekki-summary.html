@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Summary | The Lekki Headmaster</title>
+  <link rel="stylesheet" href="theme.css">
+
+  <style>
+    :root {
+      --flexi-green: #008000;
+      --flexi-navy: #003366;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    header {
+      background: var(--header);
+      color: var(--text);
+      padding: 13px 15px;
+      border-bottom: 4px solid var(--flexi-green);
+      box-shadow: var(--card-shadow);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-container {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 4px;
+    }
+
+    .back-btn svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .brand {
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+
+    .brand span {
+      color: var(--flexi-green);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--flexi-green);
+      margin-bottom: 4px;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--subtext);
+      margin-bottom: 22px;
+    }
+
+    .chapter-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .chapter-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.15s ease;
+    }
+
+    .chapter-card:active {
+      transform: scale(0.98);
+    }
+
+    .chapter-number {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(0, 128, 0, 0.12);
+      color: var(--flexi-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    .chapter-info h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .chapter-info p {
+      font-size: 0.75rem;
+      color: var(--subtext);
+    }
+
+    .arrow {
+      margin-left: auto;
+      color: var(--subtext);
+      font-size: 1.25rem;
+    }
+
+    .chapter-detail {
+      display: none;
+    }
+
+    .chapter-detail.active {
+      display: block;
+    }
+
+    .detail-header {
+      margin-bottom: 20px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--flexi-green);
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 16px;
+      padding: 0;
+    }
+
+    .detail-header .chapter-label {
+      font-size: 0.78rem;
+      color: var(--subtext);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .detail-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--flexi-navy);
+      line-height: 1.3;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: var(--card-shadow);
+      line-height: 1.75;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .summary-card p {
+      margin-bottom: 18px;
+    }
+
+    .summary-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .key-points {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+    }
+
+    .key-points h4 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--flexi-green);
+      margin-bottom: 12px;
+    }
+
+    .key-points ul {
+      padding-left: 20px;
+    }
+
+    .key-points li {
+      margin-bottom: 9px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <button class="back-btn" onclick="FlexiBack.goBack('lekki-hub.html')">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <div class="brand">FLEXI <span>CBT</span></div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div id="list-view">
+    <h1 class="page-title">Chapter Summaries</h1>
+    <p class="page-subtitle">The Lekki Headmaster · Kabir Alabi Garba</p>
+    <div class="chapter-list" id="chapter-list"></div>
+  </div>
+
+  <div id="detail-view" class="chapter-detail">
+    <div class="detail-header">
+      <button class="back-link" onclick="showList()">← All Chapters</button>
+      <div class="chapter-label" id="detail-label">Chapter 1</div>
+      <h2 id="detail-title">Title</h2>
+    </div>
+    <div class="summary-card" id="detail-summary"></div>
+  </div>
+
+</div>
+
+<script src="idb.js"></script>
+<script src="theme.js"></script>
+<script src="back-handler.js"></script>
+
+<script>
+  const chapters = [
+    {
+      number: 1,
+      title: "Dusk",
+      short: "Bepo's emotional breakdown at assembly",
+      summary: `
+        <p>The story opens on what should have been an ordinary morning at Stardom Schools, a well-known private school located in the wealthy Lekki area of Lagos. The school has a strong reputation and is managed with a mixture of strict standards and modern incentives. Not long before this day, the management had reduced boarding fees from ₦250,000 to ₦165,000 per session. The result was immediate: more than 80 percent of the parents moved their children into the boarding house. Lateness, which used to be a major headache, reduced sharply. Almost every student now arrives early for the 7:45 a.m. assembly.</p>
+
+        <p>On this particular morning, the assembly begins in the usual orderly manner. There is a short prayer (the second stanza of the National Anthem on Tuesdays and Thursdays), followed by the school anthem. Then the chapel prefect, a student named Angel, calls for the morning pep talk. The principal, Mr. Bepo Adewale, had introduced this tradition seven years earlier. Sometimes the talk is spontaneous; sometimes topics are given in advance. Today’s speaker is Ikenna Egbu, an SSS 1 student who is also a respected young poet. His mother is a broadcaster and an award-winning poet.</p>
+
+        <p>Ikenna mounts the podium and begins to narrate the experience of the recent school excursion to Jos, Plateau State. He speaks with excitement about the cool weather, the beautiful rocks, the landscape, and the places they visited — including the University of Jos, Shere Hills, Wase Rocks, Lamingo Dam, and the Solomon Lar Amusement Park. He tells his fellow students that even if they have been to London or New York, they must still visit Jos in their lifetime. The hall erupts in cheers and applause. Everyone expects the principal to come forward and give his usual wise and encouraging remarks.</p>
+
+        <p>But something is clearly wrong. Mr. Bepo Adewale walks from the back of the assembly to the podium in a slow, heavy manner. His tall frame does not move with its usual energy. The trademark morning smile that students and staff have come to expect is completely absent. He takes the microphone from Angel and simply stands there, saying nothing. He looks blankly above the heads of the students instead of looking into their eyes the way he normally does. He tries to speak, but no words come out. His head drops over his broad shoulders as he stares at the colourful tiles on the floor.</p>
+
+        <p>A heavy silence falls over the entire assembly. Then the unthinkable happens. Tears begin to trickle from the principal’s eyes. He tries once more to speak, but fails. The microphone slips from his hand and crashes onto the floor, sending a sharp, unpleasant sound through the loudspeakers. More tears stream down his sunken cheeks. Dozens of shocked eyes — both students and staff — are fixed on him. There is nowhere for him to hide. In desperation, Mr. Bepo brings his palms together like a man praying and covers his face.</p>
+
+        <p>The first person to find her voice is the Vice Principal, Mrs. Grace Apeh. She moves quickly to his side and asks, “What is the matter, principal?” Four other members of staff join her. The school nurse, Mrs. Titi (fondly called Nurse Titi), fetches a handkerchief and offers it to him. But Bepo cannot stop sobbing. Mrs. Apeh quickly instructs the Chemistry teacher, Mr. Justus Anabel, to conclude the assembly and send the students into their classrooms immediately. Then, together with Nurse Titi and Mr. Oyelana (the CRK teacher), she begins to lead the weeping principal back to his office, his face still buried in his hands.</p>
+
+        <p>Inside the office, the consolations and questions continue. For more than thirty minutes they try to calm him. Bepo only shakes his head, looks at the ceiling, looks at their faces, and then plunges deeper into tears. More teachers arrive, but the Vice Principal wisely sends most of them away, leaving only the guidance counsellor, Mrs. Beke Egbin. Meanwhile, the Vice Principal’s phone keeps ringing. News of the incident has already reached some parents. One parent hears a wild rumour that the principal was rolling on the floor and shouting “Oluwa gba mi o!” (God save me!). Another parent is simply anxious to know what has happened to the beloved principal.</p>
+
+        <p>Realising the situation is getting out of hand, Mrs. Apeh decides to call the Managing Director, Mrs. Ibidun Gloss, popularly known as MD. The MD would normally have been in school that morning, but she had a function to attend. When she receives the call, she drives down to the school immediately. Upon arrival, she invites Bepo to her office on the second floor of the Admin Building and tries to find out what is wrong. For more than thirty minutes he only keeps muttering, “Thank you. I will be all right.” The MD becomes increasingly frustrated. She reminds him that, given his position and the excellent work he has always done, he is central to everything that happens in the school. He is supposed to be the embodiment of sanity and the balm to troubled nerves. Why has he suddenly become the source of anxiety?</p>
+
+        <p>The chapter ends with the entire school community in a state of confusion and worry. No one yet knows the real reason for the principal’s public breakdown. The title “Dusk” is carefully chosen. It suggests that a dark and difficult period has begun in the life of the man everyone fondly calls “The Lekki Headmaster”.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Setting: Stardom Schools, Lekki, Lagos</li>
+            <li>Principal: Mr. Bepo Adewale (nicknamed “The Lekki Headmaster”)</li>
+            <li>He breaks down in tears during morning assembly and cannot speak</li>
+            <li>Vice Principal: Mrs. Grace Apeh</li>
+            <li>School nurse: Mrs. Titi</li>
+            <li>Managing Director: Mrs. Ibidun Gloss (MD)</li>
+            <li>Student who gave the pep talk: Ikenna Egbu (SSS 1)</li>
+            <li>Chapel prefect: Angel</li>
+            <li>The school had recently reduced boarding fees, which solved the problem of lateness</li>
+            <li>Title “Dusk” symbolises the beginning of a dark period</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 2,
+      title: "The Enticement",
+      short: "Pressure to relocate to the UK",
+      summary: `
+        <p>Five full days pass after the public breakdown before Mr. Bepo finally opens up. The truth is painful and complicated. He is under intense pressure to leave Nigeria and relocate to the United Kingdom. His wife, Seri, is already living and working in the UK as a nurse. Their two children, Nike and Kike, are with her. Seri has been putting strong and persistent pressure on him to join them. The longer he delays, the more the marriage suffers. At this point, the relationship is almost at breaking point.</p>
+
+        <p>Bepo’s hesitation is not because he does not love his family. He loves them deeply. The problem is that he also loves Stardom Schools and the students with equal passion. He has spent more than twenty-four years in the school system, rising through the ranks. For four of those years he served as Headmaster of Stardom Kiddies, the nursery and primary arm of the school. It was during that period that he earned the nickname “The Lekki Headmaster.” The name stuck for two reasons. First, he sometimes amused the little pupils by imitating characters from the old Nigerian television drama <em>Village Headmaster</em>. Second, he had a remarkable ability to settle quarrels among teachers with wisdom, patience and humour. One day, during a staff meeting, the Fine Arts teacher, Mr. Audu, jokingly compared him to King Oloja in the old drama. The name “Lekki Headmaster” was born that day and never left him, even after he became principal of the secondary school.</p>
+
+        <p>Now the same man is being pulled in two opposite directions. On one side is his family in the UK. On the other side are the students and the school he has helped to build. To make the decision even harder, he has already secured a teaching job in the United Kingdom. The job promises about £3,600 plus other entitlements. His current salary as principal of Stardom is about ₦400,000. When his colleagues do the mathematics, they find his reluctance almost impossible to understand.</p>
+
+        <p>Mr. Audu, the Fine Arts teacher known for his sharp and biting humour, becomes the voice of the staffroom gossip. He calculates that if Bepo sends even £1,000 home every month, that would be more than ₦1.7 million at the prevailing exchange rate — far more than his entire current salary. Audu openly declares that the only explanation for Bepo’s behaviour is that the school management must have “jazzed” (bewitched) him. In a moment of comic exaggeration, he even says he will look for Seri’s address and beg her to adopt him as a husband so that he can travel immediately. His colleagues burst into laughter, but beneath the jokes lies a serious point: almost everyone believes Bepo is making a foolish decision by hesitating.</p>
+
+        <p>Bepo himself sees the situation differently. Money is not the only thing that matters to him. He had already been making long-term plans for life after retirement. He intended to retire at the age of 55 (still four years away) and then go into entrepreneurship. He has been attending seminars on business. He has considered commercial transportation (buying a bus or cab and leasing it to a driver), farming, food processing, and sachet or bottled water business. More importantly, he has always dreamed of establishing his own school. He is a trained teacher who studied English/History Education at the University of Benin. He believes he has enough experience in school management to run a successful institution. His only real reservation is capital, and he knows his wife will not support any project that will keep him in Nigeria.</p>
+
+        <p>The chapter is titled “The Enticement” because the attractions of life in the UK are real and powerful: higher income, better infrastructure, reunification with his wife and children, and the chance to give his family a more comfortable life. Yet Bepo continues to feel that leaving his students and abandoning his dreams in Nigeria would be a form of betrayal. The internal war between family pressure and professional/national duty is fully established in this chapter.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Bepo’s wife: Seri (works as a nurse in the UK)</li>
+            <li>Children: Nike and Kike</li>
+            <li>He has already secured a teaching job in the UK paying about £3,600</li>
+            <li>His current salary at Stardom is about ₦400,000</li>
+            <li>Mr. Audu (Fine Arts teacher) provides comic relief and sharp criticism</li>
+            <li>The nickname “The Lekki Headmaster” originated from his days at Stardom Kiddies</li>
+            <li>Bepo had planned to retire at 55 and start his own school or business</li>
+            <li>He studied English/History Education at the University of Benin</li>
+            <li>Central conflict: family pressure versus love for students and duty to Nigeria</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 3,
+      title: "Migration Tales",
+      short: "Stories of Japa and life abroad",
+      summary: `
+        <p>Once Bepo has more or less accepted that he may have to leave, he begins to listen carefully to the many stories of Nigerians who have already relocated to the UK, Canada, and the United States. These “migration tales” form the heart of the chapter. He learns that in many of these countries, payment is often hourly, daily, or weekly, unlike the rigid monthly salary system in Nigeria. A friend in the United States tells him that a person can earn between $150 and $250 per day depending on the nature of the job and the location. Some people work up to four days a week and still earn what translates to a very large sum in naira.</p>
+
+        <p>Bepo also discovers that skilled work pays significantly better. A barber can earn around $100 per client. A person with basic carpentry or maintenance skills can earn as much as $500 in a single day. These figures excite many people who are still in Nigeria, but Bepo is careful enough to remember that the money will be earned and spent in dollars or pounds. Rent, tax, transport, and food are all paid in the hard currency. What remains to be sent home may still be attractive, but it is not the fantasy figure that many people imagine when they simply multiply foreign wages by the black-market exchange rate.</p>
+
+        <p>One of the most important voices in this chapter is Sola, a former Home Economics teacher at Stardom. About six months earlier, Sola had left the school on what she called “sick leave.” In reality, she and her husband had relocated to the United Kingdom. She later confides in Bepo. She tells him that their journey was not easy. They sold almost everything they owned and still had to borrow about ₦4 million. They could not afford the high rents in London, so they settled in Manchester, where they pay £650 per month for a small, unfurnished two-bedroom apartment. Sola has already changed jobs more than three times. The latest one is more promising and can fetch her up to £200 a day.</p>
+
+        <p>Sola is honest about both the advantages and the difficulties. On the positive side, her children enjoy free education and free healthcare. The emergency medical response is excellent — when her asthmatic daughter had a seizure, two ambulances arrived in less than five minutes. On the negative side, life is hard, the work is demanding, and settling down takes time and money. She advises Bepo that his own situation is actually one of the better ones because his wife is already in the UK working as a nurse, and he already has a teaching job waiting for him. He will not have to start from absolute zero.</p>
+
+        <p>The chapter also presents darker stories. There is the case of people who took loans and disappeared. At Stardom itself, a teacher named Mr. Nku took a ₦2 million loan from the school cooperative and vanished two days later. One of the school drivers even attempted to steal the school bus so he could sell it and send his son abroad. There are stories of marriages that collapsed under the pressure of life overseas, and of people who returned to Nigeria empty-handed after many years. One academic who spent over twenty years in the United States came back with nothing because of a bitter divorce.</p>
+
+        <p>Through all these tales, Bepo is forced to confront the full reality of the “Japa” phenomenon. It is not a simple story of success. It is a mixture of opportunity, sacrifice, risk, disappointment, and occasional triumph. The chapter leaves him more informed, but not necessarily more comfortable with the decision he is about to make.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Sola (former Home Economics teacher) gives a balanced account of life in the UK</li>
+            <li>Many migrants struggle with high rent and the pressure of multiple jobs</li>
+            <li>Free education and healthcare for children are major attractions</li>
+            <li>Some migration stories end in debt, divorce, or regret</li>
+            <li>Mr. Nku took a cooperative loan and disappeared</li>
+            <li>The chapter presents both the hopes and the harsh realities of “Japa”</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 4,
+      title: "A Case of Visa Denied",
+      short: "The Ignatius family DNA crisis",
+      summary: `
+        <p>While Bepo is still wrestling with his own decision, another family crisis is brought to his doorstep. Late one night, as he is about to say his prayers in his room at Adeniyi Jones, Ikeja, his phone rings. The caller is Mrs. Ignatius, the mother of one of the students at Stardom. Mrs. Ignatius has developed the habit of calling the principal at odd hours and discussing matters that go far beyond school business. On several occasions she has even discussed her marital problems with him. Bepo has tolerated it, but he is not happy about the over-familiarity.</p>
+
+        <p>This particular night, Mrs. Ignatius is almost hysterical. She tells Bepo that her husband, Mr. Ibe, has left the house after a serious quarrel. The root of the problem is a DNA test. The family had been in the advanced stages of processing visas to relocate to London. Mr. Ibe, a manager in an oil firm, earned what Bepo privately described as an “armed robber’s salary.” He was determined that his children would not grow up in Nigeria. He wanted them to have a “sane environment” and better opportunities. His wife had even learnt hairdressing and traditional Yoruba hair-braiding (irun didi) because she heard that such skills paid very well in the UK.</p>
+
+        <p>Everything was going according to plan until the embassy requested DNA tests for the three children. The results showed that Mr. Ibe was not the biological father of their daughter Favour, a 15-year-old student in SS2 at Stardom. The discovery shattered the family. Mr. Ibe was devastated and furious. He now insists that Favour and her mother should leave the house and “go and stay with Favour’s real father.” Favour herself has not yet been told the full truth, although her brother Iyi is beginning to ask uncomfortable questions about why their visa application was rejected.</p>
+
+        <p>Bepo listens with a heavy heart. He is already carrying the burden of his own family’s pressure to relocate, and now he is being drawn into another family’s painful and private tragedy. The chapter shows how the personal crises of parents frequently spill into the life of a school principal, especially one who is known to be accessible and compassionate. It also shows one of the hidden and painful costs of the great “Japa” dream: sometimes the process of leaving the country exposes secrets that destroy families.</p>
+
+        <p>By the end of the chapter, Bepo is more convinced than ever that life is complicated. He is preparing for his own possible departure, yet he cannot escape the problems of the people around him. The title “A Case of Visa Denied” is both literal and symbolic. A visa has been denied, and with it, a family’s future as they once imagined it has also been denied.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Mrs. Ignatius frequently oversteps boundaries by calling Bepo late at night</li>
+            <li>Her husband is Mr. Ibe, a well-paid oil firm manager</li>
+            <li>A DNA test reveals that Mr. Ibe is not the father of their daughter Favour</li>
+            <li>Favour is an SS2 student at Stardom Schools</li>
+            <li>The family’s UK visa is denied because of the DNA result</li>
+            <li>The chapter shows how the Japa process can expose painful family secrets</li>
+            <li>Bepo is drawn into yet another personal crisis while dealing with his own</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 5,
+      title: "Snake in the Roof",
+      short: "Hidden danger and internal problems",
+      summary: `
+        <p>As if the pressure from his family and the emotional weight of the Ignatius crisis were not enough, new problems begin to appear inside Stardom Schools itself. The title “Snake in the Roof” is deliberate and powerful. A snake in the roof is a danger that is close, hidden, and capable of striking at any moment. It suggests that the threat is not coming from outside the school alone, but from within — from people and situations that are supposed to be safe and familiar.</p>
+
+        <p>Internal politics, staff rivalries, quiet acts of disloyalty, and external pressures begin to surface. Bepo, who has always been the calm and stabilising centre of the school, now finds himself having to manage these problems while his own personal life is in turmoil. The man who used to solve everyone else’s crises is now the one carrying the heaviest burden of all.</p>
+
+        <p>The chapter deepens the reader’s understanding of how stressful the life of a school leader can be. It also shows that Bepo’s decision to stay or leave is not being made in a peaceful environment. Both his private world and his professional world are under pressure at the same time. The “snake” may be a person, a group of people, or a combination of hidden forces that threaten the peace and reputation of the school. Whatever it is, it adds another layer of difficulty to an already complicated situation.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Title symbolises hidden, internal danger</li>
+            <li>Problems begin to surface within Stardom Schools</li>
+            <li>Bepo must handle school crises while carrying personal burdens</li>
+            <li>The chapter increases the pressure on the protagonist</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 6,
+      title: "Ade as Well as Jide COMES vs. COME",
+      short: "Classroom reality and grammar",
+      summary: `
+        <p>In the middle of all the personal and institutional drama, ordinary school life continues. This chapter brings the reader back into the classroom and reminds us that the core business of Stardom Schools — teaching and learning — has not stopped. The unusual title “Ade as Well as Jide COMES vs. COME” points to one of the common grammatical problems that English teachers face in Nigerian classrooms: subject-verb agreement, especially with phrases such as “as well as.”</p>
+
+        <p>Through classroom interactions, the chapter shows both the challenges and the small victories of everyday teaching. Students still make mistakes. Teachers still correct them. Lessons still have to be prepared and delivered. In the midst of his own emotional crisis, Bepo remains committed to academic standards. This commitment is one of the things that makes his possible departure so painful. He is not just leaving a job; he is leaving a responsibility he takes very seriously.</p>
+
+        <p>The chapter serves as a necessary pause in the larger narrative. It shows that life in the school goes on, and that Bepo’s identity as a teacher and school leader is deeply tied to these ordinary but important moments of classroom work.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Focuses on everyday classroom teaching</li>
+            <li>Highlights common grammatical challenges</li>
+            <li>Shows Bepo’s continued professionalism despite personal crisis</li>
+            <li>Reminds readers that the real work of the school continues</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 7,
+      title: "Ritualists",
+      short: "Fear, rumour and social tension",
+      summary: `
+        <p>Fear enters the story in a new form. Rumours about ritualists begin to circulate, reflecting a wider atmosphere of insecurity and anxiety in the society. These fears do not exist in isolation; they affect the mood of parents, students, and staff. In a school community, such rumours can create tension, distract from academic work, and increase the burden on the school leadership.</p>
+
+        <p>The chapter places the personal story of Bepo within the larger Nigerian social context. The same society that is pushing many people to “Japa” is also dealing with fear, insecurity, and superstition. Bepo must navigate these external pressures while still trying to keep Stardom Schools stable and focused on its mission.</p>
+
+        <p>By introducing the theme of ritualists, the author broadens the novel’s social commentary. The problems facing Bepo are not only personal or professional; they are also connected to the wider challenges of the society in which he lives and works.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Rumours about ritualists create fear and tension</li>
+            <li>Reflects wider Nigerian social anxieties</li>
+            <li>Adds another layer of pressure on the school community</li>
+            <li>Connects Bepo’s personal story to broader societal issues</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 8,
+      title: "Missions Unaccomplished",
+      short: "Unfulfilled dreams and duty",
+      summary: `
+        <p>This chapter takes the reader deep into Bepo’s inner thoughts. He begins to reflect seriously on all the things he still wants to achieve in Nigeria. There are students whose lives he has not yet finished shaping. There is the school he has always dreamed of establishing. There are ideas about education and nation-building that he has not yet turned into reality. The feeling that he may leave with “missions unaccomplished” becomes a heavy emotional burden.</p>
+
+        <p>The chapter strengthens the central moral question of the novel: Is it right for a man who still has so much to offer his country to leave in search of personal comfort? Bepo does not find an easy answer. He loves his family and wants to be with them. At the same time, he feels a strong sense of duty to the young people who look up to him and to the educational vision he has carried for many years.</p>
+
+        <p>The title “Missions Unaccomplished” captures the pain of unfinished work and the guilt that can accompany the decision to walk away from a calling before one feels the work is done.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Bepo reflects on his unfulfilled dreams in Nigeria</li>
+            <li>He still wants to establish his own school</li>
+            <li>Strong sense of unfinished responsibility toward students</li>
+            <li>Deepens the conflict between personal comfort and duty</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 9,
+      title: "Laughing Waterfalls",
+      short: "Beauty, memory and emotional reflection",
+      summary: `
+        <p>In the midst of pressure, difficult decisions, and emotional strain, the novel pauses for a moment of beauty and reflection. The title “Laughing Waterfalls” suggests joy, nature, movement, and a kind of carefree happiness. This chapter provides an emotional contrast to the heavier chapters that come before and after it.</p>
+
+        <p>Through memories, observations, or a change of scene, Bepo is given a brief opportunity to breathe. The chapter reminds both the character and the reader that life still contains moments of beauty even when a person is carrying a heavy burden. It also deepens our understanding of Bepo as a sensitive and reflective man — not just a school administrator dealing with problems, but a human being capable of feeling wonder and sadness at the same time.</p>
+
+        <p>This quieter chapter prepares the emotional ground for the final movement of the story.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>A reflective and emotionally softer chapter</li>
+            <li>Provides contrast to the tension of surrounding chapters</li>
+            <li>Highlights Bepo’s sensitive nature</li>
+            <li>Title suggests beauty and emotional release</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 10,
+      title: "Passport Pains",
+      short: "Bureaucracy and the stress of leaving",
+      summary: `
+        <p>The practical side of relocation now becomes unavoidable. Passports, forms, appointments, embassy requirements, and bureaucratic delays create a new kind of stress. Anyone who has ever tried to process travel documents in Nigeria will recognise the frustration that this chapter describes.</p>
+
+        <p>For Bepo, these “passport pains” are not just administrative obstacles. They are physical reminders that the decision to leave is becoming real. Every form he fills, every queue he joins, and every delay he endures forces him to confront the fact that his life is about to change in a major way. The chapter captures the mixture of anxiety, hope, irritation, and exhaustion that often accompanies the process of trying to leave the country.</p>
+
+        <p>By focusing on these practical details, the author brings the large emotional and moral questions of the novel down to the level of everyday experience.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Focuses on the practical difficulties of relocation</li>
+            <li>Passport and documentation problems create stress</li>
+            <li>Makes the possibility of departure feel real and immediate</li>
+            <li>Reflects a common Nigerian experience</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 11,
+      title: "Point of No Return",
+      short: "The critical decision",
+      summary: `
+        <p>This is the emotional and moral climax of the novel. Bepo reaches the point where delay is no longer possible. A decision must be made. Family pressure has reached its peak. The opportunities in the UK remain attractive. The problems and unfinished work in Nigeria are still very real. Everything he has been struggling with throughout the book comes together in this chapter.</p>
+
+        <p>The title “Point of No Return” suggests a moment after which things cannot go back to the way they were. Whatever choice Bepo makes, his life and the lives of those connected to him will be permanently affected. The chapter is filled with tension as he weighs love for his wife and children against love for his students and his sense of duty to his country.</p>
+
+        <p>Readers are brought to the edge of the central question the novel has been asking from the beginning: What should a man do when personal happiness and public responsibility pull him in opposite directions?</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Emotional and moral climax of the novel</li>
+            <li>Bepo must finally make his decision</li>
+            <li>Family versus duty is now unavoidable</li>
+            <li>Title suggests a permanent turning point</li>
+          </ul>
+        </div>
+      `
+    },
+    {
+      number: 12,
+      title: "Dawn",
+      short: "Resolution and new beginning",
+      summary: `
+        <p>The final chapter brings the long night of indecision, pressure, and emotional struggle to an end. The title “Dawn” is carefully chosen. Dawn is the time when darkness begins to give way to light. It suggests a new beginning, a fresh start, and the return of clarity after a period of confusion.</p>
+
+        <p>In this chapter, Bepo’s decision is revealed and the consequences begin to unfold. Whether he stays in Nigeria or leaves for the United Kingdom, the novel uses the ending to emphasise larger themes that have been present from the beginning: the value of committed teachers, the importance of education in nation-building, the complexity of the “Japa” phenomenon, and the personal cost of difficult moral choices.</p>
+
+        <p>The book closes by returning to the spirit of its dedication — a tribute to all teachers who remain committed to the cause of sound education. They are described as the real builders of the nation. In the end, <em>The Lekki Headmaster</em> is not just the story of one man trying to decide whether to leave or stay. It is a story about responsibility, sacrifice, love, and the quiet but powerful work of those who shape the next generation.</p>
+
+        <div class="key-points">
+          <h4>Key Points to Remember</h4>
+          <ul>
+            <li>Final chapter and resolution of the major conflict</li>
+            <li>“Dawn” symbolises hope, clarity, and a new beginning</li>
+            <li>Emphasises the value of teachers and education</li>
+            <li>Brings together the major themes of the novel</li>
+            <li>Connects back to the dedication of the book</li>
+          </ul>
+        </div>
+      `
+    }
+  ];
+
+  const listView = document.getElementById('list-view');
+  const detailView = document.getElementById('detail-view');
+  const chapterList = document.getElementById('chapter-list');
+
+  function renderList() {
+    chapterList.innerHTML = chapters.map(ch => `
+      <div class="chapter-card" onclick="showChapter(${ch.number})">
+        <div class="chapter-number">${ch.number}</div>
+        <div class="chapter-info">
+          <h3>${ch.title}</h3>
+          <p>${ch.short}</p>
+        </div>
+        <div class="arrow">›</div>
+      </div>
+    `).join('');
+  }
+
+  function showChapter(num) {
+    const ch = chapters.find(c => c.number === num);
+    if (!ch) return;
+
+    document.getElementById('detail-label').textContent = 'Chapter ' + ch.number;
+    document.getElementById('detail-title').textContent = ch.title;
+    document.getElementById('detail-summary').innerHTML = ch.summary;
+
+    listView.style.display = 'none';
+    detailView.classList.add('active');
+
+    if (window.FlexiBack) {
+      FlexiBack.setHandler(function () {
+        showList();
+        return true;
+      });
+    }
+
+    window.scrollTo(0, 0);
+  }
+
+  function showList() {
+    detailView.classList.remove('active');
+    listView.style.display = 'block';
+
+    if (window.FlexiBack) {
+      FlexiBack.clearHandler();
+    }
+
+    window.scrollTo(0, 0);
+  }
+
+  renderList();
+</script>
+
+</body>
+</html>
