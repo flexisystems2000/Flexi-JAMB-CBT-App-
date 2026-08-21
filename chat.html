@@ -320,14 +320,14 @@ function escapeHTML(str) {
     );
 }
 
-// Global Chat Handler (Code 1)
+// Global Chat Handler
 window.openChat = (otherUid, otherName) => {
     if (!auth.currentUser) return;
     const chatId = [auth.currentUser.uid, otherUid].sort().join('_');
     window.location.href = `chat_enter.html?chatId=\( {chatId}&otherUid= \){otherUid}&name=${encodeURIComponent(otherName)}`;
 };
 
-// Global Group Creation Handler (Code 2)
+// Global Group Creation Handler
 window.handleCreateGroup = async () => {
     const input = document.getElementById("new-group-name");
     if (!input || !input.value.trim()) return;
@@ -355,7 +355,7 @@ window.handleCreateGroup = async () => {
     }
 };
 
-// Global Group Enter/Join Handler (Code 2)
+// Global Group Enter/Join Handler
 window.openGroup = async (id, name, isJoined) => {
     if (!isJoined) {
         await setDoc(doc(db, "groups", id, "members", auth.currentUser.uid), {
