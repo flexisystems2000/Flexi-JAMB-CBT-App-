@@ -228,16 +228,13 @@
             const subject = select.value;
             if (!subject) return;
 
-            // Save selected subject (same way your CBT does)
             if (typeof IDB !== 'undefined') {
                 IDB.setItem('millionaireSubject', subject);
             } else {
                 localStorage.setItem('millionaireSubject', subject);
             }
 
-            // For now just show confirmation – later we will go to the real game screen
-            alert('Selected subject: ' + subject + '\n\nFull game screen coming next!');
-            // window.location.href = 'millionaire-game.html?subject=' + encodeURIComponent(subject);
+            window.location.href = 'millionaire-game.html?subject=' + encodeURIComponent(subject);
         }
     </script>
 </body>
