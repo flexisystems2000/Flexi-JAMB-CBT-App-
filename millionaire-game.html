@@ -289,8 +289,8 @@ body::before{
     <h2 id="resultTitle">Congratulations!</h2>
     <p id="resultMsg"></p>
     <div class="amount" id="resultAmount">₦0</div>
-    <button onclick="location.href='millionaire.html'">Play Again</button>
-    <button onclick="location.href='index.html'" style="background:linear-gradient(135deg,#1a4a8a,#0d2a5a);color:#ffd700">Home</button>
+    <button onclick="stopSound(); location.href='millionaire.html'">Play Again</button>
+    <button onclick="stopSound(); location.href='index.html'" style="background:linear-gradient(135deg,#1a4a8a,#0d2a5a);color:#ffd700">Home</button>
   </div>
 </div>
 
@@ -303,7 +303,7 @@ body::before{
   </div>
 </div>
 
-<audio id="sfx" preload="none"></audio>
+<audio id="sfx" preload="auto"></audio>
 
 <script>
 const LADDER = [1000,2000,3000,5000,10000,20000,30000,50000,75000,150000,250000,500000,750000,1000000,2000000];
@@ -314,10 +314,20 @@ let answered = false, subject = '';
 
 const sfx = document.getElementById('sfx');
 sfx.src = 'assets/millionaire-sounds.mp3';
-sfx.loop = false;
+sfx.loop = true;
+sfx.volume = 0.6;
+
+function startMusic() {
+  try {
+    sfx.play().catch(function() {});
+  } catch(e) {}
+}
 
 function stopSound() {
-  try { sfx.pause(); sfx.currentTime = 0; } catch(e) {}
+  try {
+    sfx.pause();
+    sfx.currentTime = 0;
+  } catch(e) {}
 }
 
 async function init() {
@@ -326,6 +336,7 @@ async function init() {
   document.getElementById('subjectShort').textContent = subject.slice(0, 3).toUpperCase();
   await loadQuestions();
   showQuestion();
+  startMusic();   // music starts once here
 }
 
 async function loadQuestions() {
