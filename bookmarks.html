@@ -245,7 +245,7 @@
     
     <!-- Top Bar -->
     <header class="header">
-      <a href="javascript:history.back()" class="back-btn">
+      <a href="javascript:void(0)" class="back-btn" onclick="FlexiBack.goBack('more.html')">
         <i data-lucide="arrow-left"></i>
       </a>
       <span class="header-title">Saved Bookmarks</span>
@@ -408,7 +408,7 @@
           optionsHtml = `<div class="options-grid">` +
             options.map((opt, idx) => {
               const isCorrect = (item.correctAnswer === idx || item.answer === opt);
-              return `<div class="option-item ${isCorrect ? 'correct' : ''}">${escapeHTML(opt)} ${isCorrect ? '✓' : ''}</div>`;
+              return `<div class="option-item \( {isCorrect ? 'correct' : ''}"> \){escapeHTML(opt)} ${isCorrect ? '✓' : ''}</div>`;
             }).join('') +
             `</div>`;
         }
