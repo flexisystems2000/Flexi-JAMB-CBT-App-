@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Flexi Chat & Groups</title>
+<script>
+(function () {
+    try {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    } catch (e) {}
+})();
+</script>
 <link rel="stylesheet" href="theme.css">
 <script src="boxicons.js"></script>
 
