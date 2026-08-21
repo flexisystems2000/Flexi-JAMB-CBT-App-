@@ -4,10 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Update Questions - Flexi Educational Consult</title>
+  <script>
+(function () {
+    try {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    } catch (e) {}
+})();
+</script>
 
-  <!-- Global Theme Stylesheet -->
-  <link rel="stylesheet" href="theme.css">
-
+<link rel="stylesheet" href="theme.css">
   <!-- Lucide Icons -->
   <script src="lucide.min.js"></script>
 
