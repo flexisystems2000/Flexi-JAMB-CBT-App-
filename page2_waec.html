@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="theme.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <script>
+(function () {
+    try {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+    } catch (e) {}
+})();
+</script>
+
+<link rel="stylesheet" href="theme.css"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Flexi CBT | Subject Selection</title>
 
     <style>
