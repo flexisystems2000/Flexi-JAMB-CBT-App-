@@ -15,16 +15,12 @@
     </script>
     <link rel="stylesheet" href="theme.css">
 
-    <!-- Eruda - Mobile Console -->
-    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
-    <script>eruda.init();</script>
-
     <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 90px; }
+    body { font-family: 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); padding-bottom: 120px; }
     header { height: 60px; background: var(--header); color: var(--text); display: flex; align-items: center; padding: 0 15px; gap: 15px; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
     .back-btn { font-size: 1.4rem; cursor: pointer; text-decoration: none; color: inherit; background: none; border: none; }
-    #comment-feed { padding: 15px; display: flex; flex-direction: column; gap: 12px; }
+    #comment-feed { padding: 15px 15px 30px 15px; display: flex; flex-direction: column; gap: 12px; }
     .msg-row { display: flex; gap: 8px; width: 100%; align-items: flex-start; }
     .msg-row.sent { justify-content: flex-end; }
     .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--green, #2E8B57); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9rem; flex-shrink: 0; overflow: hidden; cursor: pointer; position: relative; }
@@ -217,8 +213,6 @@ function initMessageListener() {
         return;
     }
 
-    console.log("Listening to chat:", chatId);
-
     var q = query(collection(db, "chats", chatId, "messages"), orderBy("timestamp", "asc"));
 
     unsubscribeListener = onSnapshot(q, async function(snapshot) {
@@ -271,10 +265,10 @@ function initMessageListener() {
                     '<div class="msg-row ' + (isSent ? "sent" : "received") + '">' +
                     avatarHTML +
                     '<div class="msg-bubble">' +
-                    (!isSent ? '<div class="msg-name profile-link" data-uid="' + escapeHTML(msg.senderUid) + '">' + escapeHTML(msg.sender || "Anonymous") + "</div>" : "") +
-                    (msg.text ? '<div class="msg-text">' + escapeHTML(msg.text) + "</div>" : "") +
+                    (!isSent ? '<div class="msg-name profile-link" data-uid="' + escapeHTML(msg.senderUid) + '">' + escapeHTML(msg.sender || "Anonymous") + '</div>' : "") +
+                    (msg.text ? '<div class="msg-text">' + escapeHTML(msg.text) + '</div>' : "") +
                     renderImageGrid(images, serializedImages) +
-                    "</div></div>";
+                    '</div></div>';
             });
 
             feed.innerHTML = completeFeedHTML;
@@ -283,11 +277,11 @@ function initMessageListener() {
             window.scrollTo(0, document.body.scrollHeight);
         } catch (err) {
             console.error("Snapshot render error:", err);
-            feed.innerHTML = '<div class="error-msg">Error loading messages.<br>' + err.message + "</div>";
+            feed.innerHTML = '<div class="error-msg">Error loading messages.<br>' + err.message + '</div>';
         }
     }, function(error) {
         console.error("Listener error:", error);
-        feed.innerHTML = '<div class="error-msg">Failed to load messages.<br>' + error.message + "</div>";
+        feed.innerHTML = '<div class="error-msg">Failed to load messages.<br>' + error.message + '</div>';
     });
 }
 
@@ -487,7 +481,6 @@ onAuthStateChanged(auth, function(user) {
         initMessageListener();
     } else {
         feed.innerHTML = '<div class="error-msg">Missing chat ID. Please go back and try again.</div>';
-        console.error("Missing chat ID in URL");
     }
 });
 </script>
