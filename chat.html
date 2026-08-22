@@ -256,6 +256,17 @@ body{
     outline: none;
     margin-bottom: 12px;
 }
+
+.loading-msg, .empty-msg, .error-msg {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--subtext);
+    font-size: 0.95rem;
+}
+
+.error-msg {
+    color: #e53e3e;
+}
 </style>
 </head>
 <body>
@@ -288,7 +299,7 @@ body{
 </div>
 
 <div class="chat-list" id="chatList">
-    <div style="padding: 20px; text-align: center; color: var(--subtext);">Loading conversations...</div>
+    <div class="loading-msg">Loading conversations...</div>
 </div>
 
 <script src="idb.js"></script>
@@ -302,10 +313,10 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-// Unified Firebase Configuration
+// Correct Firebase Configuration (matches login page)
 const firebaseConfig = { 
     apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
-    authDomain: "flexieduconsult.com.ng", 
+    authDomain: "auth.flexieduconsult.com.ng", 
     projectId: "waec2026jamb2027" 
 };
 
@@ -333,7 +344,7 @@ function escapeHTML(str) {
 window.openChat = (otherUid, otherName) => {
     if (!auth.currentUser) return;
     const chatId = [auth.currentUser.uid, otherUid].sort().join('_');
-    window.location.href = `chat_enter.html?chatId=\( {chatId}&otherUid= \){otherUid}&name=${encodeURIComponent(otherName)}`;
+    window.location.href = `chat_enter.html?chatId=\( {encodeURIComponent(chatId)}&otherUid= \){encodeURIComponent(otherUid)}&name=${encodeURIComponent(otherName)}`;
 };
 
 // Global Group Creation Handler
@@ -361,19 +372,24 @@ window.handleCreateGroup = async () => {
         input.value = "";
     } catch (err) {
         console.error("Error creating group:", err);
+        alert("Failed to create group. Please try again.");
     }
 };
 
 // Global Group Enter/Join Handler
 window.openGroup = async (id, name, isJoined) => {
     if (!isJoined) {
-        await setDoc(doc(db, "groups", id, "members", auth.currentUser.uid), {
-            uid: auth.currentUser.uid,
-            joinedAt: serverTimestamp()
-        });
-        joinedGroupIds.add(id);
+        try {
+            await setDoc(doc(db, "groups", id, "members", auth.currentUser.uid), {
+                uid: auth.currentUser.uid,
+                joinedAt: serverTimestamp()
+            });
+            joinedGroupIds.add(id);
+        } catch (err) {
+            console.error("Error joining group:", err);
+        }
     }
-    window.location.href = `entergroup.html?id=\( {id}&name= \){encodeURIComponent(name)}`;
+    window.location.href = `entergroup.html?id=\( {encodeURIComponent(id)}&name= \){encodeURIComponent(name)}`;
 };
 
 // Fetch Joined Groups for Current User
@@ -398,52 +414,73 @@ onAuthStateChanged(auth, async (user) => {
         window.location.href = "login.html"; 
         return;
     }
-    await loadJoinedGroups(user.uid);
-    loadActiveView(currentActiveView);
+    try {
+        await loadJoinedGroups(user.uid);
+        loadActiveView(currentActiveView);
+    } catch (err) {
+        console.error("Auth load error:", err);
+        chatList.innerHTML = `<div class="error-msg">Failed to load. Please refresh the page.</div>`;
+    }
 });
 
 // Listener: Direct Chats (Profiles)
 function listenToChats() {
     clearListeners();
 
-    unsubscribeProfiles = onSnapshot(collection(db, "profiles"), (snapshot) => {
-        if (currentActiveView !== "chats") return;
+    chatList.innerHTML = `<div class="loading-msg">Loading conversations...</div>`;
 
-        chatList.innerHTML = "";
+    unsubscribeProfiles = onSnapshot(
+        collection(db, "profiles"), 
+        (snapshot) => {
+            if (currentActiveView !== "chats") return;
 
-        if (snapshot.empty) {
-            chatList.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">No users found.</div>';
-            return;
-        }
+            chatList.innerHTML = "";
 
-        snapshot.forEach((uDoc) => {
-            if (uDoc.id === auth.currentUser.uid) return;
+            if (snapshot.empty) {
+                chatList.innerHTML = `<div class="empty-msg">No users found yet.</div>`;
+                return;
+            }
 
-            const u = uDoc.data();
-            const unread = u.unreadCount || 0;
-            const photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
-            
-            const avatarHTML = photo 
-                ? `<img src="\( {escapeHTML(photo)}" alt=" \){escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
-                : '👤';
+            let hasUsers = false;
 
-            const safeName = escapeHTML(u.name || 'User');
-            const safeDocId = escapeHTML(uDoc.id);
+            snapshot.forEach((uDoc) => {
+                if (uDoc.id === auth.currentUser.uid) return;
 
-            chatList.innerHTML += `
-                <div class="list-item" onclick="openChat('\( {safeDocId}', ' \){safeName}')">
-                    <div class="item-info">
-                        <div class="avatar">${avatarHTML}</div>
-                        <div class="details">
-                            <h4>${safeName}</h4>
-                            <p>Tap to open direct chat</p>
+                hasUsers = true;
+                const u = uDoc.data();
+                const unread = u.unreadCount || 0;
+                const photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
+                
+                const avatarHTML = photo 
+                    ? `<img src="\( {escapeHTML(photo)}" alt=" \){escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
+                    : '👤';
+
+                const safeName = escapeHTML(u.name || 'User');
+                const safeDocId = escapeHTML(uDoc.id);
+
+                chatList.innerHTML += `
+                    <div class="list-item" onclick="openChat('\( {safeDocId}', ' \){safeName}')">
+                        <div class="item-info">
+                            <div class="avatar">${avatarHTML}</div>
+                            <div class="details">
+                                <h4>${safeName}</h4>
+                                <p>Tap to open direct chat</p>
+                            </div>
                         </div>
+                        \( {unread > 0 ? `<div class="badge"> \){unread}</div>` : ''}
                     </div>
-                    \( {unread > 0 ? `<div class="badge"> \){unread}</div>` : ''}
-                </div>
-            `;
-        });
-    });
+                `;
+            });
+
+            if (!hasUsers) {
+                chatList.innerHTML = `<div class="empty-msg">No other users found.</div>`;
+            }
+        },
+        (error) => {
+            console.error("Chats listener error:", error);
+            chatList.innerHTML = `<div class="error-msg">Failed to load chats.<br>${error.message}</div>`;
+        }
+    );
 }
 
 // Listener: Groups
@@ -457,7 +494,7 @@ function listenToGroups() {
             <button class="btn-create" onclick="handleCreateGroup()">CREATE GROUP</button>
         </div>
         <div id="group-items-wrapper">
-            <div style="padding: 20px; text-align: center; color: var(--subtext);">Loading discussion groups...</div>
+            <div class="loading-msg">Loading discussion groups...</div>
         </div>
     `;
 
@@ -465,13 +502,14 @@ function listenToGroups() {
     const groupWrapper = document.getElementById("group-items-wrapper");
 
     const q = query(collection(db, "groups"), orderBy("createdAt", "desc"));
+    
     unsubscribeGroups = onSnapshot(q, (snapshot) => {
         if (currentActiveView !== "groups") return;
 
         groupWrapper.innerHTML = "";
 
         if (snapshot.empty) {
-            groupWrapper.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">No active discussion groups yet.</div>';
+            groupWrapper.innerHTML = `<div class="empty-msg">No active discussion groups yet.</div>`;
             return;
         }
 
@@ -492,19 +530,29 @@ function listenToGroups() {
                             <p>Admin: ${safeAdmin}</p>
                         </div>
                     </div>
-                    <button class="btn-action \( {isJoined ? 'btn-enter' : ''}" onclick="openGroup(' \){groupId}', '${safeGroupName}', ${isJoined})">
+                    <button class="btn-action ${isJoined ? 'btn-enter' : ''}" 
+                            onclick="openGroup('\( {groupId}', ' \){safeGroupName}', ${isJoined})">
                         ${isJoined ? 'ENTER' : 'JOIN'}
                     </button>
                 </div>
             `;
         });
+    }, (error) => {
+        console.error("Groups listener error:", error);
+        groupWrapper.innerHTML = `<div class="error-msg">Failed to load groups.<br>${error.message}</div>`;
     });
 }
 
 // Unsubscribe active listeners on tab switch
 function clearListeners() {
-    if (unsubscribeProfiles) { unsubscribeProfiles(); unsubscribeProfiles = null; }
-    if (unsubscribeGroups) { unsubscribeGroups(); unsubscribeGroups = null; }
+    if (unsubscribeProfiles) { 
+        unsubscribeProfiles(); 
+        unsubscribeProfiles = null; 
+    }
+    if (unsubscribeGroups) { 
+        unsubscribeGroups(); 
+        unsubscribeGroups = null; 
+    }
 }
 
 // Dynamic Tab View Renderer
@@ -512,7 +560,6 @@ function loadActiveView(view) {
     currentActiveView = view;
 
     if (view === "chats") {
-        chatList.innerHTML = '<div style="padding: 20px; text-align: center; color: var(--subtext);">Loading conversations...</div>';
         listenToChats();
     } else if (view === "groups") {
         listenToGroups();
