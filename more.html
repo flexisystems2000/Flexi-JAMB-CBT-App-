@@ -3,24 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>More - Flexi Educational Consult</title>
-
-  <!-- Apply the saved theme before the page paints to reduce theme flashing -->
-  <script>
-    (function () {
-      try {
-        var savedTheme = localStorage.getItem("theme");
-
-        if (savedTheme === "dark") {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
+  <title>Profile Settings - Flexi Educational Consult</title>
+<script>
+(function () {
+    try {
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark");
         }
-      } catch (e) {}
-    })();
-  </script>
+    } catch (e) {}
+})();
+</script>
 
-  <link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="theme.css">
   <script src="lucide.min.js"></script>
 
   <style>
@@ -28,9 +22,7 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, sans-serif;
-      -webkit-tap-highlight-color: transparent;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     body {
@@ -40,7 +32,6 @@
       display: flex;
       justify-content: center;
       min-height: 100vh;
-      transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     .container {
@@ -64,148 +55,192 @@
       color: var(--text);
     }
 
-    .section {
-      margin-bottom: 20px;
+    .back-btn {
+      background: none;
+      border: none;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      text-decoration: none;
+      cursor: default;
     }
 
-    .section-title {
-      font-size: 0.85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--subtext);
-      margin-bottom: 8px;
-      padding-left: 4px;
-    }
-
-    .list-group {
+    .card {
       background-color: var(--card);
       border-radius: 12px;
       border: 1px solid var(--border);
       box-shadow: var(--card-shadow);
-      overflow: hidden;
+      padding: 20px;
+      margin-bottom: 20px;
     }
 
-    .list-item {
+    .avatar-wrapper {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 14px 16px;
-      background: transparent;
-      border: none;
+      margin-bottom: 20px;
+    }
+
+    .avatar-container-rel {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 8px;
+    }
+
+    .avatar-large {
       width: 100%;
-      color: var(--text);
-      text-align: left;
-      cursor: pointer;
-      transition: background-color 0.2s ease, color 0.2s ease;
-      text-decoration: none;
-    }
-
-    .list-item:not(:last-child) {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .list-item:active,
-    .list-item:hover {
-      background-color: rgba(0, 0, 0, 0.04);
-    }
-
-    body.dark .list-item:active,
-    body.dark .list-item:hover,
-    html.dark .list-item:active,
-    html.dark .list-item:hover {
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-
-    .item-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
-    .icon-wrapper {
+      height: 100%;
+      border-radius: 50%;
+      background-color: #9CA3AF;
+      color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--green, #2E8B57);
-      flex: 0 0 auto;
+      overflow: hidden;
+      border: 3px solid #D1D5DB;
     }
 
-    .item-text {
-      display: flex;
-      flex-direction: column;
-      min-width: 0;
+    body.dark .avatar-large {
+      background-color: #4B5563;
+      border-color: #6B7280;
     }
 
-    .item-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--text);
+    .avatar-large img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
-    .item-subtitle {
-      font-size: 0.75rem;
-      color: var(--subtext);
-      margin-top: 2px;
+    .avatar-large i {
+      width: 56px;
+      height: 56px;
+      stroke-width: 1.5;
     }
 
-    .item-right {
+    .camera-btn {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: var(--green, #2E8B57);
+      color: #ffffff;
+      border: 2px solid var(--card);
       display: flex;
       align-items: center;
-      color: var(--subtext);
-      flex: 0 0 auto;
-    }
-
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 44px;
-      height: 24px;
-      margin-right: 8px;
-    }
-
-    .switch input {
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
-
-    .slider {
-      position: absolute;
+      justify-content: center;
       cursor: pointer;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #ccc;
-      transition: .3s;
-      border-radius: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
 
-    .slider:before {
-      position: absolute;
-      content: "";
-      height: 18px;
-      width: 18px;
-      left: 3px;
-      bottom: 3px;
-      background-color: white;
-      transition: .3s;
-      border-radius: 50%;
+    .camera-btn:hover { transform: scale(1.08); }
+    .camera-btn:active { transform: scale(0.95); }
+
+    .avatar-email {
+      font-size: 0.85rem;
+      color: var(--subtext);
     }
 
-    input:checked + .slider {
+    .form-group { margin-bottom: 16px; }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--subtext);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      color: var(--text);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--green, #2E8B57);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 85px;
+    }
+
+    .btn-save {
+      width: 100%;
+      padding: 14px;
+      border-radius: 25px;
+      border: none;
       background-color: var(--green, #2E8B57);
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: opacity 0.2s;
     }
 
-    input:checked + .slider:before {
-      transform: translateX(20px);
+    .btn-save:active { opacity: 0.85; }
+
+    .btn-logout {
+      width: 100%;
+      padding: 14px;
+      margin-top: 12px;
+      border-radius: 25px;
+      border: 1px solid rgba(229, 62, 62, 0.4);
+      background-color: rgba(229, 62, 62, 0.1);
+      color: #e53e3e;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background-color 0.2s, color 0.2s;
     }
 
-    .switch input:disabled + .slider {
-      opacity: 0.65;
-      cursor: wait;
+    .btn-logout:hover {
+      background-color: #e53e3e;
+      color: #ffffff;
+    }
+
+    .btn-logout:active { opacity: 0.85; }
+
+    #image-file-input { display: none; }
+
+    .toast {
+      display: none;
+      padding: 12px;
+      border-radius: 8px;
+      background: var(--green, #2E8B57);
+      color: #fff;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -214,785 +249,458 @@
 
   <div class="container">
 
-    <!-- Top Bar -->
     <header class="header">
-      <span class="header-title">
-        More &amp; Settings
+      <span class="back-btn" aria-hidden="true">
+        <i data-lucide="arrow-left"></i>
       </span>
+      <span class="header-title">Profile Settings</span>
     </header>
 
-    <!-- Section 1: Account & Progress -->
-    <div class="section">
-      <h3 class="section-title">
-        Account &amp; Progress
-      </h3>
+    <div class="card">
 
-      <div class="list-group">
-
-        <a href="profile.html" class="list-item">
-          <div class="item-left">
-            <div class="icon-wrapper">
-              <i data-lucide="user"></i>
-            </div>
-
-            <div class="item-text">
-              <span class="item-title">
-                Profile Settings
-              </span>
-
-              <span class="item-subtitle">
-                Manage personal info &amp; exam targets
-              </span>
-            </div>
+      <div class="avatar-wrapper">
+        <div class="avatar-container-rel">
+          <div id="avatar-container" class="avatar-large">
+            <i data-lucide="user"></i>
           </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-        </a>
-
-        <a href="analytics.html" class="list-item">
-          <div class="item-left">
-            <div class="icon-wrapper">
-              <i data-lucide="bar-chart-3"></i>
-            </div>
-
-            <div class="item-text">
-              <span class="item-title">
-                Performance Analytics
-              </span>
-
-              <span class="item-subtitle">
-                Test history, speed &amp; accuracy stats
-              </span>
-            </div>
-          </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-        </a>
-
-        <a href="bookmarks.html" class="list-item">
-          <div class="item-left">
-            <div class="icon-wrapper">
-              <i data-lucide="bookmark"></i>
-            </div>
-
-            <div class="item-text">
-              <span class="item-title">
-                Saved Questions
-              </span>
-
-              <span class="item-subtitle">
-                Review questions flagged during tests
-              </span>
-            </div>
-          </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-        </a>
-
-      </div>
-    </div>
-
-    <!-- Section 2: App Preferences -->
-    <div class="section">
-      <h3 class="section-title">
-        Preferences
-      </h3>
-
-      <div class="list-group">
-
-        <!-- Notification Toggle -->
-        <div
-          class="list-item"
-          id="notification-row"
-          onclick="toggleNotificationRow(event)"
-        >
-
-          <div class="item-left">
-
-            <div class="icon-wrapper">
-              <i data-lucide="bell"></i>
-            </div>
-
-            <div class="item-text">
-
-              <span class="item-title">
-                Notifications &amp; Reminders
-              </span>
-
-              <span
-                class="item-subtitle"
-                id="reminder-subtitle"
-              >
-                Daily study reminders &amp; exam alerts
-              </span>
-
-            </div>
-
-          </div>
-
-          <div class="item-right">
-
-            <label
-              class="switch"
-              onclick="event.stopPropagation()"
-            >
-
-              <input
-                type="checkbox"
-                id="notification-toggle"
-                onchange="toggleNotifications(this.checked)"
-              >
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
+          <button type="button" class="camera-btn" id="camera-trigger" title="Change Photo">
+            <i data-lucide="camera" style="width:16px; height:16px;"></i>
+          </button>
         </div>
 
-        <!-- Theme Toggle -->
-        <div
-          class="list-item"
-          id="theme-row"
-          onclick="toggleThemeRow(event)"
-        >
+        <input type="file" id="image-file-input" accept="image/*">
 
-          <div class="item-left">
+        <span id="user-email-display" class="avatar-email">
+          Loading email...
+        </span>
+      </div>
 
-            <div class="icon-wrapper">
-              <i data-lucide="sun-moon"></i>
-            </div>
-
-            <div class="item-text">
-
-              <span class="item-title">
-                Dark Mode
-              </span>
-
-              <span class="item-subtitle">
-                Toggle light and dark themes
-              </span>
-
-            </div>
-
-          </div>
-
-          <div class="item-right">
-
-            <label
-              class="switch"
-              onclick="event.stopPropagation()"
-            >
-
-              <input
-                type="checkbox"
-                id="theme-toggle"
-                onchange="toggleThemeMode(this.checked)"
-              >
-
-              <span class="slider"></span>
-
-            </label>
-
-          </div>
-
+      <form id="profile-form">
+        <div class="form-group">
+          <label class="form-label">Full Name / Display Name</label>
+          <input type="text" id="input-name" class="form-input" placeholder="Enter your full name">
         </div>
 
-      </div>
-    </div>
+        <div class="form-group">
+          <label class="form-label">Exam Target</label>
+          <select id="input-target" class="form-select">
+            <option value="WAEC / WASSCE">WAEC / WASSCE</option>
+            <option value="UTME / JAMB">UTME / JAMB</option>
+            <option value="NECO">NECO</option>
+            <option value="POST-UTME">POST-UTME</option>
+            <option value="General Study">General Study</option>
+          </select>
+        </div>
 
-    <!-- Section 3: Support & Information -->
-    <div class="section">
+        <div class="form-group">
+          <label class="form-label">About / Bio</label>
+          <textarea id="input-bio" class="form-textarea" placeholder="Tell us a bit about your academic goals..."></textarea>
+        </div>
 
-      <h3 class="section-title">
-        Support &amp; Information
-      </h3>
+        <button type="submit" id="btn-submit" class="btn-save">
+          <i data-lucide="save"></i>
+          Save Profile
+        </button>
+      </form>
 
-      <div class="list-group">
+      <button type="button" id="btn-logout" class="btn-logout">
+        <i data-lucide="log-out"></i>
+        Log Out
+      </button>
 
-        <a href="report-question.html" class="list-item">
-
-          <div class="item-left">
-
-            <div class="icon-wrapper">
-              <i data-lucide="flag"></i>
-            </div>
-
-            <div class="item-text">
-
-              <span class="item-title">
-                Report a Question
-              </span>
-
-              <span class="item-subtitle">
-                Flag errors or wrong answers
-              </span>
-
-            </div>
-
-          </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-
-        </a>
-
-        <a href="help.html" class="list-item">
-
-          <div class="item-left">
-
-            <div class="icon-wrapper">
-              <i data-lucide="help-circle"></i>
-            </div>
-
-            <div class="item-text">
-
-              <span class="item-title">
-                Help &amp; FAQs
-              </span>
-
-              <span class="item-subtitle">
-                Guides on using offline features
-              </span>
-
-            </div>
-
-          </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-
-        </a>
-
-        <a href="about.html" class="list-item">
-
-          <div class="item-left">
-
-            <div class="icon-wrapper">
-              <i data-lucide="info"></i>
-            </div>
-
-            <div class="item-text">
-
-              <span class="item-title">
-                About Flexi Educational Consult
-              </span>
-
-              <span class="item-subtitle">
-                App version v1.2.0 &amp; legal terms
-              </span>
-
-            </div>
-
-          </div>
-
-          <div class="item-right">
-            <i data-lucide="chevron-right"></i>
-          </div>
-
-        </a>
-
+      <div id="status-toast" class="toast">
+        Profile updated successfully!
       </div>
 
     </div>
-
   </div>
 
-  <!-- Shared scripts -->
   <script src="idb.js"></script>
   <script src="theme.js"></script>
   <script src="back-handler.js"></script>
 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-  <!--
-    ============================================================
-    CAPACITOR LOCAL NOTIFICATIONS
-    Uses Capacitor.Plugins (no ESM import) so it works in the
-    WebView without a bundler.
-    smallIcon must match capacitor.config.json → "ic_stat_flexi"
-    ============================================================
-  -->
+    const CLOUDINARY_CLOUD_NAME = "dpr182siv";
+    const CLOUDINARY_UPLOAD_PRESET = "flexi_unsigned";
 
-  <script>
-    (function () {
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+      authDomain: "flexieduconsult.com.ng",
+      projectId: "waec2026jamb2027"
+    };
 
-      const NOTIFICATION_IDS = [1001, 1002, 1003];
-      const NOTIFICATION_CHANNEL_ID = 'flexi-study';
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
 
-      // Must match capacitor.config.json → plugins.LocalNotifications.smallIcon
-      const NOTIFICATION_SMALL_ICON = 'ic_stat_flexi';
+    let currentUid = null;
+    let currentPhotoURL = "";
+    let isOfflineMode = !navigator.onLine;
 
-      function getLocalNotifications() {
-        return window.Capacitor?.Plugins?.LocalNotifications || null;
+    // =========================================================
+    // LOCAL STORAGE HELPERS
+    // =========================================================
+
+    async function getLocalItem(key) {
+      try {
+        if (typeof IDB !== "undefined" && typeof IDB.getItem === "function") {
+          const value = await IDB.getItem(key);
+          if (value !== null && value !== undefined && value !== "") {
+            return value;
+          }
+        }
+      } catch (e) {
+        console.warn("IDB read failed:", e);
       }
-
-      window.FlexiNotifications = {
-
-        async getPermission() {
-          const LocalNotifications = getLocalNotifications();
-          if (!LocalNotifications) {
-            return { display: 'denied' };
-          }
-
-          try {
-            const current = await LocalNotifications.checkPermissions();
-            if (current && current.display === 'granted') {
-              return current;
-            }
-            return await LocalNotifications.requestPermissions();
-          } catch (error) {
-            console.error('Could not check/request notification permission:', error);
-            return { display: 'denied' };
-          }
-        },
-
-        async createChannel() {
-          const LocalNotifications = getLocalNotifications();
-          if (!LocalNotifications) return false;
-
-          try {
-            await LocalNotifications.createChannel({
-              id: NOTIFICATION_CHANNEL_ID,
-              name: 'Flexi Study Reminders',
-              description: 'Flexi Educational Consult study reminders and exam alerts',
-              importance: 4,
-              visibility: 1,
-              sound: 'default',
-              vibration: true
-            });
-            console.log('✅ Flexi notification channel created/updated.');
-            return true;
-          } catch (error) {
-            console.warn('Notification channel setup:', error);
-            return false;
-          }
-        },
-
-        async checkExactAlarm() {
-          const LocalNotifications = getLocalNotifications();
-          if (!LocalNotifications) return null;
-
-          try {
-            if (typeof LocalNotifications.checkExactNotificationSetting === 'function') {
-              const result = await LocalNotifications.checkExactNotificationSetting();
-              console.log('Exact notification setting:', result);
-              return result;
-            }
-          } catch (error) {
-            console.warn('Exact notification setting check failed:', error);
-          }
-          return null;
-        },
-
-        async cancel() {
-          const LocalNotifications = getLocalNotifications();
-          if (!LocalNotifications) return false;
-
-          try {
-            await LocalNotifications.cancel({
-              notifications: NOTIFICATION_IDS.map(function (id) {
-                return { id: id };
-              })
-            });
-            console.log('Existing Flexi reminders cancelled.');
-            return true;
-          } catch (error) {
-            console.error('Could not cancel Flexi reminders:', error);
-            return false;
-          }
-        },
-
-        async schedule() {
-          const LocalNotifications = getLocalNotifications();
-          if (!LocalNotifications) return false;
-
-          try {
-            await this.cancel();
-            await this.createChannel();
-
-            await LocalNotifications.schedule({
-              notifications: [
-                {
-                  id: 1001,
-                  title: 'Flexi Educational Consult',
-                  body: "Good morning! Ready to practice today's CBT questions? 🎓",
-                  schedule: {
-                    on: { hour: 8, minute: 0 },
-                    repeats: true
-                  },
-                  channelId: NOTIFICATION_CHANNEL_ID,
-                  smallIcon: NOTIFICATION_SMALL_ICON,
-                  sound: 'default'
-                },
-                {
-                  id: 1002,
-                  title: 'Flexi Educational Consult',
-                  body: 'Keep your study streak going! Try a quick practice test.',
-                  schedule: {
-                    on: { hour: 14, minute: 0 },
-                    repeats: true
-                  },
-                  channelId: NOTIFICATION_CHANNEL_ID,
-                  smallIcon: NOTIFICATION_SMALL_ICON,
-                  sound: 'default'
-                },
-                {
-                  id: 1003,
-                  title: 'Flexi Educational Consult',
-                  body: 'Time to review your saved questions.',
-                  schedule: {
-                    on: { hour: 19, minute: 0 },
-                    repeats: true
-                  },
-                  channelId: NOTIFICATION_CHANNEL_ID,
-                  smallIcon: NOTIFICATION_SMALL_ICON,
-                  sound: 'default'
-                }
-              ]
-            });
-
-            console.log('✅ Flexi daily reminders submitted to Android.');
-
-            try {
-              const pending = await LocalNotifications.getPending();
-              const pendingIds = Array.isArray(pending.notifications)
-                ? pending.notifications.map(function (item) {
-                    return Number(item.id);
-                  })
-                : [];
-
-              const allScheduled = NOTIFICATION_IDS.every(function (id) {
-                return pendingIds.includes(id);
-              });
-
-              if (!allScheduled) {
-                console.error('Not all Flexi reminders were registered.', pending);
-                return false;
-              }
-
-              console.log('✅ All Flexi reminders verified:', pendingIds);
-            } catch (verifyError) {
-              console.warn('Could not verify pending notifications:', verifyError);
-            }
-
-            return true;
-          } catch (error) {
-            console.error('Could not schedule Flexi reminders:', error);
-            return false;
-          }
-        },
-
-        async enable() {
-          if (!getLocalNotifications()) {
-            console.error('Capacitor Local Notifications plugin is unavailable.');
-            await window.saveNotifState(false);
-            return false;
-          }
-
-          try {
-            const permission = await this.getPermission();
-
-            if (!permission || permission.display !== 'granted') {
-              await window.saveNotifState(false);
-              return false;
-            }
-
-            await this.checkExactAlarm();
-
-            const scheduled = await this.schedule();
-
-            if (!scheduled) {
-              await window.saveNotifState(false);
-              return false;
-            }
-
-            await window.saveNotifState(true);
-            console.log('✅ Flexi notifications successfully enabled.');
-            return true;
-          } catch (error) {
-            console.error('Notification setup failed:', error);
-            await window.saveNotifState(false);
-            return false;
-          }
-        },
-
-        async disable() {
-          const cancelled = await this.cancel();
-          await window.saveNotifState(false);
-          return cancelled;
-        }
-      };
-
-
-      /* ============================================================
-         TOGGLE NOTIFICATIONS FROM UI
-         ============================================================ */
-
-      window.toggleNotifications = async function (isEnabled) {
-        const toggle = document.getElementById('notification-toggle');
-
-        if (toggle) {
-          toggle.disabled = true;
-        }
-
-        try {
-          if (isEnabled) {
-            const enabled = await window.FlexiNotifications.enable();
-
-            if (!enabled) {
-              if (toggle) {
-                toggle.checked = false;
-              }
-              updateReminderSubtitle(false);
-              alert(
-                'Notifications could not be enabled. Please make sure notification permission is allowed for Flexi in Android Settings.'
-              );
-              return;
-            }
-
-            if (toggle) {
-              toggle.checked = true;
-            }
-          } else {
-            await window.FlexiNotifications.disable();
-            if (toggle) {
-              toggle.checked = false;
-            }
-          }
-        } finally {
-          if (toggle) {
-            toggle.disabled = false;
-          }
-        }
-      };
-
-
-      /* ============================================================
-         SAVE NOTIFICATION STATE
-         ============================================================ */
-
-      window.saveNotifState = async function (state) {
-        try {
-          if (typeof IDB !== 'undefined') {
-            await IDB.setItem('flexi_reminders', state ? 'true' : 'false');
-          }
-        } catch (error) {
-          console.warn('Could not save notification state to IndexedDB:', error);
-        }
-
-        try {
-          localStorage.setItem('flexi_reminders', state ? 'true' : 'false');
-        } catch (error) {
-          console.warn('Could not save notification state to localStorage:', error);
-        }
-
-        updateReminderSubtitle(state);
-      };
-
-
-      /* ============================================================
-         UPDATE NOTIFICATION SUBTITLE
-         ============================================================ */
-
-      window.updateReminderSubtitle = function (active) {
-        const subtitle = document.getElementById('reminder-subtitle');
-        if (!subtitle) return;
-
-        subtitle.textContent = active
-          ? 'Daily study reminders active'
-          : 'Daily study reminders & exam alerts';
-      };
-
-
-      window.scheduleFlexiReminders = async function () {
-        return await window.FlexiNotifications.schedule();
-      };
-
-    })();
-  </script>
-
-
-  <!-- More-page Theme Controller -->
-  <script>
-    (function () {
-
-      function isDarkTheme() {
-        return (
-          document.documentElement.classList.contains('dark') ||
-          document.body.classList.contains('dark')
-        );
-      }
-
-      async function saveTheme(theme) {
-        if (typeof IDB !== 'undefined') {
-          try {
-            await IDB.setItem('theme', theme);
-          } catch (error) {
-            console.warn('Could not save theme to IndexedDB:', error);
-          }
-        }
-
-        try {
-          localStorage.setItem('theme', theme);
-        } catch (error) {
-          console.warn('Could not save theme to localStorage:', error);
-        }
-      }
-
-      async function applyTheme(isDark) {
-        if (isDark) {
-          document.documentElement.classList.add('dark');
-          document.body.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
-          document.body.classList.remove('dark');
-        }
-
-        await saveTheme(isDark ? 'dark' : 'light');
-
-        // theme.js owns the native StatusBar helper
-        if (typeof window.applyStatusBar === 'function') {
-          try {
-            await window.applyStatusBar();
-          } catch (error) {
-            console.warn('Status bar theme update failed:', error);
-          }
-        }
-      }
-
-      window.toggleThemeMode = async function (isDark) {
-        await applyTheme(!!isDark);
-      };
-
-      window.toggleThemeRow = async function (event) {
-        if (
-          event &&
-          event.target &&
-          event.target.closest &&
-          event.target.closest('.switch')
-        ) {
-          return;
-        }
-
-        const toggle = document.getElementById('theme-toggle');
-        if (!toggle) return;
-
-        toggle.checked = !toggle.checked;
-        await window.toggleThemeMode(toggle.checked);
-      };
-
-      window.toggleNotificationRow = async function (event) {
-        if (
-          event &&
-          event.target &&
-          event.target.closest &&
-          event.target.closest('.switch')
-        ) {
-          return;
-        }
-
-        const toggle = document.getElementById('notification-toggle');
-        if (!toggle) return;
-
-        toggle.checked = !toggle.checked;
-        await window.toggleNotifications(toggle.checked);
-      };
-
-      document.addEventListener('DOMContentLoaded', async function () {
-
-        /* Load saved theme */
-        let savedTheme = null;
-
-        try {
-          if (typeof IDB !== 'undefined') {
-            try {
-              await IDB.migrateFromLocalStorage();
-            } catch (error) {
-              console.warn('IDB migration:', error);
-            }
-
-            try {
-              savedTheme = await IDB.getItem('theme');
-            } catch (error) {
-              console.warn('Could not read theme from IndexedDB:', error);
-            }
-          }
-        } catch (error) {
-          console.warn('Theme initialization:', error);
-        }
-
-        if (!savedTheme) {
-          try {
-            savedTheme = localStorage.getItem('theme');
-          } catch (error) {}
-        }
-
-        if (savedTheme === 'dark') {
-          document.documentElement.classList.add('dark');
-          document.body.classList.add('dark');
-        } else if (savedTheme === 'light') {
-          document.documentElement.classList.remove('dark');
-          document.body.classList.remove('dark');
-        }
-
-        /* Sync theme switch */
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-          themeToggle.checked = isDarkTheme();
-        }
-
-        /* Restore notification preference */
-        const notifToggle = document.getElementById('notification-toggle');
-        let savedNotifState = 'false';
-
-        try {
-          if (typeof IDB !== 'undefined') {
-            savedNotifState = await IDB.getItem('flexi_reminders');
-          }
-        } catch (error) {
-          console.warn('Could not read notification state from IndexedDB:', error);
-        }
-
-        if (!savedNotifState) {
-          try {
-            savedNotifState = localStorage.getItem('flexi_reminders') || 'false';
-          } catch (error) {
-            savedNotifState = 'false';
-          }
-        }
-
-        const isNotifOn = savedNotifState === 'true';
-
-        if (notifToggle) {
-          notifToggle.checked = isNotifOn;
-        }
-
-        updateReminderSubtitle(isNotifOn);
-
-        /* Lucide icons */
-        if (window.lucide && typeof window.lucide.createIcons === 'function') {
-          window.lucide.createIcons();
-        }
-      });
-
-    })();
-  </script>
-
-
-  <!-- Final icon initialization -->
-  <script>
-    if (window.lucide && typeof window.lucide.createIcons === 'function') {
-      window.lucide.createIcons();
+      return localStorage.getItem(key);
     }
+
+    async function setLocalItem(key, value) {
+      try {
+        if (typeof IDB !== "undefined" && typeof IDB.setItem === "function") {
+          await IDB.setItem(key, value);
+          return;
+        }
+      } catch (e) {
+        console.warn("IDB write failed:", e);
+      }
+      localStorage.setItem(key, value);
+    }
+
+    async function clearLocalUser() {
+      try {
+        if (typeof IDB !== "undefined") {
+          await IDB.setItem("userName", "");
+          await IDB.setItem("userEmail", "");
+          await IDB.setItem("userUid", "");
+          await IDB.setItem("profileTarget", "");
+          await IDB.setItem("profileBio", "");
+          await IDB.setItem("profilePhoto", "");
+        }
+      } catch (e) {}
+
+      localStorage.removeItem("userName");
+      localStorage.removeItem("userEmail");
+      localStorage.removeItem("userUid");
+      localStorage.removeItem("profileTarget");
+      localStorage.removeItem("profileBio");
+      localStorage.removeItem("profilePhoto");
+    }
+
+    // =========================================================
+    // APPLY CACHED PROFILE TO UI (runs first, always)
+    // =========================================================
+
+    async function applyCachedProfile() {
+      const name = await getLocalItem("userName");
+      const email = await getLocalItem("userEmail");
+      const uid = await getLocalItem("userUid");
+      const savedTarget = await getLocalItem("profileTarget") || "UTME / JAMB";
+      const savedBio = await getLocalItem("profileBio") || "";
+      const savedPhoto = await getLocalItem("profilePhoto") || "";
+
+      // Show whatever we have — never leave "Loading..." if cache exists
+      document.getElementById("user-email-display").textContent =
+        email || (uid ? "Signed in (offline)" : "Not signed in");
+
+      document.getElementById("input-name").value =
+        name || (email ? email.split("@")[0] : "");
+
+      document.getElementById("input-target").value = savedTarget;
+      document.getElementById("input-bio").value = savedBio;
+
+      currentPhotoURL = savedPhoto;
+      currentUid = uid || currentUid || "offline-user";
+
+      updateAvatarDisplay(currentPhotoURL);
+
+      // True if we have any cached identity
+      return !!(name || email || uid);
+    }
+
+    // =========================================================
+    // CACHE-FIRST BOOT
+    // Show local data immediately, then try Firebase update
+    // =========================================================
+
+    (async function boot() {
+      const hasCache = await applyCachedProfile();
+
+      if (!hasCache && !navigator.onLine) {
+        // No cache and offline — still stay on page, just empty form
+        document.getElementById("user-email-display").textContent = "Offline — no cached profile";
+      }
+    })();
+
+    // =========================================================
+    // FIREBASE AUTH — update cache when online
+    // =========================================================
+
+    onAuthStateChanged(auth, async (currentUser) => {
+      if (!currentUser) {
+        // Not signed in on Firebase. Keep showing cache if we have it.
+        const hasCache = await applyCachedProfile();
+        isOfflineMode = true;
+
+        if (!hasCache) {
+          // Optional: only redirect if you really want login forced
+          // window.location.href = "index.html";
+        }
+        return;
+      }
+
+      // Signed in (works offline too if Firebase Auth cache is present)
+      isOfflineMode = !navigator.onLine;
+      currentUid = currentUser.uid;
+
+      // Always refresh email from auth object (available offline from Auth cache)
+      const authEmail = currentUser.email || "";
+      if (authEmail) {
+        document.getElementById("user-email-display").textContent = authEmail;
+        await setLocalItem("userEmail", authEmail);
+      }
+      await setLocalItem("userUid", currentUid);
+
+      // Try Firestore only when online (or when it responds quickly)
+      try {
+        if (!navigator.onLine) {
+          // Stay on cached profile fields; email already updated above
+          await applyCachedProfile();
+          if (authEmail) {
+            document.getElementById("user-email-display").textContent = authEmail;
+          }
+          return;
+        }
+
+        let docSnap = await getDoc(doc(db, "profiles", currentUid));
+        if (!docSnap.exists()) {
+          docSnap = await getDoc(doc(db, "users", currentUid));
+        }
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+
+          const name =
+            data.displayName ||
+            data.name ||
+            currentUser.displayName ||
+            "";
+
+          currentPhotoURL =
+            data.photoURL ||
+            data.photoUrl ||
+            currentUser.photoURL ||
+            "";
+
+          const target = data.targetExam || data.examTarget || "UTME / JAMB";
+          const bio = data.bio || data.about || "";
+
+          document.getElementById("input-name").value = name;
+          document.getElementById("input-target").value = target;
+          document.getElementById("input-bio").value = bio;
+          document.getElementById("user-email-display").textContent =
+            currentUser.email || "No email linked";
+
+          // Update cache so offline works next time
+          await setLocalItem("userName", name);
+          await setLocalItem("userEmail", currentUser.email || "");
+          await setLocalItem("userUid", currentUid);
+          await setLocalItem("profileTarget", target);
+          await setLocalItem("profileBio", bio);
+          await setLocalItem("profilePhoto", currentPhotoURL);
+
+          updateAvatarDisplay(currentPhotoURL);
+        } else {
+          const defaultName =
+            currentUser.displayName ||
+            (currentUser.email ? currentUser.email.split("@")[0] : "Member");
+
+          document.getElementById("input-name").value = defaultName;
+          document.getElementById("user-email-display").textContent =
+            currentUser.email || "No email linked";
+
+          currentPhotoURL = currentUser.photoURL || "";
+          updateAvatarDisplay(currentPhotoURL);
+
+          await setLocalItem("userName", defaultName);
+          await setLocalItem("userEmail", currentUser.email || "");
+          await setLocalItem("userUid", currentUid);
+        }
+      } catch (err) {
+        console.error("Error loading profile (using cache):", err);
+        // Keep / re-apply cache — do not clear the UI
+        await applyCachedProfile();
+        if (currentUser.email) {
+          document.getElementById("user-email-display").textContent = currentUser.email;
+        }
+      }
+    });
+
+    // =========================================================
+    // IMAGE UPLOAD
+    // =========================================================
+
+    const cameraBtn = document.getElementById("camera-trigger");
+    const fileInput = document.getElementById("image-file-input");
+
+    cameraBtn.addEventListener("click", () => fileInput.click());
+
+    fileInput.addEventListener("change", async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      if (!navigator.onLine) {
+        showToast("Image upload needs internet. Profile text can still be saved offline.", true);
+        return;
+      }
+
+      showToast("Uploading image...", false);
+
+      const formData = new FormData();
+      formData.append("file", file);
+      formData.append("upload_preset", CLOUDINARY_UPLOAD_PRESET);
+
+      try {
+        const response = await fetch(
+          `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,
+          { method: "POST", body: formData }
+        );
+        const data = await response.json();
+
+        if (data.secure_url) {
+          currentPhotoURL = data.secure_url;
+          updateAvatarDisplay(currentPhotoURL);
+          await setLocalItem("profilePhoto", currentPhotoURL);
+          showToast("Photo uploaded! Click Save Profile to submit.", false);
+        } else {
+          throw new Error("Upload failed");
+        }
+      } catch (err) {
+        console.error("Cloudinary upload error:", err);
+        showToast("Image upload failed. Please try again.", true);
+      }
+    });
+
+    // =========================================================
+    // SAVE PROFILE — always cache locally; sync online if possible
+    // =========================================================
+
+    document.getElementById("profile-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById("btn-submit");
+      submitBtn.disabled = true;
+      submitBtn.innerText = "Saving...";
+
+      const updatedName = document.getElementById("input-name").value.trim();
+      const updatedTarget = document.getElementById("input-target").value;
+      const updatedBio = document.getElementById("input-bio").value.trim();
+
+      try {
+        // Always save locally first (works offline)
+        await setLocalItem("userName", updatedName);
+        await setLocalItem("profileTarget", updatedTarget);
+        await setLocalItem("profileBio", updatedBio);
+        await setLocalItem("profilePhoto", currentPhotoURL);
+
+        if (currentUid && currentUid !== "offline-user" && navigator.onLine) {
+          try {
+            await setDoc(
+              doc(db, "profiles", currentUid),
+              {
+                displayName: updatedName,
+                targetExam: updatedTarget,
+                photoURL: currentPhotoURL,
+                bio: updatedBio,
+                updatedAt: new Date()
+              },
+              { merge: true }
+            );
+            showToast("Profile saved successfully!");
+          } catch (syncErr) {
+            console.warn("Online save failed, kept local:", syncErr);
+            showToast("Profile saved on this device (will sync when online)");
+          }
+        } else {
+          showToast("Profile saved on this device (offline)");
+        }
+
+        updateAvatarDisplay(currentPhotoURL);
+      } catch (err) {
+        console.error("Error saving profile:", err);
+        showToast("Failed to save changes.", true);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i data-lucide="save"></i> Save Profile`;
+        lucide.createIcons();
+      }
+    });
+
+    // =========================================================
+    // LOG OUT
+    // =========================================================
+
+    document.getElementById("btn-logout").addEventListener("click", async () => {
+      const logoutBtn = document.getElementById("btn-logout");
+      logoutBtn.disabled = true;
+      logoutBtn.innerText = "Logging out...";
+
+      try {
+        await clearLocalUser();
+        try {
+          await signOut(auth);
+        } catch (e) {
+          console.warn("Firebase signOut failed (probably offline):", e);
+        }
+        window.location.href = "index.html";
+      } catch (err) {
+        console.error("Logout error:", err);
+        showToast("Logout failed. Please try again.", true);
+        logoutBtn.disabled = false;
+        logoutBtn.innerHTML = `<i data-lucide="log-out"></i> Log Out`;
+        lucide.createIcons();
+      }
+    });
+
+    // =========================================================
+    // AVATAR + TOAST
+    // =========================================================
+
+    function updateAvatarDisplay(photoURL) {
+      const container = document.getElementById("avatar-container");
+      if (photoURL) {
+        container.innerHTML = `<img src="${escapeHTML(photoURL)}" alt="Profile">`;
+      } else {
+        container.innerHTML = `<i data-lucide="user"></i>`;
+        lucide.createIcons();
+      }
+    }
+
+    function showToast(msg, isError = false) {
+      const toast = document.getElementById("status-toast");
+      toast.textContent = msg;
+      toast.style.background = isError ? "#e53e3e" : "var(--green, #2E8B57)";
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 3500);
+    }
+
+    function escapeHTML(str) {
+      return typeof str === "string"
+        ? str.replace(/[&<>'"]/g, tag => ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            "'": "&#39;",
+            '"': "&quot;"
+          }[tag] || tag))
+        : "";
+    }
+
+    lucide.createIcons();
   </script>
 
 </body>
