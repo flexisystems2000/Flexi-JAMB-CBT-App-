@@ -91,6 +91,12 @@ jobs:
       - name: Generate Android icons and splash screen
         run: |
           echo "=== Checking resources folder ==="
+
+          if [ ! -d "resources" ]; then
+            echo "❌ ERROR: resources/ folder is missing!"
+            exit 1
+          fi
+
           ls -lah resources/
 
           if [ ! -f "resources/icon.png" ]; then
@@ -102,6 +108,18 @@ jobs:
             echo "❌ ERROR: resources/splash.png is missing!"
             exit 1
           fi
+
+          if [ ! -f "resources/notification-icon.png" ]; then
+            echo "❌ ERROR: resources/notification-icon.png is missing!"
+            echo ""
+            echo "Create the notification icon at:"
+            echo "resources/notification-icon.png"
+            exit 1
+          fi
+
+          echo "✅ Main app icon found"
+          echo "✅ Splash screen found"
+          echo "✅ Notification icon found"
 
           echo "=== Generating icons and splash from resources/ ==="
 
@@ -176,6 +194,46 @@ jobs:
 
           echo "=== Capacitor plugin list ==="
           npx cap ls
+
+      # ============================================================
+      # CONFIGURE ANDROID NOTIFICATION ICON
+      # ============================================================
+      - name: Configure Android notification icon resource
+        run: |
+          echo "=== Configuring Android notification icon ==="
+
+          SOURCE_ICON="resources/notification-icon.png"
+          DRAWABLE_DIR="android/app/src/main/res/drawable"
+          TARGET_ICON="$DRAWABLE_DIR/notification_icon.png"
+
+          if [ ! -f "$SOURCE_ICON" ]; then
+            echo "❌ ERROR: $SOURCE_ICON does not exist!"
+            exit 1
+          fi
+
+          mkdir -p "$DRAWABLE_DIR"
+
+          cp "$SOURCE_ICON" "$TARGET_ICON"
+
+          echo "✅ Notification icon copied:"
+          echo "$SOURCE_ICON"
+          echo "→"
+          echo "$TARGET_ICON"
+
+          echo ""
+          echo "=== Notification drawable contents ==="
+
+          ls -lah "$DRAWABLE_DIR"
+
+          echo ""
+          echo "=== Verifying notification icon ==="
+
+          if [ -f "$TARGET_ICON" ]; then
+            echo "✅ notification_icon.png successfully installed"
+          else
+            echo "❌ notification_icon.png was not created"
+            exit 1
+          fi
 
       # ============================================================
       # VERIFY LOCAL NOTIFICATIONS NATIVE PLUGIN
@@ -351,13 +409,30 @@ jobs:
           fi
 
       # ============================================================
-      # VERIFY ANDROID NOTIFICATION PERMISSIONS
+      # VERIFY ANDROID NOTIFICATION CONFIGURATION
       # ============================================================
       - name: Verify Android notification configuration
         run: |
           MANIFEST="android/app/src/main/AndroidManifest.xml"
+          ICON="android/app/src/main/res/drawable/notification_icon.png"
 
-          echo "=== Notification permissions in manifest ==="
+          echo "============================================================"
+          echo "ANDROID NOTIFICATION CONFIGURATION VERIFICATION"
+          echo "============================================================"
+
+          echo ""
+          echo "=== 1. Notification icon ==="
+
+          if [ -f "$ICON" ]; then
+            echo "✅ notification_icon.png exists"
+            ls -lh "$ICON"
+          else
+            echo "❌ notification_icon.png is missing"
+            exit 1
+          fi
+
+          echo ""
+          echo "=== 2. POST_NOTIFICATIONS permission ==="
 
           if grep -q "android.permission.POST_NOTIFICATIONS" "$MANIFEST"; then
             echo "✅ POST_NOTIFICATIONS permission present"
@@ -366,6 +441,9 @@ jobs:
             exit 1
           fi
 
+          echo ""
+          echo "=== 3. SCHEDULE_EXACT_ALARM permission ==="
+
           if grep -q "android.permission.SCHEDULE_EXACT_ALARM" "$MANIFEST"; then
             echo "✅ SCHEDULE_EXACT_ALARM permission present"
           else
@@ -373,11 +451,17 @@ jobs:
             exit 1
           fi
 
-          echo "=== Final notification permission check ==="
+          echo ""
+          echo "=== 4. Final notification permission check ==="
 
           grep -E \
             "POST_NOTIFICATIONS|SCHEDULE_EXACT_ALARM" \
             "$MANIFEST"
+
+          echo ""
+          echo "============================================================"
+          echo "✅ ANDROID NOTIFICATION CONFIGURATION PASSED"
+          echo "============================================================"
 
       # ============================================================
       # SETUP / RESTORE KEYSTORE
