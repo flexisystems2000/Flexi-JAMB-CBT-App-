@@ -14,8 +14,7 @@
 })();
 </script>
   <link rel="stylesheet" href="theme.css">
-  <!-- Lucide Icons -->
-<script src="lucide.min.js"></script>
+  <script src="lucide.min.js"></script>
 
   <style>
     * {
@@ -40,7 +39,6 @@
       padding-bottom: 24px;
     }
 
-    /* Header */
     .header {
       display: flex;
       align-items: center;
@@ -66,7 +64,6 @@
       text-decoration: none;
     }
 
-    /* Filter Bar */
     .filter-card {
       background-color: var(--card);
       border-radius: 12px;
@@ -108,7 +105,6 @@
       border-color: var(--green, #2E8B57);
     }
 
-    /* Bookmarks Count Badge */
     .badge {
       background-color: var(--green, #2E8B57);
       color: #ffffff;
@@ -119,7 +115,6 @@
       flex-shrink: 0;
     }
 
-    /* Bookmark Cards List */
     .bookmarks-list {
       display: flex;
       flex-direction: column;
@@ -208,7 +203,6 @@
       line-height: 1.4;
     }
 
-    /* Empty State */
     .empty-state {
       background-color: var(--card);
       border-radius: 12px;
@@ -227,7 +221,13 @@
       opacity: 0.6;
     }
 
-    /* Toast */
+    .sync-hint {
+      font-size: 0.75rem;
+      color: var(--subtext);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
     .toast {
       display: none;
       position: fixed;
@@ -248,8 +248,7 @@
 <body>
 
   <div class="container">
-    
-    <!-- Top Bar -->
+
     <header class="header">
       <a href="javascript:void(0)" class="back-btn" onclick="FlexiBack.goBack('more.html')">
         <i data-lucide="arrow-left"></i>
@@ -257,7 +256,8 @@
       <span class="header-title">Saved Bookmarks</span>
     </header>
 
-    <!-- Subject Filter -->
+    <p id="sync-hint" class="sync-hint">Loading local bookmarks...</p>
+
     <div class="filter-card">
       <i data-lucide="filter" class="filter-icon"></i>
 
@@ -310,7 +310,6 @@
       <span id="bookmark-count" class="badge">0</span>
     </div>
 
-    <!-- Bookmarks Container -->
     <div id="bookmarks-list" class="bookmarks-list">
       <div class="empty-state">
         <i data-lucide="bookmark" class="empty-icon" style="width:40px; height:40px;"></i>
@@ -322,69 +321,154 @@
 
   <div id="status-toast" class="toast">Bookmark removed</div>
 
-  <!-- Global Theme Script -->
   <script src="idb.js"></script>
-<script src="theme.js"></script>
-<script src="back-handler.js"></script>
-  <!-- Firebase Integration Script -->
+  <script src="theme.js"></script>
+  <script src="back-handler.js"></script>
+
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getFirestore, collection, query, where, getDocs, deleteDoc, doc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import {
+      getFirestore,
+      collection,
+      query,
+      where,
+      getDocs,
+      deleteDoc,
+      doc
+    } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
     import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-    const firebaseConfig = { 
-      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
-      authDomain: "flexieduconsult.com.ng", 
-      projectId: "waec2026jamb2027" 
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM",
+      authDomain: "flexieduconsult.com.ng",
+      projectId: "waec2026jamb2027"
     };
 
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const auth = getAuth(app);
 
+    const BOOKMARKS_KEY = "flexi_bookmarks";
+    const PENDING_DELETE_KEY = "flexi_bookmarks_pending_delete";
+
     let allBookmarks = [];
     let currentUid = null;
 
-    onAuthStateChanged(auth, async (currentUser) => {
-      if (!currentUser) {
-        window.location.href = "login.html";
-        return;
-      }
+    // =========================================================
+    // LOCAL STORAGE HELPERS
+    // =========================================================
 
-      currentUid = currentUser.uid;
-      await fetchBookmarks();
-    });
-
-    async function fetchBookmarks() {
+    async function getLocalItem(key) {
       try {
-        allBookmarks = [];
-        const q = query(
-          collection(db, "bookmarks"),
-          where("userId", "==", currentUid)
-        );
-        const snap = await getDocs(q);
+        if (typeof IDB !== "undefined" && typeof IDB.getItem === "function") {
+          const value = await IDB.getItem(key);
+          if (value !== null && value !== undefined && value !== "") {
+            return value;
+          }
+        }
+      } catch (e) {
+        console.warn("IDB read failed:", e);
+      }
+      return localStorage.getItem(key);
+    }
 
-        snap.forEach(docSnap => {
-          allBookmarks.push({
-            id: docSnap.id,
-            ...docSnap.data()
-          });
-        });
+    async function setLocalItem(key, value) {
+      try {
+        if (typeof IDB !== "undefined" && typeof IDB.setItem === "function") {
+          await IDB.setItem(key, value);
+          return;
+        }
+      } catch (e) {
+        console.warn("IDB write failed:", e);
+      }
+      localStorage.setItem(key, value);
+    }
 
-        renderBookmarks();
-      } catch (err) {
-        console.error("Error fetching bookmarks:", err);
-        renderBookmarks();
+    function normalizeBookmark(raw, fallbackId) {
+      if (!raw || typeof raw !== "object") return null;
+
+      const id = raw.id || fallbackId || `local_\( {Date.now()}_ \){Math.random().toString(36).slice(2, 8)}`;
+      const subject = raw.subject || "General";
+      const questionText = raw.questionText || raw.question || "";
+      const options = Array.isArray(raw.options) ? raw.options : [];
+      const correctAnswer = raw.correctAnswer;
+      const answer = raw.answer;
+      const explanation = raw.explanation || "";
+      const userId = raw.userId || raw.uid || "";
+      const timestamp = Number(raw.timestamp) || Date.now();
+
+      return {
+        id,
+        subject,
+        questionText,
+        options,
+        correctAnswer,
+        answer,
+        explanation,
+        userId,
+        timestamp
+      };
+    }
+
+    async function loadLocalBookmarks() {
+      try {
+        const raw = await getLocalItem(BOOKMARKS_KEY);
+        if (!raw) return [];
+
+        const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        if (!Array.isArray(parsed)) return [];
+
+        return parsed
+          .map((item, i) => normalizeBookmark(item, item?.id || `local_${i}`))
+          .filter(Boolean)
+          .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+      } catch (e) {
+        console.warn("Could not parse local bookmarks:", e);
+        return [];
       }
     }
 
-    function renderBookmarks() {
-      const filterValue = document.getElementById('subject-filter').value;
-      const listContainer = document.getElementById('bookmarks-list');
-      const countBadge = document.getElementById('bookmark-count');
+    async function saveLocalBookmarks(list) {
+      const cleaned = (list || [])
+        .map(normalizeBookmark)
+        .filter(Boolean)
+        .sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
 
-      const filtered = filterValue === "ALL" 
-        ? allBookmarks 
+      await setLocalItem(BOOKMARKS_KEY, JSON.stringify(cleaned));
+      return cleaned;
+    }
+
+    async function getPendingDeletes() {
+      try {
+        const raw = await getLocalItem(PENDING_DELETE_KEY);
+        if (!raw) return [];
+        const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    async function setPendingDeletes(ids) {
+      await setLocalItem(PENDING_DELETE_KEY, JSON.stringify(ids || []));
+    }
+
+    function setSyncHint(text) {
+      const el = document.getElementById("sync-hint");
+      if (el) el.textContent = text;
+    }
+
+    // =========================================================
+    // RENDER
+    // =========================================================
+
+    function renderBookmarks() {
+      const filterValue = document.getElementById("subject-filter").value;
+      const listContainer = document.getElementById("bookmarks-list");
+      const countBadge = document.getElementById("bookmark-count");
+
+      const filtered = filterValue === "ALL"
+        ? allBookmarks
         : allBookmarks.filter(b => b.subject === filterValue);
 
       countBadge.textContent = filtered.length;
@@ -403,8 +487,8 @@
       listContainer.innerHTML = "";
 
       filtered.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'bookmark-card';
+        const card = document.createElement("div");
+        card.className = "bookmark-card";
         card.id = `bookmark-${item.id}`;
 
         const options = item.options || [];
@@ -413,24 +497,27 @@
         if (Array.isArray(options) && options.length > 0) {
           optionsHtml = `<div class="options-grid">` +
             options.map((opt, idx) => {
-              const isCorrect = (item.correctAnswer === idx || item.answer === opt);
-              return `<div class="option-item \( {isCorrect ? 'correct' : ''}"> \){escapeHTML(opt)} ${isCorrect ? '✓' : ''}</div>`;
-            }).join('') +
+              const isCorrect =
+                item.correctAnswer === idx ||
+                item.correctAnswer === opt ||
+                item.answer === opt;
+              return `<div class="option-item \( {isCorrect ? "correct" : ""}"> \){escapeHTML(String(opt))} ${isCorrect ? "✓" : ""}</div>`;
+            }).join("") +
             `</div>`;
         }
 
-        const explanationHtml = item.explanation 
-          ? `<div class="explanation-box"><strong>Explanation:</strong> ${escapeHTML(item.explanation)}</div>` 
-          : '';
+        const explanationHtml = item.explanation
+          ? `<div class="explanation-box"><strong>Explanation:</strong> ${escapeHTML(item.explanation)}</div>`
+          : "";
 
         card.innerHTML = `
           <div class="bookmark-meta">
-            <span class="subject-tag">${escapeHTML(item.subject || 'General')}</span>
-            <button class="delete-btn" data-id="${item.id}" title="Remove Bookmark">
+            <span class="subject-tag">${escapeHTML(item.subject || "General")}</span>
+            <button class="delete-btn" data-id="${escapeHTML(item.id)}" title="Remove Bookmark">
               <i data-lucide="trash-2" style="width:16px; height:16px;"></i>
             </button>
           </div>
-          <div class="question-text">${escapeHTML(item.questionText || item.question || 'No question text available.')}</div>
+          <div class="question-text">${escapeHTML(item.questionText || "No question text available.")}</div>
           ${optionsHtml}
           ${explanationHtml}
         `;
@@ -438,10 +525,9 @@
         listContainer.appendChild(card);
       });
 
-      // Attach Delete Listeners
-      document.querySelectorAll('.delete-btn').forEach(btn => {
-        btn.addEventListener('click', async (e) => {
-          const docId = e.currentTarget.getAttribute('data-id');
+      document.querySelectorAll(".delete-btn").forEach(btn => {
+        btn.addEventListener("click", async (e) => {
+          const docId = e.currentTarget.getAttribute("data-id");
           await deleteBookmark(docId);
         });
       });
@@ -449,29 +535,175 @@
       lucide.createIcons();
     }
 
+    // =========================================================
+    // DELETE — local first, cloud when possible
+    // =========================================================
+
     async function deleteBookmark(docId) {
-      try {
-        await deleteDoc(doc(db, "bookmarks", docId));
-        allBookmarks = allBookmarks.filter(b => b.id !== docId);
-        renderBookmarks();
-        showToast("Bookmark removed");
-      } catch (err) {
-        console.error("Error deleting bookmark:", err);
-        showToast("Failed to remove bookmark");
+      // Always remove from local cache first
+      allBookmarks = allBookmarks.filter(b => b.id !== docId);
+      await saveLocalBookmarks(allBookmarks);
+      renderBookmarks();
+      showToast("Bookmark removed");
+
+      // Try cloud delete if online + signed in + looks like a Firestore id
+      if (navigator.onLine && currentUid && docId && !String(docId).startsWith("local_")) {
+        try {
+          await deleteDoc(doc(db, "bookmarks", docId));
+        } catch (err) {
+          console.warn("Cloud delete failed, queued for later:", err);
+          const pending = await getPendingDeletes();
+          if (!pending.includes(docId)) {
+            pending.push(docId);
+            await setPendingDeletes(pending);
+          }
+        }
+      } else if (docId && !String(docId).startsWith("local_")) {
+        // Offline cloud bookmark — queue delete
+        const pending = await getPendingDeletes();
+        if (!pending.includes(docId)) {
+          pending.push(docId);
+          await setPendingDeletes(pending);
+        }
       }
     }
 
-    document.getElementById('subject-filter').addEventListener('change', renderBookmarks);
+    async function flushPendingDeletes() {
+      if (!navigator.onLine || !currentUid) return;
+
+      const pending = await getPendingDeletes();
+      if (!pending.length) return;
+
+      const remaining = [];
+
+      for (const id of pending) {
+        try {
+          await deleteDoc(doc(db, "bookmarks", id));
+        } catch (err) {
+          console.warn("Pending delete still failed:", id, err);
+          remaining.push(id);
+        }
+      }
+
+      await setPendingDeletes(remaining);
+    }
+
+    // =========================================================
+    // CACHE-FIRST BOOT
+    // =========================================================
+
+    (async function bootFromCache() {
+      allBookmarks = await loadLocalBookmarks();
+      renderBookmarks();
+
+      if (allBookmarks.length > 0) {
+        setSyncHint(
+          navigator.onLine
+            ? "Showing cached bookmarks. Updating from cloud if available..."
+            : "Offline — showing bookmarks saved on this device"
+        );
+      } else {
+        setSyncHint(
+          navigator.onLine
+            ? "No local bookmarks yet. Checking cloud..."
+            : "Offline — no bookmarks cached on this device yet"
+        );
+      }
+    })();
+
+    // =========================================================
+    // ONLINE: merge Firestore into local cache
+    // =========================================================
+
+    onAuthStateChanged(auth, async (currentUser) => {
+      // Never force-login offline. Local bookmarks are enough.
+      if (!currentUser) {
+        currentUid = null;
+        if (!navigator.onLine) {
+          setSyncHint("Offline — showing bookmarks saved on this device");
+        } else {
+          setSyncHint(
+            allBookmarks.length > 0
+              ? "Showing device bookmarks. Sign in to sync cloud bookmarks."
+              : "Sign in to sync bookmarks from the cloud."
+          );
+        }
+        return;
+      }
+
+      currentUid = currentUser.uid;
+
+      if (!navigator.onLine) {
+        setSyncHint("Offline — showing bookmarks saved on this device");
+        return;
+      }
+
+      try {
+        await flushPendingDeletes();
+
+        const q = query(
+          collection(db, "bookmarks"),
+          where("userId", "==", currentUid)
+        );
+        const snap = await getDocs(q);
+
+        const cloudBookmarks = [];
+        snap.forEach(docSnap => {
+          cloudBookmarks.push(
+            normalizeBookmark(
+              { id: docSnap.id, ...docSnap.data(), userId: currentUid },
+              docSnap.id
+            )
+          );
+        });
+
+        // Merge local + cloud (prefer cloud copy when same id)
+        const map = new Map();
+
+        // Local first
+        allBookmarks.forEach(b => {
+          if (b && b.id) map.set(b.id, b);
+        });
+
+        // Cloud overwrites same ids
+        cloudBookmarks.forEach(b => {
+          if (b && b.id) map.set(b.id, b);
+        });
+
+        allBookmarks = await saveLocalBookmarks(Array.from(map.values()));
+        renderBookmarks();
+
+        setSyncHint(
+          allBookmarks.length > 0
+            ? "Up to date — local + cloud bookmarks"
+            : "No saved questions found yet"
+        );
+      } catch (err) {
+        console.error("Cloud bookmarks fetch failed, keeping local:", err);
+        setSyncHint("Could not reach cloud — showing bookmarks saved on this device");
+        renderBookmarks();
+      }
+    });
+
+    document.getElementById("subject-filter").addEventListener("change", renderBookmarks);
 
     function showToast(msg) {
-      const toast = document.getElementById('status-toast');
+      const toast = document.getElementById("status-toast");
       toast.textContent = msg;
-      toast.style.display = 'block';
-      setTimeout(() => { toast.style.display = 'none'; }, 2500);
+      toast.style.display = "block";
+      setTimeout(() => { toast.style.display = "none"; }, 2500);
     }
 
     function escapeHTML(str) {
-      return typeof str === 'string' ? str.replace(/[&<>'"]/g, tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)) : '';
+      return typeof str === "string"
+        ? str.replace(/[&<>'"]/g, tag => ({
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            "'": "&#39;",
+            '"': "&quot;"
+          }[tag] || tag))
+        : "";
     }
 
     lucide.createIcons();
