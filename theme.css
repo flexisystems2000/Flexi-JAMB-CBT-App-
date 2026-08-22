@@ -1,67 +1,58 @@
-:root{
-    --bg:#f0f2f5;
-    --text:#222;
-    --subtext:#555;
-    --card:#ffffff;
-    --header:#ffffff;
-    --border:#dddddd;
-    --btn-bg:#ffffff;
-    --btn-color:#222222;
-    --card-shadow:0 6px 15px rgba(0,0,0,.12);
-    
+:root {
+    --bg: #f0f2f5;
+    --text: #222;
+    --subtext: #555;
+    --card: #ffffff;
+    --header: #ffffff;
+    --border: #dddddd;
+    --btn-bg: #ffffff;
+    --btn-color: #222222;
+    --card-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+
     /* Green Accent Variables */
-    --green:#008000;
-    --sent-bg:#008000;
+    --green: #008000;
+    --sent-bg: #008000;
 }
 
 /* ===== DARK THEME ===== */
-/*
-   The theme is allowed on both html and body.
-   This prevents the browser from showing a light
-   background before body.dark is applied.
-*/
+/* Applied on both html and body so the correct background
+   shows even before body.dark is fully applied by theme.js */
 html.dark,
-body.dark{
-    --bg:#121212;
-    --text:#ffffff;
-    --subtext:#cccccc;
-    --card:#1e1e1e;
-    --header:#1a1a1a;
-    --border:#333333;
-    --btn-bg:#222222;
-    --btn-color:#ffffff;
-    --card-shadow:0 8px 20px rgba(0,0,0,.35);
-    
+body.dark {
+    --bg: #121212;
+    --text: #ffffff;
+    --subtext: #cccccc;
+    --card: #1e1e1e;
+    --header: #1a1a1a;
+    --border: #333333;
+    --btn-bg: #222222;
+    --btn-color: #ffffff;
+    --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
     /* Dark Mode Green Accent */
-    --green:#008000;
-    --sent-bg:#008000;
+    --green: #008000;
+    --sent-bg: #008000;
 }
 
 /* ===== GLOBAL PAGE BACKGROUND ===== */
-
-html{
-    height:100%;
-    background-color:var(--bg);
-    color:var(--text);
+html {
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-body{
-    min-height:100% !important;
-    min-height:100dvh !important;
+body {
+    min-height: 100% !important;
+    min-height: 100dvh !important;
 
-    background-color:var(--bg);
-    color:var(--text);
+    background-color: var(--bg);
+    color: var(--text);
 
-    padding-top:max(16px, env(safe-area-inset-top)) !important;
-    padding-bottom:max(16px, env(safe-area-inset-bottom)) !important;
-    padding-left:max(16px, env(safe-area-inset-left)) !important;
-    padding-right:max(16px, env(safe-area-inset-right)) !important;
+    /* Safe area support for notched devices / status bar */
+    padding-top: max(16px, env(safe-area-inset-top)) !important;
+    padding-bottom: max(16px, env(safe-area-inset-bottom)) !important;
+    padding-left: max(16px, env(safe-area-inset-left)) !important;
+    padding-right: max(16px, env(safe-area-inset-right)) !important;
 
-    box-sizing:border-box !important;
-}
-
-/* ===== SAFE AREA SUPPORT ===== */
-
-html{
-    height:100%;
+    box-sizing: border-box !important;
 }
