@@ -17,7 +17,6 @@
     <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    /* Dynamic Theme Styling */
     body { 
         font-family: 'Segoe UI', sans-serif; 
         background: var(--bg); 
@@ -50,7 +49,6 @@
     .msg-row { display: flex; gap: 8px; width: 100%; align-items: flex-start; }
     .msg-row.sent { justify-content: flex-end; }
 
-    /* AVATAR - GREEN FALLBACK */
     .avatar { 
         width: 36px; 
         height: 36px; 
@@ -70,14 +68,12 @@
 
     .msg-bubble { padding: 10px 14px; border-radius: 14px; max-width: 80%; font-size: 0.95rem; }
     
-    /* SENT BUBBLE - GREEN ACCENT */
     .sent .msg-bubble { 
         background: var(--sent-bg, #2E8B57); 
         color: #fff; 
         border-bottom-right-radius: 2px; 
     }
     
-    /* RECEIVED BUBBLE */
     .received .msg-bubble { 
         background: var(--card); 
         color: var(--text); 
@@ -94,7 +90,6 @@
     }
     .msg-name:hover { text-decoration: underline; }
 
-    /* IMAGE GRID LAYOUTS */
     .img-grid { display: grid; gap: 4px; margin-top: 6px; border-radius: 8px; overflow: hidden; cursor: pointer; }
     .img-grid-1 { grid-template-columns: 1fr; }
     .img-grid-2 { grid-template-columns: 1fr 1fr; }
@@ -106,7 +101,6 @@
     .img-item img { position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; }
     .img-more-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.6); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: bold; }
 
-    /* BOTTOM CONTAINER & PREVIEWS */
     .bottom-container { 
         position: fixed; 
         bottom: 0; 
@@ -133,7 +127,6 @@
     .preview-thumb img { width: 100%; height: 100%; object-fit: cover; }
     .remove-thumb { position: absolute; top: 2px; right: 2px; background: rgba(0,0,0,0.7); color: #fff; border-radius: 50%; width: 18px; height: 18px; font-size: 12px; display: flex; align-items: center; justify-content: center; cursor: pointer; border: none; }
 
-    /* SEND BUTTON & ATTACHMENT BUTTON */
     .btn-post { 
         width: 44px; 
         height: 44px; 
@@ -165,7 +158,6 @@
         -webkit-tap-highlight-color: transparent; 
     }
 
-    /* LIGHTBOX OVERLAY */
     .lightbox-modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 1000; justify-content: center; align-items: center; flex-direction: column; overflow: hidden; touch-action: none; }
     .lightbox-modal.active { display: flex; }
     .lightbox-img-wrapper { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden; }
@@ -175,6 +167,12 @@
     .lightbox-nav { position: absolute; top: 50%; transform: translateY(-50%); color: #fff; font-size: 2.5rem; background: rgba(255,255,255,0.15); border: none; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; user-select: none; z-index: 1001; }
     .lightbox-nav.prev { left: 15px; }
     .lightbox-nav.next { right: 15px; }
+
+    .loading-msg, .empty-msg {
+        padding: 40px 20px;
+        text-align: center;
+        color: var(--subtext);
+    }
 </style>
 </head>
 <body>
@@ -184,10 +182,11 @@
         <h3 id="chat-title">Chat</h3>
     </header>
 
-    <div id="comment-feed"></div>
+    <div id="comment-feed">
+        <div class="loading-msg">Loading messages...</div>
+    </div>
 
     <div class="bottom-container">
-        <!-- Live Image Previews -->
         <div id="preview-bar" class="preview-bar"></div>
 
         <div class="input-bar">
@@ -199,7 +198,6 @@
 
     <input type="file" id="file-upload" accept="image/*" multiple style="display:none;">
 
-    <!-- LIGHTBOX OVERLAY -->
     <div id="lightbox" class="lightbox-modal">
         <span class="lightbox-close" id="lightbox-close">&times;</span>
         <div class="lightbox-counter" id="lightbox-counter">1 / 1</div>
@@ -209,464 +207,464 @@
         </div>
         <button class="lightbox-nav next" id="lightbox-next">&#10095;</button>
     </div>
+
 <script src="back-handler.js"></script>
 <script src="idb.js"></script>
 <script src="theme.js"></script>
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, collection, addDoc, doc, getDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, collection, addDoc, doc, getDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-        const firebaseConfig = { 
-            apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
-            authDomain: "flexieduconsult.com.ng", 
-            projectId: "waec2026jamb2027" 
-        };
+    const firebaseConfig = { 
+        apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
+        authDomain: "auth.flexieduconsult.com.ng", 
+        projectId: "waec2026jamb2027" 
+    };
 
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const auth = getAuth(app);
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth(app);
 
-        const params = new URLSearchParams(window.location.search);
-        const chatId = params.get('id') || params.get('chatId');
-        const chatName = params.get('name') || params.get('chatName');
+    const params = new URLSearchParams(window.location.search);
+    const chatId = params.get('chatId') || params.get('id');
+    const chatName = params.get('name') || params.get('chatName') || "Chat";
 
-        const MAX_FILE_SIZE_MB = 10;
-        const CLOUDINARY_CLOUD_NAME = "dwmbgd9jy";
-        const CLOUDINARY_PRESET = "my_preset_123"; 
+    const MAX_FILE_SIZE_MB = 10;
+    const CLOUDINARY_CLOUD_NAME = "dwmbgd9jy";
+    const CLOUDINARY_PRESET = "my_preset_123"; 
 
-        let isPosting = false; 
-        let selectedFiles = []; 
-        const profileCache = new Map();
-        let currentAuthUser = null;
+    let isPosting = false; 
+    let selectedFiles = []; 
+    const profileCache = new Map();
+    let currentAuthUser = null;
 
-        // Lightbox state
-        let currentGalleryImages = [];
-        let currentGalleryIndex = 0;
+    let currentGalleryImages = [];
+    let currentGalleryIndex = 0;
 
-        const chatTitleEl = document.getElementById('chat-title');
-        const fileInput = document.getElementById('file-upload');
-        const sendBtn = document.getElementById('send-btn');
-        const chatInput = document.getElementById('chat-msg-input');
-        const feed = document.getElementById("comment-feed");
-        const previewBar = document.getElementById("preview-bar");
+    const chatTitleEl = document.getElementById('chat-title');
+    const fileInput = document.getElementById('file-upload');
+    const sendBtn = document.getElementById('send-btn');
+    const chatInput = document.getElementById('chat-msg-input');
+    const feed = document.getElementById("comment-feed");
+    const previewBar = document.getElementById("preview-bar");
 
-        // Lightbox Elements
-        const lightbox = document.getElementById('lightbox');
-        const lightboxWrapper = document.getElementById('lightbox-wrapper');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCounter = document.getElementById('lightbox-counter');
-        const lightboxClose = document.getElementById('lightbox-close');
-        const lightboxPrev = document.getElementById('lightbox-prev');
-        const lightboxNext = document.getElementById('lightbox-next');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxWrapper = document.getElementById('lightbox-wrapper');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
 
-        if (chatTitleEl) {
-            chatTitleEl.textContent = chatName || "Chat";
+    if (chatTitleEl) {
+        chatTitleEl.textContent = chatName;
+    }
+
+    const getUsername = () => {
+        if (!currentAuthUser) return "User";
+        return currentAuthUser.displayName || (currentAuthUser.email ? currentAuthUser.email.split("@")[0] : "User");
+    };
+
+    async function getUserProfile(uid) {
+        if (!uid) return null;
+        if (profileCache.has(uid)) return profileCache.get(uid);
+        try {
+            let pSnap = await getDoc(doc(db, "profiles", uid));
+            if (!pSnap.exists()) {
+                pSnap = await getDoc(doc(db, "users", uid));
+            }
+            if (pSnap.exists()) {
+                const data = pSnap.data();
+                profileCache.set(uid, data);
+                return data;
+            }
+        } catch(e) {
+            console.error("Profile fetch error:", e);
         }
+        return null;
+    }
 
-        const getUsername = () => {
-            if (!currentAuthUser) return "User";
-            return currentAuthUser.displayName || (currentAuthUser.email ? currentAuthUser.email.split("@")[0] : "User");
-        };
+    function escapeHTML(str) {
+        if (typeof str !== 'string') return '';
+        return str.replace(/[&<>'"]/g, 
+            tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
+        );
+    }
 
-        async function getUserProfile(uid) {
-            if (!uid) return null;
-            if (profileCache.has(uid)) return profileCache.get(uid);
+    /* 1. AUTHENTICATION */
+    onAuthStateChanged(auth, (user) => {
+        currentAuthUser = user;
+        if (!user) {
+            window.location.href = "login.html";
+            return;
+        }
+        if (chatId) {
+            initMessageListener();
+        } else {
+            feed.innerHTML = `<div class="empty-msg">Missing chat ID. Please go back and try again.</div>`;
+            console.error("Missing chat ID in URL parameters.");
+        }
+    });
+
+    /* 2. REAL-TIME LISTENER */
+    let unsubscribeListener = null;
+    function initMessageListener() {
+        if (unsubscribeListener) return;
+
+        const q = query(collection(db, "chats", chatId, "messages"), orderBy("timestamp", "asc"));
+
+        unsubscribeListener = onSnapshot(q, async (snapshot) => {
+            if (!feed) return;
+            
             try {
-                let pSnap = await getDoc(doc(db, "profiles", uid));
-                if (!pSnap.exists()) {
-                    pSnap = await getDoc(doc(db, "users", uid));
+                const uidsToFetch = new Set();
+                snapshot.docs.forEach(docSnap => {
+                    const msg = docSnap.data();
+                    if (msg.senderUid) uidsToFetch.add(msg.senderUid);
+                });
+                await Promise.all(Array.from(uidsToFetch).map(uid => getUserProfile(uid)));
+
+                if (snapshot.empty) {
+                    feed.innerHTML = `<div class="empty-msg">No messages yet. Say hello!</div>`;
+                    return;
                 }
-                if (pSnap.exists()) {
-                    const data = pSnap.data();
-                    profileCache.set(uid, data);
-                    return data;
-                }
-            } catch(e) {
-                console.error("Profile fetch error:", e);
-            }
-            return null;
-        }
 
-        /* 1. AUTHENTICATION */
-        onAuthStateChanged(auth, (user) => {
-            currentAuthUser = user;
-            if (chatId) {
-                initMessageListener();
-            } else {
-                console.error("Missing chat ID in URL parameters.");
-            }
-        });
+                let completeFeedHTML = "";
 
-        /* 2. REAL-TIME LISTENER */
-        let unsubscribeListener = null;
-        function initMessageListener() {
-            if (unsubscribeListener) return;
-
-            // Pointing to chats/{chatId}/messages
-            const q = query(collection(db, "chats", chatId, "messages"), orderBy("timestamp", "asc"));
-
-            unsubscribeListener = onSnapshot(q, async (snapshot) => {
-                if (!feed) return;
-                
-                try {
-                    const uidsToFetch = new Set();
-                    snapshot.docs.forEach(docSnap => {
-                        const msg = docSnap.data();
-                        if (msg.senderUid) uidsToFetch.add(msg.senderUid);
-                    });
-                    await Promise.all(Array.from(uidsToFetch).map(uid => getUserProfile(uid)));
-
-                    let completeFeedHTML = "";
-
-                    for (const docSnap of snapshot.docs) {
-                        const msg = docSnap.data();
-                        const isSent = currentAuthUser && msg.senderUid === currentAuthUser.uid;
-                        const images = msg.imageUrls || (msg.imageUrl ? [msg.imageUrl] : []);
-                        
-                        let avatarHTML = "";
-                        if (!isSent) {
-                            const profile = profileCache.get(msg.senderUid);
-                            if (profile && (profile.photoURL || profile.photoUrl || profile.avatarUrl)) {
-                                const photo = profile.photoURL || profile.photoUrl || profile.avatarUrl;
-                                avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"><img src=" \){escapeHTML(photo)}"></div>`;
-                            } else {
-                                const initial = msg.sender ? msg.sender.charAt(0).toUpperCase() : "U";
-                                avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"> \){initial}</div>`;
-                            }
+                for (const docSnap of snapshot.docs) {
+                    const msg = docSnap.data();
+                    const isSent = currentAuthUser && msg.senderUid === currentAuthUser.uid;
+                    const images = msg.imageUrls || (msg.imageUrl ? [msg.imageUrl] : []);
+                    
+                    let avatarHTML = "";
+                    if (!isSent) {
+                        const profile = profileCache.get(msg.senderUid);
+                        if (profile && (profile.photoURL || profile.photoUrl || profile.avatarUrl)) {
+                            const photo = profile.photoURL || profile.photoUrl || profile.avatarUrl;
+                            avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"><img src=" \){escapeHTML(photo)}"></div>`;
+                        } else {
+                            const initial = msg.sender ? msg.sender.charAt(0).toUpperCase() : "U";
+                            avatarHTML = `<div class="avatar profile-link" data-uid="\( {escapeHTML(msg.senderUid)}"> \){initial}</div>`;
                         }
-
-                        const serializedImages = encodeURIComponent(JSON.stringify(images));
-
-                        completeFeedHTML += `
-                            <div class="msg-row ${isSent ? 'sent' : 'received'}">
-                                ${avatarHTML}
-                                <div class="msg-bubble">
-                                    \( {!isSent ? `<div class="msg-name profile-link" data-uid=" \){escapeHTML(msg.senderUid)}">${escapeHTML(msg.sender || 'Anonymous')}</div>` : ''}
-                                    \( {msg.text ? `<div class="msg-text"> \){escapeHTML(msg.text)}</div>` : ''}
-                                    ${renderImageGrid(images, serializedImages)}
-                                </div>
-                            </div>
-                        `;
                     }
 
-                    feed.innerHTML = completeFeedHTML;
-                    attachImageClickEvents();
-                    attachProfileClickEvents();
-                    window.scrollTo(0, document.body.scrollHeight);
-                } catch (err) {
-                    console.error("Snapshot render error:", err);
+                    const serializedImages = encodeURIComponent(JSON.stringify(images));
+
+                    completeFeedHTML += `
+                        <div class="msg-row ${isSent ? 'sent' : 'received'}">
+                            ${avatarHTML}
+                            <div class="msg-bubble">
+                                \( {!isSent ? `<div class="msg-name profile-link" data-uid=" \){escapeHTML(msg.senderUid)}">${escapeHTML(msg.sender || 'Anonymous')}</div>` : ''}
+                                \( {msg.text ? `<div class="msg-text"> \){escapeHTML(msg.text)}</div>` : ''}
+                                ${renderImageGrid(images, serializedImages)}
+                            </div>
+                        </div>
+                    `;
                 }
-            });
-        }
 
-        function escapeHTML(str) {
-            if (typeof str !== 'string') return '';
-            return str.replace(/[&<>'"]/g, 
-                tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-            );
-        }
+                feed.innerHTML = completeFeedHTML;
+                attachImageClickEvents();
+                attachProfileClickEvents();
+                window.scrollTo(0, document.body.scrollHeight);
+            } catch (err) {
+                console.error("Snapshot render error:", err);
+                feed.innerHTML = `<div class="empty-msg">Error loading messages.</div>`;
+            }
+        }, (error) => {
+            console.error("Listener error:", error);
+            feed.innerHTML = `<div class="empty-msg">Failed to load messages.<br>${error.message}</div>`;
+        });
+    }
 
-        function renderImageGrid(images, serializedImages) {
-            if (!images || !images.length) return '';
-            const safeImages = images.map(img => escapeHTML(img));
-            const c = safeImages.length;
-            
-            let gridHTML = "";
-            if (c === 1) gridHTML = `<div class="img-grid img-grid-1" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div></div>`;
-            else if (c === 2) gridHTML = `<div class="img-grid img-grid-2" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="${safeImages[1]}"></div></div>`;
-            else if (c === 3) gridHTML = `<div class="img-grid img-grid-3" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="\( {safeImages[1]}"></div><div class="img-item" data-index="2"><img src=" \){safeImages[2]}"></div></div>`;
-            else if (c === 4) gridHTML = `<div class="img-grid img-grid-4" data-images="\( {serializedImages}"> \){safeImages.map((img, idx) => `<div class="img-item" data-index="\( {idx}"><img src=" \){img}"></div>`).join('')}</div>`;
-            else gridHTML = `<div class="img-grid img-grid-more" data-images="${serializedImages}">
+    function renderImageGrid(images, serializedImages) {
+        if (!images || !images.length) return '';
+        const safeImages = images.map(img => escapeHTML(img));
+        const c = safeImages.length;
+        
+        let gridHTML = "";
+        if (c === 1) {
+            gridHTML = `<div class="img-grid img-grid-1" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div></div>`;
+        } else if (c === 2) {
+            gridHTML = `<div class="img-grid img-grid-2" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="${safeImages[1]}"></div></div>`;
+        } else if (c === 3) {
+            gridHTML = `<div class="img-grid img-grid-3" data-images="\( {serializedImages}"><div class="img-item" data-index="0"><img src=" \){safeImages[0]}"></div><div class="img-item" data-index="1"><img src="\( {safeImages[1]}"></div><div class="img-item" data-index="2"><img src=" \){safeImages[2]}"></div></div>`;
+        } else if (c === 4) {
+            gridHTML = `<div class="img-grid img-grid-4" data-images="\( {serializedImages}"> \){safeImages.map((img, idx) => `<div class="img-item" data-index="\( {idx}"><img src=" \){img}"></div>`).join('')}</div>`;
+        } else {
+            gridHTML = `<div class="img-grid img-grid-more" data-images="${serializedImages}">
                 <div class="img-item" data-index="0"><img src="${safeImages[0]}"></div>
                 <div class="img-item" data-index="1"><img src="${safeImages[1]}"></div>
                 <div class="img-item" data-index="2"><img src="${safeImages[2]}"></div>
                 <div class="img-item" data-index="3"><img src="\( {safeImages[3]}"><div class="img-more-overlay">+ \){c - 4}</div></div>
             </div>`;
-
-            return gridHTML;
         }
 
-        /* 3. PROFILE NAVIGATION */
-        function attachProfileClickEvents() {
-            document.querySelectorAll('.profile-link').forEach(el => {
-                el.addEventListener('click', (e) => {
-                    const uid = el.getAttribute('data-uid');
-                    if (uid) {
-                        window.location.href = `chat_info.html?uid=${encodeURIComponent(uid)}`;
-                    }
-                });
-            });
-        }
+        return gridHTML;
+    }
 
-        /* 4. LIGHTBOX & TOUCH GESTURES */
-        let scale = 1;
-        let startDist = 0;
-        let startScale = 1;
-        let startX = 0, startY = 0;
-        let currentX = 0, currentY = 0;
-        let isDragging = false;
-        let touchStartTime = 0;
-        let lastTapTime = 0;
-
-        function attachImageClickEvents() {
-            document.querySelectorAll('.img-grid').forEach(grid => {
-                grid.addEventListener('click', (e) => {
-                    const item = e.target.closest('.img-item');
-                    if (!item) return;
-
-                    const rawImages = grid.getAttribute('data-images');
-                    if (!rawImages) return;
-
-                    try {
-                        currentGalleryImages = JSON.parse(decodeURIComponent(rawImages));
-                        currentGalleryIndex = parseInt(item.getAttribute('data-index') || 0, 10);
-                        openLightbox();
-                    } catch (err) {
-                        console.error("Failed to parse gallery images:", err);
-                    }
-                });
-            });
-        }
-
-        function openLightbox() {
-            if (!currentGalleryImages.length) return;
-            resetZoom();
-            updateLightboxView();
-            lightbox.classList.add('active');
-        }
-
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            lightboxImg.src = "";
-            resetZoom();
-        }
-
-        function updateLightboxView() {
-            resetZoom();
-            lightboxImg.src = currentGalleryImages[currentGalleryIndex];
-            lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${currentGalleryImages.length}`;
-            
-            if (currentGalleryImages.length <= 1) {
-                lightboxPrev.style.display = "none";
-                lightboxNext.style.display = "none";
-            } else {
-                lightboxPrev.style.display = "flex";
-                lightboxNext.style.display = "flex";
-            }
-        }
-
-        function resetZoom() {
-            scale = 1;
-            currentX = 0;
-            currentY = 0;
-            applyTransform();
-        }
-
-        function applyTransform() {
-            lightboxImg.style.transform = `translate(${currentX}px, \( {currentY}px) scale( \){scale})`;
-        }
-
-        function getDistance(touches) {
-            const dx = touches[0].clientX - touches[1].clientX;
-            const dy = touches[0].clientY - touches[1].clientY;
-            return Math.sqrt(dx * dx + dy * dy);
-        }
-
-        lightboxWrapper.addEventListener('touchstart', (e) => {
-            touchStartTime = Date.now();
-
-            if (e.touches.length === 2) {
-                startDist = getDistance(e.touches);
-                startScale = scale;
-            } else if (e.touches.length === 1) {
-                isDragging = true;
-                startX = e.touches[0].clientX - currentX;
-                startY = e.touches[0].clientY - currentY;
-
-                const now = Date.now();
-                if (now - lastTapTime < 300) {
-                    if (scale > 1) resetZoom();
-                    else {
-                        scale = 2.5;
-                        applyTransform();
-                    }
+    /* 3. PROFILE NAVIGATION */
+    function attachProfileClickEvents() {
+        document.querySelectorAll('.profile-link').forEach(el => {
+            el.addEventListener('click', () => {
+                const uid = el.getAttribute('data-uid');
+                if (uid) {
+                    window.location.href = `chat_info.html?uid=${encodeURIComponent(uid)}`;
                 }
-                lastTapTime = now;
-            }
+            });
         });
+    }
 
-        lightboxWrapper.addEventListener('touchmove', (e) => {
-            if (e.touches.length === 2) {
-                const dist = getDistance(e.touches);
-                scale = Math.min(Math.max(1, startScale * (dist / startDist)), 4);
-                applyTransform();
-            } else if (e.touches.length === 1 && isDragging) {
-                const moveX = e.touches[0].clientX - startX;
-                const moveY = e.touches[0].clientY - startY;
+    /* 4. LIGHTBOX */
+    let scale = 1;
+    let startDist = 0;
+    let startScale = 1;
+    let startX = 0, startY = 0;
+    let currentX = 0, currentY = 0;
+    let isDragging = false;
+    let touchStartTime = 0;
+    let lastTapTime = 0;
 
-                if (scale > 1) {
-                    currentX = moveX;
-                    currentY = moveY;
+    function attachImageClickEvents() {
+        document.querySelectorAll('.img-grid').forEach(grid => {
+            grid.addEventListener('click', (e) => {
+                const item = e.target.closest('.img-item');
+                if (!item) return;
+
+                const rawImages = grid.getAttribute('data-images');
+                if (!rawImages) return;
+
+                try {
+                    currentGalleryImages = JSON.parse(decodeURIComponent(rawImages));
+                    currentGalleryIndex = parseInt(item.getAttribute('data-index') || 0, 10);
+                    openLightbox();
+                } catch (err) {
+                    console.error("Failed to parse gallery images:", err);
+                }
+            });
+        });
+    }
+
+    function openLightbox() {
+        if (!currentGalleryImages.length) return;
+        resetZoom();
+        updateLightboxView();
+        lightbox.classList.add('active');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        lightboxImg.src = "";
+        resetZoom();
+    }
+
+    function updateLightboxView() {
+        resetZoom();
+        lightboxImg.src = currentGalleryImages[currentGalleryIndex];
+        lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${currentGalleryImages.length}`;
+        
+        if (currentGalleryImages.length <= 1) {
+            lightboxPrev.style.display = "none";
+            lightboxNext.style.display = "none";
+        } else {
+            lightboxPrev.style.display = "flex";
+            lightboxNext.style.display = "flex";
+        }
+    }
+
+    function resetZoom() {
+        scale = 1;
+        currentX = 0;
+        currentY = 0;
+        applyTransform();
+    }
+
+    function applyTransform() {
+        lightboxImg.style.transform = `translate(${currentX}px, \( {currentY}px) scale( \){scale})`;
+    }
+
+    function getDistance(touches) {
+        const dx = touches[0].clientX - touches[1].clientX;
+        const dy = touches[0].clientY - touches[1].clientY;
+        return Math.sqrt(dx * dx + dy * dy);
+    }
+
+    lightboxWrapper.addEventListener('touchstart', (e) => {
+        touchStartTime = Date.now();
+
+        if (e.touches.length === 2) {
+            startDist = getDistance(e.touches);
+            startScale = scale;
+        } else if (e.touches.length === 1) {
+            isDragging = true;
+            startX = e.touches[0].clientX - currentX;
+            startY = e.touches[0].clientY - currentY;
+
+            const now = Date.now();
+            if (now - lastTapTime < 300) {
+                if (scale > 1) resetZoom();
+                else {
+                    scale = 2.5;
                     applyTransform();
                 }
             }
-        });
-
-        lightboxWrapper.addEventListener('touchend', (e) => {
-            isDragging = false;
-
-            if (e.touches.length === 0 && scale === 1) {
-                const touchDuration = Date.now() - touchStartTime;
-
-                if (touchDuration < 400 && Math.abs(startX - (e.changedTouches[0]?.clientX || 0)) > 60) {
-                    const diffX = startX - (e.changedTouches[0]?.clientX || 0);
-                    if (diffX > 0 && currentGalleryImages.length > 1) {
-                        currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
-                        updateLightboxView();
-                    } else if (diffX < 0 && currentGalleryImages.length > 1) {
-                        currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
-                        updateLightboxView();
-                    }
-                }
-            }
-        });
-
-        lightboxClose.addEventListener('click', closeLightbox);
-        lightboxPrev.addEventListener('click', (e) => {
-            e.stopPropagation();
-            currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
-            updateLightboxView();
-        });
-
-        lightboxNext.addEventListener('click', (e) => {
-            e.stopPropagation();
-            currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
-            updateLightboxView();
-        });
-
-        /* 5. PREVIEW & FILE HANDLING */
-        if (fileInput) {
-            fileInput.addEventListener('click', (e) => { e.target.value = null; });
-            fileInput.addEventListener('change', (e) => {
-                const files = Array.from(e.target.files || []);
-                const validFiles = files.filter(f => f.type.startsWith('image/') && f.size <= MAX_FILE_SIZE_MB * 1024 * 1024);
-                
-                selectedFiles = [...selectedFiles, ...validFiles];
-                renderPreviews();
-            });
+            lastTapTime = now;
         }
+    });
 
-        function renderPreviews() {
-            if (selectedFiles.length === 0) {
-                previewBar.classList.remove("active");
-                previewBar.innerHTML = "";
-                return;
+    lightboxWrapper.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 2) {
+            const dist = getDistance(e.touches);
+            scale = Math.min(Math.max(1, startScale * (dist / startDist)), 4);
+            applyTransform();
+        } else if (e.touches.length === 1 && isDragging) {
+            if (scale > 1) {
+                currentX = e.touches[0].clientX - startX;
+                currentY = e.touches[0].clientY - startY;
+                applyTransform();
             }
+        }
+    });
 
-            previewBar.classList.add("active");
+    lightboxWrapper.addEventListener('touchend', (e) => {
+        isDragging = false;
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentGalleryIndex = (currentGalleryIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+        updateLightboxView();
+    });
+
+    lightboxNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentGalleryIndex = (currentGalleryIndex + 1) % currentGalleryImages.length;
+        updateLightboxView();
+    });
+
+    /* 5. PREVIEW & FILE HANDLING */
+    if (fileInput) {
+        fileInput.addEventListener('click', (e) => { e.target.value = null; });
+        fileInput.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files || []);
+            const validFiles = files.filter(f => f.type.startsWith('image/') && f.size <= MAX_FILE_SIZE_MB * 1024 * 1024);
+            
+            selectedFiles = [...selectedFiles, ...validFiles];
+            renderPreviews();
+        });
+    }
+
+    function renderPreviews() {
+        if (selectedFiles.length === 0) {
+            previewBar.classList.remove("active");
             previewBar.innerHTML = "";
-
-            selectedFiles.forEach((file, index) => {
-                const thumb = document.createElement("div");
-                thumb.className = "preview-thumb";
-                
-                const img = document.createElement("img");
-                img.src = URL.createObjectURL(file);
-
-                const removeBtn = document.createElement("button");
-                removeBtn.className = "remove-thumb";
-                removeBtn.textContent = "✕";
-                removeBtn.onclick = () => {
-                    selectedFiles.splice(index, 1);
-                    renderPreviews();
-                };
-
-                thumb.appendChild(img);
-                thumb.appendChild(removeBtn);
-                previewBar.appendChild(thumb);
-            });
+            return;
         }
 
-        /* 6. POST LOGIC */
-        async function sendChatMessage() {
-            if (isPosting) return;
+        previewBar.classList.add("active");
+        previewBar.innerHTML = "";
 
-            try {
-                if (!chatId || !currentAuthUser) return;
+        selectedFiles.forEach((file, index) => {
+            const thumb = document.createElement("div");
+            thumb.className = "preview-thumb";
+            
+            const img = document.createElement("img");
+            img.src = URL.createObjectURL(file);
 
-                const message = chatInput ? chatInput.value.trim() : "";
-                if (!message && selectedFiles.length === 0) return;
+            const removeBtn = document.createElement("button");
+            removeBtn.className = "remove-thumb";
+            removeBtn.textContent = "✕";
+            removeBtn.onclick = () => {
+                selectedFiles.splice(index, 1);
+                renderPreviews();
+            };
 
-                isPosting = true;
-                if (sendBtn) {
-                    sendBtn.disabled = true;
-                    sendBtn.textContent = "...";
-                }
+            thumb.appendChild(img);
+            thumb.appendChild(removeBtn);
+            previewBar.appendChild(thumb);
+        });
+    }
 
-                let imageUrls = [];
+    /* 6. POST LOGIC */
+    async function sendChatMessage() {
+        if (isPosting) return;
 
-                if (selectedFiles.length > 0) {
-                    for (const file of selectedFiles) {
-                        const formData = new FormData();
-                        formData.append("file", file);
-                        formData.append("upload_preset", CLOUDINARY_PRESET);
+        try {
+            if (!chatId || !currentAuthUser) return;
 
-                        const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`, { 
-                            method: "POST", 
-                            body: formData 
-                        });
+            const message = chatInput ? chatInput.value.trim() : "";
+            if (!message && selectedFiles.length === 0) return;
 
-                        const data = await res.json();
-                        if (res.ok && data.secure_url) {
-                            imageUrls.push(data.secure_url);
-                        } else {
-                            console.error("Cloudinary upload failed:", data.error?.message);
-                        }
+            isPosting = true;
+            if (sendBtn) {
+                sendBtn.disabled = true;
+                sendBtn.textContent = "...";
+            }
+
+            let imageUrls = [];
+
+            if (selectedFiles.length > 0) {
+                for (const file of selectedFiles) {
+                    const formData = new FormData();
+                    formData.append("file", file);
+                    formData.append("upload_preset", CLOUDINARY_PRESET);
+
+                    const res = await fetch(`https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`, { 
+                        method: "POST", 
+                        body: formData 
+                    });
+
+                    const data = await res.json();
+                    if (res.ok && data.secure_url) {
+                        imageUrls.push(data.secure_url);
+                    } else {
+                        console.error("Cloudinary upload failed:", data.error?.message);
                     }
                 }
+            }
 
-                // Saves to chats/{chatId}/messages
-                await addDoc(collection(db, "chats", chatId, "messages"), {
-                    sender: getUsername(),
-                    senderUid: currentAuthUser.uid,
-                    text: message,
-                    imageUrls: imageUrls, 
-                    timestamp: serverTimestamp()
-                });
+            await addDoc(collection(db, "chats", chatId, "messages"), {
+                sender: getUsername(),
+                senderUid: currentAuthUser.uid,
+                text: message,
+                imageUrls: imageUrls, 
+                timestamp: serverTimestamp()
+            });
 
-                if (chatInput) chatInput.value = "";
-                selectedFiles = [];
-                renderPreviews();
+            if (chatInput) chatInput.value = "";
+            selectedFiles = [];
+            renderPreviews();
 
-            } catch (e) {
-                console.error("Message send error:", e);
-            } finally {
-                isPosting = false; 
-                if (sendBtn) {
-                    sendBtn.disabled = false;
-                    sendBtn.textContent = "➤";
-                }
+        } catch (e) {
+            console.error("Message send error:", e);
+            alert("Failed to send message. Please try again.");
+        } finally {
+            isPosting = false; 
+            if (sendBtn) {
+                sendBtn.disabled = false;
+                sendBtn.textContent = "➤";
             }
         }
+    }
 
-        /* 7. SEND EVENTS */
-        if (sendBtn) {
-            sendBtn.addEventListener("click", (e) => {
+    /* 7. SEND EVENTS */
+    if (sendBtn) {
+        sendBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            sendChatMessage();
+        });
+    }
+
+    if (chatInput) {
+        chatInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
                 e.preventDefault();
+                e.stopImmediatePropagation();
                 sendChatMessage();
-            });
-        }
-
-        if (chatInput) {
-            chatInput.addEventListener("keydown", (e) => {
-                if (e.key === "Enter" && !e.shiftKey) {
-                    e.preventDefault();
-                    e.stopImmediatePropagation();
-                    sendChatMessage();
-                }
-            });
-        }
-    </script>
+            }
+        });
+    }
+</script>
 </body>
 </html>
