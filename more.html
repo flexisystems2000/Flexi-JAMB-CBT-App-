@@ -107,7 +107,9 @@
     }
 
     body.dark .list-item:active,
-    body.dark .list-item:hover {
+    body.dark .list-item:hover,
+    html.dark .list-item:active,
+    html.dark .list-item:hover {
       background-color: rgba(255, 255, 255, 0.05);
     }
 
@@ -532,9 +534,6 @@
 
   <!--
     Capacitor Local Notifications
-
-    This package is used when the project is built
-    as a native Android/iOS application.
   -->
   <script type="module">
 
@@ -560,11 +559,6 @@
           }
 
 
-          /*
-           * Android notification channel.
-           *
-           * iOS ignores this channel configuration.
-           */
           try {
 
             await LocalNotifications.createChannel({
@@ -643,61 +637,10 @@
         }
 
         await window.saveNotifState(false);
-      },
-
-
-      async test() {
-
-        try {
-
-          await LocalNotifications.schedule({
-
-            notifications: [
-
-              {
-
-                id: 9999,
-
-                title:
-                  'Flexi Educational Consult',
-
-                body:
-                  'Notifications are working! 🎓',
-
-                schedule: {
-                  at: new Date(Date.now() + 5000)
-                },
-
-                channelId:
-                  'flexi-study',
-
-                sound:
-                  'default'
-
-              }
-
-            ]
-
-          });
-
-        } catch (error) {
-
-          console.error(
-            'Test notification failed:',
-            error
-          );
-
-        }
-
       }
 
     };
 
-
-    /*
-     * Make the notification functions available
-     * to the rest of this HTML file.
-     */
 
     window.toggleNotifications =
       async function(isEnabled) {
@@ -721,7 +664,7 @@
             }
 
             alert(
-              'Notification permission was not granted.'
+              'Notification permission was not granted. Please enable it in Android Settings → Apps → Flexi → Notifications.'
             );
 
           }
@@ -735,21 +678,10 @@
       };
 
 
-    /*
-     * Schedule offline/local study reminders.
-     *
-     * These are stored/scheduled by the device.
-     * They do not require your server to be online.
-     */
-
     window.scheduleFlexiReminders =
       async function() {
 
         try {
-
-          /*
-           * Remove old reminder schedules first.
-           */
 
           try {
 
@@ -775,124 +707,49 @@
           }
 
 
-          /*
-           * Morning reminder
-           */
-
           await LocalNotifications.schedule({
 
             notifications: [
 
               {
-
                 id: 1001,
-
-                title:
-                  'Flexi Educational Consult',
-
-                body:
-                  "Good morning! Ready to practice today's CBT questions? 🎓",
-
+                title: 'Flexi Educational Consult',
+                body: "Good morning! Ready to practice today's CBT questions? 🎓",
                 schedule: {
-
-                  on: {
-
-                    hour: 8,
-
-                    minute: 0
-
-                  },
-
+                  on: { hour: 8, minute: 0 },
                   repeats: true
-
                 },
-
-                channelId:
-                  'flexi-study',
-
-                sound:
-                  'default'
-
+                channelId: 'flexi-study',
+                sound: 'default'
               },
 
-
-              /*
-               * Afternoon reminder
-               */
-
               {
-
                 id: 1002,
-
-                title:
-                  'Flexi Educational Consult',
-
-                body:
-                  'Keep your study streak going! Try a quick practice test.',
-
+                title: 'Flexi Educational Consult',
+                body: 'Keep your study streak going! Try a quick practice test.',
                 schedule: {
-
-                  on: {
-
-                    hour: 14,
-
-                    minute: 0
-
-                  },
-
+                  on: { hour: 14, minute: 0 },
                   repeats: true
-
                 },
-
-                channelId:
-                  'flexi-study',
-
-                sound:
-                  'default'
-
+                channelId: 'flexi-study',
+                sound: 'default'
               },
 
-
-              /*
-               * Evening reminder
-               */
-
               {
-
                 id: 1003,
-
-                title:
-                  'Flexi Educational Consult',
-
-                body:
-                  'Time to review your saved questions.',
-
+                title: 'Flexi Educational Consult',
+                body: 'Time to review your saved questions.',
                 schedule: {
-
-                  on: {
-
-                    hour: 19,
-
-                    minute: 0
-
-                  },
-
+                  on: { hour: 19, minute: 0 },
                   repeats: true
-
                 },
-
-                channelId:
-                  'flexi-study',
-
-                sound:
-                  'default'
-
+                channelId: 'flexi-study',
+                sound: 'default'
               }
 
             ]
 
           });
-
 
         } catch (error) {
 
@@ -905,10 +762,6 @@
 
       };
 
-
-    /*
-     * Save notification state.
-     */
 
     window.saveNotifState =
       async function(state) {
@@ -940,15 +793,10 @@
 
         }
 
-
         updateReminderSubtitle(state);
 
       };
 
-
-    /*
-     * Update notification subtitle.
-     */
 
     window.updateReminderSubtitle =
       function(active) {
@@ -960,19 +808,12 @@
 
         if (!subtitle) return;
 
-
         subtitle.textContent = active
-
           ? 'Daily study reminders active'
-
           : 'Daily study reminders & exam alerts';
 
       };
 
-
-    /*
-     * Load saved notification state.
-     */
 
     document.addEventListener(
       'DOMContentLoaded',
@@ -980,9 +821,7 @@
 
         try {
 
-          if (
-            typeof IDB !== 'undefined'
-          ) {
+          if (typeof IDB !== 'undefined') {
 
             await IDB.migrateFromLocalStorage();
 
@@ -990,91 +829,67 @@
 
         } catch (error) {
 
-          console.log(
-            'IDB migration:',
-            error
-          );
+          console.log('IDB migration:', error);
 
         }
 
 
-        /*
-         * Theme state
-         */
-
+        /* Theme state */
         const themeToggle =
-          document.getElementById(
-            'theme-toggle'
-          );
-
+          document.getElementById('theme-toggle');
 
         if (themeToggle) {
 
           let themeVal = null;
 
-
           try {
 
             themeVal =
               typeof IDB !== 'undefined'
-
                 ? await IDB.getItem('theme')
-
                 : localStorage.getItem('theme');
 
           } catch (e) {}
 
+          const isDark =
+            themeVal === 'dark' ||
+            document.documentElement.classList.contains('dark') ||
+            document.body.classList.contains('dark');
 
-          themeToggle.checked =
-            document.body.classList.contains(
-              'dark'
-            ) ||
-            themeVal === 'dark';
+          themeToggle.checked = isDark;
+
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.body.classList.remove('dark');
+          }
 
         }
 
 
-        /*
-         * Notification state
-         */
-
+        /* Notification state */
         const notifToggle =
-          document.getElementById(
-            'notification-toggle'
-          );
-
+          document.getElementById('notification-toggle');
 
         let savedNotifState = 'false';
-
 
         try {
 
           savedNotifState =
             typeof IDB !== 'undefined'
-
-              ? await IDB.getItem(
-                  'flexi_reminders'
-                )
-
-              : localStorage.getItem(
-                  'flexi_reminders'
-                );
+              ? await IDB.getItem('flexi_reminders')
+              : localStorage.getItem('flexi_reminders');
 
         } catch (e) {}
 
-
-        const isNotifOn =
-          savedNotifState === 'true';
-
+        const isNotifOn = savedNotifState === 'true';
 
         if (notifToggle) {
 
-          notifToggle.checked =
-            isNotifOn;
-
-          updateReminderSubtitle(
-            isNotifOn
-          );
+          notifToggle.checked = isNotifOn;
+          updateReminderSubtitle(isNotifOn);
 
         }
 
@@ -1085,75 +900,44 @@
   </script>
 
 
-  <!--
-    Theme controls
-  -->
-
   <script>
 
     lucide.createIcons();
 
 
-    async function toggleThemeMode(
-      isDark
-    ) {
+    async function toggleThemeMode(isDark) {
 
       if (isDark) {
 
-        document.body.classList.add(
-          'dark'
-        );
+        document.documentElement.classList.add('dark');
+        document.body.classList.add('dark');
 
-
-        if (
-          typeof IDB !== 'undefined'
-        ) {
-
-          await IDB.setItem(
-            'theme',
-            'dark'
-          );
-
+        if (typeof IDB !== 'undefined') {
+          await IDB.setItem('theme', 'dark');
         }
 
-
         try {
-
-          localStorage.setItem(
-            'theme',
-            'dark'
-          );
-
+          localStorage.setItem('theme', 'dark');
         } catch (e) {}
 
       } else {
 
-        document.body.classList.remove(
-          'dark'
-        );
+        document.documentElement.classList.remove('dark');
+        document.body.classList.remove('dark');
 
-
-        if (
-          typeof IDB !== 'undefined'
-        ) {
-
-          await IDB.setItem(
-            'theme',
-            'light'
-          );
-
+        if (typeof IDB !== 'undefined') {
+          await IDB.setItem('theme', 'light');
         }
 
-
         try {
-
-          localStorage.setItem(
-            'theme',
-            'light'
-          );
-
+          localStorage.setItem('theme', 'light');
         } catch (e) {}
 
+      }
+
+      // Update Android status bar
+      if (typeof applyStatusBar === 'function') {
+        await applyStatusBar();
       }
 
     }
@@ -1162,18 +946,12 @@
     function toggleThemeRow() {
 
       const toggle =
-        document.getElementById(
-          'theme-toggle'
-        );
+        document.getElementById('theme-toggle');
 
+      if (!toggle) return;
 
-      toggle.checked =
-        !toggle.checked;
-
-
-      toggleThemeMode(
-        toggle.checked
-      );
+      toggle.checked = !toggle.checked;
+      toggleThemeMode(toggle.checked);
 
     }
 
@@ -1181,18 +959,15 @@
     function toggleNotificationRow() {
 
       const toggle =
-        document.getElementById(
-          'notification-toggle'
-        );
+        document.getElementById('notification-toggle');
 
+      if (!toggle) return;
 
-      toggle.checked =
-        !toggle.checked;
+      toggle.checked = !toggle.checked;
 
-
-      toggleNotifications(
-        toggle.checked
-      );
+      if (typeof toggleNotifications === 'function') {
+        toggleNotifications(toggle.checked);
+      }
 
     }
 
