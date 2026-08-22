@@ -832,10 +832,8 @@
           /*
             Check exact-alarm state when supported.
 
-            We intentionally do not automatically redirect the user
-            here because the app should still be able to schedule
-            non-exact reminders on Android versions where exact-alarm
-            access is restricted.
+            We intentionally do not redirect the user here because
+            Android may still allow normal scheduled reminders.
           */
 
           await this.checkExactAlarm();
@@ -983,8 +981,6 @@
 
         /*
           Always maintain localStorage as a lightweight fallback.
-          This also lets the early theme/notification UI recover if
-          IndexedDB is temporarily unavailable.
         */
 
         try {
@@ -1131,11 +1127,6 @@
         );
 
 
-        /*
-          theme.js owns the native StatusBar helper.
-          Use it when available.
-        */
-
         if (
           typeof window.applyStatusBar === 'function'
         ) {
@@ -1171,12 +1162,6 @@
       window.toggleThemeRow =
         async function (event) {
 
-          /*
-            If the click originated from the switch itself,
-            the checkbox's onchange handler will perform the
-            actual operation. This prevents double toggling.
-          */
-
           if (
             event &&
             event.target &&
@@ -1210,11 +1195,6 @@
 
       window.toggleNotificationRow =
         async function (event) {
-
-          /*
-            Same protection used by the theme row:
-            tapping the actual switch must not toggle twice.
-          */
 
           if (
             event &&
@@ -1251,12 +1231,6 @@
         'DOMContentLoaded',
         async function () {
 
-          /*
-            Wait briefly for IDB/theme.js initialization to settle,
-            then synchronize this page's theme switch with the
-            actual global theme.
-          */
-
           let savedTheme = null;
 
           try {
@@ -1266,12 +1240,16 @@
             ) {
 
               try {
+
                 await IDB.migrateFromLocalStorage();
+
               } catch (error) {
+
                 console.warn(
                   'IDB migration:',
                   error
                 );
+
               }
 
 
