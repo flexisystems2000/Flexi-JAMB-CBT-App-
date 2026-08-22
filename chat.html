@@ -16,278 +16,56 @@
 <link rel="stylesheet" href="theme.css">
 <script src="boxicons.js"></script>
 
+<!-- Eruda - Mobile Console -->
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>eruda.init();</script>
+
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);
-    min-height:100vh;
-    transition:.3s ease;
-}
-
-.top-header{
-    padding:20px;
-    background:var(--header);
-    border-bottom:1px solid var(--border);
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-
-.header-row{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    margin-bottom:20px;
-}
-
-.title-group{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.title-group h1{
-    font-size:24px;
-    font-weight:800;
-    color:var(--text);
-}
-
-.back-btn{
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    border:1px solid var(--border);
-    background:var(--btn-bg);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-decoration:none;
-    transition:.2s;
-    flex-shrink:0;
-    cursor:pointer;
-}
-
-.back-btn:hover{
-    background:#f5f5f5;
-}
-
-.start-btn{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    background:#008000;
-    color:white;
-    padding:10px 18px;
-    border-radius:50px;
-    font-weight:600;
-    text-decoration:none;
-}
-
-.tabs{
-    display:flex;
-    gap:25px;
-    overflow-x:auto;
-}
-
-.tabs::-webkit-scrollbar{
-    display:none;
-}
-
-.tab{
-    font-weight:700;
-    color:#888;
-    cursor:pointer;
-    padding-bottom:10px;
-    white-space:nowrap;
-}
-
-.tab.active{
-    color:#008000;
-    border-bottom:3px solid #008000;
-}
-
-.chat-list{
-    padding:20px;
-}
-
-.card{
-    background:var(--card);
-    padding:18px;
-    border-radius:15px;
-    margin-bottom:15px;
-    box-shadow:var(--card-shadow);
-}
-
-.card h3{
-    margin-bottom:12px;
-    color:var(--text);
-}
-
-.card p{
-    color:var(--subtext);
-}
-
-/* User & Group List Item Styling */
-.list-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--card);
-    padding: 16px;
-    border-radius: 15px;
-    margin-bottom: 12px;
-    border: 1px solid var(--border);
-    box-shadow: var(--card-shadow);
-    cursor: pointer;
-    transition: transform 0.1s ease;
-}
-
-.list-item:active {
-    transform: scale(0.99);
-}
-
-.item-info {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.details h4 {
-    color: var(--text);
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 2px;
-}
-
-.details p {
-    color: var(--subtext);
-    font-size: 12px;
-}
-
-/* Badges & Buttons */
-.badge {
-    background: #008000;
-    color: #fff;
-    font-size: 0.75rem;
-    font-weight: 700;
-    min-width: 22px;
-    height: 22px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 6px;
-}
-
-.btn-action {
-    border: none;
-    cursor: pointer;
-    background: #008000;
-    color: #fff;
-    padding: 9px 18px;
-    border-radius: 40px;
-    font-weight: 700;
-    font-size: 0.8rem;
-    transition: 0.2s;
-}
-
-.btn-action.btn-enter {
-    background: #003366;
-}
-
-/* Form inputs for Create Group & Ask Question */
-.modern-input {
-    width: 100%;
-    height: 48px;
-    padding: 0 16px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    border-radius: 10px;
-    margin-bottom: 12px;
-    outline: none;
-}
-
-.btn-create, .submit-btn {
-    width: 100%;
-    background: #008000;
-    color: white;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 10px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.question-box {
-    width: 100%;
-    min-height: 140px;
-    border: 1px solid var(--border);
-    background: var(--bg);
-    color: var(--text);
-    border-radius: 12px;
-    padding: 12px;
-    resize: none;
-    outline: none;
-    margin-bottom: 12px;
-}
-
-.loading-msg, .empty-msg, .error-msg {
-    padding: 40px 20px;
-    text-align: center;
-    color: var(--subtext);
-    font-size: 0.95rem;
-}
-
-.error-msg {
-    color: #e53e3e;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:var(--bg); min-height:100vh; }
+.top-header { padding:20px; background:var(--header); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:100; }
+.header-row { display:flex; align-items:center; justify-content:space-between; margin-bottom:20px; }
+.title-group { display:flex; align-items:center; gap:15px; }
+.title-group h1 { font-size:24px; font-weight:800; color:var(--text); }
+.back-btn { width:45px; height:45px; border-radius:50%; border:1px solid var(--border); background:var(--btn-bg); display:flex; align-items:center; justify-content:center; text-decoration:none; cursor:pointer; }
+.start-btn { display:flex; align-items:center; gap:8px; background:#008000; color:white; padding:10px 18px; border-radius:50px; font-weight:600; text-decoration:none; }
+.tabs { display:flex; gap:25px; overflow-x:auto; }
+.tabs::-webkit-scrollbar { display:none; }
+.tab { font-weight:700; color:#888; cursor:pointer; padding-bottom:10px; white-space:nowrap; }
+.tab.active { color:#008000; border-bottom:3px solid #008000; }
+.chat-list { padding:20px; }
+.card { background:var(--card); padding:18px; border-radius:15px; margin-bottom:15px; box-shadow:var(--card-shadow); }
+.card h3 { margin-bottom:12px; color:var(--text); }
+.list-item { display:flex; justify-content:space-between; align-items:center; background:var(--card); padding:16px; border-radius:15px; margin-bottom:12px; border:1px solid var(--border); box-shadow:var(--card-shadow); cursor:pointer; }
+.item-info { display:flex; align-items:center; gap:12px; }
+.avatar { width:44px; height:44px; border-radius:50%; background:var(--border); display:flex; align-items:center; justify-content:center; font-size:1.2rem; overflow:hidden; flex-shrink:0; }
+.avatar img { width:100%; height:100%; object-fit:cover; }
+.details h4 { color:var(--text); font-size:16px; font-weight:700; margin-bottom:2px; }
+.details p { color:var(--subtext); font-size:12px; }
+.badge { background:#008000; color:#fff; font-size:0.75rem; font-weight:700; min-width:22px; height:22px; border-radius:50px; display:flex; align-items:center; justify-content:center; padding:0 6px; }
+.btn-action { border:none; cursor:pointer; background:#008000; color:#fff; padding:9px 18px; border-radius:40px; font-weight:700; font-size:0.8rem; }
+.btn-action.btn-enter { background:#003366; }
+.modern-input { width:100%; height:48px; padding:0 16px; border:1px solid var(--border); background:var(--bg); color:var(--text); border-radius:10px; margin-bottom:12px; outline:none; }
+.btn-create, .submit-btn { width:100%; background:#008000; color:white; border:none; padding:12px 18px; border-radius:10px; font-weight:700; cursor:pointer; }
+.question-box { width:100%; min-height:140px; border:1px solid var(--border); background:var(--bg); color:var(--text); border-radius:12px; padding:12px; resize:none; outline:none; margin-bottom:12px; }
+.loading-msg, .empty-msg, .error-msg { padding:40px 20px; text-align:center; color:var(--subtext); font-size:0.95rem; }
+.error-msg { color:#e53e3e; }
 </style>
 </head>
 <body>
 
 <div class="top-header">
-
     <div class="header-row">
-
         <div class="title-group">
             <a href="javascript:void(0)" class="back-btn" onclick="FlexiBack.goBack('index.html')">
                 <box-icon name="arrow-back" color="var(--text)"></box-icon>
             </a>
-
             <h1>Chat Hub</h1>
         </div>
-
         <a href="start-chat.html" class="start-btn">
             <box-icon name="plus" color="white"></box-icon>
             Start Chat
         </a>
-
     </div>
 
     <div class="tabs">
@@ -295,7 +73,6 @@ body{
         <div class="tab" data-view="groups">Groups</div>
         <div class="tab" data-view="questions">Ask Question</div>
     </div>
-
 </div>
 
 <div class="chat-list" id="chatList">
@@ -305,6 +82,7 @@ body{
 <script src="idb.js"></script>
 <script src="theme.js"></script>
 <script src="back-handler.js"></script>
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { 
@@ -313,7 +91,6 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-// Correct Firebase Configuration (matches login page)
 const firebaseConfig = { 
     apiKey: "AIzaSyA0bM6pk1T1peGSS7quvFPEMOMuplnNRNM", 
     authDomain: "auth.flexieduconsult.com.ng", 
@@ -332,37 +109,35 @@ let unsubscribeProfiles = null;
 let unsubscribeGroups = null;
 let joinedGroupIds = new Set();
 
-// Utility for preventing XSS attacks
 function escapeHTML(str) {
-    if (typeof str !== 'string') return '';
-    return str.replace(/[&<>'"]/g, 
-        tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-    );
+    if (typeof str !== "string") return "";
+    return str.replace(/[&<>'"]/g, function(tag) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[tag] || tag;
+    });
 }
 
-// Global Chat Handler
-window.openChat = (otherUid, otherName) => {
+window.openChat = function(otherUid, otherName) {
     if (!auth.currentUser) return;
-    const chatId = [auth.currentUser.uid, otherUid].sort().join('_');
-    window.location.href = `chat_enter.html?chatId=\( {encodeURIComponent(chatId)}&otherUid= \){encodeURIComponent(otherUid)}&name=${encodeURIComponent(otherName)}`;
+    var chatId = [auth.currentUser.uid, otherUid].sort().join("_");
+    window.location.href = "chat_enter.html?chatId=" + encodeURIComponent(chatId) +
+        "&otherUid=" + encodeURIComponent(otherUid) +
+        "&name=" + encodeURIComponent(otherName);
 };
 
-// Global Group Creation Handler
-window.handleCreateGroup = async () => {
-    const input = document.getElementById("new-group-name");
+window.handleCreateGroup = async function() {
+    var input = document.getElementById("new-group-name");
     if (!input || !input.value.trim()) return;
 
-    const groupName = input.value.trim();
-    const creator = auth.currentUser.displayName || auth.currentUser.email.split("@")[0];
+    var groupName = input.value.trim();
+    var creator = auth.currentUser.displayName || auth.currentUser.email.split("@")[0];
 
     try {
-        const groupRef = await addDoc(collection(db, "groups"), {
+        var groupRef = await addDoc(collection(db, "groups"), {
             name: groupName,
             creatorName: creator,
             createdAt: serverTimestamp()
         });
 
-        // Automatically make creator a member
         await setDoc(doc(db, "groups", groupRef.id, "members", auth.currentUser.uid), {
             uid: auth.currentUser.uid,
             joinedAt: serverTimestamp()
@@ -376,8 +151,7 @@ window.handleCreateGroup = async () => {
     }
 };
 
-// Global Group Enter/Join Handler
-window.openGroup = async (id, name, isJoined) => {
+window.openGroup = async function(id, name, isJoined) {
     if (!isJoined) {
         try {
             await setDoc(doc(db, "groups", id, "members", auth.currentUser.uid), {
@@ -389,16 +163,17 @@ window.openGroup = async (id, name, isJoined) => {
             console.error("Error joining group:", err);
         }
     }
-    window.location.href = `entergroup.html?id=\( {encodeURIComponent(id)}&name= \){encodeURIComponent(name)}`;
+    window.location.href = "entergroup.html?id=" + encodeURIComponent(id) +
+        "&name=" + encodeURIComponent(name);
 };
 
-// Fetch Joined Groups for Current User
 async function loadJoinedGroups(uid) {
     joinedGroupIds.clear();
     try {
-        const snap = await getDocs(collection(db, "groups"));
-        for (const g of snap.docs) {
-            const memberDoc = await getDoc(doc(db, "groups", g.id, "members", uid));
+        var snap = await getDocs(collection(db, "groups"));
+        for (var i = 0; i < snap.docs.length; i++) {
+            var g = snap.docs[i];
+            var memberDoc = await getDoc(doc(db, "groups", g.id, "members", uid));
             if (memberDoc.exists()) {
                 joinedGroupIds.add(g.id);
             }
@@ -408,154 +183,126 @@ async function loadJoinedGroups(uid) {
     }
 }
 
-// Check Auth State
-onAuthStateChanged(auth, async (user) => {
-    if (!user) {
-        window.location.href = "login.html"; 
-        return;
+function clearListeners() {
+    if (unsubscribeProfiles) {
+        unsubscribeProfiles();
+        unsubscribeProfiles = null;
     }
-    try {
-        await loadJoinedGroups(user.uid);
-        loadActiveView(currentActiveView);
-    } catch (err) {
-        console.error("Auth load error:", err);
-        chatList.innerHTML = `<div class="error-msg">Failed to load. Please refresh the page.</div>`;
+    if (unsubscribeGroups) {
+        unsubscribeGroups();
+        unsubscribeGroups = null;
     }
-});
+}
 
-// Listener: Direct Chats (Profiles)
 function listenToChats() {
     clearListeners();
-
-    chatList.innerHTML = `<div class="loading-msg">Loading conversations...</div>`;
+    chatList.innerHTML = '<div class="loading-msg">Loading conversations...</div>';
 
     unsubscribeProfiles = onSnapshot(
-        collection(db, "profiles"), 
-        (snapshot) => {
+        collection(db, "profiles"),
+        function(snapshot) {
             if (currentActiveView !== "chats") return;
 
             chatList.innerHTML = "";
 
             if (snapshot.empty) {
-                chatList.innerHTML = `<div class="empty-msg">No users found yet.</div>`;
+                chatList.innerHTML = '<div class="empty-msg">No users found yet.</div>';
                 return;
             }
 
-            let hasUsers = false;
+            var hasUsers = false;
 
-            snapshot.forEach((uDoc) => {
+            snapshot.forEach(function(uDoc) {
                 if (uDoc.id === auth.currentUser.uid) return;
 
                 hasUsers = true;
-                const u = uDoc.data();
-                const unread = u.unreadCount || 0;
-                const photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
-                
-                const avatarHTML = photo 
-                    ? `<img src="\( {escapeHTML(photo)}" alt=" \){escapeHTML(u.name || 'User')}" onerror="this.parentNode.innerHTML='👤'">`
-                    : '👤';
+                var u = uDoc.data();
+                var unread = u.unreadCount || 0;
+                var photo = u.photoURL || u.photoUrl || u.avatarUrl || u.profileImage || u.image;
 
-                const safeName = escapeHTML(u.name || 'User');
-                const safeDocId = escapeHTML(uDoc.id);
+                var avatarHTML = photo
+                    ? '<img src="' + escapeHTML(photo) + '" alt="' + escapeHTML(u.name || "User") + '" onerror="this.parentNode.innerHTML=\'👤\'">'
+                    : "👤";
 
-                chatList.innerHTML += `
-                    <div class="list-item" onclick="openChat('\( {safeDocId}', ' \){safeName}')">
-                        <div class="item-info">
-                            <div class="avatar">${avatarHTML}</div>
-                            <div class="details">
-                                <h4>${safeName}</h4>
-                                <p>Tap to open direct chat</p>
-                            </div>
-                        </div>
-                        \( {unread > 0 ? `<div class="badge"> \){unread}</div>` : ''}
-                    </div>
-                `;
+                var safeName = escapeHTML(u.name || "User");
+                var safeDocId = escapeHTML(uDoc.id);
+
+                chatList.innerHTML +=
+                    '<div class="list-item" onclick="openChat(\'' + safeDocId + '\', \'' + safeName + '\')">' +
+                    '<div class="item-info">' +
+                    '<div class="avatar">' + avatarHTML + '</div>' +
+                    '<div class="details">' +
+                    "<h4>" + safeName + "</h4>" +
+                    "<p>Tap to open direct chat</p>" +
+                    "</div></div>" +
+                    (unread > 0 ? '<div class="badge">' + unread + "</div>" : "") +
+                    "</div>";
             });
 
             if (!hasUsers) {
-                chatList.innerHTML = `<div class="empty-msg">No other users found.</div>`;
+                chatList.innerHTML = '<div class="empty-msg">No other users found.</div>';
             }
         },
-        (error) => {
+        function(error) {
             console.error("Chats listener error:", error);
-            chatList.innerHTML = `<div class="error-msg">Failed to load chats.<br>${error.message}</div>`;
+            chatList.innerHTML = '<div class="error-msg">Failed to load chats.<br>' + error.message + "</div>";
         }
     );
 }
 
-// Listener: Groups
 function listenToGroups() {
     clearListeners();
 
-    const groupContainerHtml = `
-        <div class="card">
-            <h3>Start a Discussion</h3>
-            <input id="new-group-name" type="text" class="modern-input" placeholder="E.g. JAMB Mathematics 2027...">
-            <button class="btn-create" onclick="handleCreateGroup()">CREATE GROUP</button>
-        </div>
-        <div id="group-items-wrapper">
-            <div class="loading-msg">Loading discussion groups...</div>
-        </div>
-    `;
+    chatList.innerHTML =
+        '<div class="card">' +
+        "<h3>Start a Discussion</h3>" +
+        '<input id="new-group-name" type="text" class="modern-input" placeholder="E.g. JAMB Mathematics 2027...">' +
+        '<button class="btn-create" onclick="handleCreateGroup()">CREATE GROUP</button>' +
+        "</div>" +
+        '<div id="group-items-wrapper">' +
+        '<div class="loading-msg">Loading discussion groups...</div>' +
+        "</div>";
 
-    chatList.innerHTML = groupContainerHtml;
-    const groupWrapper = document.getElementById("group-items-wrapper");
+    var groupWrapper = document.getElementById("group-items-wrapper");
+    var q = query(collection(db, "groups"), orderBy("createdAt", "desc"));
 
-    const q = query(collection(db, "groups"), orderBy("createdAt", "desc"));
-    
-    unsubscribeGroups = onSnapshot(q, (snapshot) => {
+    unsubscribeGroups = onSnapshot(q, function(snapshot) {
         if (currentActiveView !== "groups") return;
 
         groupWrapper.innerHTML = "";
 
         if (snapshot.empty) {
-            groupWrapper.innerHTML = `<div class="empty-msg">No active discussion groups yet.</div>`;
+            groupWrapper.innerHTML = '<div class="empty-msg">No active discussion groups yet.</div>';
             return;
         }
 
-        snapshot.forEach((groupDoc) => {
-            const group = groupDoc.data();
-            const groupId = groupDoc.id;
-            const isJoined = joinedGroupIds.has(groupId);
-            
-            const safeGroupName = escapeHTML(group.name || 'Group');
-            const safeAdmin = escapeHTML(group.creatorName || 'Admin');
+        snapshot.forEach(function(groupDoc) {
+            var group = groupDoc.data();
+            var groupId = groupDoc.id;
+            var isJoined = joinedGroupIds.has(groupId);
 
-            groupWrapper.innerHTML += `
-                <div class="list-item">
-                    <div class="item-info">
-                        <div class="avatar">👥</div>
-                        <div class="details">
-                            <h4>${safeGroupName}</h4>
-                            <p>Admin: ${safeAdmin}</p>
-                        </div>
-                    </div>
-                    <button class="btn-action ${isJoined ? 'btn-enter' : ''}" 
-                            onclick="openGroup('\( {groupId}', ' \){safeGroupName}', ${isJoined})">
-                        ${isJoined ? 'ENTER' : 'JOIN'}
-                    </button>
-                </div>
-            `;
+            var safeGroupName = escapeHTML(group.name || "Group");
+            var safeAdmin = escapeHTML(group.creatorName || "Admin");
+
+            groupWrapper.innerHTML +=
+                '<div class="list-item">' +
+                '<div class="item-info">' +
+                '<div class="avatar">👥</div>' +
+                '<div class="details">' +
+                "<h4>" + safeGroupName + "</h4>" +
+                "<p>Admin: " + safeAdmin + "</p>" +
+                "</div></div>" +
+                '<button class="btn-action ' + (isJoined ? "btn-enter" : "") +
+                '" onclick="openGroup(\'' + groupId + '\', \'' + safeGroupName + '\', ' + isJoined + ')">' +
+                (isJoined ? "ENTER" : "JOIN") +
+                "</button></div>";
         });
-    }, (error) => {
+    }, function(error) {
         console.error("Groups listener error:", error);
-        groupWrapper.innerHTML = `<div class="error-msg">Failed to load groups.<br>${error.message}</div>`;
+        groupWrapper.innerHTML = '<div class="error-msg">Failed to load groups.<br>' + error.message + "</div>";
     });
 }
 
-// Unsubscribe active listeners on tab switch
-function clearListeners() {
-    if (unsubscribeProfiles) { 
-        unsubscribeProfiles(); 
-        unsubscribeProfiles = null; 
-    }
-    if (unsubscribeGroups) { 
-        unsubscribeGroups(); 
-        unsubscribeGroups = null; 
-    }
-}
-
-// Dynamic Tab View Renderer
 function loadActiveView(view) {
     currentActiveView = view;
 
@@ -565,23 +312,40 @@ function loadActiveView(view) {
         listenToGroups();
     } else if (view === "questions") {
         clearListeners();
-        chatList.innerHTML = `
-            <div class="card">
-                <h3>Ask a Question</h3>
-                <textarea class="question-box" placeholder="Type your question here..."></textarea>
-                <button class="submit-btn">Submit Question</button>
-            </div>
-        `;
+        chatList.innerHTML =
+            '<div class="card">' +
+            "<h3>Ask a Question</h3>" +
+            '<textarea class="question-box" placeholder="Type your question here..."></textarea>' +
+            '<button class="submit-btn">Submit Question</button>' +
+            "</div>";
     }
 }
 
-// Tab Listeners
-tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-        tabs.forEach(t => t.classList.remove("active"));
+// Tab switching attached immediately
+tabs.forEach(function(tab) {
+    tab.addEventListener("click", function() {
+        tabs.forEach(function(t) { t.classList.remove("active"); });
         tab.classList.add("active");
         loadActiveView(tab.dataset.view);
     });
+});
+
+// Auth
+onAuthStateChanged(auth, async function(user) {
+    if (!user) {
+        window.location.href = "login.html";
+        return;
+    }
+
+    // Load joined groups in background (does not block loading)
+    loadJoinedGroups(user.uid).then(function() {
+        if (currentActiveView === "groups") {
+            listenToGroups();
+        }
+    });
+
+    // Start the current view immediately
+    loadActiveView(currentActiveView);
 });
 </script>
 </body>
