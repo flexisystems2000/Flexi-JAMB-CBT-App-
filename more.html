@@ -10,11 +10,13 @@
     (function () {
       try {
         var savedTheme = localStorage.getItem("theme");
+
         if (savedTheme === "dark") {
           document.documentElement.classList.add("dark");
         } else {
           document.documentElement.classList.remove("dark");
         }
+
       } catch (e) {}
     })();
   </script>
@@ -311,12 +313,15 @@
           id="notification-row"
           onclick="toggleNotificationRow(event)"
         >
+
           <div class="item-left">
+
             <div class="icon-wrapper">
               <i data-lucide="bell"></i>
             </div>
 
             <div class="item-text">
+
               <span class="item-title">
                 Notifications &amp; Reminders
               </span>
@@ -327,14 +332,18 @@
               >
                 Daily study reminders &amp; exam alerts
               </span>
+
             </div>
+
           </div>
 
           <div class="item-right">
+
             <label
               class="switch"
               onclick="event.stopPropagation()"
             >
+
               <input
                 type="checkbox"
                 id="notification-toggle"
@@ -342,8 +351,11 @@
               >
 
               <span class="slider"></span>
+
             </label>
+
           </div>
+
         </div>
 
         <!-- Theme Toggle -->
@@ -352,12 +364,15 @@
           id="theme-row"
           onclick="toggleThemeRow(event)"
         >
+
           <div class="item-left">
+
             <div class="icon-wrapper">
               <i data-lucide="sun-moon"></i>
             </div>
 
             <div class="item-text">
+
               <span class="item-title">
                 Dark Mode
               </span>
@@ -365,14 +380,18 @@
               <span class="item-subtitle">
                 Toggle light and dark themes
               </span>
+
             </div>
+
           </div>
 
           <div class="item-right">
+
             <label
               class="switch"
               onclick="event.stopPropagation()"
             >
+
               <input
                 type="checkbox"
                 id="theme-toggle"
@@ -380,8 +399,11 @@
               >
 
               <span class="slider"></span>
+
             </label>
+
           </div>
+
         </div>
 
       </div>
@@ -389,6 +411,7 @@
 
     <!-- Section 3: Support & Information -->
     <div class="section">
+
       <h3 class="section-title">
         Support &amp; Information
       </h3>
@@ -396,12 +419,15 @@
       <div class="list-group">
 
         <a href="report-question.html" class="list-item">
+
           <div class="item-left">
+
             <div class="icon-wrapper">
               <i data-lucide="flag"></i>
             </div>
 
             <div class="item-text">
+
               <span class="item-title">
                 Report a Question
               </span>
@@ -409,21 +435,27 @@
               <span class="item-subtitle">
                 Flag errors or wrong answers
               </span>
+
             </div>
+
           </div>
 
           <div class="item-right">
             <i data-lucide="chevron-right"></i>
           </div>
+
         </a>
 
         <a href="help.html" class="list-item">
+
           <div class="item-left">
+
             <div class="icon-wrapper">
               <i data-lucide="help-circle"></i>
             </div>
 
             <div class="item-text">
+
               <span class="item-title">
                 Help &amp; FAQs
               </span>
@@ -431,21 +463,27 @@
               <span class="item-subtitle">
                 Guides on using offline features
               </span>
+
             </div>
+
           </div>
 
           <div class="item-right">
             <i data-lucide="chevron-right"></i>
           </div>
+
         </a>
 
         <a href="about.html" class="list-item">
+
           <div class="item-left">
+
             <div class="icon-wrapper">
               <i data-lucide="info"></i>
             </div>
 
             <div class="item-text">
+
               <span class="item-title">
                 About Flexi Educational Consult
               </span>
@@ -453,15 +491,19 @@
               <span class="item-subtitle">
                 App version v1.2.0 &amp; legal terms
               </span>
+
             </div>
+
           </div>
 
           <div class="item-right">
             <i data-lucide="chevron-right"></i>
           </div>
+
         </a>
 
       </div>
+
     </div>
 
   </div>
@@ -471,18 +513,45 @@
   <script src="theme.js"></script>
   <script src="back-handler.js"></script>
 
+
   <!--
-    Capacitor Local Notifications
+    ============================================================
+    CAPACITOR LOCAL NOTIFICATIONS
+    ============================================================
 
     IMPORTANT:
-    @capacitor/local-notifications must be installed in package.json
-    and synced into the native Android project for the installed APK/AAB.
+
+    @capacitor/local-notifications must be installed in
+    package.json and synced into the native Android project.
+
+    Android notification small icon:
+
+      ic_stat_flexi_notification
+
+    This is NOT a normal web image URL.
+
+    The Android build workflow must provide the native resource:
+
+      res/drawable/ic_stat_flexi_notification.png
+
+    The notification payload below explicitly references it
+    using:
+
+      smallIcon: 'ic_stat_flexi_notification'
+
+    ============================================================
   -->
+
   <script type="module">
 
     import {
       LocalNotifications
     } from '@capacitor/local-notifications';
+
+
+    /* ============================================================
+       NOTIFICATION CONSTANTS
+       ============================================================ */
 
     const NOTIFICATION_IDS = [
       1001,
@@ -490,12 +559,41 @@
       1003
     ];
 
-    const NOTIFICATION_CHANNEL_ID = 'flexi-study';
+
+    const NOTIFICATION_CHANNEL_ID =
+      'flexi-study';
+
+
+    /*
+      Android notification small icon resource name.
+
+      IMPORTANT:
+      Do NOT include:
+        .png
+        drawable/
+        res/
+
+      Only the Android resource name is used here.
+    */
+
+    const NOTIFICATION_SMALL_ICON =
+      'ic_stat_flexi_notification';
+
 
     const notificationPluginAvailable =
       !!LocalNotifications;
 
+
+    /* ============================================================
+       FLEXI NOTIFICATION MANAGER
+       ============================================================ */
+
     window.FlexiNotifications = {
+
+
+      /* ==========================================================
+         GET / REQUEST PERMISSION
+         ========================================================== */
 
       async getPermission() {
 
@@ -504,9 +602,16 @@
           const current =
             await LocalNotifications.checkPermissions();
 
-          if (current && current.display === 'granted') {
+
+          if (
+            current &&
+            current.display === 'granted'
+          ) {
+
             return current;
+
           }
+
 
           return await LocalNotifications.requestPermissions();
 
@@ -517,6 +622,7 @@
             error
           );
 
+
           return {
             display: 'denied'
           };
@@ -526,42 +632,60 @@
       },
 
 
+      /* ==========================================================
+         CREATE ANDROID NOTIFICATION CHANNEL
+         ========================================================== */
+
       async createChannel() {
 
         try {
 
           await LocalNotifications.createChannel({
 
-            id: NOTIFICATION_CHANNEL_ID,
+            id:
+              NOTIFICATION_CHANNEL_ID,
 
-            name: 'Flexi Study Reminders',
+            name:
+              'Flexi Study Reminders',
 
             description:
               'Flexi Educational Consult study reminders and exam alerts',
 
-            importance: 4,
+            importance:
+              4,
 
-            visibility: 1,
+            visibility:
+              1,
 
-            sound: 'default',
+            sound:
+              'default',
 
-            vibration: true
+            vibration:
+              true
 
           });
+
+
+          console.log(
+            '✅ Flexi notification channel created/updated.'
+          );
+
 
           return true;
 
         } catch (error) {
 
-          /*
-            Channel creation may not be available on every platform.
-            The actual scheduling result is still checked separately.
-          */
-
           console.warn(
             'Notification channel setup:',
             error
           );
+
+
+          /*
+            Channel creation is supported on Android.
+            If the channel already exists, Android may simply
+            retain its existing configuration.
+          */
 
           return false;
 
@@ -570,14 +694,11 @@
       },
 
 
+      /* ==========================================================
+         CHECK EXACT ALARM SETTING
+         ========================================================== */
+
       async checkExactAlarm() {
-
-        /*
-          This API is relevant to Android versions where exact alarm
-          access is supported by the installed Capacitor plugin.
-
-          We do not block reminders if the API is unavailable.
-        */
 
         try {
 
@@ -588,6 +709,13 @@
 
             const result =
               await LocalNotifications.checkExactNotificationSetting();
+
+
+            console.log(
+              'Exact notification setting:',
+              result
+            );
+
 
             return result;
 
@@ -602,10 +730,15 @@
 
         }
 
+
         return null;
 
       },
 
+
+      /* ==========================================================
+         CANCEL EXISTING FLEXI NOTIFICATIONS
+         ========================================================== */
 
       async cancel() {
 
@@ -613,11 +746,22 @@
 
           await LocalNotifications.cancel({
 
-            notifications: NOTIFICATION_IDS.map(function (id) {
-              return { id: id };
-            })
+            notifications:
+              NOTIFICATION_IDS.map(function (id) {
+
+                return {
+                  id: id
+                };
+
+              })
 
           });
+
+
+          console.log(
+            'Existing Flexi reminders cancelled.'
+          );
+
 
           return true;
 
@@ -628,12 +772,17 @@
             error
           );
 
+
           return false;
 
         }
 
       },
 
+
+      /* ==========================================================
+         SCHEDULE DAILY REMINDERS
+         ========================================================== */
 
       async schedule() {
 
@@ -646,14 +795,30 @@
 
           await this.cancel();
 
+
+          /*
+            Create the Android notification channel.
+          */
+
           await this.createChannel();
+
+
+          /*
+            Schedule all three daily notifications.
+          */
 
           await LocalNotifications.schedule({
 
             notifications: [
 
+              /* ==================================================
+                 MORNING REMINDER
+                 ================================================== */
+
               {
-                id: 1001,
+
+                id:
+                  1001,
 
                 title:
                   'Flexi Educational Consult',
@@ -662,15 +827,37 @@
                   "Good morning! Ready to practice today's CBT questions? 🎓",
 
                 schedule: {
+
                   on: {
-                    hour: 8,
-                    minute: 0
+
+                    hour:
+                      8,
+
+                    minute:
+                      0
+
                   },
-                  repeats: true
+
+                  repeats:
+                    true
+
                 },
 
                 channelId:
                   NOTIFICATION_CHANNEL_ID,
+
+                /*
+                  IMPORTANT:
+
+                  This tells Android exactly which native
+                  notification icon to display.
+
+                  The actual resource is supplied by the
+                  Android build workflow.
+                */
+
+                smallIcon:
+                  NOTIFICATION_SMALL_ICON,
 
                 sound:
                   'default'
@@ -678,8 +865,14 @@
               },
 
 
+              /* ==================================================
+                 AFTERNOON REMINDER
+                 ================================================== */
+
               {
-                id: 1002,
+
+                id:
+                  1002,
 
                 title:
                   'Flexi Educational Consult',
@@ -688,15 +881,27 @@
                   'Keep your study streak going! Try a quick practice test.',
 
                 schedule: {
+
                   on: {
-                    hour: 14,
-                    minute: 0
+
+                    hour:
+                      14,
+
+                    minute:
+                      0
+
                   },
-                  repeats: true
+
+                  repeats:
+                    true
+
                 },
 
                 channelId:
                   NOTIFICATION_CHANNEL_ID,
+
+                smallIcon:
+                  NOTIFICATION_SMALL_ICON,
 
                 sound:
                   'default'
@@ -704,8 +909,14 @@
               },
 
 
+              /* ==================================================
+                 EVENING REMINDER
+                 ================================================== */
+
               {
-                id: 1003,
+
+                id:
+                  1003,
 
                 title:
                   'Flexi Educational Consult',
@@ -714,15 +925,27 @@
                   'Time to review your saved questions.',
 
                 schedule: {
+
                   on: {
-                    hour: 19,
-                    minute: 0
+
+                    hour:
+                      19,
+
+                    minute:
+                      0
+
                   },
-                  repeats: true
+
+                  repeats:
+                    true
+
                 },
 
                 channelId:
                   NOTIFICATION_CHANNEL_ID,
+
+                smallIcon:
+                  NOTIFICATION_SMALL_ICON,
 
                 sound:
                   'default'
@@ -733,10 +956,18 @@
 
           });
 
+
+          console.log(
+            '✅ Flexi daily reminders submitted to Android.'
+          );
+
+
           /*
-            Verify that Android actually has the schedules registered.
-            This prevents the UI from saying "active" when scheduling
-            silently failed.
+            Verify that Android actually has the schedules
+            registered.
+
+            This prevents the UI from saying "active" when
+            scheduling silently failed.
           */
 
           try {
@@ -744,17 +975,36 @@
             const pending =
               await LocalNotifications.getPending();
 
+
             const pendingIds =
-              Array.isArray(pending.notifications)
-                ? pending.notifications.map(function (item) {
-                    return Number(item.id);
-                  })
+              Array.isArray(
+                pending.notifications
+              )
+
+                ? pending.notifications.map(
+                    function (item) {
+
+                      return Number(
+                        item.id
+                      );
+
+                    }
+                  )
+
                 : [];
 
+
             const allScheduled =
-              NOTIFICATION_IDS.every(function (id) {
-                return pendingIds.includes(id);
-              });
+              NOTIFICATION_IDS.every(
+                function (id) {
+
+                  return pendingIds.includes(
+                    id
+                  );
+
+                }
+              );
+
 
             if (!allScheduled) {
 
@@ -763,16 +1013,23 @@
                 pending
               );
 
+
               return false;
 
             }
 
+
+            console.log(
+              '✅ All Flexi reminders verified:',
+              pendingIds
+            );
+
           } catch (verifyError) {
 
             /*
-              If getPending is unavailable on a particular native
-              version, do not treat the successful schedule call itself
-              as a failure.
+              If getPending is unavailable on a particular
+              native version, do not treat the successful
+              schedule call itself as a failure.
             */
 
             console.warn(
@@ -781,6 +1038,7 @@
             );
 
           }
+
 
           return true;
 
@@ -791,12 +1049,17 @@
             error
           );
 
+
           return false;
 
         }
 
       },
 
+
+      /* ==========================================================
+         ENABLE NOTIFICATIONS
+         ========================================================== */
 
       async enable() {
 
@@ -806,23 +1069,36 @@
             'Capacitor Local Notifications plugin is unavailable.'
           );
 
-          await window.saveNotifState(false);
+
+          await window.saveNotifState(
+            false
+          );
+
 
           return false;
 
         }
 
+
         try {
+
+          /*
+            Request Android notification permission.
+          */
 
           const permission =
             await this.getPermission();
+
 
           if (
             !permission ||
             permission.display !== 'granted'
           ) {
 
-            await window.saveNotifState(false);
+            await window.saveNotifState(
+              false
+            );
+
 
             return false;
 
@@ -832,19 +1108,28 @@
           /*
             Check exact-alarm state when supported.
 
-            We intentionally do not redirect the user here because
-            Android may still allow normal scheduled reminders.
+            We intentionally do not automatically redirect
+            the user here because Android may still allow
+            normal scheduled reminders.
           */
 
           await this.checkExactAlarm();
 
 
+          /*
+            Register the reminders.
+          */
+
           const scheduled =
             await this.schedule();
 
+
           if (!scheduled) {
 
-            await window.saveNotifState(false);
+            await window.saveNotifState(
+              false
+            );
+
 
             return false;
 
@@ -852,11 +1137,19 @@
 
 
           /*
-            Only save "true" AFTER the native schedules have been
-            successfully registered.
+            Only save "true" AFTER the native schedules have
+            successfully been registered.
           */
 
-          await window.saveNotifState(true);
+          await window.saveNotifState(
+            true
+          );
+
+
+          console.log(
+            '✅ Flexi notifications successfully enabled.'
+          );
+
 
           return true;
 
@@ -867,7 +1160,11 @@
             error
           );
 
-          await window.saveNotifState(false);
+
+          await window.saveNotifState(
+            false
+          );
+
 
           return false;
 
@@ -876,17 +1173,26 @@
       },
 
 
+      /* ==========================================================
+         DISABLE NOTIFICATIONS
+         ========================================================== */
+
       async disable() {
 
         const cancelled =
           await this.cancel();
 
+
         /*
-          Even if cancellation reports an error, the preference is
-          still set to OFF so the UI does not remain falsely enabled.
+          Even if cancellation reports an error, the preference
+          is still set to OFF so the UI does not remain falsely
+          enabled.
         */
 
-        await window.saveNotifState(false);
+        await window.saveNotifState(
+          false
+        );
+
 
         return cancelled;
 
@@ -894,6 +1200,10 @@
 
     };
 
+
+    /* ============================================================
+       TOGGLE NOTIFICATIONS FROM UI
+       ============================================================ */
 
     window.toggleNotifications =
       async function (isEnabled) {
@@ -903,9 +1213,14 @@
             'notification-toggle'
           );
 
+
         if (toggle) {
-          toggle.disabled = true;
+
+          toggle.disabled =
+            true;
+
         }
+
 
         try {
 
@@ -914,32 +1229,49 @@
             const enabled =
               await window.FlexiNotifications.enable();
 
+
             if (!enabled) {
 
               if (toggle) {
-                toggle.checked = false;
+
+                toggle.checked =
+                  false;
+
               }
 
-              updateReminderSubtitle(false);
+
+              updateReminderSubtitle(
+                false
+              );
+
 
               alert(
                 'Notifications could not be enabled. Please make sure notification permission is allowed for Flexi in Android Settings.'
               );
 
+
               return;
 
             }
 
+
             if (toggle) {
-              toggle.checked = true;
+
+              toggle.checked =
+                true;
+
             }
 
           } else {
 
             await window.FlexiNotifications.disable();
 
+
             if (toggle) {
-              toggle.checked = false;
+
+              toggle.checked =
+                false;
+
             }
 
           }
@@ -947,7 +1279,10 @@
         } finally {
 
           if (toggle) {
-            toggle.disabled = false;
+
+            toggle.disabled =
+              false;
+
           }
 
         }
@@ -955,16 +1290,24 @@
       };
 
 
+    /* ============================================================
+       SAVE NOTIFICATION STATE
+       ============================================================ */
+
     window.saveNotifState =
       async function (state) {
 
         try {
 
-          if (typeof IDB !== 'undefined') {
+          if (
+            typeof IDB !== 'undefined'
+          ) {
 
             await IDB.setItem(
               'flexi_reminders',
-              state ? 'true' : 'false'
+              state
+                ? 'true'
+                : 'false'
             );
 
           }
@@ -987,7 +1330,9 @@
 
           localStorage.setItem(
             'flexi_reminders',
-            state ? 'true' : 'false'
+            state
+              ? 'true'
+              : 'false'
           );
 
         } catch (error) {
@@ -1000,10 +1345,16 @@
         }
 
 
-        updateReminderSubtitle(state);
+        updateReminderSubtitle(
+          state
+        );
 
       };
 
+
+    /* ============================================================
+       UPDATE NOTIFICATION SUBTITLE
+       ============================================================ */
 
     window.updateReminderSubtitle =
       function (active) {
@@ -1013,22 +1364,27 @@
             'reminder-subtitle'
           );
 
+
         if (!subtitle) {
+
           return;
+
         }
+
 
         subtitle.textContent =
           active
+
             ? 'Daily study reminders active'
+
             : 'Daily study reminders & exam alerts';
 
       };
 
 
-    /*
-      Expose a simple helper in case another page later needs to
-      reschedule the same daily reminders.
-    */
+    /* ============================================================
+       PUBLIC RESCHEDULE HELPER
+       ============================================================ */
 
     window.scheduleFlexiReminders =
       async function () {
@@ -1045,7 +1401,9 @@
 
     /*
       The shared theme.js also manages the global theme.
+
       This page controller deliberately uses the SAME:
+
         - document.documentElement
         - document.body
         - IndexedDB key: "theme"
@@ -1056,19 +1414,39 @@
 
     (function () {
 
+
+      /* ==========================================================
+         CHECK CURRENT THEME
+         ========================================================== */
+
       function isDarkTheme() {
 
         return (
-          document.documentElement.classList.contains('dark') ||
-          document.body.classList.contains('dark')
+
+          document.documentElement
+            .classList
+            .contains('dark')
+
+          ||
+
+          document.body
+            .classList
+            .contains('dark')
+
         );
 
       }
 
 
+      /* ==========================================================
+         SAVE THEME
+         ========================================================== */
+
       async function saveTheme(theme) {
 
-        if (typeof IDB !== 'undefined') {
+        if (
+          typeof IDB !== 'undefined'
+        ) {
 
           try {
 
@@ -1087,6 +1465,7 @@
           }
 
         }
+
 
         try {
 
@@ -1107,25 +1486,46 @@
       }
 
 
+      /* ==========================================================
+         APPLY THEME
+         ========================================================== */
+
       async function applyTheme(isDark) {
 
         if (isDark) {
 
-          document.documentElement.classList.add('dark');
-          document.body.classList.add('dark');
+          document.documentElement
+            .classList
+            .add('dark');
+
+          document.body
+            .classList
+            .add('dark');
 
         } else {
 
-          document.documentElement.classList.remove('dark');
-          document.body.classList.remove('dark');
+          document.documentElement
+            .classList
+            .remove('dark');
+
+          document.body
+            .classList
+            .remove('dark');
 
         }
 
 
         await saveTheme(
-          isDark ? 'dark' : 'light'
+          isDark
+            ? 'dark'
+            : 'light'
         );
 
+
+        /*
+          theme.js owns the native StatusBar helper.
+          Use it when available.
+        */
 
         if (
           typeof window.applyStatusBar === 'function'
@@ -1149,6 +1549,10 @@
       }
 
 
+      /* ==========================================================
+         THEME SWITCH
+         ========================================================== */
+
       window.toggleThemeMode =
         async function (isDark) {
 
@@ -1159,14 +1563,31 @@
         };
 
 
+      /* ==========================================================
+         THEME ROW CLICK
+         ========================================================== */
+
       window.toggleThemeRow =
         async function (event) {
 
+          /*
+            If the click originated from the switch itself,
+            the checkbox's onchange handler will perform the
+            actual operation.
+
+            This prevents double toggling.
+          */
+
           if (
+
             event &&
+
             event.target &&
+
             event.target.closest &&
+
             event.target.closest('.switch')
+
           ) {
 
             return;
@@ -1179,12 +1600,17 @@
               'theme-toggle'
             );
 
+
           if (!toggle) {
+
             return;
+
           }
+
 
           toggle.checked =
             !toggle.checked;
+
 
           await window.toggleThemeMode(
             toggle.checked
@@ -1193,14 +1619,28 @@
         };
 
 
+      /* ==========================================================
+         NOTIFICATION ROW CLICK
+         ========================================================== */
+
       window.toggleNotificationRow =
         async function (event) {
 
+          /*
+            Same protection used by the theme row:
+            tapping the actual switch must not toggle twice.
+          */
+
           if (
+
             event &&
+
             event.target &&
+
             event.target.closest &&
+
             event.target.closest('.switch')
+
           ) {
 
             return;
@@ -1213,12 +1653,17 @@
               'notification-toggle'
             );
 
+
           if (!toggle) {
+
             return;
+
           }
+
 
           toggle.checked =
             !toggle.checked;
+
 
           await window.toggleNotifications(
             toggle.checked
@@ -1227,11 +1672,22 @@
         };
 
 
+      /* ==========================================================
+         PAGE INITIALIZATION
+         ========================================================== */
+
       document.addEventListener(
         'DOMContentLoaded',
         async function () {
 
-          let savedTheme = null;
+
+          /* ======================================================
+             LOAD SAVED THEME
+             ====================================================== */
+
+          let savedTheme =
+            null;
+
 
           try {
 
@@ -1295,27 +1751,46 @@
           }
 
 
+          /* ======================================================
+             APPLY SAVED THEME
+             ====================================================== */
+
           if (
             savedTheme === 'dark'
           ) {
 
-            document.documentElement.classList.add('dark');
-            document.body.classList.add('dark');
+            document.documentElement
+              .classList
+              .add('dark');
+
+            document.body
+              .classList
+              .add('dark');
 
           } else if (
             savedTheme === 'light'
           ) {
 
-            document.documentElement.classList.remove('dark');
-            document.body.classList.remove('dark');
+            document.documentElement
+              .classList
+              .remove('dark');
+
+            document.body
+              .classList
+              .remove('dark');
 
           }
 
+
+          /* ======================================================
+             SYNCHRONIZE THEME SWITCH
+             ====================================================== */
 
           const themeToggle =
             document.getElementById(
               'theme-toggle'
             );
+
 
           if (themeToggle) {
 
@@ -1325,17 +1800,19 @@
           }
 
 
-          /*
-            Restore notification preference.
-          */
+          /* ======================================================
+             RESTORE NOTIFICATION PREFERENCE
+             ====================================================== */
 
           const notifToggle =
             document.getElementById(
               'notification-toggle'
             );
 
+
           let savedNotifState =
             'false';
+
 
           try {
 
@@ -1396,13 +1873,17 @@
           );
 
 
-          /*
-            Re-render Lucide icons after the DOM is ready.
-          */
+          /* ======================================================
+             RE-RENDER LUCIDE ICONS
+             ====================================================== */
 
           if (
+
             window.lucide &&
-            typeof window.lucide.createIcons === 'function'
+
+            typeof window.lucide.createIcons ===
+              'function'
+
           ) {
 
             window.lucide.createIcons();
@@ -1418,17 +1899,23 @@
   </script>
 
 
+  <!-- Final icon initialization -->
   <script>
 
     /*
       Final icon initialization.
-      The DOMContentLoaded handler above also retries this after
-      all page elements exist.
+
+      The DOMContentLoaded handler above also retries this
+      after all page elements exist.
     */
 
     if (
+
       window.lucide &&
-      typeof window.lucide.createIcons === 'function'
+
+      typeof window.lucide.createIcons ===
+        'function'
+
     ) {
 
       window.lucide.createIcons();
