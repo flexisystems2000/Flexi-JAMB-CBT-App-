@@ -7,17 +7,19 @@
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icon-192.png">
     <meta name="theme-color" content="#008000">
+    
+    <!-- Early theme detection (runs before body is fully ready) -->
     <script>
-(function () {
-    try {
-        if (localStorage.getItem("theme") === "dark") {
-            document.documentElement.classList.add("dark");
-        }
-    } catch (e) {}
-})();
-</script>
+    (function () {
+        try {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.classList.add("dark");
+            }
+        } catch (e) {}
+    })();
+    </script>
 
-<link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="theme.css">
     <script src="boxicons.js"></script>
 
     <style>
@@ -274,6 +276,7 @@
         <iframe id="loginIframe" src="" title="Login Portal"></iframe>
     </div>
 </div>
+
 <script src="back-handler.js"></script>
 <script src="idb.js"></script>
 <script src="theme.js"></script>
