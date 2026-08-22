@@ -15,6 +15,10 @@
       "google": {
         "webClientId": "465373608641-imaii3evs8obkjoj50ncjkn3fj3ff00v.apps.googleusercontent.com"
       }
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_flexi",
+      "iconColor": "#2E8B57"
     }
   }
 }
