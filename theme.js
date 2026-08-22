@@ -38,8 +38,10 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ==========================================
 
     if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark");
         document.body.classList.add("dark");
     } else {
+        document.documentElement.classList.remove("dark");
         document.body.classList.remove("dark");
     }
 
@@ -103,13 +105,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ==========================================
 
     function updateThemeIcon() {
-
         themeIcon.innerHTML =
             document.body.classList.contains("dark")
                 ? sunSVG
                 : moonSVG;
     }
-
 
     updateThemeIcon();
 
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     toggleBtn.addEventListener("click", async () => {
 
+        document.documentElement.classList.toggle("dark");
         document.body.classList.toggle("dark");
 
         const themeVal =
@@ -130,14 +131,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Save to IndexedDB
         if (typeof IDB !== "undefined") {
-
             try {
                 await IDB.setItem("theme", themeVal);
             } catch (err) {
-                console.warn(
-                    "Could not save theme to IndexedDB:",
-                    err
-                );
+                console.warn("Could not save theme to IndexedDB:", err);
             }
         }
 
@@ -146,10 +143,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         try {
             localStorage.setItem("theme", themeVal);
         } catch (err) {
-            console.warn(
-                "Could not save theme to localStorage:",
-                err
-            );
+            console.warn("Could not save theme to localStorage:", err);
         }
 
 
@@ -178,7 +172,6 @@ async function applyStatusBar() {
         return;
     }
 
-
     try {
 
         // Use the already-loaded Capacitor plugin.
@@ -186,31 +179,23 @@ async function applyStatusBar() {
         const StatusBar =
             window.Capacitor?.Plugins?.StatusBar;
 
-
         if (!StatusBar) {
-
-            console.warn(
-                "Capacitor StatusBar plugin not available."
-            );
-
+            console.warn("Capacitor StatusBar plugin not available.");
             return;
         }
 
-
+        // Check both html and body for dark class (more reliable)
         const isDark =
+            document.documentElement.classList.contains("dark") ||
             document.body.classList.contains("dark");
-
 
         // =================================================
         // DARK THEME
         // =================================================
-        //
         // Background: dark
         // Icons/text: light
         //
-
         if (isDark) {
-
             await StatusBar.setBackgroundColor({
                 color: "#121212"
             });
@@ -218,20 +203,15 @@ async function applyStatusBar() {
             await StatusBar.setStyle({
                 style: "LIGHT"
             });
-
         }
-
 
         // =================================================
         // LIGHT THEME
         // =================================================
-        //
         // Background: light
         // Icons/text: dark
         //
-
         else {
-
             await StatusBar.setBackgroundColor({
                 color: "#f0f2f5"
             });
@@ -241,17 +221,11 @@ async function applyStatusBar() {
             });
         }
 
-
         console.log(
             `✅ Status bar updated: ${isDark ? "dark" : "light"} theme`
         );
 
-
     } catch (err) {
-
-        console.warn(
-            "StatusBar update failed:",
-            err
-        );
+        console.warn("StatusBar update failed:", err);
     }
 }
