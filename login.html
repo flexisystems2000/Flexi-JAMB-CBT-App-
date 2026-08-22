@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Authentication - Flexi Educational Consult</title>
+    
     <script>
-(function () {
-    try {
-        if (localStorage.getItem("theme") === "dark") {
-            document.documentElement.classList.add("dark");
-        }
-    } catch (e) {}
-})();
-</script>
+    (function () {
+        try {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.classList.add("dark");
+            }
+        } catch (e) {}
+    })();
+    </script>
 
-<link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="theme.css">
     <script src="lucide.min.js"></script>
     
-    <!-- Firebase Compat (better for Capacitor) -->
+    <!-- Eruda - Mobile Console -->
+    <script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+
+    <!-- Firebase Compat -->
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 
@@ -128,7 +133,6 @@
                     <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
                     <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
                 </svg>
-
                 Sign in with Google
             </button>
         </div>
@@ -156,11 +160,24 @@
         projectId: "waec2026jamb2027",
     };
 
-    // Initialize Firebase
-    if (!firebase.apps.length) {
-        firebase.initializeApp(firebaseConfig);
+    // ========== SAFE FIREBASE INIT ==========
+    let auth = null;
+    let firebaseReady = false;
+
+    try {
+        if (typeof firebase !== "undefined") {
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+            auth = firebase.auth();
+            firebaseReady = true;
+            console.log("✅ Firebase initialized successfully");
+        } else {
+            console.error("❌ Firebase SDK not loaded");
+        }
+    } catch (err) {
+        console.error("❌ Firebase init error:", err);
     }
-    const auth = firebase.auth();
 
     // ========== SOCIAL LOGIN (Capacitor v7) ==========
     let socialLoginReady = false;
@@ -174,24 +191,17 @@
 
         const plugin = getSocialLoginPlugin();
         if (!plugin) {
-            console.error("❌ SocialLogin plugin not found on window.Capacitor.Plugins");
+            console.error("❌ SocialLogin plugin not found");
             return false;
         }
 
         try {
-            console.log("--> Initializing SocialLogin (v7 format)...");
-
             const initPromise = plugin.initialize({
-                google: {
-                    webClientId: WEB_CLIENT_ID
-                }
+                google: { webClientId: WEB_CLIENT_ID }
             });
-
             const timeoutPromise = new Promise((resolve) => setTimeout(resolve, 2500));
             await Promise.race([initPromise, timeoutPromise]);
-
             socialLoginReady = true;
-            console.log("✅ SocialLogin initialized or bypassed timeout");
             return true;
         } catch (e) {
             console.warn("⚠️ SocialLogin init notice:", e);
@@ -200,7 +210,6 @@
         }
     }
 
-    // Start background init
     ensureSocialLoginReady();
 
     // ========== UI ELEMENTS ==========
@@ -237,10 +246,9 @@
     let currentView = "login";
     let resetStep = 1;
 
-    // ========== HELPER: Save user data for offline use ==========
+    // ========== HELPER: Save user data ==========
     async function saveUserLocally(user) {
         if (!user) return;
-
         const name = user.displayName || (user.email ? user.email.split("@")[0] : "Candidate");
 
         try {
@@ -253,25 +261,39 @@
                 localStorage.setItem("userEmail", user.email || "");
                 localStorage.setItem("userUid", user.uid || "");
             }
-            console.log("✅ User data saved locally for offline use");
+            console.log("✅ User data saved locally");
         } catch (err) {
-            console.warn("Failed to save to IDB, falling back to localStorage:", err);
+            console.warn("Failed to save user data:", err);
             localStorage.setItem("userName", name);
             localStorage.setItem("userEmail", user.email || "");
             localStorage.setItem("userUid", user.uid || "");
         }
     }
 
-    // Monitor Authentication State + Persist user data
-    auth.onAuthStateChanged(async (user) => {
-        if (user) {
-            await saveUserLocally(user);
+    // ========== AUTH STATE + IFRAME COMMUNICATION ==========
+    if (firebaseReady && auth) {
+        auth.onAuthStateChanged(async (user) => {
+            if (user) {
+                await saveUserLocally(user);
 
-            const urlParams = new URLSearchParams(window.location.search);
-            const redirect = urlParams.get('redirect');
-            window.location.replace(redirect ? decodeURIComponent(redirect) : "index.html");
-        }
-    });
+                // Notify parent (homepage) that login succeeded
+                if (window.parent && window.parent !== window) {
+                    console.log("📤 Sending AUTH_SUCCESS to parent");
+                    window.parent.postMessage({ type: "AUTH_SUCCESS" }, "*");
+                } else {
+                    // Opened as full page
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const redirect = urlParams.get("redirect");
+                    window.location.replace(redirect ? decodeURIComponent(redirect) : "index.html");
+                }
+            }
+        });
+    } else {
+        // Show clear error if Firebase failed to load
+        setTimeout(() => {
+            showStatus("Firebase failed to load. Check your internet connection.", "error");
+        }, 800);
+    }
 
     const showStatus = (msg, type) => {
         statusBox.innerText = msg;
@@ -279,9 +301,14 @@
         statusBox.style.display = "block";
     };
 
-    // ========== GOOGLE LOGIN HANDLER ==========
+    // ========== GOOGLE LOGIN ==========
     async function handleGoogleLogin() {
         console.log("--> handleGoogleLogin triggered");
+
+        if (!firebaseReady) {
+            showStatus("Firebase not ready. Check internet.", "error");
+            return;
+        }
 
         try {
             showStatus("Opening Google Sign-In...", "info");
@@ -293,7 +320,6 @@
             }
 
             await ensureSocialLoginReady();
-
             showStatus("Choose your Google account...", "info");
 
             const result = await plugin.login({
@@ -304,8 +330,6 @@
                 }
             });
 
-            console.log("--> Native result:", JSON.stringify(result));
-
             const idToken =
                 result?.result?.idToken ||
                 result?.result?.token ||
@@ -314,7 +338,6 @@
 
             if (!idToken) {
                 showStatus("No ID token received from Google.", "error");
-                console.error("Payload missing idToken:", result);
                 return;
             }
 
@@ -335,7 +358,6 @@
 
             showStatus("Signing you in...", "info");
             await auth.signInWithCustomToken(data.customToken);
-
             showStatus("Success! Redirecting...", "success");
 
         } catch (e) {
@@ -367,7 +389,7 @@
             passwordFieldGroup.style.display = "block";
             confirmPasswordFieldGroup.style.display = "none";
             forgotLinkContainer.style.display = "block";
-            googleBlock.style.display = "none"; // Kept hidden on login view
+            googleBlock.style.display = "none";
             mainBtn.innerText = "LOGIN";
             toggleArea.innerHTML = `Don't have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Sign Up</span>`;
         } 
@@ -377,7 +399,7 @@
             passwordFieldGroup.style.display = "block";
             confirmPasswordFieldGroup.style.display = "block";
             forgotLinkContainer.style.display = "none";
-            googleBlock.style.display = "none"; // Kept hidden on signup view
+            googleBlock.style.display = "none";
             mainBtn.innerText = "SIGN UP";
             toggleArea.innerHTML = `Already have an account? <span id="toggle-action" style="color:var(--green, #008000); font-weight:bold; cursor:pointer;">Login</span>`;
         } 
@@ -475,8 +497,14 @@
         }
     });
 
-    // Email / Password / OTP actions
+    // Main Auth Button
     mainBtn.onclick = async () => {
+        if (!firebaseReady || !auth) {
+            showStatus("Firebase is not ready. Please check your internet connection and try again.", "error");
+            console.error("Firebase not ready when button was clicked");
+            return;
+        }
+
         const email = emailInput.value.trim();
         const pass = passInput.value;
         const confirmPass = confirmPassInput.value;
@@ -561,11 +589,18 @@
             mainBtn.disabled = false;
             const errorText = e?.message ? e.message.replace('auth/', '').replace(/-/g, ' ') : "An error occurred";
             showStatus(errorText, "error");
+            console.error("Auth error:", e);
         }
     };
    
     document.getElementById('current-year').textContent = new Date().getFullYear();
-    lucide.createIcons();
+    
+    // Initialize Lucide icons
+    if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+    } else {
+        console.warn("Lucide not loaded");
+    }
 </script>
 </body>
 </html>
