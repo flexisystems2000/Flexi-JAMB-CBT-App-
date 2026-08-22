@@ -8,7 +8,7 @@
   "plugins": {
     "StatusBar": {
       "overlaysWebView": false,
-      "style": "LIGHT",
+      "style": "DARK",
       "backgroundColor": "#f0f2f5"
     },
     "SocialLogin": {
